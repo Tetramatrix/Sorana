@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Aicono - 🚀 AI Intelligent Desktop Icon Autopilot</title>
+    <meta name="description" content="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯">
+    <meta name="keywords" content="AI Desktop Organizer, Windows Icon Manager, Automatic Icon Grouping, Desktop Cleanup, AI Productivity Tool, Freeware, Portable App">
+    <meta name="author" content="Tetramatrix">
+    <meta property="og:title" content="Aicono - AI Intelligent Desktop Icon Autopilot">
+    <meta property="og:description" content="🧠 Transform your messy desktop into an organized workspace with AI-powered icon grouping and layout! 🎯">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/aicono-preview.jpg">
+    
+    <!-- Google Ads (using template IDs) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
+         crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<!-- Left Sidebar -->
+<div class="left">
+    <!-- Google Ads - Left Sidebar -->
+    <div class="fixed-nav">
+        
+        <!-- bbrb -->
+        
+        <p>
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:160px;height:600px"
+            data-ad-client="ca-pub-6449563648591184"
+            data-ad-slot="8910195152"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script></p>
+        
+        <!-- bbrb 1.5 -->
+        <!--
+        <p class="left-sidebar-ad-spacing"
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:160px;height:600px"
+            data-ad-client="ca-pub-6449563648591184"
+            data-ad-slot="4431879155"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script></p>
+        -->
+    </div>
+</div>
+
+<!-- Right Sidebar -->
+<div class="right">
+    
+    <!-- Google Ads - Right Sidebar -->
+    <!--
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6449563648591184"
+         data-ad-slot="8910195152"
+         data-ad-format="vertical"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    -->
+
+    <!-- Additional Ads at the bottom of right column -->
+    <!--
+    <div class="right-sidebar-ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6449563648591184"
+             data-ad-slot="8910195152"
+             data-ad-format="rectangle"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    -->
+</div>
+
+<!-- Main Content -->
+<div class="wikidoc">
+    <h1>🚀 Aicono</h1>
+    <h3>🧠 The AI intelligent desktop icon autopilot for Windows! 🎯</h3>
+    <p>
+        <img src="logo-3.png" alt="Aicono Logo" class="logo">
+    </p>
+
+    <p>
+        <strong>🔥 Aicono uses AI to automatically group and arrange your desktop icons for a more organized workspace. 💪</strong>
+    </p>
+
+    <p>
+        <img src="desktop_clutter.png" alt="Cluttered Desktop Example" class="screenshot">
+        <br><em>Cluttered desktop before using Aicono – icons scattered everywhere!</em>
+    </p>
+    <p>Desktops get messy fast with icons everywhere. Manual organizing is tedious, and Windows' basic auto-arrange doesn't cut it.</p>
+    <p>
+        <img src="desktop_clean2.png" alt="Clean Desktop After Aicono" class="screenshot">
+        <br><em>Organized desktop after Aicono arrangement – AI groups and arranges icons perfectly!</em>
+    </p>
+    <p>
+        Aicono applies AI-based categorization (e.g., Work, Games, Utilities) and a spatial layout that avoids overlaps, placing icons within your selected desktop area. You can preview and apply the arrangement.
+    </p>
+    
+
+    <!-- Video Section -->
+    <!--
+    <div class="video-container">
+        <h3>🎥 Aicono in Action</h3>
+        <video controls class="video-player">
+            <source src="Crafting_An_Second_Video_Ad.mp4" type="video/mp4">
+            Your browser does not support the video tag. Please download the file: <a href="Crafting_An_Second_Video_Ad.mp4" download>Crafting_An_Second_Video_Ad.mp4 download</a>
+        </video>
+        <p class="caption">
+            📹 Watch Aicono in action!
+        </p>
+    </div>
+    -->
+    
+    <p>
+        <img src="main.png" alt="Aicono Main Window" class="logo">
+        <br><em>Aicono's main window – control your desktop organization with ease!</em>
+    </p>
+  
+    <!-- Google Ads - Top Banner -->
+    <!--
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6449563648591184"
+         data-ad-slot="8910195152"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    -->
+
+    <!-- Download Section -->
+    <div class="cta-box">    
+        
+        <h3>🚀 Ready for an Organized Desktop? 🚀</h3>
+        <p>Download Aicono now and let AI autopilot your icons! 💫</p>
+
+        <div class="download-section">
+        <a href="Aicono-v1.0.1.exe" class="btn btn-primary">⬇️ Direct Download (Portable)</a>
+    </div>
+    <div class="download-section">    
+        <a href="README.txt" class="btn btn-primary">📄 Readme</a>
+    </div>
+    
+    <pre class="code-block-md5"><code>
+        $ md5sum.exe Aicono-v1.0.1 4c2cff462f3fdc85aec0e5199cc037a0
+    </code></pre>
+
+    <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" /></a>
+    </div>
+
+<h2>🤖 What is Aicono?</h2>
+    <p>Aicono is a Windows application that uses AI to group desktop icons by category (such as "Work," "Games," or "Utilities") and arranges them without overlaps in a customizable area. The layout can be fine-tuned using a visual preview tool. 🧠</p>
+
+    <h2>⭐ Key Features</h2>
+    <ul>
+        <li><strong>🧠 AI-Powered Grouping:</strong> Automatically categorizes icons logically into groups like Work, Games, and Utilities.</li>
+        <li><strong>🎛️ Your AI, Your Choice:</strong> Works 100% offline with a lightweight default model (~806MB) that downloads on first run. Want more power? Aicono is built for enthusiasts:
+            <ul>
+                <li>Connect to local services like <strong>Ollama</strong> or any <strong>OpenAI-compatible server</strong>.</li>
+                <li>Configure it to <strong>auto-download larger, more powerful models</strong> (e.g., 8B models) from Hugging Face.</li>
+                <li>Supports private models using your <strong>Hugging Face token</strong>.</li>
+                <li>Includes a <strong>manual fallback & finetune</strong> if no AI model is available.</li>
+            </ul>
+        </li>
+        <li><strong>💾 Instant Fine-Tuning with Caching:</strong> Don't wait for the AI analysis twice! Aicono saves your layout. If you're unhappy with the arrangement, just re-open the app to <strong>instantly</strong> make adjustments (like changing spacing or grid size) and re-apply in seconds. The <strong><code>"Clear Cache & Reload"</code></strong> button is only for when you <em>want</em> to start over.</li>
+        <li>
+            <strong>📐 Advanced Spatial Layout:</strong> This isn't just "arranging." Aicono solves a complex 2D packing problem. It takes your AI-generated groups (as distinct blocks) and intelligently positions them, ensuring each group is cohesive, clearly separated, and perfectly fits within your custom "Working Area" without any overlaps.
+        </li>
+        <li><strong>📍 Customizable Area:</strong> Select specific desktop regions for icon placement.</li>
+        <li><strong>👁️ Visual Preview (WYSIWYG):</strong> See and approve the new layout <em>before</em> any changes are applied.</li>
+        <li><strong>⚙️ Fully Configurable:</strong> All settings, from AI models to layout, are controlled via a simple JSON file for power users.</li>
+        <li><strong>📦 Portable App:</strong> No installation required – just run and go!</li>
+        <li><strong>💰 Freeware:</strong> Free community edition.</li>
+    </ul>
+
+    <h2>🎯 Who is Aicono For?</h2>
+    <p>Aicono is intended for Windows users who want to organize their desktop icons efficiently, including gamers, students, professionals, and AI enthusiasts. 💯</p>
+    <ul>
+        <li><strong>🎮 Gamers:</strong> Group game icons neatly for quick access without desktop mess.</li>
+        <li><strong>📚 Students:</strong> Organize study files and apps in logical categories.</li>
+        <li><strong>💼 Professionals:</strong> Keep work tools grouped and arranged for efficiency.</li>
+        <li><strong>🤖 AI Enthusiasts:</strong> Experience advanced, configurable AI in a practical, free tool.</li>
+    </ul>
+
+    <h2>⚙️ How Does It Work?</h2>
+    <p><strong>🧠 Fully automatic & user-friendly! :</strong></p>
+    <ol>
+        <li><strong>👁️ Scans</strong> desktop icons in real-time.</li>
+        <li><strong>🧠 Uses AI</strong> to categorize (Work, Games, etc.).</li>
+        <li><strong>📐 Applies</strong> a spatial layout without overlaps.</li>
+        <li><strong>👀 Offers a Preview</strong> for fine-tuning.</li>
+        <li><strong>🔧 Customizes</strong> to your needs with area selection.</li>
+        <li><strong>💾 Caches results</strong> for instant re-application.</li>
+    </ol>
+
+    <h2>🧠 AI: How It Works, Fine-Tuning & Manual Fallback</h2>
+    <h3>Why are my results "hit-or-miss"?</h3>
+    <p>
+        Aicono uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can connect larger or custom models for improved accuracy, but this may require more system resources.
+    </p>
+    <ul>
+        <li><strong>Offline & Free (Default):</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes mislabel complex icons as "Miscellaneous."</li>
+        <li><strong>Custom Models:</strong> For improved results, Aicono can connect to local services (like <strong>Ollama</strong> or <strong>Llama</strong>), OpenAI-compatible servers, or download larger models from Hugging Face.</li>
+    </ul>
+    <p>
+        <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power.
+    </p>
+    <h3>Manual Fine-Tuning & Fallback</h3>
+    <p>
+        If the AI does not classify an icon as desired, or if no model is available, you can adjust the results manually:
+    </p>
+    <ol>
+        <li><strong>Fine-tune AI results:</strong> After each run, Aicono saves the grouping in <code>icon_groups_cache.json</code>. You can edit this file to move icons between groups. Your changes will be used until you clear the cache.</li>
+        <li><strong>Manual fallback:</strong> If no AI is available, you can create <code>icon_groups_cache.json</code> from scratch and define all groups manually. The app will use your structure.</li>
+    </ol>
+    <h4>File Structure (<code>icon_groups_cache.json</code>)</h4>
+    <p>
+        The file must be saved as JSON with the following structure:
+    </p>
+    <pre class="code-block-json"><code>{
+  "names_hash": "your_unique_hash_here",
+  "model_name": "manual_configuration",
+  "groups": [
+    {
+      "name": "Group Name 1",
+      "items": [
+        "Application1.exe",
+        "Script1.bat",
+        "Tool1"
+      ]
+    },
+    {
+      "name": "Group Name 2",
+      "items": [
+        "Application2.exe",
+        "Tool2",
+        "Utility2"
+      ]
+    }
+  ],
+  "timestamp": 1726404000.0
+}</code></pre>
+
+    <h2>🌟 Why Aicono Stands Out</h2>
+    <p>Aicono goes beyond basic tools with 🧠 AI intelligence for effortless desktop management!</p>
+    
+    <table class="feature-table" style="width:100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Feature</th>
+                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">🏆 Aicono</th>
+                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Other Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  class="row-alt">
+                <td style="border: 1px solid #ddd; padding: 8px;"><strong>AI Grouping</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ Intelligent AI</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ Manual</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Layout Algorithm</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ Spatial No-Overlap</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ Basic Arrange</td>
+            </tr>
+            <tr class="row-alt">
+                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Preview</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ Visual Tool (WYSIWYG)</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ None</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Portability</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ No Install</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">⚠️ Installer Required</td>
+            </tr>
+            <tr class="row-alt">
+                <td style="border: 1px solid #ddd; padding: 8px;"><strong>AI Customization</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ (Ollama, HF, etc.)</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ None</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Price</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ 100% Free</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">⚠️ Paid / Basic</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>🚀 Practical Usage Examples</h2>
+    <p>💡 Aicono shines in real life:</p>
+    <ul>
+        <li><strong>🎮 Gaming Setup:</strong> Groups games in one area, clears rest for quick access.</li>
+        <li><strong>📁 File Organization:</strong> Sorts documents by project categories.</li>
+        <li><strong>💼 Work Mode:</strong> Arranges tools in a compact desktop zone.</li>
+        <li><strong>👨‍🎓 Student Life:</strong> Groups school apps and files neatly.</li>
+    </ul>
+
+    <h2>💡 Installation & Setup</h2>
+    <p>Three quick steps:</p>
+    <ol>
+        <li>📥 <strong>Download:</strong> Get <code>Aicono.exe</code>.</li>
+        <li>▶️ <strong>Launch:</strong> Double-click the file and wait for the main window.</li>
+        <li>🎯 <strong>Customize:</strong> Open <em>Settings</em>, pick your AI model and work area.</li>
+    </ol>
+
+    <h2>📋 System Requirements</h2>
+    <table class="req-table">
+        <tr><th>💻 Component</th><th>Minimum</th></tr>
+        <tr><td>OS</td><td>Windows 10/11&nbsp;(64-bit)</td></tr>
+        <tr><td>🧠 AI Support</td><td>Built-in offline model</td></tr>
+        <tr><td>💾 RAM</td><td>&ge;&nbsp;2&nbsp;GB</td></tr>
+        <tr><td>💽 Storage</td><td>≈&nbsp;1&nbsp;GB (app + models)</td></tr>
+        <tr><td>⚡ Rights</td><td>Standard user</td></tr>
+    </table>
+
+    <p>
+
+<h2>💡 Pro-Tips for a Perfect Layout 💡</h2>
+<p>
+    Aicono is a powerful tool with many controls. Like any good tool, it's designed to give <em>you</em> the power to find your own perfect, individual result. Here are two key tips to get started.
+</p>
+
+<h3>1. ⚠️ REQUIRED: Disable Windows "Auto-Arrange"</h3>
+<p>
+    Aicono needs full control to move your icons. If Windows is also trying to manage them, your layout will break or won't apply correctly.
+</p>
+<p>
+    <strong>To check this:</strong> Right-click your Desktop > go to "View" > and make sure <strong>"Auto-arrange icons"</strong> is <strong>UNCHECKED</strong>. ✅
+</p>
+
+<h3>2. 📐 Balancing Your Working Area and Layout Controls</h3>
+<p>
+    Think of the <strong>"Working Area"</strong> as a "sandbox" 🖼️ or a "fence" to contain your icons. Its only job is to ensure icons don't go outside the boundaries you set.
+</p>
+<p>
+    All the other controls 🎛️—like <strong>"Grid Density"</strong>, <strong>"Gaps"</strong>, and <strong>"Spacing"</strong>—determine how your icon groups will fit <em>inside</em> that sandbox.
+</p>
+<p>
+    There is no single "right" setting! The best layout is a balance between the size of your sandbox and the layout controls you choose. If things look cramped 😖, try giving them more room (a larger area ↔️) or tightening up the spacing (a smaller gap ↕️).
+</p>
+<p>
+    <strong>We encourage you to experiment! 🎨</strong> That's what the instant <strong>WYSIWYG</strong> (What You See Is What You Get) preview is for. Adjust any slider and watch your layout change in real-time.
+</p>
+
+<h2>🛠️ Manual Configuration &amp; Fine-Tuning (Fallback)</h2>
+    <p>This section explains how to use the <code>icon_groups_cache.json</code> file. This file has two primary purposes:</p>
+    <ol>
+        <li><strong>Fine-Tuning AI Results (Most Common Use):</strong> After the AI runs, it saves its results to this file. If the AI miscategorizes an icon (e.g., puts <em>Steam</em> in <em>Work</em>), you can simply open <code>icon_groups_cache.json</code> and move the item from the <em>Work</em> group to the <em>Games</em> group. Aicono will use your corrected file from then on (until you click <code>Clear Cache &amp; Reload</code>).</li>
+        <li><strong>Complete Manual Fallback:</strong> If you have no AI model configured or are offline, you can create this file from scratch to define all your groups manually. The rest of this guide explains the file structure for this purpose.</li>
+    </ol>
+
+    <h3>File Structure</h3>
+    <p>The configuration file must be saved as a JSON file named <code>icon_groups_cache.json</code> with the following structure:</p>
+
+    <pre class="code-block-json"><code>{
+  "names_hash": "your_unique_hash_here",
+  "model_name": "manual_configuration",
+  "groups": [
+    {
+      "name": "Group Name 1",
+      "items": [
+        "Application1.exe",
+        "Script1.bat",
+        "Tool1"
+      ]
+    },
+    {
+      "name": "Group Name 2",
+      "items": [
+        "Application2.exe",
+        "Tool2",
+        "Utility2"
+      ]
+    }
+  ],
+  "timestamp": 1726404000.0
+}</code></pre>
+    <!-- Final Download Section -->
+    <div class="cta-box">
+        <h3>🚀 Ready for an Organized Desktop? 🚀</h3>
+        <p>Download Aicono to try AI-based icon organization on your desktop. 💫</p>
+        
+        <div class="download-section">
+            <a href="Aicono.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
+        </div>
+        <div class="download-section">        
+            <a href="README.txt" class="btn btn-primary">📄 Readme</a>
+        </div>
+
+        <pre class="code-block-md5-highlight">
+        <code>
+        $ md5sum.exe Aicono-v1.0.1.exe 4c2cff462f3fdc85aec0e5199cc037a0
+        </code></pre>
+
+        <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" /></a>
+    </div>
+    
+     <h2>🙏 Support & Donations</h2>
+     <p>💚 Donate & support Aicono development!</p>
+            
+        <h3>⭐ If you like Aicono, please leave a positive review or star the project on <a href="https://alternativeto.net/software/aicono/" target="_blank">AlternativeTo! ⭐</a></h3>
+
+
+        <h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>       
+        <p style="float:right">
+            PayPal: paypal.me/Gigamegs
+            <img src="qrcode.png" alt="QR Code" style="width: 130px; height: 130px; vertical-align: middle; margin-left: 10px;">
+        </p>
+        <p>
+            📌 Bitcoin Cash (BCH)
+             <img src="bch_qrcode.png" alt="QR Code" style="width: 130px; height: 130px; vertical-align: middle; margin-left: 10px;"><br />
+            BCH Address: <br /> bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
+        </p>
+
+    <h3>🔥 Featured on Microsoft Store:</h3>
+    <p>
+        <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" width="400%" height="400%" alt="Get it from Microsoft" /></a>
+    </p>
+
+    <h3>🔥 Featured on Softpedia:</h3>
+    <p>
+        <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank"><img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" /></a>
+    </p>
+
+    <h3>🔥 Featured on AlternativeTo:</h3>
+    <p>
+            <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
+    </p>
+
+    <h3>🔥 Featured on Product Hunt:</h3>
+    <p>
+        <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - 🧠&#0032;The&#0032;AI&#0032;intelligent&#0032;desktop&#0032;icon&#0032;autopilot&#0032;for&#0032;Windows&#0033;&#0032;🎯 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+    </p>
+
+    <h3>🔥 Featured on Fazier:</h3>
+    <p>
+        <a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" width=250 alt="Fazier badge" /></a>
+    </p>
+
+    <h2>🚀 Discover our other tools and games:</h2>
+
+    <h3>🕹️ New Spaceship - Retro Mini Game:</h3>
+    
+       <h4>🔥 Featured on itch.io:</h4>
+       <div class="embed-container">
+        <div class="embed-item">
+            <iframe frameborder="0" src="https://itch.io/embed/2985398?linkback=true&bg_color=35fc00&fg_color=3f2832&link_color=fa5c5c&border_color=ff5a1d" width="552" height="167" class="embed-iframe"><a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">Spaceship by tetramatrix</a></iframe>
+        </div>
+
+
+        <h4>🔥 Featured on IndieDB:</h4>
+        <div>
+            <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank"><img src="https://button.indiedb.com/popularity/medium/games/86877.png" alt="New Spaceship" /></a>
+        </div>
+    </div>
+
+        <h3>🚀 RyzenZPilot - dynamic power management tool:</h3>
+
+        <h4>🔥 Featured on AlternativeTo:</h4>
+        <a href="https://alternativeto.net/software/ryzenzpilot" title="🔥 Your all-in-one solution for dynamic power management – right from your system tray! 💪" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🚀 RyzenZPilot - dynamic power management tool" /></a>
+
+        <h4>🔥 Featured on Producthunt:</h4>
+        
+        <div class="embed-container" style="height:405px !important">
+                <div class="embed-item" style="height:405px !important">
+                <iframe style="border: none;height:405px !important" src="https://cards.producthunt.com/cards/products/1114242" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    <p class="footer-text">
+        🏢 Developed by <b>Tetramatrix</b> | 🔧 Optimized for Windows desktops | 💝 Free for everyone
+    </p>
+
+</div>
+
+<!-- Google Analytics (optional) -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+-->
+
+</body>
+</html>
