@@ -1,11 +1,11 @@
 :root {
   --bg-primary: #1e1e1e;
   --bg-secondary: #2d2d30;
-  --bg-accent: #0f3460;
+  --bg-accent: #1a365d;
   --text-primary: #ffffff;
   --text-secondary: #cccccc;
-  --accent-blue: #0078d4;
-  --accent-amd: #ed1c24;
+  --accent-blue: #2c5282;
+  --accent-amd: #c53030;
   --border: #404040;
 
   /* Custom Component Colors */
@@ -14,20 +14,20 @@
   --border-medium: #555;
   --shadow-color-light: rgba(0, 0, 0, 0.1);
   --shadow-color-medium: rgba(0, 0, 0, 0.15);
-  --btn-primary-bg: #4444ff;
-  --code-bg-purple: #510370;
+  --btn-primary-bg: #2c5282;
+  --code-bg-purple: #2d3748;
   --code-bg-highlight: rgba(0, 0, 0, 0.3);
   --code-text-highlight: #68d391;
   --table-row-alt-bg: #3a3a3d;
-  --cta-gradient-start: #667eea;
-  --cta-gradient-end: #764ba2;
+  --cta-gradient-start: #2c5282;
+  --cta-gradient-end: #1a365d;
 }
 
 /* === Mobile-First Basis-Styles === */
 body {
-  font-family: "Arial", Verdana, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: "Segoe UI", "Arial", Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
   padding: 10px;
   margin: 0;
   background: var(--bg-primary);
@@ -41,13 +41,19 @@ a, a:visited {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
-  margin-top: 1.2em;
-  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  font-weight: 600;
 }
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.4em; }
-h4 { font-size: 1.2em; }
+h1 {
+  font-size: 2.2em;
+  margin-top: 0.5em;
+  border-bottom: 2px solid var(--accent-blue);
+  padding-bottom: 0.3em;
+}
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.3em; }
 
 .wikidoc {
   width: 100%;
@@ -71,7 +77,7 @@ pre, code, .wikidoc pre, .wikidoc code {
 
 table, th, td {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   border: 1px solid var(--border);
   border-collapse: collapse;
   background: var(--bg-secondary);
@@ -82,12 +88,14 @@ table, th, td {
 th {
   background: var(--bg-accent);
   color: var(--text-primary);
-  padding: 8px 4px;
+  padding: 12px 8px;
+  font-weight: 600;
+  text-align: left;
 }
 td {
   background: var(--bg-secondary);
   color: var(--text-secondary);
-  padding: 8px 4px;
+  padding: 10px 8px;
 }
 
 a[style*="background: #ff4444"] {
@@ -341,13 +349,26 @@ iframe, embed, object {
 .btn-primary {
   background: var(--btn-primary-bg);
   padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background: #3182ce;
 }
 .btn-large {
   padding: 15px 30px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
   margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-large:hover {
+  background: #3182ce;
 }
 
 /* Code Blocks */
@@ -389,13 +410,21 @@ iframe, embed, object {
 .cta-box {
   text-align: center;
   margin: 40px 0;
-  background: linear-gradient(135deg, var(--cta-gradient-start) 0%, var(--cta-gradient-end) 100%);
+  background: var(--bg-secondary);
   color: var(--text-primary);
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cta-box h3 {
+  color: var(--text-primary);
+  margin-top: 0;
+  border-bottom: none;
+  font-size: 1.6em;
 }
 .cta-box p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 15px 0;
   color: var(--text-primary);
 }
@@ -426,5 +455,7 @@ iframe, embed, object {
   text-align: center;
   color: var(--text-secondary);
   font-size: 14px;
-  margin-top: 40px;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
 }
