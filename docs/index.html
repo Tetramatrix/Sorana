@@ -89,21 +89,11 @@
     <h1>🚀 Sorana</h1>
     <h3>🧠 The Intelligent Visual Workspace 🎯</h3>
     <p>
-        <img src="logo_ai.png" alt="Sorana Logo" class="logo">
+        <img src="logo_small.png" alt="Sorana Logo" class="logo">
     </p>
 
     <p>
         <strong>🔥 Sorana transforms your digital workspace into an intelligent, visual environment where your data is understood, organized, and actionable. 💪</strong>
-    </p>
-
-    <p>
-        <img src="desktop_clutter.png" alt="Digital Chaos Example" class="screenshot">
-        <br><em>Digital chaos before using Sorana – files and data scattered everywhere!</em>
-    </p>
-    <p>Your digital workspace should be an engine for creativity, not just a warehouse for files. Traditional file managers fail to provide meaningful organization and automation.</p>
-    <p>
-        <img src="desktop_clean.png" alt="Organized Workspace After Sorana" class="screenshot">
-        <br><em>Intelligent visual workspace after Sorana – AI organizes and connects your digital world!</em>
     </p>
     <p>
         Sorana combines spatial AI organization with no-code agent orchestration to bring clarity and automation to your digital projects. Chat with your documents, visualize folder structures, and build intelligent workflows without writing code.
@@ -125,8 +115,8 @@
     -->
     
     <p>
-        <img src="main.png" alt="Aicono Main Window" class="logo">
-        <br><em>Aicono's main window – control your desktop organization with ease!</em>
+        <img src="main.png" alt="Sorana Main Window" class="logo">
+        <br><em>Sorana's main window – organize your files with ease!</em>
     </p>
   
     <!-- Google Ads - Top Banner -->
@@ -196,51 +186,20 @@
     <h2>🧠 AI: How It Works, Fine-Tuning & Manual Fallback</h2>
     <h3>Why are my results "hit-or-miss"?</h3>
     <p>
-        Aicono uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can connect larger or custom models for improved accuracy, but this may require more system resources.
+        Sorana uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can connect larger or custom models for improved accuracy, but this may require more system resources.
     </p>
     <ul>
         <li><strong>Offline & Free (Default):</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes mislabel complex icons as "Miscellaneous."</li>
-        <li><strong>Custom Models:</strong> For improved results, Aicono can connect to local services (like <strong>Ollama</strong> or <strong>Llama</strong>), OpenAI-compatible servers, or download larger models from Hugging Face.</li>
+        <li><strong>Custom Models:</strong> For improved results, Sorana can connect to local services (like <strong>Ollama</strong> or <strong>Llama</strong>), OpenAI-compatible servers, or download larger models from Hugging Face.</li>
     </ul>
     <p>
         <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power.
     </p>
     <h3>Manual Fine-Tuning & Fallback</h3>
     <p>
-        If the AI does not classify an icon as desired, or if no model is available, you can adjust the results manually:
+        If the AI does not classify an icon as desired, or if no model is available, you can adjust the results manually using intiutive drag and drap and rename groups. 
     </p>
-    <ol>
-        <li><strong>Fine-tune AI results:</strong> After each run, Aicono saves the grouping in <code>icon_groups_cache.json</code>. You can edit this file to move icons between groups. Your changes will be used until you clear the cache.</li>
-        <li><strong>Manual fallback:</strong> If no AI is available, you can create <code>icon_groups_cache.json</code> from scratch and define all groups manually. The app will use your structure.</li>
-    </ol>
-    <h4>File Structure (<code>icon_groups_cache.json</code>)</h4>
-    <p>
-        The file must be saved as JSON with the following structure:
-    </p>
-    <pre class="code-block-json"><code>{
-  "names_hash": "your_unique_hash_here",
-  "model_name": "manual_configuration",
-  "groups": [
-    {
-      "name": "Group Name 1",
-      "items": [
-        "Application1.exe",
-        "Script1.bat",
-        "Tool1"
-      ]
-    },
-    {
-      "name": "Group Name 2",
-      "items": [
-        "Application2.exe",
-        "Tool2",
-        "Utility2"
-      ]
-    }
-  ],
-  "timestamp": 1726404000.0
-}</code></pre>
-
+ 
     <h2>🌟 Why Sorana Stands Out</h2>
     <p>Sorana goes beyond traditional file managers with 🧠 AI intelligence for effortless digital organization and automation!</p>
 
@@ -316,66 +275,7 @@
 
     <p>
 
-<h2>💡 Pro-Tips for a Perfect Layout 💡</h2>
-<p>
-    Aicono is a powerful tool with many controls. Like any good tool, it's designed to give <em>you</em> the power to find your own perfect, individual result. Here are two key tips to get started.
-</p>
 
-<h3>1. ⚠️ REQUIRED: Disable Windows "Auto-Arrange"</h3>
-<p>
-    Aicono needs full control to move your icons. If Windows is also trying to manage them, your layout will break or won't apply correctly.
-</p>
-<p>
-    <strong>To check this:</strong> Right-click your Desktop > go to "View" > and make sure <strong>"Auto-arrange icons"</strong> is <strong>UNCHECKED</strong>. ✅
-</p>
-
-<h3>2. 📐 Balancing Your Working Area and Layout Controls</h3>
-<p>
-    Think of the <strong>"Working Area"</strong> as a "sandbox" 🖼️ or a "fence" to contain your icons. Its only job is to ensure icons don't go outside the boundaries you set.
-</p>
-<p>
-    All the other controls 🎛️—like <strong>"Grid Density"</strong>, <strong>"Gaps"</strong>, and <strong>"Spacing"</strong>—determine how your icon groups will fit <em>inside</em> that sandbox.
-</p>
-<p>
-    There is no single "right" setting! The best layout is a balance between the size of your sandbox and the layout controls you choose. If things look cramped 😖, try giving them more room (a larger area ↔️) or tightening up the spacing (a smaller gap ↕️).
-</p>
-<p>
-    <strong>We encourage you to experiment! 🎨</strong> That's what the instant <strong>WYSIWYG</strong> (What You See Is What You Get) preview is for. Adjust any slider and watch your layout change in real-time.
-</p>
-
-<h2>🛠️ Manual Configuration &amp; Fine-Tuning (Fallback)</h2>
-    <p>This section explains how to use the <code>icon_groups_cache.json</code> file. This file has two primary purposes:</p>
-    <ol>
-        <li><strong>Fine-Tuning AI Results (Most Common Use):</strong> After the AI runs, it saves its results to this file. If the AI miscategorizes an icon (e.g., puts <em>Steam</em> in <em>Work</em>), you can simply open <code>icon_groups_cache.json</code> and move the item from the <em>Work</em> group to the <em>Games</em> group. Aicono will use your corrected file from then on (until you click <code>Clear Cache &amp; Reload</code>).</li>
-        <li><strong>Complete Manual Fallback:</strong> If you have no AI model configured or are offline, you can create this file from scratch to define all your groups manually. The rest of this guide explains the file structure for this purpose.</li>
-    </ol>
-
-    <h3>File Structure</h3>
-    <p>The configuration file must be saved as a JSON file named <code>icon_groups_cache.json</code> with the following structure:</p>
-
-    <pre class="code-block-json"><code>{
-  "names_hash": "your_unique_hash_here",
-  "model_name": "manual_configuration",
-  "groups": [
-    {
-      "name": "Group Name 1",
-      "items": [
-        "Application1.exe",
-        "Script1.bat",
-        "Tool1"
-      ]
-    },
-    {
-      "name": "Group Name 2",
-      "items": [
-        "Application2.exe",
-        "Tool2",
-        "Utility2"
-      ]
-    }
-  ],
-  "timestamp": 1726404000.0
-}</code></pre>
     <!-- Final Download Section -->
     <div class="cta-box">
         <h3>🚀 Transform Your Digital Workspace Today! 🚀</h3>
