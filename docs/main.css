@@ -36,7 +36,7 @@ body {
 }
 
 a, a:visited {
-  color: var(--accent-blue);
+  color: #64b5f6; /* Lighter blue for better contrast */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +68,7 @@ h4 { font-size: 1.3em; }
 
 pre, code, .wikidoc pre, .wikidoc code {
   background: var(--bg-secondary);
-  color: var(--accent-blue);
+  color: #e0e0e0; /* Lighter text for better contrast */
   border-radius: 5px;
   font-size: 13px;
   white-space: pre-wrap;
@@ -373,17 +373,19 @@ iframe, embed, object {
 
 /* Code Blocks */
 .code-block-md5 {
-  background: var(--code-bg-purple);
+  background: var(--bg-secondary);
+  color: #e0e0e0;
   padding: 10px;
   border-radius: 5px;
 }
 .code-block-md5-highlight {
-  background: var(--code-bg-highlight);
-  color: var(--code-text-highlight);
+  background: var(--bg-secondary);
+  color: #e0e0e0;
   padding: 15px;
   border-radius: 8px;
   margin-top: 20px;
   text-align: left;
+  border: 1px solid var(--border);
 }
 
 /* Feature Comparison Table */
