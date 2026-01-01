@@ -21,6 +21,9 @@ Sorana provides an intelligent, visual environment where your data is understood
 
 Website: http://tetramatrix.github.io/Sorana
 
+Discord: https://discord.gg/RDSbYdyT
+
+
 ### Downloads:
 - Latest version: Sorana.exe v1.0.0
 - MD5 Checksum (.exe): 
