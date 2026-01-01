@@ -339,6 +339,7 @@ iframe, embed, object {
 }
 .right-sidebar-ad-container {
   margin-top: 20px;
+  height: 600px;
 }
 
 /* Ads */
