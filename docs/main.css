@@ -143,10 +143,13 @@ iframe, embed, object {
 .responsive-iframe-container {
   position: relative;
   width: 100%;
+  max-width: 1000px; /* Allow container to be larger than wikidoc max-width */
   padding-bottom: 91.23%; /* 1040/1140 = 0.9123 (aspect ratio) */
   height: 0;
   overflow: hidden;
-  margin: 20px 0;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .responsive-iframe-container iframe {
