@@ -139,6 +139,25 @@ iframe, embed, object {
   height: auto;
 }
 
+/* Responsive iframe container for maintaining aspect ratio */
+.responsive-iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 91.23%; /* 1040/1140 = 0.9123 (aspect ratio) */
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.responsive-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Sidebars und Fixed-Elemente auf Mobile ausblenden */
 /* Standardmäßig: Sidebars ausblenden (Mobile-First) */
 /* Sidebars und Fixed-Nav werden nur auf kleinen Bildschirmen ausgeblendet */
