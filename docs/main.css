@@ -315,10 +315,18 @@ iframe, embed, object {
     right: 0;
   }
 
-  /* When right sidebar is fixed, it leaves the grid. Redefine the grid to 2 columns
-     and add padding to the body to avoid content overlapping the fixed sidebar. */
+  .left {
+    /* On large screens, make the left sidebar 'sticky' */
+    position: fixed;
+    top: 0px;
+    left: 0;
+  }
+
+  /* When both sidebars are fixed, they leave the grid. Redefine the grid to 1 column
+     and add padding to the body to avoid content overlapping the fixed sidebars. */
   body {
-    grid-template-columns: var(--left-sidebar-width) 1fr;
+    grid-template-columns: 1fr;
+    padding-left: calc(var(--left-sidebar-width) + var(--content-gutter));
     padding-right: calc(var(--right-sidebar-width) + var(--content-gutter));
   }
 }
