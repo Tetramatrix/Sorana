@@ -23,6 +23,54 @@
   --cta-gradient-end: #1a365d;
 }
 
+/* Animation Keyframes */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /* === Mobile-First Basis-Styles === */
 body {
   font-family: "Segoe UI", "Arial", Verdana, sans-serif;
@@ -30,13 +78,22 @@ body {
   line-height: 1.6;
   padding: 10px;
   margin: 0;
-  background: var(--bg-primary);
+  background: linear-gradient(-45deg, #1e1e1e, #2d2d30, #1a365d, #1e1e1e);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: var(--text-primary);
   overflow-x: hidden;
 }
 
 a, a:visited {
   color: #64b5f6; /* Lighter blue for better contrast */
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: #90caf9;
+  transform: translateY(-2px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,6 +101,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em;
   margin-bottom: 0.6em;
   font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
 }
 h1 {
   font-size: 2.2em;
@@ -73,6 +133,11 @@ pre, code, .wikidoc pre, .wikidoc code {
   font-size: 13px;
   white-space: pre-wrap;
   word-break: break-word;
+  transition: background-color 0.3s ease;
+}
+
+pre:hover, code:hover, .wikidoc pre:hover, .wikidoc code:hover {
+  background: var(--code-bg-highlight);
 }
 
 table, th, td {
@@ -133,10 +198,20 @@ img {
   height: auto !important;
   display: block;
   margin: 10px auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 iframe, embed, object {
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+iframe:hover, embed:hover, object:hover {
+  transform: scale(1.02);
 }
 
 /* Responsive iframe container for maintaining aspect ratio */
@@ -358,6 +433,12 @@ iframe, embed, object {
   max-width: 200px;
   border-radius: 10px;
   margin: 20px auto;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 .screenshot {
   border: 1px solid var(--border-light); /* Dark theme friendly border */
@@ -405,7 +486,16 @@ iframe, embed, object {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease;
 }
 .btn-primary:hover {
   background: #3182ce;
@@ -418,7 +508,16 @@ iframe, embed, object {
   margin: 10px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-large:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease;
 }
 .btn-large:hover {
   background: #3182ce;
@@ -451,6 +550,12 @@ iframe, embed, object {
   padding: 12px;
   border: 1px solid var(--border);
   width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.feature-table tr:hover td {
+  background: var(--table-row-alt-bg);
+  color: var(--text-primary);
 }
 .feature-table td {
   background: var(--bg-secondary);
@@ -471,6 +576,12 @@ iframe, embed, object {
   border-radius: 8px;
   border: 1px solid var(--border);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .cta-box h3 {
   color: var(--text-primary);

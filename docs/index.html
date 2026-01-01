@@ -147,7 +147,7 @@
     <ul>
         <li><strong>Spatial AI Organization:</strong> Sorana uses AI to semantically group your assets and arranges them on an intelligent 2D canvas, providing an intuitive, bird's-eye view of your projects.</li>
         <li><strong>WYSIWYG Canvas Editor:</strong> Directly manipulate your workspace. Drag and drop files between groups, create new categories on the fly, rename items, and resize group boundaries with intuitive mouse controls.</li>
-        <li><strong>Advanced Model Management:</strong> Connect to multiple cloud and local LLM backends including OpenAI, Mistral, Ollama, and Lemonade. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.</li>
+        <li><strong>Advanced Model Management:</strong> Connect to multiple cloud and local LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.</li>
         <li><strong>No-Code Agent Orchestration:</strong> Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.</li>
         <li><strong>Contextual Document Chat:</strong> Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.</li>
         <li><strong>Dynamic Structure Mapping:</strong> Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.</li>
@@ -181,8 +181,14 @@
         Sorana uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can connect larger or custom models for improved accuracy, but this may require more system resources.
     </p>
     <ul>
-        <li><strong>Offline & Free (Default):</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes mislabel complex icons as "Miscellaneous."</li>
-        <li><strong>Custom Models:</strong> For improved results, Sorana can connect to local services (like <strong>Ollama</strong> or <strong>Llama</strong>), OpenAI-compatible servers, or download larger models from Hugging Face.</li>
+        <li><strong>Offline & Free (Default):</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes mislabel complex icons, files or folders as "Miscellaneous."</li>
+        <li><strong>Multi-Service AI Integration:</strong> Sorana supports seamless connection to both local and cloud-based AI services:
+          <ul>
+            <li><strong>Local Services:</strong> Ollama, Llamacpp, and other self-hosted LLM solutions</li>
+            <li><strong>Cloud Services:</strong> OpenAI, Mistral, Lemonade, and other cloud-based AI platforms</li>
+            <li><strong>Flexible Configuration:</strong> Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations</li>
+          </ul>
+        </li>
     </ul>
     <p>
         <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power.
