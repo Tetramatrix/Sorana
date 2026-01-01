@@ -143,13 +143,35 @@ iframe, embed, object {
 .responsive-iframe-container {
   position: relative;
   width: 100%;
-  max-width: 1000px; /* Allow container to be larger than wikidoc max-width */
+  max-width: 1140px; /* Match original video width */
   padding-bottom: 91.23%; /* 1040/1140 = 0.9123 (aspect ratio) */
   height: 0;
   overflow: hidden;
-  margin: 30px auto;
+  margin: 40px auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Video section styling */
+.video-section {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* Make the container break out of wikidoc constraints for more prominent display */
+.wikidoc .responsive-iframe-container {
+  width: calc(100% + 60px);
+  max-width: 1140px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.video-caption {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  text-align: center;
 }
 
 .responsive-iframe-container iframe {
