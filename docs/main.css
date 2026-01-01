@@ -335,7 +335,7 @@ iframe, embed, object {
 
 /* Sidebar Spacing */
 .left-sidebar-ad-spacing {
-  padding-top: 10px;
+  margin-top: 20px;
 }
 .right-sidebar-ad-container {
   margin-top: 20px;
