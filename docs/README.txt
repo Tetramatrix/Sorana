@@ -15,7 +15,7 @@ Sorana provides an intelligent, visual environment where your data is understood
 - **No-Code Agent Orchestration**: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
 - **Contextual Document Chat**: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
 - **Dynamic Structure Mapping**: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
-- **Portable**: Run AI models on-prem (Llama, Ollama) or connect to the cloud. Sorana is fully portable and designed to keep your data under your control.
+- **Portable**: The application is portable and keeps data under user control.
 
 ### Quick Start
 
