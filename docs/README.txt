@@ -4,9 +4,10 @@ Sorana provides an intelligent, visual environment where your data is understood
 
 ### Key Features
 
-- **Spatial AI Organization**: Sorana uses AI to semantically group your assets and arranges them on an intelligent 2D canvas, providing an intuitive, bird's-eye view of your projects.
-- **WYSIWYG Canvas Editor**: Directly manipulate your workspace. Drag and drop files between groups, create new categories on the fly, rename items, and resize group boundaries with intuitive mouse controls.
+- **Spatial AI Organization**: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects..
+- **WYSIWYG Canvas Editor**: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
 - **Advanced Model Management**: Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
+
 - **Multi-Service AI Integration**: Sorana supports seamless connection to both on-prem and cloud-based AI services:
   - **On-Prem Services**: Ollama, Llamacpp, and other self-hosted LLM solutions
   - **Cloud Services**: OpenAI, Mistral, Lemonade, and other cloud-based AI platforms
@@ -14,7 +15,7 @@ Sorana provides an intelligent, visual environment where your data is understood
 - **No-Code Agent Orchestration**: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
 - **Contextual Document Chat**: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
 - **Dynamic Structure Mapping**: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
-- **On-Prem & Portable**: Run AI models on-prem (Llama, Ollama) or connect to the cloud. Sorana is fully portable and designed to keep your data under your control.
+- **Portable**: Run AI models on-prem (Llama, Ollama) or connect to the cloud. Sorana is fully portable and designed to keep your data under your control.
 
 ### Quick Start
 
