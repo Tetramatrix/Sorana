@@ -4,7 +4,7 @@ Sorana is an AI-powered visual workspace that transforms how you organize and in
 
 ### Key Features
 
-- **Spatial AI Organization**: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects..
+- **Spatial AI Organization**: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
 - **WYSIWYG Canvas Editor**: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
 - **Advanced Model Management**: Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
 
