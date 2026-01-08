@@ -6,27 +6,55 @@ Sorana provides an intelligent, visual environment where your data is understood
 
 - **Spatial AI Organization**: Sorana uses AI to semantically group your assets and arranges them on an intelligent 2D canvas, providing an intuitive, bird's-eye view of your projects.
 - **WYSIWYG Canvas Editor**: Directly manipulate your workspace. Drag and drop files between groups, create new categories on the fly, rename items, and resize group boundaries with intuitive mouse controls.
-- **Advanced Model Management**: Connect to multiple cloud and local LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
-
-- **Multi-Service AI Integration**: Sorana supports seamless connection to both local and cloud-based AI services:
-  - **Local Services**: Ollama, Llamacpp, and other self-hosted LLM solutions
+- **Advanced Model Management**: Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
+- **Multi-Service AI Integration**: Sorana supports seamless connection to both on-prem and cloud-based AI services:
+  - **On-Prem Services**: Ollama, Llamacpp, and other self-hosted LLM solutions
   - **Cloud Services**: OpenAI, Mistral, Lemonade, and other cloud-based AI platforms
   - **Flexible Configuration**: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
 - **No-Code Agent Orchestration**: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
 - **Contextual Document Chat**: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
 - **Dynamic Structure Mapping**: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
-- **Private & Portable**: Run AI models locally (Llama, Ollama) or connect to the cloud. Sorana is fully portable and designed to keep your data under your control.
+- **On-Prem & Portable**: Run AI models on-prem (Llama, Ollama) or connect to the cloud. Sorana is fully portable and designed to keep your data under your control.
 
 ### Quick Start
 
 - Download the portable archive, extract anywhere, and run Sorana.exe.
 - Optional: Open the settings to configure AI models and workspace preferences.
 
+### System Requirements
+
+- **Operating System**: Windows 11 (64-bit)
+- **AI Support**: Built-in models or on-prem/remote AI services
+- **RAM**: Minimum 4 GB
+- **Storage**: Minimum 2 GB (application + model)
+- **Permissions**: Standard user account
+
 ### Installation & Setup
 
 Website: http://tetramatrix.github.io/Sorana
 
 Discord: https://discord.gg/RDSbYdyT
+
+### Visual Workspace Features
+
+- **Spatial AI Organization**: AI automatically groups and arranges files on a 2D canvas for intuitive project visualization
+- **Interactive Canvas**: Drag and drop files, create categories, rename items, and adjust group boundaries directly on the canvas
+- **Visual Connections**: Create connections between agents and documents using visual arrows and interfaces
+- **Mind Map Generation**: Generate visual representations of folder hierarchies to understand relationships and structure
+
+### AI Model Configuration
+
+- **Built-in Models**: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous".
+- **Performance Notes**: From 8b parameters, decent results can be expected; Llama 3.1 8b Instruct is recommended
+- **Accuracy Considerations**: May sometimes classify complex files as "Miscellaneous"; connect larger, on-prem or cloud models for improved accuracy
+- **Processing Time**: Varies based on folder size and available hardware
+
+### Connecting Agents
+
+To connect agents in Sorana:
+- Hold **CTRL+ALT** and click on an Agent title to get a green arrow
+- Point the green arrow to the parent agent to establish the connection
+- This creates a pipeline where agents can pass insights and collaborate on complex tasks
 
 
 ### Downloads:
