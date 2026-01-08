@@ -568,7 +568,6 @@ iframe:hover, embed:hover, object:hover {
 
 /* Call to Action Box */
 .cta-box {
-  text-align: center;
   margin: 40px 0;
   background: var(--bg-secondary);
   color: var(--text-primary);
@@ -588,11 +587,17 @@ iframe:hover, embed:hover, object:hover {
   margin-top: 0;
   border-bottom: none;
   font-size: 1.6em;
+  text-align: left;
 }
 .cta-box p {
   font-size: 16px;
   margin: 15px 0;
   color: var(--text-primary);
+  text-align: left;
+}
+.cta-box ul, .cta-box ol {
+  text-align: left;
+  padding-left: 20px;
 }
 
 /* Donations & Embeds */
