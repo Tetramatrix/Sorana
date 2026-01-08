@@ -1,6 +1,6 @@
 # Sorana - The AI Visual Workspace
 
-Sorana provides an intelligent, visual environment where your data is understood, organized, and actionable. It combines spatial AI organization with no-code agent orchestration to bring clarity and automation to your digital projects. Interact with your documents, visualize folder structures, and build intelligent workflows without writing code.
+Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, Ollama), and keep your data under your control.
 
 ### Key Features
 
