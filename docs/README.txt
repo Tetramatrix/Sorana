@@ -55,12 +55,12 @@ Discord: https://discord.gg/RDSbYdyT
 To connect agents in Sorana:
 - Hold **CTRL+ALT** and click on an Agent title to get a green arrow
 - Point the green arrow to the parent agent to establish the connection
+- In the child Agent configuration, enable 'Auto' (puts agent in orchestration mode to receive instructions from parent agent) and 'Passthrough' (allows the agent to also pass documents).
 - This creates a pipeline where agents can pass insights and collaborate on complex tasks
-
 
 ### Downloads:
 - Latest version: Sorana.exe v1.0.0
-- MD5 Checksum (.exe): 
+- MD5 Checksum (.exe): f05363d29bda44df30d83f34139b7fb4
 - Download: http://tetramatrix.github.io/Sorana
 
 
