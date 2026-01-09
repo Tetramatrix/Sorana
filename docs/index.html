@@ -51,7 +51,7 @@ function smartScrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
         const rect = targetElement.getBoundingClientRect();
-        const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
 
         if (isInViewport) {
             // Wenn das Element bereits sichtbar ist, zentriere es
@@ -139,6 +139,8 @@ function smartScrollToSection(targetId) {
         <!-- Download Section -->
         <section class="download-section">
             <div class="cta-box">
+                <span class="nav-arrow-down" onclick="smartScrollToSection('#core-capabilities')">⬇️</span>
+                <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-sorana')">⬆️</span>
                 <h3>Download Sorana</h3>
                 <p>Get started with your intelligent workspace.</p>
 
@@ -576,8 +578,8 @@ function smartScrollToSection(targetId) {
         </div>
 
         <div class="cta-box" id="aicono-product">
-            <span class="nav-arrow-down" onclick="window.location.href='#what-is-sorana'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#aicono-alternative'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#what-is-sorana')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-alternative')">⬆️</span>
             <h4>Featured on Product Hunt</h4>
             <figure class="store-fig">
                 <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank">
@@ -636,7 +638,7 @@ function smartScrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
         const rect = targetElement.getBoundingClientRect();
-        const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
 
         if (isInViewport) {
             // Wenn das Element bereits sichtbar ist, zentriere es
