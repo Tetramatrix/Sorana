@@ -45,10 +45,10 @@ Discord: https://discord.gg/RDSbYdyT
 
 ### AI Model Configuration
 
-- **Built-in Models**: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous".
-- **Performance Notes**: From 8b parameters, decent results can be expected; Llama 3.1 8b Instruct is recommended
+- **Built-in Models**: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.
+- **Performance Notes**: For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
 - **Accuracy Considerations**: May sometimes classify complex files as "Miscellaneous"; connect larger, on-prem or cloud models for improved accuracy
-- **Processing Time**: Varies based on folder size and available hardware
+- **Processing Time**: Varies based on folder size and available hardware. Processing time is directly proportional to the number of files - fewer files result in faster processing.
 
 ### Connecting Agents
 
