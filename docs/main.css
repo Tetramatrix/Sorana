@@ -189,6 +189,37 @@ td {
   padding: 10px 8px;
 }
 
+/* Special styling for requirements table */
+.req-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.req-table th, .req-table td {
+  padding: 12px;
+  border: 1px solid var(--border);
+  transition: background-color 0.3s ease;
+}
+
+.req-table th {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.req-table tr:nth-child(even) {
+  background: rgba(74, 85, 104, 0.2);
+}
+
+.req-table tr:hover {
+  background: rgba(76, 175, 80, 0.15);
+}
+
 a[style*="background: #ff4444"] {
   background: var(--accent-amd) !important;
   color: var(--text-primary) !important;
@@ -777,6 +808,78 @@ figcaption {
 .embed-iframe {
   max-width: 100%;
   border: none;
+}
+
+/* Horizontal Table of Contents Navigation */
+.horizontal-toc-nav {
+  background: rgba(45, 45, 48, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  margin: 20px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.horizontal-toc-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.horizontal-toc-nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+.horizontal-toc-nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.horizontal-toc-nav a:hover {
+  background: rgba(76, 175, 80, 0.2);
+  color: #64b5f6;
+  transform: translateY(-2px);
+}
+
+/* Navigation arrows in headings */
+.nav-arrow {
+  font-size: 1em;
+  text-decoration: none;
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.2);
+  color: #64b5f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .horizontal-toc-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-toc-nav a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Footer */
