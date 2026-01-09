@@ -524,17 +524,51 @@ iframe:hover, embed:hover, object:hover {
   }
 }
 
-/* === Sehr kleine Desktop-Bildschirme mit optionalem Werbeausblenden (zwischen 769px und 900px) === */
-@media screen and (min-width: 769px) and (max-width: 900px) {
+/* === Nur linke Spalte ausblenden bei mittlerer Bildschirmbreite (zwischen 769px und 950px) === */
+@media screen and (min-width: 769px) and (max-width: 950px) {
   :root {
     --left-sidebar-width: 0px;
-    --right-sidebar-width: 0px;
-    --content-gutter: 0px;
   }
 
   body {
-    grid-template-columns: 1fr;
-    padding: 0 10px;
+    grid-template-columns: minmax(var(--left-sidebar-width), 0fr) minmax(350px, 1.5fr) minmax(var(--right-sidebar-width), 1fr);
+  }
+
+  .left {
+    display: none;
+  }
+
+  .wikidoc {
+    max-width: 850px;
+    min-width: 350px;
+  }
+
+  h1 {
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+/* === Nur rechte Spalte ausblenden bei kleinerer Bildschirmbreite (zwischen 769px und 850px) === */
+@media screen and (min-width: 769px) and (max-width: 850px) {
+  :root {
+    --left-sidebar-width: 0px;
+    --right-sidebar-width: 0px;
+  }
+
+  body {
+    grid-template-columns: minmax(var(--left-sidebar-width), 0fr) minmax(320px, 2fr) minmax(var(--right-sidebar-width), 0fr);
   }
 
   .left, .right {
