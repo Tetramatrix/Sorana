@@ -172,20 +172,19 @@ table, th, td {
   font-size: 14px;
   border: 1px solid var(--border);
   border-collapse: collapse;
-  background: var(--bg-secondary);
   color: var(--text-primary);
   word-break: break-word;
   hyphens: auto;
 }
 th {
-  background: var(--bg-accent);
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
   color: var(--text-primary);
   padding: 12px 8px;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
 }
 td {
-  background: var(--bg-secondary);
+  background: rgba(45, 45, 48, 0.7);
   color: var(--text-secondary);
   padding: 10px 8px;
 }
@@ -559,6 +558,14 @@ iframe:hover, embed:hover, object:hover {
   margin: 20px 0;
 }
 
+/* Ensure consistent button heights */
+.download-buttons .btn {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Code Blocks */
 .code-block-md5 {
   background: var(--bg-secondary);
@@ -581,6 +588,9 @@ iframe:hover, embed:hover, object:hover {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .feature-table th, .feature-table td {
   padding: 12px;
@@ -589,16 +599,23 @@ iframe:hover, embed:hover, object:hover {
   transition: background-color 0.3s ease;
 }
 
+.feature-table th {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
 .feature-table tr:hover td {
-  background: var(--table-row-alt-bg);
+  background: rgba(76, 175, 80, 0.15);
   color: var(--text-primary);
 }
 .feature-table td {
-  background: var(--bg-secondary);
+  background: rgba(45, 45, 48, 0.7);
   color: var(--text-secondary);
 }
 .feature-table .row-alt td {
-  background: var(--table-row-alt-bg); /* Slightly lighter than bg-secondary */
+  background: rgba(41, 98, 134, 0.3); /* More vibrant blue tint */
   color: var(--text-primary);
 }
 
