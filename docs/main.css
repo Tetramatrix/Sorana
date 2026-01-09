@@ -21,6 +21,10 @@
   --table-row-alt-bg: #3a3a3d;
   --cta-gradient-start: #2c5282;
   --cta-gradient-end: #1a365d;
+
+  /* Section spacing */
+  --section-margin: 40px 0;
+  --subsection-margin: 30px 0;
 }
 
 /* Animation Keyframes */
@@ -546,6 +550,15 @@ iframe:hover, embed:hover, object:hover {
   background: #3182ce;
 }
 
+/* Download buttons container */
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
 /* Code Blocks */
 .code-block-md5 {
   background: var(--bg-secondary);
@@ -640,14 +653,92 @@ iframe:hover, embed:hover, object:hover {
   margin: 15px 0;
 }
 
-/* Donations & Embeds */
+/* Semantic Elements */
+section {
+  margin: var(--section-margin);
+}
+
+article {
+  margin: var(--subsection-margin);
+}
+
+figure {
+  margin: 20px auto;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Specific section styles */
+.intro-section,
+.capabilities-section,
+.users-section,
+.operation-section,
+.technical-section,
+.ocr-section,
+.comparison-section,
+.setup-section,
+.requirements-section,
+.final-download-section,
+.support-section,
+.other-products-section {
+  margin: var(--section-margin);
+  padding: 0 10px; /* Consistent horizontal padding */
+}
+
+/* Product sections */
+.product-section {
+  margin: var(--subsection-margin);
+  padding: 20px 0;
+}
+
+.product-fig {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.store-fig {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Payment options */
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.paypal-option,
+.bch-option {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.qr-figure {
+  display: inline-block;
+  margin: 10px;
+}
+
 .qr-code {
   width: 130px;
   height: 130px;
   vertical-align: middle;
-  margin-left: 10px;
+  margin: 10px;
   display: inline-block;
 }
+
+/* Donations & Embeds */
 .embed-container {
   text-align: center;
   margin-top: 40px;
@@ -662,11 +753,16 @@ iframe:hover, embed:hover, object:hover {
 }
 
 /* Footer */
+.main-footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
 .footer-text {
   text-align: center;
   color: var(--text-secondary);
   font-size: 14px;
-  margin-top: 60px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border);
+  margin: 0;
 }
