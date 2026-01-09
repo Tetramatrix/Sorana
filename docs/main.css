@@ -141,9 +141,12 @@ h4 {
   padding: 15px;
   float: none;
   box-sizing: border-box;
-  background: var(--bg-secondary);
+  background: rgba(45, 45, 48, 0.6);
   color: var(--text-primary);
   clear: both;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 pre, code, .wikidoc pre, .wikidoc code {
