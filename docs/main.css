@@ -589,18 +589,32 @@ iframe:hover, embed:hover, object:hover {
 /* Call to Action Box */
 .cta-box {
   margin: 40px 0;
-  background: var(--bg-secondary);
+  background: rgba(45, 45, 48, 0.7);
   color: var(--text-primary);
   padding: 30px;
   border-radius: 8px;
   border: 1px solid var(--border);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
 }
 
 .cta-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-color: var(--accent-blue);
 }
 .cta-box h3 {
   color: var(--text-primary);
@@ -608,6 +622,8 @@ iframe:hover, embed:hover, object:hover {
   border-bottom: none;
   font-size: 1.6em;
   text-align: left;
+  margin-top: -10px; /* Adjust for the ::before element */
+  padding-top: 10px;
 }
 .cta-box p {
   font-size: 16px;
@@ -618,6 +634,7 @@ iframe:hover, embed:hover, object:hover {
 .cta-box ul, .cta-box ol {
   text-align: left;
   padding-left: 20px;
+  margin: 15px 0;
 }
 
 /* Donations & Embeds */
