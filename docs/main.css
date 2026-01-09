@@ -558,8 +558,18 @@ iframe:hover, embed:hover, object:hover {
   margin: 20px 0;
 }
 
+/* External links container */
+.external-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
 /* Ensure consistent button heights */
-.download-buttons .btn {
+.download-buttons .btn,
+.external-links .btn {
   min-height: 48px;
   display: flex;
   align-items: center;
