@@ -524,8 +524,8 @@ iframe:hover, embed:hover, object:hover {
   }
 }
 
-/* === Nur linke Spalte ausblenden bei mittlerer Bildschirmbreite (zwischen 769px und 950px) === */
-@media screen and (min-width: 769px) and (max-width: 950px) {
+/* === Nur linke Spalte ausblenden bei mittlerer Bildschirmbreite (zwischen 769px und 850px) === */
+@media screen and (min-width: 769px) and (max-width: 850px) {
   :root {
     --left-sidebar-width: 0px;
   }
@@ -539,48 +539,8 @@ iframe:hover, embed:hover, object:hover {
   }
 
   .wikidoc {
-    max-width: 850px;
+    max-width: 800px;
     min-width: 350px;
-  }
-
-  h1 {
-    font-size: 1.9em;
-  }
-
-  h2 {
-    font-size: 1.6em;
-  }
-
-  h3 {
-    font-size: 1.4em;
-  }
-
-  h4 {
-    font-size: 1.2em;
-  }
-}
-
-/* === Nur rechte Spalte ausblenden bei kleinerer Bildschirmbreite (zwischen 769px und 850px) === */
-@media screen and (min-width: 769px) and (max-width: 850px) {
-  :root {
-    --left-sidebar-width: 0px;
-    --right-sidebar-width: 0px;
-  }
-
-  body {
-    grid-template-columns: minmax(var(--left-sidebar-width), 0fr) minmax(320px, 2fr) minmax(var(--right-sidebar-width), 0fr);
-  }
-
-  .left, .right {
-    display: none;
-  }
-
-  .wikidoc {
-    max-width: 100%;
-    min-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px;
   }
 
   h1 {
@@ -597,6 +557,48 @@ iframe:hover, embed:hover, object:hover {
 
   h4 {
     font-size: 1.1em;
+  }
+}
+
+/* === Beide Spalten ausblenden bei kleinerer Bildschirmbreite (unter 850px) === */
+@media screen and (max-width: 849px) {
+  :root {
+    --left-sidebar-width: 0px;
+    --right-sidebar-width: 0px;
+    --content-gutter: 0px;
+  }
+
+  body {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .left, .right {
+    display: none;
+  }
+
+  .wikidoc {
+    max-width: 100%;
+    min-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.0em;
   }
 }
 
