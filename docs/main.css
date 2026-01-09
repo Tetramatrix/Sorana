@@ -104,16 +104,36 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.6s ease forwards;
+  position: relative;
+  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--accent-blue) 100%);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #64b5f6;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 h1 {
   font-size: 2.2em;
   margin-top: 0.5em;
-  border-bottom: 2px solid var(--accent-blue);
-  padding-bottom: 0.3em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-bottom: none;
+  border-left: 4px solid #68d391;
 }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.3em; }
+h2 {
+  font-size: 1.8em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+}
+h3 {
+  font-size: 1.5em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-left: 4px solid #f6e05e;
+}
+h4 {
+  font-size: 1.3em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-left: 4px solid #fc8181;
+}
 
 .wikidoc {
   width: 100%;
