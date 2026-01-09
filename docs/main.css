@@ -78,9 +78,9 @@ body {
   line-height: 1.6;
   padding: 10px;
   margin: 0;
-  background: linear-gradient(-45deg, #1e1e1e, #2d2d30, #1a365d, #1e1e1e);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 30%, #2c3e50 70%, #1a1a2e 100%);
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
   color: var(--text-primary);
   overflow-x: hidden;
 }
