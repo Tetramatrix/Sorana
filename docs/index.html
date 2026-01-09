@@ -213,6 +213,44 @@
     </p>
     </div>
 
+    <h3>Document OCR Capabilities</h3>
+    <div class="cta-box">
+    <p>
+        Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
+    </p>
+    <ul>
+        <li><strong>Text PDFs:</strong> Extract text from PDF documents (supports embedded text and OCR for scanned content)</li>
+        <li><strong>Plain Text Files:</strong> Process .txt files with support for:
+            <ul>
+                <li>UTF-8 (recommended for full Unicode support)</li>
+                <li>Latin-1 (ISO-8859-1) as fallback encoding</li>
+            </ul>
+        </li>
+        <li><strong>Code Files:</strong> OCR support for source code files including:
+            <ul>
+                <li>Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)</li>
+                <li>C# (.cs), PHP (.php), Ruby (.rb), Go (.go)</li>
+                <li>TypeScript (.ts), Swift (.swift), Kotlin (.kt)</li>
+                <li>And other common programming language files in UTF-8 or Latin-1 encoding</li>
+            </ul>
+        </li>
+        <li><strong>PDFs with Images:</strong> Built-in method for OCR processing of PDFs containing images</li>
+    </ul>
+
+    <h4>Requirements for PDF Image OCR</h4>
+    <p>
+        To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
+    </p>
+    <p>
+        Download Tesseract from: <a href="https://github.com/tesseract-ocr/tesseract" target="_blank">Tesseract OCR GitHub</a>
+    </p>
+
+    <h4>Encoding Support Notes</h4>
+    <p>
+        The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
+    </p>
+    </div>
+
     <h2>Feature Comparison</h2>
     <div class="cta-box">
     <p>Technical differences between Sorana and traditional file management approaches:</p>

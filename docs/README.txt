@@ -50,6 +50,31 @@ Discord: https://discord.gg/RDSbYdyT
 - **Accuracy Considerations**: May sometimes classify complex files as "Miscellaneous"; connect larger, on-prem or cloud models for improved accuracy
 - **Processing Time**: Varies based on folder size and available hardware. Processing time is directly proportional to the number of files - fewer files result in faster processing.
 
+### Document OCR
+
+Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
+
+- **Text PDFs**: Extract text from PDF documents (supports embedded text and OCR for scanned content)
+- **Plain Text Files**: Process .txt files with support for:
+  - UTF-8 (recommended for full Unicode support)
+  - Latin-1 (ISO-8859-1) as fallback encoding
+
+- **Code Files**: OCR support for source code files including:
+  - Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)
+  - C# (.cs), PHP (.php), Ruby (.rb), Go (.go)
+  - TypeScript (.ts), Swift (.swift), Kotlin (.kt)
+  - And other common programming language files in UTF-8 or Latin-1 encoding
+
+- **PDFs with Images**: Built-in method for OCR processing of PDFs containing images
+
+**Requirements for PDF Image OCR**:
+To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
+
+Download Tesseract from: https://github.com/tesseract-ocr/tesseract
+
+**Encoding Support Notes**:
+The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
+
 ### Connecting Agents
 
 To connect agents in Sorana:
