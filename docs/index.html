@@ -21,6 +21,55 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
+<script>
+function scrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        // Überprüfe, ob das Element bereits sichtbar ist
+        const rect = targetElement.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
+        if (isVisible && rect.top < window.innerHeight * 0.1) {
+            // Scrollen, sodass das Element in der Mitte des Viewports ist
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten normales Scrollen
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+// Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
+function smartScrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        const rect = targetElement.getBoundingClientRect();
+        const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        if (isInViewport) {
+            // Wenn das Element bereits sichtbar ist, zentriere es
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten scroll zum Anfang des Elements
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+</script>
+</body>
     <aside class="left">
         <nav class="fixed-nav">
             <!-- Google Ads - Left Sidebar -->
@@ -61,8 +110,8 @@
     <section class="intro-section" id="what-is-sorana">
         <h2>What is Sorana?</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#core-capabilities'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.scrollTo(0,0)">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#core-capabilities')">⬇️</span>
+            <span class="nav-arrow-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</span>
             <p>Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, LLamacpp, Lemonade, Ollama), and keep your data under your control.</p>
         </div>
 
@@ -109,8 +158,8 @@
         <section class="capabilities-section" id="core-capabilities">
             <h2>Core Capabilities</h2>
             <div class="cta-box">
-                <span class="nav-arrow-down" onclick="window.location.href='#intended-users'">⬇️</span>
-                <span class="nav-arrow-up" onclick="window.location.href='#what-is-sorana'">⬆️</span>
+                <span class="nav-arrow-down" onclick="smartScrollToSection('#intended-users')">⬇️</span>
+                <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-sorana')">⬆️</span>
                 <ul>
                     <li><strong>Spatial AI Organization:</strong> Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.</li>
                     <li><strong>WYSIWYG Canvas Editor:</strong> Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.</li>
@@ -136,8 +185,8 @@
     <section class="users-section" id="intended-users">
         <h2>Intended Users</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#operation'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#core-capabilities'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#operation')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#core-capabilities')">⬆️</span>
             <p>Sorana is designed for users who need to organize and analyze complex digital information:</p>
             <ul>
                 <li><strong>Developers:</strong> Organize codebases, document projects, and create automation workflows.</li>
@@ -155,8 +204,8 @@
     <section class="operation-section" id="operation">
         <h2>Operation</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#technical-implementation'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#intended-users'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#technical-implementation')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#intended-users')">⬆️</span>
             <p>The application functions through these steps:</p>
             <ol>
                 <li><strong>Connect</strong> folders and files to the workspace.</li>
@@ -176,8 +225,8 @@
     <section class="technical-section" id="technical-implementation">
         <h2>Technical Implementation</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#feature-comparison'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#operation'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#operation')">⬆️</span>
             <h3>AI Model Performance</h3>
             <p>
                 Sorana uses AI models to intelligently group files and folders based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify files perfectly, especially for less common file types. For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
@@ -250,8 +299,8 @@
     <section class="comparison-section" id="feature-comparison">
         <h2>Feature Comparison</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#installation-setup'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#technical-implementation'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#technical-implementation')">⬆️</span>
             <p>Technical differences between Sorana and traditional file management approaches:</p>
 
             <table class="feature-table">
@@ -301,8 +350,8 @@
     <section class="setup-section" id="installation-setup">
         <h2>Installation & Setup</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#system-requirements'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#feature-comparison'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#system-requirements')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#feature-comparison')">⬆️</span>
             <p>Basic installation steps:</p>
             <ol>
                 <li><strong>Download:</strong> Obtain <code>Sorana.exe</code>.</li>
@@ -315,8 +364,8 @@
     <section class="requirements-section" id="system-requirements">
         <h2>System Requirements</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#support-donations'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#installation-setup'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#installation-setup')">⬆️</span>
             <table class="req-table">
             <tr><th>Component</th><th>Minimum</th></tr>
             <tr><td>OS</td><td>Windows 11 (64-bit)</td></tr>
@@ -330,8 +379,8 @@
     <!-- Final Download Section -->
     <section class="final-download-section">
         <div class="cta-box" id="final-download">
-            <span class="nav-arrow-down" onclick="window.location.href='#support-donations'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#system-requirements'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#system-requirements')">⬆️</span>
             <h3>Get Sorana</h3>
             <p>Download and install the application.</p>
 
@@ -352,14 +401,14 @@
     <section class="support-section" id="support-donations">
         <h2>Support & Donations</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="window.location.href='#other-products'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#final-download'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
             <p>Support Sorana development.</p>
         </div>
 
         <div class="cta-box" id="discord-community">
-            <span class="nav-arrow-down" onclick="window.location.href='#review-project'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#support-donations'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#review-project')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#support-donations')">⬆️</span>
             <h3>Join our Discord community</h3>
             <div class="external-links">
                 <a href="https://discord.gg/RDSbYdyT" target="_blank" class="btn btn-primary">Sorana Discord</a>
@@ -367,15 +416,15 @@
         </div>
 
         <div class="cta-box" id="review-project">
-            <span class="nav-arrow-down" onclick="window.location.href='#paypal-bch'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#discord-community'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#paypal-bch')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#discord-community')">⬆️</span>
             <h3>Leave a review or star the project</h3>
             <a href="https://alternativeto.net/software/sorana/" target="_blank"><img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" /></a>
         </div>
 
         <div class="cta-box" id="paypal-bch">
-            <span class="nav-arrow-down" onclick="window.location.href='#featured-alternative'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#review-project'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#featured-alternative')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#review-project')">⬆️</span>
             <h3>Support via PayPal or Bitcoin Cash</h3>
             <div class="payment-options">
                 <div class="paypal-option">
@@ -398,8 +447,8 @@
         </div>
 
         <div class="cta-box" id="featured-alternative">
-            <span class="nav-arrow-down" onclick="window.location.href='#other-products'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#paypal-bch'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#paypal-bch')">⬆️</span>
             <h3>Featured on AlternativeTo</h3>
             <a href="https://alternativeto.net/software/sorana" title="Sorana provides an visual AI workspace with AI-powered organization and no-code automation." target="_blank">
                 <img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" />
@@ -410,21 +459,21 @@
     <section class="other-products-section" id="other-products">
         <h2>Discover our other tools and games:</h2>
         <div class="cta-box" id="other-products-intro">
-            <span class="nav-arrow-down" onclick="window.location.href='#spaceship-intro'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#final-download'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#featured-alternative')">⬆️</span>
             <p>Check out our other products and tools:</p>
         </div>
 
         <div class="cta-box" id="spaceship-intro">
-            <span class="nav-arrow-down" onclick="window.location.href='#spaceship-website'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#other-products-intro'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-website')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#other-products-intro')">⬆️</span>
             <h3>New Spaceship - Retro Mini Game</h3>
             <p>Retro Arcade 2d side-scroller bullet-hell shmup game</p>
         </div>
 
         <div class="cta-box" id="spaceship-website">
-            <span class="nav-arrow-down" onclick="window.location.href='#spaceship-itch'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#spaceship-intro'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-itch')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-intro')">⬆️</span>
             <h4>Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/spaceship" target="_blank">
@@ -434,8 +483,8 @@
         </div>
 
         <div class="cta-box" id="spaceship-itch">
-            <span class="nav-arrow-down" onclick="window.location.href='#spaceship-indiedb'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#spaceship-website'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-indiedb')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-website')">⬆️</span>
             <h4>Featured on itch.io</h4>
             <figure class="product-fig">
                 <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
@@ -445,8 +494,8 @@
         </div>
 
         <div class="cta-box" id="spaceship-indiedb">
-            <span class="nav-arrow-down" onclick="window.location.href='#ryzenzpilot-intro'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#spaceship-itch'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-itch')">⬆️</span>
             <h4>Featured on IndieDB</h4>
             <figure class="product-fig">
                 <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank">
@@ -456,8 +505,8 @@
         </div>
 
         <div class="cta-box" id="ryzenzpilot-intro">
-            <span class="nav-arrow-down" onclick="window.location.href='#ryzenzpilot-website'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#spaceship-indiedb'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-website')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-indiedb')">⬆️</span>
             <h3>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
             <p>RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
             It allows users to adjust CPU performance, power limits, and thermal configurations
@@ -465,8 +514,8 @@
         </div>
 
         <div class="cta-box" id="ryzenzpilot-website">
-            <span class="nav-arrow-down" onclick="window.location.href='#aicono-intro'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#ryzenzpilot-intro'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
             <h4>Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank">
@@ -476,15 +525,15 @@
         </div>
 
         <div class="cta-box" id="aicono-intro">
-            <span class="nav-arrow-down" onclick="window.location.href='#aicono-website'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#ryzenzpilot-website'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-website')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-website')">⬆️</span>
             <h3>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
             <p>Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!</p>
         </div>
 
         <div class="cta-box" id="aicono-website">
-            <span class="nav-arrow-down" onclick="window.location.href='#aicono-microsoft'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#aicono-intro'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-microsoft')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-intro')">⬆️</span>
             <h4>Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/Aicono" target="_blank">
@@ -494,8 +543,8 @@
         </div>
 
         <div class="cta-box" id="aicono-microsoft">
-            <span class="nav-arrow-down" onclick="window.location.href='#aicono-software'">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.location.href='#aicono-website'">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-software')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-website')">⬆️</span>
             <h3>Featured on Microsoft Store</h3>
             <figure class="store-fig">
                 <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank">
@@ -556,6 +605,55 @@
   gtag('config', 'GA_MEASUREMENT_ID');
 </script>
 -->
+
+<script>
+function scrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        // Überprüfe, ob das Element bereits sichtbar ist
+        const rect = targetElement.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
+        if (isVisible && rect.top < window.innerHeight * 0.1) {
+            // Scrollen, sodass das Element in der Mitte des Viewports ist
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten normales Scrollen
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+// Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
+function smartScrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        const rect = targetElement.getBoundingClientRect();
+        const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        if (isInViewport) {
+            // Wenn das Element bereits sichtbar ist, zentriere es
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten scroll zum Anfang des Elements
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+</script>
 
 </body>
 </html>
