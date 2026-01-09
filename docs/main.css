@@ -706,9 +706,9 @@ iframe:hover, embed:hover, object:hover {
 }
 
 /* Navigation arrow that appears on hover */
-.cta-box .nav-arrow {
+.cta-box .nav-arrow-down {
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 10px;
   transform: translateY(-50%);
   font-size: 1.5em;
@@ -720,7 +720,22 @@ iframe:hover, embed:hover, object:hover {
   z-index: 10;
 }
 
-.cta-box:hover .nav-arrow {
+.cta-box .nav-arrow-up {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.8);
+  z-index: 10;
+}
+
+.cta-box:hover .nav-arrow-down,
+.cta-box:hover .nav-arrow-up {
   opacity: 1;
   right: 15px;
   pointer-events: auto;
