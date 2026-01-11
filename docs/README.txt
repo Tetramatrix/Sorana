@@ -2,6 +2,10 @@
 
 Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, Ollama), and keep your data under your control.
 
+✨ Inspiration ✨
+
+We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this—moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.
+
 🔑 Key Features 🔑
 
 🤖 Spatial AI Organization: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
