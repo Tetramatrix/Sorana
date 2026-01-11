@@ -84,10 +84,10 @@ To connect agents in Sorana:
 - This creates a pipeline where agents can pass insights and collaborate on complex tasks
 
 ### Downloads:
-- Latest version: Sorana.exe v1.0.0
-- MD5 Checksum (.exe): f05363d29bda44df30d83f34139b7fb4
+- Latest version: Sorana.exe v1.0.1
+- MD5 Checksum (.exe): 55e9f2f8179fc59ce552947d30433d4f
 - Download: http://tetramatrix.github.io/Sorana
-
+- Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 
 
 
