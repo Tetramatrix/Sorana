@@ -233,6 +233,22 @@ function smartScrollToSection(targetId) {
             <p>
                 Sorana uses AI models to intelligently group files and folders based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify files perfectly, especially for less common file types. For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
             </p>
+
+            <h4>Hardware Requirements</h4>
+            <ul>
+                <li><strong>Built-in Model:</strong> Works on systems with 4 GB RAM (lightweight, ~806MB, suitable for basic file organization)</li>
+                <li><strong>8B Parameter Models:</strong> Requires 16 GB RAM or 8 GB VRAM for smooth operation. These larger models provide significantly better accuracy and file classification.</li>
+                <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
+            </ul>
+
+            <h4>Alternatives for Limited Hardware</h4>
+            <p>
+                If your system has limited hardware resources, you have two main options:
+            </p>
+            <ul>
+                <li><strong>Built-in Portable Model:</strong> Works fully offline but may classify complex files as "Miscellaneous"</li>
+                <li><strong>Cloud-based LLMs:</strong> Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs</li>
+            </ul>
             <ul>
         <li><strong>Built-in Models:</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</li>
 

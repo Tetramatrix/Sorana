@@ -1,136 +1,140 @@
-# Sorana - The AI Visual Workspace
+🚀 Sorana - The AI Visual Workspace 🚀
 
 Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, Ollama), and keep your data under your control.
 
-### Key Features
+🔑 Key Features 🔑
 
-- **Spatial AI Organization**: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
-- **WYSIWYG Canvas Editor**: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
-- **Advanced Model Management**: Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
+🤖 Spatial AI Organization: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
+🎨 WYSIWYG Canvas Editor: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
+🧠 Advanced Model Management: Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
 
-- **Multi-Service AI Integration**: Sorana supports seamless connection to both on-prem and cloud-based AI services:
-  - **On-Prem Services**: Ollama, Llamacpp, and other self-hosted LLM solutions
-  - **Cloud Services**: OpenAI, Mistral, Lemonade, and other cloud-based AI platforms
-  - **Flexible Configuration**: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
-- **No-Code Agent Orchestration**: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
-- **Contextual Document Chat**: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
-- **Dynamic Structure Mapping**: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
-- **Portable**: The application is portable and keeps data under user control.
+🔗 Multi-Service AI Integration: Sorana supports seamless connection to both on-prem and cloud-based AI services:
+  • On-Prem Services: Ollama, Llamacpp, and other self-hosted LLM solutions
+  • Cloud Services: OpenAI, Mistral, Lemonade, and other cloud-based AI platforms
+  • Flexible Configuration: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
+🤖 No-Code Agent Orchestration: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
+💬 Contextual Document Chat: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
+🗺️ Dynamic Structure Mapping: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
+📦 Portable: The application is portable and keeps data under user control.
 
-### Quick Start
+🚀 Quick Start 🚀
 
-- Download the portable archive, extract anywhere, and run Sorana.exe.
-- Optional: Open the settings to configure AI models and workspace preferences.
+📥 Download the portable archive, extract anywhere, and run Sorana.exe.
+⚙️ Optional: Open the settings to configure AI models and workspace preferences.
 
-### System Requirements
+💻 System Requirements 💻
 
-- **Operating System**: Windows 11 (64-bit)
-- **AI Support**: Built-in models or on-prem/remote AI services
-- **RAM**: Minimum 4 GB
-- **Storage**: Minimum 2 GB (application + model)
-- **Permissions**: Standard user account
+🖥️ Operating System: Windows 11 (64-bit)
+🤖 AI Support: Built-in models or on-prem/remote AI services
+💾 RAM: Minimum 4 GB (8 GB+ recommended for larger AI models)
+💽 Storage: Minimum 2 GB (application + model)
+🔑 Permissions: Standard user account
 
-### Installation & Setup
+🤖 AI Model Hardware Requirements:
+  • Built-in Model: Works with 4 GB RAM (lightweight, ~806MB)
+  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): 16 GB RAM or 8 GB VRAM for smooth operation
+  • Cloud Models: No local hardware requirements (requires internet connection)
 
-Website: http://tetramatrix.github.io/Sorana
+⚙️ Installation & Setup ⚙️
 
-Discord: https://discord.gg/RDSbYdyT
+🌐 Website: http://tetramatrix.github.io/Sorana
 
-### Visual Workspace Features
+💬 Discord: https://discord.gg/RDSbYdyT
 
-- **Spatial AI Organization**: AI automatically groups and arranges files on a 2D canvas for intuitive project visualization
-- **Interactive Canvas**: Drag and drop files, create categories, rename items, and adjust group boundaries directly on the canvas
-- **Visual Connections**: Create connections between agents and documents using visual arrows and interfaces
-- **Mind Map Generation**: Generate visual representations of folder hierarchies to understand relationships and structure
+🎨 Visual Workspace Features 🎨
 
-### AI Model Configuration
+🤖 Spatial AI Organization: AI automatically groups and arranges files on a 2D canvas for intuitive project visualization
+🎨 Interactive Canvas: Drag and drop files, create categories, rename items, and adjust group boundaries directly on the canvas
+🔗 Visual Connections: Create connections between agents and documents using visual arrows and interfaces
+🗺️ Mind Map Generation: Generate visual representations of folder hierarchies to understand relationships and structure
 
-- **Built-in Models**: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.
-- **Performance Notes**: For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
-- **Accuracy Considerations**: May sometimes classify complex files as "Miscellaneous"; connect larger, on-prem or cloud models for improved accuracy
-- **Processing Time**: Varies based on folder size and available hardware. Processing time is directly proportional to the number of files - fewer files result in faster processing.
+🤖 AI Model Configuration 🤖
 
-### Document OCR
+🧠 Built-in Models: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.
+
+⚡ Performance Notes: For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
+
+⚠️ IMPORTANT HARDWARE NOTE: Running larger 8B parameter models locally requires sufficient hardware - ideally 16 GB RAM or 8 GB VRAM - to function smoothly. If hardware is limited, the app includes a smaller portable model (which works fully offline but may classify complex files as "Miscellaneous") or allows connection to cloud-based LLMs for high accuracy without the local hardware cost.
+
+🎯 Accuracy Considerations: May sometimes classify complex files as "Miscellaneous"; connect larger, on-prem or cloud models for improved accuracy
+⏱️ Processing Time: Varies based on folder size and available hardware. Processing time is directly proportional to the number of files - fewer files result in faster processing.
+
+📄 Document OCR 📄
 
 Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
 
-- **Text PDFs**: Extract text from PDF documents (supports embedded text and OCR for scanned content)
-- **Plain Text Files**: Process .txt files with support for:
-  - UTF-8 (recommended for full Unicode support)
-  - Latin-1 (ISO-8859-1) as fallback encoding
+📄 Text PDFs: Extract text from PDF documents (supports embedded text and OCR for scanned content)
+📝 Plain Text Files: Process .txt files with support for:
+  • UTF-8 (recommended for full Unicode support)
+  • Latin-1 (ISO-8859-1) as fallback encoding
 
-- **Code Files**: OCR support for source code files including:
-  - Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)
-  - C# (.cs), PHP (.php), Ruby (.rb), Go (.go)
-  - TypeScript (.ts), Swift (.swift), Kotlin (.kt)
-  - And other common programming language files in UTF-8 or Latin-1 encoding
+💻 Code Files: OCR support for source code files including:
+  • Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)
+  • C# (.cs), PHP (.php), Ruby (.rb), Go (.go)
+  • TypeScript (.ts), Swift (.swift), Kotlin (.kt)
+  • And other common programming language files in UTF-8 or Latin-1 encoding
 
-- **PDFs with Images**: Built-in method for OCR processing of PDFs containing images
+🖼️ PDFs with Images: Built-in method for OCR processing of PDFs containing images
 
-**Requirements for PDF Image OCR**:
+🔧 Requirements for PDF Image OCR:
 To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
 
-Download Tesseract from: https://github.com/tesseract-ocr/tesseract
+📥 Download Tesseract from: https://github.com/tesseract-ocr/tesseract
 
-**Encoding Support Notes**:
+🔤 Encoding Support Notes:
 The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
 
-### Connecting Agents
+🤖 Connecting Agents 🤖
 
 To connect agents in Sorana:
-- Hold **CTRL+ALT** and click on an Agent title to get a green arrow
-- Point the green arrow to the parent agent to establish the connection
-- In the child Agent configuration, enable 'Auto' (puts agent in orchestration mode to receive instructions from parent agent) and 'Passthrough' (allows the agent to also pass documents).
-- This creates a pipeline where agents can pass insights and collaborate on complex tasks
+🔘 Hold CTRL+ALT and click on an Agent title to get a green arrow
+🔗 Point the green arrow to the parent agent to establish the connection
+⚙️ In the child Agent configuration, enable 'Auto' (puts agent in orchestration mode to receive instructions from parent agent) and 'Passthrough' (allows the agent to also pass documents).
+🤝 This creates a pipeline where agents can pass insights and collaborate on complex tasks
 
-### Downloads:
-- Latest version: Sorana.exe v1.0.1
-- MD5 Checksum (.exe): 55e9f2f8179fc59ce552947d30433d4f
-- Download: http://tetramatrix.github.io/Sorana
-- Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
+📥 Downloads 📥
 
+🔹 Latest version: Sorana.exe v1.0.1
+🔢 MD5 Checksum (.exe): 55e9f2f8179fc59ce552947d30433d4f
+🌐 Download: http://tetramatrix.github.io/Sorana
+🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 
-
-
-### 💚 Support the Development
+❤️ Support the Development ❤️
 
 If you find Sorana useful, please consider donating to support ongoing development!
 
-Bitcoin Cash (BCH):
+💰 Bitcoin Cash (BCH):
 bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
 
-PayPal:
+💳 PayPal:
 paypal.me/Gigamegs
 
 Thank you for your support!
 
 ☕ Buy us a coffee or support via PayPal or Bitcoin Cash !
 
+🚀 Discover our Spaceship! 🚀
 
-### Discover our Spaceship!
+🎮 Retro Arcade 2d side-scroller bullet-hell shmup game: Spaceship
 
-Retro Arcade 2d side-scroller bullet-hell shmup game: 🚀 Spaceship 🚀
+🌐 https://tetramatrix.github.io/spaceship/
+🎮 https://www.indiedb.com/games/new-spaceship
+🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
 
-https://tetramatrix.github.io/spaceship/
-https://www.indiedb.com/games/new-spaceship
-https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
+🔧 Discover our RyzenZPilot! 🔧
 
-
-### Discover our RyzenZPilot!
-
-# RyzenZPilot - AMD Ryzen Power Management Tool
+💻 RyzenZPilot - AMD Ryzen Power Management Tool
 
 RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
 It allows users to adjust CPU performance, power limits, and thermal configurations
 for optimal performance and efficiency.
 
-Website: http://tetramatrix.github.io/RyzenZPilot
+🌐 Website: http://tetramatrix.github.io/RyzenZPilot
 
-
-### Discover our Aicono - AI intelligent desktop icon autopilot
+🖥️ Discover our Aicono - AI intelligent desktop icon autopilot 🖥️
 
 Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and can operate fully offline via manual JSON configuration when AI services are unavailable.
 
-Website: http://tetramatrix.github.io/Aicono
-Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
-Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
+🌐 Website: http://tetramatrix.github.io/Aicono
+📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
+🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
