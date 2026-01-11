@@ -31,8 +31,9 @@ Sorana is an AI-powered visual workspace that transforms how you organize and in
 🔑 Permissions: Standard user account
 
 🤖 AI Model Hardware Requirements:
-  • Built-in Model: Works with 4 GB RAM (lightweight, ~806MB)
-  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): 16 GB RAM or 8 GB VRAM for smooth operation
+  • Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB)
+  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation
+  • Hardware Requirements Increase with Model Size: Larger models with more parameters require higher specifications
   • Cloud Models: No local hardware requirements (requires internet connection)
 
 ⚙️ Installation & Setup ⚙️

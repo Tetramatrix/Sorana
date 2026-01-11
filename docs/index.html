@@ -236,8 +236,9 @@ function smartScrollToSection(targetId) {
 
             <h4>Hardware Requirements</h4>
             <ul>
-                <li><strong>Built-in Model:</strong> Works on systems with 4 GB RAM (lightweight, ~806MB, suitable for basic file organization)</li>
-                <li><strong>8B Parameter Models:</strong> Requires 16 GB RAM or 8 GB VRAM for smooth operation. These larger models provide significantly better accuracy and file classification.</li>
+                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (17-18GB)</li>
+                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
+                <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
                 <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
             </ul>
 
@@ -250,7 +251,7 @@ function smartScrollToSection(targetId) {
                 <li><strong>Cloud-based LLMs:</strong> Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs</li>
             </ul>
             <ul>
-        <li><strong>Built-in Models:</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</li>
+        <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</li>
 
         <li><strong>AI Integration:</strong> Supports connection to both on-prem and cloud-based AI services:
           <ul>
