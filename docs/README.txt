@@ -24,7 +24,6 @@ We were frustrated by the limitations of traditional file managers. For decades,
 🚀 Quick Start 🚀
 
 📥 Download the portable archive, extract anywhere, and run Sorana.exe.
-⚙️ Optional: Open the settings to configure AI models and workspace preferences.
 
 💻 System Requirements 💻
 
