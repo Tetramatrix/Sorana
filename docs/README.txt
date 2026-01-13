@@ -43,7 +43,7 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🌐 Website: http://tetramatrix.github.io/Sorana
 
-💬 Discord: https://discord.gg/RDSbYdyT
+💬 Discord: https://discord.gg/4QkQSfSATF
 
 🎨 Visual Workspace Features 🎨
 
