@@ -156,7 +156,7 @@ function smartScrollToSection(targetId) {
                 <p>Get started with your intelligent workspace.</p>
 
                 <div class="download-buttons">
-                    <a href="Sorana.exe" class="btn btn-primary">Download (Portable)</a>
+                    <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Sorana.exe" class="btn btn-primary">Download (Portable)</a>
                     <a href="README.txt" class="btn btn-primary">Readme</a>
                 </div>
 
@@ -222,7 +222,7 @@ function smartScrollToSection(targetId) {
                 <li><strong>AI Processing</strong> organizes content spatially and semantically.</li>
                 <li><strong>Visualize</strong> projects as interactive layouts.</li>
                 <li><strong>Interact</strong> with documents to extract information. (AI-Chatbot)</li>
-                <li><strong>Create</strong> automation workflows by connecting components. (AI-Agents)</li>
+                <li><strong>Create</strong> automation workflows by connecting components. (Multi-AI-Agents)</li>
                 <li><strong>Configure</strong> workflow settings.</li>
             </ol>
         </div>
