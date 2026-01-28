@@ -4,488 +4,633 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>Aicono - 🚀 AI Intelligent Desktop Icon Autopilot</title>
-    <meta name="description" content="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯">
-    <meta name="keywords" content="AI Desktop Organizer, Windows Icon Manager, Automatic Icon Grouping, Desktop Cleanup, AI Productivity Tool, Freeware, Portable App">
+    <title>Sorana - Visual AI Workspace</title>
+    <meta name="description" content="Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, Ollama), and keep your data under your control.">
+    <meta name="keywords" content="Visual AI Workspace, AI File Organizer, No-Code AI Agents, Document Chat, Spatial Organization, Digital Workspace">
     <meta name="author" content="Tetramatrix">
-    <meta property="og:title" content="Aicono - AI Intelligent Desktop Icon Autopilot">
-    <meta property="og:description" content="🧠 Transform your messy desktop into an organized workspace with AI-powered icon grouping and layout! 🎯">
+    <meta property="og:title" content="Sorana - Visual AI Workspace">
+    <meta property="og:description" content="Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, Ollama), and keep your data under your control.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/aicono-preview.jpg">
-    
+    <meta property="og:image" content="Sorana_cbfHZaRAyM.png">
+
     <!-- Google Ads (using template IDs) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
          crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
+<script>
+function scrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        // Überprüfe, ob das Element bereits sichtbar ist
+        const rect = targetElement.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
 
-<!-- Left Sidebar -->
-<div class="left">
-    <!-- Google Ads - Left Sidebar -->
-    <div class="fixed-nav">
-        
-        <!-- bbrb -->
-        
-        <p>
-        <ins class="adsbygoogle"
-            style="display:inline-block;width:160px;height:600px"
-            data-ad-client="ca-pub-6449563648591184"
-            data-ad-slot="8910195152"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script></p>
-        
-        <!-- bbrb 1.5 -->
+        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
+        if (isVisible && rect.top < window.innerHeight * 0.1) {
+            // Scrollen, sodass das Element in der Mitte des Viewports ist
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten normales Scrollen
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+// Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
+function smartScrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        const rect = targetElement.getBoundingClientRect();
+        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+        if (isInViewport) {
+            // Wenn das Element bereits sichtbar ist, zentriere es
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten scroll zum Anfang des Elements
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+</script>
+</body>
+    <aside class="left">
+        <nav class="fixed-nav">
+            <!-- Google Ads - Left Sidebar -->
+            <!-- Ad code removed for clarity -->
+        </nav>
+    </aside>
+
+    <aside class="right">
+        <!-- Google Ads - Right Sidebar -->
+        <!-- Ad code removed for clarity -->
+    </aside>
+
+    <main class="wikidoc">
+        <header class="page-header">
+            <h1>Sorana</h1>
+            <h3>Visual AI Workspace</h3>
+            <figure class="logo-container">
+                <img src="logo_small.png" alt="Sorana Logo" class="logo">
+            </figure>
+        </header>
+
+    <!-- Horizontal Navigation Bar -->
+    <nav class="horizontal-toc-nav">
+        <ul>
+            <li><a href="#inspiration">Inspiration</a></li>
+            <li><a href="#what-is-sorana">What is Sorana?</a></li>
+            <li><a href="#core-capabilities">Core Capabilities</a></li>
+            <li><a href="#intended-users">Intended Users</a></li>
+            <li><a href="#operation">Operation</a></li>
+            <li><a href="#technical-implementation">Technical Implementation</a></li>
+            <li><a href="#feature-comparison">Feature Comparison</a></li>
+            <li><a href="#installation-setup">Installation & Setup</a></li>
+            <li><a href="#system-requirements">System Requirements</a></li>
+            <li><a href="#support-donations">Support & Donations</a></li>
+            <li><a href="#other-products">Other Products</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inspiration Section -->
+    <section class="inspiration-section" id="inspiration">
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#what-is-sorana')">⬇️</span>
+            <span class="nav-arrow-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</span>
+            <h2>Inspiration</h2>
+            <p>We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this—moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.</p>
+        </div>
+    </section>
+
+    <section class="intro-section" id="what-is-sorana">
+        <h2>What is Sorana?</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#core-capabilities')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#inspiration')">⬆️</span>
+            <p>Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, LLamacpp, Lemonade, Ollama), and keep your data under your control.</p>
+        </div>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="responsive-iframe-container">
+                <iframe src="https://www.youtube.com/embed/IItG9BwXkqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption"><em>Demonstration of Sorana workspace</em></p>
+        </section>
+
+        <!-- Google Ads - Top Banner -->
         <!--
-        <p class="left-sidebar-ad-spacing"
-        <ins class="adsbygoogle"
-            style="display:inline-block;width:160px;height:600px"
-            data-ad-client="ca-pub-6449563648591184"
-            data-ad-slot="4431879155"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script></p>
-        -->
-    </div>
-</div>
-
-<!-- Right Sidebar -->
-<div class="right">
-    
-    <!-- Google Ads - Right Sidebar -->
-    <!--
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6449563648591184"
-         data-ad-slot="8910195152"
-         data-ad-format="vertical"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    -->
-
-    <!-- Additional Ads at the bottom of right column -->
-    <!--
-    <div class="right-sidebar-ad-container">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-6449563648591184"
              data-ad-slot="8910195152"
-             data-ad-format="rectangle"
+             data-ad-format="auto"
              data-full-width-responsive="true"></ins>
         <script>
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-    </div>
-    -->
-</div>
+        -->
 
-<!-- Main Content -->
-<div class="wikidoc">
-    <h1>🚀 Aicono</h1>
-    <h3>🧠 The AI intelligent desktop icon autopilot for Windows! 🎯</h3>
-    <p>
-        <img src="logo-3.png" alt="Aicono Logo" class="logo">
-    </p>
+        <!-- Download Section -->
+        <section class="download-section" id="download-section">
+            <div class="cta-box">
+                <span class="nav-arrow-down" onclick="smartScrollToSection('#core-capabilities')">⬇️</span>
+                <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-sorana')">⬆️</span>
+                <h3>Download Sorana</h3>
+                <p>Get started with your intelligent workspace.</p>
 
-    <p>
-        <strong>🔥 Aicono uses AI to automatically group and arrange your desktop icons for a more organized workspace. 💪</strong>
-    </p>
+                <div class="download-buttons">
+                    <a href="Sorana.exe" class="btn btn-primary">Download (Portable)</a>
+                    <a href="README.txt" class="btn btn-primary">Readme</a>
+                </div>
 
-    <p>
-        <img src="desktop_clutter.png" alt="Cluttered Desktop Example" class="screenshot">
-        <br><em>Cluttered desktop before using Aicono – icons scattered everywhere!</em>
-    </p>
-    <p>Desktops get messy fast with icons everywhere. Manual organizing is tedious, and Windows' basic auto-arrange doesn't cut it.</p>
-    <p>
-        <img src="desktop_clean2.png" alt="Clean Desktop After Aicono" class="screenshot">
-        <br><em>Organized desktop after Aicono arrangement – AI groups and arranges icons perfectly!</em>
-    </p>
-    <p>
-        Aicono applies AI-based categorization (e.g., Work, Games, Utilities) and a spatial layout that avoids overlaps, placing icons within your selected desktop area. You can preview and apply the arrangement.
-    </p>
-    
-
-    <!-- Video Section -->
-    <!--
-    <div class="video-container">
-        <h3>🎥 Aicono in Action</h3>
-        <video controls class="video-player">
-            <source src="Crafting_An_Second_Video_Ad.mp4" type="video/mp4">
-            Your browser does not support the video tag. Please download the file: <a href="Crafting_An_Second_Video_Ad.mp4" download>Crafting_An_Second_Video_Ad.mp4 download</a>
-        </video>
-        <p class="caption">
-            📹 Watch Aicono in action!
-        </p>
-    </div>
-    -->
-    
-    <p>
-        <img src="main.png" alt="Aicono Main Window" class="logo">
-        <br><em>Aicono's main window – control your desktop organization with ease!</em>
-    </p>
-  
-    <!-- Google Ads - Top Banner -->
-    <!--
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6449563648591184"
-         data-ad-slot="8910195152"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    -->
-
-    <!-- Download Section -->
-    <div class="cta-box">    
-        
-        <h3>🚀 Ready for an Organized Desktop? 🚀</h3>
-        <p>Download Aicono now and let AI autopilot your icons! 💫</p>
-
-        <div class="download-section">
-        <a href="Aicono-v1.0.1.exe" class="btn btn-primary">⬇️ Direct Download (Portable)</a>
-    </div>
-    <div class="download-section">    
-        <a href="README.txt" class="btn btn-primary">📄 Readme</a>
-    </div>
-    
-    <pre class="code-block-md5"><code>
-        $ md5sum.exe Aicono-v1.0.1 4c2cff462f3fdc85aec0e5199cc037a0
-    </code></pre>
-
-    <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" /></a>
-    </div>
-
-<h2>🤖 What is Aicono?</h2>
-    <p>Aicono is a Windows application that uses AI to group desktop icons by category (such as "Work," "Games," or "Utilities") and arranges them without overlaps in a customizable area. The layout can be fine-tuned using a visual preview tool. 🧠</p>
-
-    <h2>⭐ Key Features</h2>
-    <ul>
-        <li><strong>🧠 AI-Powered Grouping:</strong> Automatically categorizes icons logically into groups like Work, Games, and Utilities.</li>
-        <li><strong>🎛️ Your AI, Your Choice:</strong> Works 100% offline with a lightweight default model (~806MB) that downloads on first run. Want more power? Aicono is built for enthusiasts:
-            <ul>
-                <li>Connect to local services like <strong>Ollama</strong> or any <strong>OpenAI-compatible server</strong>.</li>
-                <li>Configure it to <strong>auto-download larger, more powerful models</strong> (e.g., 8B models) from Hugging Face.</li>
-                <li>Supports private models using your <strong>Hugging Face token</strong>.</li>
-                <li>Includes a <strong>manual fallback & finetune</strong> if no AI model is available.</li>
-            </ul>
-        </li>
-        <li><strong>💾 Instant Fine-Tuning with Caching:</strong> Don't wait for the AI analysis twice! Aicono saves your layout. If you're unhappy with the arrangement, just re-open the app to <strong>instantly</strong> make adjustments (like changing spacing or grid size) and re-apply in seconds. The <strong><code>"Clear Cache & Reload"</code></strong> button is only for when you <em>want</em> to start over.</li>
-        <li>
-            <strong>📐 Advanced Spatial Layout:</strong> This isn't just "arranging." Aicono solves a complex 2D packing problem. It takes your AI-generated groups (as distinct blocks) and intelligently positions them, ensuring each group is cohesive, clearly separated, and perfectly fits within your custom "Working Area" without any overlaps.
-        </li>
-        <li><strong>📍 Customizable Area:</strong> Select specific desktop regions for icon placement.</li>
-        <li><strong>👁️ Visual Preview (WYSIWYG):</strong> See and approve the new layout <em>before</em> any changes are applied.</li>
-        <li><strong>⚙️ Fully Configurable:</strong> All settings, from AI models to layout, are controlled via a simple JSON file for power users.</li>
-        <li><strong>📦 Portable App:</strong> No installation required – just run and go!</li>
-        <li><strong>💰 Freeware:</strong> Free community edition.</li>
-    </ul>
-
-    <h2>🎯 Who is Aicono For?</h2>
-    <p>Aicono is intended for Windows users who want to organize their desktop icons efficiently, including gamers, students, professionals, and AI enthusiasts. 💯</p>
-    <ul>
-        <li><strong>🎮 Gamers:</strong> Group game icons neatly for quick access without desktop mess.</li>
-        <li><strong>📚 Students:</strong> Organize study files and apps in logical categories.</li>
-        <li><strong>💼 Professionals:</strong> Keep work tools grouped and arranged for efficiency.</li>
-        <li><strong>🤖 AI Enthusiasts:</strong> Experience advanced, configurable AI in a practical, free tool.</li>
-    </ul>
-
-    <h2>⚙️ How Does It Work?</h2>
-    <p><strong>🧠 Fully automatic & user-friendly! :</strong></p>
-    <ol>
-        <li><strong>👁️ Scans</strong> desktop icons in real-time.</li>
-        <li><strong>🧠 Uses AI</strong> to categorize (Work, Games, etc.).</li>
-        <li><strong>📐 Applies</strong> a spatial layout without overlaps.</li>
-        <li><strong>👀 Offers a Preview</strong> for fine-tuning.</li>
-        <li><strong>🔧 Customizes</strong> to your needs with area selection.</li>
-        <li><strong>💾 Caches results</strong> for instant re-application.</li>
-    </ol>
-
-    <h2>🧠 AI: How It Works, Fine-Tuning & Manual Fallback</h2>
-    <h3>Why are my results "hit-or-miss"?</h3>
-    <p>
-        Aicono uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can connect larger or custom models for improved accuracy, but this may require more system resources.
-    </p>
-    <ul>
-        <li><strong>Offline & Free (Default):</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes mislabel complex icons as "Miscellaneous."</li>
-        <li><strong>Custom Models:</strong> For improved results, Aicono can connect to local services (like <strong>Ollama</strong> or <strong>Llama</strong>), OpenAI-compatible servers, or download larger models from Hugging Face.</li>
-    </ul>
-    <p>
-        <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power.
-    </p>
-    <h3>Manual Fine-Tuning & Fallback</h3>
-    <p>
-        If the AI does not classify an icon as desired, or if no model is available, you can adjust the results manually:
-    </p>
-    <ol>
-        <li><strong>Fine-tune AI results:</strong> After each run, Aicono saves the grouping in <code>icon_groups_cache.json</code>. You can edit this file to move icons between groups. Your changes will be used until you clear the cache.</li>
-        <li><strong>Manual fallback:</strong> If no AI is available, you can create <code>icon_groups_cache.json</code> from scratch and define all groups manually. The app will use your structure.</li>
-    </ol>
-    <h4>File Structure (<code>icon_groups_cache.json</code>)</h4>
-    <p>
-        The file must be saved as JSON with the following structure:
-    </p>
-    <pre class="code-block-json"><code>{
-  "names_hash": "your_unique_hash_here",
-  "model_name": "manual_configuration",
-  "groups": [
-    {
-      "name": "Group Name 1",
-      "items": [
-        "Application1.exe",
-        "Script1.bat",
-        "Tool1"
-      ]
-    },
-    {
-      "name": "Group Name 2",
-      "items": [
-        "Application2.exe",
-        "Tool2",
-        "Utility2"
-      ]
-    }
-  ],
-  "timestamp": 1726404000.0
-}</code></pre>
-
-    <h2>🌟 Why Aicono Stands Out</h2>
-    <p>Aicono goes beyond basic tools with 🧠 AI intelligence for effortless desktop management!</p>
-    
-    <table class="feature-table" style="width:100%; border-collapse: collapse;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Feature</th>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">🏆 Aicono</th>
-                <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Other Tools</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr  class="row-alt">
-                <td style="border: 1px solid #ddd; padding: 8px;"><strong>AI Grouping</strong></td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ Intelligent AI</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ Manual</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Layout Algorithm</strong></td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ Spatial No-Overlap</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ Basic Arrange</td>
-            </tr>
-            <tr class="row-alt">
-                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Preview</strong></td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ Visual Tool (WYSIWYG)</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ None</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Portability</strong></td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ No Install</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">⚠️ Installer Required</td>
-            </tr>
-            <tr class="row-alt">
-                <td style="border: 1px solid #ddd; padding: 8px;"><strong>AI Customization</strong></td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ (Ollama, HF, etc.)</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌ None</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Price</strong></td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅ 100% Free</td>
-                <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">⚠️ Paid / Basic</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>🚀 Practical Usage Examples</h2>
-    <p>💡 Aicono shines in real life:</p>
-    <ul>
-        <li><strong>🎮 Gaming Setup:</strong> Groups games in one area, clears rest for quick access.</li>
-        <li><strong>📁 File Organization:</strong> Sorts documents by project categories.</li>
-        <li><strong>💼 Work Mode:</strong> Arranges tools in a compact desktop zone.</li>
-        <li><strong>👨‍🎓 Student Life:</strong> Groups school apps and files neatly.</li>
-    </ul>
-
-    <h2>💡 Installation & Setup</h2>
-    <p>Three quick steps:</p>
-    <ol>
-        <li>📥 <strong>Download:</strong> Get <code>Aicono.exe</code>.</li>
-        <li>▶️ <strong>Launch:</strong> Double-click the file and wait for the main window.</li>
-        <li>🎯 <strong>Customize:</strong> Open <em>Settings</em>, pick your AI model and work area.</li>
-    </ol>
-
-    <h2>📋 System Requirements</h2>
-    <table class="req-table">
-        <tr><th>💻 Component</th><th>Minimum</th></tr>
-        <tr><td>OS</td><td>Windows 10/11&nbsp;(64-bit)</td></tr>
-        <tr><td>🧠 AI Support</td><td>Built-in offline model</td></tr>
-        <tr><td>💾 RAM</td><td>&ge;&nbsp;2&nbsp;GB</td></tr>
-        <tr><td>💽 Storage</td><td>≈&nbsp;1&nbsp;GB (app + models)</td></tr>
-        <tr><td>⚡ Rights</td><td>Standard user</td></tr>
-    </table>
-
-    <p>
-
-<h2>💡 Pro-Tips for a Perfect Layout 💡</h2>
-<p>
-    Aicono is a powerful tool with many controls. Like any good tool, it's designed to give <em>you</em> the power to find your own perfect, individual result. Here are two key tips to get started.
-</p>
-
-<h3>1. ⚠️ REQUIRED: Disable Windows "Auto-Arrange"</h3>
-<p>
-    Aicono needs full control to move your icons. If Windows is also trying to manage them, your layout will break or won't apply correctly.
-</p>
-<p>
-    <strong>To check this:</strong> Right-click your Desktop > go to "View" > and make sure <strong>"Auto-arrange icons"</strong> is <strong>UNCHECKED</strong>. ✅
-</p>
-
-<h3>2. 📐 Balancing Your Working Area and Layout Controls</h3>
-<p>
-    Think of the <strong>"Working Area"</strong> as a "sandbox" 🖼️ or a "fence" to contain your icons. Its only job is to ensure icons don't go outside the boundaries you set.
-</p>
-<p>
-    All the other controls 🎛️—like <strong>"Grid Density"</strong>, <strong>"Gaps"</strong>, and <strong>"Spacing"</strong>—determine how your icon groups will fit <em>inside</em> that sandbox.
-</p>
-<p>
-    There is no single "right" setting! The best layout is a balance between the size of your sandbox and the layout controls you choose. If things look cramped 😖, try giving them more room (a larger area ↔️) or tightening up the spacing (a smaller gap ↕️).
-</p>
-<p>
-    <strong>We encourage you to experiment! 🎨</strong> That's what the instant <strong>WYSIWYG</strong> (What You See Is What You Get) preview is for. Adjust any slider and watch your layout change in real-time.
-</p>
-
-<h2>🛠️ Manual Configuration &amp; Fine-Tuning (Fallback)</h2>
-    <p>This section explains how to use the <code>icon_groups_cache.json</code> file. This file has two primary purposes:</p>
-    <ol>
-        <li><strong>Fine-Tuning AI Results (Most Common Use):</strong> After the AI runs, it saves its results to this file. If the AI miscategorizes an icon (e.g., puts <em>Steam</em> in <em>Work</em>), you can simply open <code>icon_groups_cache.json</code> and move the item from the <em>Work</em> group to the <em>Games</em> group. Aicono will use your corrected file from then on (until you click <code>Clear Cache &amp; Reload</code>).</li>
-        <li><strong>Complete Manual Fallback:</strong> If you have no AI model configured or are offline, you can create this file from scratch to define all your groups manually. The rest of this guide explains the file structure for this purpose.</li>
-    </ol>
-
-    <h3>File Structure</h3>
-    <p>The configuration file must be saved as a JSON file named <code>icon_groups_cache.json</code> with the following structure:</p>
-
-    <pre class="code-block-json"><code>{
-  "names_hash": "your_unique_hash_here",
-  "model_name": "manual_configuration",
-  "groups": [
-    {
-      "name": "Group Name 1",
-      "items": [
-        "Application1.exe",
-        "Script1.bat",
-        "Tool1"
-      ]
-    },
-    {
-      "name": "Group Name 2",
-      "items": [
-        "Application2.exe",
-        "Tool2",
-        "Utility2"
-      ]
-    }
-  ],
-  "timestamp": 1726404000.0
-}</code></pre>
-    <!-- Final Download Section -->
-    <div class="cta-box">
-        <h3>🚀 Ready for an Organized Desktop? 🚀</h3>
-        <p>Download Aicono to try AI-based icon organization on your desktop. 💫</p>
-        
-        <div class="download-section">
-            <a href="Aicono.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
-        </div>
-        <div class="download-section">        
-            <a href="README.txt" class="btn btn-primary">📄 Readme</a>
-        </div>
-
-        <pre class="code-block-md5-highlight">
-        <code>
-        $ md5sum.exe Aicono-v1.0.1.exe 4c2cff462f3fdc85aec0e5199cc037a0
+                <pre class="code-block-md5"><code>
+        $ md5sum Sorana.exe fcbbad1cdf86c0a6b23c61ee314c06aa
         </code></pre>
 
-        <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" /></a>
-    </div>
-    
-     <h2>🙏 Support & Donations</h2>
-     <p>💚 Donate & support Aicono development!</p>
-            
-        <h3>⭐ If you like Aicono, please leave a positive review or star the project on <a href="https://alternativeto.net/software/aicono/" target="_blank">AlternativeTo! ⭐</a></h3>
+                <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%"/></a>
+            </div>
+        </section>
 
+        <section class="capabilities-section" id="core-capabilities">
+            <h2>Core Capabilities</h2>
+            <div class="cta-box">
+                <span class="nav-arrow-down" onclick="smartScrollToSection('#intended-users')">⬇️</span>
+                <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-sorana')">⬆️</span>
+                <ul>
+                    <li><strong>Spatial AI Organization:</strong> Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.</li>
+                    <li><strong>WYSIWYG Canvas Editor:</strong> Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.</li>
+                    <li><strong>Advanced Model Management:</strong> Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.</li>
+                    <li><strong>Multi-Service AI Integration:</strong> Sorana supports seamless connection to both on-prem and cloud-based AI services:
+                        <ul>
+                            <li><strong>On-Prem Services</strong>: Ollama, Llamacpp, and other self-hosted LLM solutions</li>
+                            <li><strong>Cloud Services</strong>: OpenAI, Mistral, Lemonade, and other cloud-based AI platforms</li>
+                        </ul>
+                    </li>
+        <li><strong>No-Code Agent Orchestration:</strong> Create custom agents and connect them into processing pipelines using a drag-and-drop interface. </li>
+        <li><strong>Contextual Document Chat:</strong> Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.</li>
 
-        <h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>       
-        <p style="float:right">
-            PayPal: paypal.me/Gigamegs
-            <img src="qrcode.png" alt="QR Code" style="width: 130px; height: 130px; vertical-align: middle; margin-left: 10px;">
-        </p>
-        <p>
-            📌 Bitcoin Cash (BCH)
-             <img src="bch_qrcode.png" alt="QR Code" style="width: 130px; height: 130px; vertical-align: middle; margin-left: 10px;"><br />
-            BCH Address: <br /> bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
-        </p>
+        <figure class="chatbot-figure">
+            <img src="chatbot.png" alt="Sorana Chatbot Interface" class="chatbot-screenshot">
+        </figure>
 
-    <h3>🔥 Featured on Microsoft Store:</h3>
-    <p>
-        <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" width="400%" height="400%" alt="Get it from Microsoft" /></a>
-    </p>
-
-    <h3>🔥 Featured on Softpedia:</h3>
-    <p>
-        <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank"><img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" /></a>
-    </p>
-
-    <h3>🔥 Featured on AlternativeTo:</h3>
-    <p>
-            <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
-    </p>
-
-    <h3>🔥 Featured on Product Hunt:</h3>
-    <p>
-        <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - 🧠&#0032;The&#0032;AI&#0032;intelligent&#0032;desktop&#0032;icon&#0032;autopilot&#0032;for&#0032;Windows&#0033;&#0032;🎯 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-    </p>
-
-    <h3>🔥 Featured on Fazier:</h3>
-    <p>
-        <a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" width=250 alt="Fazier badge" /></a>
-    </p>
-
-    <h2>🚀 Discover our other tools and games:</h2>
-
-    <h3>🕹️ New Spaceship - Retro Mini Game:</h3>
-    
-       <h4>🔥 Featured on itch.io:</h4>
-       <div class="embed-container">
-        <div class="embed-item">
-            <iframe frameborder="0" src="https://itch.io/embed/2985398?linkback=true&bg_color=35fc00&fg_color=3f2832&link_color=fa5c5c&border_color=ff5a1d" width="552" height="167" class="embed-iframe"><a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">Spaceship by tetramatrix</a></iframe>
-        </div>
-
-
-        <h4>🔥 Featured on IndieDB:</h4>
-        <div>
-            <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank"><img src="https://button.indiedb.com/popularity/medium/games/86877.png" alt="New Spaceship" /></a>
-        </div>
+        <li><strong>Structure Visualization:</strong> Generate visual representations of folder hierarchies to understand relationships and organization.</li>
+        <li><strong>Dynamic Structure Mapping:</strong> Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.</li>
+        <li><strong>Portable:</strong> The application is portable and keeps data under user control.</li>
+    </ul>
     </div>
 
-        <h3>🚀 RyzenZPilot - dynamic power management tool:</h3>
+    <figure class="screenshot-figure">
+        <img src="Sorana_cbfHZaRAyM.png" alt="Sorana Visual Workspace Screenshot" class="sorana-screenshot">
+    </figure>
 
-        <h4>🔥 Featured on AlternativeTo:</h4>
-        <a href="https://alternativeto.net/software/ryzenzpilot" title="🔥 Your all-in-one solution for dynamic power management – right from your system tray! 💪" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🚀 RyzenZPilot - dynamic power management tool" /></a>
+    <section class="users-section" id="intended-users">
+        <h2>Intended Users</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#operation')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#core-capabilities')">⬆️</span>
+            <p>Sorana is designed for users who need to organize and analyze complex digital information:</p>
+            <ul>
+                <li><strong>Developers:</strong> Organize codebases, document projects, and create automation workflows.</li>
+                <li><strong>Researchers:</strong> Manage research papers, datasets, and notes with visual organization.</li>
+                <li><strong>Professionals:</strong> Organize project files, documents, and resources with visual tools.</li>
+                <li><strong>Creatives:</strong> Organize digital assets and project files in a visual workspace.</li>
+            </ul>
+        </div>
+    </section>
 
-        <h4>🔥 Featured on Producthunt:</h4>
-        
-        <div class="embed-container" style="height:405px !important">
-                <div class="embed-item" style="height:405px !important">
-                <iframe style="border: none;height:405px !important" src="https://cards.producthunt.com/cards/products/1114242" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <figure class="screenshot-figure">
+        <img src="Sorana_JR9RKvwFv0.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
+    </figure>
+
+    <section class="operation-section" id="operation">
+        <h2>Operation</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#technical-implementation')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#intended-users')">⬆️</span>
+            <p>The application functions through these steps:</p>
+            <ol>
+                <li><strong>Connect</strong> folders and files to the workspace.</li>
+                <li><strong>AI Processing</strong> organizes content spatially and semantically.</li>
+                <li><strong>Visualize</strong> projects as interactive layouts.</li>
+                <li><strong>Interact</strong> with documents to extract information.</li>
+                <li><strong>Create</strong> automation workflows by connecting components.</li>
+                <li><strong>Configure</strong> workflow settings.</li>
+            </ol>
+        </div>
+    </section>
+
+    <figure class="screenshot-figure">
+        <img src="Sorana_MGD9LrNzsZ.png" alt="Sorana Mind Map Screenshot" class="sorana-screenshot">
+    </figure>
+
+    <section class="technical-section" id="technical-implementation">
+        <h2>Technical Implementation</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ocr-section')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#operation')">⬆️</span>
+            <h3>AI Model Performance</h3>
+            <p>
+                Sorana uses AI models to intelligently group files and folders based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify files perfectly, especially for less common file types. For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
+            </p>
+
+            <h4>Hardware Requirements</h4>
+            <ul>
+                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
+                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
+                <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
+                <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
+            </ul>
+
+            <h4>Alternatives for Limited Hardware</h4>
+            <p>
+                If your system has limited hardware resources, you have two main options:
+            </p>
+            <ul>
+                <li><strong>Built-in Portable Model:</strong> Works fully offline but may classify complex files as "Miscellaneous"</li>
+                <li><strong>Cloud-based LLMs:</strong> Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs</li>
+            </ul>
+            <ul>
+        <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</li>
+
+        <li><strong>AI Integration:</strong> Supports connection to both on-prem and cloud-based AI services:
+          <ul>
+            <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager.</li>
+            <li><strong>On-Prem Services:</strong>Lemonade, Llamacpp, Ollama, and other self-hosted LLM solutions</li>
+            <li><strong>Cloud Services:</strong> OpenAI, Mistral, and other cloud-based AI platforms (paid services provide the best performance)</li>
+            <li><strong>Configuration:</strong> Switch between different AI backends based on requirements</li>
+          </ul>
+        </li>
+    </ul>
+    <p>
+        <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of files - fewer files result in faster processing. For the best performance, especially with large folders, we recommend using paid cloud services.
+    </p>
+    </div>
+</section>
+
+    <section class="ocr-section" id="ocr-section">
+        <h3>Document OCR Capabilities</h3>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#technical-implementation')">⬆️</span>
+            <p>
+                Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
+            </p>
+            <ul>
+                <li><strong>Text PDFs:</strong> Extract text from PDF documents (supports embedded text and OCR for scanned content)</li>
+                <li><strong>Plain Text Files:</strong> Process .txt files with support for:
+                    <ul>
+                        <li>UTF-8 (recommended for full Unicode support)</li>
+                        <li>Latin-1 (ISO-8859-1) as fallback encoding</li>
+                    </ul>
+                </li>
+                <li><strong>Code Files:</strong> OCR support for source code files including:
+                    <ul>
+                        <li>Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)</li>
+                        <li>C# (.cs), PHP (.php), Ruby (.rb), Go (.go)</li>
+                        <li>TypeScript (.ts), Swift (.swift), Kotlin (.kt)</li>
+                        <li>And other common programming language files in UTF-8 or Latin-1 encoding</li>
+                    </ul>
+                </li>
+                <li><strong>PDFs with Images:</strong> Built-in method for OCR processing of PDFs containing images</li>
+            </ul>
+
+            <article class="ocr-requirements">
+                <h4>Requirements for PDF Image OCR</h4>
+                <p>
+                    To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
+                </p>
+                <p>Download Tesseract from:</p>
+                <div class="external-links">
+                    <a href="https://github.com/tesseract-ocr/tesseract" target="_blank" class="btn btn-primary">Tesseract OCR GitHub</a>
+                </div>
+            </article>
+
+            <article class="encoding-notes">
+                <h4>Encoding Support Notes</h4>
+                <p>
+                    The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
+                </p>
+            </article>
+        </div>
+    </section>
+    </p>
+    </div>
+
+    <section class="comparison-section" id="feature-comparison">
+        <h2>Feature Comparison</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
+            <p>Technical differences between Sorana and traditional file management approaches:</p>
+
+            <table class="feature-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Sorana</th>
+                        <th>Traditional Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row-alt">
+                        <td><strong>File Organization</strong></td>
+                        <td>AI-driven spatial layout</td>
+                        <td>Manual folder structure</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Document Analysis</strong></td>
+                        <td>Interactive document interface</td>
+                        <td>Basic search functionality</td>
+                    </tr>
+                    <tr class="row-alt">
+                        <td><strong>Workflow Creation</strong></td>
+                        <td>Visual drag-and-drop interface</td>
+                        <td>Manual scripting</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Visualization</strong></td>
+                        <td>Dynamic visual representations</td>
+                        <td>Static list views</td>
+                    </tr>
+                    <tr class="row-alt">
+                        <td><strong>Privacy</strong></td>
+                        <td>Local AI processing</td>
+                        <td>Cloud-based processing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deployment</strong></td>
+                        <td>Portable application</td>
+                        <td>Installed application</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="setup-section" id="installation-setup">
+        <h2>Installation & Setup</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#system-requirements')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#feature-comparison')">⬆️</span>
+            <p>Basic installation steps:</p>
+            <ol>
+                <li><strong>Download:</strong> Obtain <code>Sorana.exe</code>.</li>
+                <li><strong>Execute:</strong> Run the executable file.</li>
+                <li><strong>Configure:</strong> Add folders to begin organizing digital content.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="requirements-section" id="system-requirements">
+        <h2>System Requirements</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#final-download')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#installation-setup')">⬆️</span>
+            <table class="req-table">
+            <tr><th>Component</th><th>Minimum</th></tr>
+            <tr><td>OS</td><td>Windows 11 (64-bit)</td></tr>
+            <tr><td>🧠 AI Support</td><td>Built-in models or on-prem/cloud AI services</td></tr>
+            <tr><td>💾 RAM</td><td>&ge; 4 GB</td></tr>
+            <tr><td>💽 Storage</td><td>Minimum 2 GB (app + model)</td></tr>
+            <tr><td>⚡ Rights</td><td>Standard user</td></tr>
+        </table>
+    </section>
+
+    <!-- Final Download Section -->
+    <section class="final-download-section">
+        <div class="cta-box" id="final-download">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#system-requirements')">⬆️</span>
+            <h3>Get Sorana</h3>
+            <p>Download and install the application.</p>
+
+            <div class="download-buttons">
+                <a href="Sorana.exe" class="btn btn-primary btn-large">Download (Portable)</a>
+                <a href="README.txt" class="btn btn-primary">Readme</a>
+            </div>
+
+            <pre class="code-block-md5-highlight">
+            <code>
+        $ md5sum.exe Sorana.exe fcbbad1cdf86c0a6b23c61ee314c06aa
+        </code></pre>
+
+            <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
+        </div>
+    </section>
+
+    <section class="support-section" id="support-donations">
+        <h2>Support & Donations</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
+            <p>Support Sorana development.</p>
+        </div>
+
+        <div class="cta-box" id="discord-community">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#review-project')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#support-donations')">⬆️</span>
+            <h3>Join our Discord community</h3>
+            <div class="external-links">
+                <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Sorana Discord</a>
             </div>
         </div>
 
-    <p class="footer-text">
-        🏢 Developed by <b>Tetramatrix</b> | 🔧 Optimized for Windows desktops | 💝 Free for everyone
-    </p>
+        <div class="cta-box" id="review-project">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#paypal-bch')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#discord-community')">⬆️</span>
+            <h3>Leave a review or star the project</h3>
+            <a href="https://alternativeto.net/software/sorana/" target="_blank"><img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" /></a>
+        </div>
 
-</div>
+        <div class="cta-box" id="paypal-bch">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#featured-alternative')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#review-project')">⬆️</span>
+            <h3>Support via PayPal or Bitcoin Cash</h3>
+            <div class="payment-options">
+                <div class="paypal-option">
+                    <h4>PayPal</h4>
+                    <p><a href="paypal.me/Gigamegs">paypal.me/Gigamegs</a></p>
+                    <figure class="qr-figure">
+                        <img src="qrcode.png" alt="PayPal QR Code" class="qr-code">
+                    </figure>
+                </div>
+
+                <div class="bch-option">
+                    <h4>Bitcoin Cash (BCH)</h4>
+                    <p>bitcoincash:
+                    qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv</p>
+                    <figure class="qr-figure">
+                        <img src="bch_qrcode.png" alt="Bitcoin Cash QR Code" class="qr-code">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-box" id="featured-alternative">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#paypal-bch')">⬆️</span>
+            <h3>Featured on AlternativeTo</h3>
+            <a href="https://alternativeto.net/software/sorana" title="Sorana provides an visual AI workspace with AI-powered organization and no-code automation." target="_blank">
+                <img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" />
+            </a>
+        </div>
+    </section>
+
+    <section class="other-products-section" id="other-products">
+        <h2>Discover our other tools and games:</h2>
+        <div class="cta-box" id="other-products-intro">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#featured-alternative')">⬆️</span>
+            <p>Check out our other products and tools:</p>
+        </div>
+
+        <div class="cta-box" id="spaceship-intro">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-website')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#other-products-intro')">⬆️</span>
+            <h3>New Spaceship - Retro Mini Game</h3>
+            <p>Retro Arcade 2d side-scroller bullet-hell shmup game</p>
+        </div>
+
+        <div class="cta-box" id="spaceship-website">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-itch')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-intro')">⬆️</span>
+            <h4>Website</h4>
+            <figure class="product-fig">
+                <a href="http://tetramatrix.github.io/spaceship" target="_blank">
+                    <img src="start.jpg" title="Retro Arcade 2d side-scroller bullet-hell shmup game" alt="Spaceship" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="spaceship-itch">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-indiedb')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-website')">⬆️</span>
+            <h4>Featured on itch.io</h4>
+            <figure class="product-fig">
+                <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
+                    <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship - Retro Mini Game" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="spaceship-indiedb">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-itch')">⬆️</span>
+            <h4>Featured on IndieDB</h4>
+            <figure class="product-fig">
+                <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank">
+                    <img src="https://button.indiedb.com/popularity/medium/games/86877.png" alt="New Spaceship" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="ryzenzpilot-intro">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-website')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-indiedb')">⬆️</span>
+            <h3>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
+            <p>RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
+            It allows users to adjust CPU performance, power limits, and thermal configurations
+            for optimal performance and efficiency.</p>
+        </div>
+
+        <div class="cta-box" id="ryzenzpilot-website">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
+            <h4>Website</h4>
+            <figure class="product-fig">
+                <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank">
+                    <img src="RyzenZPilot_3.1.3.png" title="AMD Ryzen Power Management Tool" alt="RyzenZPilot" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="aicono-intro">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-website')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-website')">⬆️</span>
+            <h3>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
+            <p>Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!</p>
+        </div>
+
+        <div class="cta-box" id="aicono-website">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-microsoft')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-intro')">⬆️</span>
+            <h4>Website</h4>
+            <figure class="product-fig">
+                <a href="http://tetramatrix.github.io/Aicono" target="_blank">
+                    <img src="main.png" title="AI Intelligent Desktop Icon Autopilot" alt="Aicono" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="aicono-microsoft">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-software')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-website')">⬆️</span>
+            <h3>Featured on Microsoft Store</h3>
+            <figure class="store-fig">
+                <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank">
+                    <img src="ms-store.svg" width="50%" height="50%" alt="Get it from Microsoft" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="aicono-software">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-alternative')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-microsoft')">⬆️</span>
+            <h3>Featured on Softpedia</h3>
+            <figure class="store-fig">
+                <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank">
+                    <img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="aicono-alternative">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-product')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-software')">⬆️</span>
+            <h4>Featured on AlternativeTo</h4>
+            <figure class="store-fig">
+                <a href="https://alternativeto.net/software/aicono" title="Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!" target="_blank">
+                    <img src="AlternativeTo.png" width="20%" alt="Aicono - AI Intelligent Desktop Icon Autopilot" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="cta-box" id="aicono-product">
+            <span class="nav-arrow-down" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-alternative')">⬆️</span>
+            <h4>Featured on Product Hunt</h4>
+            <figure class="store-fig">
+                <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank">
+                    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - The AI intelligent desktop icon autopilot for Windows | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+                </a>
+            </figure>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p class="footer-text">
+            Developed by <b>Tetramatrix</b> | Available for digital workspaces | Free for everyone
+        </p>
+    </footer>
+
+</main>
 
 <!-- Google Analytics (optional) -->
 <!--
@@ -497,6 +642,55 @@
   gtag('config', 'GA_MEASUREMENT_ID');
 </script>
 -->
+
+<script>
+function scrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        // Überprüfe, ob das Element bereits sichtbar ist
+        const rect = targetElement.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
+        if (isVisible && rect.top < window.innerHeight * 0.1) {
+            // Scrollen, sodass das Element in der Mitte des Viewports ist
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten normales Scrollen
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+// Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
+function smartScrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        const rect = targetElement.getBoundingClientRect();
+        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+        if (isInViewport) {
+            // Wenn das Element bereits sichtbar ist, zentriere es
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten scroll zum Anfang des Elements
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+</script>
 
 </body>
 </html>
