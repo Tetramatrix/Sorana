@@ -419,7 +419,7 @@ function smartScrollToSection(targetId) {
             <p>Download and install the application.</p>
 
             <div class="download-buttons">
-                <a href="Sorana.exe" class="btn btn-primary btn-large">Download (Portable)</a>
+                <a href="https://github.com/Tetramatrix/Sorana/raw/refs/heads/main/docs/Sorana.exe" class="btn btn-primary btn-large">Download (Portable)</a>
                 <a href="README.txt" class="btn btn-primary">Readme</a>
             </div>
 
