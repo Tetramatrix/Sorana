@@ -98,8 +98,8 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.2
-🔢 MD5 Checksum (.exe): fcbbad1cdf86c0a6b23c61ee314c06aa
+🔹 Latest version: Sorana.exe v1.0.3
+🔢 MD5 Checksum (.exe): 3874b83146d062d5e0fa63acacac883b
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 
