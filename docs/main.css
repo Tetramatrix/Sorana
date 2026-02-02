@@ -1105,3 +1105,20 @@ figcaption {
   font-size: 14px;
   margin: 0;
 }
+
+/* Beta feature indicator */
+.beta-feature {
+  display: inline-block;
+  background-color: #ff4444; /* Red background */
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: super;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
