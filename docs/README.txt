@@ -99,7 +99,7 @@ To connect agents in Sorana:
 📥 Downloads 📥
 
 🔹 Latest version: Sorana.exe v1.0.4
-🔢 MD5 Checksum (.exe): 1c9f2f08fec98c79a0bc6d4ca50dec0f
+🔢 MD5 Checksum (.exe): afbbcbdddb901984e334bc7ea51a0264
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 
