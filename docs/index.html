@@ -100,6 +100,8 @@ function smartScrollToSection(targetId) {
             <li><a href="#intended-users">Intended Users</a></li>
             <li><a href="#operation">Operation</a></li>
             <li><a href="#technical-implementation">Technical Implementation</a></li>
+            <li><a href="#ocr-section">Document OCR & Context</a></li>
+            <li><a href="#mcp-section">MCP Server Usage</a></li>
             <li><a href="#feature-comparison">Feature Comparison</a></li>
             <li><a href="#installation-setup">Installation & Setup</a></li>
             <li><a href="#system-requirements">System Requirements</a></li>
@@ -292,10 +294,18 @@ function smartScrollToSection(targetId) {
 </section>
 
     <section class="ocr-section" id="ocr-section">
-        <h3>Document OCR Capabilities</h3>
+        <h3>Document OCR and Context Enhancement</h3>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#mcp-section')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#technical-implementation')">⬆️</span>
+            <p>
+                Document OCR and Context Enhancement allows users to enrich agents with specific knowledge by dragging and dropping documents directly onto agents. After organizing files spatially, users can make documents accessible to agents by processing them through OCR, converting them into contextual information. This is accomplished via the context menu options 'Document Overview' and 'Process Documents,' which is particularly valuable for PDFs and image-based documents.
+            </p>
+            <p>
+                It's important to distinguish this from MCP server functionality. While the MCP server allows file interaction during chats, it currently lacks OCR capabilities and can only access text-based file content.
+            </p>
+
+            <h4>Document OCR Capabilities</h4>
             <p>
                 Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
             </p>
@@ -335,16 +345,43 @@ function smartScrollToSection(targetId) {
                     The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
                 </p>
             </article>
+
         </div>
     </section>
-    </p>
-    </div>
+
+    <section class="mcp-section" id="mcp-section">
+        <h3>MCP Server Usage Guide</h3>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
+            <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations through AI agents. To use these capabilities:</p>
+            <ol>
+                <li>Create an agent in the workspace</li>
+                <li>Right-click on the agent title and select "Chat"</li>
+                <li>Interact directly with all files and folders in the workspace</li>
+            </ol>
+
+            <p>Common file operations you can perform in the agent chat:</p>
+            <ul>
+                <li>"List the first 10 files in the current directory" (uses list_directory)</li>
+                <li>"Search all text files in the workspace" (uses search_files)</li>
+                <li>"Read the content of document.txt to summarize its contents" (uses read_file)</li>
+                <li>"Read lines 10-20 of large_log.txt to check for errors" (uses read_file_from_line)</li>
+                <li>"Move file report.docx to archive/report_backup.docx" (uses move_file)</li>
+                <li>"Get size and creation date of config.json" (uses get_file_info)</li>
+                <li>"Edit the third paragraph of essay.txt to improve clarity" (uses edit_file)</li>
+                <li>"Write the generated report to monthly_report.txt" (uses write_file)</li>
+                <li>"Create a new folder called 'Project_X' in the workspace" (uses create_directory)</li>
+                <li>"Show available storage space and supported operations" (uses get_filesystem_info)</li>
+            </ul>
+        </div>
+    </section>
 
     <section class="comparison-section" id="feature-comparison">
         <h2>Feature Comparison</h2>
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#mcp-section')">⬆️</span>
             <p>Technical differences between Sorana and traditional file management approaches:</p>
 
             <table class="feature-table">
@@ -358,32 +395,42 @@ function smartScrollToSection(targetId) {
                 <tbody>
                     <tr class="row-alt">
                         <td><strong>File Organization</strong></td>
-                        <td>AI-driven spatial layout</td>
+                        <td>AI-driven spatial layout with semantic grouping</td>
                         <td>Manual folder structure</td>
                     </tr>
                     <tr>
                         <td><strong>Document Analysis</strong></td>
-                        <td>Interactive document interface</td>
+                        <td>Interactive document interface with AI chat capabilities</td>
                         <td>Basic search functionality</td>
                     </tr>
                     <tr class="row-alt">
+                        <td><strong>OCR & Context Enhancement</strong></td>
+                        <td>Drag-and-drop document enrichment with OCR processing for agents</td>
+                        <td>No context enhancement capabilities</td>
+                    </tr>
+                    <tr>
                         <td><strong>Workflow Creation</strong></td>
                         <td>Visual drag-and-drop interface</td>
                         <td>Manual scripting</td>
                     </tr>
-                    <tr>
+                    <tr class="row-alt">
                         <td><strong>No-Code Multi-Agent Orchestration</strong></td>
                         <td>Complex workflows within 2D canvas workspace</td>
                         <td>Separate tools or manual processes</td>
                     </tr>
+                    <tr>
+                        <td><strong>Advanced File Operations</strong></td>
+                        <td>Built-in MCP server for AI-driven file management (read, write, move, search, edit files)</td>
+                        <td>Limited to basic file operations</td>
+                    </tr>
                     <tr class="row-alt">
                         <td><strong>Visualization</strong></td>
-                        <td>Dynamic visual representations</td>
+                        <td>Dynamic visual representations and mind maps</td>
                         <td>Static list views</td>
                     </tr>
                     <tr>
                         <td><strong>Privacy</strong></td>
-                        <td>Local AI processing</td>
+                        <td>Local AI processing with user-controlled data</td>
                         <td>Cloud-based processing</td>
                     </tr>
                     <tr class="row-alt">
