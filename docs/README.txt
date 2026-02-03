@@ -19,6 +19,19 @@ We were frustrated by the limitations of traditional file managers. For decades,
 🤖 No-Code Agent Orchestration: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
 💬 Contextual Document Chat: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
 🗺️ Dynamic Structure Mapping: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
+🔧 Built-in MCP Server for File Operations (beta): Integrated server supporting advanced file operations through AI agents, including:
+  • read_file: Read file contents with intelligent limits
+  • read_file_from_line: Read specific file ranges for pagination
+  • write_file: Write content to files
+  • list_directory: List directory contents
+  • create_directory: Create directories
+  • move_file: Move or rename files/directories
+  • search_files: Search for files in directories
+  • get_file_info: Get information about files/directories
+  • edit_file: Edit files with specific changes
+  • get_filesystem_info: Get server configuration and capabilities
+  These operations are accessible through selected LLMs, enabling sophisticated file management workflows.
+
 📦 Portable: The application is portable and keeps data under user control.
 
 🚀 Quick Start 🚀
@@ -42,9 +55,7 @@ We were frustrated by the limitations of traditional file managers. For decades,
 ⚙️ Installation & Setup ⚙️
 
 🌐 Website: http://tetramatrix.github.io/Sorana
-
 💬 Discord: https://discord.gg/4QkQSfSATF
-
 🎨 Visual Workspace Features 🎨
 
 🤖 Spatial AI Organization: AI automatically groups and arranges files on a 2D canvas for intuitive project visualization
@@ -84,6 +95,32 @@ Sorana includes powerful Optical Character Recognition (OCR) capabilities for pr
 To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
 
 📥 Download Tesseract from: https://github.com/tesseract-ocr/tesseract
+
+📄 Document OCR and Context Enhancement 📄
+
+Document OCR and Context Enhancement allows users to enrich agents with specific knowledge by dragging and dropping documents directly onto agents. After organizing files spatially, users can make documents accessible to agents by processing them through OCR, converting them into contextual information. This is accomplished via the context menu options 'Document Overview' and 'Process Documents,' which is particularly valuable for PDFs and image-based documents.
+
+It's important to distinguish this from MCP server functionality. While the MCP server allows file interaction during chats, it currently lacks OCR capabilities and can only access text-based file content.
+
+🤖 MCP Server Usage Guide 🤖
+
+To use the MCP server file operations:
+
+1. Create an agent in the workspace
+2. Right-click on the agent title and select "Chat"
+3. Interact directly with all files and folders in the workspace
+
+Example commands you can use in the agent chat:
+• "List the first 10 files in the current directory" (uses list_directory)
+• "Search all text files in the workspace" (uses search_files)
+• "Read the content of document.txt to summarize its contents" (uses read_file)
+• "Read lines 10-20 of large_log.txt to check for errors" (uses read_file_from_line)
+• "Move file report.docx to archive/report_backup.docx" (uses move_file)
+• "Get size and creation date of config.json" (uses get_file_info)
+• "Edit the third paragraph of essay.txt to improve clarity" (uses edit_file)
+• "Write the generated report to monthly_report.txt" (uses write_file)
+• "Create a new folder called 'Project_X' in the workspace" (uses create_directory)
+• "Show available storage space and supported operations" (uses get_filesystem_info)
 
 🔤 Encoding Support Notes:
 The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
@@ -142,3 +179,22 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 🌐 Website: http://tetramatrix.github.io/Aicono
 📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
 🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
+
+📋 Changelog 📋
+
+📅 February 2, 2026 - Version 1.0.4
+
+• Significant performance enhancement for organizing large folder structures using new iterative algorithms
+• New built-in MCP server for file operations:
+  - read_file: Read file contents with intelligent limits
+  - read_file_from_line: Read specific file ranges for pagination
+  - write_file: Write content to files
+  - list_directory: List directory contents
+  - create_directory: Create directories
+  - move_file: Move or rename files/directories
+  - search_files: Search for files in directories
+  - get_file_info: Get information about files/directories
+  - edit_file: Edit files with specific changes
+  - get_filesystem_info: Get server configuration and capabilities
+• Other minor bugfixes
+
