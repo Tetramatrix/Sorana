@@ -184,7 +184,7 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 
 📅 February 5, 2026 - Version 1.0.5
 
-• Bugfix built-models
+• Bugfix built-in models
 
 📅 February 2, 2026 - Version 1.0.4
 
