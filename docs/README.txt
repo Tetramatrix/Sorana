@@ -135,8 +135,8 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.6
-🔢 MD5 Checksum (.exe): 72f92f5e4beb87dac52797b3bf841884
+🔹 Latest version: Sorana.exe v1.0.7
+🔢 MD5 Checksum (.exe): 52553cdbe714054f7a442a391d585553
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 
@@ -181,6 +181,13 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
 
 📋 Changelog 📋
+
+📅 February 18, 2026 - Version 1.0.7
+
+• Bugfix About Window version display
+• Update Model Manager created time to local time 
+• Update extra Full-Reorganize button in the main window to organize from start
+• Update Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk 
 
 📅 February 14, 2026 - Version 1.0.6
 
