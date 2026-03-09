@@ -135,8 +135,7 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.7
-🔢 MD5 Checksum (.exe): 52553cdbe714054f7a442a391d585553
+🔹 Latest version: Sorana.exe v1.0.8
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 
@@ -181,6 +180,12 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
 
 📋 Changelog 📋
+
+📅 March 09, 2026 - Version 1.0.8
+
+• minor UI/UX update
+• minor core engine update ( bugfixes, stability, architecture)
+• smaller binary 
 
 📅 February 18, 2026 - Version 1.0.7
 
