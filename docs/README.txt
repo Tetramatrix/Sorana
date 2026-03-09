@@ -138,6 +138,7 @@ To connect agents in Sorana:
 🔹 Latest version: Sorana.exe v1.0.8
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
+💬 Discord: https://discord.gg/4QkQSfSATF
 
 ❤️ Support the Development ❤️
 
@@ -160,6 +161,8 @@ Thank you for your support!
 🌐 https://tetramatrix.github.io/spaceship/
 🎮 https://www.indiedb.com/games/new-spaceship
 🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
+💬 Discord: https://discord.gg/4QkQSfSATF
+
 
 🔧 Discover our RyzenZPilot! 🔧
 
@@ -170,6 +173,7 @@ It allows users to adjust CPU performance, power limits, and thermal configurati
 for optimal performance and efficiency.
 
 🌐 Website: http://tetramatrix.github.io/RyzenZPilot
+💬 Discord: https://discord.gg/4QkQSfSATF
 
 🖥️ Discover our Aicono - AI intelligent desktop icon autopilot 🖥️
 
@@ -178,6 +182,7 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 🌐 Website: http://tetramatrix.github.io/Aicono
 📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
 🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
+💬 Discord: https://discord.gg/4QkQSfSATF
 
 📋 Changelog 📋
 
