@@ -135,7 +135,8 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.8
+🔹 Latest version: Sorana.exe v1.0.9
+🔢 MD5 Checksum (.exe): caaa676a1728ae199c2b6ac0f220c960
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
@@ -185,6 +186,23 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 💬 Discord: https://discord.gg/4QkQSfSATF
 
 📋 Changelog 📋
+
+📅 March 16, 2026 — Version 1.0.9
+
+• Major: AI core completely rewritten — now powered by Pith SDK                                                                       
+  • Scalable batch processing: handles thousands of items (no single-prompt limits)                                                   
+  • Smart prompt tiers optimized for 1B, 8B, and 30B models                                             
+  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization                                              
+• Major: Externalized Llama.cpp with automatic download & caching
+• Major: Much smaller binary
+• Internal: Core engine refactored for improved stability
+• Bugfix: UI buttons rebuilt and refreshed for a cleaner experience
+• Bugfix: Context Menu rebuilt and cleaned up
+• Bugfix: Grid-points
+• Bugfix: Model Manager select and activate model
+• Bugfix: Splash screen freeze
+• Bugfix: ssl certificate
+• Bugfix: pith-sdk batch size
 
 📅 March 09, 2026 - Version 1.0.8
 
