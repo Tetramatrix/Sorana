@@ -135,10 +135,11 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.7
-🔢 MD5 Checksum (.exe): 52553cdbe714054f7a442a391d585553
+🔹 Latest version: Sorana.exe v1.0.9
+🔢 MD5 Checksum (.exe): caaa676a1728ae199c2b6ac0f220c960
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
+💬 Discord: https://discord.gg/4QkQSfSATF
 
 ❤️ Support the Development ❤️
 
@@ -161,6 +162,8 @@ Thank you for your support!
 🌐 https://tetramatrix.github.io/spaceship/
 🎮 https://www.indiedb.com/games/new-spaceship
 🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
+💬 Discord: https://discord.gg/4QkQSfSATF
+
 
 🔧 Discover our RyzenZPilot! 🔧
 
@@ -171,6 +174,7 @@ It allows users to adjust CPU performance, power limits, and thermal configurati
 for optimal performance and efficiency.
 
 🌐 Website: http://tetramatrix.github.io/RyzenZPilot
+💬 Discord: https://discord.gg/4QkQSfSATF
 
 🖥️ Discover our Aicono - AI intelligent desktop icon autopilot 🖥️
 
@@ -179,14 +183,38 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 🌐 Website: http://tetramatrix.github.io/Aicono
 📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
 🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
+💬 Discord: https://discord.gg/4QkQSfSATF
 
 📋 Changelog 📋
+
+📅 March 16, 2026 — Version 1.0.9
+
+• Major: AI core completely rewritten — now powered by Pith SDK                                                                       
+  • Scalable batch processing: handles thousands of items (no single-prompt limits)                                                   
+  • Smart prompt tiers optimized for 1B, 8B, and 30B models                                             
+  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization                                              
+• Major: Externalized Llama.cpp with automatic download & caching
+• Major: Much smaller binary
+• Internal: Core engine refactored for improved stability
+• Bugfix: UI buttons rebuilt and refreshed for a cleaner experience
+• Bugfix: Context Menu rebuilt and cleaned up
+• Bugfix: Grid-points
+• Bugfix: Model Manager select and activate model
+• Bugfix: Splash screen freeze
+
+
+📅 March 09, 2026 - Version 1.0.8
+
+• minor UI/UX update
+• minor core engine update ( bugfixes, stability, architecture)
+• smaller binary 
 
 📅 February 18, 2026 - Version 1.0.7
 
 • Bugfix About Window version display
 • Update Model Manager created time to local time 
-• Update extra Full-Reorganize button in the main window to organize from start 
+• Update extra Full-Reorganize button in the main window to organize from start
+• Update Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk 
 
 📅 February 14, 2026 - Version 1.0.6
 
