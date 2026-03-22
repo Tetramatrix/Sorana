@@ -102,7 +102,7 @@ function smartScrollToSection(targetId) {
             <li><a href="#technical-implementation">Technical Implementation</a></li>
             <li><a href="#ocr-section">Document OCR & Context</a></li>
             <li><a href="#mcp-section">MCP Server Usage</a></li>
-            <li><a href="#feature-comparison">Feature Comparison</a></li>
+            <li><a href="#ai-memory-rag">AI Memory & RAG</a></li>
             <li><a href="#installation-setup">Installation & Setup</a></li>
             <li><a href="#system-requirements">System Requirements</a></li>
             <li><a href="#support-donations">Support & Donations</a></li>
@@ -125,7 +125,7 @@ function smartScrollToSection(targetId) {
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#core-capabilities')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#inspiration')">⬆️</span>
-            <p>Sorana is an AI-powered visual workspace featuring a built-in MCP server for advanced file operations, OCR document processing, and spatial AI organization. Transform how you organize digital files with semantic analysis that groups related content onto an intuitive 2D canvas. Create no-code agent workflows, enhance document context with OCR, perform advanced file operations through the MCP server, and connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, and more) while keeping your data under your control.</p>
+            <p>Sorana is an AI-powered visual workspace featuring a built-in MCP server for file operations, web content tools, OCR document processing, and spatial AI organization. Transform how you organize digital files with semantic analysis that groups related content onto an intuitive 2D canvas. Create no-code agent workflows, enhance document context with OCR, perform file and web operations through the MCP server, and connect to on-prem or cloud AI backends (OpenAI, Mistral, Google Gemini, 🍋 Lemonade with FastFlowLM NPU, and more) while keeping your data under your control. With advanced 4-tier AI memory and 40x faster RAG retrieval, Sorana delivers intelligent, context-aware responses while saving tokens.</p>
         </div>
 
         <!-- Video Section -->
@@ -150,6 +150,7 @@ function smartScrollToSection(targetId) {
         -->
 
         <!-- Download Section -->
+        <!--
         <section class="download-section" id="download-section">
             <div class="cta-box">
                 <span class="nav-arrow-down" onclick="smartScrollToSection('#core-capabilities')">⬇️</span>
@@ -162,10 +163,15 @@ function smartScrollToSection(targetId) {
                     <a href="README.txt" class="btn btn-primary">Readme</a>
                 </div>
 
+              <pre class="code-block-md5"><code>
+        				$ md5sum.exe Sorana.exe v1.0.10 TODO_HASH
+        			</code></pre>
+        			
                 <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%"/></a>
             </div>
         </section>
-
+				-->
+				
         <section class="capabilities-section" id="core-capabilities">
             <h2>Core Capabilities</h2>
             <div class="cta-box">
@@ -174,7 +180,7 @@ function smartScrollToSection(targetId) {
                 <ul>
                     <li><strong>Spatial AI Organization:</strong> Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.</li>
                     <li><strong>WYSIWYG Canvas Editor:</strong> Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.</li>
-                    <li><strong>Advanced Model Management & AI Integration:</strong> Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Lemonade, Ollama, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks. Supports seamless connection to both on-prem and cloud-based AI services.</li>
+                    <li><strong>Advanced Model Management & AI Integration:</strong> Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Google Gemini, 🍋 Lemonade, Ollama, Llama.Cpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks. Supports seamless connection to both on-prem and cloud-based AI services.</li>
         <li><strong>No-Code Multi-Agent Orchestration:</strong> Create custom agents and connect them into processing pipelines using a drag-and-drop interface within our unique 2D canvas workspace where files and folders are spatially arranged. Handle complex multi-agent workflows by building agents that operate directly on this visual workspace, collaborating seamlessly by passing insights from one to another to solve complex problems, all without writing code. Enhance agent knowledge by integrating OCR-processed PDFs and text files directly into their memory and processing capabilities.</li>
 
         <figure class="chatbot-figure">
@@ -182,21 +188,19 @@ function smartScrollToSection(targetId) {
         </figure>
 
         <li><strong>Visual Structure Mapping:</strong> Generate dynamic visual representations and mind maps of folder hierarchies to understand relationships and reveal the big picture of your data organization.</li>
-        <li><strong>Built-in MCP Server for File Operations <span class="beta-feature">beta</span>:</strong> Integrated server supporting advanced file operations through AI agents, including:
+        <li><strong>Built-in MCP Server <span class="beta-feature">beta</span>:</strong> Integrated server supporting advanced file operations and web content access through AI agents:
             <ul>
-                <li><strong>read_file:</strong> Read file contents with intelligent limits</li>
-                <li><strong>read_file_from_line:</strong> Read specific file ranges for pagination</li>
-                <li><strong>write_file:</strong> Write content to files</li>
-                <li><strong>list_directory:</strong> List directory contents</li>
-                <li><strong>create_directory:</strong> Create directories</li>
-                <li><strong>move_file:</strong> Move or rename files/directories</li>
-                <li><strong>search_files:</strong> Search for files in directories</li>
-                <li><strong>get_file_info:</strong> Get information about files/directories</li>
-                <li><strong>edit_file:</strong> Edit files with specific changes</li>
-                <li><strong>get_filesystem_info:</strong> Get server configuration and capabilities</li>
+                <li><strong>File Operations:</strong> read_file, read_file_from_line, write_file, list_directory, create_directory, move_file, search_files, get_file_info, edit_file, get_filesystem_info</li>
+                <li><strong>Web Content Tools:</strong> web_fetch_content, web_scrape_page, web_extract_links, web_search, web_get_metadata, web_save_snapshot</li>
             </ul>
-            These operations are accessible through selected LLMs, enabling sophisticated file management workflows.
+            Combine file and web operations for powerful workflows (e.g., "Fetch product specs from website and save to local file").
         </li>
+        <li><strong>Chat History & Conversation Management:</strong> All your past conversations are stored in a sidebar. Search, reload, and delete chats. Nothing gets lost.</li>
+        <li><strong>4-Tier AI Memory System:</strong> Advanced memory architecture with short-term memory, conversation summaries, long-term memory (personas, facts, preferences), and document search. Each layer builds on the last for intelligent, context-aware responses.</li>
+        <li><strong>40x Faster RAG Retrieval:</strong> Optimized startup from 4s to under 0.1s. Token-efficient, targeted answers with full user control over stored data.</li>
+        <li><strong>Google Gemini Support:</strong> Add your API key and use Gemini models including free tier options.</li>
+        <li><strong>NPU-Aware Document Search:</strong> Uses 🍋 Lemonade backend with integrated FastFlowLM NPU for Windows Ryzen. 🍋 Lemonade is AMD's new high-performance AI server (C++ based) that integrates multiple backends including Llama.cpp, Whisper, and FastFlowLM for NPU acceleration. Falls back to text-based retrieval if no NPU is available. Supports 15 languages with auto-detection.</li>
+        <li><strong>Centralized Data Storage:</strong> All data stored in a single <code>.sorana/</code> folder. Existing installs migrate automatically.</li>
         <li><strong>Portable:</strong> The application is portable and keeps data under user control.</li>
     </ul>
     </div>
@@ -257,37 +261,157 @@ function smartScrollToSection(targetId) {
 
             <h4>Hardware Requirements</h4>
             <ul>
-                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
-                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
+                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (8-16GB)</li>
+                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 8 GB RAM or 4 GB VRAM for smooth operation</li>
                 <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
                 <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
             </ul>
 
-            <h4>Alternatives for Limited Hardware</h4>
-            <p>
-                If your system has limited hardware resources, you have two main options:
-            </p>
+             <h4>AI Integration</h4>
+            <p>Sorana supports connection to both on-prem and cloud-based AI services:</p>
             <ul>
-                <li><strong>Built-in Portable Model:</strong> Works fully offline but may classify complex files as "Miscellaneous"</li>
-                <li><strong>Cloud-based LLMs:</strong> Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs</li>
+                <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
+                <li><strong>On-Prem Services:</strong> 🍋 Lemonade (with FastFlowLM NPU), Llama.Cpp, Ollama, and other self-hosted LLM solutions</li>
+                <li><strong>Cloud Services:</strong> OpenAI, Mistral, Google Gemini, and other cloud-based AI platforms</li>
             </ul>
-            <ul>
-        <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</li>
 
-        <li><strong>AI Integration:</strong> Supports connection to both on-prem and cloud-based AI services:
-          <ul>
-            <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager.</li>
-            <li><strong>On-Prem Services:</strong>Lemonade, Llamacpp, Ollama, and other self-hosted LLM solutions</li>
-            <li><strong>Cloud Services:</strong> OpenAI, Mistral, and other cloud-based AI platforms (paid services provide the best performance)</li>
-            <li><strong>Configuration:</strong> Switch between different AI backends based on requirements</li>
-          </ul>
-        </li>
-    </ul>
-    <p>
-        <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of files - fewer files result in faster processing. For the best performance, especially with large folders, we recommend using paid cloud services.
-    </p>
-    </div>
-</section>
+					 <h4>Recommendation</h4>
+           <p><strong>🍋 Lemonade</strong> For optimal on-prem performance with both GPU and NPU acceleration, we recommend:</p>
+                <div class="partner-buttons" style="margin-top: 10px;">
+                    <a href="https://lemonade-server.ai/" target="_blank" class="btn-partner">🍋 Lemonade</a>
+                    <a href="https://fastflowlm.com/" target="_blank" class="btn-partner-fastflow">⚡ FastFlowLM</a>
+                </div>
+                <p style="font-size: 13px; margin-top: 8px; color: #ccc;">
+                    🍋 Lemonade is AMD's new high-performance AI server (C++ based) with integrated backends including Llama.cpp, Whisper, and FastFlowLM for native Ryzen NPU acceleration.
+                </p>
+            
+        
+          	<p>
+                <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of files - fewer files result in faster processing. For the best performance, especially with large folders, we recommend using paid cloud services.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="ai-memory-rag-section" id="ai-memory-rag">
+        <h2>Advanced AI Memory & RAG System</h2>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#mcp-section')">⬆️</span>
+            <p>Sorana v1.0.10 introduces a 4-tier memory architecture combined with 4-tier RAG (Retrieval-Augmented Generation) for intelligent, context-aware responses that save tokens and deliver faster, targeted answers — with full user control.</p>
+
+            <h3>4-Tier AI Memory System</h3>
+            <p>Each memory layer builds on the last, creating a comprehensive memory system that makes your AI agents more intelligent over time:</p>
+            <ul>
+                <li><strong>Short-Term Memory:</strong> Active conversation context within the current chat session</li>
+                <li><strong>Summaries:</strong> Automatic conversation compression to preserve key insights without token bloat</li>
+                <li><strong>Long-Term Memory:</strong> Persistent storage for user personas, facts, preferences, and skills — automatically extracted from conversations</li>
+                <li><strong>Document Search:</strong> RAG-based retrieval from uploaded documents for precise, context-rich answers</li>
+            </ul>
+
+            <figure class="screenshot-figure">
+                <img src="Longterm_person_memory.png" alt="Long-Term Person Memory Management Interface" class="sorana-screenshot">
+                <figcaption>Long-Term Memory: Automatically extracted user facts, preferences, and persona data</figcaption>
+            </figure>
+
+            <h3>Chat History & Conversation Management</h3>
+            <p>All your past conversations are stored in a sidebar for easy access. Search, reload, and delete chats — nothing gets lost.</p>
+
+            <figure class="screenshot-figure">
+                <img src="chat_history.png" alt="Chat History Sidebar Interface" class="sorana-screenshot">
+                <figcaption>Chat History Sidebar: Access all past conversations instantly</figcaption>
+            </figure>
+
+            <figure class="screenshot-figure">
+                <img src="chat_manager.png" alt="Chat Manager Interface" class="sorana-screenshot">
+                <figcaption>Chat Manager: View, search, and manage conversation history</figcaption>
+            </figure>
+
+            <h3>40x Faster RAG Retrieval</h3>
+            <p>Optimized RAG startup from 4s to under 0.1s. The 4-tier RAG system ensures token-efficient, targeted answers:</p>
+            <ul>
+                <li><strong>Tier 1:</strong> Immediate context from active conversation</li>
+                <li><strong>Tier 2:</strong> Compressed summaries for efficient recall</li>
+                <li><strong>Tier 3:</strong> Long-term memory facts and personas</li>
+                <li><strong>Tier 4:</strong> Full document chunk retrieval for deep context</li>
+            </ul>
+
+            <figure class="screenshot-figure">
+                <img src="rag.png" alt="RAG Document Manager Interface" class="sorana-screenshot">
+                <figcaption>RAG Document Manager: Upload, view, and manage documents for AI context retrieval</figcaption>
+            </figure>
+
+            <h3>Key Benefits</h3>
+            <ul>
+                <li><strong>Token Efficiency:</strong> Smart memory layering reduces token usage by serving only relevant context</li>
+                <li><strong>Faster Responses:</strong> 40x speedup in RAG retrieval means near-instant answers</li>
+                <li><strong>Full User Control:</strong> All data stored locally in <code>.sorana/</code> folder — you control what's remembered</li>
+                <li><strong>NPU Acceleration:</strong> Uses 🍋 Lemonade backend with integrated FastFlowLM NPU for Windows Ryzen. 🍋 Lemonade is AMD's high-performance AI server (C++ based) integrating multiple backends including FastFlowLM for native NPU acceleration. Falls back to text-based retrieval if no NPU is available.</li>
+                <li><strong>Multi-Language:</strong> 15 languages supported with auto-detection</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="mcp-section" id="mcp-section">
+        <h3>MCP Server Usage Guide</h3>
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ai-memory-rag')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
+            <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations and web content access through AI agents. To use these capabilities:</p>
+            <ol>
+                <li>Create an agent in the workspace</li>
+                <li>Right-click on the agent title and select "Chat"</li>
+                <li>Interact directly with all files, folders, and web content</li>
+            </ol>
+
+            <h4>File Operations</h4>
+            <p>Common file operations you can perform in the agent chat:</p>
+            <ul>
+                <li>"List the first 10 files in the current directory" (uses list_directory)</li>
+                <li>"Search all text files in the workspace" (uses search_files)</li>
+                <li>"Read the content of document.txt to summarize its contents" (uses read_file)</li>
+                <li>"Read lines 10-20 of large_log.txt to check for errors" (uses read_file_from_line)</li>
+                <li>"Move file report.docx to archive/report_backup.docx" (uses move_file)</li>
+                <li>"Get size and creation date of config.json" (uses get_file_info)</li>
+                <li>"Edit the third paragraph of essay.txt to improve clarity" (uses edit_file)</li>
+                <li>"Write the generated report to monthly_report.txt" (uses write_file)</li>
+                <li>"Create a new folder called 'Project_X' in the workspace" (uses create_directory)</li>
+                <li>"Show available storage space and supported operations" (uses get_filesystem_info)</li>
+                <li>"Summarize document.txt and create a markdown summary document" (uses read_file + write_file)</li>
+            </ul>
+
+            <h4>Web Content Tools</h4>
+            <p>Built-in MCP web content tools give your AI direct web access. Combine file operations with web content for even more powerful agents:</p>
+            <ul>
+                <li><strong>web_fetch_content:</strong> Fetch and read content from any URL</li>
+                <li><strong>web_scrape_page:</strong> Scrape full webpage content</li>
+                <li><strong>web_extract_links:</strong> Extract all links from a webpage</li>
+                <li><strong>web_search:</strong> Search the web for information</li>
+                <li><strong>web_get_metadata:</strong> Get page metadata and SEO info</li>
+                <li><strong>web_save_snapshot:</strong> Save webpage snapshots for later reference</li>
+            </ul>
+
+            <p><strong>Example queries:</strong></p>
+            <ul>
+                <li>"What's the weather in Berlin?"</li>
+                <li>"Find best wireless earbuds under 100€"</li>
+                <li>"Compare iPhone 16 vs Samsung S25"</li>
+                <li>"Check if website is down"</li>
+                <li>"Extract all product links from Amazon search"</li>
+                <li>"Fetch the latest news about AI and summarize"</li>
+                <li>"Compare prices from multiple online shops"</li>
+            </ul>
+
+            <p><strong>Combined workflows:</strong></p>
+            <ul>
+                <li>"Fetch product specs from the manufacturer website and save to a local file"</li>
+                <li>"Search for documentation, download PDFs, and organize into folders"</li>
+                <li>"Extract data from web sources, analyze with local files, and generate a report"</li>
+            </ul>
+        </div>
+    </section>
+
 
     <section class="ocr-section" id="ocr-section">
         <h3>Document OCR and Context Enhancement</h3>
@@ -345,105 +469,12 @@ function smartScrollToSection(targetId) {
         </div>
     </section>
 
-    <section class="mcp-section" id="mcp-section">
-        <h3>MCP Server Usage Guide</h3>
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
-            <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations through AI agents. To use these capabilities:</p>
-            <ol>
-                <li>Create an agent in the workspace</li>
-                <li>Right-click on the agent title and select "Chat"</li>
-                <li>Interact directly with all files and folders in the workspace</li>
-            </ol>
-
-            <p>Common file operations you can perform in the agent chat:</p>
-            <ul>
-                <li>"List the first 10 files in the current directory" (uses list_directory)</li>
-                <li>"Search all text files in the workspace" (uses search_files)</li>
-                <li>"Read the content of document.txt to summarize its contents" (uses read_file)</li>
-                <li>"Read lines 10-20 of large_log.txt to check for errors" (uses read_file_from_line)</li>
-                <li>"Move file report.docx to archive/report_backup.docx" (uses move_file)</li>
-                <li>"Get size and creation date of config.json" (uses get_file_info)</li>
-                <li>"Edit the third paragraph of essay.txt to improve clarity" (uses edit_file)</li>
-                <li>"Write the generated report to monthly_report.txt" (uses write_file)</li>
-                <li>"Create a new folder called 'Project_X' in the workspace" (uses create_directory)</li>
-                <li>"Show available storage space and supported operations" (uses get_filesystem_info)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="comparison-section" id="feature-comparison">
-        <h2>Feature Comparison</h2>
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#mcp-section')">⬆️</span>
-            <p>Technical differences between Sorana and traditional file management approaches:</p>
-
-            <table class="feature-table">
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Sorana</th>
-                        <th>Traditional Tools</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="row-alt">
-                        <td><strong>File Organization</strong></td>
-                        <td>AI-driven spatial layout with semantic grouping</td>
-                        <td>Manual folder structure</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Document Analysis</strong></td>
-                        <td>Interactive document interface with AI chat capabilities</td>
-                        <td>Basic search functionality</td>
-                    </tr>
-                    <tr class="row-alt">
-                        <td><strong>OCR & Context Enhancement</strong></td>
-                        <td>Drag-and-drop document enrichment with OCR processing for agents</td>
-                        <td>No context enhancement capabilities</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Workflow Creation</strong></td>
-                        <td>Visual drag-and-drop interface</td>
-                        <td>Manual scripting</td>
-                    </tr>
-                    <tr class="row-alt">
-                        <td><strong>No-Code Multi-Agent Orchestration</strong></td>
-                        <td>Complex workflows within 2D canvas workspace</td>
-                        <td>Separate tools or manual processes</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Advanced File Operations</strong></td>
-                        <td>Built-in MCP server for AI-driven file management (read, write, move, search, edit files)</td>
-                        <td>Limited to basic file operations</td>
-                    </tr>
-                    <tr class="row-alt">
-                        <td><strong>Visualization</strong></td>
-                        <td>Dynamic visual representations and mind maps</td>
-                        <td>Static list views</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Privacy</strong></td>
-                        <td>Local AI processing with user-controlled data</td>
-                        <td>Cloud-based processing</td>
-                    </tr>
-                    <tr class="row-alt">
-                        <td><strong>Deployment</strong></td>
-                        <td>Portable application</td>
-                        <td>Installed application</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
 
     <section class="setup-section" id="installation-setup">
         <h2>Installation & Setup</h2>
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#system-requirements')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#feature-comparison')">⬆️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ai-memory-rag')">⬆️</span>
             <p>Basic installation steps:</p>
             <ol>
                 <li><strong>Download:</strong> Obtain <code>Sorana.exe</code>.</li>
@@ -463,7 +494,7 @@ function smartScrollToSection(targetId) {
             <tr><td>OS</td><td>Windows 11 (64-bit)</td></tr>
             <tr><td>🧠 AI Support</td><td>Built-in models or on-prem/cloud AI services</td></tr>
             <tr><td>💾 RAM</td><td>&ge; 4 GB</td></tr>
-            <tr><td>💽 Storage</td><td>Minimum 2 GB (app + model)</td></tr>
+            <tr><td>💽 Storage</td><td>Minimum 2 GB (app + model) + .sorana/ data folder</td></tr>
             <tr><td>⚡ Rights</td><td>Standard user</td></tr>
         </table>
     </section>
@@ -482,7 +513,7 @@ function smartScrollToSection(targetId) {
             </div>
 
               <pre class="code-block-md5"><code>
-        				$ md5sum.exe Sorana.exe v1.0.9 caaa676a1728ae199c2b6ac0f220c960
+        				$ md5sum.exe Sorana.exe v1.0.10 TODO_HASH
         			</code></pre>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
@@ -491,11 +522,6 @@ function smartScrollToSection(targetId) {
 
     <section class="support-section" id="support-donations">
         <h2>Support & Donations</h2>
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
-            <p>Support Sorana development.</p>
-        </div>
 
         <div class="cta-box" id="discord-community">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#review-project')">⬇️</span>
@@ -528,7 +554,7 @@ function smartScrollToSection(targetId) {
 
                 <div class="bch-option">
                     <h4>Bitcoin Cash (BCH)</h4>
-                    <p>bitcoincash:
+                    <p>bitcoincash:<br/>
                     qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv</p>
                     <figure class="qr-figure">
                         <img src="bch_qrcode.png" alt="Bitcoin Cash QR Code" class="qr-code">
@@ -549,44 +575,38 @@ function smartScrollToSection(targetId) {
 
     <section class="other-products-section" id="other-products">
         <h2>Discover our other tools and games:</h2>
-        <div class="cta-box" id="other-products-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#featured-alternative')">⬆️</span>
+
+        <div class="cta-box" id="other-products-list">
             <p>Check out our other products and tools:</p>
+            <ul>
+                <li><strong>🚀 Spaceship</strong> - Retro Arcade Mini Game</li>
+                <li><strong>🧩 TabNeuron</strong> - AI Spatial Tab Manager & Research Workspace</li>
+                <li><strong>⚡ RyzenZPilot</strong> - AMD Ryzen Power Management</li>
+                <li><strong>🤖 Aicono</strong> - AI Desktop Icon Organizer</li>
+            </ul>
         </div>
 
         <div class="cta-box" id="spaceship-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-website')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#other-products-intro')">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#tabneuron-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#other-products-list')">⬆️</span>
             <h3>New Spaceship - Retro Mini Game</h3>
             <p>Retro Arcade 2d side-scroller bullet-hell shmup game</p>
-        </div>
 
-        <div class="cta-box" id="spaceship-website">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-itch')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-intro')">⬆️</span>
             <h4>Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/spaceship" target="_blank">
                     <img src="start.jpg" title="Retro Arcade 2d side-scroller bullet-hell shmup game" alt="Spaceship" />
                 </a>
             </figure>
-        </div>
 
-        <div class="cta-box" id="spaceship-itch">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#spaceship-indiedb')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-website')">⬆️</span>
+
             <h4>Featured on itch.io</h4>
             <figure class="product-fig">
                 <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
                     <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship - Retro Mini Game" />
                 </a>
             </figure>
-        </div>
 
-        <div class="cta-box" id="spaceship-indiedb">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-itch')">⬆️</span>
             <h4>Featured on IndieDB</h4>
             <figure class="product-fig">
                 <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank">
@@ -595,18 +615,31 @@ function smartScrollToSection(targetId) {
             </figure>
         </div>
 
+        <div class="cta-box" id="tabneuron-intro">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-intro')">⬆️</span>
+            <h3>🧩 TabNeuron - AI Spatial Tab Manager & Research Workspace</h3>
+            <p>TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infinite 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.</p>
+            <figure class="screenshot-figure">
+                <a href="http://tetramatrix.github.io/TabNeuron" target="_blank"><img src="tabneuron.png" alt="TabNeuron AI Spatial Tab Manager Interface" class="sorana-screenshot"></a>
+                <figcaption>TabNeuron: Browser tabs organized on an infinite 2D canvas with AI-powered grouping</figcaption>
+            </figure>
+
+             <h4>Website & Community</h4>
+            <div class="download-buttons">
+                <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" class="btn btn-primary">🌐 Website</a>
+                <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">💬 Discord</a>
+            </div>
+        </div>
+
         <div class="cta-box" id="ryzenzpilot-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-website')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-indiedb')">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-intro')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#tabneuron-intro')">⬆️</span>
             <h3>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
             <p>RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
             It allows users to adjust CPU performance, power limits, and thermal configurations
             for optimal performance and efficiency.</p>
-        </div>
 
-        <div class="cta-box" id="ryzenzpilot-website">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
             <h4>Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank">
@@ -615,66 +648,53 @@ function smartScrollToSection(targetId) {
             </figure>
         </div>
 
+
         <div class="cta-box" id="aicono-intro">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-website')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-website')">⬆️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
             <h3>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
             <p>Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!</p>
-        </div>
 
-        <div class="cta-box" id="aicono-website">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-microsoft')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-intro')">⬆️</span>
             <h4>Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/Aicono" target="_blank">
                     <img src="main.png" title="AI Intelligent Desktop Icon Autopilot" alt="Aicono" />
                 </a>
             </figure>
-        </div>
 
-        <div class="cta-box" id="aicono-microsoft">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-software')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-website')">⬆️</span>
             <h3>Featured on Microsoft Store</h3>
             <figure class="store-fig">
                 <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank">
                     <img src="ms-store.svg" width="50%" height="50%" alt="Get it from Microsoft" />
                 </a>
             </figure>
-        </div>
 
-        <div class="cta-box" id="aicono-software">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-alternative')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-microsoft')">⬆️</span>
             <h3>Featured on Softpedia</h3>
             <figure class="store-fig">
                 <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank">
                     <img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" />
                 </a>
             </figure>
-        </div>
 
-        <div class="cta-box" id="aicono-alternative">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-product')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-software')">⬆️</span>
             <h4>Featured on AlternativeTo</h4>
             <figure class="store-fig">
                 <a href="https://alternativeto.net/software/aicono" title="Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!" target="_blank">
                     <img src="AlternativeTo.png" width="20%" alt="Aicono - AI Intelligent Desktop Icon Autopilot" />
                 </a>
             </figure>
-        </div>
 
-        <div class="cta-box" id="aicono-product">
-            <span class="nav-arrow-down" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-alternative')">⬆️</span>
             <h4>Featured on Product Hunt</h4>
             <figure class="store-fig">
                 <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank">
                     <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - The AI intelligent desktop icon autopilot for Windows | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
                 </a>
             </figure>
+        </div>
+
+        <div class="cta-box" id="aicono-website">
+            <span class="nav-arrow-down" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-intro')">⬆️</span>
+            <p style="text-align:center; color:#888;">↑ Back to Top</p>
         </div>
     </section>
 
