@@ -513,7 +513,7 @@ function smartScrollToSection(targetId) {
             </div>
 
               <pre class="code-block-md5"><code>
-        				$ md5sum.exe Sorana.exe v1.0.10 TODO_HASH
+        				$ md5sum.exe Sorana.exe v1.0.10 41e2a81e4c42645142fe8a6cbd65e193
         			</code></pre>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
