@@ -100,9 +100,9 @@ function smartScrollToSection(targetId) {
             <li><a href="#intended-users">Intended Users</a></li>
             <li><a href="#operation">Operation</a></li>
             <li><a href="#technical-implementation">Technical Implementation</a></li>
-            <li><a href="#ocr-section">Document OCR & Context</a></li>
-            <li><a href="#mcp-section">MCP Server Usage</a></li>
             <li><a href="#ai-memory-rag">AI Memory & RAG</a></li>
+            <li><a href="#mcp-section">MCP Server Usage</a></li>
+            <li><a href="#ocr-section">Document OCR & Context</a></li>
             <li><a href="#installation-setup">Installation & Setup</a></li>
             <li><a href="#system-requirements">System Requirements</a></li>
             <li><a href="#support-donations">Support & Donations</a></li>
@@ -252,7 +252,7 @@ function smartScrollToSection(targetId) {
     <section class="technical-section" id="technical-implementation">
         <h2>Technical Implementation</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ocr-section')">⬇️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ai-memory-rag')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#operation')">⬆️</span>
             <h3>AI Model Performance</h3>
             <p>
@@ -296,8 +296,8 @@ function smartScrollToSection(targetId) {
     <section class="ai-memory-rag-section" id="ai-memory-rag">
         <h2>Advanced AI Memory & RAG System</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#mcp-section')">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#mcp-section')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#technical-implementation')">⬆️</span>
             <p>Sorana v1.0.10 introduces a 4-tier memory architecture combined with 4-tier RAG (Retrieval-Augmented Generation) for intelligent, context-aware responses that save tokens and deliver faster, targeted answers — with full user control.</p>
 
             <h3>4-Tier AI Memory System</h3>
@@ -356,8 +356,8 @@ function smartScrollToSection(targetId) {
     <section class="mcp-section" id="mcp-section">
         <h3>MCP Server Usage Guide</h3>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ai-memory-rag')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ocr-section')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ai-memory-rag')">⬆️</span>
             <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations and web content access through AI agents. To use these capabilities:</p>
             <ol>
                 <li>Create an agent in the workspace</li>
@@ -416,8 +416,8 @@ function smartScrollToSection(targetId) {
     <section class="ocr-section" id="ocr-section">
         <h3>Document OCR and Context Enhancement</h3>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#mcp-section')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#technical-implementation')">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#mcp-section')">⬆️</span>
             <p>
                 Document OCR and Context Enhancement allows users to enrich agents with specific knowledge by dragging and dropping documents directly onto agents. After organizing files spatially, users can make documents accessible to agents by processing them through OCR, converting them into contextual information. This is accomplished via the context menu options 'Document Overview' and 'Process Documents,' which is particularly valuable for PDFs and image-based documents.
             </p>
@@ -474,7 +474,7 @@ function smartScrollToSection(targetId) {
         <h2>Installation & Setup</h2>
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#system-requirements')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ai-memory-rag')">⬆️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
             <p>Basic installation steps:</p>
             <ol>
                 <li><strong>Download:</strong> Obtain <code>Sorana.exe</code>.</li>
@@ -517,6 +517,14 @@ function smartScrollToSection(targetId) {
         			</code></pre>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
+
+
+                     <h4>Featured on Softpedia:</h4>
+        <p>
+            <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" target="_blank"><img src="softpedia.png" width="200px" height="60px" alt="Get it from Softpedia" /></a>
+        </p>
+
+        
         </div>
     </section>
 
@@ -524,24 +532,16 @@ function smartScrollToSection(targetId) {
         <h2>Support & Donations</h2>
 
         <div class="cta-box" id="discord-community">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#review-project')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#support-donations')">⬆️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
             <h3>Join our Discord community</h3>
             <div class="external-links">
                 <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Sorana Discord</a>
             </div>
-        </div>
 
-        <div class="cta-box" id="review-project">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#paypal-bch')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#discord-community')">⬆️</span>
             <h3>Leave a review or star the project</h3>
             <a href="https://alternativeto.net/software/sorana/" target="_blank"><img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" /></a>
-        </div>
 
-        <div class="cta-box" id="paypal-bch">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#featured-alternative')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#review-project')">⬆️</span>
             <h3>Support via PayPal or Bitcoin Cash</h3>
             <div class="payment-options">
                 <div class="paypal-option">
@@ -561,15 +561,8 @@ function smartScrollToSection(targetId) {
                     </figure>
                 </div>
             </div>
-        </div>
+   
 
-        <div class="cta-box" id="featured-alternative">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#paypal-bch')">⬆️</span>
-            <h3>Featured on AlternativeTo</h3>
-            <a href="https://alternativeto.net/software/sorana/about/" title="Sorana provides an visual AI workspace with AI-powered organization and no-code automation." target="_blank">
-                <img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" />
-            </a>
         </div>
     </section>
 
@@ -692,9 +685,8 @@ function smartScrollToSection(targetId) {
         </div>
 
         <div class="cta-box" id="aicono-website">
-            <span class="nav-arrow-down" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#aicono-intro')">⬆️</span>
-            <p style="text-align:center; color:#888;">↑ Back to Top</p>
+            <span class="nav-arrow-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</span>
+            <p style="text-align:center; color:#888;"><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color:#888; text-decoration:none;">↑ Back to Top</a></p>
         </div>
     </section>
 
