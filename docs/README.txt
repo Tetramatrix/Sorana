@@ -135,8 +135,8 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.10
-🔢 MD5 Checksum (.exe): 41e2a81e4c42645142fe8a6cbd65e193
+🔹 Latest version: Sorana.exe v1.0.11
+🔢 MD5 Checksum (.exe): 01f0b44729d7ef0435e7d53fae0d0e1b
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
@@ -146,6 +146,14 @@ To connect agents in Sorana:
 
 
 📋 Changelog 📋
+
+📅 March 24, 2026 — Version 1.0.11
+
+Bugfix: MermaidView loading indicator thread-safe implementation
+- Add thread-safe loading label updates via tkinter_safe_queue.py
+- Implement _update_loading_label() using QueueMessageType.PROGRESS
+- Add svg2rlg() timeout (90s) and renderPM timeout (120s)
+- Fix 'main thread is not in main loop' errors
 
 📅 March 22, 2026 — Version 1.0.10
 
