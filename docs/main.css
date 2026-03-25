@@ -1173,3 +1173,114 @@ figcaption {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   animation: pulse 2s infinite;
 }
+
+/* === Collapsible Sections === */
+
+/* Collapsible H2 sections */
+h2.collapsible {
+  cursor: pointer;
+  position: relative;
+  padding-right: 40px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+h2.collapsible:hover {
+  color: #64b5f6;
+}
+
+h2.collapsible::after {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+h2.collapsible.collapsed::after {
+  content: '−';
+}
+
+/* Collapsible H3 sections */
+h3.collapsible {
+  cursor: pointer;
+  position: relative;
+  padding-right: 40px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+h3.collapsible:hover {
+  color: #64b5f6;
+}
+
+h3.collapsible::after {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+h3.collapsible.collapsed::after {
+  content: '−';
+}
+
+/* Collapsed sections and divs */
+section.collapsed {
+  display: none;
+}
+
+div.collapsed {
+  display: none;
+}
+
+/* Nav toggle arrows */
+.nav-arrow-down,
+.nav-arrow-up {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2em;
+  user-select: none;
+  font-weight: bold;
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.nav-arrow-down:hover,
+.nav-arrow-up:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* NEW badge */
+.new-badge {
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  padding: 8px 12px;
+  min-width: 40px;
+  text-align: center;
+}

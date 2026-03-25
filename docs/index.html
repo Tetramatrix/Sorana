@@ -21,55 +21,6 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-<script>
-function scrollToSection(targetId) {
-    const targetElement = document.getElementById(targetId.replace('#', ''));
-    if (targetElement) {
-        // Überprüfe, ob das Element bereits sichtbar ist
-        const rect = targetElement.getBoundingClientRect();
-        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
-        if (isVisible && rect.top < window.innerHeight * 0.1) {
-            // Scrollen, sodass das Element in der Mitte des Viewports ist
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        } else {
-            // Ansonsten normales Scrollen
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    }
-}
-
-// Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
-function smartScrollToSection(targetId) {
-    const targetElement = document.getElementById(targetId.replace('#', ''));
-    if (targetElement) {
-        const rect = targetElement.getBoundingClientRect();
-        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-        if (isInViewport) {
-            // Wenn das Element bereits sichtbar ist, zentriere es
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        } else {
-            // Ansonsten scroll zum Anfang des Elements
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    }
-}
-</script>
-</body>
     <aside class="left">
         <nav class="fixed-nav">
             <!-- Google Ads - Left Sidebar -->
@@ -85,7 +36,7 @@ function smartScrollToSection(targetId) {
     <main class="wikidoc">
         <header class="page-header">
             <h1>Sorana</h1>
-            <h3>Visual AI Workspace</h3>
+            <h3 data-no-toggle="true">Visual AI Workspace</h3>
             <figure class="logo-container">
                 <img src="logo_small.png" alt="Sorana Logo" class="logo">
             </figure>
@@ -94,48 +45,48 @@ function smartScrollToSection(targetId) {
     <!-- Horizontal Navigation Bar -->
     <nav class="horizontal-toc-nav">
         <ul>
-            <li><a href="#inspiration">Inspiration</a></li>
-            <li><a href="#what-is-sorana">What is Sorana?</a></li>
-            <li><a href="#core-capabilities">Core Capabilities</a></li>
-            <li><a href="#intended-users">Intended Users</a></li>
-            <li><a href="#operation">Operation</a></li>
-            <li><a href="#technical-implementation">Technical Implementation</a></li>
-            <li><a href="#ai-memory-rag">AI Memory & RAG</a></li>
-            <li><a href="#mcp-section">MCP Server Usage</a></li>
-            <li><a href="#ocr-section">Document OCR & Context</a></li>
-            <li><a href="#installation-setup">Installation & Setup</a></li>
-            <li><a href="#system-requirements">System Requirements</a></li>
-            <li><a href="#support-donations">Support & Donations</a></li>
-            <li><a href="#other-products">Other Products</a></li>
+            <li><a href="#inspiration-h2">Inspiration</a></li>
+            <li><a href="#what-is-sorana-h2">What is Sorana?</a></li>
+            <li><a href="#core-capabilities-h2">Core Capabilities</a></li>
+            <li><a href="#operation-h2">Operation</a></li>
+            <li><a href="#technical-implementation-h2">Technical Implementation</a></li>
+            <li><a href="#ai-memory-rag-h2">AI Memory & RAG</a></li>
+            <li><a href="#mcp-section-h2">MCP Server Usage</a></li>
+            <li><a href="#ocr-section-h2">Document OCR & Context</a></li>
+            <li><a href="#installation-setup-h2">Installation & Setup</a></li>
+            <li><a href="#system-requirements-h2">System Requirements</a></li>
+            <li><a href="#support-donations-h2">Support & Donations</a></li>
+            <li><a href="#other-products-h2">Other Products</a></li>
         </ul>
     </nav>
 
     <!-- Inspiration Section -->
+    <h2 id="inspiration-h2">Inspiration</h2>
     <section class="inspiration-section" id="inspiration">
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#what-is-sorana')">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</span>
-            <h2>Inspiration</h2>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            
             <p>We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this—moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.</p>
         </div>
     </section>
 
+ 		<h2 id="what-is-sorana-h2">What is Sorana?</h2>
     <section class="intro-section" id="what-is-sorana">
-        <h2>What is Sorana?</h2>
+       
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#core-capabilities')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#inspiration')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Sorana is an AI-powered visual workspace featuring a built-in MCP server for file operations, web content tools, OCR document processing, and spatial AI organization. Transform how you organize digital files with semantic analysis that groups related content onto an intuitive 2D canvas. Create no-code agent workflows, enhance document context with OCR, perform file and web operations through the MCP server, and connect to on-prem or cloud AI backends (OpenAI, Mistral, Google Gemini, 🍋 Lemonade with FastFlowLM NPU, and more) while keeping your data under your control. With advanced 4-tier AI memory and 40x faster RAG retrieval, Sorana delivers intelligent, context-aware responses while saving tokens.</p>
         </div>
 
         <!-- Video Section -->
-        <section class="video-section">
             <div class="responsive-iframe-container">
                 <iframe src="https://www.youtube.com/embed/IItG9BwXkqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p class="video-caption"><em>Demonstration of Sorana workspace</em></p>
-        </section>
-
+  </section>
+  
         <!-- Google Ads - Top Banner -->
         <!--
         <ins class="adsbygoogle"
@@ -172,11 +123,12 @@ function smartScrollToSection(targetId) {
         </section>
 				-->
 				
+				<h2 id="core-capabilities-h2">Core Capabilities</h2>
         <section class="capabilities-section" id="core-capabilities">
-            <h2>Core Capabilities</h2>
+            
             <div class="cta-box">
-                <span class="nav-arrow-down" onclick="smartScrollToSection('#intended-users')">⬇️</span>
-                <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-sorana')">⬆️</span>
+                <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+                <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
                 <ul>
                     <li><strong>Spatial AI Organization:</strong> Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.</li>
                     <li><strong>WYSIWYG Canvas Editor:</strong> Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.</li>
@@ -203,36 +155,24 @@ function smartScrollToSection(targetId) {
         <li><strong>Centralized Data Storage:</strong> All data stored in a single <code>.sorana/</code> folder. Existing installs migrate automatically.</li>
         <li><strong>Portable:</strong> The application is portable and keeps data under user control.</li>
     </ul>
-    </div>
-
-    <figure class="screenshot-figure">
+    
+        <figure class="screenshot-figure">
         <img src="Sorana_cbfHZaRAyM.png" alt="Sorana Visual Workspace Screenshot" class="sorana-screenshot">
     </figure>
+    </div>
 
-    <section class="users-section" id="intended-users">
-        <h2>Intended Users</h2>
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#operation')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#core-capabilities')">⬆️</span>
-            <p>Sorana is designed for users who need to organize and analyze complex digital information:</p>
-            <ul>
-                <li><strong>Developers:</strong> Organize codebases, document projects, and create automation workflows.</li>
-                <li><strong>Researchers:</strong> Manage research papers, datasets, and notes with visual organization.</li>
-                <li><strong>Professionals:</strong> Organize project files, documents, and resources with visual tools.</li>
-                <li><strong>Creatives:</strong> Organize digital assets and project files in a visual workspace.</li>
-            </ul>
-        </div>
-    </section>
-
-    <figure class="screenshot-figure">
+            <figure class="screenshot-figure">
         <img src="Sorana_JR9RKvwFv0.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
     </figure>
-
+	</section>
+	
+	
+		<h2 id="operation-h2">Operation</h2>
     <section class="operation-section" id="operation">
-        <h2>Operation</h2>
+       
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#technical-implementation')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#intended-users')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>The application functions through these steps:</p>
             <ol>
                 <li><strong>Connect</strong> folders and files to the workspace.</li>
@@ -243,39 +183,48 @@ function smartScrollToSection(targetId) {
                 <li><strong>Configure</strong> workflow settings.</li>
             </ol>
         </div>
-    </section>
-
-    <figure class="screenshot-figure">
+        
+            <figure class="screenshot-figure">
         <img src="Sorana_MGD9LrNzsZ.png" alt="Sorana Mind Map Screenshot" class="sorana-screenshot">
     </figure>
+    </section>
 
+
+
+		<h2 id="technical-implementation-h2">Technical Implementation</h2>
     <section class="technical-section" id="technical-implementation">
-        <h2>Technical Implementation</h2>
+        
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ai-memory-rag')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#operation')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <h3>AI Model Performance</h3>
+            <div>
             <p>
                 Sorana uses AI models to intelligently group files and folders based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify files perfectly, especially for less common file types. For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
             </p>
-
-            <h4>Hardware Requirements</h4>
+				   </div>
+				   
+            <h3>Hardware Requirements</h3>
+           <div>
             <ul>
                 <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (8-16GB)</li>
                 <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 8 GB RAM or 4 GB VRAM for smooth operation</li>
                 <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
                 <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
-            </ul>
-
-             <h4>AI Integration</h4>
+            </ul>			
+						</div>
+             <h3>AI Integration</h3>
+            <div>
             <p>Sorana supports connection to both on-prem and cloud-based AI services:</p>
             <ul>
                 <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
                 <li><strong>On-Prem Services:</strong> 🍋 Lemonade (with FastFlowLM NPU), Llama.cpp, Ollama, and other self-hosted LLM solutions</li>
                 <li><strong>Cloud Services:</strong> OpenAI, Mistral, Google Gemini, and other cloud-based AI platforms</li>
             </ul>
+</div>
 
-					 <h4>Recommendation</h4>
+					 <h3>Recommendation</h3>
+					 <div>
            <p><strong>🍋 Lemonade</strong> For optimal on-prem performance with both GPU and NPU acceleration, we recommend:</p>
                 <div class="partner-buttons" style="margin-top: 10px;">
                     <a href="https://lemonade-server.ai/" target="_blank" class="btn-partner">🍋 Lemonade</a>
@@ -289,18 +238,20 @@ function smartScrollToSection(targetId) {
           	<p>
                 <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of files - fewer files result in faster processing. For the best performance, especially with large folders, we recommend using paid cloud services.
             </p>
+            </div>
         </div>
     </section>
 
-
+		<h2 id="ai-memory-rag-h2">Advanced AI Memory & RAG System</h2>
     <section class="ai-memory-rag-section" id="ai-memory-rag">
-        <h2>Advanced AI Memory & RAG System</h2>
+        
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#mcp-section')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#technical-implementation')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Sorana v1.0.10 introduces a 4-tier memory architecture combined with 4-tier RAG (Retrieval-Augmented Generation) for intelligent, context-aware responses that save tokens and deliver faster, targeted answers — with full user control.</p>
 
             <h3>4-Tier AI Memory System</h3>
+            <div>
             <p>Each memory layer builds on the last, creating a comprehensive memory system that makes your AI agents more intelligent over time:</p>
             <ul>
                 <li><strong>Short-Term Memory:</strong> Active conversation context within the current chat session</li>
@@ -313,8 +264,10 @@ function smartScrollToSection(targetId) {
                 <img src="Longterm_person_memory.png" alt="Long-Term Person Memory Management Interface" class="sorana-screenshot">
                 <figcaption>Long-Term Memory: Automatically extracted user facts, preferences, and persona data</figcaption>
             </figure>
+					</div>
 
             <h3>Chat History & Conversation Management</h3>
+          	<div>
             <p>All your past conversations are stored in a sidebar for easy access. Search, reload, and delete chats — nothing gets lost.</p>
 
             <figure class="screenshot-figure">
@@ -326,8 +279,10 @@ function smartScrollToSection(targetId) {
                 <img src="chat_manager.png" alt="Chat Manager Interface" class="sorana-screenshot">
                 <figcaption>Chat Manager: View, search, and manage conversation history</figcaption>
             </figure>
+						</div>
 
             <h3>40x Faster RAG Retrieval</h3>
+            <div>
             <p>Optimized RAG startup from 4s to under 0.1s. The 4-tier RAG system ensures token-efficient, targeted answers:</p>
             <ul>
                 <li><strong>Tier 1:</strong> Immediate context from active conversation</li>
@@ -340,8 +295,10 @@ function smartScrollToSection(targetId) {
                 <img src="rag.png" alt="RAG Document Manager Interface" class="sorana-screenshot">
                 <figcaption>RAG Document Manager: Upload, view, and manage documents for AI context retrieval</figcaption>
             </figure>
+						</div>
 
             <h3>Key Benefits</h3>
+            <div>
             <ul>
                 <li><strong>Token Efficiency:</strong> Smart memory layering reduces token usage by serving only relevant context</li>
                 <li><strong>Faster Responses:</strong> 40x speedup in RAG retrieval means near-instant answers</li>
@@ -349,15 +306,16 @@ function smartScrollToSection(targetId) {
                 <li><strong>NPU Acceleration:</strong> Uses 🍋 Lemonade backend with integrated FastFlowLM NPU for Windows Ryzen. 🍋 Lemonade is AMD's high-performance AI server (C++ based) integrating multiple backends including FastFlowLM for native NPU acceleration. Falls back to text-based retrieval if no NPU is available.</li>
                 <li><strong>Multi-Language:</strong> 15 languages supported with auto-detection</li>
             </ul>
+          </div>
         </div>
     </section>
 
-
+		<h2 id="mcp-section-h2">MCP Server Usage Guide</h2>
     <section class="mcp-section" id="mcp-section">
-        <h3>MCP Server Usage Guide</h3>
+        
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ocr-section')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ai-memory-rag')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations and web content access through AI agents. To use these capabilities:</p>
             <ol>
                 <li>Create an agent in the workspace</li>
@@ -365,7 +323,8 @@ function smartScrollToSection(targetId) {
                 <li>Interact directly with all files, folders, and web content</li>
             </ol>
 
-            <h4>File Operations</h4>
+            <h3>File Operations</h3>
+            <div>
             <p>Common file operations you can perform in the agent chat:</p>
             <ul>
                 <li>"List the first 10 files in the current directory" (uses list_directory)</li>
@@ -380,8 +339,9 @@ function smartScrollToSection(targetId) {
                 <li>"Show available storage space and supported operations" (uses get_filesystem_info)</li>
                 <li>"Summarize document.txt and create a markdown summary document" (uses read_file + write_file)</li>
             </ul>
-
-            <h4>Web Content Tools</h4>
+</div>
+            <h3>Web Content Tools</h3>
+            <div>
             <p>Built-in MCP web content tools give your AI direct web access. Combine file operations with web content for even more powerful agents:</p>
             <ul>
                 <li><strong>web_fetch_content:</strong> Fetch and read content from any URL</li>
@@ -409,15 +369,16 @@ function smartScrollToSection(targetId) {
                 <li>"Search for documentation, download PDFs, and organize into folders"</li>
                 <li>"Extract data from web sources, analyze with local files, and generate a report"</li>
             </ul>
+            </div>
         </div>
     </section>
 
-
+		 <h2 id="ocr-section-h2">Document OCR and Context Enhancement</h2>
     <section class="ocr-section" id="ocr-section">
-        <h3>Document OCR and Context Enhancement</h3>
+       
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#mcp-section')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>
                 Document OCR and Context Enhancement allows users to enrich agents with specific knowledge by dragging and dropping documents directly onto agents. After organizing files spatially, users can make documents accessible to agents by processing them through OCR, converting them into contextual information. This is accomplished via the context menu options 'Document Overview' and 'Process Documents,' which is particularly valuable for PDFs and image-based documents.
             </p>
@@ -425,7 +386,8 @@ function smartScrollToSection(targetId) {
                 It's important to distinguish this from MCP server functionality. While the MCP server allows file interaction during chats, it currently lacks OCR capabilities and can only access text-based file content.
             </p>
 
-            <h4>Document OCR Capabilities</h4>
+            <h3>Document OCR Capabilities</h3>
+            <div>
             <p>
                 Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
             </p>
@@ -447,9 +409,11 @@ function smartScrollToSection(targetId) {
                 </li>
                 <li><strong>PDFs with Images:</strong> Built-in method for OCR processing of PDFs containing images</li>
             </ul>
-
+					</div>
+					
             <article class="ocr-requirements">
-                <h4>Requirements for PDF Image OCR</h4>
+                <h3>Requirements for PDF Image OCR</h3>
+                <div>
                 <p>
                     To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
                 </p>
@@ -457,38 +421,44 @@ function smartScrollToSection(targetId) {
                 <div class="external-links">
                     <a href="https://github.com/tesseract-ocr/tesseract" target="_blank" class="btn btn-primary">Tesseract OCR GitHub</a>
                 </div>
+                
+                </div>
             </article>
 
             <article class="encoding-notes">
-                <h4>Encoding Support Notes</h4>
+                <h3>Encoding Support Notes</h3>
+                <div>
                 <p>
                     The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
                 </p>
+                </div>
             </article>
 
         </div>
     </section>
 
-
+		<h2 id="installation-setup-h2">Installation & Setup</h2>
     <section class="setup-section" id="installation-setup">
-        <h2>Installation & Setup</h2>
+        
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#system-requirements')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ocr-section')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Basic installation steps:</p>
             <ol>
                 <li><strong>Download:</strong> Obtain <code>Sorana.exe</code>.</li>
                 <li><strong>Execute:</strong> Run the executable file.</li>
-                <li><strong>Configure:</strong> Add folders to begin organizing digital content.</li>
+                <li><strong>Configure:</strong> In <em>Model Manager</em>, select your AI model.</li>
+                <li><strong>Run:</strong> In main window click <em>Organize Folder</em>.</li>
             </ol>
         </div>
     </section>
 
+		<h2 id="system-requirements-h2">System Requirements</h2>
     <section class="requirements-section" id="system-requirements">
-        <h2>System Requirements</h2>
+        
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#final-download')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#installation-setup')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <table class="req-table">
             <tr><th>Component</th><th>Minimum</th></tr>
             <tr><td>OS</td><td>Windows 11 (64-bit)</td></tr>
@@ -498,13 +468,14 @@ function smartScrollToSection(targetId) {
             <tr><td>⚡ Rights</td><td>Standard user</td></tr>
         </table>
     </section>
-
+    
     <!-- Final Download Section -->
+     <h2>Get Sorana</h2>
     <section class="final-download-section">
         <div class="cta-box" id="final-download">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#system-requirements')">⬆️</span>
-            <h3>Get Sorana</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+           
             <p>Download and install the application.</p>
 
             <div class="download-buttons">
@@ -512,9 +483,7 @@ function smartScrollToSection(targetId) {
                 <a href="README.txt" class="btn btn-primary">Readme</a>
             </div>
 
-              <pre class="code-block-md5"><code>
-        				$ md5sum.exe Sorana.exe v1.0.11 01f0b44729d7ef0435e7d53fae0d0e1b
-        			</code></pre>
+             <code>$ md5sum.exe Sorana.exe v1.0.11 01f0b44729d7ef0435e7d53fae0d0e1b</code>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
 
@@ -527,21 +496,29 @@ function smartScrollToSection(targetId) {
         
         </div>
     </section>
+    
 
+
+
+
+
+		<h2 id="support-donations-h2">Support & Donations</h2>
     <section class="support-section" id="support-donations">
-        <h2>Support & Donations</h2>
-
+        
         <div class="cta-box" id="discord-community">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            
             <h3>Join our Discord community</h3>
             <div class="external-links">
                 <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Sorana Discord</a>
             </div>
 
             <h3>Leave a review or star the project</h3>
+            <div>
             <a href="https://alternativeto.net/software/sorana/" target="_blank"><img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" /></a>
-
+						</div>
+						
             <h3>Support via PayPal or Bitcoin Cash</h3>
             <div class="payment-options">
                 <div class="paypal-option">
@@ -566,10 +543,13 @@ function smartScrollToSection(targetId) {
         </div>
     </section>
 
+		<h2 id="other-products-h2">Discover our other tools and games:</h2>
     <section class="other-products-section" id="other-products">
-        <h2>Discover our other tools and games:</h2>
+        
 
         <div class="cta-box" id="other-products-list">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Check out our other products and tools:</p>
             <ul>
                 <li><strong>🚀 Spaceship</strong> - Retro Arcade Mini Game</li>
@@ -579,10 +559,11 @@ function smartScrollToSection(targetId) {
             </ul>
         </div>
 
+				 <h3>New Spaceship - Retro Mini Game</h3>
         <div class="cta-box" id="spaceship-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#tabneuron-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#other-products-list')">⬆️</span>
-            <h3>New Spaceship - Retro Mini Game</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+           
             <p>Retro Arcade 2d side-scroller bullet-hell shmup game</p>
 
             <h4>Website</h4>
@@ -608,10 +589,11 @@ function smartScrollToSection(targetId) {
             </figure>
         </div>
 
+				<h3>🧩 TabNeuron - AI Spatial Tab Manager & Research Workspace</h3>
         <div class="cta-box" id="tabneuron-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-intro')">⬆️</span>
-            <h3>🧩 TabNeuron - AI Spatial Tab Manager & Research Workspace</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            
             <p>TabNeuron breaks your browser tabs out of the tab bar and maps them onto a 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.</p>
             <figure class="screenshot-figure">
                 <a href="http://tetramatrix.github.io/TabNeuron" target="_blank"><img src="tabneuron.png" alt="TabNeuron AI Spatial Tab Manager Interface" class="sorana-screenshot"></a>
@@ -623,12 +605,18 @@ function smartScrollToSection(targetId) {
                 <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" class="btn btn-primary">🌐 Website</a>
                 <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">💬 Discord</a>
             </div>
+            
+            <h4>Featured on Microsoft Store:</h4>
+            <p>
+                <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
+            </p>
         </div>
 
+				<h3>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
         <div class="cta-box" id="ryzenzpilot-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#tabneuron-intro')">⬆️</span>
-            <h3>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            
             <p>RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
             It allows users to adjust CPU performance, power limits, and thermal configurations
             for optimal performance and efficiency.</p>
@@ -641,11 +629,11 @@ function smartScrollToSection(targetId) {
             </figure>
         </div>
 
-
+				<h3>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
         <div class="cta-box" id="aicono-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-website')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
-            <h3>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            
             <p>Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!</p>
 
             <h4>Website</h4>
@@ -656,39 +644,48 @@ function smartScrollToSection(targetId) {
             </figure>
 
             <h3>Featured on Microsoft Store</h3>
+            <div>
             <figure class="store-fig">
                 <a href="https://apps.microsoft.com/store/detail/9NGFC27J1VBX" target="_blank">
                     <img src="ms-store.svg" width="50%" height="50%" alt="Get it from Microsoft" />
                 </a>
             </figure>
+						</div>
 
             <h3>Featured on Softpedia</h3>
+            <div>
             <figure class="store-fig">
                 <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank">
                     <img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" />
                 </a>
             </figure>
-
-            <h4>Featured on AlternativeTo</h4>
+						</div>
+            
+            <h3>Featured on AlternativeTo</h3>
+            <div>
             <figure class="store-fig">
                 <a href="https://alternativeto.net/software/aicono" title="Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!" target="_blank">
                     <img src="AlternativeTo.png" width="20%" alt="Aicono - AI Intelligent Desktop Icon Autopilot" />
                 </a>
             </figure>
-
-            <h4>Featured on Product Hunt</h4>
+						</div>
+						
+            <h3>Featured on Product Hunt</h3>
+            <div>
             <figure class="store-fig">
                 <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank">
                     <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - The AI intelligent desktop icon autopilot for Windows | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
                 </a>
             </figure>
+            </div>
         </div>
 
-        <div class="cta-box" id="aicono-website">
-            <span class="nav-arrow-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</span>
+    </section>
+
+
+        <div class="cta-box">
             <p style="text-align:center; color:#888;"><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color:#888; text-decoration:none;">↑ Back to Top</a></p>
         </div>
-    </section>
 
     <footer class="main-footer">
         <p class="footer-text">
@@ -709,54 +706,7 @@ function smartScrollToSection(targetId) {
 </script>
 -->
 
-<script>
-function scrollToSection(targetId) {
-    const targetElement = document.getElementById(targetId.replace('#', ''));
-    if (targetElement) {
-        // Überprüfe, ob das Element bereits sichtbar ist
-        const rect = targetElement.getBoundingClientRect();
-        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
-        if (isVisible && rect.top < window.innerHeight * 0.1) {
-            // Scrollen, sodass das Element in der Mitte des Viewports ist
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        } else {
-            // Ansonsten normales Scrollen
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    }
-}
-
-// Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
-function smartScrollToSection(targetId) {
-    const targetElement = document.getElementById(targetId.replace('#', ''));
-    if (targetElement) {
-        const rect = targetElement.getBoundingClientRect();
-        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-        if (isInViewport) {
-            // Wenn das Element bereits sichtbar ist, zentriere es
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        } else {
-            // Ansonsten scroll zum Anfang des Elements
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    }
-}
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
