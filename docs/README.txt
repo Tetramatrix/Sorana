@@ -10,11 +10,10 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🤖 Spatial AI Organization: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
 🎨 WYSIWYG Canvas Editor: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
-🧠 Advanced Model Management: Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
-
-🔗 Multi-Service AI Integration: Sorana supports seamless connection to both on-prem and cloud-based AI services:
-  • On-Prem Services: Ollama, Llamacpp, and other self-hosted LLM solutions
-  • Cloud Services: OpenAI, Mistral, Lemonade, and other cloud-based AI platforms
+🧠 Advanced Model Management: Connect to multiple cloud, on-prem and local LLM backends including OpenAI, Mistral, Lemonade, Llamacpp, LM Studio, Ollama and mnany other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
+es:
+  • Local and On-Prem Services: Lemonade, Llamacpp, LM Studio, Ollama and other self-hosted LLM solutions
+  • Cloud Services: OpenAI, Mistral, Gemini and other cloud-based AI platforms
   • Flexible Configuration: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
 🤖 No-Code Agent Orchestration: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
 💬 Contextual Document Chat: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
