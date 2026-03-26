@@ -148,7 +148,7 @@ To connect agents in Sorana:
 
 📅 March 26, 2026 — Version 1.0.12
 
-Bugfix: Chat history
+Bugfix: Chat History
 
 📅 March 24, 2026 — Version 1.0.11
 
