@@ -55,7 +55,7 @@
             <li><a href="#ocr-section-h2">Document OCR & Context</a></li>
             <li><a href="#installation-setup-h2">Installation & Setup</a></li>
             <li><a href="#system-requirements-h2">System Requirements</a></li>
-            <li><a href="#final-download">Get Sorana</a></li>
+            <li><a href="#final-download-h2">Get Sorana</a></li>
             <li><a href="#support-donations-h2">Support & Donations</a></li>
             <li><a href="#other-products-h2">Other Products</a></li>
         </ul>
@@ -475,9 +475,9 @@
             <tr><td>⚡ Rights</td><td>Standard user</td></tr>
         </table>
     </section>
-    
+
     <!-- Final Download Section -->
-     <h2>🚀 Get Sorana</h2>
+     <h2 id="final-download-h2">🚀 Get Sorana</h2>
     <section class="final-download-section">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
