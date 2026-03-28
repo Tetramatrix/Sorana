@@ -55,6 +55,7 @@
             <li><a href="#ocr-section-h2">Document OCR & Context</a></li>
             <li><a href="#installation-setup-h2">Installation & Setup</a></li>
             <li><a href="#system-requirements-h2">System Requirements</a></li>
+            <li><a href="#final-download">Get Sorana</a></li>
             <li><a href="#support-donations-h2">Support & Donations</a></li>
             <li><a href="#other-products-h2">Other Products</a></li>
         </ul>
@@ -135,7 +136,7 @@
                     <li><strong>Advanced Model Management:</strong> Connect to multiple cloud, on-prem and local LLM backends including OpenAI, Mistral, Lemonade, Llamacpp, LM Studio, Ollama and mnany other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
 	                    <ul>
 	                        <li><strong>Local and On-Prem Services:</strong> Lemonade, Llamacpp, LM Studio, Ollama and other self-hosted LLM solutions</li>
-	                        <li><strong>Cloud Services:</strong> OpenAI, Mistral, and other cloud-based AI platforms</li>
+	                        <li><strong>Cloud Services:</strong> OpenAI, Mistral, Gemini and other cloud-based AI platforms</li>
 	                        <li><strong>Flexible Configuration:</strong> Switch between different AI backends based on your needs, privacy requirements, and performance considerations</li>
 	                    </ul>
         <li><strong>No-Code Multi-Agent Orchestration:</strong> Create custom agents and connect them into processing pipelines using a drag-and-drop interface within our unique 2D canvas workspace where files and folders are spatially arranged. Handle complex multi-agent workflows by building agents that operate directly on this visual workspace, collaborating seamlessly by passing insights from one to another to solve complex problems, all without writing code. Enhance agent knowledge by integrating OCR-processed PDFs and text files directly into their memory and processing capabilities.</li>
@@ -478,7 +479,6 @@
     <!-- Final Download Section -->
      <h2>Get Sorana</h2>
     <section class="final-download-section">
-        <div class="cta-box" id="final-download">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
            
@@ -489,7 +489,7 @@
                 <a href="README.txt" class="btn btn-primary">Readme</a>
             </div>
 
-             <code>$ md5sum.exe Sorana.exe v1.0.11 01f0b44729d7ef0435e7d53fae0d0e1b</code>
+             <code>$ md5sum.exe Sorana.exe v1.0.14 ce44f87fbfc27c6b8e41b8f601c83b9b</code>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
 
