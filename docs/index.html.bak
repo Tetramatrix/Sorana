@@ -479,6 +479,8 @@
     <!-- Final Download Section -->
      <h2 id="final-download-h2">🚀 Get Sorana</h2>
     <section class="final-download-section">
+    
+    	<div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
            
@@ -549,7 +551,7 @@
         </div>
     </section>
 
-		<h2 id="other-products-h2">Discover our other tools and games:</h2>
+		<h2 id="other-products-h2">Discover our other tools and games</h2>
     <section class="other-products-section" id="other-products">
         
 
