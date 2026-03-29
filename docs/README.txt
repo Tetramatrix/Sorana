@@ -134,8 +134,8 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.14
-🔢 MD5 Checksum (.exe): ce44f87fbfc27c6b8e41b8f601c83b9b
+🔹 Latest version: Sorana.exe v1.0.15
+🔢 MD5 Checksum (.exe): c5ee6c6f1ba6ef77492335bdafef9b74
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
@@ -145,6 +145,11 @@ To connect agents in Sorana:
 
 
 📋 Changelog 📋
+
+📅 March 29, 2026 — Version 1.0.15
+
+Bugfix: mcp tool calls
+Bugfix: UI/UX
 
 📅 March 27, 2026 — Version 1.0.14
 
