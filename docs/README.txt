@@ -10,26 +10,26 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🤖 Spatial AI Organization: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
 🎨 WYSIWYG Canvas Editor: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
-🧠 Advanced Model Management: Connect to multiple cloud, on-prem and local LLM backends including OpenAI, Mistral, Lemonade, Llamacpp, LM Studio, Ollama and mnany other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
-es:
+🧠 Advanced Model Management: Connect to multiple cloud, on-prem and local LLM backends including OpenAI, Mistral, Lemonade, Llamacpp, LM Studio, Ollama and many other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
   • Local and On-Prem Services: Lemonade, Llamacpp, LM Studio, Ollama and other self-hosted LLM solutions
   • Cloud Services: OpenAI, Mistral, Gemini and other cloud-based AI platforms
   • Flexible Configuration: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
+  • Split View (Lemonade only): When using Lemonade, the model manager shows chat models (upper pane) and embedding models (bottom pane) side by side. Embedding models power semantic RAG search. Without an embedding model, the system falls back to BM25 → Keyword → Full Text. Currently only Lemonade supports multi-model loading.
 🤖 No-Code Agent Orchestration: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
 💬 Contextual Document Chat: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
 🗺️ Dynamic Structure Mapping: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
-🔧 Built-in MCP Server for File Operations (beta): Integrated server supporting advanced file operations through AI agents, including:
-  • read_file: Read file contents with intelligent limits
-  • read_file_from_line: Read specific file ranges for pagination
-  • write_file: Write content to files
-  • list_directory: List directory contents
-  • create_directory: Create directories
-  • move_file: Move or rename files/directories
-  • search_files: Search for files in directories
-  • get_file_info: Get information about files/directories
-  • edit_file: Edit files with specific changes
-  • get_filesystem_info: Get server configuration and capabilities
+🔧 Built-in MCP Manager & Server: Visual MCP Manager for configuring and enabling servers. Integrated server supporting advanced file operations and web content access through AI agents. Connect any third-party external MCP server (Google Drive, GitHub, PostgreSQL, custom tools) for unlimited extensibility:
+  • MCP Manager: Enable/disable servers, configure settings, monitor connection health
+  • External MCP Servers: Connect any compatible MCP server — Google Drive, GitHub, PostgreSQL, databases, custom APIs, and more
+  • Mix & Match: Use multiple servers simultaneously for complex workflows
+  • OAuth2 Support: Secure authentication for cloud services
+  • File Operations: read_file, read_file_from_line, write_file, list_directory, create_directory, move_file, search_files, get_file_info, edit_file, get_filesystem_info
+  • Web Content Tools: web_fetch_content, web_scrape_page, web_extract_links, web_search, web_get_metadata, web_save_snapshot
+  • Gmail MCP Server: Full agentic Gmail control — list, get, send, label, trash, archive emails in JSON/EML/MBOX formats
   These operations are accessible through selected LLMs, enabling sophisticated file management workflows.
+🧠 Adaptive 4-Tier AI Memory: Auto-extracts facts, preferences, and skills from conversations. Profile-First retrieval saves 61% tokens, conversation compaction saves 93%. Cross-agent memory sharing, import/export, full control.
+🔀 Intelligent Router & Intent Engine: Smart tool call routing, intent classification, entity extraction, max 3 tool calls per request (loop prevention). English + German for memory routing, 25+ languages for tool intents.
+💬 Chat History & Conversation Management: All your past conversations are stored in a sidebar. Search, reload, and delete chats. Nothing gets lost. Agent remembers from your last conversation.
 
 📦 Portable: The application is portable and keeps data under user control.
 
@@ -46,8 +46,8 @@ es:
 🔑 Permissions: Standard user account
 
 🤖 AI Model Hardware Requirements:
-  • Built-in Models: Range from 1B parameter (806MB) to 20B parameter (12-16GB)
-  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation
+  • Built-in Models: Range from 1B parameter (806MB) to 20B parameter (8-16GB)
+  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): Minimum 8 GB RAM or 4 GB VRAM for smooth operation
   • Hardware Requirements Increase with Model Size: Larger models with more parameters require higher specifications
   • Cloud Models: No local hardware requirements (requires internet connection)
 
@@ -103,11 +103,31 @@ It's important to distinguish this from MCP server functionality. While the MCP 
 
 🤖 MCP Server Usage Guide 🤖
 
+Sorana now includes an MCP Manager — a visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without editing config files.
+
 To use the MCP server file operations:
 
-1. Create an agent in the workspace
-2. Right-click on the agent title and select "Chat"
-3. Interact directly with all files and folders in the workspace
+1. Open MCP Manager to configure and enable servers
+2. Create an agent in your workspace
+3. Right-click on the agent title and select "Chat"
+4. Interact directly with all files and folders in the workspace
+
+📧 Gmail MCP Server (NEW!)
+
+Sorana includes a built-in Gmail MCP server for full agentic email control:
+
+• List emails by label, date, or search query
+• Read individual email content with headers
+• Send new emails directly from chat
+• Add, remove, or manage email labels
+• Move emails to trash
+• Archive emails to disk in 3 formats: JSON, EML, MBOX
+
+Archive Example: "Archive emails from john@example.com after 2024-01-01 before 2024-12-31 with label PROJECT_X_2024"
+
+Why this matters: Google only allows MBOX export for entire Gmail via Takeout. With Sorana, the agent archives specific emails on demand — perfect for backups and compliance.
+
+Configuration is easy: Use JSON config or OAuth2 token. First run triggers authorization, token is cached afterwards.
 
 Example commands you can use in the agent chat:
 • "List the first 10 files in the current directory" (uses list_directory)
@@ -134,8 +154,8 @@ To connect agents in Sorana:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.17
-🔢 MD5 Checksum (.exe): f72ebc0b67b5f39f2d163ee756f0f466
+🔹 Latest version: Sorana.exe v1.0.18
+🔢 MD5 Checksum (.exe): 99f54a051d7bda30bc1c5bb2362891cd
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
@@ -145,6 +165,17 @@ To connect agents in Sorana:
 
 
 📋 Changelog 📋
+
+📅 April 3, 2026 — Version 1.0.18
+
+🆕 MCP Manager — Visual interface for managing MCP servers. Enable/disable, configure, and monitor servers without editing config files.
+🆕 Gmail MCP Server — Full agentic Gmail control: list, get, send, label, trash, and archive emails. Archive command saves emails in 3 formats (JSON, EML, MBOX) — perfect for backups.
+🧠 4-Tier Memory Improvements — Profile-First retrieval (61% token savings), conversation compaction (93% token reduction), auto-extraction from conversations.
+🔀 Intelligent Router & Intent Engine — Smart tool call routing, intent classification (memory search, tool call, document query), max 3 tool calls per request (loop prevention).
+💬 Chat History Awareness — Agent remembers from your last conversation. Prompts augmented with semantic memories + episodic summaries.
+🐛 Bugfix: MCP server tool calls
+🐛 Bugfix: Chat engine stability
+🐛 Bugfix: Model manager improvements
 
 📅 March 31, 2026 — Version 1.0.17
 
@@ -188,7 +219,7 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 💬 Chat History — all your past conversations in a sidebar. Search, reload, delete. Nothing gets lost.
 🧠 Memory that stacks — short-term, summaries, long-term (personas, facts, preferences), and document search. Each layer builds on the last.
 ☁️ Google Gemini support — add your API key and it works, including free tier models.
-🔍 Works without AI hardware — document search falls back to text-based retrieval if no NPU is available. 15 languages supported, auto-detected.
+🔍 Works without AI hardware — document search falls back to text-based retrieval if no NPU is available. 15+ languages for document retrieval, auto-detected.
 ⚡ RAG opens 40x faster — startup went from 4s to under 0.1s.
 🗃️ All data stored in a single .sorana/ folder. Existing installs migrate automatically.
 
