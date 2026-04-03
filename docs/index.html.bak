@@ -51,7 +51,7 @@
             <li><a href="#operation-h2">Operation</a></li>
             <li><a href="#technical-implementation-h2">Technical Implementation</a></li>
             <li><a href="#ai-memory-rag-h2">AI Memory & RAG</a></li>
-            <li><a href="#mcp-section-h2">MCP Server Usage</a></li>
+            <li><a href="#mcp-section-h2">MCP Server & Gmail</a></li>
             <li><a href="#ocr-section-h2">Document OCR & Context</a></li>
             <li><a href="#installation-setup-h2">Installation & Setup</a></li>
             <li><a href="#system-requirements-h2">System Requirements</a></li>
@@ -78,7 +78,7 @@
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <p>Sorana is an AI-powered visual workspace featuring a built-in MCP server for file operations, web content tools, OCR document processing, and spatial AI organization. Transform how you organize digital files with semantic analysis that groups related content onto an intuitive 2D canvas. Create no-code agent workflows, enhance document context with OCR, perform file and web operations through the MCP server, and connect to on-prem or cloud AI backends (OpenAI, Mistral, Google Gemini, 🍋 Lemonade with FastFlowLM NPU, and more) while keeping your data under your control. With advanced 4-tier AI memory and 40x faster RAG retrieval, Sorana delivers intelligent, context-aware responses while saving tokens.</p>
+            <p>Sorana is an AI-powered visual workspace featuring a built-in MCP server for file operations, web content tools, OCR document processing, spatial AI organization, and no-code agent orchestration. Now with MCP Manager for visual server configuration, Gmail MCP server for full agentic email control, intelligent router & intent engine for smart tool routing, and adaptive 4-tier AI memory that auto-learns from conversations while using 93% fewer tokens.</p>
         </div>
 
         <!-- Video Section -->
@@ -142,37 +142,38 @@
         <li><strong>No-Code Multi-Agent Orchestration:</strong> Create custom agents and connect them into processing pipelines using a drag-and-drop interface within our unique 2D canvas workspace where files and folders are spatially arranged. Handle complex multi-agent workflows by building agents that operate directly on this visual workspace, collaborating seamlessly by passing insights from one to another to solve complex problems, all without writing code. Enhance agent knowledge by integrating OCR-processed PDFs and text files directly into their memory and processing capabilities.</li>
 
         <figure class="chatbot-figure">
-            <img src="chatbot.png" alt="Sorana No-Code Multi-Agent Orchestration Interface" class="chatbot-screenshot">
+            <img src="chat.png" alt="Sorana No-Code Multi-Agent Orchestration Interface" class="chatbot-screenshot">
         </figure>
 
         <li><strong>Visual Structure Mapping:</strong> Generate dynamic visual representations and mind maps of folder hierarchies to understand relationships and reveal the big picture of your data organization.</li>
-        <li><strong>Built-in MCP Server <span class="beta-feature">beta</span>:</strong> Integrated server supporting advanced file operations and web content access through AI agents:
+        <li><strong>Built-in MCP Manager & Server:</strong> Visual MCP Manager for configuring and enabling servers. Integrated server supporting advanced file operations and web content access through AI agents:
             <ul>
                 <li><strong>File Operations:</strong> read_file, read_file_from_line, write_file, list_directory, create_directory, move_file, search_files, get_file_info, edit_file, get_filesystem_info</li>
                 <li><strong>Web Content Tools:</strong> web_fetch_content, web_scrape_page, web_extract_links, web_search, web_get_metadata, web_save_snapshot</li>
+                <li><strong>Gmail MCP Server:</strong> Full agentic Gmail control - list, get, send, label, trash, archive emails in JSON/EML/MBOX formats</li>
             </ul>
             Combine file and web operations for powerful workflows (e.g., "Fetch product specs from website and save to local file").
         </li>
         <li><strong>Chat History & Conversation Management:</strong> All your past conversations are stored in a sidebar. Search, reload, and delete chats. Nothing gets lost.</li>
-        <li><strong>4-Tier AI Memory System:</strong> Advanced memory architecture with short-term memory, conversation summaries, long-term memory (personas, facts, preferences), and document search. Each layer builds on the last for intelligent, context-aware responses.</li>
-        <li><strong>40x Faster RAG Retrieval:</strong> Optimized startup from 4s to under 0.1s. Token-efficient, targeted answers with full user control over stored data.</li>
+        <li><strong>Adaptive 4-Tier AI Memory:</strong> Auto-extracts facts, preferences, and skills from conversations. Profile-First retrieval saves 61% tokens, conversation compaction saves 93%. Cross-agent memory sharing, import/export, full control.</li>
+        <li><strong>Intelligent Router & Intent Engine:</strong> Smart tool call routing, intent classification, entity extraction, max 3 tool calls per request (loop prevention). English + German support.</li>
         <li><strong>Google Gemini Support:</strong> Add your API key and use Gemini models including free tier options.</li>
-        <li><strong>NPU-Aware Document Search:</strong> Uses 🍋 Lemonade backend with integrated FastFlowLM NPU for Windows Ryzen. 🍋 Lemonade is AMD's new high-performance AI server (C++ based) that integrates multiple backends including Llama.cpp, Whisper, and FastFlowLM for NPU acceleration. Falls back to text-based retrieval if no NPU is available. Supports 15 languages with auto-detection.</li>
+        <li><strong>NPU-Aware Document Search:</strong> Uses 🍋 Lemonade backend with integrated FastFlowLM NPU for Windows Ryzen. Falls back to text-based retrieval if no NPU is available. Supports 15 languages with auto-detection.</li>
         <li><strong>Centralized Data Storage:</strong> All data stored in a single <code>.sorana/</code> folder. Existing installs migrate automatically.</li>
         <li><strong>Portable:</strong> The application is portable and keeps data under user control.</li>
     </ul>
-    
+
         <figure class="screenshot-figure">
         <img src="Sorana_cbfHZaRAyM.png" alt="Sorana Visual Workspace Screenshot" class="sorana-screenshot">
     </figure>
     </div>
 
             <figure class="screenshot-figure">
-        <img src="Sorana_JR9RKvwFv0.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
+        <img src="modelmanager.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
     </figure>
 	</section>
-	
-	
+
+
 		<h2 id="operation-h2">Operation</h2>
     <section class="operation-section" id="operation">
        
@@ -249,58 +250,58 @@
         </div>
     </section>
 
-		<h2 id="ai-memory-rag-h2">Advanced AI Memory & RAG System</h2>
+		<h2 id="ai-memory-rag-h2">Adaptive 4-Tier AI Memory & Smart Routing</h2>
     <section class="ai-memory-rag-section" id="ai-memory-rag">
-        
+
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <p>Sorana v1.0.10 introduces a 4-tier memory architecture combined with 4-tier RAG (Retrieval-Augmented Generation) for intelligent, context-aware responses that save tokens and deliver faster, targeted answers — with full user control.</p>
+            <p>Sorana features an adaptive 4-tier AI memory system that automatically learns from every conversation. Combined with an intelligent router and intent engine, the agent always remembers — from your last message to your last session — while using dramatically fewer tokens. Perfect for local and private inference.</p>
 
-            <h3>4-Tier AI Memory System</h3>
+            <h3>The 4 Memory Tiers</h3>
             <div>
-            <p>Each memory layer builds on the last, creating a comprehensive memory system that makes your AI agents more intelligent over time:</p>
             <ul>
-                <li><strong>Short-Term Memory:</strong> Active conversation context within the current chat session</li>
-                <li><strong>Summaries:</strong> Automatic conversation compression to preserve key insights without token bloat</li>
-                <li><strong>Long-Term Memory:</strong> Persistent storage for user personas, facts, preferences, and skills — automatically extracted from conversations</li>
-                <li><strong>Document Search:</strong> RAG-based retrieval from uploaded documents for precise, context-rich answers</li>
+                <li><strong>Current History</strong> — Your active conversation, always in context</li>
+                <li><strong>Episodic Summary</strong> — Long chats compressed into compact summaries (93% token reduction)</li>
+                <li><strong>Observations</strong> — Individual facts, preferences, and skills auto-extracted from conversations</li>
+                <li><strong>Profiles</strong> — Observations consolidated into entity summaries (user, company, topic) — 61% fewer tokens</li>
+            </ul>
+					</div>
+
+            <h3>How it works</h3>
+          	<div>
+            <ul>
+                <li><strong>Auto-Extraction:</strong> Every message analyzed — memories saved automatically</li>
+                <li><strong>Profile-First Retrieval:</strong> Compact profiles injected first, observations as fallback</li>
+                <li><strong>4-Tier RAG Search:</strong> NPU Embeddings → BM25 → Keyword → Full Text — precise, fast, works offline</li>
+                <li><strong>Conversation Compaction:</strong> 17,000 → 1,200 tokens while keeping full context</li>
+                <li><strong>Cross-Agent Memory:</strong> Share memories between agents, import/export, global memories</li>
             </ul>
 
             <figure class="screenshot-figure">
-                <img src="Longterm_person_memory.png" alt="Long-Term Person Memory Management Interface" class="sorana-screenshot">
+                <img src="memories.png" alt="Long-Term Person Memory Management Interface" class="sorana-screenshot">
                 <figcaption>Long-Term Memory: Automatically extracted user facts, preferences, and persona data</figcaption>
             </figure>
-					</div>
+						</div>
 
-            <h3>Chat History & Conversation Management</h3>
+            <h3>Intelligent Router & Intent Engine</h3>
           	<div>
-            <p>All your past conversations are stored in a sidebar for easy access. Search, reload, and delete chats — nothing gets lost.</p>
+            <ul>
+                <li><strong>Intent Classification:</strong> Detects memory search, tool calls, document queries, or hybrid intents</li>
+                <li><strong>Entity Extraction:</strong> Automatically identifies companies, users, topics from natural language</li>
+                <li><strong>Smart Tool Routing:</strong> Routes to correct MCP server (file ops, Gmail, web tools)</li>
+                <li><strong>Loop Prevention:</strong> Max 3 tool calls per request — prevents infinite loops</li>
+                <li><strong>Multi-Language:</strong> English + German intent patterns supported</li>
+            </ul>
 
             <figure class="screenshot-figure">
-                <img src="chat_history.png" alt="Chat History Sidebar Interface" class="sorana-screenshot">
+                <img src="chat-sidebar.png" alt="Chat History Sidebar Interface" class="sorana-screenshot">
                 <figcaption>Chat History Sidebar: Access all past conversations instantly</figcaption>
             </figure>
 
             <figure class="screenshot-figure">
-                <img src="chat_manager.png" alt="Chat Manager Interface" class="sorana-screenshot">
+                <img src="chat.png" alt="Chat Manager Interface" class="sorana-screenshot">
                 <figcaption>Chat Manager: View, search, and manage conversation history</figcaption>
-            </figure>
-						</div>
-
-            <h3>40x Faster RAG Retrieval</h3>
-            <div>
-            <p>Optimized RAG startup from 4s to under 0.1s. The 4-tier RAG system ensures token-efficient, targeted answers:</p>
-            <ul>
-                <li><strong>Tier 1:</strong> Immediate context from active conversation</li>
-                <li><strong>Tier 2:</strong> Compressed summaries for efficient recall</li>
-                <li><strong>Tier 3:</strong> Long-term memory facts and personas</li>
-                <li><strong>Tier 4:</strong> Full document chunk retrieval for deep context</li>
-            </ul>
-
-            <figure class="screenshot-figure">
-                <img src="rag.png" alt="RAG Document Manager Interface" class="sorana-screenshot">
-                <figcaption>RAG Document Manager: Upload, view, and manage documents for AI context retrieval</figcaption>
             </figure>
 						</div>
 
@@ -308,10 +309,8 @@
             <div>
             <ul>
                 <li><strong>Token Efficiency:</strong> Smart memory layering reduces token usage by serving only relevant context</li>
-                <li><strong>Faster Responses:</strong> 40x speedup in RAG retrieval means near-instant answers</li>
-                <li><strong>Full User Control:</strong> All data stored locally in <code>.sorana/</code> folder — you control what's remembered</li>
                 <li><strong>NPU Acceleration:</strong> Uses 🍋 Lemonade backend with integrated FastFlowLM NPU for Windows Ryzen. 🍋 Lemonade is AMD's high-performance AI server (C++ based) integrating multiple backends including FastFlowLM for native NPU acceleration. Falls back to text-based retrieval if no NPU is available.</li>
-                <li><strong>Multi-Language:</strong> 15 languages supported with auto-detection</li>
+                <li><strong>Multi-Language:</strong> English + German for memory routing, 25+ languages for tool intents (Gmail, file ops), 15+ languages for document retrieval — all auto-detected</li>
             </ul>
           </div>
         </div>
@@ -329,6 +328,26 @@
                 <li>Right-click on the agent title and select "Chat"</li>
                 <li>Interact directly with all files, folders, and web content</li>
             </ol>
+
+            <h3>MCP Manager</h3>
+            <div>
+            <p><strong>MCP Manager</strong> — Visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without editing config files.</p>
+
+            <h3>Model Manager Split View</h3>
+            <div>
+            <p>The Model Manager features a split view when using <strong>🍋 Lemonade</strong> as the backend. Lemonade supports multi-model loading, allowing both a chat model and an embedding model to run simultaneously:</p>
+            <ul>
+                <li><strong>Upper Pane:</strong> Chat/Completion models (for conversation and reasoning)</li>
+                <li><strong>Bottom Pane:</strong> Embedding models (for semantic search and RAG) — runs on NPU or GPU</li>
+            </ul>
+            <p>Embedding models power the 4-tier RAG system's Tier 1 (NPU Embeddings). Without an embedding model, the system gracefully falls back: <strong>BM25 → Keyword → Full Text</strong>. Currently, only Lemonade supports multi-model loading. Other backends (Ollama, LM Studio, etc.) do not support loading an embedding model alongside a chat model — but the 4-tier RAG system ensures full functionality even without embeddings.</p>
+            </div>
+
+            <figure class="screenshot-figure">
+                <img src="mcpmanager.png" alt="MCP Manager Interface" class="sorana-screenshot">
+                <figcaption>MCP Manager: Visually configure and enable MCP servers</figcaption>
+            </figure>
+            </div>
 
             <h3>File Operations</h3>
             <div>
@@ -376,6 +395,33 @@
                 <li>"Search for documentation, download PDFs, and organize into folders"</li>
                 <li>"Extract data from web sources, analyze with local files, and generate a report"</li>
             </ul>
+            </div>
+
+            <h3>Gmail MCP Server</h3>
+            <div>
+            <p><strong>Gmail MCP Server</strong> — Full agentic Gmail control through your AI agent:</p>
+            <ul>
+                <li><strong>List</strong> emails by label, date, or search query</li>
+                <li><strong>Get</strong> individual email content with headers</li>
+                <li><strong>Send</strong> new emails directly from chat</li>
+                <li><strong>Label</strong> — add, remove, or manage email labels</li>
+                <li><strong>Trash</strong> — move emails to trash</li>
+                <li><strong>Archive</strong> — download emails to disk in JSON, EML, or MBOX format</li>
+            </ul>
+
+            <p><strong>Archive Example:</strong></p>
+            <ul>
+                <li>"Archive emails from client after 2024-01-01 before 2024-12-31 with label PROJECT_X_2024"</li>
+            </ul>
+
+            <p><strong>Why this matters:</strong> Google only allows MBOX export for entire Gmail via Google Takeout. With Sorana's MCP server, the agent archives specific emails on demand — perfect for backups, compliance, or knowledge management.</p>
+
+            <p><strong>Configuration:</strong> Easy setup with JSON config or OAuth2 token. First run triggers authorization, token is cached afterwards.</p>
+
+            <figure class="screenshot-figure">
+                <img src="mcpgmailconf.png" alt="Gmail MCP Server Configuration Interface" class="sorana-screenshot">
+                <figcaption>Gmail MCP Server Configuration: JSON or OAuth2 token-based setup</figcaption>
+            </figure>
             </div>
         </div>
     </section>
@@ -491,7 +537,7 @@
                 <a href="README.txt" class="btn btn-primary">Readme</a>
             </div>
 
-             <code>$ md5sum.exe Sorana.exe v1.0.14 ce44f87fbfc27c6b8e41b8f601c83b9b</code>
+             <code>$ md5sum.exe Sorana.exe v1.0.18 f72ebc0b67b5f39f2d163ee756f0f466</code>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
 
