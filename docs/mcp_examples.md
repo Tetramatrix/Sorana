@@ -2,6 +2,17 @@
 
 This document provides practical examples of using Sorana's built-in MCP (Model Context Protocol) server for advanced file operations through AI agents.
 
+## Flexible Architecture: Connect Any MCP Server
+
+Sorana's AI agents support **any third-party external MCP server**, making it incredibly flexible:
+
+- **Built-in servers**: Filesystem, Memory, Web Content, Gmail
+- **External MCP servers**: Connect any compatible MCP server (Google Drive, GitHub, PostgreSQL, custom tools, etc.)
+- **Mix & match**: Use multiple servers simultaneously for complex workflows
+- **OAuth2 support**: Secure authentication for cloud services
+
+This means you can extend Sorana's capabilities with **any tool** that follows the MCP standard — from database connectors to custom business APIs.
+
 ## Quick Start
 
 1. Create an agent in your workspace
