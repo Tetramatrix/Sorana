@@ -152,10 +152,28 @@ h3 {
   margin-top: 36px;
   margin-bottom: 16px;
 }
+/* Neue h4-Klasse – nur der Look, kein Plus, kein Collapse */
+h4.style-box {
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: rgba(45, 45, 48, 0.7);
+  border: 1px solid var(--border);
+  border-left: 4px solid #fc8181;
+  padding: 14px 40px 14px 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+/* Alte h4-Styles bleiben als Fallback */
 h4 {
   font-size: 1.3em;
   background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
   border-left: 4px solid #fc8181;
+  margin-top: 30px;
+  margin-bottom: 14px;
 }
 
 .wikidoc {
