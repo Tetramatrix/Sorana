@@ -146,13 +146,14 @@
         </figure>
 
         <li><strong>Visual Structure Mapping:</strong> Generate dynamic visual representations and mind maps of folder hierarchies to understand relationships and reveal the big picture of your data organization.</li>
-        <li><strong>Built-in MCP Manager & Server:</strong> Visual MCP Manager for configuring and enabling servers. Integrated server supporting advanced file operations and web content access through AI agents:
+        <li><strong>Built-in MCP Manager & Server:</strong> Visual MCP Manager for configuring and enabling servers. Connect any third-party external MCP server (Google Drive, GitHub, PostgreSQL, custom tools) for unlimited extensibility. Mix and match multiple servers simultaneously for complex workflows with OAuth2 support for secure cloud authentication:
             <ul>
+                <li><strong>External MCP Servers:</strong> Connect any compatible MCP server — Google Drive, GitHub, PostgreSQL, databases, custom APIs, and more</li>
                 <li><strong>File Operations:</strong> read_file, read_file_from_line, write_file, list_directory, create_directory, move_file, search_files, get_file_info, edit_file, get_filesystem_info</li>
                 <li><strong>Web Content Tools:</strong> web_fetch_content, web_scrape_page, web_extract_links, web_search, web_get_metadata, web_save_snapshot</li>
                 <li><strong>Gmail MCP Server:</strong> Full agentic Gmail control - list, get, send, label, trash, archive emails in JSON/EML/MBOX formats</li>
             </ul>
-            Combine file and web operations for powerful workflows (e.g., "Fetch product specs from website and save to local file").
+            Combine file, web, and external server operations for powerful workflows (e.g., "Fetch product specs from website, save to local file, and upload to Google Drive").
         </li>
         <li><strong>Chat History & Conversation Management:</strong> All your past conversations are stored in a sidebar. Search, reload, and delete chats. Nothing gets lost.</li>
         <li><strong>Adaptive 4-Tier AI Memory:</strong> Auto-extracts facts, preferences, and skills from conversations. Profile-First retrieval saves 61% tokens, conversation compaction saves 93%. Cross-agent memory sharing, import/export, full control.</li>
@@ -167,10 +168,6 @@
         <img src="Sorana_cbfHZaRAyM.png" alt="Sorana Visual Workspace Screenshot" class="sorana-screenshot">
     </figure>
     </div>
-
-            <figure class="screenshot-figure">
-        <img src="modelmanager.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
-    </figure>
 	</section>
 
 
@@ -213,25 +210,39 @@
 
              <h3>AI Integration</h3>
             <div>
-            <p>Sorana supports connection to both on-prem and cloud-based AI services:</p>
-            <ul>
-                <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
-                <li><strong>Local and On-Prem Services:</strong> 🍋 Lemonade (with FastFlowLM NPU), Llama.cpp, Ollama, and other self-hosted LLM solutions</li>
-                <li><strong>Cloud Services:</strong> OpenAI, Mistral, Google Gemini, and other cloud-based AI platforms</li>
-            </ul>
-           
-            <h3>Hardware Requirements</h3>
-           <div>
-            <ul>
-                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (8-16GB)</li>
-                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 8 GB RAM or 4 GB VRAM for smooth operation</li>
-                <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
-                <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
-            </ul>			
-						</div>
+		            <p>Sorana supports connection to both on-prem and cloud-based AI services:</p>
+		            <ul>
+		                <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
+		                <li><strong>Local and On-Prem Services:</strong> 🍋 Lemonade (with FastFlowLM NPU), Llama.cpp, Ollama, and other self-hosted LLM solutions</li>
+		                <li><strong>Cloud Services:</strong> OpenAI, Mistral, Google Gemini, and other cloud-based AI platforms</li>
+		            </ul>
+		
+		            <h3>Hardware Requirements</h3>
+		           <div>
+		            <ul>
+		                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (8-16GB)</li>
+		                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 8 GB RAM or 4 GB VRAM for smooth operation</li>
+		                <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
+		                <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
+		            </ul>			
+								</div>
+					</div>
 
-				</div>
-
+             <h3>Model Manager Split View</h3>
+            <div>
+	            <p>The Model Manager features a split view when using <strong>🍋 Lemonade</strong> as the backend. Lemonade supports multi-model loading, allowing both a chat model and an embedding model to run simultaneously:</p>
+	            <ul>
+	                <li><strong>Upper Pane:</strong> Chat/Completion models (for conversation and reasoning)</li>
+	                <li><strong>Bottom Pane:</strong> Embedding models (for semantic search and RAG) — runs on NPU or GPU</li>
+	            </ul>
+	            <p>Embedding models power the 4-tier RAG system's Tier 1 (NPU Embeddings). Without an embedding model, the system gracefully falls back: <strong>BM25 → Keyword → Full Text</strong>. Currently, only Lemonade supports multi-model loading. Other backends (Ollama, LM Studio, etc.) do not support loading an embedding model alongside a chat model — but the 4-tier RAG system ensures full functionality even without embeddings.</p>
+            
+	            <figure class="screenshot-figure">
+	    		    <img src="modelmanager.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
+	    				</figure>
+	          </div>
+	          
+	          
 					 <h3>Recommendation</h3>
 					 <div>
            <p><strong>🍋 Lemonade</strong> For optimal local and on-prem performance with both GPU and NPU acceleration, we recommend:</p>
@@ -316,38 +327,34 @@
         </div>
     </section>
 
+
+
+
+
 		<h2 id="mcp-section-h2">MCP Server Usage Guide</h2>
     <section class="mcp-section" id="mcp-section">
         
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations and web content access through AI agents. To use these capabilities:</p>
+            <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations and web content access through AI agents. Connect any third-party external MCP server (Google Drive, GitHub, PostgreSQL, custom tools) for unlimited extensibility. To use these capabilities:</p>
             <ol>
+                <li>Open MCP Manager to configure and enable servers</li>
+                <li>Connect external MCP servers if needed (Google Drive, GitHub, databases, etc.)</li>
                 <li>Create an agent in the workspace</li>
                 <li>Right-click on the agent title and select "Chat"</li>
-                <li>Interact directly with all files, folders, and web content</li>
+                <li>Interact directly with files, folders, web content, and external services</li>
             </ol>
 
             <h3>MCP Manager</h3>
             <div>
-            <p><strong>MCP Manager</strong> — Visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without editing config files.</p>
-
-            <h3>Model Manager Split View</h3>
-            <div>
-            <p>The Model Manager features a split view when using <strong>🍋 Lemonade</strong> as the backend. Lemonade supports multi-model loading, allowing both a chat model and an embedding model to run simultaneously:</p>
-            <ul>
-                <li><strong>Upper Pane:</strong> Chat/Completion models (for conversation and reasoning)</li>
-                <li><strong>Bottom Pane:</strong> Embedding models (for semantic search and RAG) — runs on NPU or GPU</li>
-            </ul>
-            <p>Embedding models power the 4-tier RAG system's Tier 1 (NPU Embeddings). Without an embedding model, the system gracefully falls back: <strong>BM25 → Keyword → Full Text</strong>. Currently, only Lemonade supports multi-model loading. Other backends (Ollama, LM Studio, etc.) do not support loading an embedding model alongside a chat model — but the 4-tier RAG system ensures full functionality even without embeddings.</p>
-            </div>
+            <p><strong>MCP Manager</strong> — Visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without editing config files. Connect any compatible external MCP server for unlimited extensibility.</p>
 
             <figure class="screenshot-figure">
                 <img src="mcpmanager.png" alt="MCP Manager Interface" class="sorana-screenshot">
                 <figcaption>MCP Manager: Visually configure and enable MCP servers</figcaption>
             </figure>
-            </div>
+
 
             <h3>File Operations</h3>
             <div>
@@ -365,7 +372,7 @@
                 <li>"Show available storage space and supported operations" (uses get_filesystem_info)</li>
                 <li>"Summarize document.txt and create a markdown summary document" (uses read_file + write_file)</li>
             </ul>
-</div>
+						</div>
             <h3>Web Content Tools</h3>
             <div>
             <p>Built-in MCP web content tools give your AI direct web access. Combine file operations with web content for even more powerful agents:</p>
@@ -537,7 +544,7 @@
                 <a href="README.txt" class="btn btn-primary">Readme</a>
             </div>
 
-             <code>$ md5sum.exe Sorana.exe v1.0.18 f72ebc0b67b5f39f2d163ee756f0f466</code>
+             <code>$ md5sum.exe Sorana.exe v1.0.18 99f54a051d7bda30bc1c5bb2362891cd</code>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
 
