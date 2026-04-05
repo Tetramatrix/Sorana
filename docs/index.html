@@ -139,17 +139,20 @@
                     <span class="toggle-icon">+</span> 🎨 Visual Workspace
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <ul>
                         <li><strong>Spatial AI Organization:</strong> AI semantically groups files on a 2D canvas — no more nested folders.</li>
                         <li><strong>WYSIWYG Canvas Editor:</strong> Drag and drop, rename, resize — full visual control.</li>
                         <li><strong>Mind Map Generation:</strong> Generate visual representations of folder hierarchies.</li>
                     </ul>
+                   </div>
                 </div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> 🤖 Agents & Pipelines
                 </h3>
                 <div class="capability-content" style="display:none;">
+            			<div class="cta-box capability-group">
                     <ul>
                         <li><strong>No-Code Agent Orchestration:</strong> Build custom agents and connect them into pipelines — drag and drop on the canvas.</li>
                         <li><strong>Chat History & Management:</strong> All conversations saved, searchable, reloadable. Nothing gets lost.</li>
@@ -158,50 +161,59 @@
                     <figure class="chatbot-figure">
                         <img src="chat.png" alt="Sorana Agent Orchestration" class="chatbot-screenshot">
                     </figure>
+                  </div>
                 </div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> 🧠 AI Memory
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <ul>
                         <li><strong>4-Tier Memory:</strong> Current history → Episodic summaries → Observations → Profiles. Auto-extracts facts, preferences, skills.</li>
                         <li><strong>Global Memory Sharing:</strong> A personal AI that learns — memories shared across ALL agents, import/export between projects.</li>
                         <li><strong>Live Session Stats:</strong> Tokens/sec, time-to-first-token, input/output tokens visible in every chat. <span class="lemonade-only">(🍋 Lemonade only)</span></li>
                     </ul>
+                  </div>
                 </div>
 
              <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> 🔌 MCP & Integrations
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <ul>
                         <li><strong>MCP Manager:</strong> Visual interface — enable/disable servers, configure settings, monitor health.</li>
                         <li><strong>File Operations:</strong> read, write, move, search, edit — all through agent chat.</li>
                         <li><strong>Web Content Tools:</strong> fetch, scrape, search, extract — AI has direct web access.</li>
                         <li><strong>Gmail MCP Server:</strong> Full agentic email control — list, send, label, trash, archive (JSON/EML/MBOX).</li>
                     </ul>
+                  </div>
                 </div>
 
              <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> ☁️ AI Backends
                 </h3>
                 <div class="capability-content" style="display:none;">
+                    <div class="cta-box capability-group">
                     <ul>
                         <li><strong>🍋 Lemonade:</strong> NPU acceleration, 2-pane model manager (chat + embedding simultaneously). Best local option.</li>
                         <li><strong>Cloud:</strong> OpenAI, Mistral, Gemini (free tier), and more.</li>
-                        <li><strong>Local:</strong> Ollama, Llama.cpp, LM Studio, and any compatible service.</li>
+                        <li><strong>Local:</strong> 🍋 Lemonad, Ollama, Llama.cpp, LM Studio, and any compatible service.</li>
                     </ul>
+                  </div>
                 </div>
 
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> 📦 Technical Details
                 </h3>
                 <div class="capability-content" style="display:none;">
+                    <div class="cta-box capability-group">
                     <ul>
                         <li><strong>Centralized Storage:</strong> All data in a single <code>.sorana/</code> folder. Existing installs migrate automatically.</li>
                         <li><strong>Portable:</strong> Runs from USB, keeps data under user control.</li>
                     </ul>
+                  </div>
                 </div>
             </div>
 
@@ -229,18 +241,21 @@
                     <span class="toggle-icon">+</span> The 4 Memory Tiers
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <ul>
                 <li><strong>Current History</strong> — Your active conversation, always in context</li>
                 <li><strong>Episodic Summary</strong> — Long chats compressed into compact summaries (93% token reduction)</li>
                 <li><strong>Observations</strong> — Individual facts, preferences, and skills auto-extracted from conversations</li>
                 <li><strong>Profiles</strong> — Observations consolidated into entity summaries (user, company, topic) — 61% fewer tokens</li>
             </ul>
+          </div>
                 </div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> How it works
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <ul>
                 <li><strong>Auto-Extraction:</strong> Every message analyzed — memories saved automatically</li>
                 <li><strong>Profile-First Retrieval:</strong> Compact profiles injected first, observations as fallback</li>
@@ -259,11 +274,13 @@
                 <figcaption>Global Memory Storage: A personal AI that learns — memories shared across all agents</figcaption>
             </figure>
                 </div>
-
+						</div>
+						
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Intelligent Router & Intent Engine
                 </h3>
                 <div class="capability-content" style="display:none;">
+            <div class="cta-box capability-group">
                     <ul>
                 <li><strong>Intent Classification:</strong> Detects memory search, tool calls, document queries, or hybrid intents</li>
                 <li><strong>Entity Extraction:</strong> Automatically identifies companies, users, topics from natural language</li>
@@ -282,12 +299,13 @@
                 <figcaption>Chat Manager: View, search, and manage conversation history</figcaption>
             </figure>
                 </div>
-
+						</div>
 
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Key Benefits
                 </h3>
                 <div class="capability-content" style="display:none;">
+                  <div class="cta-box capability-group">
                     <ul>
                 <li><strong>Token Efficiency:</strong> Smart memory layering reduces token usage by serving only relevant context</li>
                 <li><strong>Live Session Stats:</strong> Real-time performance metrics — tokens/sec, time-to-first-token, input/output tokens — visible in every chat window. <span class="lemonade-only">(🍋 Lemonade only)</span></li>
@@ -298,6 +316,8 @@
                 <li><strong>Multi-Language:</strong> English + German for memory routing, 25+ languages for tool intents (Gmail, file ops), 15+ languages for document retrieval — all auto-detected</li>
             </ul>
                 </div>
+                
+              </div>
             </div>
         </div>
     </section>
@@ -326,6 +346,9 @@
                     <span class="toggle-icon">+</span> MCP Manager
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	
+                	<div class="cta-box capability-group">
+                		
                     <p><strong>MCP Manager</strong> — Visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without editing config files. Connect any compatible external MCP server for unlimited extensibility.</p>
 
             <figure class="screenshot-figure">
@@ -333,10 +356,13 @@
                 <figcaption>MCP Manager: Visually configure and enable MCP servers</figcaption>
             </figure>
 						</div>
+					</div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> File Operations</h3>
             <div class="capability-content" style="display:none;">
+            <div class="cta-box capability-group">
+            	
             <p>Common file operations you can perform in the agent chat:</p>
             <ul>
                 <li>"List the first 10 files in the current directory" (uses list_directory)</li>
@@ -352,12 +378,13 @@
                 <li>"Summarize document.txt and create a markdown summary document" (uses read_file + write_file)</li>
             </ul>
                 </div>
-   
+  				 </div>
    
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Web Content Tools
                 </h3>
                 <div class="capability-content" style="display:none;">
+          <div class="cta-box capability-group">
                     <p>Built-in MCP web content tools give your AI direct web access. Combine file operations with web content for even more powerful agents:</p>
             <ul>
                 <li><strong>web_fetch_content:</strong> Fetch and read content from any URL</li>
@@ -386,12 +413,13 @@
                 <li>"Extract data from web sources, analyze with local files, and generate a report"</li>
             </ul>
                 </div>
-   
+   				</div>
    
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Gmail MCP Server
                 </h3>
                 <div class="capability-content" style="display:none;">
+                <div class="cta-box capability-group">
                     <p><strong>Gmail MCP Server</strong> — Full agentic Gmail control through your AI agent:</p>
             <ul>
                 <li><strong>List</strong> emails by label, date, or search query</li>
@@ -417,6 +445,7 @@
             </figure>
                 </div>
             </div>
+           </div>
         </div>
     </section>
 
@@ -438,6 +467,7 @@
                     <span class="toggle-icon">+</span> Document OCR Capabilities
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <p>
                 Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
             </p>
@@ -460,13 +490,14 @@
                 <li><strong>PDFs with Images:</strong> Built-in method for OCR processing of PDFs containing images</li>
             </ul>
                 </div>
-  
+  </div>
 					
             <article class="ocr-requirements">
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Requirements for PDF Image OCR
                 </h3>
                 <div class="capability-content" style="display:none;">
+       <div class="cta-box capability-group">
                     <p>
                     To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
                 </p>
@@ -476,6 +507,7 @@
                 </div>
                 
                 </div>
+             </div>
             </article>
 
             <article class="encoding-notes">
@@ -483,10 +515,12 @@
                     <span class="toggle-icon">+</span> Encoding Support Notes
                 </h3>
                 <div class="capability-content" style="display:none;">
+                   <div class="cta-box capability-group">
                     <p>
                     The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
                 </p>
                 </div>
+              </div>
             </article>
 
         </div>
@@ -504,16 +538,18 @@
                     <span class="toggle-icon">+</span> AI Model Performance
                 </h3>
                 <div class="capability-content" style="display:none;">
+                 <div class="cta-box capability-group">
                     <p>
                 Sorana uses AI models to intelligently group files and folders based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify files perfectly, especially for less common file types. For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with cloud services.
-            </p>
+            		</p>
                 </div>
-
+								</div>
 
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> AI Integration
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <p>Sorana supports connection to both on-prem and cloud-based AI services:</p>
 		            <ul>
 		                <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
@@ -521,11 +557,13 @@
 		                <li><strong>Cloud Services:</strong> OpenAI, Mistral, Google Gemini, and other cloud-based AI platforms</li>
 		            </ul>
                 </div>
-
+							</div>
+              
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Model Manager Split View
                 </h3>
                 <div class="capability-content" style="display:none;">
+                	<div class="cta-box capability-group">
                     <p>The Model Manager features a split view when using <strong>🍋 Lemonade</strong> as the backend. 🍋 Lemonade supports multi-model loading, allowing both a chat model and an embedding model to run simultaneously:</p>
 	            <ul>
 	                <li><strong>Upper Pane:</strong> Chat/Completion models (for conversation and reasoning)</li>
@@ -537,11 +575,13 @@
 	    		    <img src="modelmanager.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
 	    				</figure>
                 </div>
+              </div>
 
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Hardware Requirements
                 </h3>
                 <div class="capability-content" style="display:none;">
+                   <div class="cta-box capability-group">
                     <ul>
 		                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (8-16GB)</li>
 		                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 8 GB RAM or 4 GB VRAM for smooth operation</li>
@@ -549,11 +589,14 @@
 		                <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
 		            </ul>
                 </div>
+              </div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span> Recommendation
                 </h3>
                 <div class="capability-content" style="display:none;">
+                   
+                   <div class="cta-box capability-group">
                     <p><strong>🍋 Lemonade</strong> For optimal local and on-prem performance with both GPU and NPU acceleration, we recommend:</p>
                 <div class="partner-buttons" style="margin-top: 10px;">
                     <a href="https://lemonade-server.ai/" target="_blank" class="btn-partner">🍋 Lemonade</a>
@@ -568,6 +611,7 @@
           	<p>
                 <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of files - fewer files result in faster processing.</p>
             </div>
+          </div>
         </div>
     </section>
 
@@ -685,34 +729,35 @@
                     <span class="toggle-icon">+</span>New Spaceship - Retro Mini Game</h3>
        
         <div class="capability-content" style="display:none;" id="spaceship-intro">
-            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
-            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
            
             <p>Retro Arcade 2d side-scroller bullet-hell shmup game</p>
 
-            <h4>Website</h4>
-            <figure class="product-fig">
-                <a href="http://tetramatrix.github.io/spaceship" target="_blank">
-                    <img src="start.jpg" title="Retro Arcade 2d side-scroller bullet-hell shmup game" alt="Spaceship" />
-                </a>
-            </figure>
-
-
-            <h4>Featured on itch.io</h4>
-            <figure class="product-fig">
-                <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
-                    <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship - Retro Mini Game" />
-                </a>
-            </figure>
-
-            <h4>Featured on IndieDB</h4>
-            <figure class="product-fig">
-                <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank">
-                    <img src="https://button.indiedb.com/popularity/medium/games/86877.png" alt="New Spaceship" />
-                </a>
-            </figure>
+					<div class="cta-box capability-group">
+	            <h4 class="style-box">Website</h4>
+	            <figure class="product-fig">
+	                <a href="http://tetramatrix.github.io/spaceship" target="_blank">
+	                    <img src="start.jpg" title="Retro Arcade 2d side-scroller bullet-hell shmup game" alt="Spaceship" />
+	                </a>
+	            </figure>
+	
+	
+	            <h4 class="style-box">Featured on itch.io</h4>
+	            <figure class="product-fig">
+	                <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
+	                    <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship - Retro Mini Game" />
+	                </a>
+	            </figure>
+	
+	            <h4 class="style-box">Featured on IndieDB</h4>
+	            <figure class="product-fig">
+	                <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank">
+	                    <img src="https://button.indiedb.com/popularity/medium/games/86877.png" alt="New Spaceship" />
+	                </a>
+	            </figure>
+	        </div>
         </div>
-
+	
+	
 				<h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span>🧩 TabNeuron - AI Spatial Tab Manager & Research Workspace</h3>
         <div class="capability-content" style="display:none;" id="tabneuron-intro">
@@ -725,17 +770,20 @@
                 <figcaption>TabNeuron: Browser tabs organized on an infinite 2D canvas with AI-powered grouping</figcaption>
             </figure>
 
-             <h4>Website & Community</h4>
+				<div class="cta-box capability-group">
+	
+             <h4 class="style-box">Website & Community</h4>
             <div class="download-buttons">
                 <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" class="btn btn-primary">🌐 Website</a>
                 <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">💬 Discord</a>
             </div>
             
-            <h4>Featured on Microsoft Store:</h4>
+            <h4 class="style-box">Featured on Microsoft Store:</h4>
             <p>
                 <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
             </p>
         </div>
+</div>
 
 				<h3 class="capability-toggle" onclick="toggleCapability(this)">
                     <span class="toggle-icon">+</span>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
@@ -747,23 +795,29 @@
             It allows users to adjust CPU performance, power limits, and thermal configurations
             for optimal performance and efficiency.</p>
 
-            <h4>Website</h4>
+
+			<div class="cta-box capability-group">
+	
+            <h4 class="style-box">Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank">
                     <img src="RyzenZPilot_3.1.3.png" title="AMD Ryzen Power Management Tool" alt="RyzenZPilot" />
                 </a>
             </figure>
         </div>
-
+			</div>
+			
 				<h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
+            <span class="toggle-icon">+</span>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
+      
         <div class="capability-content" style="display:none;" id="aicono-intro">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             
             <p>Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!</p>
 
-            <h4>Website</h4>
+<div class="cta-box capability-group">
+            <h4 class="style-box">Website</h4>
             <figure class="product-fig">
                 <a href="http://tetramatrix.github.io/Aicono" target="_blank">
                     <img src="main.png" title="AI Intelligent Desktop Icon Autopilot" alt="Aicono" />
@@ -806,7 +860,7 @@
             </figure>
             </div>
         </div>
-
+</div>
     </section>
 
 
