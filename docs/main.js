@@ -203,6 +203,8 @@ function toggleSectionFromArrow(arrowElement) {
     h3Elements.forEach(function(h3) {
         // Skip if data-no-toggle is set
         if (h3.getAttribute('data-no-toggle') === 'true') return;
+        // Skip capability toggle headers
+        if (h3.classList.contains('capability-toggle')) return;
 
         h3.classList.add('collapsible');
         // Find and collapse the next div
@@ -240,6 +242,8 @@ function toggleSectionFromArrow(arrowElement) {
     h3Elements.forEach(function(h3) {
         // Skip if data-no-toggle is set
         if (h3.getAttribute('data-no-toggle') === 'true') return;
+        // Skip capability toggle headers
+        if (h3.classList.contains('capability-toggle')) return;
 
         h3.addEventListener('click', function(e) {
             // Don't toggle if clicking on a link inside the h3
@@ -249,3 +253,21 @@ function toggleSectionFromArrow(arrowElement) {
         });
     });
 })();
+
+/**
+ * Toggle capability group visibility
+ * @param {HTMLElement} toggleElement - The h3 element clicked
+ */
+function toggleCapability(toggleElement) {
+    const content = toggleElement.nextElementSibling;
+    if (!content) return;
+
+    const isHidden = content.style.display === 'none';
+    content.style.display = isHidden ? 'block' : 'none';
+
+    if (isHidden) {
+        toggleElement.classList.add('active');
+    } else {
+        toggleElement.classList.remove('active');
+    }
+}

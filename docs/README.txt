@@ -155,7 +155,7 @@ To connect agents in Sorana:
 📥 Downloads 📥
 
 🔹 Latest version: Sorana.exe v1.0.18
-🔢 MD5 Checksum (.exe): 99f54a051d7bda30bc1c5bb2362891cd
+🔢 MD5 Checksum (.exe): 792054d8fb8549695bed922f662626b7
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
@@ -166,16 +166,21 @@ To connect agents in Sorana:
 
 📋 Changelog 📋
 
-📅 April 3, 2026 — Version 1.0.18
+📅 April 5, 2026 — Version 1.0.18
 
+🌐 Global Memory Storage — A personal AI that learns and shares! Memories are stored globally and available to ALL agents, creating a unified knowledge base
+🔄 Memory Sync Hub — Import/Export memories between projects, share knowledge across agents, full control over your AI's memory
+🔄 Dynamic Mid-Term Memory — Smarter conversation compression with configurable thresholds, better control over memory transitions
+🆕 Model Manager — 2-pane window with 🍋 Lemonade Backend: Chat models (upper pane) and Embedding models (bottom pane) side by side for simultaneous multi-model support. (🍋 Lemonade only)
 🆕 MCP Manager — Visual interface for managing MCP servers. Enable/disable, configure, and monitor servers without editing config files.
 🆕 Gmail MCP Server — Full agentic Gmail control: list, get, send, label, trash, and archive emails. Archive command saves emails in 3 formats (JSON, EML, MBOX) — perfect for backups.
 🧠 4-Tier Memory Improvements — Profile-First retrieval (61% token savings), conversation compaction (93% token reduction), auto-extraction from conversations.
 🔀 Intelligent Router & Intent Engine — Smart tool call routing, intent classification (memory search, tool call, document query), max 3 tool calls per request (loop prevention).
 💬 Chat History Awareness — Agent remembers from your last conversation. Prompts augmented with semantic memories + episodic summaries.
+📊 Live Session Stats — Real-time token usage, tokens/sec, and time-to-first-token displayed in the chat window. Monitor AI performance: input/output tokens, prompt tokens, and response speed. (Lemonade backend only)
+🐛 Bugfix: 4-Tier Memory & RAG improvements
 🐛 Bugfix: MCP server tool calls
 🐛 Bugfix: Chat engine stability
-🐛 Bugfix: Model manager improvements
 
 📅 March 31, 2026 — Version 1.0.17
 
