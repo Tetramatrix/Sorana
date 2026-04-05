@@ -975,6 +975,12 @@ iframe:hover, embed:hover, object:hover {
   cursor: pointer;
 }
 
+/* Rotated plus for open state */
+.cta-box .nav-arrow-down.rotated,
+.cta-box .nav-arrow-up.rotated {
+  transform: translateY(-50%) rotate(45deg);
+}
+
 .cta-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);

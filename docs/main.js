@@ -122,9 +122,11 @@ function toggleSection(h2Element) {
         const arrows = nextElement.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
         arrows.forEach(function(arrow) {
             if (nextElement.classList.contains('collapsed')) {
-                arrow.textContent = '+';  // collapsed = plus
+                arrow.textContent = '+';
+                arrow.classList.remove('rotated');
             } else {
-                arrow.textContent = '−';  // open = minus
+                arrow.textContent = '+';
+                arrow.classList.add('rotated');
             }
         });
     }
@@ -165,16 +167,16 @@ function toggleSectionFromArrow(arrowElement) {
     // Toggle the section
     parentSection.classList.toggle('collapsed');
 
-    // Update arrow symbols in this cta-box only
+    // Update arrow symbols in this cta-box only (use rotated + instead of −)
     const downArrow = ctaBox.querySelector('.nav-arrow-down');
     const upArrow = ctaBox.querySelector('.nav-arrow-up');
 
     if (parentSection.classList.contains('collapsed')) {
-        if (downArrow) downArrow.textContent = '+';  // collapsed = plus
-        if (upArrow) upArrow.textContent = '+';
+        if (downArrow) { downArrow.textContent = '+'; downArrow.classList.remove('rotated'); }
+        if (upArrow) { upArrow.textContent = '+'; upArrow.classList.remove('rotated'); }
     } else {
-        if (downArrow) downArrow.textContent = '−';  // open = minus
-        if (upArrow) upArrow.textContent = '−';
+        if (downArrow) { downArrow.textContent = '+'; downArrow.classList.add('rotated'); }
+        if (upArrow) { upArrow.textContent = '+'; upArrow.classList.add('rotated'); }
     }
 
     // Also update the H2 symbol if there is one in this section
@@ -217,10 +219,11 @@ function toggleSectionFromArrow(arrowElement) {
         }
     });
 
-    // Set all arrows to + (collapsed state)
+    // Set all arrows to + (collapsed state, no rotation)
     const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
     allArrows.forEach(function(arrow) {
         arrow.textContent = '+';
+        arrow.classList.remove('rotated');
     });
 
     // Initialize H2 collapsible functionality
