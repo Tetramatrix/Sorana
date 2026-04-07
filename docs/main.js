@@ -274,3 +274,116 @@ function toggleCapability(toggleElement) {
         toggleElement.classList.remove('active');
     }
 }
+
+/**
+ * Lightbox — Click-to-enlarge images
+ * Responsive, mobile-friendly, no dependencies
+ */
+(function() {
+    // Create lightbox overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.id = 'lightbox-overlay';
+    overlay.innerHTML = '<img src="" alt="" class="lightbox-active-img"><div class="lightbox-caption"></div>';
+    document.body.appendChild(overlay);
+
+    const lightboxImg = overlay.querySelector('.lightbox-active-img');
+    const lightboxCaption = overlay.querySelector('.lightbox-caption');
+    let currentScrollY = 0;
+    let touchStartY = 0;
+
+    /**
+     * Open the lightbox with a given image
+     * @param {HTMLImageElement} img - The source image element
+     */
+    function openLightbox(img) {
+        currentScrollY = window.scrollY;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        overlay.classList.add('active');
+        document.body.classList.add('lightbox-open');
+
+        // Show caption if the image has a parent figure with figcaption
+        const figure = img.closest('figure');
+        const figcaption = figure ? figure.querySelector('figcaption') : null;
+        if (figcaption) {
+            lightboxCaption.textContent = figcaption.textContent;
+            lightboxCaption.style.display = 'block';
+        } else {
+            lightboxCaption.style.display = 'none';
+        }
+    }
+
+    /**
+     * Close the lightbox
+     */
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.classList.remove('lightbox-open');
+        // Restore scroll position
+        window.scrollTo(0, currentScrollY);
+    }
+
+    // Attach click handlers to all screenshots
+    function initLightboxLinks() {
+        // Wrap eligible images in lightbox links
+        const selectors = '.sorana-screenshot, .chatbot-screenshot';
+        document.querySelectorAll(selectors).forEach(function(img) {
+            // Skip if already wrapped
+            if (img.parentElement && img.parentElement.classList.contains('lightbox-link')) return;
+
+            const link = document.createElement('a');
+            link.className = 'lightbox-link';
+            link.href = img.src;
+            link.title = 'Click to enlarge';
+            link.setAttribute('aria-label', 'Enlarge image');
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                openLightbox(img);
+            });
+        });
+    }
+
+    // Close on overlay click (not on image click)
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeLightbox();
+        }
+    });
+
+    // Close on ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    // Mobile: swipe down to close
+    overlay.addEventListener('touchstart', function(e) {
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    overlay.addEventListener('touchend', function(e) {
+        const touchEndY = e.changedTouches[0].clientY;
+        const swipeDistance = touchEndY - touchStartY;
+        // Swipe down more than 80px → close
+        if (swipeDistance > 80) {
+            closeLightbox();
+        }
+    }, { passive: true });
+
+    // Prevent image drag from opening new tab on mobile
+    lightboxImg.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightboxLinks);
+    } else {
+        initLightboxLinks();
+    }
+})();
