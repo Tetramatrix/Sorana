@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <title>Sorana - Visual AI Workspace</title>
-    <meta name="description" content="Sorana: AI-powered visual workspace with MCP server for advanced file operations, OCR document processing, spatial AI organization, and no-code agent orchestration. Transform how you organize digital files with semantic AI analysis, intuitive canvas editor, and enhanced document context.">
-    <meta name="keywords" content="Visual AI Workspace, AI File Organizer, No-Code AI Agents, Document Chat, Spatial Organization, Digital Workspace, MCP Server, OCR, File Operations, AI Orchestration, Document Processing">
+    <meta name="description" content="Sorana is a visual AI workspace that finds files by topic instead of folder paths, lets you chat with documents and web content, automate file tasks through conversation, and process scanned documents with OCR to make them searchable for AI. Documents are indexed with adaptive retrieval — semantic search, keywords, and full-text fallback — precise and fast. AI memory extracts facts, skills, preferences, and personas from your chats, building long-term profiles that make answers more accurate over time. Old conversations auto-compact to save tokens. Run models locally so nothing leaves your machine, or connect to cloud AI.">
+    <meta name="keywords" content="Visual AI Workspace, Find Files by Topic, Chat with Documents, Document OCR, Adaptive RAG, AI Memory, Long-Term Memory, Auto Compaction, File Automation, Gmail Management, Local AI, Private AI, Conversation History, Multi-Language AI, Token Efficiency, Web Search, File Management, AI Assistant, Privacy-Focused">
     <meta name="author" content="Tetramatrix">
     <meta property="og:title" content="Sorana - Visual AI Workspace">
-    <meta property="og:description" content="Sorana: AI-powered visual workspace with MCP server for advanced file operations, OCR document processing, spatial AI organization, and no-code agent orchestration. Transform how you organize digital files with semantic AI analysis, intuitive canvas editor, and enhanced document context.">
+    <meta property="og:description" content="Sorana is a visual AI workspace that finds files by topic instead of folder paths, lets you chat with documents and web content, automate file tasks through conversation, and process scanned documents with OCR to make them searchable for AI. Documents are indexed with adaptive retrieval — semantic search, keywords, and full-text fallback — precise and fast. AI memory extracts facts, skills, preferences, and personas from your chats, building long-term profiles that make answers more accurate over time. Old conversations auto-compact to save tokens. Run models locally so nothing leaves your machine, or connect to cloud AI.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="Sorana_cbfHZaRAyM.png">
 
@@ -76,11 +76,11 @@
 
  		<h2 id="what-is-sorana-h2">What is Sorana?</h2>
     <section class="intro-section" id="what-is-sorana">
-       
+
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <p>Sorana is an AI-powered visual workspace featuring a built-in MCP server for file operations, web content tools, OCR document processing, spatial AI organization, and no-code agent orchestration. Now with MCP Manager for visual server configuration, Gmail MCP server for full agentic email control, intelligent router & intent engine for smart tool routing, and adaptive 4-tier AI memory that auto-learns from conversations while using 93% fewer tokens.</p>
+            <p>Sorana solves the problem that files are hidden in folders, AI forgets everything between sessions, and every task is manual. Find files by topic on a visual canvas instead of navigating folder paths. Chat with documents and web content to get instant answers. Automate file tasks — create, move, edit, delete — through conversation. Process scanned documents with OCR so they become searchable for AI. AI memory that extracts facts, skills, and preferences from your chats, making answers more accurate over time. Run AI models locally so nothing leaves your machine, or connect to cloud AI.</p>
         </div>
 
         <!-- Video Section -->
@@ -130,76 +130,83 @@
         <section class="capabilities-section" id="core-capabilities">
 
             <div class="cta-box">
-                <p>A quick overview of what Sorana can do. Each category expands to show key features — scroll down for detailed sections with screenshots and setup guides.</p>
+                <p>What Sorana solves — each category expands to show how it works.</p>
             </div>
 
             <!-- 1. Visual Workspace -->
             <div class="cta-box capability-group">
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> 🎨 Visual Workspace
+                    <span class="toggle-icon">+</span> 📂 Find Files by Topic
                 </h3>
                 <div class="capability-content" style="display:none;">
                 	<div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> "Where did I save that file?" — Navigating nested folders to find documents.</p>
                     <ul>
-                        <li><strong>Spatial AI Organization:</strong> AI semantically groups files on a 2D canvas — no more nested folders.</li>
-                        <li><strong>WYSIWYG Canvas Editor:</strong> Drag and drop, rename, resize — full visual control.</li>
-                        <li><strong>Mind Map Generation:</strong> Generate visual representations of folder hierarchies.</li>
+                        <li><strong>Solution:</strong> AI groups files on a 2D canvas by topic — visually find files by what they're about, not where they're saved.</li>
+                        <li><strong>Canvas Editor:</strong> Drag and drop, rename, resize — full visual control.</li>
+                        <li><strong>Mind Maps:</strong> Generate visual representations of folder hierarchies to reveal hidden relationships.</li>
                     </ul>
                    </div>
                 </div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> 🤖 Agents & Pipelines
+                    <span class="toggle-icon">+</span> 💬 Chat with Documents & Web
                 </h3>
                 <div class="capability-content" style="display:none;">
             			<div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> Opening and reading documents takes too long. Research means opening tabs, comparing, copying.</p>
                     <ul>
-                        <li><strong>No-Code Agent Orchestration:</strong> Build custom agents and connect them into pipelines — drag and drop on the canvas.</li>
-                        <li><strong>Chat History & Management:</strong> All conversations saved, searchable, reloadable. Nothing gets lost.</li>
-                        <li><strong>Intelligent Router:</strong> Smart tool call routing, intent classification, max 3 tool calls per request.</li>
+                        <li><strong>Documents:</strong> Ask questions about any file — PDFs, code, text. Get instant answers without manual reading.</li>
+                        <li><strong>Web:</strong> Fetch content, scrape pages, search the web — all through conversation. "Compare iPhone 16 vs Samsung S25" → result saved locally.</li>
+                        <li><strong>File Automation:</strong> Create, move, edit, delete files through chat. "Create folder X, move Y there" — done.</li>
                     </ul>
                     <figure class="chatbot-figure">
-                        <img src="chat.png" alt="Sorana Agent Orchestration" class="chatbot-screenshot">
+                        <img src="chat.png" alt="Sorana Chat Window" class="chatbot-screenshot">
+                        <figcaption>Chat Window: Ask questions, get instant answers from documents and web</figcaption>
                     </figure>
                   </div>
                 </div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> 🧠 AI Memory
+                    <span class="toggle-icon">+</span> 🧠 AI Memory That Remembers
                 </h3>
                 <div class="capability-content" style="display:none;">
                 	<div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> AI forgets who you are after every session. Long chats are expensive and slow.</p>
                     <ul>
-                        <li><strong>4-Tier Memory:</strong> Current history → Episodic summaries → Observations → Profiles. Auto-extracts facts, preferences, skills.</li>
-                        <li><strong>Global Memory Sharing:</strong> A personal AI that learns — memories shared across ALL agents, import/export between projects.</li>
-                        <li><strong>Live Session Stats:</strong> Tokens/sec, time-to-first-token, input/output tokens visible in every chat. <span class="lemonade-only">(🍋 Lemonade only)</span></li>
+                        <li><strong>Solution:</strong> Auto-extracts facts, skills, preferences, and personas from conversations. Gets better over time.</li>
+                        <li><strong>Auto-Compaction:</strong> Old conversations summarized → 93% token savings, full context preserved.</li>
+                        <li><strong>Global Memory:</strong> Shared across all agents, import/export, fully manageable.</li>
                     </ul>
                   </div>
                 </div>
 
              <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> 🔌 MCP & Integrations
+                    <span class="toggle-icon">+</span> 🔌 MCP Server & Integrations
                 </h3>
                 <div class="capability-content" style="display:none;">
                 	<div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> Repetitive file tasks are manual. Email management is tedious. Research takes forever.</p>
                     <ul>
                         <li><strong>MCP Manager:</strong> Visual interface — enable/disable servers, configure settings, monitor health.</li>
-                        <li><strong>File Operations:</strong> read, write, move, search, edit — all through agent chat.</li>
-                        <li><strong>Web Content Tools:</strong> fetch, scrape, search, extract — AI has direct web access.</li>
-                        <li><strong>Gmail MCP Server:</strong> Full agentic email control — list, send, label, trash, archive (JSON/EML/MBOX).</li>
+                        <li><strong>File Operations:</strong> read, write, move, search, edit — all through conversation.</li>
+                        <li><strong>Web Tools:</strong> Fetch, scrape, search, extract — AI has direct web access.</li>
+                        <li><strong>Gmail:</strong> Full email control — list, send, label, trash, archive (JSON/EML/MBOX).</li>
+                        <li><strong>External Servers:</strong> Connect Google Drive, GitHub, PostgreSQL, custom tools.</li>
                     </ul>
                   </div>
                 </div>
 
              <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> ☁️ AI Backends
+                    <span class="toggle-icon">+</span> ☁️ AI Backends — Local or Cloud
                 </h3>
                 <div class="capability-content" style="display:none;">
                     <div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> Data goes to cloud providers — no privacy. Or local models are hard to configure.</p>
                     <ul>
-                        <li><strong>🍋 Lemonade:</strong> NPU acceleration, 2-pane model manager (chat + embedding simultaneously). Best local option.</li>
-                        <li><strong>Cloud:</strong> OpenAI, Mistral, Gemini (free tier), and more.</li>
-                        <li><strong>Local:</strong> 🍋 Lemonad, Ollama, Llama.cpp, LM Studio, and any compatible service.</li>
+                        <li><strong>Local:</strong> 🍋 Lemonade (NPU acceleration), Ollama, Llama.cpp, LM Studio — nothing leaves your machine.</li>
+                        <li><strong>Cloud:</strong> OpenAI, Mistral, Gemini (free tier), and more — when you need power.</li>
+                        <li><strong>Model Manager:</strong> 2-pane view (🍋 Lemonade only) — chat model + embedding model simultaneously.</li>
                     </ul>
                   </div>
                 </div>
@@ -210,15 +217,16 @@
                 <div class="capability-content" style="display:none;">
                     <div class="cta-box capability-group">
                     <ul>
+                        <li><strong>Portable:</strong> Runs from USB, extract anywhere, data stays under your control.</li>
                         <li><strong>Centralized Storage:</strong> All data in a single <code>.sorana/</code> folder. Existing installs migrate automatically.</li>
-                        <li><strong>Portable:</strong> Runs from USB, keeps data under user control.</li>
                     </ul>
                   </div>
                 </div>
             </div>
 
         <figure class="screenshot-figure">
-        <img src="Sorana_cbfHZaRAyM.png" alt="Sorana Visual Workspace Screenshot" class="sorana-screenshot">
+        <img src="Agent_Orchestration.png" alt="Sorana Visual Workspace Screenshot" class="sorana-screenshot">
+        <figcaption>Agent Orchestration: Build and connect agents visually</figcaption>
     </figure>
 
         <figure class="screenshot-figure">
@@ -234,32 +242,33 @@
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <p>Sorana features an adaptive 4-tier AI memory system that automatically learns from every conversation. Combined with an intelligent router and intent engine, the agent always remembers — from your last message to your last session — while using dramatically fewer tokens. Perfect for local and private inference.</p>
+            <p>Sorana's AI remembers who you are, what you prefer, and what you've discussed — making every answer more accurate while using dramatically fewer tokens. Perfect for local and private inference.</p>
 
             <div class="cta-box capability-group">
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> The 4 Memory Tiers
+                    <span class="toggle-icon">+</span> Memory That Learns Over Time
                 </h3>
                 <div class="capability-content" style="display:none;">
                 	<div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> AI starts from scratch every session — forgets who you are, what you do, what you prefer.</p>
                     <ul>
-                <li><strong>Current History</strong> — Your active conversation, always in context</li>
-                <li><strong>Episodic Summary</strong> — Long chats compressed into compact summaries (93% token reduction)</li>
-                <li><strong>Observations</strong> — Individual facts, preferences, and skills auto-extracted from conversations</li>
-                <li><strong>Profiles</strong> — Observations consolidated into entity summaries (user, company, topic) — 61% fewer tokens</li>
+                <li><strong>Active Conversation</strong> — Your current chat, always in context</li>
+                <li><strong>Auto-Compaction</strong> — Long chats compressed into summaries (93% token reduction). Context stays, cost drops.</li>
+                <li><strong>Observations</strong> — Facts, preferences, and skills auto-extracted from every message</li>
+                <li><strong>Profiles</strong> — Observations consolidated into entity summaries (you, companies, topics) — 61% fewer tokens</li>
             </ul>
           </div>
                 </div>
 
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> How it works
+                    <span class="toggle-icon">+</span> How It Works
                 </h3>
                 <div class="capability-content" style="display:none;">
                 	<div class="cta-box capability-group">
                     <ul>
-                <li><strong>Auto-Extraction:</strong> Every message analyzed — memories saved automatically</li>
-                <li><strong>Profile-First Retrieval:</strong> Compact profiles injected first, observations as fallback</li>
-                <li><strong>4-Tier RAG Search:</strong> NPU Embeddings → BM25 → Keyword → Full Text — precise, fast, works offline</li>
+                <li><strong>Auto-Extraction:</strong> Every message analyzed — memories saved automatically, no manual effort</li>
+                <li><strong>Profile-First Retrieval:</strong> Compact profiles loaded first, detailed observations as fallback — fast and precise</li>
+                <li><strong>Adaptive Document Search:</strong> Semantic search → BM25 → Keyword → Full Text — precise, fast, works offline</li>
                 <li><strong>Conversation Compaction:</strong> 17,000 → 1,200 tokens while keeping full context</li>
                 <li><strong>Cross-Agent Memory:</strong> Share memories between agents, import/export, global memories</li>
             </ul>
@@ -277,14 +286,15 @@
 						</div>
 						
             <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> Intelligent Router & Intent Engine
+                    <span class="toggle-icon">+</span> Smart Tool Routing
                 </h3>
                 <div class="capability-content" style="display:none;">
             <div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> AI doesn't know whether to search memory, call a tool, or query documents — wastes tokens on wrong actions.</p>
                     <ul>
-                <li><strong>Intent Classification:</strong> Detects memory search, tool calls, document queries, or hybrid intents</li>
-                <li><strong>Entity Extraction:</strong> Automatically identifies companies, users, topics from natural language</li>
-                <li><strong>Smart Tool Routing:</strong> Routes to correct MCP server (file ops, Gmail, web tools)</li>
+                <li><strong>Intent Classification:</strong> Detects memory search, tool calls, document queries, or hybrid intents automatically</li>
+                <li><strong>Entity Extraction:</strong> Identifies companies, users, topics from natural language</li>
+                <li><strong>Smart Routing:</strong> Routes to correct MCP server (file ops, Gmail, web tools) — no wasted calls</li>
                 <li><strong>Loop Prevention:</strong> Max 3 tool calls per request — prevents infinite loops</li>
                 <li><strong>Multi-Language:</strong> English + German intent patterns supported</li>
             </ul>
@@ -295,7 +305,7 @@
             </figure>
 
             <figure class="screenshot-figure">
-                <img src="chat.png" alt="Chat Manager Interface" class="sorana-screenshot">
+                <img src="chat_manager.png" alt="Chat Manager Interface" class="sorana-screenshot">
                 <figcaption>Chat Manager: View, search, and manage conversation history</figcaption>
             </figure>
                 </div>
@@ -307,13 +317,13 @@
                 <div class="capability-content" style="display:none;">
                   <div class="cta-box capability-group">
                     <ul>
-                <li><strong>Token Efficiency:</strong> Smart memory layering reduces token usage by serving only relevant context</li>
-                <li><strong>Live Session Stats:</strong> Real-time performance metrics — tokens/sec, time-to-first-token, input/output tokens — visible in every chat window. <span class="lemonade-only">(🍋 Lemonade only)</span></li>
-                <li><strong>Global Memory Storage:</strong> A personal AI that learns from every conversation — memories are stored centrally and shared across ALL agents, creating a unified knowledge base</li>
-                <li><strong>Memory Import/Export:</strong> Transfer memories between projects, backup and share knowledge, full portability</li>
-                <li><strong>Dynamic Mid-Term Memory:</strong> Configurable conversation compression with adaptive thresholds for perfect control</li>
-                <li><strong>NPU Acceleration:</strong> Uses 🍋 Lemonade backend with integrated FastFlowLM NPU for Windows Ryzen. 🍋 Lemonade is AMD's high-performance AI server (C++ based) integrating multiple backends including FastFlowLM for native NPU acceleration. Falls back to text-based retrieval if no NPU is available.</li>
-                <li><strong>Multi-Language:</strong> English + German for memory routing, 25+ languages for tool intents (Gmail, file ops), 15+ languages for document retrieval — all auto-detected</li>
+                <li><strong>Token Efficiency:</strong> Only relevant context loaded — profile-first retrieval, fallback only when needed. Dramatically fewer tokens, faster answers.</li>
+                <li><strong>Live Session Stats:</strong> Real-time performance metrics — tokens/sec, time-to-first-token, input/output tokens — visible in every chat. <span class="lemonade-only">(🍋 Lemonade only)</span></li>
+                <li><strong>Global Memory:</strong> Learns from every conversation — memories shared across ALL agents, creating a unified knowledge base.</li>
+                <li><strong>Memory Import/Export:</strong> Transfer memories between projects, backup and share knowledge.</li>
+                <li><strong>Configurable Compaction:</strong> Control when and how conversations are compressed — perfect thresholds for your workflow.</li>
+                <li><strong>NPU Acceleration:</strong> 🍋 Lemonade with FastFlowLM for native AMD Ryzen NPU acceleration. Falls back to text-based retrieval if no NPU available.</li>
+                <li><strong>Multi-Language:</strong> English + German for memory routing, 25+ languages for tool intents, 15+ languages for document retrieval — all auto-detected.</li>
             </ul>
                 </div>
                 
@@ -328,11 +338,11 @@
 
 		<h2 id="mcp-section-h2">MCP Server & Integrations</h2>
     <section class="mcp-section" id="mcp-section">
-        
+
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <p>Sorana includes a built-in MCP (Model Context Protocol) server that enables advanced file operations and web content access through AI agents. Connect any third-party external MCP server (Google Drive, GitHub, PostgreSQL, custom tools) for unlimited extensibility. To use these capabilities:</p>
+            <p>Sorana solves the problem that file tasks, web research, and email management are all manual, disconnected workflows. Through MCP servers, your AI can interact with files, web content, and external services — all through conversation. Connect any third-party MCP server (Google Drive, GitHub, PostgreSQL, custom tools) for unlimited extensibility.</p>
             <ol>
                 <li>Open MCP Manager to configure and enable servers</li>
                 <li>Connect external MCP servers if needed (Google Drive, GitHub, databases, etc.)</li>
@@ -346,10 +356,11 @@
                     <span class="toggle-icon">+</span> MCP Manager
                 </h3>
                 <div class="capability-content" style="display:none;">
-                	
+
                 	<div class="cta-box capability-group">
-                		
-                    <p><strong>MCP Manager</strong> — Visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without editing config files. Connect any compatible external MCP server for unlimited extensibility.</p>
+
+                    <p><strong>Problem:</strong> Managing MCP servers means editing config files manually — error-prone and tedious.</p>
+                    <p><strong>Solution:</strong> Visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without touching config files. Connect any compatible external MCP server for unlimited extensibility.</p>
 
             <figure class="screenshot-figure">
                 <img src="mcpmanager.png" alt="MCP Manager Interface" class="sorana-screenshot">
@@ -362,8 +373,9 @@
                     <span class="toggle-icon">+</span> File Operations</h3>
             <div class="capability-content" style="display:none;">
             <div class="cta-box capability-group">
-            	
-            <p>Common file operations you can perform in the agent chat:</p>
+
+            <p><strong>Problem:</strong> Repetitive file tasks — creating folders, moving files, reading, editing — require manual clicking and navigation.</p>
+            <p><strong>Solution:</strong> Automate file operations through conversation:</p>
             <ul>
                 <li>"List the first 10 files in the current directory" (uses list_directory)</li>
                 <li>"Search all text files in the workspace" (uses search_files)</li>
@@ -385,7 +397,8 @@
                 </h3>
                 <div class="capability-content" style="display:none;">
           <div class="cta-box capability-group">
-                    <p>Built-in MCP web content tools give your AI direct web access. Combine file operations with web content for even more powerful agents:</p>
+                    <p><strong>Problem:</strong> Research means opening multiple tabs, comparing information, copying data, saving results — fragmented and time-consuming.</p>
+                    <p><strong>Solution:</strong> Built-in web tools give your AI direct access. One query → fetch, compare, save locally:</p>
             <ul>
                 <li><strong>web_fetch_content:</strong> Fetch and read content from any URL</li>
                 <li><strong>web_scrape_page:</strong> Scrape full webpage content</li>
@@ -420,7 +433,8 @@
                 </h3>
                 <div class="capability-content" style="display:none;">
                 <div class="cta-box capability-group">
-                    <p><strong>Gmail MCP Server</strong> — Full agentic Gmail control through your AI agent:</p>
+                    <p><strong>Problem:</strong> Managing emails — searching, labeling, archiving, sending — requires manual navigation through Gmail's interface.</p>
+                    <p><strong>Solution:</strong> Full agentic Gmail control through chat:</p>
             <ul>
                 <li><strong>List</strong> emails by label, date, or search query</li>
                 <li><strong>Get</strong> individual email content with headers</li>
@@ -451,25 +465,25 @@
 
 		 <h2 id="ocr-section-h2">Document Processing & OCR</h2>
     <section class="ocr-section" id="ocr-section">
-       
+
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>
-                Document OCR and Context Enhancement allows users to enrich agents with specific knowledge by dragging and dropping documents directly onto agents. After organizing files spatially, users can make documents accessible to agents by processing them through OCR, converting them into contextual information. This is accomplished via the context menu options 'Document Overview' and 'Process Documents,' which is particularly valuable for PDFs and image-based documents.
+                <strong>Problem:</strong> Scanned PDFs and images are invisible to AI — no text content to search or chat with.
             </p>
             <p>
-                It's important to distinguish this from MCP server functionality. While the MCP server allows file interaction during chats, it currently lacks OCR capabilities and can only access text-based file content.
+                <strong>Solution:</strong> OCR extracts text from scanned documents, images, and PDFs. Once processed, documents become searchable and indexed via adaptive retrieval (semantic search → keywords → full-text fallback) so AI finds precise answers from your documents. Process documents via the context menu ('Document Overview' and 'Process Documents') — particularly valuable for PDFs and image-based documents.
             </p>
 
             <div class="cta-box capability-group">
                 <h3 class="capability-toggle" onclick="toggleCapability(this)">
-                    <span class="toggle-icon">+</span> Document OCR Capabilities
+                    <span class="toggle-icon">+</span> OCR Capabilities
                 </h3>
                 <div class="capability-content" style="display:none;">
                 	<div class="cta-box capability-group">
                     <p>
-                Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
+                Sorana processes various document types, extracting text so AI can work with them:
             </p>
             <ul>
                 <li><strong>Text PDFs:</strong> Extract text from PDF documents (supports embedded text and OCR for scanned content)</li>
@@ -662,7 +676,7 @@
                 <a href="README.txt" class="btn btn-primary">Readme</a>
             </div>
 
-             <code>$ md5sum.exe Sorana.exe v1.0.18 792054d8fb8549695bed922f662626b7</code>
+             <code>$ md5sum.exe Sorana.exe v1.0.20 def1bbc704365eb5a3ab2e08d38557a3</code>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
 
@@ -834,7 +848,7 @@
             </figure>
 						</div>
 
-            <h3class="capability-toggle" onclick="toggleCapability(this)">
+            <h3 class="capability-toggle" onclick="toggleCapability(this)">
             <span class="toggle-icon">+</span>Featured on Softpedia</h3>
             <div class="capability-content" style="display:none;">
             <figure class="store-fig">
