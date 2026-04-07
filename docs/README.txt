@@ -1,37 +1,89 @@
 🚀 Sorana - The AI Visual Workspace 🚀
 
-Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, Ollama), and keep your data under your control.
+Sorana finds files by topic instead of folder paths, lets you chat with documents and web content, automate file tasks through conversation, and process scanned documents with OCR so they become searchable for AI. AI memory extracts facts, skills, and preferences from your chats — making answers more accurate over time. Run AI models locally so nothing leaves your machine, or connect to cloud AI.
 
 ✨ Inspiration ✨
 
 We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this—moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.
 
-🔑 Key Features 🔑
+💡 What Sorana Solves 💡
 
-🤖 Spatial AI Organization: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
-🎨 WYSIWYG Canvas Editor: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
-🧠 Advanced Model Management: Connect to multiple cloud, on-prem and local LLM backends including OpenAI, Mistral, Lemonade, Llamacpp, LM Studio, Ollama and many other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
-  • Local and On-Prem Services: Lemonade, Llamacpp, LM Studio, Ollama and other self-hosted LLM solutions
-  • Cloud Services: OpenAI, Mistral, Gemini and other cloud-based AI platforms
-  • Flexible Configuration: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
-  • Split View (Lemonade only): When using Lemonade, the model manager shows chat models (upper pane) and embedding models (bottom pane) side by side. Embedding models power semantic RAG search. Without an embedding model, the system falls back to BM25 → Keyword → Full Text. Currently only Lemonade supports multi-model loading.
-🤖 No-Code Agent Orchestration: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
-💬 Contextual Document Chat: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
-🗺️ Dynamic Structure Mapping: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
-🔧 Built-in MCP Manager & Server: Visual MCP Manager for configuring and enabling servers. Integrated server supporting advanced file operations and web content access through AI agents. Connect any third-party external MCP server (Google Drive, GitHub, PostgreSQL, custom tools) for unlimited extensibility:
-  • MCP Manager: Enable/disable servers, configure settings, monitor connection health
-  • External MCP Servers: Connect any compatible MCP server — Google Drive, GitHub, PostgreSQL, databases, custom APIs, and more
-  • Mix & Match: Use multiple servers simultaneously for complex workflows
-  • OAuth2 Support: Secure authentication for cloud services
-  • File Operations: read_file, read_file_from_line, write_file, list_directory, create_directory, move_file, search_files, get_file_info, edit_file, get_filesystem_info
-  • Web Content Tools: web_fetch_content, web_scrape_page, web_extract_links, web_search, web_get_metadata, web_save_snapshot
-  • Gmail MCP Server: Full agentic Gmail control — list, get, send, label, trash, archive emails in JSON/EML/MBOX formats
-  These operations are accessible through selected LLMs, enabling sophisticated file management workflows.
-🧠 Adaptive 4-Tier AI Memory: Auto-extracts facts, preferences, and skills from conversations. Profile-First retrieval saves 61% tokens, conversation compaction saves 93%. Cross-agent memory sharing, import/export, full control.
-🔀 Intelligent Router & Intent Engine: Smart tool call routing, intent classification, entity extraction, max 3 tool calls per request (loop prevention). English + German for memory routing, 25+ languages for tool intents.
-💬 Chat History & Conversation Management: All your past conversations are stored in a sidebar. Search, reload, and delete chats. Nothing gets lost. Agent remembers from your last conversation.
+• "Where did I save that file?" → Find files by topic on a visual 2D canvas — no folder diving
+• Opening and reading documents takes too long → Chat with files — ask questions, get instant answers
+• Research means opening tabs, comparing, copying → One query → AI fetches, compares, saves result locally
+• Repetitive file tasks are tedious → Automate via conversation: "Create folder X, move Y, rename Z"
+• Scanned PDFs are blind to AI → OCR extracts text → documents become searchable
+• Email management is manual and slow → Chat to search, send, label, archive emails
+• AI forgets who you are after every session → Extracts facts, skills, preferences automatically — gets better over time
+• Long chats are expensive and slow → Old conversations auto-compact → 93% token savings
+• "Does the AI know what's in my documents?" → Adaptive document search: semantic → keyword → full-text fallback
+• Data goes to cloud providers — no privacy → Run AI models locally → nothing leaves your machine
+• Every answer costs the same regardless of complexity → Only relevant context loaded → fast, token-efficient answers
+• "What did we discuss last time?" → All chats saved, searchable, instantly reloadable
+• Only works in English → German, English, 25+ languages — auto-detected
 
-📦 Portable: The application is portable and keeps data under user control.
+🔑 Features in Detail 🔑
+
+📂 Find Files by Topic (2D Canvas)
+Problem: "Where did I save that file?" — Navigating nested folders to find documents.
+Solution: AI semantically groups files on a 2D canvas by topic and relationship. See your entire project at a glance. Visually locate files by what they're about, not where they're saved.
+
+💬 Chat with Documents
+Problem: Opening, reading, and understanding documents takes too long.
+Solution: Chat directly with your files (PDFs, code, text). Ask questions, get instant answers from the content — no manual reading required.
+
+🌐 Web Content Tools
+Problem: Research requires opening multiple tabs, comparing information, copying data, saving results.
+Solution: Built-in web tools give your AI direct access. Fetch content, scrape pages, search the web, extract data — all through conversation. One query → complete result saved locally.
+Examples: "What's the weather in Berlin?", "Compare iPhone 16 vs Samsung S25", "Fetch latest AI news and summarize"
+
+📁 File Automation
+Problem: Repetitive file tasks — creating folders, moving files, renaming, editing content — require manual clicking and navigation.
+Solution: Automate file operations through natural language. "Create a folder called 'Project_X', move report.docx there, rename it to 'final_report.docx'" — done in one message.
+Available operations: read, write, edit, move, search, list, create directories, get file info, get filesystem info.
+
+📄 Document OCR
+Problem: Scanned PDFs and images are invisible to AI — no text content to search or chat with.
+Solution: OCR extracts text from scanned documents, images, and PDFs. Once processed, documents become fully searchable and available for AI chat and document indexing (RAG).
+Supported: Text PDFs, scanned PDFs with images (requires Tesseract OCR), plain text files (UTF-8, Latin-1), source code files (.py, .cpp, .js, .java, etc.).
+Note: OCR is the intermediate step — processed documents are then indexed via adaptive retrieval (semantic search → keywords → full-text fallback) so AI can find precise answers from your documents.
+
+📧 Gmail Integration
+Problem: Managing emails — searching, labeling, archiving, sending — requires manual navigation through Gmail's interface.
+Solution: Full agentic Gmail control through chat. Search emails by label or date, read content, send new emails, add/remove labels, trash, or archive emails to disk (JSON, EML, MBOX formats).
+Example: "Archive all project emails from 2024" — done via natural language.
+
+🧠 AI Memory (Facts, Skills, Preferences, Personas)
+Problem: AI starts from scratch every session — forgets who you are, what you do, what you prefer.
+Solution: Automatically extracts facts, skills, preferences, and persona data from every conversation. Builds long-term profiles that improve answer quality over time. Memories are shared across all agents, importable/exportable, and fully manageable.
+
+⚡ Auto-Compaction (93% Token Savings)
+Problem: Long conversations become expensive and slow. AI loses context when conversations exceed token limits.
+Solution: Old conversations are automatically summarized and compacted. Full context preserved at 93% fewer tokens. Configurable thresholds give you control over when compaction happens.
+
+🔍 Adaptive Document Search (RAG)
+Problem: "Does the AI know what's in my documents?" — Traditional search is rigid, either semantic OR keyword-based, and fails if one method doesn't match.
+Solution: Documents are indexed with adaptive retrieval — semantic search for meaning, keyword matching for precision, full-text fallback for completeness. Extremely precise, works offline, supports 15+ languages auto-detected.
+
+🔒 Local AI Models (Full Privacy)
+Problem: Cloud AI sends your data to third-party servers. No control over what happens to your information.
+Solution: Run AI models locally on your machine. Nothing leaves your computer. Full privacy, full control. Connect to OpenAI, Mistral, Gemini, Ollama, Llama.cpp, LM Studio, 🍋 Lemonade, or any compatible service when you need cloud power.
+
+🎯 Token-Efficient Answers
+Problem: Every answer costs the same number of tokens regardless of complexity. Loading full context for simple questions wastes resources.
+Solution: Only relevant context is loaded. Profile-first retrieval, precise fallback. Dramatically fewer tokens, faster answers, lower cost.
+
+💬 Chat History
+Problem: "What did we discuss last time?" — Previous conversations are lost or hard to find.
+Solution: All chats saved, searchable by title, instantly reloadable. Nothing gets lost. Agent remembers from your last conversation.
+
+🌍 Multi-Language Support
+Problem: AI tools only understand English.
+Solution: German, English, 25+ languages for tool intents (Gmail, file ops), 15+ languages for document retrieval — all auto-detected.
+
+📦 Portable
+
+The application is portable — extract anywhere, run from USB, keeps data under your control. All data stored in a single .sorana/ folder. Existing installs migrate automatically.
 
 🚀 Quick Start 🚀
 
@@ -55,12 +107,6 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🌐 Website: http://tetramatrix.github.io/Sorana
 💬 Discord: https://discord.gg/4QkQSfSATF
-🎨 Visual Workspace Features 🎨
-
-🤖 Spatial AI Organization: AI automatically groups and arranges files on a 2D canvas for intuitive project visualization
-🎨 Interactive Canvas: Drag and drop files, create categories, rename items, and adjust group boundaries directly on the canvas
-🔗 Visual Connections: Create connections between agents and documents using visual arrows and interfaces
-🗺️ Mind Map Generation: Generate visual representations of folder hierarchies to understand relationships and structure
 
 🤖 AI Model Configuration 🤖
 
@@ -70,101 +116,45 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 ⚠️ IMPORTANT HARDWARE NOTE: Running larger 8B parameter models locally requires sufficient hardware - ideally 16 GB RAM or 8 GB VRAM - to function smoothly. If hardware is limited, the app includes a smaller portable model (which works fully offline but may classify complex files as "Miscellaneous") or allows connection to cloud-based LLMs for high accuracy without the local hardware cost.
 
-🎯 Accuracy Considerations: May sometimes classify complex files as "Miscellaneous"; connect larger, on-prem or cloud models for improved accuracy
-⏱️ Processing Time: Varies based on folder size and available hardware. Processing time is directly proportional to the number of files - fewer files result in faster processing.
+📄 OCR Requirements for PDFs with Images
 
-📄 Document OCR 📄
-
-Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
-
-📄 Text PDFs: Extract text from PDF documents (supports embedded text and OCR for scanned content)
-📝 Plain Text Files: Process .txt files with support for:
-  • UTF-8 (recommended for full Unicode support)
-  • Latin-1 (ISO-8859-1) as fallback encoding
-
-💻 Code Files: OCR support for source code files including:
-  • Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)
-  • C# (.cs), PHP (.php), Ruby (.rb), Go (.go)
-  • TypeScript (.ts), Swift (.swift), Kotlin (.kt)
-  • And other common programming language files in UTF-8 or Latin-1 encoding
-
-🖼️ PDFs with Images: Built-in method for OCR processing of PDFs containing images
-
-🔧 Requirements for PDF Image OCR:
-To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
+To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH.
 
 📥 Download Tesseract from: https://github.com/tesseract-ocr/tesseract
 
-📄 Document OCR and Context Enhancement 📄
+🤖 Using MCP Servers
 
-Document OCR and Context Enhancement allows users to enrich agents with specific knowledge by dragging and dropping documents directly onto agents. After organizing files spatially, users can make documents accessible to agents by processing them through OCR, converting them into contextual information. This is accomplished via the context menu options 'Document Overview' and 'Process Documents,' which is particularly valuable for PDFs and image-based documents.
+Sorana includes a visual MCP Manager — enable/disable servers, configure settings, and monitor connection health without editing config files.
 
-It's important to distinguish this from MCP server functionality. While the MCP server allows file interaction during chats, it currently lacks OCR capabilities and can only access text-based file content.
-
-🤖 MCP Server Usage Guide 🤖
-
-Sorana now includes an MCP Manager — a visual interface for managing MCP servers. Enable/disable servers, configure settings, and monitor connection health — all without editing config files.
-
-To use the MCP server file operations:
-
+To use file operations and web tools:
 1. Open MCP Manager to configure and enable servers
 2. Create an agent in your workspace
 3. Right-click on the agent title and select "Chat"
-4. Interact directly with all files and folders in the workspace
+4. Interact directly with files, folders, web content, and external services
 
-📧 Gmail MCP Server (NEW!)
+🔗 Connecting Agents
 
-Sorana includes a built-in Gmail MCP server for full agentic email control:
-
-• List emails by label, date, or search query
-• Read individual email content with headers
-• Send new emails directly from chat
-• Add, remove, or manage email labels
-• Move emails to trash
-• Archive emails to disk in 3 formats: JSON, EML, MBOX
-
-Archive Example: "Archive emails from john@example.com after 2024-01-01 before 2024-12-31 with label PROJECT_X_2024"
-
-Why this matters: Google only allows MBOX export for entire Gmail via Takeout. With Sorana, the agent archives specific emails on demand — perfect for backups and compliance.
-
-Configuration is easy: Use JSON config or OAuth2 token. First run triggers authorization, token is cached afterwards.
-
-Example commands you can use in the agent chat:
-• "List the first 10 files in the current directory" (uses list_directory)
-• "Search all text files in the workspace" (uses search_files)
-• "Read the content of document.txt to summarize its contents" (uses read_file)
-• "Read lines 10-20 of large_log.txt to check for errors" (uses read_file_from_line)
-• "Move file report.docx to archive/report_backup.docx" (uses move_file)
-• "Get size and creation date of config.json" (uses get_file_info)
-• "Edit the third paragraph of essay.txt to improve clarity" (uses edit_file)
-• "Write the generated report to monthly_report.txt" (uses write_file)
-• "Create a new folder called 'Project_X' in the workspace" (uses create_directory)
-• "Show available storage space and supported operations" (uses get_filesystem_info)
-
-🔤 Encoding Support Notes:
-The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
-
-🤖 Connecting Agents 🤖
-
-To connect agents in Sorana:
+To create agent pipelines:
 🔘 Hold CTRL+ALT and click on an Agent title to get a green arrow
 🔗 Point the green arrow to the parent agent to establish the connection
-⚙️ In the child Agent configuration, enable 'Auto' (puts agent in orchestration mode to receive instructions from parent agent) and 'Passthrough' (allows the agent to also pass documents).
-🤝 This creates a pipeline where agents can pass insights and collaborate on complex tasks
+⚙️ In the child Agent configuration, enable 'Auto' (orchestration mode) and 'Passthrough' (pass documents)
+🤝 This creates a pipeline where agents collaborate on complex tasks
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.19
-🔢 MD5 Checksum (.exe): 0ec161ac7b7b1a1abf7fd173d2635920
+🔹 Latest version: Sorana.exe v1.0.20
+🔢 MD5 Checksum (.exe): def1bbc704365eb5a3ab2e08d38557a3
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-
-
-
-
 📋 Changelog 📋
+
+📅 April 7, 2026 — Version 1.0.20
+
+🐛 Bugfix: Intent Engine: Tool Call
+🐛 Bugfix: 4-Tier Memory: Embedding model detection, Fallback and manual toggle
+🐛 Bugfix: Chat Window – Sidebar now properly displays new chats.
 
 📅 April 6, 2026 — Version 1.0.19
 
@@ -182,7 +172,7 @@ To connect agents in Sorana:
 🧠 4-Tier Memory Improvements — Profile-First retrieval (61% token savings), conversation compaction (93% token reduction), auto-extraction from conversations.
 🔀 Intelligent Router & Intent Engine — Smart tool call routing, intent classification (memory search, tool call, document query), max 3 tool calls per request (loop prevention).
 💬 Chat History Awareness — Agent remembers from your last conversation. Prompts augmented with semantic memories + episodic summaries.
-📊 Live Session Stats — Real-time token usage, tokens/sec, and time-to-first-token displayed in the chat window. Monitor AI performance: input/output tokens, prompt tokens, and response speed. (Lemonade backend only)
+📊 Live Session Stats — Real-time token usage, tokens/sec, and time-to-first-token displayed in the chat window. Monitor AI performance: input/output tokens, prompt tokens, and response speed. (🍋 Lemonade backend only)
 🐛 Bugfix: 4-Tier Memory & RAG improvements
 🐛 Bugfix: MCP server tool calls
 🐛 Bugfix: Chat engine stability
@@ -235,10 +225,10 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 
 📅 March 16, 2026 — Version 1.0.9
 
-• Major: AI core completely rewritten — now powered by Pith SDK                                                                       
-  • Scalable batch processing: handles thousands of items (no single-prompt limits)                                                   
-  • Smart prompt tiers optimized for 1B, 8B, and 30B models                                             
-  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization                                              
+• Major: AI core completely rewritten — now powered by Pith SDK
+  • Scalable batch processing: handles thousands of items (no single-prompt limits)
+  • Smart prompt tiers optimized for 1B, 8B, and 30B models
+  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization
 • Major: Externalized Llama.cpp with automatic download & caching
 • Major: Much smaller binary
 • Internal: Core engine refactored for improved stability
@@ -254,14 +244,14 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 
 • minor UI/UX update
 • minor core engine update ( bugfixes, stability, architecture)
-• smaller binary 
+• smaller binary
 
 📅 February 18, 2026 - Version 1.0.7
 
 • Bugfix About Window version display
-• Update Model Manager created time to local time 
+• Update Model Manager created time to local time
 • Update extra Full-Reorganize button in the main window to organize from start
-• Update Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk 
+• Update 🍋 Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk
 
 📅 February 14, 2026 - Version 1.0.6
 
@@ -286,19 +276,6 @@ Bugfix: MermaidView loading indicator thread-safe implementation
   - edit_file: Edit files with specific changes
   - get_filesystem_info: Get server configuration and capabilities
 • Other minor bugfixes
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ❤️ Support the Development ❤️
 
@@ -346,8 +323,3 @@ TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infi
 
 🌐 Website: http://tetramatrix.github.io/TabNeuron
 💬 Discord: https://discord.gg/4QkQSfSATF
-
-
-
-
-
