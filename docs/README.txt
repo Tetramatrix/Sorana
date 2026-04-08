@@ -327,6 +327,7 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 🌐 Website: http://tetramatrix.github.io/Aicono
 📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
 🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
+💻 Chip: https://www.chip.de/downloads/Aicono_186527264.html
 💬 Discord: https://discord.gg/4QkQSfSATF
 
 🧩 Discover our TabNeuron - AI spatial tab manager & research workspace 🧩
