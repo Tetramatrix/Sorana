@@ -142,13 +142,19 @@ To create agent pipelines:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.22
-🔢 MD5 Checksum (.exe): b9b4c32166d9b74eea907f348705807c
+🔹 Latest version: Sorana.exe v1.0.23
+🔢 MD5 Checksum (.exe): 10b20d1beb702a77cbe42c9e3c67a496
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
 
 📋 Changelog 📋
+
+📅 April 8, 2026 — Version 1.0.23
+
+🐛 Bugfix: Intent Engine: Tool Call
+🐛 Bugfix: Config Path 
+🐛 Bugfix: MCP Server toggle
 
 📅 April 8, 2026 — Version 1.0.22
 
