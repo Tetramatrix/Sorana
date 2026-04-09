@@ -37,6 +37,12 @@ Problem: Research requires opening multiple tabs, comparing information, copying
 Solution: Built-in web tools give your AI direct access. Fetch content, scrape pages, search the web, extract data — all through conversation. One query → complete result saved locally.
 Examples: "What's the weather in Berlin?", "Compare iPhone 16 vs Samsung S25", "Fetch latest AI news and summarize"
 
+👁️ Vision / Image Analysis
+Problem: "What's in this image/screenshot/document?" — Opening images, trying to extract text or understand content manually.
+Solution: Analyze images, screenshots, and documents with local AI vision models. Ask questions about image content, extract text from photos, analyze diagrams, understand charts — all through conversation. Or add image analysis results directly to your document index for future RAG searches.
+Supported formats: JPEG, PNG, GIF, WEBP, BMP
+How it works: Requires a vision-capable local model (Qwen3.5, Gemma 4, Llama 4 Scout, etc.). Cloud vision support coming soon.
+
 📁 File Automation
 Problem: Repetitive file tasks — creating folders, moving files, renaming, editing content — require manual clicking and navigation.
 Solution: Automate file operations through natural language. "Create a folder called 'Project_X', move report.docx there, rename it to 'final_report.docx'" — done in one message.
