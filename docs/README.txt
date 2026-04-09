@@ -24,28 +24,6 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🔑 Features in Detail 🔑
 
-🆚 How Sorana Compares 🆚
-
-• Local Models: ✅ Full | ❌ Cloud only | ✅ Yes (OpenWebUI)
-• Runs Offline: ✅ Yes | ❌ No | ✅ Yes (OpenWebUI)
-• No Subscription: ✅ Free | ❌ $20+/month | ✅ Free (OpenWebUI)
-• Portable (USB): ✅ Yes | ❌ No | ❌ Server
-• Visual File Canvas: ✅ 2D Desktop | ❌ No | ❌ No
-• RAG (Documents): ✅ Adaptive 4-Tier, fully visible | ⚠️ Black box (unknown embeddings/chunking) | ⚠️ Basic
-• Short-Term Context: ✅ Adaptive (2-20 msgs) | ✅ Session | ✅ Session
-• Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No | ❌ No
-• Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Black box | ❌ None
-• Memory Export: ✅ Full control | ⚠️ Black box | N/A
-• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ⚠️ Black box | ❌ No
-• Only Relevant Context: ✅ Loaded first | ⚠️ Black box | ❌ No
-• MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins | ⚠️ Basic
-• Vision/Image Analysis: ✅ Integrated screenshot + Region Selector | ❌ Manual screenshot, then upload | ⚠️ Limited
-• Agent Orchestration: ✅ Pipelines | ❌ No | ❌ No
-• Agent Memory Sharing: ✅ Cross-Agent | ❌ No | ❌ No
-• Data Privacy: ✅ 100% Local | ❌ Cloud stored | ✅ Local (OpenWebUI)
-
-Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited.
-
 📂 Find Files by Topic — AI maps your files onto a 2D canvas within your workspace
 Problem: "Where did I save that file?" — Navigating nested folders to find documents.
 Solution: AI maps your files onto a 2D canvas by topic and relationship. See your entire project at a glance. Visually locate files by what they're about, not where they're saved.
@@ -167,6 +145,28 @@ To create agent pipelines:
 🔗 Point the green arrow to the parent agent to establish the connection
 ⚙️ In the child Agent configuration, enable 'Auto' (orchestration mode) and 'Passthrough' (pass documents)
 🤝 This creates a pipeline where agents collaborate on complex tasks
+
+🆚 How Sorana Compares 🆚
+
+• Local Models: ✅ Full | ❌ Cloud only | ✅ Yes (OpenWebUI)
+• Runs Offline: ✅ Yes | ❌ No | ✅ Yes (OpenWebUI)
+• No Subscription: ✅ Free | ❌ $20+/month | ✅ Free (OpenWebUI)
+• Portable (USB): ✅ Yes | ❌ No | ❌ Server
+• Visual File Canvas: ✅ 2D Desktop | ❌ No | ❌ No
+• RAG (Documents): ✅ Adaptive 4-Tier, fully visible | ⚠️ Black box (unknown embeddings/chunking) | ⚠️ Basic
+• Short-Term Context: ✅ Adaptive (2-20 msgs) | ✅ Session | ✅ Session
+• Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No | ❌ No
+• Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Black box | ❌ None
+• Memory Export: ✅ Full control | ⚠️ Black box | N/A
+• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ⚠️ Black box | ❌ No
+• Only Relevant Context: ✅ Loaded first | ⚠️ Black box | ❌ No
+• MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins | ⚠️ Basic
+• Vision/Image Analysis: ✅ Integrated screenshot + Region Selector | ❌ Manual screenshot, then upload | ⚠️ Limited
+• Agent Orchestration: ✅ Pipelines | ❌ No | ❌ No
+• Agent Memory Sharing: ✅ Cross-Agent | ❌ No | ❌ No
+• Data Privacy: ✅ 100% Local | ❌ Cloud stored | ✅ Local (OpenWebUI)
+
+Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited.
 
 📥 Downloads 📥
 
