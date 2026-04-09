@@ -1,10 +1,15 @@
 📋 Changelog 📋
 
 
+
 📅 April 9, 2026 — Version 1.0.24
+
+🆕 Vision support in Chat \& RAG
 
 🐛 Bugfix: Intent Engine
 🐛 Bugfix: Tool Call: Graceful fallback
+
+🐛 Bugfix: Model Manager: Auto-Discovery
 
 📅 April 8, 2026 — Version 1.0.23
 
