@@ -42,6 +42,8 @@ We were frustrated by the limitations of traditional file managers. For decades,
 | Agent Memory Sharing     | ✅ Cross-Agent      | ❌ No               | ❌ No              | ❌ No              |
 | Data Privacy             | ✅ 100% Local       | ❌ Cloud stored     | ❌ Cloud           | ✅ Local           |
 
+Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited compared to paid tiers.
+
 📂 Find Files by Topic — AI maps your files onto a 2D canvas within your workspace
 Problem: "Where did I save that file?" — Navigating nested folders to find documents.
 Solution: AI maps your files onto a 2D canvas by topic and relationship. See your entire project at a glance. Visually locate files by what they're about, not where they're saved.
