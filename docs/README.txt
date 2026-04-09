@@ -152,9 +152,9 @@ To create agent pipelines:
 
 
 
-Discover our other Tools and Games:
+🧩 Discover our other Tools and Games:
 
-🚀 Discover our Spaceship! 🚀
+🚀 Spaceship! 🚀
 
 🎮 Retro Arcade 2d side-scroller bullet-hell shmup game: Spaceship
 
@@ -163,7 +163,7 @@ Discover our other Tools and Games:
 🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🔧 Discover our RyzenZPilot! 🔧
+🔧 RyzenZPilot! 🔧
 
 💻 RyzenZPilot - AMD Ryzen Power Management Tool
 
@@ -174,7 +174,7 @@ for optimal performance and efficiency.
 🌐 Website: http://tetramatrix.github.io/RyzenZPilot
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🖥️ Discover our Aicono - AI intelligent desktop icon autopilot 🖥️
+🖥️ Aicono - AI intelligent desktop icon autopilot 🖥️
 
 Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and can operate fully offline via manual JSON configuration when AI services are unavailable.
 
@@ -184,7 +184,7 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 💻 Chip: https://www.chip.de/downloads/Aicono_186527264.html
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🧩 Discover our TabNeuron - AI spatial tab manager & research workspace 🧩
+🧩 TabNeuron - AI spatial tab manager & research workspace 🧩
 
 TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infinite 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.
 
