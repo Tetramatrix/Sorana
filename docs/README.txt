@@ -39,7 +39,7 @@ We were frustrated by the limitations of traditional file managers. For decades,
 • Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ⚠️ Black box | ❌ No
 • Only Relevant Context: ✅ Loaded first | ⚠️ Black box | ❌ No
 • MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins | ⚠️ Basic
-• Vision/Image Analysis: ✅ Integrated screenshot + Region Selector, auto-index to RAG | ❌ Manual screenshot, then upload | ⚠️ Limited
+• Vision/Image Analysis: ✅ Integrated screenshot + Region Selector | ❌ Manual screenshot, then upload | ⚠️ Limited
 • Agent Orchestration: ✅ Pipelines | ❌ No | ❌ No
 • Agent Memory Sharing: ✅ Cross-Agent | ❌ No | ❌ No
 • Data Privacy: ✅ 100% Local | ❌ Cloud stored | ✅ Local (OpenWebUI)
