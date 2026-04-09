@@ -24,6 +24,24 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🔑 Features in Detail 🔑
 
+🆚 How Sorana Compares 🆚
+
+| Feature                  | Sorana              | Gemini/Perplexity   | ChatGPT            | OpenWebUI          |
+|--------------------------|---------------------|---------------------|--------------------|--------------------|
+| Local Models             | ✅ Full             | ❌ Cloud only       | ❌ Cloud only      | ✅ Yes             |
+| Runs Offline             | ✅ Yes              | ❌ No               | ❌ No              | ✅ Yes             |
+| No Subscription          | ✅ Free             | ❌ $20+/month       | ❌ $20+/mo         | ✅ Free            |
+| Portable (USB)           | ✅ Yes              | ❌ No               | ❌ No              | ❌ Server          |
+| Visual File Canvas       | ✅ 2D Desktop       | ❌ No               | ❌ No              | ❌ No              |
+| RAG (Documents)          | ✅ Adaptive 4-Tier  | ⚠️ Upload & chat    | ⚠️ Upload & chat   | ⚠️ Basic           |
+| Only Relevant Context    | ✅ Loaded first     | ❌ Full context     | ❌ Full context    | ❌ No              |
+| Long-Term Memory         | ✅ Auto-Extract     | ✅ Gems             | ✅ GPTs            | ⚠️ Manual          |
+| MCP Integrations         | ✅ Files/Web/Gmail  | ❌ Limited          | ❌ Plugins         | ⚠️ Basic           |
+| Vision/Image Analysis    | ✅ Local + Region Selector, auto-index to RAG | ✅ Cloud only, chat only | ✅ Cloud only, chat only | ⚠️ Limited |
+| Agent Orchestration      | ✅ Pipelines        | ❌ No               | ❌ No              | ❌ No              |
+| Agent Memory Sharing     | ✅ Cross-Agent      | ❌ No               | ❌ No              | ❌ No              |
+| Data Privacy             | ✅ 100% Local       | ❌ Cloud stored     | ❌ Cloud           | ✅ Local           |
+
 📂 Find Files by Topic — AI maps your files onto a 2D canvas within your workspace
 Problem: "Where did I save that file?" — Navigating nested folders to find documents.
 Solution: AI maps your files onto a 2D canvas by topic and relationship. See your entire project at a glance. Visually locate files by what they're about, not where they're saved.

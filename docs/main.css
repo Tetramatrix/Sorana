@@ -226,6 +226,29 @@ td {
   padding: 10px 8px;
 }
 
+/* Comparison table styling */
+.comparison-table {
+  border-spacing: 0;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.comparison-table thead th:first-child {
+  text-align: left;
+  width: 20%;
+}
+.comparison-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+}
+.comparison-table td {
+  text-align: center;
+  padding: 8px 6px;
+}
+.comparison-table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
 /* Special styling for requirements table */
 .req-table {
   width: 100%;
