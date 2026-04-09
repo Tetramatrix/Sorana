@@ -31,13 +31,13 @@ We were frustrated by the limitations of traditional file managers. For decades,
 • No Subscription: ✅ Free | ❌ $20+/month | ✅ Free (OpenWebUI)
 • Portable (USB): ✅ Yes | ❌ No | ❌ Server
 • Visual File Canvas: ✅ 2D Desktop | ❌ No | ❌ No
-• RAG (Documents): ✅ Adaptive 4-Tier, fully visible | ⚠️ Hidden (unknown embeddings/chunking) | ⚠️ Basic
+• RAG (Documents): ✅ Adaptive 4-Tier, fully visible | ⚠️ Black box (unknown embeddings/chunking) | ⚠️ Basic
 • Short-Term Context: ✅ Adaptive (2-20 msgs) | ✅ Session | ✅ Session
 • Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No | ❌ No
-• Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Hidden | ❌ None
-• Memory Export: ✅ Full control | ❌ Hidden | N/A
-• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ❌ Full context | ❌ No
-• Only Relevant Context: ✅ Loaded first | ❌ Full context | ❌ No
+• Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Black box | ❌ None
+• Memory Export: ✅ Full control | ❌ Black box | N/A
+• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ⚠️ Black box | ❌ No
+• Only Relevant Context: ✅ Loaded first | ⚠️ Black box | ❌ No
 • MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins | ⚠️ Basic
 • Vision/Image Analysis: ✅ Local + Region Selector, auto-index to RAG | ✅ Cloud only, chat only | ⚠️ Limited
 • Agent Orchestration: ✅ Pipelines | ❌ No | ❌ No
