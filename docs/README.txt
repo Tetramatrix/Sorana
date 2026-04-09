@@ -35,7 +35,7 @@ We were frustrated by the limitations of traditional file managers. For decades,
 • Short-Term Context: ✅ Adaptive (2-20 msgs) | ✅ Session | ✅ Session
 • Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No | ❌ No
 • Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Black box | ❌ None
-• Memory Export: ✅ Full control | ❌ Black box | N/A
+• Memory Export: ✅ Full control | ⚠️ Black box | N/A
 • Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ⚠️ Black box | ❌ No
 • Only Relevant Context: ✅ Loaded first | ⚠️ Black box | ❌ No
 • MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins | ⚠️ Basic
