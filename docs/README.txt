@@ -8,7 +8,7 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 💡 What Sorana Solves 💡
 
-• "Where did I save that file?" → Find files by topic on a visual 2D canvas — no folder diving
+• "Where did I save that file?" → Find files by topic on a visual 2D canvas within your workspace — no folder diving
 • Opening and reading documents takes too long → Chat with files — ask questions, get instant answers
 • Research means opening tabs, comparing, copying → One query → AI fetches, compares, saves result locally
 • Repetitive file tasks are tedious → Automate via conversation: "Create folder X, move Y, rename Z"
@@ -24,9 +24,9 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🔑 Features in Detail 🔑
 
-📂 Find Files by Topic (2D Canvas)
+📂 Find Files by Topic — AI maps your files onto a 2D canvas within your workspace
 Problem: "Where did I save that file?" — Navigating nested folders to find documents.
-Solution: AI semantically groups files on a 2D canvas by topic and relationship. See your entire project at a glance. Visually locate files by what they're about, not where they're saved.
+Solution: AI maps your files onto a 2D canvas by topic and relationship. See your entire project at a glance. Visually locate files by what they're about, not where they're saved.
 
 💬 Chat with Documents
 Problem: Opening, reading, and understanding documents takes too long.
@@ -148,163 +148,11 @@ To create agent pipelines:
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-📋 Changelog 📋
 
-📅 April 8, 2026 — Version 1.0.23
 
-🐛 Bugfix: Intent Engine: Tool Call
-🐛 Bugfix: Config Path 
-🐛 Bugfix: MCP Server toggle
 
-📅 April 8, 2026 — Version 1.0.22
 
-🐛 Bugfix: Intent Engine: Tool Call
-🐛 Bugfix: 4-Tier Memory: Fallback
-🐛 Bugfix: Chat Window: Sidebar
-
-📅 April 7, 2026 — Version 1.0.21
-
-🐛 Bugfix: Intent Engine: Tool Call
-🐛 Bugfix: MCP-Server
-🐛 Bugfix: 4-Tier Memory: RAG Stop-Words
-
-📅 April 7, 2026 — Version 1.0.20
-
-🐛 Bugfix: Intent Engine: Tool Call
-🐛 Bugfix: 4-Tier Memory: Embedding model detection, Fallback and manual toggle
-🐛 Bugfix: Chat Window – Sidebar now properly displays new chats.
-
-📅 April 6, 2026 — Version 1.0.19
-
-🐛 Bugfix: Intent Engine
-🐛 Bugfix: 4-Tier Memory Extractor
-
-📅 April 5, 2026 — Version 1.0.18
-
-🌐 Global Memory Storage — A personal AI that learns and shares! Memories are stored globally and available to ALL agents, creating a unified knowledge base
-🔄 Memory Sync Hub — Import/Export memories between projects, share knowledge across agents, full control over your AI's memory
-🔄 Dynamic Mid-Term Memory — Smarter conversation compression with configurable thresholds, better control over memory transitions
-🆕 Model Manager — 2-pane window with 🍋 Lemonade Backend: Chat models (upper pane) and Embedding models (bottom pane) side by side for simultaneous multi-model support. (🍋 Lemonade only)
-🆕 MCP Manager — Visual interface for managing MCP servers. Enable/disable, configure, and monitor servers without editing config files.
-🆕 Gmail MCP Server — Full agentic Gmail control: list, get, send, label, trash, and archive emails. Archive command saves emails in 3 formats (JSON, EML, MBOX) — perfect for backups.
-🧠 4-Tier Memory Improvements — Profile-First retrieval (61% token savings), conversation compaction (93% token reduction), auto-extraction from conversations.
-🔀 Intelligent Router & Intent Engine — Smart tool call routing, intent classification (memory search, tool call, document query), max 3 tool calls per request (loop prevention).
-💬 Chat History Awareness — Agent remembers from your last conversation. Prompts augmented with semantic memories + episodic summaries.
-📊 Live Session Stats — Real-time token usage, tokens/sec, and time-to-first-token displayed in the chat window. Monitor AI performance: input/output tokens, prompt tokens, and response speed. (🍋 Lemonade backend only)
-🐛 Bugfix: 4-Tier Memory & RAG improvements
-🐛 Bugfix: MCP server tool calls
-🐛 Bugfix: Chat engine stability
-
-📅 March 31, 2026 — Version 1.0.17
-
-Bugfix: mcp tool calls
-Bugfix: 4-tier memory
-
-📅 March 29, 2026 — Version 1.0.16
-
-Bugfix: mcp tool calls
-Bugfix: 4-tier memory
-
-📅 March 29, 2026 — Version 1.0.15
-
-Bugfix: mcp tool calls
-Bugfix: UI/UX
-
-📅 March 27, 2026 — Version 1.0.14
-
-Bugfix: mcp tool calls
-Bugfix: 4-tier memory
-Bugfix: storage
-
-📅 March 26, 2026 — Version 1.0.13
-
-Bugfix: sdk import
-
-📅 March 26, 2026 — Version 1.0.12
-
-Bugfix: Chat History
-
-📅 March 24, 2026 — Version 1.0.11
-
-Bugfix: MermaidView loading indicator thread-safe implementation
-- Add thread-safe loading label updates via tkinter_safe_queue.py
-- Implement _update_loading_label() using QueueMessageType.PROGRESS
-- Add svg2rlg() timeout (90s) and renderPM timeout (120s)
-- Fix 'main thread is not in main loop' errors
-
-📅 March 22, 2026 — Version 1.0.10
-
-💬 Chat History — all your past conversations in a sidebar. Search, reload, delete. Nothing gets lost.
-🧠 Memory that stacks — short-term, summaries, long-term (personas, facts, preferences), and document search. Each layer builds on the last.
-☁️ Google Gemini support — add your API key and it works, including free tier models.
-🔍 Works without AI hardware — document search falls back to text-based retrieval if no NPU is available. 15+ languages for document retrieval, auto-detected.
-⚡ RAG opens 40x faster — startup went from 4s to under 0.1s.
-🗃️ All data stored in a single .sorana/ folder. Existing installs migrate automatically.
-
-📅 March 16, 2026 — Version 1.0.9
-
-• Major: AI core completely rewritten — now powered by Pith SDK
-  • Scalable batch processing: handles thousands of items (no single-prompt limits)
-  • Smart prompt tiers optimized for 1B, 8B, and 30B models
-  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization
-• Major: Externalized Llama.cpp with automatic download & caching
-• Major: Much smaller binary
-• Internal: Core engine refactored for improved stability
-• Bugfix: UI buttons rebuilt and refreshed for a cleaner experience
-• Bugfix: Context Menu rebuilt and cleaned up
-• Bugfix: Grid-points
-• Bugfix: Model Manager select and activate model
-• Bugfix: Splash screen freeze
-• Bugfix: ssl certificate
-• Bugfix: pith-sdk batch size
-
-📅 March 09, 2026 - Version 1.0.8
-
-• minor UI/UX update
-• minor core engine update ( bugfixes, stability, architecture)
-• smaller binary
-
-📅 February 18, 2026 - Version 1.0.7
-
-• Bugfix About Window version display
-• Update Model Manager created time to local time
-• Update extra Full-Reorganize button in the main window to organize from start
-• Update 🍋 Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk
-
-📅 February 14, 2026 - Version 1.0.6
-
-• Bugfix Model Manager on-prem and cloud model activation
-
-📅 February 5, 2026 - Version 1.0.5
-
-• Bugfix built-in models
-
-📅 February 2, 2026 - Version 1.0.4
-
-• Significant performance enhancement for organizing large folder structures using new iterative algorithms
-• New built-in MCP server for file operations:
-  - read_file: Read file contents with intelligent limits
-  - read_file_from_line: Read specific file ranges for pagination
-  - write_file: Write content to files
-  - list_directory: List directory contents
-  - create_directory: Create directories
-  - move_file: Move or rename files/directories
-  - search_files: Search for files in directories
-  - get_file_info: Get information about files/directories
-  - edit_file: Edit files with specific changes
-  - get_filesystem_info: Get server configuration and capabilities
-• Other minor bugfixes
-
-❤️ Support the Development ❤️
-
-If you find Sorana useful, please consider donating to support ongoing development!
-☕ Buy us a coffee or support via PayPal or Bitcoin Cash !
-
-💰 Bitcoin Cash (BCH): bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
-💳 PayPal: paypal.me/Gigamegs
-
-Thank you for your support!
-
+Discover our other Tools and Games:
 
 🚀 Discover our Spaceship! 🚀
 
