@@ -26,23 +26,23 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🆚 How Sorana Compares 🆚
 
-• Local Models: ✅ Full | ❌ Cloud only (Gemini/Perplexity, ChatGPT) | ✅ Yes (OpenWebUI)
-• Runs Offline: ✅ Yes | ❌ No (Cloud) | ✅ Yes (OpenWebUI)
-• No Subscription: ✅ Free | ❌ $20+/month (Gemini/Perplexity, ChatGPT)
-• Portable (USB): ✅ Yes | ❌ No (Cloud, Server)
-• Visual File Canvas: ✅ 2D Desktop | ❌ No (all others)
-• RAG (Documents): ✅ Adaptive 4-Tier | ⚠️ Upload & chat (Cloud) | ⚠️ Basic (OpenWebUI)
-• Short-Term Context: ✅ Adaptive (2-20 msgs) | ✅ Session (all)
-• Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No (all others)
-• Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Black box (Cloud) | ❌ None (OpenWebUI)
-• Memory Export: ✅ Full control | ❌ Hidden (Cloud)
-• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ❌ Black box (Cloud) | ❌ No (OpenWebUI)
-• Only Relevant Context: ✅ Loaded first | ❌ Full context (Cloud)
-• MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins (Cloud) | ⚠️ Basic (OpenWebUI)
+• Local Models: ✅ Full | ❌ Cloud only | ✅ Yes (OpenWebUI)
+• Runs Offline: ✅ Yes | ❌ No | ✅ Yes (OpenWebUI)
+• No Subscription: ✅ Free | ❌ $20+/month | ✅ Free (OpenWebUI)
+• Portable (USB): ✅ Yes | ❌ No | ❌ Server
+• Visual File Canvas: ✅ 2D Desktop | ❌ No | ❌ No
+• RAG (Documents): ✅ Adaptive 4-Tier, fully visible | ⚠️ Hidden (unknown embeddings/chunking) | ⚠️ Basic
+• Short-Term Context: ✅ Adaptive (2-20 msgs) | ✅ Session | ✅ Session
+• Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No | ❌ No
+• Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Hidden | ❌ None
+• Memory Export: ✅ Full control | ❌ Hidden | N/A
+• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ❌ Full context | ❌ No
+• Only Relevant Context: ✅ Loaded first | ❌ Full context | ❌ No
+• MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins | ⚠️ Basic
 • Vision/Image Analysis: ✅ Local + Region Selector, auto-index to RAG | ✅ Cloud only, chat only | ⚠️ Limited
-• Agent Orchestration: ✅ Pipelines | ❌ No (all others)
-• Agent Memory Sharing: ✅ Cross-Agent | ❌ No (all others)
-• Data Privacy: ✅ 100% Local | ❌ Cloud stored (Cloud) | ✅ Local (OpenWebUI)
+• Agent Orchestration: ✅ Pipelines | ❌ No | ❌ No
+• Agent Memory Sharing: ✅ Cross-Agent | ❌ No | ❌ No
+• Data Privacy: ✅ 100% Local | ❌ Cloud stored | ✅ Local (OpenWebUI)
 
 Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited.
 
