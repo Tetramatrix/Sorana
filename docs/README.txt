@@ -36,7 +36,7 @@ We were frustrated by the limitations of traditional file managers. For decades,
 • Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No (all others)
 • Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Black box (Cloud) | ❌ None (OpenWebUI)
 • Memory Export: ✅ Full control | ❌ Hidden (Cloud)
-• Context Compaction: ✅ 93% token savings | ❌ No (all others)
+• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ❌ Black box (Cloud) | ❌ No (OpenWebUI)
 • Only Relevant Context: ✅ Loaded first | ❌ Full context (Cloud)
 • MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins (Cloud) | ⚠️ Basic (OpenWebUI)
 • Vision/Image Analysis: ✅ Local + Region Selector, auto-index to RAG | ✅ Cloud only, chat only | ⚠️ Limited
