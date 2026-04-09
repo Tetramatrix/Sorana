@@ -34,15 +34,20 @@ We were frustrated by the limitations of traditional file managers. For decades,
 | Portable (USB)           | ✅ Yes              | ❌ No               | ❌ No              | ❌ Server          |
 | Visual File Canvas       | ✅ 2D Desktop       | ❌ No               | ❌ No              | ❌ No              |
 | RAG (Documents)          | ✅ Adaptive 4-Tier  | ⚠️ Upload & chat    | ⚠️ Upload & chat   | ⚠️ Basic           |
+| Memory Architecture      | ✅ RAG-based, token-sensitive | ❌ Full context | ❌ Full context | ❌ No |
+| Short-Term Context       | ✅ Adaptive (2-20 msgs) | ✅ Session      | ✅ Session         | ✅ Session         |
+| Long-Term Memory         | ✅ Auto, visible, editable | ⚠️ Black box | ⚠️ Black box    | ❌ None            |
+| Memory User Control      | ✅ Full export/edit | ❌ Hidden           | ❌ Hidden          | N/A                |
+| Display Compaction       | ✅ Iterative algo   | ❌ Full list        | ❌ Full list       | ❌ Full list       |
+| Context Compaction       | ✅ 93% token savings| ❌ No               | ❌ No              | ❌ No              |
 | Only Relevant Context    | ✅ Loaded first     | ❌ Full context     | ❌ Full context    | ❌ No              |
-| Long-Term Memory         | ✅ Auto-Extract     | ✅ Gems             | ✅ GPTs            | ⚠️ Manual          |
 | MCP Integrations         | ✅ Files/Web/Gmail  | ❌ Limited          | ❌ Plugins         | ⚠️ Basic           |
 | Vision/Image Analysis    | ✅ Local + Region Selector, auto-index to RAG | ✅ Cloud only, chat only | ✅ Cloud only, chat only | ⚠️ Limited |
 | Agent Orchestration      | ✅ Pipelines        | ❌ No               | ❌ No              | ❌ No              |
 | Agent Memory Sharing     | ✅ Cross-Agent      | ❌ No               | ❌ No              | ❌ No              |
 | Data Privacy             | ✅ 100% Local       | ❌ Cloud stored     | ❌ Cloud           | ✅ Local           |
 
-Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited compared to paid tiers.
+Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited.
 
 📂 Find Files by Topic — AI maps your files onto a 2D canvas within your workspace
 Problem: "Where did I save that file?" — Navigating nested folders to find documents.
