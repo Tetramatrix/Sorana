@@ -2,6 +2,17 @@
 
 
 
+📅 April 10, 2026 — Version 1.0.25
+
+🆕 Chat Window: Copy last button
+
+🐛 Bugfix: Intent Engine - File tool detection 
+🐛 Bugfix: Tool Call: Source Path
+
+🐛 Bugfix: Chat Window Rendering
+
+
+
 📅 April 9, 2026 — Version 1.0.24
 
 🆕 Vision support in Chat \& RAG
