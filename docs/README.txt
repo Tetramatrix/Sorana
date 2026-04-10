@@ -170,8 +170,8 @@ Note: Sorana Community Edition includes all core features. Gmail automation is s
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.24
-🔢 MD5 Checksum (.exe): eb43c96b165ac9cab43cf490dc67edbb
+🔹 Latest version: Sorana.exe v1.0.25
+🔢 MD5 Checksum (.exe): 3b73c85154450d0c2c10f86ec0f810dc
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
