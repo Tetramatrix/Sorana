@@ -5,70 +5,49 @@
 📅 April 14, 2026 — Version 1.0.26
 
 🐛 Bugfix: Chatbot: Tool usage examples
-
 🐛 Bugfix: MCP Gmail Server
-
 🐛 Bugfix: MCP Web Content
-
 🐛 Bugfix: Intent Engine
-
 🐛 Bugfix: Back/Forward Navigation
-
 🐛 Bugfix: MCP File Tools Path Navigation
 
-
-
 📅 April 10, 2026 — Version 1.0.25
-
 🆕 Chat Window: Copy last button
-
 🐛 Bugfix: Intent Engine - File tool detection
 🐛 Bugfix: Tool Call: Source Path
-
 🐛 Bugfix: Chat Window Rendering
 
-
-
 📅 April 9, 2026 — Version 1.0.24
-
 🆕 Vision support in Chat \& RAG
-
 🐛 Bugfix: Intent Engine
 🐛 Bugfix: Tool Call: Graceful fallback
-
 🐛 Bugfix: Model Manager: Auto-Discovery
 
 📅 April 8, 2026 — Version 1.0.23
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: Config Path
 🐛 Bugfix: MCP Server toggle
 
 📅 April 8, 2026 — Version 1.0.22
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: 4-Tier Memory: Fallback
 🐛 Bugfix: Chat Window: Sidebar
 
 📅 April 7, 2026 — Version 1.0.21
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: MCP-Server
 🐛 Bugfix: 4-Tier Memory: RAG Stop-Words
 
 📅 April 7, 2026 — Version 1.0.20
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: 4-Tier Memory: Embedding model detection, Fallback and manual toggle
 🐛 Bugfix: Chat Window – Sidebar now properly displays new chats.
 
 📅 April 6, 2026 — Version 1.0.19
-
 🐛 Bugfix: Intent Engine
 🐛 Bugfix: 4-Tier Memory Extractor
 
 📅 April 5, 2026 — Version 1.0.18
-
 🌐 Global Memory Storage — A personal AI that learns and shares! Memories are stored globally and available to ALL agents, creating a unified knowledge base
 🔄 Memory Sync Hub — Import/Export memories between projects, share knowledge across agents, full control over your AI's memory
 🔄 Dynamic Mid-Term Memory — Smarter conversation compression with configurable thresholds, better control over memory transitions
