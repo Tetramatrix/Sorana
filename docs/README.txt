@@ -1,6 +1,8 @@
-🚀 Sorana - The AI Visual Workspace 🚀
+🚀 Sorana - The AI Workspace That Actually Remembers You 🚀
 
-Sorana finds files by topic instead of folder paths, lets you chat with documents and web content, automate file tasks through conversation, and process scanned documents with OCR so they become searchable for AI. AI memory extracts facts, skills, and preferences from your chats — making answers more accurate over time. Run AI models locally so nothing leaves your machine, or connect to cloud AI.
+Stop talking to strangers. Sorana is a visual AI workspace that replaces amnesiac chat boxes with a persistent, spatial 2D canvas. It semantically arranges your files, automates tasks via an MCP server, and processes documents with OCR.
+
+Powered by a 4-tier memory system (Embeddings + BM25 + Keywords + Full Text), Sorana extracts facts and personas from your chats. It proactively greets you with project context, making answers sharper over time while auto-compacting history to save >90% on tokens. Run models 100% locally or connect to the cloud.
 
 ✨ Inspiration ✨
 
@@ -8,84 +10,55 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 💡 What Sorana Solves 💡
 
-• "Where did I save that file?" → Find files by topic on a visual 2D canvas within your workspace — no folder diving
-• Opening and reading documents takes too long → Chat with files — ask questions, get instant answers
-• Research means opening tabs, comparing, copying → One query → AI fetches, compares, saves result locally
-• Repetitive file tasks are tedious → Automate via conversation: "Create folder X, move Y, rename Z"
-• Scanned PDFs are blind to AI → OCR extracts text → documents become searchable
-• Email management is manual and slow → Chat to search, send, label, archive emails
-• AI forgets who you are after every session → Extracts facts, skills, preferences automatically — gets better over time
-• Long chats are expensive and slow → Old conversations auto-compact → 93% token savings
-• "Does the AI know what's in my documents?" → Adaptive document search: semantic → keyword → full-text fallback
-• Data goes to cloud providers — no privacy → Run AI models locally → nothing leaves your machine
-• Every answer costs the same regardless of complexity → Only relevant context loaded → fast, token-efficient answers
-• "What did we discuss last time?" → All chats saved, searchable, instantly reloadable
-• Only works in English → German, English, 25+ languages — auto-detected
+• The "Amnesia" Problem → AI forgets you after every session. Sorana extracts facts and preferences automatically, proactively greeting you with project context.
+• "Where did I save that file?" → Drag folders to a 2D canvas. Sorana semantically groups files by topic, giving you a clean visual workspace.
+• Chatting is disconnected from doing → Built-in MCP Server automates file operations (create, move, edit, delete) directly through conversation.
+• Token Bloat → Long chats get expensive and slow. Sorana's memory compaction boils history down to essentials, saving >90% of tokens.
+• "Does the AI actually know my project?" → Adaptive 4-tier document search (Semantic + BM25 + Keyword + Full Text) ensures perfect retrieval without indexing your whole hard drive.
+• Scanned PDFs are blind to AI → Integrated OCR extracts text, making images and scans fully searchable.
+• Cloud Privacy Risks → Data goes to third parties. Sorana runs AI models locally—your files never leave your machine.
 
 🔑 Features in Detail 🔑
 
-📂 Find Files by Topic — AI maps your files onto a 2D canvas within your workspace
-Problem: "Where did I save that file?" — Navigating nested folders to find documents.
-Solution: AI maps your files onto a 2D canvas by topic and relationship. See your entire project at a glance. Visually locate files by what they're about, not where they're saved.
+📂 The Visual Workspace — Set the Stage for AI
+Problem: Navigating nested folders hides your data.
+Solution: AI maps your files onto a 2D canvas by topic and relationship. You set the boundaries by choosing the folder, and the AI organizes the chaos. Visually locate files by what they're about, not where they're saved.
 
-💬 Chat with Documents
-Problem: Opening, reading, and understanding documents takes too long.
-Solution: Chat directly with your files (PDFs, code, text). Ask questions, get instant answers from the content — no manual reading required.
+🧠 AI Memory That Learns (The 4-Tier System)
+Problem: AI starts from scratch every session. 
+Solution: Sorana automatically extracts facts, skills, preferences, and persona data from every conversation. It uses a 4-tier adaptive search (Semantic → BM25 → Keyword → Full Text) to instantly recall past project details, allowing the AI to proactively suggest next steps rather than waiting for instructions.
 
-🌐 Web Content Tools
-Problem: Research requires opening multiple tabs, comparing information, copying data, saving results.
-Solution: Built-in web tools give your AI direct access. Fetch content, scrape pages, search the web, extract data — all through conversation. One query → complete result saved locally.
-Examples: "What's the weather in Berlin?", "Compare iPhone 16 vs Samsung S25", "Fetch latest AI news and summarize"
+⚡ Auto-Compaction (>90% Token Savings)
+Problem: Long conversations become expensive and slow. 
+Solution: Old conversations are automatically summarized and compacted. Full project context is preserved at >90% fewer tokens, making the system incredibly efficient for long-term iterative work.
+
+💬 Chat with Documents & The Web
+Problem: Research means opening tabs, comparing, and manual reading.
+Solution: Chat directly with your files (PDFs, code, text). Built-in web tools give your AI direct access to fetch content, scrape pages, and extract data. One query → complete result saved locally.
+
+📁 File Automation (Built-in MCP Server)
+Problem: Repetitive file tasks require manual clicking.
+Solution: Automate operations through natural language. Tell the AI: "Create a folder called 'Project_X', move report.docx there, and summarize it" — done in one message.
 
 👁️ Vision / Image Analysis
-Problem: "What's in this image/screenshot/document?" — Opening images, trying to extract text or understand content manually.
-Solution: Analyze images, screenshots, and documents with local AI vision models. Ask questions about image content, extract text from photos, analyze diagrams, understand charts — all through conversation. Or add image analysis results directly to your document index for future RAG searches.
-Supported formats: JPEG, PNG, GIF, WEBP, BMP
-How it works: Requires a vision-capable local model (Qwen3.5, Gemma 4, Llama 4 Scout, etc.). Cloud vision support coming soon.
+Problem: Scans, diagrams, and screenshots are "dead data" to most file managers.
+Solution: Analyze images and documents visually with local AI. Ask questions about a diagram, extract text from a photo, or add image analysis directly to your 4-tier document index so it becomes searchable later.
 
-📁 File Automation
-Problem: Repetitive file tasks — creating folders, moving files, renaming, editing content — require manual clicking and navigation.
-Solution: Automate file operations through natural language. "Create a folder called 'Project_X', move report.docx there, rename it to 'final_report.docx'" — done in one message.
-Available operations: read, write, edit, move, search, list, create directories, get file info, get filesystem info.
-
-📄 Document OCR
-Problem: Scanned PDFs and images are invisible to AI — no text content to search or chat with.
-Solution: OCR extracts text from scanned documents, images, and PDFs. Once processed, documents become fully searchable and available for AI chat and document indexing (RAG).
-Supported: Text PDFs, scanned PDFs with images (requires Tesseract OCR), plain text files (UTF-8, Latin-1), source code files (.py, .cpp, .js, .java, etc.).
-Note: OCR is the intermediate step — processed documents are then indexed via adaptive retrieval (semantic search → keywords → full-text fallback) so AI can find precise answers from your documents.
-
-📧 Gmail Integration
-Problem: Managing emails — searching, labeling, archiving, sending — requires manual navigation through Gmail's interface.
-Solution: Full agentic Gmail control through chat. Search emails by label or date, read content, send new emails, add/remove labels, trash, or archive emails to disk (JSON, EML, MBOX formats).
-Example: "Archive all project emails from 2024" — done via natural language.
-
-🧠 AI Memory (Facts, Skills, Preferences, Personas)
-Problem: AI starts from scratch every session — forgets who you are, what you do, what you prefer.
-Solution: Automatically extracts facts, skills, preferences, and persona data from every conversation. Builds long-term profiles that improve answer quality over time. Memories are shared across all agents, importable/exportable, and fully manageable.
-
-⚡ Auto-Compaction (93% Token Savings)
-Problem: Long conversations become expensive and slow. AI loses context when conversations exceed token limits.
-Solution: Old conversations are automatically summarized and compacted. Full context preserved at 93% fewer tokens. Configurable thresholds give you control over when compaction happens.
-
-🔍 Adaptive Document Search (RAG)
-Problem: "Does the AI know what's in my documents?" — Traditional search is rigid, either semantic OR keyword-based, and fails if one method doesn't match.
-Solution: Documents are indexed with adaptive retrieval — semantic search for meaning, keyword matching for precision, full-text fallback for completeness. Extremely precise, works offline, supports 15+ languages auto-detected.
+📧 Gmail Integration (MCP Server)
+Problem: Email management traps you in the browser UI.
+Solution: Agentic Gmail control through chat. Tell the AI: "Find all invoices from 2024 and archive them to disk." Export directly to JSON, EML, or MBOX without relying on Google Takeout.
 
 🔒 Local AI Models (Full Privacy)
-Problem: Cloud AI sends your data to third-party servers. No control over what happens to your information.
-Solution: Run AI models locally on your machine. Nothing leaves your computer. Full privacy, full control. Connect to OpenAI, Mistral, Gemini, Ollama, Llama.cpp, LM Studio, 🍋 Lemonade, or any compatible service when you need cloud power.
+Problem: Cloud AI forces you to hand over your private files.
+Solution: 100% Local Inference. Connect to Lemonade, Ollama, Llama.cpp, or LM Studio. Your files, memory, and chat history never leave your computer. (Cloud APIs like OpenAI/Mistral are supported if you choose to use them).
 
-🎯 Token-Efficient Answers
-Problem: Every answer costs the same number of tokens regardless of complexity. Loading full context for simple questions wastes resources.
-Solution: Only relevant context is loaded. Profile-first retrieval, precise fallback. Dramatically fewer tokens, faster answers, lower cost.
+🎯 Token-Efficient Routing
+Problem: "Dumb" AI loads your entire chat history for every simple question, wasting time and API costs.
+Solution: Sorana uses Intent Classification to route queries smartly. It only pulls from the memory tiers or document index if the question demands it, keeping responses lightning-fast.
 
-💬 Chat History
-Problem: "What did we discuss last time?" — Previous conversations are lost or hard to find.
-Solution: All chats saved, searchable by title, instantly reloadable. Nothing gets lost. Agent remembers from your last conversation.
-
-🌍 Multi-Language Support
-Problem: AI tools only understand English.
-Solution: German, English, 25+ languages for tool intents (Gmail, file ops), 15+ languages for document retrieval — all auto-detected.
+🌍 Portable & Multi-Language
+Problem: You switch PCs and lose your workspace setup.
+Solution: Sorana is fully portable. Extract it to a USB drive, and your entire workspace, 4-tier memory, and AI configuration travels with you.
 
 📦 Portable
 
@@ -148,30 +121,20 @@ To create agent pipelines:
 
 🆚 How Sorana Compares 🆚
 
-• Local Models: ✅ Full | ❌ Cloud only | ✅ Yes (OpenWebUI)
-• Runs Offline: ✅ Yes | ❌ No | ✅ Yes (OpenWebUI)
-• No Subscription: ✅ Free | ❌ $20+/month | ✅ Free (OpenWebUI)
-• Portable (USB): ✅ Yes | ❌ No | ❌ Server
-• Visual File Canvas: ✅ 2D Desktop | ❌ No | ❌ No
-• RAG (Documents): ✅ Adaptive 4-Tier, fully visible | ⚠️ Black box (unknown embeddings/chunking) | ⚠️ Basic
-• Short-Term Context: ✅ Adaptive (2-20 msgs) | ✅ Session | ✅ Session
-• Mid-Term Memory: ✅ Iterative summaries, smooth transition | ❌ No | ❌ No
-• Long-Term Memory: ✅ Auto, visible, editable | ⚠️ Black box | ❌ None
-• Memory Export: ✅ Full control | ⚠️ Black box | N/A
-• Context Efficiency: ✅ Selective, token-sensitive, <90% reduction, zero quality loss | ⚠️ Black box | ❌ No
-• Only Relevant Context: ✅ Loaded first | ⚠️ Black box | ❌ No
-• MCP Integrations: ✅ Files/Web/Gmail | ❌ Limited/Plugins | ⚠️ Basic
-• Vision/Image Analysis: ✅ Integrated screenshot + Region Selector | ❌ Manual screenshot, then upload | ⚠️ Limited
-• Agent Orchestration: ✅ Pipelines | ❌ No | ❌ No
-• Agent Memory Sharing: ✅ Cross-Agent | ❌ No | ❌ No
-• Data Privacy: ✅ 100% Local | ❌ Cloud stored | ✅ Local (OpenWebUI)
+• Visual Workspace: ✅ 2D Canvas (Your OS is the interface) | ❌ Chat-box only | ❌ Chat-box only
+• Long-Term Memory: ✅ Proactive & Extracted (It knows your projects) | ⚠️ Black box / Session-based | ❌ None
+• Context Efficiency: ✅ Auto-Compacting (>90% token savings) | ⚠️ Hidden costs & limits | ❌ Manual management
+• RAG (Documents): ✅ Adaptive 4-Tier (Embeddings + BM25 + Keyword) | ⚠️ Black box (Unknown chunking) | ⚠️ Basic vector only
+• File & Web Automation: ✅ Built-in MCP Server (It operates files & web) | ❌ Limited / Requires Plugins | ⚠️ Basic / Community tools
+• Data Privacy: ✅ 100% Local Capable (Runs offline, no tracking) | ❌ Cloud stored & analyzed | ✅ Local
+• Pricing: ✅ Free & Portable | ❌ $20+/month | ✅ Free
 
 Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited.
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.25
-🔢 MD5 Checksum (.exe): 3b73c85154450d0c2c10f86ec0f810dc
+🔹 Latest version: Sorana.exe v1.0.26
+🔢 MD5 Checksum (.exe): 3cb8fd1c8c7d931f03f8318d5de65011
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF

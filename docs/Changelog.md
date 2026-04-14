@@ -2,11 +2,27 @@
 
 
 
+📅 April 14, 2026 — Version 1.0.26
+
+🐛 Bugfix: Chatbot: Tool usage examples
+
+🐛 Bugfix: MCP Gmail Server
+
+🐛 Bugfix: MCP Web Content
+
+🐛 Bugfix: Intent Engine
+
+🐛 Bugfix: Back/Forward Navigation
+
+🐛 Bugfix: MCP File Tools Path Navigation
+
+
+
 📅 April 10, 2026 — Version 1.0.25
 
 🆕 Chat Window: Copy last button
 
-🐛 Bugfix: Intent Engine - File tool detection 
+🐛 Bugfix: Intent Engine - File tool detection
 🐛 Bugfix: Tool Call: Source Path
 
 🐛 Bugfix: Chat Window Rendering
