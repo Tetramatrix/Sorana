@@ -2,54 +2,52 @@
 
 
 
-📅 April 9, 2026 — Version 1.0.24
+📅 April 14, 2026 — Version 1.0.26
 
+🐛 Bugfix: Chatbot: Tool usage examples
+🐛 Bugfix: MCP Gmail Server
+🐛 Bugfix: MCP Web Content
+🐛 Bugfix: Intent Engine
+🐛 Bugfix: Back/Forward Navigation
+🐛 Bugfix: MCP File Tools Path Navigation
+
+📅 April 10, 2026 — Version 1.0.25
+🆕 Chat Window: Copy last button
+🐛 Bugfix: Intent Engine - File tool detection
+? Bugfix: Tool Call: Source Path
+🐛 Bugfix: Chat Window Rendering
+
+📅 April 9, 2026 — Version 1.0.24
+🆕 Vision support in Chat \& RAG
 🐛 Bugfix: Intent Engine
 🐛 Bugfix: Tool Call: Graceful fallback
-
-
+🐛 Bugfix: Model Manager: Auto-Discovery
 
 📅 April 8, 2026 — Version 1.0.23
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: Config Path
 🐛 Bugfix: MCP Server toggle
 
-
-
 📅 April 8, 2026 — Version 1.0.22
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: 4-Tier Memory: Fallback
 🐛 Bugfix: Chat Window: Sidebar
 
-
-
 📅 April 7, 2026 — Version 1.0.21
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: MCP-Server
 🐛 Bugfix: 4-Tier Memory: RAG Stop-Words
 
-
-
 📅 April 7, 2026 — Version 1.0.20
-
 🐛 Bugfix: Intent Engine: Tool Call
 🐛 Bugfix: 4-Tier Memory: Embedding model detection, Fallback and manual toggle
 🐛 Bugfix: Chat Window – Sidebar now properly displays new chats.
 
-
-
 📅 April 6, 2026 — Version 1.0.19
-
 🐛 Bugfix: Intent Engine
 🐛 Bugfix: 4-Tier Memory Extractor
 
-
-
 📅 April 5, 2026 — Version 1.0.18
-
 🌐 Global Memory Storage — A personal AI that learns and shares! Memories are stored globally and available to ALL agents, creating a unified knowledge base
 🔄 Memory Sync Hub — Import/Export memories between projects, share knowledge across agents, full control over your AI's memory
 🔄 Dynamic Mid-Term Memory — Smarter conversation compression with configurable thresholds, better control over memory transitions
@@ -64,28 +62,20 @@
 🐛 Bugfix: MCP server tool calls
 🐛 Bugfix: Chat engine stability
 
-
-
 📅 March 31, 2026 — Version 1.0.17
 
 Bugfix: mcp tool calls
 Bugfix: 4-tier memory
-
-
 
 📅 March 29, 2026 — Version 1.0.16
 
 Bugfix: mcp tool calls
 Bugfix: 4-tier memory
 
-
-
 📅 March 29, 2026 — Version 1.0.15
 
 Bugfix: mcp tool calls
 Bugfix: UI/UX
-
-
 
 📅 March 27, 2026 — Version 1.0.14
 
@@ -93,19 +83,13 @@ Bugfix: mcp tool calls
 Bugfix: 4-tier memory
 Bugfix: storage
 
-
-
 📅 March 26, 2026 — Version 1.0.13
 
 Bugfix: sdk import
 
-
-
 📅 March 26, 2026 — Version 1.0.12
 
 Bugfix: Chat History
-
-
 
 📅 March 24, 2026 — Version 1.0.11
 
@@ -116,8 +100,6 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 * Add svg2rlg() timeout (90s) and renderPM timeout (120s)
 * Fix 'main thread is not in main loop' errors
 
-
-
 📅 March 22, 2026 — Version 1.0.10
 
 💬 Chat History — all your past conversations in a sidebar. Search, reload, delete. Nothing gets lost.
@@ -126,8 +108,6 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 🔍 Works without AI hardware — document search falls back to text-based retrieval if no NPU is available. 15+ languages for document retrieval, auto-detected.
 ⚡ RAG opens 40x faster — startup went from 4s to under 0.1s.
 🗃️ All data stored in a single .sorana/ folder. Existing installs migrate automatically.
-
-
 
 📅 March 16, 2026 — Version 1.0.9
 
@@ -146,15 +126,11 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 • Bugfix: ssl certificate
 • Bugfix: pith-sdk batch size
 
-
-
 📅 March 09, 2026 - Version 1.0.8
 
 • minor UI/UX update
 • minor core engine update ( bugfixes, stability, architecture)
 • smaller binary
-
-
 
 📅 February 18, 2026 - Version 1.0.7
 
@@ -163,19 +139,13 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 • Update extra Full-Reorganize button in the main window to organize from start
 • Update 🍋 Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk
 
-
-
 📅 February 14, 2026 - Version 1.0.6
 
 • Bugfix Model Manager on-prem and cloud model activation
 
-
-
 📅 February 5, 2026 - Version 1.0.5
 
 • Bugfix built-in models
-
-
 
 📅 February 2, 2026 - Version 1.0.4
 
