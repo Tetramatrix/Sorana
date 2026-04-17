@@ -1416,8 +1416,8 @@ div.collapsed {
   color: var(--pastel-blue);
 }
 
-/* Capability toggle titles – kein Pastell-Blau für bold */
-.capability-toggle strong {
+/* Feature-detail toggle titles – kein Pastell-Blau für bold */
+.feature-detail-toggle strong {
   color: inherit;
 }
 
@@ -1450,8 +1450,8 @@ code,
   font-size: 0.9em;
 }
 
-/* === Capability Groups (Collapsible in Core Capabilities) === */
-.capability-group {
+/* === Feature-detail Groups (Collapsible in Features in Detail) === */
+.feature-detail-group {
   margin: 16px 0;
   padding: 20px 28px;
   background: rgba(45, 45, 48, 0.5);
@@ -1459,11 +1459,11 @@ code,
   border-radius: 10px;
   transition: border-color 0.3s ease;
 }
-.capability-group:hover {
+.feature-detail-group:hover {
   border-color: var(--accent-blue);
 }
 
-.capability-toggle {
+.feature-detail-toggle {
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -1478,11 +1478,11 @@ code,
   user-select: none;
   transition: color 0.2s ease;
 }
-.capability-toggle:hover {
+.feature-detail-toggle:hover {
   color: #90caf9;
 }
 
-.capability-toggle .toggle-icon {
+.feature-detail-toggle .toggle-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1495,26 +1495,26 @@ code,
   transition: background 0.2s ease, transform 0.3s ease;
   flex-shrink: 0;
 }
-.capability-toggle.active .toggle-icon {
+.feature-detail-toggle.active .toggle-icon {
   background: rgba(168, 230, 207, 0.2);
   transform: rotate(45deg);
 }
 
 /* Content Area */
-.capability-content {
+.feature-detail-content {
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid var(--border);
 }
-.capability-content ul {
+.feature-detail-content ul {
   padding-left: 24px;
   margin: 12px 0;
 }
-.capability-content ul li {
+.feature-detail-content ul li {
   margin-bottom: 6px;
   line-height: 1.65;
 }
-.capability-content .chatbot-figure {
+.feature-detail-content .chatbot-figure {
   margin: 16px auto 8px;
 }
 
@@ -1525,16 +1525,16 @@ code,
     border-radius: 10px;
   }
 
-  .capability-group {
+  .feature-detail-group {
     margin: 12px 0;
   }
 
-  .capability-toggle {
+  .feature-detail-toggle {
     padding: 12px 36px 12px 14px;
     font-size: 1.05em;
   }
 
-  .capability-content {
+  .feature-detail-content {
     padding: 16px 20px;
   }
 
