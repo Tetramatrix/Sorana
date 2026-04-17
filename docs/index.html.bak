@@ -191,11 +191,9 @@
                  	<div class="cta-box feature-detail-group">
                     <p><strong>Problem:</strong> Long chats get expensive and slow.</p>
                     <p><strong>Solution:</strong> Sorana's memory compaction boils history down to essentials, saving >90% of tokens.</p>
-   									<ul>
    											<li><strong>Auto-Compaction:</strong> Old conversations are automatically compressed into essential summaries. You keep 100% of the context while achieving >90% token savings.</li>
                        <li><strong>4-Tier Hybrid Retrieval:</strong> Documents are indexed with adaptive retrieval—Semantic Search (Embeddings) for meaning, BM25 for statistical relevance, Keywords for precision, and Full-Text fallback.</li>    
                    </div>
-                   </ul>
                 </div>
                
                 
