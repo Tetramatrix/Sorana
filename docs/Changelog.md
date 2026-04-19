@@ -2,6 +2,16 @@
 
 
 
+📅 April 19, 2026 — Version 1.0.28
+
+🐛 feat: fix: MCP Server Startup
+
+🐛 feat: fix: BM25 language detection
+
+🐛 feat: fix: Artifacts + Pith legace codepath
+
+
+
 📅 April 15, 2026 — Version 1.0.27
 
 🐛 feat: add robust Lemonade backend URL resolution for embeddings and inference endpoints
