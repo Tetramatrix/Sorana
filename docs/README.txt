@@ -87,6 +87,10 @@ The application is portable — extract anywhere, run from USB, keeps data under
 🌐 Website: http://tetramatrix.github.io/Sorana
 💬 Discord: https://discord.gg/4QkQSfSATF
 
+🎉 Free Tier APIs Available! 🎉
+
+Just add your own API keys for Deepseek, Mistral, Nvidia, Gemini, or OpenRouter free tiers.
+
 🤖 AI Model Configuration 🤖
 
 🧠 Built-in Models: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.
@@ -133,8 +137,8 @@ Note: Sorana Community Edition includes all core features. Gmail automation is s
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.29
-🔢 MD5 Checksum (.exe): 83b1191e768abdc3731a4dff161b73b2
+🔹 Latest version: Sorana.exe v1.0.30
+🔢 MD5 Checksum (.exe): aa80ad0ef472252e33f0cb6ce0ffa043
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
