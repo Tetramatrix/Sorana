@@ -1,6 +1,14 @@
 📋 Changelog 📋
 
-📅 April 30, 2026 — Version 1.0.30
+📅 April 25, 2026 — Version 1.0.30
+🐛 Bugfix: Long-term Memories
+
+📅 April 26, 2026 — Version 1.0.30
+🐛 Bugfix: Memories consolidation
+🐛 Bugfix: MCP Server compatibility
+🐛 feat: add OpenRouter, Deepseek, Anthropic, Qwen, NVIDIA support  
+🐛 feat: Treeview alternate colors
+🐛 feat: UI flatten buttons
 
 📅 April 20, 2026 — Version 1.0.29
 🐛 feat: add timeout handling for empty response in chat nodes

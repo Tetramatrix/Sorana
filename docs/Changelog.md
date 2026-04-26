@@ -1,6 +1,9 @@
 📋 Changelog 📋
 
-📅 April 30, 2026 — Version 1.0.30
+📅 April 26, 2026 — Version 1.0.31
+🐛 Bugfix: Long-term Memories
+
+📅 April 26, 2026 — Version 1.0.30
 🐛 Bugfix: Memories consolidation
 🐛 Bugfix: MCP Server compatibility
 🐛 feat: add OpenRouter, Deepseek, Anthropic, Qwen, NVIDIA support  
@@ -9,7 +12,7 @@
 
 📅 April 20, 2026 — Version 1.0.29
 🐛 feat: add timeout handling for empty response in chat nodes
-🐛 feat: add timeout handling for LLM inference with configurable split timeouts and fallback mechanisms. 
+🐛 feat: add timeout handling for LLM inference with configurable split timeouts and fallback mechanisms.
 🐛 feat: add empty response handling for chat nodes and langgraph adapter in MCP manager tests
 
 📅 April 19, 2026 — Version 1.0.28
