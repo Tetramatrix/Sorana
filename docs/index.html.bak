@@ -24,6 +24,8 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
+		<div id="api-notice" style="position: fixed; top: 0; left: 0; right: 0; background: #00ff00; color: #ff00ff; text-align: center; padding: 10px; z-index: 1000; font-weight: bold;">🎉 Free Tier APIs Available! Just add your own API keys for NVIDIA, Gemini, Mistral, Deepseek or OpenRouter. 🎉</div>
+
     <aside class="left">
         <nav class="fixed-nav">
             <!-- Google Ads - Left Sidebar -->
@@ -176,7 +178,7 @@
                     <p><strong>Solution:</strong> Sorana runs AI models locally—your files never leave your machine.</p>
                     <ul>
                         <li><strong>Local:</strong> 🍋 Lemonade (NPU acceleration), Ollama, Llama.cpp, LM Studio — nothing leaves your machine.</li>
-                        <li><strong>Cloud:</strong> OpenAI, Mistral, Gemini (free tier), and more — when you need power.</li>
+                        <li><strong>Cloud:</strong> OpenRouter, Deepseek, OpenAI, Mistral, NVIDIA, Gemini, Antrophic, Qwen and more — when you need power.</li>
                         <li><strong>Model Manager:</strong> 2-pane view (🍋 Lemonade only) — chat model + embedding model simultaneously.</li>
                         <li><strong>Portable:</strong> Runs from USB, extract anywhere, data stays under your control.</li>
                     </ul>
@@ -191,9 +193,11 @@
                  	<div class="cta-box feature-detail-group">
                     <p><strong>Problem:</strong> Long chats get expensive and slow.</p>
                     <p><strong>Solution:</strong> Sorana's memory compaction boils history down to essentials, saving >90% of tokens.</p>
+   									<ul>
    											<li><strong>Auto-Compaction:</strong> Old conversations are automatically compressed into essential summaries. You keep 100% of the context while achieving >90% token savings.</li>
                        <li><strong>4-Tier Hybrid Retrieval:</strong> Documents are indexed with adaptive retrieval—Semantic Search (Embeddings) for meaning, BM25 for statistical relevance, Keywords for precision, and Full-Text fallback.</li>    
                    </div>
+                   </ul>
                 </div>
                
                 
@@ -591,8 +595,9 @@
 		            <ul>
 		                <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
 		                <li><strong>Local and On-Prem Services:</strong> 🍋 Lemonade (with FastFlowLM NPU), Llama.cpp, Ollama, and other self-hosted LLM solutions</li>
-		                <li><strong>Cloud Services:</strong> OpenAI, Mistral, Google Gemini, and other cloud-based AI platforms</li>
+		                <li><strong>Cloud Services:</strong> OpenRouter*, Deepseek*, NVIDIA*, OpenAI, Mistral*, Google Gemini*, Antrophic, Qwen and other cloud-based AI platforms</li>
 		            </ul>
+		            <sup>*Free tier available through their platform</sup>
                 </div>
 							</div>
               
@@ -701,7 +706,7 @@
 
              <p style="font-size: 0.9em; color: #888; margin-top: 15px;">No installation required. Unzip and run. Your data stays on your machine.</p>
 
-             <code>$ md5sum.exe Sorana.exe v1.0.27 e1618c5482206bec92505c698d682770</code>
+             <code>$ md5sum.exe Sorana.exe v1.0.30 83b1191e768abdc3731a4dff161b73b2</code>
         
             <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
 

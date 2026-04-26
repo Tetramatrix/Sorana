@@ -1,41 +1,29 @@
 📋 Changelog 📋
 
-
+📅 April 30, 2026 — Version 1.0.30
+🐛 Bugfix: Memories consolidation
+🐛 Bugfix: MCP Server compatibility
+🐛 feat: add OpenRouter, Deepseek, Anthropic, Qwen, NVIDIA support  
+🐛 feat: Treeview alternate colors
+🐛 feat: UI flatten buttons
 
 📅 April 20, 2026 — Version 1.0.29
-
 🐛 feat: add timeout handling for empty response in chat nodes
-
 🐛 feat: add timeout handling for LLM inference with configurable split timeouts and fallback mechanisms. 
-
 🐛 feat: add empty response handling for chat nodes and langgraph adapter in MCP manager tests
 
-
-
 📅 April 19, 2026 — Version 1.0.28
-
 🐛 feat: fix: MCP Server Startup
-
 🐛 feat: fix: BM25 language detection
-
 🐛 feat: fix: Artifacts + Pith legacy codepath
 
-
-
 📅 April 15, 2026 — Version 1.0.27
-
 🐛 feat: add robust Lemonade backend URL resolution for embeddings and inference endpoints
-
 🐛 feat: add rag\_documents field to ChatState TypedDict and improve default handling in rag\_node.py
-
 🐛 feat: fix: resolve show context windows dialog issue where agent sees only 4 documents instead of 6
-
 🐛 feat: add rag context preservation in compactor\_node.py and router.py to maintain RAG context across interactions
 
-
-
 📅 April 14, 2026 — Version 1.0.26
-
 🐛 Bugfix: Chatbot: Tool usage examples
 🐛 Bugfix: MCP Gmail Server
 🐛 Bugfix: MCP Web Content

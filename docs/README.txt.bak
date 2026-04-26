@@ -1,38 +1,68 @@
-🚀 Sorana - The AI Visual Workspace 🚀
+🚀 Sorana - The AI Workspace That Actually Remembers You 🚀
 
-Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, Lemonade, Ollama), and keep your data under your control.
+Stop talking to strangers. Sorana is a visual AI workspace that replaces amnesiac chat boxes with a persistent, spatial 2D canvas. It semantically arranges your files, automates tasks via an MCP server, and processes documents with OCR.
+
+Powered by a 4-tier memory system (Embeddings + BM25 + Keywords + Full Text), Sorana extracts facts and personas from your chats. It proactively greets you with project context, making answers sharper over time while auto-compacting history to save >90% on tokens. Run models 100% locally or connect to the cloud.
 
 ✨ Inspiration ✨
 
 We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this—moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.
 
-🔑 Key Features 🔑
+💡 What Sorana Solves 💡
 
-🤖 Spatial AI Organization: Uses AI to semantically group files and arrange them on a 2D canvas, providing a visual overview of projects.
-🎨 WYSIWYG Canvas Editor: Direct manipulation of workspace elements. Drag and drop files between groups, create new categories, rename items, and adjust group boundaries.
-🧠 Advanced Model Management: Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
+• The "Amnesia" Problem → AI forgets you after every session. Sorana extracts facts and preferences automatically, proactively greeting you with project context.
+• "Where did I save that file?" → Drag folders to a 2D canvas. Sorana semantically groups files by topic, giving you a clean visual workspace.
+• Chatting is disconnected from doing → Built-in MCP Server automates file operations (create, move, edit, delete) directly through conversation.
+• Token Bloat → Long chats get expensive and slow. Sorana's memory compaction boils history down to essentials, saving >90% of tokens.
+• "Does the AI actually know my project?" → Adaptive 4-tier document search (Semantic + BM25 + Keyword + Full Text) ensures perfect retrieval without indexing your whole hard drive.
+• Scanned PDFs are blind to AI → Integrated OCR extracts text, making images and scans fully searchable.
+• Cloud Privacy Risks → Data goes to third parties. Sorana runs AI models locally—your files never leave your machine.
 
-🔗 Multi-Service AI Integration: Sorana supports seamless connection to both on-prem and cloud-based AI services:
-  • On-Prem Services: Ollama, Llamacpp, and other self-hosted LLM solutions
-  • Cloud Services: OpenAI, Mistral, Lemonade, and other cloud-based AI platforms
-  • Flexible Configuration: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
-🤖 No-Code Agent Orchestration: Build custom agents and connect them into intelligent pipelines using a simple drag-and-drop interface. Agents collaborate by passing insights from one to another to solve complex problems, all without writing code.
-💬 Contextual Document Chat: Interact directly with your files (PDFs, code, text) in interactive mode, and enhance agent capabilities by connecting relevant documents to their context.
-🗺️ Dynamic Structure Mapping: Visualize the big picture. Generate mind maps of your folder hierarchies to reveal relationships and structure.
-🔧 Built-in MCP Server for File Operations (beta): Integrated server supporting advanced file operations through AI agents, including:
-  • read_file: Read file contents with intelligent limits
-  • read_file_from_line: Read specific file ranges for pagination
-  • write_file: Write content to files
-  • list_directory: List directory contents
-  • create_directory: Create directories
-  • move_file: Move or rename files/directories
-  • search_files: Search for files in directories
-  • get_file_info: Get information about files/directories
-  • edit_file: Edit files with specific changes
-  • get_filesystem_info: Get server configuration and capabilities
-  These operations are accessible through selected LLMs, enabling sophisticated file management workflows.
+🔑 Features in Detail 🔑
 
-📦 Portable: The application is portable and keeps data under user control.
+📂 The Visual Workspace — Set the Stage for AI
+Problem: Navigating nested folders hides your data.
+Solution: AI maps your files onto a 2D canvas by topic and relationship. You set the boundaries by choosing the folder, and the AI organizes the chaos. Visually locate files by what they're about, not where they're saved.
+
+🧠 AI Memory That Learns (The 4-Tier System)
+Problem: AI starts from scratch every session. 
+Solution: Sorana automatically extracts facts, skills, preferences, and persona data from every conversation. It uses a 4-tier adaptive search (Semantic → BM25 → Keyword → Full Text) to instantly recall past project details, allowing the AI to proactively suggest next steps rather than waiting for instructions.
+
+⚡ Auto-Compaction (>90% Token Savings)
+Problem: Long conversations become expensive and slow. 
+Solution: Old conversations are automatically summarized and compacted. Full project context is preserved at >90% fewer tokens, making the system incredibly efficient for long-term iterative work.
+
+💬 Chat with Documents & The Web
+Problem: Research means opening tabs, comparing, and manual reading.
+Solution: Chat directly with your files (PDFs, code, text). Built-in web tools give your AI direct access to fetch content, scrape pages, and extract data. One query → complete result saved locally.
+
+📁 File Automation (Built-in MCP Server)
+Problem: Repetitive file tasks require manual clicking.
+Solution: Automate operations through natural language. Tell the AI: "Create a folder called 'Project_X', move report.docx there, and summarize it" — done in one message.
+
+👁️ Vision / Image Analysis
+Problem: Scans, diagrams, and screenshots are "dead data" to most file managers.
+Solution: Analyze images and documents visually with local AI. Ask questions about a diagram, extract text from a photo, or add image analysis directly to your 4-tier document index so it becomes searchable later.
+
+📧 Gmail Integration (MCP Server)
+Problem: Email management traps you in the browser UI.
+Solution: Agentic Gmail control through chat. Tell the AI: "Find all invoices from 2024 and archive them to disk." Export directly to JSON, EML, or MBOX without relying on Google Takeout.
+
+🔒 Local AI Models (Full Privacy)
+Problem: Cloud AI forces you to hand over your private files.
+Solution: 100% Local Inference. Connect to Lemonade, Ollama, Llama.cpp, or LM Studio. Your files, memory, and chat history never leave your computer. (Cloud APIs like OpenAI/Mistral are supported if you choose to use them).
+
+🎯 Token-Efficient Routing
+Problem: "Dumb" AI loads your entire chat history for every simple question, wasting time and API costs.
+Solution: Sorana uses Intent Classification to route queries smartly. It only pulls from the memory tiers or document index if the question demands it, keeping responses lightning-fast.
+
+🌍 Portable & Multi-Language
+Problem: You switch PCs and lose your workspace setup.
+Solution: Sorana is fully portable. Extract it to a USB drive, and your entire workspace, 4-tier memory, and AI configuration travels with you.
+
+📦 Portable
+
+The application is portable — extract anywhere, run from USB, keeps data under your control. All data stored in a single .sorana/ folder. Existing installs migrate automatically.
 
 🚀 Quick Start 🚀
 
@@ -47,8 +77,8 @@ We were frustrated by the limitations of traditional file managers. For decades,
 🔑 Permissions: Standard user account
 
 🤖 AI Model Hardware Requirements:
-  • Built-in Models: Range from 1B parameter (806MB) to 20B parameter (12-16GB)
-  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation
+  • Built-in Models: Range from 1B parameter (806MB) to 20B parameter (8-16GB)
+  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): Minimum 8 GB RAM or 4 GB VRAM for smooth operation
   • Hardware Requirements Increase with Model Size: Larger models with more parameters require higher specifications
   • Cloud Models: No local hardware requirements (requires internet connection)
 
@@ -56,12 +86,10 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 🌐 Website: http://tetramatrix.github.io/Sorana
 💬 Discord: https://discord.gg/4QkQSfSATF
-🎨 Visual Workspace Features 🎨
 
-🤖 Spatial AI Organization: AI automatically groups and arranges files on a 2D canvas for intuitive project visualization
-🎨 Interactive Canvas: Drag and drop files, create categories, rename items, and adjust group boundaries directly on the canvas
-🔗 Visual Connections: Create connections between agents and documents using visual arrows and interfaces
-🗺️ Mind Map Generation: Generate visual representations of folder hierarchies to understand relationships and structure
+🎉 Free Tier APIs Available! 🎉
+
+Just add your own API keys for Deepseek, Mistral, Nvidia, Gemini, or OpenRouter free tiers.
 
 🤖 AI Model Configuration 🤖
 
@@ -71,72 +99,46 @@ We were frustrated by the limitations of traditional file managers. For decades,
 
 ⚠️ IMPORTANT HARDWARE NOTE: Running larger 8B parameter models locally requires sufficient hardware - ideally 16 GB RAM or 8 GB VRAM - to function smoothly. If hardware is limited, the app includes a smaller portable model (which works fully offline but may classify complex files as "Miscellaneous") or allows connection to cloud-based LLMs for high accuracy without the local hardware cost.
 
-🎯 Accuracy Considerations: May sometimes classify complex files as "Miscellaneous"; connect larger, on-prem or cloud models for improved accuracy
-⏱️ Processing Time: Varies based on folder size and available hardware. Processing time is directly proportional to the number of files - fewer files result in faster processing.
+📄 OCR Requirements for PDFs with Images
 
-📄 Document OCR 📄
-
-Sorana includes powerful Optical Character Recognition (OCR) capabilities for processing various document types with support for common character encodings:
-
-📄 Text PDFs: Extract text from PDF documents (supports embedded text and OCR for scanned content)
-📝 Plain Text Files: Process .txt files with support for:
-  • UTF-8 (recommended for full Unicode support)
-  • Latin-1 (ISO-8859-1) as fallback encoding
-
-💻 Code Files: OCR support for source code files including:
-  • Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)
-  • C# (.cs), PHP (.php), Ruby (.rb), Go (.go)
-  • TypeScript (.ts), Swift (.swift), Kotlin (.kt)
-  • And other common programming language files in UTF-8 or Latin-1 encoding
-
-🖼️ PDFs with Images: Built-in method for OCR processing of PDFs containing images
-
-🔧 Requirements for PDF Image OCR:
-To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
+To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH.
 
 📥 Download Tesseract from: https://github.com/tesseract-ocr/tesseract
 
-📄 Document OCR and Context Enhancement 📄
+🤖 Using MCP Servers
 
-Document OCR and Context Enhancement allows users to enrich agents with specific knowledge by dragging and dropping documents directly onto agents. After organizing files spatially, users can make documents accessible to agents by processing them through OCR, converting them into contextual information. This is accomplished via the context menu options 'Document Overview' and 'Process Documents,' which is particularly valuable for PDFs and image-based documents.
+Sorana includes a visual MCP Manager — enable/disable servers, configure settings, and monitor connection health without editing config files.
 
-It's important to distinguish this from MCP server functionality. While the MCP server allows file interaction during chats, it currently lacks OCR capabilities and can only access text-based file content.
+To use file operations and web tools:
+1. Open MCP Manager to configure and enable servers
+2. Create an agent in your workspace
+3. Right-click on the agent title and select "Chat"
+4. Interact directly with files, folders, web content, and external services
 
-🤖 MCP Server Usage Guide 🤖
+🔗 Connecting Agents
 
-To use the MCP server file operations:
-
-1. Create an agent in the workspace
-2. Right-click on the agent title and select "Chat"
-3. Interact directly with all files and folders in the workspace
-
-Example commands you can use in the agent chat:
-• "List the first 10 files in the current directory" (uses list_directory)
-• "Search all text files in the workspace" (uses search_files)
-• "Read the content of document.txt to summarize its contents" (uses read_file)
-• "Read lines 10-20 of large_log.txt to check for errors" (uses read_file_from_line)
-• "Move file report.docx to archive/report_backup.docx" (uses move_file)
-• "Get size and creation date of config.json" (uses get_file_info)
-• "Edit the third paragraph of essay.txt to improve clarity" (uses edit_file)
-• "Write the generated report to monthly_report.txt" (uses write_file)
-• "Create a new folder called 'Project_X' in the workspace" (uses create_directory)
-• "Show available storage space and supported operations" (uses get_filesystem_info)
-
-🔤 Encoding Support Notes:
-The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
-
-🤖 Connecting Agents 🤖
-
-To connect agents in Sorana:
+To create agent pipelines:
 🔘 Hold CTRL+ALT and click on an Agent title to get a green arrow
 🔗 Point the green arrow to the parent agent to establish the connection
-⚙️ In the child Agent configuration, enable 'Auto' (puts agent in orchestration mode to receive instructions from parent agent) and 'Passthrough' (allows the agent to also pass documents).
-🤝 This creates a pipeline where agents can pass insights and collaborate on complex tasks
+⚙️ In the child Agent configuration, enable 'Auto' (orchestration mode) and 'Passthrough' (pass documents)
+🤝 This creates a pipeline where agents collaborate on complex tasks
+
+🆚 How Sorana Compares 🆚
+
+• Visual Workspace: ✅ 2D Canvas (Your OS is the interface) | ❌ Chat-box only | ❌ Chat-box only
+• Long-Term Memory: ✅ Proactive & Extracted (It knows your projects) | ⚠️ Black box / Session-based | ❌ None
+• Context Efficiency: ✅ Auto-Compacting (>90% token savings) | ⚠️ Hidden costs & limits | ❌ Manual management
+• RAG (Documents): ✅ Adaptive 4-Tier (Embeddings + BM25 + Keyword) | ⚠️ Black box (Unknown chunking) | ⚠️ Basic vector only
+• File & Web Automation: ✅ Built-in MCP Server (It operates files & web) | ❌ Limited / Requires Plugins | ⚠️ Basic / Community tools
+• Data Privacy: ✅ 100% Local Capable (Runs offline, no tracking) | ❌ Cloud stored & analyzed | ✅ Local
+• Pricing: ✅ Free & Portable | ❌ $20+/month | ✅ Free
+
+Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited.
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.10
-🔢 MD5 Checksum (.exe): 41e2a81e4c42645142fe8a6cbd65e193
+🔹 Latest version: Sorana.exe v1.0.30
+🔢 MD5 Checksum (.exe): 83b1191e768abdc3731a4dff161b73b2
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
@@ -145,96 +147,9 @@ To connect agents in Sorana:
 
 
 
-📋 Changelog 📋
+🧩 Discover our other Tools and Games:
 
-📅 March 22, 2026 — Version 1.0.10
-
-💬 Chat History — all your past conversations in a sidebar. Search, reload, delete. Nothing gets lost.
-🧠 Memory that stacks — short-term, summaries, long-term (personas, facts, preferences), and document search. Each layer builds on the last.
-☁️ Google Gemini support — add your API key and it works, including free tier models.
-🔍 Works without AI hardware — document search falls back to text-based retrieval if no NPU is available. 15 languages supported, auto-detected.
-⚡ RAG opens 40x faster — startup went from 4s to under 0.1s.
-🗃️ All data stored in a single .sorana/ folder. Existing installs migrate automatically.
-
-📅 March 16, 2026 — Version 1.0.9
-
-• Major: AI core completely rewritten — now powered by Pith SDK                                                                       
-  • Scalable batch processing: handles thousands of items (no single-prompt limits)                                                   
-  • Smart prompt tiers optimized for 1B, 8B, and 30B models                                             
-  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization                                              
-• Major: Externalized Llama.cpp with automatic download & caching
-• Major: Much smaller binary
-• Internal: Core engine refactored for improved stability
-• Bugfix: UI buttons rebuilt and refreshed for a cleaner experience
-• Bugfix: Context Menu rebuilt and cleaned up
-• Bugfix: Grid-points
-• Bugfix: Model Manager select and activate model
-• Bugfix: Splash screen freeze
-• Bugfix: ssl certificate
-• Bugfix: pith-sdk batch size
-
-📅 March 09, 2026 - Version 1.0.8
-
-• minor UI/UX update
-• minor core engine update ( bugfixes, stability, architecture)
-• smaller binary 
-
-📅 February 18, 2026 - Version 1.0.7
-
-• Bugfix About Window version display
-• Update Model Manager created time to local time 
-• Update extra Full-Reorganize button in the main window to organize from start
-• Update Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk 
-
-📅 February 14, 2026 - Version 1.0.6
-
-• Bugfix Model Manager on-prem and cloud model activation
-
-📅 February 5, 2026 - Version 1.0.5
-
-• Bugfix built-in models
-
-📅 February 2, 2026 - Version 1.0.4
-
-• Significant performance enhancement for organizing large folder structures using new iterative algorithms
-• New built-in MCP server for file operations:
-  - read_file: Read file contents with intelligent limits
-  - read_file_from_line: Read specific file ranges for pagination
-  - write_file: Write content to files
-  - list_directory: List directory contents
-  - create_directory: Create directories
-  - move_file: Move or rename files/directories
-  - search_files: Search for files in directories
-  - get_file_info: Get information about files/directories
-  - edit_file: Edit files with specific changes
-  - get_filesystem_info: Get server configuration and capabilities
-• Other minor bugfixes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-❤️ Support the Development ❤️
-
-If you find Sorana useful, please consider donating to support ongoing development!
-☕ Buy us a coffee or support via PayPal or Bitcoin Cash !
-
-💰 Bitcoin Cash (BCH): bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
-💳 PayPal: paypal.me/Gigamegs
-
-Thank you for your support!
-
-
-🚀 Discover our Spaceship! 🚀
+🚀 Spaceship! 🚀
 
 🎮 Retro Arcade 2d side-scroller bullet-hell shmup game: Spaceship
 
@@ -243,7 +158,7 @@ Thank you for your support!
 🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🔧 Discover our RyzenZPilot! 🔧
+🔧 RyzenZPilot! 🔧
 
 💻 RyzenZPilot - AMD Ryzen Power Management Tool
 
@@ -254,23 +169,19 @@ for optimal performance and efficiency.
 🌐 Website: http://tetramatrix.github.io/RyzenZPilot
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🖥️ Discover our Aicono - AI intelligent desktop icon autopilot 🖥️
+🖥️ Aicono - AI intelligent desktop icon autopilot 🖥️
 
 Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and can operate fully offline via manual JSON configuration when AI services are unavailable.
 
 🌐 Website: http://tetramatrix.github.io/Aicono
 📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
 🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
+💻 Chip: https://www.chip.de/downloads/Aicono_186527264.html
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🧩 Discover our TabNeuron - AI spatial tab manager & research workspace 🧩
+🧩 TabNeuron - AI spatial tab manager & research workspace 🧩
 
 TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infinite 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.
 
 🌐 Website: http://tetramatrix.github.io/TabNeuron
 💬 Discord: https://discord.gg/4QkQSfSATF
-
-
-
-
-
