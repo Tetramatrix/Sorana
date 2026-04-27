@@ -1,5 +1,8 @@
 📋 Changelog 📋
 
+📅 April 27, 2026 — Version 1.0.32
+🐛 Bugfix: Chat History
+
 📅 April 26, 2026 — Version 1.0.31
 🐛 Bugfix: Long-term Memories
 
