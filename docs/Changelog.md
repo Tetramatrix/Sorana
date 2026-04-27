@@ -1,5 +1,10 @@
 📋 Changelog 📋
 
+📅 April 27, 2026 — Version 1.0.33
+🐛 Bugfix: Intent Engine - MCP File Tool detection
+
+🐛 Bugfix: MCP File Server changed default to disabled
+
 📅 April 27, 2026 — Version 1.0.32
 🐛 Bugfix: Chat History
 
