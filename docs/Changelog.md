@@ -1,5 +1,9 @@
 📋 Changelog 📋
 
+📅 April 27, 2026 — Version 1.0.34
+
+🐛 Bugfix: MCP server
+
 📅 April 27, 2026 — Version 1.0.33
 🐛 Bugfix: Intent Engine - MCP File Tool detection
 
