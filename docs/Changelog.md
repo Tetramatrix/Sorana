@@ -1,5 +1,9 @@
 📋 Changelog 📋
 
+📅 April 27, 2026 — Version 1.0.35
+
+🐛 Bugfix: Default Agent Timeout changed to 3600 sec
+
 📅 April 27, 2026 — Version 1.0.34
 
 🐛 Bugfix: MCP server
