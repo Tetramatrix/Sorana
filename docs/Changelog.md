@@ -1,5 +1,13 @@
 📋 Changelog 📋
 
+📅 April 29, 2026 — Version 1.0.36
+
+🐛 Bugfix: Memories
+
+🐛 Bugfix: Chat Context and RAG Knowledge Base
+
+🐛 Bugfix: Refactor Chat
+
 📅 April 27, 2026 — Version 1.0.35
 
 🐛 Bugfix: Default Agent Timeout changed to 3600 sec
