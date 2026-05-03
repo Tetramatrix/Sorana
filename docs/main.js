@@ -19,6 +19,32 @@ function findH2ForSection(section) {
 }
 
 /**
+ * Open all ancestor sections needed to reveal a target element.
+ * @param {HTMLElement} element - The element we want to reveal.
+ */
+function openAncestorBranches(element) {
+    let current = element ? element.parentElement : null;
+
+    while (current) {
+        if (current.tagName === 'SECTION') {
+            current.classList.remove('collapsed');
+
+            let previousHeading = current.previousElementSibling;
+            while (previousHeading && previousHeading.tagName !== 'H2' && previousHeading.tagName !== 'H3') {
+                previousHeading = previousHeading.previousElementSibling;
+            }
+
+            if (previousHeading) {
+                previousHeading.classList.remove('collapsed');
+                setChevronBadgeState(previousHeading.querySelector('.chevron-badge'), false);
+            }
+        }
+
+        current = current.parentElement;
+    }
+}
+
+/**
  * Open a section branch beneath a top-level H2 umbrella.
  * @param {HTMLElement} h2Element - The umbrella heading.
  */
@@ -37,14 +63,13 @@ function openSectionBranch(h2Element) {
         return;
     }
 
-    const sectionsToOpen = [nextElement, ...nextElement.querySelectorAll('section')];
-    sectionsToOpen.forEach(function(section) {
-        if (h2Element.id === 'setup-h2' && (section.id === 'system-requirements' || section.classList.contains('final-download-section'))) {
-            section.classList.add('collapsed');
-            return;
-        }
-        section.classList.remove('collapsed');
+    nextElement.classList.remove('collapsed');
+    const firstChildSection = Array.from(nextElement.children).find(function(child) {
+        return child.tagName === 'SECTION';
     });
+    if (firstChildSection) {
+        firstChildSection.classList.remove('collapsed');
+    }
 
     setChevronBadgeState(h2Element.querySelector('.chevron-badge'), false);
 }
@@ -89,20 +114,20 @@ function toggleSectionBranch(h2Element) {
 function scrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
+        openAncestorBranches(targetElement);
         // If target is an H2, open its umbrella section first
         if (targetElement.tagName === 'H2') {
             openSectionBranch(targetElement);
         }
-        // If target is a SECTION, open the section and its descendants
+        // If target is a SECTION, open the section and its first content block.
         else if (targetElement.tagName === 'SECTION') {
-            const sectionsToOpen = [targetElement, ...targetElement.querySelectorAll('section')];
-            sectionsToOpen.forEach(function(section) {
-                if (targetElement.id === 'setup' && (section.id === 'system-requirements' || section.classList.contains('final-download-section'))) {
-                    section.classList.add('collapsed');
-                    return;
-                }
-                section.classList.remove('collapsed');
+            targetElement.classList.remove('collapsed');
+            const firstChildSection = Array.from(targetElement.children).find(function(child) {
+                return child.tagName === 'SECTION';
             });
+            if (firstChildSection) {
+                firstChildSection.classList.remove('collapsed');
+            }
         }
 
         // Überprüfe, ob das Element bereits sichtbar ist
@@ -133,20 +158,20 @@ function scrollToSection(targetId) {
 function smartScrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
+        openAncestorBranches(targetElement);
         // If target is an H2, open its umbrella section first
         if (targetElement.tagName === 'H2') {
             openSectionBranch(targetElement);
         }
-        // If target is a SECTION, open the section and its descendants
+        // If target is a SECTION, open the section and its first content block.
         else if (targetElement.tagName === 'SECTION') {
-            const sectionsToOpen = [targetElement, ...targetElement.querySelectorAll('section')];
-            sectionsToOpen.forEach(function(section) {
-                if (targetElement.id === 'setup' && (section.id === 'system-requirements' || section.classList.contains('final-download-section'))) {
-                    section.classList.add('collapsed');
-                    return;
-                }
-                section.classList.remove('collapsed');
+            targetElement.classList.remove('collapsed');
+            const firstChildSection = Array.from(targetElement.children).find(function(child) {
+                return child.tagName === 'SECTION';
             });
+            if (firstChildSection) {
+                firstChildSection.classList.remove('collapsed');
+            }
         }
 
         const rect = targetElement.getBoundingClientRect();
@@ -383,9 +408,17 @@ function toggleSectionFromArrow(arrowElement) {
         if (!icon) {
             icon = document.createElement('span');
             icon.className = 'h2-icon';
-            h2.append(icon);
+            if (h2.id === 'obsidian-export-h2') {
+                h2.prepend(icon);
+            } else {
+                h2.append(icon);
+            }
         }
-        configureChevronBadge(icon, '◀', '◀', true);
+        if (h2.id === 'obsidian-export-h2') {
+            configureChevronBadge(icon, '▶', '▼', true);
+        } else {
+            configureChevronBadge(icon, '◀', '◀', true);
+        }
         h2.addEventListener('click', function(e) {
             // Don't toggle if clicking on a link inside the h2
             if (e.target.tagName !== 'A') {

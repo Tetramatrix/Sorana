@@ -2333,6 +2333,11 @@ body.lightbox-open {
   color: var(--obsidian-secondary);
 }
 
+#obsidian-export-h2 .h2-icon {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
 /* Features grid layout */
 .obsidian-features-grid {
   display: grid;
