@@ -294,11 +294,11 @@ h2:hover {
   background: linear-gradient(90deg, var(--section-requirements), transparent);
 }
 
-#final-download .cta-box {
+#final-download-section .cta-box {
   background: rgba(56, 161, 105, 0.08);
   border-color: var(--section-download);
 }
-#final-download .cta-box::before {
+#final-download-section .cta-box::before {
   background: linear-gradient(90deg, var(--section-download), transparent);
 }
 
