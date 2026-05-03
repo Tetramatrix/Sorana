@@ -345,7 +345,7 @@ function toggleSectionFromArrow(arrowElement) {
 
     const featureToggleIcons = document.querySelectorAll('.feature-detail-toggle .toggle-icon');
     featureToggleIcons.forEach(function(icon) {
-        configureChevronBadge(icon, '▶', '▼', true);
+        configureChevronBadge(icon, '▶', '▶', true);
     });
 
     // Make the top TOC open the target umbrella instead of only jumping to it.
