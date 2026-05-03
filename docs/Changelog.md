@@ -1,5 +1,25 @@
 📋 Changelog 📋
 
+📅 Mai 3, 2026 — Version 1.0.37
+
+🐛 feat: Export To Obsidian Canvas
+
+🐛 feat: Export To Obsidian Graph View
+
+🐛 feat: Sorting in all Treeview
+
+🐛 feat: Recursive Scan Files and Folder 
+
+🐛 feat: UI Polish
+
+🐛 Bugfix: LLM Model Grouping
+
+🐛 Bugfix: Agent Timeout
+
+🐛 Bugfix: Memories
+
+🐛 Bugfix: Canvas Placement and Bounding Box
+
 📅 April 29, 2026 — Version 1.0.36
 
 🐛 Bugfix: Memories
