@@ -213,6 +213,111 @@ h2:hover {
   color: var(--obsidian-secondary);
 }
 
+/* Section-specific CTA box backgrounds matching h2 colors */
+#inspiration .cta-box {
+  background: rgba(56, 178, 172, 0.08);
+  border-color: var(--section-inspiration);
+}
+#inspiration .cta-box::before {
+  background: linear-gradient(90deg, var(--section-inspiration), transparent);
+}
+
+#what-is-sorana .cta-box {
+  background: rgba(66, 153, 225, 0.08);
+  border-color: var(--section-what-is);
+}
+#what-is-sorana .cta-box::before {
+  background: linear-gradient(90deg, var(--section-what-is), transparent);
+}
+
+#feature-details .cta-box {
+  background: rgba(237, 137, 54, 0.08);
+  border-color: var(--section-solves);
+}
+#feature-details .cta-box::before {
+  background: linear-gradient(90deg, var(--section-solves), transparent);
+}
+
+#ai-memory-rag .cta-box {
+  background: rgba(159, 122, 234, 0.08);
+  border-color: var(--section-memory);
+}
+#ai-memory-rag .cta-box::before {
+  background: linear-gradient(90deg, var(--section-memory), transparent);
+}
+
+#mcp-section .cta-box {
+  background: rgba(0, 181, 216, 0.08);
+  border-color: var(--section-mcp);
+}
+#mcp-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-mcp), transparent);
+}
+
+#obsidian-export .cta-box {
+  background: rgba(124, 58, 237, 0.08);
+  border-color: var(--section-obsidian);
+}
+#obsidian-export .cta-box::before {
+  background: linear-gradient(90deg, var(--section-obsidian), transparent);
+}
+
+#ocr-section .cta-box {
+  background: rgba(245, 101, 101, 0.08);
+  border-color: var(--section-ocr);
+}
+#ocr-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-ocr), transparent);
+}
+
+#ai-backends .cta-box {
+  background: rgba(236, 201, 75, 0.08);
+  border-color: var(--section-backends);
+}
+#ai-backends .cta-box::before {
+  background: linear-gradient(90deg, var(--section-backends), transparent);
+}
+
+#installation-setup .cta-box {
+  background: rgba(72, 187, 120, 0.08);
+  border-color: var(--section-install);
+}
+#installation-setup .cta-box::before {
+  background: linear-gradient(90deg, var(--section-install), transparent);
+}
+
+#system-requirements .cta-box {
+  background: rgba(113, 128, 150, 0.08);
+  border-color: var(--section-requirements);
+}
+#system-requirements .cta-box::before {
+  background: linear-gradient(90deg, var(--section-requirements), transparent);
+}
+
+#final-download .cta-box {
+  background: rgba(56, 161, 105, 0.08);
+  border-color: var(--section-download);
+}
+#final-download .cta-box::before {
+  background: linear-gradient(90deg, var(--section-download), transparent);
+}
+
+#support-donations .cta-box {
+  background: rgba(237, 100, 166, 0.08);
+  border-color: var(--section-support);
+}
+#support-donations .cta-box::before {
+  background: linear-gradient(90deg, var(--section-support), transparent);
+}
+
+#other-products .cta-box {
+  background: rgba(102, 126, 234, 0.08);
+  border-color: var(--section-products);
+}
+#other-products .cta-box::before {
+  background: linear-gradient(90deg, var(--section-products), transparent);
+}
+
 #ocr-section-h2 {
   background: linear-gradient(135deg, rgba(245, 101, 101, 0.15) 0%, rgba(245, 101, 101, 0.05) 100%);
   border-left-color: var(--section-ocr);
