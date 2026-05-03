@@ -16,6 +16,21 @@
   --pastel-yellow: #FFF5BA;
   --pastel-pink: #FFB7B2;
 
+  /* Section-specific colors for h2 headings */
+  --section-inspiration: #38b2ac;      /* Teal */
+  --section-what-is: #4299e1;          /* Blue */
+  --section-solves: #ed8936;           /* Orange */
+  --section-memory: #9f7aea;           /* Purple */
+  --section-mcp: #00b5d8;              /* Cyan */
+  --section-obsidian: #7c3aed;         /* Violet */
+  --section-ocr: #f56565;              /* Red */
+  --section-backends: #ecc94b;         /* Yellow */
+  --section-install: #48bb78;          /* Green */
+  --section-requirements: #718096;     /* Gray */
+  --section-download: #38a169;         /* Emerald */
+  --section-support: #ed64a6;          /* Pink */
+  --section-products: #667eea;         /* Indigo */
+
   /* Custom Component Colors */
   --black: #000;
   --border-light: #444;
@@ -33,6 +48,13 @@
   /* Section spacing */
   --section-margin: 56px 0;
   --subsection-margin: 40px 0;
+
+  /* Obsidian Export Section Colors */
+  --obsidian-primary: #7c3aed;
+  --obsidian-secondary: #a78bfa;
+  --obsidian-accent: #c4b5fd;
+  --obsidian-bg: rgba(124, 58, 237, 0.1);
+  --obsidian-border: #8b5cf6;
 }
 
 /* Animation Keyframes */
@@ -139,9 +161,110 @@ h2 {
   font-size: 1.8em;
   font-weight: 700;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
   margin-top: 50px;
   margin-bottom: 20px;
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border-left: 5px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+h2:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section-specific h2 colors */
+#inspiration-h2 {
+  background: linear-gradient(135deg, rgba(56, 178, 172, 0.15) 0%, rgba(56, 178, 172, 0.05) 100%);
+  border-left-color: var(--section-inspiration);
+  color: #4fd1c5;
+}
+
+#what-is-sorana-h2 {
+  background: linear-gradient(135deg, rgba(66, 153, 225, 0.15) 0%, rgba(66, 153, 225, 0.05) 100%);
+  border-left-color: var(--section-what-is);
+  color: #63b3ed;
+}
+
+#what-sorana-solves-h2 {
+  background: linear-gradient(135deg, rgba(237, 137, 54, 0.15) 0%, rgba(237, 137, 54, 0.05) 100%);
+  border-left-color: var(--section-solves);
+  color: #f6ad55;
+}
+
+#ai-memory-rag-h2 {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.15) 0%, rgba(159, 122, 234, 0.05) 100%);
+  border-left-color: var(--section-memory);
+  color: #b794f4;
+}
+
+#mcp-section-h2 {
+  background: linear-gradient(135deg, rgba(0, 181, 216, 0.15) 0%, rgba(0, 181, 216, 0.05) 100%);
+  border-left-color: var(--section-mcp);
+  color: #4fdada;
+}
+
+#obsidian-export-h2 {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(124, 58, 237, 0.05) 100%);
+  border-left-color: var(--section-obsidian);
+  color: var(--obsidian-secondary);
+}
+
+#ocr-section-h2 {
+  background: linear-gradient(135deg, rgba(245, 101, 101, 0.15) 0%, rgba(245, 101, 101, 0.05) 100%);
+  border-left-color: var(--section-ocr);
+  color: #fc8181;
+}
+
+#ai-backends-h2 {
+  background: linear-gradient(135deg, rgba(236, 201, 75, 0.15) 0%, rgba(236, 201, 75, 0.05) 100%);
+  border-left-color: var(--section-backends);
+  color: #f6e05e;
+}
+
+#installation-setup-h2 {
+  background: linear-gradient(135deg, rgba(72, 187, 120, 0.15) 0%, rgba(72, 187, 120, 0.05) 100%);
+  border-left-color: var(--section-install);
+  color: #68d391;
+}
+
+#system-requirements-h2 {
+  background: linear-gradient(135deg, rgba(113, 128, 150, 0.15) 0%, rgba(113, 128, 150, 0.05) 100%);
+  border-left-color: var(--section-requirements);
+  color: #a0aec0;
+}
+
+#final-download-h2 {
+  background: linear-gradient(135deg, rgba(56, 161, 105, 0.15) 0%, rgba(56, 161, 105, 0.05) 100%);
+  border-left-color: var(--section-download);
+  color: #48bb78;
+  text-align: center;
+}
+
+#final-download-h2::before,
+#final-download-h2::after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--section-download), transparent);
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+#support-donations-h2 {
+  background: linear-gradient(135deg, rgba(237, 100, 166, 0.15) 0%, rgba(237, 100, 166, 0.05) 100%);
+  border-left-color: var(--section-support);
+  color: #f687b3;
+}
+
+#other-products-h2 {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(102, 126, 234, 0.05) 100%);
+  border-left-color: var(--section-products);
+  color: #7f9cf5;
 }
 h3 {
   font-size: 1.4em;
@@ -1096,6 +1219,72 @@ figcaption {
   padding: 0 16px; /* More breathing room */
 }
 
+/* ============================================
+   Main Header - Sorana Title & Subtitle
+   ============================================ */
+
+.page-header {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  position: relative;
+  background: radial-gradient(ellipse at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+}
+
+.page-header h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 50%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  animation: fadeIn 0.8s ease forwards;
+  text-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+}
+
+.page-header h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin: 12px 0 0 0;
+  color: var(--pastel-blue);
+  opacity: 0.9;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: fadeIn 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.logo-container {
+  margin-top: 20px;
+  animation: fadeIn 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5em;
+  }
+
+  .page-header h3 {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+
 /* Product sections */
 .product-section {
   margin: var(--subsection-margin);
@@ -1673,4 +1862,207 @@ body.lightbox-open {
   position: fixed;
   width: 100%;
   height: 100%;
+}
+
+/* ============================================
+   Obsidian Export Section - Prominent Styling
+   ============================================ */
+
+.obsidian-export-section {
+  margin: var(--section-margin);
+  padding: 0 16px;
+}
+
+/* Highlighted CTA box with Obsidian purple theme */
+.obsidian-highlight {
+  background: linear-gradient(135deg, var(--obsidian-bg) 0%, rgba(124, 58, 237, 0.05) 100%);
+  border: 2px solid var(--obsidian-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.obsidian-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--obsidian-primary), var(--obsidian-secondary), var(--obsidian-accent));
+}
+
+.obsidian-highlight:hover {
+  border-color: var(--obsidian-primary);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.3);
+}
+
+/* Section heading with emoji */
+#obsidian-export-h2 {
+  color: var(--obsidian-secondary);
+  text-align: center;
+  font-size: 2.2em;
+  margin: 60px 0 30px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+#obsidian-export-h2::before,
+#obsidian-export-h2::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--obsidian-primary), transparent);
+}
+
+/* Features grid layout */
+.obsidian-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.obsidian-feature-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.obsidian-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--obsidian-border);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+}
+
+.obsidian-feature-card h3 {
+  color: var(--obsidian-accent);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.obsidian-feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.obsidian-feature-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.obsidian-feature-card ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.obsidian-feature-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--obsidian-secondary);
+  font-weight: bold;
+}
+
+/* CTA section with benefits */
+.obsidian-cta {
+  background: rgba(124, 58, 237, 0.08);
+  border-left: 4px solid var(--obsidian-primary);
+  padding: 20px 24px;
+  margin: 30px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.obsidian-benefits {
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0 0 0;
+}
+
+.obsidian-benefits li {
+  padding: 8px 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.obsidian-benefits li strong {
+  color: var(--text-primary);
+}
+
+/* Workflow section */
+.obsidian-workflow {
+  background: rgba(45, 45, 48, 0.5);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 30px 0;
+}
+
+.obsidian-workflow h3 {
+  color: var(--pastel-blue);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+}
+
+.obsidian-workflow ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.obsidian-workflow ol li {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.obsidian-workflow ol li strong {
+  color: var(--text-primary);
+}
+
+/* Note text */
+.obsidian-note {
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  opacity: 0.8;
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 1px dashed var(--border);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .obsidian-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .obsidian-feature-card {
+    padding: 20px;
+  }
+
+  #obsidian-export-h2 {
+    font-size: 1.8em;
+  }
+
+  .obsidian-cta {
+    padding: 16px;
+  }
 }
