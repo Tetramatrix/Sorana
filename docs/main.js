@@ -126,13 +126,21 @@ function configureChevronBadge(icon, collapsedText, expandedText, isCollapsed) {
 function setChevronBadgeState(icon, isCollapsed) {
     if (!icon) return;
 
-    const collapsedText = icon.dataset.collapsedIcon || '◀';
-    const expandedText = icon.dataset.expandedIcon || '▼';
-    icon.textContent = isCollapsed ? collapsedText : expandedText;
+    const isNavArrowDown = icon.classList.contains('nav-arrow-down');
+    const isNavArrowUp = icon.classList.contains('nav-arrow-up');
+    if (isNavArrowDown) {
+        icon.textContent = '▼';
+    } else if (isNavArrowUp) {
+        icon.textContent = '▲';
+    } else {
+        const collapsedText = icon.dataset.collapsedIcon || '◀';
+        const expandedText = icon.dataset.expandedIcon || '▼';
+        icon.textContent = isCollapsed ? collapsedText : expandedText;
+    }
     icon.classList.toggle('is-collapsed', isCollapsed);
     icon.classList.toggle('is-expanded', !isCollapsed);
 
-    const isNavArrow = icon.classList.contains('nav-arrow-down') || icon.classList.contains('nav-arrow-up');
+    const isNavArrow = isNavArrowDown || isNavArrowUp;
     if (isNavArrow) {
         icon.classList.toggle('rotated', !isCollapsed);
     } else {
@@ -265,10 +273,14 @@ function toggleSectionFromArrow(arrowElement) {
         }
     });
 
-    // Set all arrows to ◀ (collapsed state, no rotation)
+    // Set nav arrows to their directional glyphs.
     const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
     allArrows.forEach(function(arrow) {
-        configureChevronBadge(arrow, '◀', '▼', true);
+        if (arrow.classList.contains('nav-arrow-up')) {
+            configureChevronBadge(arrow, '▲', '▲', true);
+        } else {
+            configureChevronBadge(arrow, '▼', '▼', true);
+        }
     });
 
     const featureToggleIcons = document.querySelectorAll('.feature-detail-toggle .toggle-icon');
