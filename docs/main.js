@@ -19,22 +19,82 @@ function findH2ForSection(section) {
 }
 
 /**
+ * Open a section branch beneath a top-level H2 umbrella.
+ * @param {HTMLElement} h2Element - The umbrella heading.
+ */
+function openSectionBranch(h2Element) {
+    if (!h2Element) return;
+
+    h2Element.classList.remove('collapsed');
+
+    let nextElement = h2Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    if (!nextElement || nextElement.tagName !== 'SECTION') {
+        setChevronBadgeState(h2Element.querySelector('.chevron-badge'), false);
+        return;
+    }
+
+    const sectionsToOpen = [nextElement, ...nextElement.querySelectorAll('section')];
+    sectionsToOpen.forEach(function(section) {
+        section.classList.remove('collapsed');
+    });
+
+    setChevronBadgeState(h2Element.querySelector('.chevron-badge'), false);
+}
+
+/**
+ * Toggle an umbrella H2 and all nested sections beneath it.
+ * @param {HTMLElement} h2Element - The umbrella heading.
+ */
+function toggleSectionBranch(h2Element) {
+    if (!h2Element) return;
+
+    const shouldOpen = h2Element.classList.contains('collapsed');
+    if (shouldOpen) {
+        openSectionBranch(h2Element);
+        return;
+    }
+
+    h2Element.classList.add('collapsed');
+
+    let nextElement = h2Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    if (!nextElement || nextElement.tagName !== 'SECTION') {
+        setChevronBadgeState(h2Element.querySelector('.chevron-badge'), true);
+        return;
+    }
+
+    const sectionsToClose = [nextElement, ...nextElement.querySelectorAll('section')];
+    sectionsToClose.forEach(function(section) {
+        section.classList.add('collapsed');
+    });
+
+    setChevronBadgeState(h2Element.querySelector('.chevron-badge'), true);
+}
+
+/**
  * Scroll to a section with smart positioning
  * @param {string} targetId - The ID of the target section (with or without #)
  */
 function scrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
-        // If target is an H2, toggle its section open first
+        // If target is an H2, open its umbrella section first
         if (targetElement.tagName === 'H2') {
-            toggleSection(targetElement);
+            openSectionBranch(targetElement);
         }
-        // If target is a SECTION, find the H2 and toggle it
+        // If target is a SECTION, open the section and its descendants
         else if (targetElement.tagName === 'SECTION') {
-            const h2Element = findH2ForSection(targetElement);
-            if (h2Element) {
-                toggleSection(h2Element);
-            }
+            const sectionsToOpen = [targetElement, ...targetElement.querySelectorAll('section')];
+            sectionsToOpen.forEach(function(section) {
+                section.classList.remove('collapsed');
+            });
         }
 
         // Überprüfe, ob das Element bereits sichtbar ist
@@ -65,16 +125,16 @@ function scrollToSection(targetId) {
 function smartScrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
-        // If target is an H2, toggle its section open first
+        // If target is an H2, open its umbrella section first
         if (targetElement.tagName === 'H2') {
-            toggleSection(targetElement);
+            openSectionBranch(targetElement);
         }
-        // If target is a SECTION, find the H2 and toggle it
+        // If target is a SECTION, open the section and its descendants
         else if (targetElement.tagName === 'SECTION') {
-            const h2Element = findH2ForSection(targetElement);
-            if (h2Element) {
-                toggleSection(h2Element);
-            }
+            const sectionsToOpen = [targetElement, ...targetElement.querySelectorAll('section')];
+            sectionsToOpen.forEach(function(section) {
+                section.classList.remove('collapsed');
+            });
         }
 
         const rect = targetElement.getBoundingClientRect();
@@ -184,12 +244,12 @@ function toggleH3Section(h3Element) {
 
     // Find the next div element following this h3
     let nextElement = h3Element.nextElementSibling;
-    while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+    while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
         nextElement = nextElement.nextElementSibling;
     }
 
     // Toggle the div if found
-    if (nextElement && nextElement.tagName === 'DIV') {
+    if (nextElement && (nextElement.tagName === 'DIV' || nextElement.tagName === 'SECTION')) {
         nextElement.classList.toggle('collapsed');
     }
 
@@ -265,10 +325,10 @@ function toggleSectionFromArrow(arrowElement) {
         configureChevronBadge(icon, '▶', '▼', true);
         // Find and collapse the next div
         let nextElement = h3.nextElementSibling;
-        while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+        while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
             nextElement = nextElement.nextElementSibling;
         }
-        if (nextElement && nextElement.tagName === 'DIV') {
+        if (nextElement && (nextElement.tagName === 'DIV' || nextElement.tagName === 'SECTION')) {
             nextElement.classList.add('collapsed');
         }
     });
@@ -286,6 +346,17 @@ function toggleSectionFromArrow(arrowElement) {
     const featureToggleIcons = document.querySelectorAll('.feature-detail-toggle .toggle-icon');
     featureToggleIcons.forEach(function(icon) {
         configureChevronBadge(icon, '▶', '▼', true);
+    });
+
+    // Make the top TOC open the target umbrella instead of only jumping to it.
+    const tocLinks = document.querySelectorAll('.horizontal-toc-nav a');
+    tocLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            const href = link.getAttribute('href');
+            if (!href || !href.startsWith('#')) return;
+            e.preventDefault();
+            smartScrollToSection(href);
+        });
     });
 
     // Initialize H2 collapsible functionality
@@ -306,7 +377,7 @@ function toggleSectionFromArrow(arrowElement) {
         h2.addEventListener('click', function(e) {
             // Don't toggle if clicking on a link inside the h2
             if (e.target.tagName !== 'A') {
-                toggleSection(h2);
+                toggleSectionBranch(h2);
             }
         });
     });
