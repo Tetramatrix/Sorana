@@ -1814,36 +1814,76 @@ code,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  background: linear-gradient(135deg, rgba(168, 216, 234, 0.25) 0%, rgba(168, 216, 234, 0.1) 100%);
-  border: 1px solid rgba(168, 216, 234, 0.3);
-  border-radius: 8px;
-  font-size: 0.9em;
-  font-weight: 700;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  font-size: 0.95em;
+  font-weight: 400;
+  color: var(--pastel-blue);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 8px rgba(168, 216, 234, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shine effect on toggle icon */
+.feature-detail-toggle .toggle-icon::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
 }
 
 .feature-detail-toggle:hover .toggle-icon {
   background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
   border-color: rgba(168, 216, 234, 0.5);
-  box-shadow: 0 4px 8px rgba(168, 216, 234, 0.3);
-  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  transform: scale(1.15) rotate(0deg);
+  color: #e3f2fd;
+  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+}
+
+.feature-detail-toggle:hover .toggle-icon::after {
+  opacity: 1;
+  animation: iconShine 0.6s ease;
+}
+
+@keyframes iconShine {
+  0% { transform: rotate(45deg) translateX(-50%); }
+  100% { transform: rotate(45deg) translateX(50%); }
 }
 
 .feature-detail-toggle.active .toggle-icon {
-  background: linear-gradient(135deg, rgba(76, 175, 80, 0.3) 0%, rgba(76, 175, 80, 0.15) 100%);
-  border-color: rgba(76, 175, 80, 0.4);
-  transform: rotate(135deg);
-  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.2);
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.35) 0%, rgba(76, 175, 80, 0.18) 100%);
+  border-color: rgba(76, 175, 80, 0.45);
+  color: #68d391;
+  transform: rotate(90deg);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
 }
 
 .feature-detail-toggle.active:hover .toggle-icon {
-  background: linear-gradient(135deg, rgba(76, 175, 80, 0.4) 0%, rgba(76, 175, 80, 0.25) 100%);
-  border-color: rgba(76, 175, 80, 0.5);
-  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.45) 0%, rgba(76, 175, 80, 0.25) 100%);
+  border-color: rgba(76, 175, 80, 0.55);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  transform: rotate(90deg) scale(1.15);
+  color: #9ae6b4;
+  text-shadow: 0 0 14px rgba(76, 175, 80, 0.8);
 }
 
 /* Content Area */
