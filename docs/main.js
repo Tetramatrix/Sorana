@@ -102,6 +102,45 @@ function smartScrollToSection(targetId) {
  */
 
 /**
+ * Configure a chevron badge with collapsed and expanded glyphs.
+ * @param {HTMLElement} icon - The badge element.
+ * @param {string} collapsedText - Glyph shown when collapsed.
+ * @param {string} expandedText - Glyph shown when expanded.
+ * @param {boolean} isCollapsed - Whether the badge starts collapsed.
+ */
+function configureChevronBadge(icon, collapsedText, expandedText, isCollapsed) {
+    if (!icon) return null;
+
+    icon.classList.add('chevron-badge');
+    icon.dataset.collapsedIcon = collapsedText;
+    icon.dataset.expandedIcon = expandedText;
+    setChevronBadgeState(icon, isCollapsed);
+    return icon;
+}
+
+/**
+ * Update a chevron badge to match its collapsed state.
+ * @param {HTMLElement} icon - The badge element.
+ * @param {boolean} isCollapsed - Whether the badge should show its collapsed glyph.
+ */
+function setChevronBadgeState(icon, isCollapsed) {
+    if (!icon) return;
+
+    const collapsedText = icon.dataset.collapsedIcon || '◀';
+    const expandedText = icon.dataset.expandedIcon || '▼';
+    icon.textContent = isCollapsed ? collapsedText : expandedText;
+    icon.classList.toggle('is-collapsed', isCollapsed);
+    icon.classList.toggle('is-expanded', !isCollapsed);
+
+    const isNavArrow = icon.classList.contains('nav-arrow-down') || icon.classList.contains('nav-arrow-up');
+    if (isNavArrow) {
+        icon.classList.toggle('rotated', !isCollapsed);
+    } else {
+        icon.classList.remove('rotated');
+    }
+}
+
+/**
  * Toggle the visibility of a section associated with an H2 element
  * @param {HTMLElement} h2Element - The H2 element that was clicked
  */
@@ -118,18 +157,14 @@ function toggleSection(h2Element) {
     if (nextElement && nextElement.tagName === 'SECTION') {
         nextElement.classList.toggle('collapsed');
 
-        // Update arrows in this section
+        const isCollapsed = nextElement.classList.contains('collapsed');
         const arrows = nextElement.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
         arrows.forEach(function(arrow) {
-            if (nextElement.classList.contains('collapsed')) {
-                arrow.textContent = '◀';
-                arrow.classList.remove('rotated');
-            } else {
-                arrow.textContent = '▼';
-                arrow.classList.add('rotated');
-            }
+            setChevronBadgeState(arrow, isCollapsed);
         });
     }
+
+    setChevronBadgeState(h2Element.querySelector('.chevron-badge'), h2Element.classList.contains('collapsed'));
 }
 
 /**
@@ -150,10 +185,7 @@ function toggleH3Section(h3Element) {
         nextElement.classList.toggle('collapsed');
     }
 
-    const icon = h3Element.querySelector('.h3-icon');
-    if (icon) {
-        icon.textContent = h3Element.classList.contains('collapsed') ? '▶' : '▼';
-    }
+    setChevronBadgeState(h3Element.querySelector('.chevron-badge'), h3Element.classList.contains('collapsed'));
 }
 
 /**
@@ -177,11 +209,11 @@ function toggleSectionFromArrow(arrowElement) {
     const upArrow = ctaBox.querySelector('.nav-arrow-up');
 
     if (parentSection.classList.contains('collapsed')) {
-        if (downArrow) { downArrow.textContent = '◀'; downArrow.classList.remove('rotated'); }
-        if (upArrow) { upArrow.textContent = '◀'; upArrow.classList.remove('rotated'); }
+        setChevronBadgeState(downArrow, true);
+        setChevronBadgeState(upArrow, true);
     } else {
-        if (downArrow) { downArrow.textContent = '▼'; downArrow.classList.add('rotated'); }
-        if (upArrow) { upArrow.textContent = '▼'; upArrow.classList.add('rotated'); }
+        setChevronBadgeState(downArrow, false);
+        setChevronBadgeState(upArrow, false);
     }
 
     // Also update the H2 symbol if there is one in this section
@@ -192,6 +224,7 @@ function toggleSectionFromArrow(arrowElement) {
         } else {
             h2InSection.classList.remove('collapsed');
         }
+        setChevronBadgeState(h2InSection.querySelector('.chevron-badge'), parentSection.classList.contains('collapsed'));
     }
 }
 
@@ -213,15 +246,15 @@ function toggleSectionFromArrow(arrowElement) {
         // Skip feature-detail toggle headers
         if (h3.classList.contains('feature-detail-toggle')) return;
 
-        if (!h3.querySelector('.h3-icon')) {
-            const icon = document.createElement('span');
-            icon.className = 'toggle-icon h3-icon';
-            icon.textContent = '▶';
-            h3.prepend(icon);
-        }
-
         h3.classList.add('collapsible');
         h3.classList.add('collapsed');
+        let icon = h3.querySelector('.h3-icon');
+        if (!icon) {
+            icon = document.createElement('span');
+            icon.className = 'h3-icon';
+            h3.prepend(icon);
+        }
+        configureChevronBadge(icon, '▶', '▼', true);
         // Find and collapse the next div
         let nextElement = h3.nextElementSibling;
         while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
@@ -235,14 +268,12 @@ function toggleSectionFromArrow(arrowElement) {
     // Set all arrows to ◀ (collapsed state, no rotation)
     const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
     allArrows.forEach(function(arrow) {
-        arrow.textContent = '◀';
-        arrow.classList.remove('rotated');
+        configureChevronBadge(arrow, '◀', '▼', true);
     });
 
-    // Make feature-detail H3 toggles point right when collapsed
     const featureToggleIcons = document.querySelectorAll('.feature-detail-toggle .toggle-icon');
     featureToggleIcons.forEach(function(icon) {
-        icon.textContent = '▶';
+        configureChevronBadge(icon, '▶', '▼', true);
     });
 
     // Initialize H2 collapsible functionality
@@ -253,6 +284,13 @@ function toggleSectionFromArrow(arrowElement) {
 
         h2.classList.add('collapsible');
         h2.classList.add('collapsed');
+        let icon = h2.querySelector('.h2-icon');
+        if (!icon) {
+            icon = document.createElement('span');
+            icon.className = 'h2-icon';
+            h2.append(icon);
+        }
+        configureChevronBadge(icon, '◀', '◀', true);
         h2.addEventListener('click', function(e) {
             // Don't toggle if clicking on a link inside the h2
             if (e.target.tagName !== 'A') {
@@ -289,9 +327,7 @@ function toggleFeatureDetail(toggleElement) {
     content.style.display = isHidden ? 'block' : 'none';
 
     const icon = toggleElement.querySelector('.toggle-icon');
-    if (icon) {
-        icon.textContent = isHidden ? '▼' : '▶';
-    }
+    setChevronBadgeState(icon, !isHidden);
 
     if (isHidden) {
         toggleElement.classList.add('active');
