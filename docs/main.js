@@ -39,6 +39,10 @@ function openSectionBranch(h2Element) {
 
     const sectionsToOpen = [nextElement, ...nextElement.querySelectorAll('section')];
     sectionsToOpen.forEach(function(section) {
+        if (h2Element.id === 'setup-h2' && (section.id === 'system-requirements' || section.classList.contains('final-download-section'))) {
+            section.classList.add('collapsed');
+            return;
+        }
         section.classList.remove('collapsed');
     });
 
@@ -93,6 +97,10 @@ function scrollToSection(targetId) {
         else if (targetElement.tagName === 'SECTION') {
             const sectionsToOpen = [targetElement, ...targetElement.querySelectorAll('section')];
             sectionsToOpen.forEach(function(section) {
+                if (targetElement.id === 'setup' && (section.id === 'system-requirements' || section.classList.contains('final-download-section'))) {
+                    section.classList.add('collapsed');
+                    return;
+                }
                 section.classList.remove('collapsed');
             });
         }
@@ -133,6 +141,10 @@ function smartScrollToSection(targetId) {
         else if (targetElement.tagName === 'SECTION') {
             const sectionsToOpen = [targetElement, ...targetElement.querySelectorAll('section')];
             sectionsToOpen.forEach(function(section) {
+                if (targetElement.id === 'setup' && (section.id === 'system-requirements' || section.classList.contains('final-download-section'))) {
+                    section.classList.add('collapsed');
+                    return;
+                }
                 section.classList.remove('collapsed');
             });
         }
