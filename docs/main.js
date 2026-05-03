@@ -122,10 +122,10 @@ function toggleSection(h2Element) {
         const arrows = nextElement.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
         arrows.forEach(function(arrow) {
             if (nextElement.classList.contains('collapsed')) {
-                arrow.textContent = '+';
+                arrow.textContent = '◀';
                 arrow.classList.remove('rotated');
             } else {
-                arrow.textContent = '+';
+                arrow.textContent = '▼';
                 arrow.classList.add('rotated');
             }
         });
@@ -149,6 +149,11 @@ function toggleH3Section(h3Element) {
     if (nextElement && nextElement.tagName === 'DIV') {
         nextElement.classList.toggle('collapsed');
     }
+
+    const icon = h3Element.querySelector('.h3-icon');
+    if (icon) {
+        icon.textContent = h3Element.classList.contains('collapsed') ? '▶' : '▼';
+    }
 }
 
 /**
@@ -167,16 +172,16 @@ function toggleSectionFromArrow(arrowElement) {
     // Toggle the section
     parentSection.classList.toggle('collapsed');
 
-    // Update arrow symbols in this cta-box only (use rotated + instead of −)
+    // Update arrow symbols in this cta-box only (use rotated chevron instead of +)
     const downArrow = ctaBox.querySelector('.nav-arrow-down');
     const upArrow = ctaBox.querySelector('.nav-arrow-up');
 
     if (parentSection.classList.contains('collapsed')) {
-        if (downArrow) { downArrow.textContent = '+'; downArrow.classList.remove('rotated'); }
-        if (upArrow) { upArrow.textContent = '+'; upArrow.classList.remove('rotated'); }
+        if (downArrow) { downArrow.textContent = '◀'; downArrow.classList.remove('rotated'); }
+        if (upArrow) { upArrow.textContent = '◀'; upArrow.classList.remove('rotated'); }
     } else {
-        if (downArrow) { downArrow.textContent = '+'; downArrow.classList.add('rotated'); }
-        if (upArrow) { upArrow.textContent = '+'; upArrow.classList.add('rotated'); }
+        if (downArrow) { downArrow.textContent = '▼'; downArrow.classList.add('rotated'); }
+        if (upArrow) { upArrow.textContent = '▼'; upArrow.classList.add('rotated'); }
     }
 
     // Also update the H2 symbol if there is one in this section
@@ -208,7 +213,15 @@ function toggleSectionFromArrow(arrowElement) {
         // Skip feature-detail toggle headers
         if (h3.classList.contains('feature-detail-toggle')) return;
 
+        if (!h3.querySelector('.h3-icon')) {
+            const icon = document.createElement('span');
+            icon.className = 'toggle-icon h3-icon';
+            icon.textContent = '▶';
+            h3.prepend(icon);
+        }
+
         h3.classList.add('collapsible');
+        h3.classList.add('collapsed');
         // Find and collapse the next div
         let nextElement = h3.nextElementSibling;
         while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
@@ -219,11 +232,17 @@ function toggleSectionFromArrow(arrowElement) {
         }
     });
 
-    // Set all arrows to + (collapsed state, no rotation)
+    // Set all arrows to ◀ (collapsed state, no rotation)
     const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
     allArrows.forEach(function(arrow) {
-        arrow.textContent = '+';
+        arrow.textContent = '◀';
         arrow.classList.remove('rotated');
+    });
+
+    // Make feature-detail H3 toggles point right when collapsed
+    const featureToggleIcons = document.querySelectorAll('.feature-detail-toggle .toggle-icon');
+    featureToggleIcons.forEach(function(icon) {
+        icon.textContent = '▶';
     });
 
     // Initialize H2 collapsible functionality
@@ -233,6 +252,7 @@ function toggleSectionFromArrow(arrowElement) {
         if (h2.getAttribute('data-no-toggle') === 'true') return;
 
         h2.classList.add('collapsible');
+        h2.classList.add('collapsed');
         h2.addEventListener('click', function(e) {
             // Don't toggle if clicking on a link inside the h2
             if (e.target.tagName !== 'A') {
@@ -267,6 +287,11 @@ function toggleFeatureDetail(toggleElement) {
 
     const isHidden = content.style.display === 'none';
     content.style.display = isHidden ? 'block' : 'none';
+
+    const icon = toggleElement.querySelector('.toggle-icon');
+    if (icon) {
+        icon.textContent = isHidden ? '▼' : '▶';
+    }
 
     if (isHidden) {
         toggleElement.classList.add('active');

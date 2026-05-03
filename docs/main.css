@@ -1240,7 +1240,7 @@ iframe:hover, embed:hover, object:hover {
   background: linear-gradient(135deg, rgba(76, 175, 80, 0.3) 0%, rgba(76, 175, 80, 0.15) 100%);
   border-color: rgba(76, 175, 80, 0.4);
   color: #68d391;
-  transform: translateY(-50%) rotate(135deg) !important;
+  transform: translateY(-50%) !important;
 }
 
 .cta-box .nav-arrow-down.rotated:hover,
@@ -1587,7 +1587,7 @@ figcaption {
 h2.collapsible {
   cursor: pointer;
   position: relative;
-  padding-right: 50px;
+  padding-right: 44px;
   user-select: none;
   transition: color 0.2s ease;
 }
@@ -1596,38 +1596,93 @@ h2.collapsible:hover {
   color: #64b5f6;
 }
 
-h2.collapsible::after {
-  content: '+';
+h2.collapsible::after,
+.nav-arrow-down,
+.nav-arrow-up {
   position: absolute;
-  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  background: rgba(168, 216, 234, 0.15);
-  border-radius: 6px;
-  font-size: 1.1em;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  color: var(--pastel-blue);
   font-weight: bold;
-  color: #f6e05e;
-  transition: background 0.2s ease, transform 0.3s ease;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
 }
 
-h2.collapsible:hover::after {
-  background: rgba(168, 216, 234, 0.25);
+.feature-detail-toggle .toggle-icon,
+.collapsible-toggle-icon,
+.h3-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  color: var(--pastel-blue);
+  font-size: 0.95em;
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 8px rgba(168, 216, 234, 0.5);
+  overflow: hidden;
+}
+
+.feature-detail-toggle .toggle-icon::after,
+.h3-icon::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+h2.collapsible:hover::after,
+.feature-detail-toggle:hover .toggle-icon,
+.h3-icon:hover,
+.nav-arrow-down:hover,
+.nav-arrow-up:hover {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  color: #e3f2fd;
+}
+
+h2.collapsible::after {
+  content: '▼';
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  font-size: 1em;
 }
 
 h2.collapsible.collapsed::after {
-  transform: translateY(-50%) rotate(45deg);
+  content: '◀';
 }
 
 /* Collapsible H3 sections */
 h3.collapsible {
   cursor: pointer;
-  position: relative;
-  padding-right: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   user-select: none;
   transition: color 0.2s ease;
 }
@@ -1636,31 +1691,17 @@ h3.collapsible:hover {
   color: #64b5f6;
 }
 
-h3.collapsible::after {
-  content: '+';
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  background: rgba(168, 216, 234, 0.15);
-  border-radius: 6px;
-  font-size: 1em;
-  font-weight: bold;
-  color: #f6e05e;
-  transition: background 0.2s ease, transform 0.3s ease;
+.h3-icon {
+  flex-shrink: 0;
 }
 
-h3.collapsible:hover::after {
-  background: rgba(168, 216, 234, 0.25);
-}
-
-h3.collapsible.collapsed::after {
-  transform: translateY(-50%) rotate(45deg);
+h3.collapsible:hover .h3-icon {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  transform: scale(1.15) rotate(0deg);
+  color: #e3f2fd;
+  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
 }
 
 /* Collapsed sections and divs */
@@ -1681,20 +1722,23 @@ div.collapsed {
   font-size: 1.2em;
   user-select: none;
   font-weight: bold;
-  background-color: rgba(0, 123, 255, 0.1);
-  color: #007bff;
-  width: 28px;
-  height: 28px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  color: var(--pastel-blue);
+  width: 32px;
+  height: 32px;
   line-height: 28px;
   text-align: center;
-  border-radius: 4px;
-  transition: all 0.2s ease;
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
 }
 
 .nav-arrow-down:hover,
 .nav-arrow-up:hover {
-  background-color: #007bff;
-  color: white;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  color: #e3f2fd;
 }
 
 /* NEW badge */
@@ -1810,45 +1854,6 @@ code,
   left: 100%;
 }
 
-.feature-detail-toggle .toggle-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
-  border: 2px solid rgba(168, 216, 234, 0.3);
-  border-radius: 50%;
-  font-size: 0.95em;
-  font-weight: 400;
-  color: var(--pastel-blue);
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  flex-shrink: 0;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
-  text-shadow: 0 0 8px rgba(168, 216, 234, 0.5);
-  position: relative;
-  overflow: hidden;
-}
-
-/* Shine effect on toggle icon */
-.feature-detail-toggle .toggle-icon::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    transparent 100%
-  );
-  transform: rotate(45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-
 .feature-detail-toggle:hover .toggle-icon {
   background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
   border-color: rgba(168, 216, 234, 0.5);
@@ -1858,7 +1863,8 @@ code,
   text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
 }
 
-.feature-detail-toggle:hover .toggle-icon::after {
+.feature-detail-toggle:hover .toggle-icon::after,
+.h3-icon:hover::after {
   opacity: 1;
   animation: iconShine 0.6s ease;
 }
