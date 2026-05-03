@@ -1184,46 +1184,70 @@ iframe:hover, embed:hover, object:hover {
 }
 
 /* Navigation arrow that appears on hover */
-.cta-box .nav-arrow-down {
+.cta-box .nav-arrow-down,
+.cta-box .nav-arrow-up {
   position: absolute;
-  top: 60%;
-  right: 10px;
-  transform: translateY(-50%);
-  font-size: 1.5em;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.1) 100%);
+  border: 1px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  font-size: 1.2em;
+  color: var(--pastel-blue);
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
-  color: white;
-  text-shadow: 0 0 5px rgba(0,0,0,0.8);
   z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.cta-box .nav-arrow-down {
+  top: 60%;
+  right: 12px;
+  transform: translateY(-50%) scale(0.8);
 }
 
 .cta-box .nav-arrow-up {
-  position: absolute;
-  top: 40%;
-  right: 10px;
-  transform: translateY(-50%);
-  font-size: 1.5em;
-  opacity: 0;
-  transition: all 0.3s ease;
-  pointer-events: none;
-  color: white;
-  text-shadow: 0 0 5px rgba(0,0,0,0.8);
-  z-index: 10;
+  top: 30%;
+  right: 12px;
+  transform: translateY(-50%) scale(0.8);
 }
 
 .cta-box:hover .nav-arrow-down,
 .cta-box:hover .nav-arrow-up {
   opacity: 1;
-  right: 15px;
+  right: 18px;
   pointer-events: auto;
   cursor: pointer;
+  transform: translateY(-50%) scale(1);
+}
+
+.cta-box .nav-arrow-down:hover,
+.cta-box .nav-arrow-up:hover {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.4);
+  transform: translateY(-50%) scale(1.15) !important;
 }
 
 /* Rotated plus for open state */
 .cta-box .nav-arrow-down.rotated,
 .cta-box .nav-arrow-up.rotated {
-  transform: translateY(-50%) rotate(45deg);
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.3) 0%, rgba(76, 175, 80, 0.15) 100%);
+  border-color: rgba(76, 175, 80, 0.4);
+  color: #68d391;
+  transform: translateY(-50%) rotate(135deg) !important;
+}
+
+.cta-box .nav-arrow-down.rotated:hover,
+.cta-box .nav-arrow-up.rotated:hover {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.4) 0%, rgba(76, 175, 80, 0.25) 100%);
+  border-color: rgba(76, 175, 80, 0.5);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
 }
 
 .cta-box:hover {
