@@ -241,18 +241,6 @@ h2:hover {
   background: linear-gradient(135deg, rgba(56, 161, 105, 0.15) 0%, rgba(56, 161, 105, 0.05) 100%);
   border-left-color: var(--section-download);
   color: #48bb78;
-  text-align: center;
-}
-
-#final-download-h2::before,
-#final-download-h2::after {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--section-download), transparent);
-  margin: 0 20px;
-  vertical-align: middle;
 }
 
 #support-donations-h2 {
