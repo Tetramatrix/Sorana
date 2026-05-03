@@ -17,19 +17,19 @@
   --pastel-pink: #FFB7B2;
 
   /* Section-specific colors for h2 headings */
-  --section-inspiration: #38b2ac;      /* Teal */
-  --section-what-is: #4299e1;          /* Blue */
-  --section-solves: #ed8936;           /* Orange */
-  --section-memory: #9f7aea;           /* Purple */
-  --section-mcp: #00b5d8;              /* Cyan */
-  --section-obsidian: #7c3aed;         /* Violet */
-  --section-ocr: #f56565;              /* Red */
-  --section-backends: #ecc94b;         /* Yellow */
-  --section-install: #48bb78;          /* Green */
-  --section-requirements: #718096;     /* Gray */
-  --section-download: #38a169;         /* Emerald */
-  --section-support: #ed64a6;          /* Pink */
-  --section-products: #667eea;         /* Indigo */
+  --section-inspiration: #4fd1c5;      /* Teal */
+  --section-what-is: #63b3ed;          /* Blue */
+  --section-solves: #f6ad55;           /* Amber */
+  --section-memory: #b794f4;           /* Purple */
+  --section-mcp: #4fdada;              /* Cyan */
+  --section-obsidian: #9f7aea;         /* Violet */
+  --section-ocr: #fc8181;              /* Coral */
+  --section-backends: #f6e05e;         /* Soft yellow */
+  --section-install: #9ae6b4;          /* Mint */
+  --section-requirements: #a0aec0;     /* Cool gray */
+  --section-download: #68d391;         /* Emerald */
+  --section-support: #f687b3;          /* Rose */
+  --section-products: #7f9cf5;         /* Indigo */
 
   /* Custom Component Colors */
   --black: #000;
@@ -50,11 +50,11 @@
   --subsection-margin: 24px 0;
 
   /* Obsidian Export Section Colors */
-  --obsidian-primary: #7c3aed;
-  --obsidian-secondary: #a78bfa;
-  --obsidian-accent: #c4b5fd;
-  --obsidian-bg: rgba(124, 58, 237, 0.1);
-  --obsidian-border: #8b5cf6;
+  --obsidian-primary: #8b5cf6;
+  --obsidian-secondary: #c4b5fd;
+  --obsidian-accent: #ddd6fe;
+  --obsidian-bg: rgba(124, 58, 237, 0.08);
+  --obsidian-border: #a78bfa;
 }
 
 /* Animation Keyframes */
@@ -295,7 +295,7 @@ h2:hover {
 }
 
 .final-download-section .cta-box {
-  background: rgba(56, 161, 105, 0.08);
+  background: rgba(104, 211, 145, 0.06);
   border-color: var(--section-download);
 }
 .final-download-section .cta-box::before {
@@ -343,9 +343,9 @@ h2:hover {
 }
 
 #final-download-h2 {
-  background: linear-gradient(135deg, rgba(56, 161, 105, 0.15) 0%, rgba(56, 161, 105, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(104, 211, 145, 0.12) 0%, rgba(154, 230, 180, 0.08) 100%);
   border-left-color: var(--section-download);
-  color: #48bb78;
+  color: #bbf7d0;
 }
 
 #support-donations-h2 {
@@ -374,51 +374,51 @@ h2:hover {
 }
 
 #overview-h2 {
-  background: linear-gradient(135deg, rgba(56, 178, 172, 0.18) 0%, rgba(66, 153, 225, 0.16) 100%);
-  border-left-color: #4fd1c5;
-  color: #9ce4df;
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.12) 0%, rgba(99, 179, 237, 0.10) 100%);
+  border-left-color: var(--section-inspiration);
+  color: #b2f5ea;
 }
 
 #why-sorana-h2 {
-  background: linear-gradient(135deg, rgba(237, 137, 54, 0.18) 0%, rgba(245, 158, 11, 0.12) 100%);
-  border-left-color: #f6ad55;
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.12) 0%, rgba(251, 211, 141, 0.08) 100%);
+  border-left-color: var(--section-solves);
   color: #fbd38d;
 }
 
 #core-features-h2 {
-  background: linear-gradient(135deg, rgba(159, 122, 234, 0.16) 0%, rgba(0, 181, 216, 0.12) 52%, rgba(245, 101, 101, 0.10) 100%);
-  border-left-color: #9f7aea;
-  color: #d6bcfa;
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.10) 0%, rgba(79, 218, 218, 0.08) 52%, rgba(252, 129, 129, 0.06) 100%);
+  border-left-color: var(--section-memory);
+  color: #ddd6fe;
 }
 
 #ai-models-h2 {
-  background: linear-gradient(135deg, rgba(236, 201, 75, 0.18) 0%, rgba(246, 224, 94, 0.10) 100%);
-  border-left-color: #ecc94b;
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.12) 0%, rgba(160, 174, 192, 0.08) 100%);
+  border-left-color: var(--section-backends);
   color: #faf089;
 }
 
 #obsidian-export-h2 {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.18) 0%, rgba(167, 139, 250, 0.12) 100%);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(196, 181, 253, 0.08) 100%);
   border-left-color: var(--section-obsidian);
   color: var(--obsidian-accent);
 }
 
 #setup-h2 {
-  background: linear-gradient(135deg, rgba(72, 187, 120, 0.18) 0%, rgba(113, 128, 150, 0.12) 100%);
-  border-left-color: #68d391;
-  color: #9ae6b4;
+  background: linear-gradient(135deg, rgba(154, 230, 180, 0.12) 0%, rgba(160, 174, 192, 0.08) 100%);
+  border-left-color: var(--section-install);
+  color: #dcfce7;
 }
 
 #support-h2 {
-  background: linear-gradient(135deg, rgba(237, 100, 166, 0.18) 0%, rgba(246, 135, 179, 0.12) 100%);
-  border-left-color: #f687b3;
-  color: #fbb6ce;
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.12) 0%, rgba(255, 255, 255, 0.06) 100%);
+  border-left-color: var(--section-support);
+  color: #fbcfe8;
 }
 
 #discover-h2 {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.18) 0%, rgba(127, 156, 245, 0.12) 100%);
-  border-left-color: #7f9cf5;
-  color: #c3dafe;
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.12) 0%, rgba(99, 179, 237, 0.08) 100%);
+  border-left-color: var(--section-products);
+  color: #dbeafe;
 }
 
 /* Outer umbrella wrappers get a matching soft tint so the section and header read as one unit */
@@ -432,8 +432,8 @@ h2:hover {
 #discover {
   position: relative;
   margin: 16px 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(0, 0, 0, 0.04) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.018) 0%, rgba(0, 0, 0, 0.038) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 6px 14px 12px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
@@ -451,43 +451,43 @@ h2:hover {
 }
 
 #overview {
-  background: linear-gradient(135deg, rgba(56, 178, 172, 0.05) 0%, rgba(66, 153, 225, 0.05) 100%);
-  border-color: rgba(99, 179, 237, 0.16);
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.035) 0%, rgba(99, 179, 237, 0.04) 100%);
+  border-color: rgba(99, 179, 237, 0.12);
 }
 
 #why-sorana {
-  background: linear-gradient(135deg, rgba(237, 137, 54, 0.05) 0%, rgba(245, 158, 11, 0.04) 100%);
-  border-color: rgba(246, 173, 85, 0.16);
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.035) 0%, rgba(251, 211, 141, 0.03) 100%);
+  border-color: rgba(246, 173, 85, 0.12);
 }
 
 #core-features {
-  background: linear-gradient(135deg, rgba(159, 122, 234, 0.04) 0%, rgba(0, 181, 216, 0.04) 52%, rgba(245, 101, 101, 0.04) 100%);
-  border-color: rgba(159, 122, 234, 0.16);
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.03) 0%, rgba(79, 218, 218, 0.035) 52%, rgba(252, 129, 129, 0.025) 100%);
+  border-color: rgba(159, 122, 234, 0.12);
 }
 
 #ai-models {
-  background: linear-gradient(135deg, rgba(236, 201, 75, 0.05) 0%, rgba(246, 224, 94, 0.04) 100%);
-  border-color: rgba(236, 201, 75, 0.16);
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.035) 0%, rgba(160, 174, 192, 0.025) 100%);
+  border-color: rgba(246, 224, 94, 0.12);
 }
 
 #obsidian-export {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(167, 139, 250, 0.04) 100%);
-  border-color: rgba(139, 92, 246, 0.16);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.035) 0%, rgba(196, 181, 253, 0.03) 100%);
+  border-color: rgba(167, 139, 250, 0.12);
 }
 
 #setup {
-  background: linear-gradient(135deg, rgba(72, 187, 120, 0.05) 0%, rgba(113, 128, 150, 0.04) 100%);
-  border-color: rgba(72, 187, 120, 0.16);
+  background: linear-gradient(135deg, rgba(154, 230, 180, 0.035) 0%, rgba(160, 174, 192, 0.025) 100%);
+  border-color: rgba(154, 230, 180, 0.12);
 }
 
 #support {
-  background: linear-gradient(135deg, rgba(237, 100, 166, 0.05) 0%, rgba(246, 135, 179, 0.04) 100%);
-  border-color: rgba(237, 100, 166, 0.16);
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.035) 0%, rgba(255, 255, 255, 0.025) 100%);
+  border-color: rgba(246, 135, 179, 0.12);
 }
 
 #discover {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(127, 156, 245, 0.04) 100%);
-  border-color: rgba(102, 126, 234, 0.16);
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.035) 0%, rgba(99, 179, 237, 0.03) 100%);
+  border-color: rgba(127, 156, 245, 0.12);
 }
 h3 {
   font-size: 1.4em;
@@ -2460,6 +2460,72 @@ body.lightbox-open {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   border: 1px dashed var(--border);
+}
+
+/* Discover / Other Products */
+#other-products .feature-detail-group {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.04) 100%);
+  border-color: rgba(127, 156, 245, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+#other-products .feature-detail-group:hover {
+  border-color: rgba(127, 156, 245, 0.28);
+}
+
+#other-products .feature-detail-toggle {
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.12) 0%, rgba(79, 209, 197, 0.08) 100%);
+  border-color: rgba(127, 156, 245, 0.18);
+}
+
+#other-products h4.style-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(127, 156, 245, 0.18);
+  border-left: 4px solid var(--section-products);
+  color: #e2e8f0;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#other-products .product-fig,
+#other-products .store-fig {
+  margin: 14px auto 22px;
+  padding: 14px;
+  background: rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(127, 156, 245, 0.14);
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+#other-products .product-fig a,
+#other-products .store-fig a {
+  display: block;
+  line-height: 0;
+}
+
+#other-products .product-fig img,
+#other-products .store-fig img {
+  display: block;
+  max-width: min(100%, 520px);
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(168, 216, 234, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+#other-products .download-buttons {
+  margin: 12px 0 6px;
+  gap: 10px;
 }
 
 /* Responsive adjustments */
