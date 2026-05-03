@@ -115,6 +115,32 @@ To use file operations and web tools:
 3. Right-click on the agent title and select "Chat"
 4. Interact directly with files, folders, web content, and external services
 
+🚀 Export to Obsidian
+
+Connect Sorana to Obsidian — the popular knowledge base used by thousands. Export your workspace groups and files directly to Obsidian in two useful formats:
+
+📄 Export to Canvas
+Export your Sorana workspace groups and file arrangements to Obsidian's infinite Canvas. Preserve the visual organization and spatial grouping of your files, bringing your AI-workspace layout into Obsidian's visual environment.
+• Exports groups and file lists
+• Preserves your workspace organization
+• Creates standard Obsidian Canvas files
+• Works with any Obsidian vault
+
+🕸️ Export to Graph View
+Generate a knowledge graph from your workspace file structure and groupings. Visualize how your files and projects relate to each other in Obsidian's interactive Graph View.
+• Shows file relationships and groupings
+• Based on your workspace organization
+• Creates standard Markdown with links
+• Compatible with Obsidian Graph View
+
+Why this matters:
+Obsidian is one of the most popular knowledge management tools, with a massive community. By exporting to Obsidian, you can:
+✅ Leverage your existing Obsidian vault — integrate Sorana's AI workspace into your established knowledge base
+✅ Use Obsidian's powerful plugins — Dataview, Templater, Excalidraw, and hundreds more
+✅ Sync across all your devices via Obsidian Sync, Git, or cloud storage
+✅ Share with the Obsidian community — fully compatible with the entire ecosystem
+✅ Never lock-in — your data remains in standard Markdown files you own
+
 🔗 Connecting Agents
 
 To create agent pipelines:
@@ -137,8 +163,8 @@ Note: Sorana Community Edition includes all core features. Gmail automation is s
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.36
-🔢 MD5 Checksum (.exe): e04ccb2a9880f8fd31ee70bbf57ed80b
+🔹 Latest version: Sorana.exe v1.0.37
+🔢 MD5 Checksum (.exe): 553f38ebcb6358bf028dd55a8d6bab66
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
