@@ -1,6 +1,6 @@
 📋 Changelog 📋
 
-📅 Mai 3, 2026 — Version 1.0.37
+📅 Mai 4, 2026 — Version 1.0.37
 
 🐛 feat: Export To Obsidian Canvas
 
@@ -8,7 +8,7 @@
 
 🐛 feat: Sorting in all Treeview
 
-🐛 feat: Recursive Scan Files and Folder 
+🐛 feat: Recursive Scan Files and Folder
 
 🐛 feat: UI Polish
 
