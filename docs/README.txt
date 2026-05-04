@@ -149,22 +149,11 @@ To create agent pipelines:
 ⚙️ In the child Agent configuration, enable 'Auto' (orchestration mode) and 'Passthrough' (pass documents)
 🤝 This creates a pipeline where agents collaborate on complex tasks
 
-🆚 How Sorana Compares 🆚
-
-• Visual Workspace: ✅ 2D Canvas (Your OS is the interface) | ❌ Chat-box only | ❌ Chat-box only
-• Long-Term Memory: ✅ Proactive & Extracted (It knows your projects) | ⚠️ Black box / Session-based | ❌ None
-• Context Efficiency: ✅ Auto-Compacting (>90% token savings) | ⚠️ Hidden costs & limits | ❌ Manual management
-• RAG (Documents): ✅ Adaptive 4-Tier (Embeddings + BM25 + Keyword) | ⚠️ Black box (Unknown chunking) | ⚠️ Basic vector only
-• File & Web Automation: ✅ Built-in MCP Server (It operates files & web) | ❌ Limited / Requires Plugins | ⚠️ Basic / Community tools
-• Data Privacy: ✅ 100% Local Capable (Runs offline, no tracking) | ❌ Cloud stored & analyzed | ✅ Local
-• Pricing: ✅ Free & Portable | ❌ $20+/month | ✅ Free
-
-Note: Sorana Community Edition includes all core features. Gmail automation is slightly limited.
 
 📥 Downloads 📥
 
 🔹 Latest version: Sorana.exe v1.0.37
-🔢 MD5 Checksum (.exe): 553f38ebcb6358bf028dd55a8d6bab66
+🔢 MD5 Checksum (.exe): 2b1ffa10efe20d6b93e95034d4081e6d
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
