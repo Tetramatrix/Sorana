@@ -1,5 +1,13 @@
 📋 Changelog 📋
 
+📅 Mai 5, 2026 — Version 1.0.38
+
+🐛 feat: Advanced RAG and Prompt stats
+
+🐛 Bugfix: Longterm Memory (RAG Retrieval) full document context fix
+
+🐛 Bugfix: Chat First Message Formatting Fix
+
 📅 Mai 4, 2026 — Version 1.0.37
 
 🐛 feat: Export To Obsidian Canvas
