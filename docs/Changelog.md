@@ -1,5 +1,15 @@
 📋 Changelog 📋
 
+📅 Mai 6, 2026 — Version 1.0.39
+
+🐛 fix: add memory entity classification fix for companies
+
+🐛 fix: Fix for RAG Query Builder - Tokenization Inconsistency
+
+🐛 refactor: improve RAG query strategy and add logging for fallback mechanism
+
+🐛 refactor: Compactor "Chat not found" Fix
+
 📅 Mai 5, 2026 — Version 1.0.38
 
 🐛 feat: Advanced RAG and Prompt stats

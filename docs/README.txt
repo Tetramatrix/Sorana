@@ -152,8 +152,8 @@ To create agent pipelines:
 
 📥 Downloads 📥
 
-🔹 Latest version: Sorana.exe v1.0.38
-🔢 MD5 Checksum (.exe): 0dbe4647ad813609137197d7c7fd1f73
+🔹 Latest version: Sorana.exe v1.0.39
+🔢 MD5 Checksum (.exe): 0da93ee24bac5b75b478cd3781186cae
 🌐 Download: http://tetramatrix.github.io/Sorana
 🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
 💬 Discord: https://discord.gg/4QkQSfSATF
