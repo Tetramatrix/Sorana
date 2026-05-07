@@ -1,0 +1,202 @@
+🚀 Sorana - The AI Workspace That Actually Remembers You 🚀
+
+Stop talking to strangers. Sorana is a visual AI workspace that replaces amnesiac chat boxes with a persistent, spatial 2D canvas. It semantically arranges your files, automates tasks via an MCP server, and processes documents with OCR.
+
+Powered by a 4-tier memory system (Embeddings + BM25 + Keywords + Full Text), Sorana extracts facts and personas from your chats. It proactively greets you with project context, making answers sharper over time while auto-compacting history to save >90% on tokens. Run models 100% locally or connect to the cloud.
+
+✨ Inspiration ✨
+
+We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this—moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.
+
+💡 What Sorana Solves 💡
+
+• The "Amnesia" Problem → AI forgets you after every session. Sorana extracts facts and preferences automatically, proactively greeting you with project context.
+• "Where did I save that file?" → Drag folders to a 2D canvas. Sorana semantically groups files by topic, giving you a clean visual workspace.
+• Chatting is disconnected from doing → Built-in MCP Server automates file operations (create, move, edit, delete) directly through conversation.
+• Token Bloat → Long chats get expensive and slow. Sorana's memory compaction boils history down to essentials, saving >90% of tokens.
+• "Does the AI actually know my project?" → Adaptive 4-tier document search (Semantic + BM25 + Keyword + Full Text) ensures perfect retrieval without indexing your whole hard drive.
+• Scanned PDFs are blind to AI → Integrated OCR extracts text, making images and scans fully searchable.
+• Cloud Privacy Risks → Data goes to third parties. Sorana runs AI models locally—your files never leave your machine.
+
+🔑 Features in Detail 🔑
+
+📂 The Visual Workspace — Set the Stage for AI
+Problem: Navigating nested folders hides your data.
+Solution: AI maps your files onto a 2D canvas by topic and relationship. You set the boundaries by choosing the folder, and the AI organizes the chaos. Visually locate files by what they're about, not where they're saved.
+
+🧠 AI Memory That Learns (The 4-Tier System)
+Problem: AI starts from scratch every session. 
+Solution: Sorana automatically extracts facts, skills, preferences, and persona data from every conversation. It uses a 4-tier adaptive search (Semantic → BM25 → Keyword → Full Text) to instantly recall past project details, allowing the AI to proactively suggest next steps rather than waiting for instructions.
+
+⚡ Auto-Compaction (>90% Token Savings)
+Problem: Long conversations become expensive and slow. 
+Solution: Old conversations are automatically summarized and compacted. Full project context is preserved at >90% fewer tokens, making the system incredibly efficient for long-term iterative work.
+
+💬 Chat with Documents & The Web
+Problem: Research means opening tabs, comparing, and manual reading.
+Solution: Chat directly with your files (PDFs, code, text). Built-in web tools give your AI direct access to fetch content, scrape pages, and extract data. One query → complete result saved locally.
+
+📁 File Automation (Built-in MCP Server)
+Problem: Repetitive file tasks require manual clicking.
+Solution: Automate operations through natural language. Tell the AI: "Create a folder called 'Project_X', move report.docx there, and summarize it" — done in one message.
+
+👁️ Vision / Image Analysis
+Problem: Scans, diagrams, and screenshots are "dead data" to most file managers.
+Solution: Analyze images and documents visually with local AI. Ask questions about a diagram, extract text from a photo, or add image analysis directly to your 4-tier document index so it becomes searchable later.
+
+📧 Gmail Integration (MCP Server)
+Problem: Email management traps you in the browser UI.
+Solution: Agentic Gmail control through chat. Tell the AI: "Find all invoices from 2024 and archive them to disk." Export directly to JSON, EML, or MBOX without relying on Google Takeout.
+
+🔒 Local AI Models (Full Privacy)
+Problem: Cloud AI forces you to hand over your private files.
+Solution: 100% Local Inference. Connect to Lemonade, Ollama, Llama.cpp, or LM Studio. Your files, memory, and chat history never leave your computer. (Cloud APIs like OpenAI/Mistral are supported if you choose to use them).
+
+🎯 Token-Efficient Routing
+Problem: "Dumb" AI loads your entire chat history for every simple question, wasting time and API costs.
+Solution: Sorana uses Intent Classification to route queries smartly. It only pulls from the memory tiers or document index if the question demands it, keeping responses lightning-fast.
+
+🌍 Portable & Multi-Language
+Problem: You switch PCs and lose your workspace setup.
+Solution: Sorana is fully portable. Extract it to a USB drive, and your entire workspace, 4-tier memory, and AI configuration travels with you.
+
+📦 Portable
+
+The application is portable — extract anywhere, run from USB, keeps data under your control. All data stored in a single .sorana/ folder. Existing installs migrate automatically.
+
+🚀 Quick Start 🚀
+
+📥 Download the portable archive, extract anywhere, and run Sorana.exe.
+
+💻 System Requirements 💻
+
+🖥️ Operating System: Windows 11 (64-bit)
+🤖 AI Support: Built-in models or on-prem/remote AI services
+💾 RAM: Minimum 4 GB (8 GB+ recommended for larger AI models)
+💽 Storage: Minimum 2 GB (application + model)
+🔑 Permissions: Standard user account
+
+🤖 AI Model Hardware Requirements:
+  • Built-in Models: Range from 1B parameter (806MB) to 20B parameter (8-16GB)
+  • Recommended 8B Models (e.g., Llama 3.1 8b Instruct): Minimum 8 GB RAM or 4 GB VRAM for smooth operation
+  • Hardware Requirements Increase with Model Size: Larger models with more parameters require higher specifications
+  • Cloud Models: No local hardware requirements (requires internet connection)
+
+⚙️ Installation & Setup ⚙️
+
+🌐 Website: http://tetramatrix.github.io/Sorana
+💬 Discord: https://discord.gg/4QkQSfSATF
+
+🎉 Free Tier APIs Available! 🎉
+
+Just add your own API keys for Deepseek, Mistral, Nvidia, Gemini, or OpenRouter free tiers.
+
+🤖 AI Model Configuration 🤖
+
+🧠 Built-in Models: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.
+
+⚡ Performance Notes: For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
+
+⚠️ IMPORTANT HARDWARE NOTE: Running larger 8B parameter models locally requires sufficient hardware - ideally 16 GB RAM or 8 GB VRAM - to function smoothly. If hardware is limited, the app includes a smaller portable model (which works fully offline but may classify complex files as "Miscellaneous") or allows connection to cloud-based LLMs for high accuracy without the local hardware cost.
+
+📄 OCR Requirements for PDFs with Images
+
+To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH.
+
+📥 Download Tesseract from: https://github.com/tesseract-ocr/tesseract
+
+🤖 Using MCP Servers
+
+Sorana includes a visual MCP Manager — enable/disable servers, configure settings, and monitor connection health without editing config files.
+
+To use file operations and web tools:
+1. Open MCP Manager to configure and enable servers
+2. Create an agent in your workspace
+3. Right-click on the agent title and select "Chat"
+4. Interact directly with files, folders, web content, and external services
+
+🚀 Export to Obsidian
+
+Connect Sorana to Obsidian — the popular knowledge base used by thousands. Export your workspace groups and files directly to Obsidian in two useful formats:
+
+📄 Export to Canvas
+Export your Sorana workspace groups and file arrangements to Obsidian's infinite Canvas. Preserve the visual organization and spatial grouping of your files, bringing your AI-workspace layout into Obsidian's visual environment.
+• Exports groups and file lists
+• Preserves your workspace organization
+• Creates standard Obsidian Canvas files
+• Works with any Obsidian vault
+
+🕸️ Export to Graph View
+Generate a knowledge graph from your workspace file structure and groupings. Visualize how your files and projects relate to each other in Obsidian's interactive Graph View.
+• Shows file relationships and groupings
+• Based on your workspace organization
+• Creates standard Markdown with links
+• Compatible with Obsidian Graph View
+
+Why this matters:
+Obsidian is one of the most popular knowledge management tools, with a massive community. By exporting to Obsidian, you can:
+✅ Leverage your existing Obsidian vault — integrate Sorana's AI workspace into your established knowledge base
+✅ Use Obsidian's powerful plugins — Dataview, Templater, Excalidraw, and hundreds more
+✅ Sync across all your devices via Obsidian Sync, Git, or cloud storage
+✅ Share with the Obsidian community — fully compatible with the entire ecosystem
+✅ Never lock-in — your data remains in standard Markdown files you own
+
+🔗 Connecting Agents
+
+To create agent pipelines:
+🔘 Hold CTRL+ALT and click on an Agent title to get a green arrow
+🔗 Point the green arrow to the parent agent to establish the connection
+⚙️ In the child Agent configuration, enable 'Auto' (orchestration mode) and 'Passthrough' (pass documents)
+🤝 This creates a pipeline where agents collaborate on complex tasks
+
+
+📥 Downloads 📥
+
+🔹 Latest version: Sorana.exe v1.0.39
+🔢 MD5 Checksum (.exe): 0da93ee24bac5b75b478cd3781186cae
+🌐 Download: http://tetramatrix.github.io/Sorana
+🏪 Microsoft Store: https://apps.microsoft.com/store/detail/9N8C43PZC1RN
+💬 Discord: https://discord.gg/4QkQSfSATF
+
+
+
+
+
+🧩 Discover our other Tools and Games:
+
+🚀 Spaceship! 🚀
+
+🎮 Retro Arcade 2d side-scroller bullet-hell shmup game: Spaceship
+
+🌐 https://tetramatrix.github.io/spaceship/
+🎮 https://www.indiedb.com/games/new-spaceship
+🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
+💬 Discord: https://discord.gg/4QkQSfSATF
+
+🔧 RyzenZPilot! 🔧
+
+💻 RyzenZPilot - AMD Ryzen Power Management Tool
+
+RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
+It allows users to adjust CPU performance, power limits, and thermal configurations
+for optimal performance and efficiency.
+
+🌐 Website: http://tetramatrix.github.io/RyzenZPilot
+💬 Discord: https://discord.gg/4QkQSfSATF
+
+🖥️ Aicono - AI intelligent desktop icon autopilot 🖥️
+
+Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and can operate fully offline via manual JSON configuration when AI services are unavailable.
+
+🌐 Website: http://tetramatrix.github.io/Aicono
+📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
+🏪 Microsoft Store: https://apps.microsoft.com/detail/xp8lnkj7h4b1ws
+💻 Chip: https://www.chip.de/downloads/Aicono_186527264.html
+💬 Discord: https://discord.gg/4QkQSfSATF
+
+🧩 TabNeuron - AI spatial tab manager & research workspace 🧩
+
+TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infinite 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.
+
+🌐 Website: http://tetramatrix.github.io/TabNeuron
+💬 Discord: https://discord.gg/4QkQSfSATF
