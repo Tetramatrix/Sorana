@@ -4,7 +4,7 @@
 
 🐛 fix: add memory entity classification fix for companies
 
-🐛 fix: Fix for RAG Query Builder - Tokenization Inconsistency
+🐛 fix: RAG Query Builder - Tokenization Inconsistency
 
 🐛 refactor: improve RAG query strategy and add logging for fallback mechanism
 
