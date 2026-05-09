@@ -99,10 +99,10 @@ No installation. Unzip anywhere, run from a USB drive, take your entire workspac
 4. **Open a folder** as your workspace via *Open Workspace*
 5. **Select an AI model** in *Model Manager* (built-in offline model included)
 
-Latest: `Sorana.exe v1.0.39`
-MD5: `0da93ee24bac5b75b478cd3781186cae`
+Latest: `Sorana.exe v1.0.40`
+MD5: `54c06288175ce736edce8a3e8a9fb3ad`
 
-📥 [Download (Portable)](https://github.com/Tetramatrix/Sorana/raw/refs/heads/main/docs/Sorana.exe)
+📥 [Download (Portable)](tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
 🏪 [Microsoft Store](https://apps.microsoft.com/store/detail/9N8C43PZC1RN)
 
 ---

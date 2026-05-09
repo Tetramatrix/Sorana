@@ -1,0 +1,4346 @@
+
+====================================================================================================
+ FILE: index.html
+ PATH: D:\Benutzer\github\Sorana\docs\index.html
+====================================================================================================
+
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Sorana – Your Personal AI That Actually Knows You</title>
+    <meta name="description" content="Sorana is your personal AI knowledge workspace, it remembers your projects, learns your preferences, and finds any file or note instantly. Like Obsidian and Notion, but with an AI that truly knows you. Run fully offline on Windows.">
+    <meta name="keywords" content="Personal Knowledge Management, PKM, Personal AI Assistant, AI Workspace, Second Brain, Knowledge Base, Chat with Documents, Local AI, Private AI, Obsidian alternative, Notion alternative, AI memory, offline AI, Windows AI">
+    <meta name="author" content="Tetramatrix">
+    <meta property="og:title" content="Sorana – Your Personal AI That Actually Knows You">
+    <meta property="og:description" content="Sorana is your personal AI knowledge workspace, it remembers your projects, learns your preferences, and finds any file or note instantly. Like Obsidian and Notion, but with an AI that truly knows you. Run fully offline on Windows.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Sorana_cbfHZaRAyM.png">
+
+    <!-- Google Ads (using template IDs) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+		<div id="api-notice" style="position: fixed; top: 0; left: 0; right: 0; background: #00ff00; color: #ff00ff; text-align: center; padding: 10px; z-index: 1000; font-weight: bold;">🎉 Free to use! Run AI fully offline or add free API keys for NVIDIA, Gemini, Mistral, Deepseek, or OpenRouter. 🎉</div>
+
+    <aside class="left">
+        <nav class="fixed-nav">
+            <!-- Google Ads - Left Sidebar -->
+            <!-- Ad code removed for clarity -->
+        </nav>
+    </aside>
+
+    <aside class="right">
+        <!-- Google Ads - Right Sidebar -->
+        <!-- Ad code removed for clarity -->
+    </aside>
+
+    <main class="wikidoc">
+        <header class="page-header">
+            <h1>Sorana</h1>
+            <h3 data-no-toggle="true">Your Personal AI That Actually Knows You</h3>
+            <figure class="logo-container">
+                <img src="logo_small.png" alt="Sorana Logo" class="logo">
+            </figure>
+        </header>
+
+    <!-- Horizontal Navigation Bar -->
+    <nav class="horizontal-toc-nav">
+        <ul>
+            <li><a href="#overview-h2">Overview</a></li>
+            <li><a href="#why-sorana-h2">Why Sorana</a></li>
+            <li><a href="#core-features-h2">Core Features</a></li>
+            <li><a href="#ai-models-h2">AI &amp; Models</a></li>
+            <li><a href="#obsidian-export-h2">Obsidian Export</a></li>
+            <li><a href="#setup-h2">Setup</a></li>
+            <li><a href="#support-h2">Support</a></li>
+            <li><a href="#discover-h2">Discover</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overview Section -->
+    <h2 id="overview-h2">Overview, Your Knowledge, Your AI, Your Rules</h2>
+    <section class="overview-section" id="overview">
+    <section class="inspiration-section" id="inspiration">
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            
+            <p>We got tired of re-explaining ourselves to AI every single day. Our notes were in Obsidian, our tasks scattered across folders, and every time we opened a new chat, the AI had forgotten everything. We wanted a workspace that thinks the way we do: through connections, context, and accumulated knowledge. So we built Sorana, a personal AI that learns your projects, remembers your preferences, and makes your knowledge actually work for you.</p>
+        </div>
+    </section>
+
+ 		<h3 id="what-is-sorana-h2">About Sorana</h3>
+    <section class="intro-section" id="what-is-sorana">
+
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            <p><strong>Sorana is your personal AI knowledge workspace, a second brain that actually acts.</strong> Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. Visualise your entire knowledge base on a spatial 2D canvas (like Obsidian Canvas, but AI-powered), chat with any document in plain language, and let your AI handle repetitive tasks, organising files, researching topics, managing emails, all without leaving your workspace. Everything runs on your machine. Your data stays yours.</p>
+        </div>
+
+        <!-- Video Section -->
+            <div class="responsive-iframe-container">
+                <iframe src="https://www.youtube.com/embed/IItG9BwXkqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption"><em>See Sorana in action: spatial knowledge canvas, persistent AI memory, and document chat, all running privately on your Windows machine.</em></p>
+  </section>
+    </section>
+  
+        <!-- Google Ads - Top Banner -->
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6449563648591184"
+             data-ad-slot="8910195152"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        -->
+
+        <!-- Download Section -->
+        <!--
+        <section class="download-section" id="download-section">
+            <div class="cta-box">
+                <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-details')">⬇️</span>
+                <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-sorana')">⬆️</span>
+                <h3>Download Sorana</h3>
+                <p>Get started with your intelligent workspace.</p>
+
+                <div class="download-buttons">
+                    <a href="https://github.com/Tetramatrix/Sorana/raw/refs/heads/main/docs/Sorana.exe" class="btn btn-primary">Download (Portable)</a>
+                    <a href="README.md" class="btn btn-primary">Readme</a>
+                </div>
+
+              <pre class="code-block-md5"><code>
+        				$ md5sum.exe Sorana.exe v1.0.10 TODO_HASH
+        			</code></pre>
+        			
+                <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%"/></a>
+            </div>
+        </section>
+				-->
+				
+				<h2 id="why-sorana-h2">💡 Why Sorana, Because Your AI Should Know You</h2>
+    <section class="why-sorana-section" id="why-sorana">
+        <section class="feature-details-section" id="feature-details">
+
+            <!-- 1. The "Amnesia" Problem -->
+            <div class="cta-box feature-detail-group">
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 🧠 You're Tired of Re-Explaining Yourself Every Day
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                 	<div class="cta-box feature-detail-group">
+                    <p><strong>The problem:</strong> Every AI chat starts from zero. You paste in background context, re-explain your project, re-state your preferences, again and again. It's exhausting and breaks your flow.</p>
+                    <p><strong>How Sorana fixes it:</strong> Sorana quietly learns from every conversation, your projects, your preferences, your writing style. Next time you open it, it greets you with exactly where you left off. No setup. No copy-pasting. Just continuity.</p>
+                     <ul>
+                        <li><strong>Proactive context:</strong> Sorana opens knowing your active project and recent conversations, like a colleague who was there yesterday, not a stranger you just met.</li>
+                         <li><strong>Persistent personal profile:</strong> Your preferences, skills, and working style are continuously captured and shared across your entire workspace, building a knowledge profile that gets smarter over time.</li>
+                  </ul>
+                  
+                     <figure class="chatbot-figure">
+                        <img src="chat.png" alt="Sorana Agent Chat" class="chatbot-screenshot">
+                        <figcaption>Agent Chat, Full access to files, emails, documents and the web. Create, edit, search, fix settings and code, all through conversation. Shows token usage, tok/sec and TTFT for 🍋 Lemonade backends.</figcaption>
+                    </figure>
+                   </div>
+    				</div>
+ 
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 🔌 Your AI Talks, But Can't Actually Do Anything
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                 	<div class="cta-box feature-detail-group">
+                    <p><strong>The problem:</strong> Your AI can give advice, but it can't act on it. You still have to open folders, move files, copy text, and switch between apps. The gap between thinking and doing costs hours every week.</p>
+                    <p><strong>How Sorana fixes it:</strong> Just tell Sorana what you need done, in plain language. It organises your files, searches your documents, fetches web content, and manages your emails, all from a single conversation. Your AI becomes an operator, not just an advisor.</p>
+                    <ul>
+                        <li><strong>No-code setup:</strong> A visual manager lets you connect services like Google Drive, GitHub, and Gmail, no config files to edit.</li>
+                        <li><strong>File Operations:</strong> read, write, move, search, edit, all through conversation.</li>
+                        <li><strong>Web Tools:</strong> Fetch, scrape, search, extract, AI has direct web access.</li>
+                        <li><strong>Gmail:</strong> Full email control, list, send, label, trash, archive (JSON/EML/MBOX).</li>
+                        <li><strong>External Servers:</strong> Connect Google Drive, GitHub, PostgreSQL, custom tools.</li>
+                    </ul>
+                   </div>
+                </div>
+                
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 🔒 Your Knowledge Shouldn't Live on Someone Else's Server
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box feature-detail-group">
+                    <p><strong>The problem:</strong> Every file you attach to ChatGPT or Claude leaves your machine. Your research notes, client documents, personal writing, all stored on a cloud server you don't control.</p>
+                    <p><strong>How Sorana fixes it:</strong> Sorana runs AI models entirely on your computer. Your notes, files, and conversations never leave your machine. The power of a personal AI assistant, with the privacy of a local notebook.</p>
+                    <ul>
+                        <li><strong>Local:</strong> 🍋 Lemonade (NPU acceleration), Ollama, Llama.cpp, LM Studio, nothing leaves your machine.</li>
+                        <li><strong>Cloud:</strong> OpenRouter, Deepseek, OpenAI, Mistral, NVIDIA, Gemini, Antrophic, Qwen and more, when you need power.</li>
+                        <li><strong>Model Manager:</strong> 2-pane view (🍋 Lemonade only), chat model + embedding model simultaneously.</li>
+                        <li><strong>Portable:</strong> Runs from USB, extract anywhere, data stays under your control.</li>
+                    </ul>
+                   </div>
+                </div>
+
+
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 💸 Long Conversations Become Slow and Expensive
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                 	<div class="cta-box feature-detail-group">
+                    <p><strong>The problem:</strong> The longer a conversation grows, the slower and more expensive it becomes. After weeks of deep work, your AI crawls and the API costs spiral.</p>
+                    <p><strong>How Sorana fixes it:</strong> Sorana automatically compresses old conversations into tight summaries, keeping full context while cutting costs by over 90%. Long-term projects stay fast and affordable, no matter how much history you accumulate.</p>
+   									<ul>
+   											<li><strong>Auto-compaction:</strong> Old conversations are compressed into tight summaries, full context preserved, over 90% fewer tokens used.</li>
+                       <li><strong>Smart document search:</strong> Finds the right passage across all your documents using multiple strategies in parallel, so it always retrieves the right answer, even from large knowledge bases.</li>    
+                   </div>
+                   </ul>
+                </div>
+               
+                
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 👁️ Half Your Knowledge is Locked in PDFs and Images
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                 	<div class="cta-box feature-detail-group">
+                    <p><strong>The problem:</strong> Researchers, students, and writers often have years of scanned documents, book pages, handwritten notes, and screenshots, dead data that AI simply can't see.</p>
+                    <p><strong>How Sorana fixes it:</strong> Sorana reads scanned PDFs, images, and screenshots using built-in OCR and vision AI. Once processed, your entire archive becomes searchable and chattable, not just the digital parts.</p>
+                    <ul>
+                        <li><strong>Chat Analysis:</strong> Select screen region or upload image, ask questions, AI describes content, extracts text, explains diagrams.</li>
+                        <li><strong>RAG Integration:</strong> Add image analysis to your document index for future searches. Vision results become searchable documents.</li>
+                        <li><strong>Supported Formats:</strong> JPEG, PNG, GIF, WEBP, BMP</li>
+                        <li><strong>Local Models:</strong> Requires vision-capable model (Qwen3.5, Gemma 4, Llama 4 Scout, etc.). Cloud vision coming soon.</li>
+                    </ul>
+                  </div>
+                   </div>
+                   
+                
+                            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 📂 "Where Did I Save That?", Find Anything by Topic, Instantly
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                 	<div class="cta-box feature-detail-group">
+                 		
+                 		<p><strong>The problem:</strong> Your knowledge is scattered. Notes in one app, files in another, research in a third. You spend more time searching than actually thinking.</p>
+                    <ul>
+                        <li><strong>Topic-based visual map:</strong> AI arranges your files on a 2D canvas by what they're about, not where they're saved, like an Obsidian Graph View you can actually navigate and act on.</li>
+                        <li><strong>Canvas Editor:</strong> Drag and drop, rename, resize, full visual control over your workspace canvas.</li>
+                        <li><strong>Mind Maps:</strong> Generate visual representations of folder hierarchies to reveal hidden relationships.</li>
+                    </ul>
+                    
+  
+                   </div>
+                </div>
+
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 🆚 How Sorana Compares
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box feature-detail-group">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>What you get</th>
+                                <th>Sorana ✨</th>
+                                <th>Obsidian / Notion</th>
+                                <th>ChatGPT / Claude</th>
+                                <th>OpenWebUI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>AI remembers you between sessions</td><td>✅ <strong>Automatic, always-on</strong></td><td>❌ Manual notes only</td><td>⚠️ Limited / paid add-on</td><td>❌ None</td></tr>
+                            <tr><td>Visual knowledge canvas</td><td>✅ <strong>AI-organised 2D canvas</strong></td><td>✅ Manual (Obsidian Canvas)</td><td>❌ Chat-box only</td><td>❌ Chat-box only</td></tr>
+                            <tr><td>Chat with your documents</td><td>✅ <strong>Any file, any format</strong></td><td>⚠️ Plugin required</td><td>⚠️ Upload per session</td><td>⚠️ Basic only</td></tr>
+                            <tr><td>AI takes action on files &amp; web</td><td>✅ <strong>Built-in automation</strong></td><td>❌ View &amp; edit only</td><td>❌ Advice only</td><td>⚠️ Community tools</td></tr>
+                            <tr><td>Runs 100% offline &amp; private</td><td>✅ <strong>Your machine, your data</strong></td><td>✅ Notes are local</td><td>❌ Cloud only</td><td>✅ Local</td></tr>
+                            <tr><td>Stays fast over months of use</td><td>✅ <strong>Auto-compaction built-in</strong></td><td>✅ (no AI context)</td><td>⚠️ Gets slow &amp; costly</td><td>❌ Manual management</td></tr>
+                            <tr><td>Free to use</td><td>✅ <strong>Free &amp; portable</strong></td><td>⚠️ Free + paid tiers</td><td>❌ $20+/month</td><td>✅ Free</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="table-note">Note: Sorana Community Edition provides the full core experience. Advanced Gmail automation (bulk processing) is tailored for the Studio & Pro version.</p>
+                  </div>
+                </div>
+            </div>
+
+        <figure class="screenshot-figure">
+        <img src="Agent_Orchestration.png" alt="Sorana Visual Workspace Screenshot" class="sorana-screenshot">
+        <figcaption>Agent Orchestration: Build and connect agents visually</figcaption>
+    </figure>
+
+        <figure class="screenshot-figure">
+        <img src="mindmap.png" alt="Sorana Mind Map Screenshot" class="sorana-screenshot">
+        <figcaption>Mind Map Generation: Visualize folder hierarchies and reveal hidden data relationships</figcaption>
+    </figure>
+	</section>
+    </section>
+		<h2 id="core-features-h2">Core Features</h2>
+    <section class="core-features-section" id="core-features">
+		<h3 id="ai-memory-rag-h2">AI Memory</h3>
+    <section class="ai-memory-rag-section" id="ai-memory-rag">
+
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            <p>Think of Sorana's memory as a personal knowledge profile that grows with every conversation. It captures what matters, your projects, your writing style, your preferences, so your AI gets sharper over time, not blunter. Like a second brain that never forgets, even after months away.</p>
+
+            <div class="cta-box feature-detail-group">
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> A Knowledge Profile That Grows With You
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box feature-detail-group">
+                    <p><strong>The gap Sorana fills:</strong> Tools like Obsidian and Notion are brilliant for storing knowledge, but they're passive. They don't learn from you, and they can't answer questions. Sorana bridges that gap: it builds a living profile from your conversations and makes that knowledge instantly queryable.</p>
+                    <ul>
+                <li><strong>Active Conversation</strong>, Your current chat, always in context</li>
+                <li><strong>Auto-Compaction</strong>, Long chats compressed into summaries (>90% token reduction). Context stays, cost drops.</li>
+                <li><strong>Observations</strong>, Facts, preferences, and skills auto-extracted from every message</li>
+                <li><strong>Profiles</strong>, Observations consolidated into entity summaries (you, companies, topics), 61% fewer tokens</li>
+            </ul>
+            
+            
+            <figure class="screenshot-figure">
+                <img src="chat-sidebar.png" alt="Chat History Sidebar Interface" class="sorana-screenshot">
+                <figcaption>Chat History Sidebar: Access all past conversations instantly</figcaption>
+            </figure>
+
+            <figure class="screenshot-figure">
+                <img src="chat_manager.png" alt="Chat Manager Interface" class="sorana-screenshot">
+                <figcaption>Chat Manager: View, search, and manage conversation history</figcaption>
+            </figure>
+            
+          </div>
+                </div>
+
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> How the Memory System Works
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box feature-detail-group">
+                    <ul>
+                <li><strong>Automatic capture:</strong> Every conversation is quietly analysed, facts, preferences, and project details saved without any manual effort</li>
+                <li><strong>Smart retrieval:</strong> Your personal profile loads first for fast answers; detailed memories retrieved as fallback, always precise</li>
+                <li><strong>Deep document search:</strong> Finds the right passage across your entire archive, searches by meaning, keywords, and full text, entirely offline</li>
+                <li><strong>Conversation compaction:</strong> Months of history compressed to essentials, 17,000 tokens → 1,200, full context preserved</li>
+                <li><strong>Cross-Agent Memory:</strong> Share memories between agents, import/export, global memories</li>
+            </ul>
+
+            <figure class="screenshot-figure">
+                <img src="memories.png" alt="Long-Term Person Memory Management Interface" class="sorana-screenshot">
+                <figcaption>Long-Term Memory: Automatically extracted user facts, preferences, and persona data</figcaption>
+            </figure>
+
+            <figure class="screenshot-figure">
+                <img src="global_memories.png" alt="Global Memory Storage Interface" class="sorana-screenshot">
+                <figcaption>Global Memory Storage: A personal AI that learns, memories shared across all agents</figcaption>
+            </figure>
+                </div>
+						</div>
+						
+
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> What This Means for Your Daily Work
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                  <div class="cta-box feature-detail-group">
+                    <ul>
+                <li><strong>Faster, cheaper answers:</strong> Only the most relevant context is loaded per query, stays quick and affordable even after years of accumulated knowledge.</li>
+                <li><strong>Live Session Stats:</strong> Real-time performance metrics, tokens/sec, time-to-first-token, input/output tokens, visible in every chat. <span class="lemonade-only">(🍋 Lemonade only)</span></li>
+                <li><strong>Unified knowledge base:</strong> Everything you've discussed across all projects feeds into one growing personal knowledge profile, shared across all your agents.</li>
+                <li><strong>Memory Import/Export:</strong> Transfer memories between projects, backup and share knowledge.</li>
+                <li><strong>Configurable Compaction:</strong> Control when and how conversations are compressed, perfect thresholds for your workflow.</li>
+                <li><strong>NPU Acceleration:</strong> 🍋 Lemonade with FastFlowLM for native AMD Ryzen NPU acceleration. Falls back to text-based retrieval if no NPU available.</li>
+                <li><strong>Multi-Language:</strong> English + German for memory routing, 25+ languages for tool intents, 15+ languages for document retrieval, all auto-detected.</li>
+            </ul>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+		<h3 id="mcp-section-h2">MCP Server & Integrations</h3>
+    <section class="mcp-section" id="mcp-section">
+
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            <p><strong>Your AI should do, not just advise.</strong> Tools like Obsidian and Notion help you organise knowledge, but they can't act on it. Sorana's built-in automation lets you give plain-language instructions and watch them execute: move that file, summarise this folder, fetch that article, archive those emails. No app switching. No copy-pasting. Just results.</p>
+            <ol>
+                <li>Open MCP Manager to configure and enable servers</li>
+                <li>Connect external MCP servers if needed (Google Drive, GitHub, databases, etc.)</li>
+                <li>Create an agent in the workspace</li>
+                <li>Right-click on the agent title and select "Chat"</li>
+                <li>Interact directly with files, folders, web content, and external services</li>
+            </ol>
+
+            <div class="cta-box feature-detail-group">
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> MCP Manager
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+
+                	<div class="cta-box feature-detail-group">
+
+                    <p><strong>Simple to connect:</strong> A visual point-and-click manager lets you connect Sorana to your tools, Google Drive, GitHub, Gmail, and more, without touching a single config file. Enable what you need, disable what you don't.</p>
+
+            <figure class="screenshot-figure">
+                <img src="mcpmanager.png" alt="MCP Manager Interface" class="sorana-screenshot">
+                <figcaption>MCP Manager: Visually configure and enable MCP servers</figcaption>
+            </figure>
+						</div>
+					</div>
+
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> File Operations</h3>
+            <div class="feature-detail-content" style="display:none;">
+            <div class="cta-box feature-detail-group">
+
+            <p><strong>Talk to your file system.</strong> Instead of clicking through folders, just tell Sorana what you need. It handles the rest, creating, moving, reading, summarising, editing, through natural conversation:</p>
+            <ul>
+                <li>"List the first 10 files in the current directory" (uses list_directory)</li>
+                <li>"Search all text files in the workspace" (uses search_files)</li>
+                <li>"Read the content of document.txt to summarize its contents" (uses read_file)</li>
+                <li>"Read lines 10-20 of large_log.txt to check for errors" (uses read_file_from_line)</li>
+                <li>"Move file report.docx to archive/report_backup.docx" (uses move_file)</li>
+                <li>"Get size and creation date of config.json" (uses get_file_info)</li>
+                <li>"Edit the third paragraph of essay.txt to improve clarity" (uses edit_file)</li>
+                <li>"Write the generated report to monthly_report.txt" (uses write_file)</li>
+                <li>"Create a new folder called 'Project_X' in the workspace" (uses create_directory)</li>
+                <li>"Show available storage space and supported operations" (uses get_filesystem_info)</li>
+                <li>"Summarize document.txt and create a markdown summary document" (uses read_file + write_file)</li>
+            </ul>
+                </div>
+  				 </div>
+   
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Web Content Tools
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+          <div class="cta-box feature-detail-group">
+                    <p><strong>Research without leaving your workspace.</strong> Sorana can browse the web on your behalf, fetching articles, comparing products, extracting data, and save everything to your local knowledge base. One question, complete result, stored locally:</p>
+            <ul>
+                <li><strong>web_fetch_content:</strong> Fetch and read content from any URL</li>
+                <li><strong>web_scrape_page:</strong> Scrape full webpage content</li>
+                <li><strong>web_extract_links:</strong> Extract all links from a webpage</li>
+                <li><strong>web_search:</strong> Search the web for information</li>
+                <li><strong>web_get_metadata:</strong> Get page metadata and SEO info</li>
+                <li><strong>web_save_snapshot:</strong> Save webpage snapshots for later reference</li>
+            </ul>
+
+            <p><strong>Example queries:</strong></p>
+            <ul>
+                <li>"What's the weather in Berlin?"</li>
+                <li>"Find best wireless earbuds under 100€"</li>
+                <li>"Compare iPhone 16 vs Samsung S25"</li>
+                <li>"Check if website is down"</li>
+                <li>"Extract all product links from Amazon search"</li>
+                <li>"Fetch the latest news about AI and summarize"</li>
+                <li>"Compare prices from multiple online shops"</li>
+            </ul>
+
+            <p><strong>Combined workflows:</strong></p>
+            <ul>
+                <li>"Fetch product specs from the manufacturer website and save to a local file"</li>
+                <li>"Search for documentation, download PDFs, and organize into folders"</li>
+                <li>"Extract data from web sources, analyze with local files, and generate a report"</li>
+            </ul>
+                </div>
+   				</div>
+   
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Gmail MCP Server
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box feature-detail-group">
+                    <p><strong>Email management through conversation.</strong> Stop hunting through Gmail tabs. Tell Sorana what you need, archive invoices, find a thread, send a reply, and it handles it from within your workspace. Your email becomes part of your knowledge base. Try: <em>"Find all invoices from Client X this year and archive them to a local folder."</em></p>
+            <ul>
+                <li><strong>List</strong> emails by label, date, or search query</li>
+                <li><strong>Get</strong> individual email content with headers</li>
+                <li><strong>Send</strong> new emails directly from chat</li>
+                <li><strong>Label</strong>, add, remove, or manage email labels</li>
+                <li><strong>Trash</strong>, move emails to trash</li>
+                <li><strong>Archive</strong>, download emails to disk in JSON, EML, or MBOX format</li>
+            </ul>
+
+            <p><strong>Archive Example:</strong></p>
+            <ul>
+                <li>"Archive emails from client after 2024-01-01 before 2024-12-31 with label PROJECT_X_2024"</li>
+            </ul>
+
+            <p><strong>Why this matters:</strong> Google only allows MBOX export for entire Gmail via Google Takeout. With Sorana's MCP server, the agent archives specific emails on demand, perfect for backups, compliance, or knowledge management.</p>
+
+            <p><strong>Configuration:</strong> Easy setup with JSON config or OAuth2 token. First run triggers authorization, token is cached afterwards.</p>
+
+            <figure class="screenshot-figure">
+                <img src="mcpgmailconf.png" alt="Gmail MCP Server Configuration Interface" class="sorana-screenshot">
+                <figcaption>Gmail MCP Server Configuration: JSON or OAuth2 token-based setup</figcaption>
+            </figure>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <h2 id="obsidian-export-h2">🚀 Obsidian Export</h2>
+    <section class="obsidian-export-section" id="obsidian-export">
+
+        <div class="cta-box obsidian-highlight">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+
+            <p><strong>Already using Obsidian? Sorana is the AI layer your vault has been missing.</strong> Export your Sorana workspace directly into Obsidian, your spatial file groupings, topic relationships, and knowledge structure, in formats Obsidian natively understands. Use Sorana as your intelligent AI workspace, and keep your Obsidian vault as your permanent knowledge archive. The best of both worlds.</p>
+
+            <div class="obsidian-features-grid">
+                <div class="obsidian-feature-card">
+                    <h3>📄 Export to Canvas</h3>
+                    <p>Export your Sorana workspace groups and file arrangements to Obsidian's infinite Canvas. Preserve the visual organization and spatial grouping of your files, bringing your AI-workspace layout into Obsidian's visual environment.</p>
+                    <ul>
+                        <li>Exports groups and file lists</li>
+                        <li>Preserves your workspace organization</li>
+                        <li>Creates standard Obsidian Canvas files</li>
+                        <li>Works with any Obsidian vault</li>
+                    </ul>
+                </div>
+
+                <div class="obsidian-feature-card">
+                    <h3>🕸️ Export to Graph View</h3>
+                    <p>Generate a knowledge graph from your workspace file structure and groupings. Visualize how your files and projects relate to each other in Obsidian's interactive Graph View.</p>
+                    <ul>
+                        <li>Shows file relationships and groupings</li>
+                        <li>Based on your workspace organization</li>
+                        <li>Creates standard Markdown with links</li>
+                        <li>Compatible with Obsidian Graph View</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="obsidian-cta">
+                <p><strong>Why this matters for Obsidian users:</strong> You've already invested in your vault, your notes, plugins, and workflows. Sorana doesn't replace that. It enhances it. Add AI memory and automation to your existing knowledge base, then export the AI-organised structure back to Obsidian:</p>
+                <ul class="obsidian-benefits">
+                    <li>✅ <strong>Leverage your existing Obsidian vault</strong>, integrate Sorana's AI workspace into your established knowledge base</li>
+                    <li>✅ <strong>Use Obsidian's powerful plugins</strong>, Dataview, Templater, Excalidraw, and hundreds more</li>
+                    <li>✅ <strong>Sync across all your devices</strong> via Obsidian Sync, Git, or cloud storage</li>
+                    <li>✅ <strong>Share with the Obsidian community</strong>, your exported workspaces are compatible with the entire Obsidian ecosystem</li>
+                    <li>✅ <strong>Never lock-in</strong>, your data remains in standard Markdown files you own</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+ 		 <h3 id="ocr-section-h2">Document Processing & OCR</h3>
+    <section class="ocr-section" id="ocr-section">
+
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            <p>
+                <strong>Problem:</strong> Scanned PDFs and images are invisible to AI, no text content to search or chat with.
+            </p>
+            <p>
+                <strong>Solution:</strong> OCR extracts text from scanned documents, images, and PDFs. Once processed, documents become searchable and indexed via adaptive retrieval (semantic search → keywords → full-text fallback) so AI finds precise answers from your documents. Process documents via the context menu ('Document Overview' and 'Process Documents'), particularly valuable for PDFs and image-based documents.
+            </p>
+
+            <div class="cta-box feature-detail-group">
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> OCR Capabilities
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box feature-detail-group">
+                    <p>
+                Sorana processes various document types, extracting text so AI can work with them:
+            </p>
+            <ul>
+                <li><strong>Text PDFs:</strong> Extract text from PDF documents (supports embedded text and OCR for scanned content)</li>
+                <li><strong>Plain Text Files:</strong> Process .txt files with support for:
+                    <ul>
+                        <li>UTF-8 (recommended for full Unicode support)</li>
+                        <li>Latin-1 (ISO-8859-1) as fallback encoding</li>
+                    </ul>
+                </li>
+                <li><strong>Code Files:</strong> OCR support for source code files including:
+                    <ul>
+                        <li>Python (.py), C++ (.cpp), JavaScript (.js), Java (.java)</li>
+                        <li>C# (.cs), PHP (.php), Ruby (.rb), Go (.go)</li>
+                        <li>TypeScript (.ts), Swift (.swift), Kotlin (.kt)</li>
+                        <li>And other common programming language files in UTF-8 or Latin-1 encoding</li>
+                    </ul>
+                </li>
+                <li><strong>PDFs with Images:</strong> Built-in method for OCR processing of PDFs containing images</li>
+            </ul>
+                </div>
+  </div>
+					
+            <article class="ocr-requirements">
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Requirements for PDF Image OCR
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+       <div class="cta-box feature-detail-group">
+                    <p>
+                    To enable OCR for PDFs with images, you need to install the official Tesseract OCR engine with default settings and ensure it's available in your system PATH. Tesseract is an open-source OCR engine that provides high-quality text extraction from images.
+                </p>
+                <p>Download Tesseract from:</p>
+                <div class="external-links">
+                    <a href="https://github.com/tesseract-ocr/tesseract" target="_blank" class="btn btn-primary">Tesseract OCR GitHub</a>
+                </div>
+                
+                </div>
+             </div>
+            </article>
+
+            <article class="encoding-notes">
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Encoding Support Notes
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                   <div class="cta-box feature-detail-group">
+                    <p>
+                    The application primarily uses UTF-8 encoding for document processing and falls back to Latin-1 (ISO-8859-1) when UTF-8 decoding fails. For optimal results, we recommend using UTF-8 encoding for your documents. This ensures the best compatibility with international characters and special symbols.
+                </p>
+                </div>
+              </div>
+            </article>
+
+        </div>
+    </section>
+    </section>
+
+		<h2 id="ai-models-h2">AI & Models</h2>
+    <section class="ai-models-section" id="ai-models">
+    <section class="technical-section" id="ai-backends">
+
+            <div class="cta-box feature-detail-group">
+    
+		            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+		            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+		                    
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> AI Model Performance
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                 <div class="cta-box feature-detail-group">
+                    <p>
+                Sorana uses AI models to intelligently group files and folders based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify files perfectly, especially for less common file types. For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with cloud services.
+            		</p>
+                </div>
+								</div>
+
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> AI Integration
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box feature-detail-group">
+                    <p>Sorana supports connection to both on-prem and cloud-based AI services:</p>
+		            <ul>
+		                <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
+		                <li><strong>Local and On-Prem Services:</strong> 🍋 Lemonade (with FastFlowLM NPU), Llama.cpp, Ollama, and other self-hosted LLM solutions</li>
+		                <li><strong>Cloud Services:</strong> OpenRouter*, Deepseek*, NVIDIA*, OpenAI, Mistral*, Google Gemini*, Antrophic, Qwen and other cloud-based AI platforms</li>
+		            </ul>
+		            <sup>*Free tier available through their platform</sup>
+                </div>
+							</div>
+              
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Model Manager Split View
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box feature-detail-group">
+                    <p>The Model Manager features a split view when using <strong>🍋 Lemonade</strong> as the backend. 🍋 Lemonade supports multi-model loading, allowing both a chat model and an embedding model to run simultaneously:</p>
+	            <ul>
+	                <li><strong>Upper Pane:</strong> Chat/Completion models (for conversation and reasoning)</li>
+	                <li><strong>Bottom Pane:</strong> Embedding models (for semantic search and RAG), runs on NPU or GPU</li>
+	            </ul>
+	            <p>Embedding models power the 4-tier RAG system's Tier 1 (NPU Embeddings). Without an embedding model, the system gracefully falls back: <strong>BM25 → Keyword → Full Text</strong>. Currently, only 🍋 Lemonade supports multi-model loading. Other backends (Ollama, LM Studio, etc.) do not support loading an embedding model alongside a chat model, but the 4-tier RAG system ensures full functionality even without embeddings.</p>
+
+	            <figure class="screenshot-figure">
+	    		    <img src="modelmanager.png" alt="Sorana Model Manager Screenshot" class="sorana-screenshot">
+	    				</figure>
+                </div>
+              </div>
+
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Hardware Requirements
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                   <div class="cta-box feature-detail-group">
+                    <ul>
+		                <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (8-16GB)</li>
+		                <li><strong>Recommended 8B Models (e.g., Llama 3.1 8b Instruct):</strong> Minimum 8 GB RAM or 4 GB VRAM for smooth operation</li>
+		                <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
+		                <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
+		            </ul>
+                </div>
+              </div>
+
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Recommendation
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                   
+                   <div class="cta-box feature-detail-group">
+                    <p><strong>🍋 Lemonade</strong> For optimal local and on-prem performance with both GPU and NPU acceleration, we recommend:</p>
+                <div class="partner-buttons" style="margin-top: 10px;">
+                    <a href="https://lemonade-server.ai/" target="_blank" class="btn-partner">🍋 Lemonade</a>
+                    <a href="https://fastflowlm.com/" target="_blank" class="btn-partner-fastflow">⚡ FastFlowLM</a>
+                </div>
+        
+                <p style="font-size: 13px; margin-top: 8px; color: #ccc;">
+                    🍋 Lemonade is AMD's new high-performance AI server (C++ based) with integrated backends including Llama.cpp, Whisper, and FastFlowLM for native Ryzen NPU acceleration.
+                </p>
+
+
+          	<p>
+                <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of files - fewer files result in faster processing.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    </section>
+
+		<h2 id="setup-h2">Setup</h2>
+    <section class="setup-wrapper-section" id="setup">
+    <section class="setup-section" id="installation-setup">
+        
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            <p>Basic installation steps:</p>
+            <ol>
+                <li><strong>Download:</strong> Obtain <code>Sorana.exe</code>.</li>
+                <li><strong>Execute:</strong> Run the executable file.</li>
+                <li><strong>Configure:</strong> In <em>Model Manager</em>, select your AI model.</li>
+                <li><strong>Run:</strong> In main window click <em>Open Workspace and select a folder</em>.</li>
+            </ol>
+        </div>
+    </section>
+
+		<h3 id="system-requirements-h2">System Requirements</h3>
+    <section class="requirements-section" id="system-requirements">
+        
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            <table class="req-table">
+            <tr><th>Component</th><th>Minimum</th></tr>
+            <tr><td>OS</td><td>Windows 11 (64-bit)</td></tr>
+            <tr><td>🧠 AI Support</td><td>Built-in models or on-prem/cloud AI services</td></tr>
+            <tr><td>💾 RAM</td><td>&ge; 4 GB</td></tr>
+            <tr><td>💽 Storage</td><td>Minimum 2 GB (app + model) + .sorana/ data folder</td></tr>
+            <tr><td>⚡ Rights</td><td>Standard user</td></tr>
+        </table>
+    </section>
+
+    <!-- Final Download Section -->
+     <h3 id="final-download-h2">🚀 Claim Your Workspace</h3>
+    <section class="final-download-section">
+
+    	<div class="cta-box">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+
+            <p><strong>Your knowledge deserves an AI that actually knows it.</strong> Download Sorana today, runs fully offline, no subscription, no cloud, no blank slates. Build a personal AI workspace that grows smarter every time you use it.</p>
+
+            
+            <div class="cta-box feature-detail-group" style="margin: 1.5em 0;">
+                <h3 style="margin-bottom: 0.8em;">🎯 Perfect For</h3>
+                <ul>
+                    <li>📚 <strong>Researchers &amp; academics</strong>, chat with hundreds of papers, books, and scanned notes in one place</li>
+                    <li>✍️ <strong>Writers &amp; journalists</strong>, build a living reference library that remembers your style, sources, and ideas</li>
+                    <li>🧑‍💼 <strong>Consultants &amp; freelancers</strong>, maintain full AI context across multiple long-running client projects</li>
+                    <li>🎓 <strong>Students</strong>, turn notes, PDFs, and lecture slides into a personal knowledge base you can actually talk to</li>
+                    <li>🧠 <strong>Obsidian &amp; Notion users</strong>, add an AI layer that learns from your vault and can act on it</li>
+                    <li>🔒 <strong>Privacy-conscious professionals</strong>, full AI power with zero data leaving your machine</li>
+                </ul>
+            </div>
+
+            <div class="download-buttons">
+                <a href="https://github.com/Tetramatrix/Sorana/raw/refs/heads/main/docs/Sorana.exe" class="btn btn-primary btn-large">Download (Portable)</a>
+                <a href="README.txt" class="btn btn-primary">Readme</a>
+            </div>
+
+             <p style="font-size: 0.9em; color: #888; margin-top: 15px;">No installation required. Unzip and run. Your data stays on your machine.</p>
+
+             <code>$ md5sum.exe Sorana.exe v1.0.40 44fc4a78b34b527108664d533f12d97a</code>
+        
+            <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
+
+
+                     <h4>Featured on Softpedia:</h4>
+        <p>
+            <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" target="_blank"><img src="softpedia.png" width="200px" height="60px" alt="Get it from Softpedia" /></a>
+        </p>
+
+        
+        </div>
+    </section>
+    </section>
+    
+
+
+
+
+
+		<h2 id="support-h2">Support</h2>
+    <section class="support-wrapper-section" id="support">
+    <section class="support-section" id="support-donations">
+        
+        <div class="cta-box" id="discord-community">
+            
+            <h3>Join our Discord community</h3>
+            <div class="external-links">
+                <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Sorana Discord</a>
+            </div>
+
+            <h3>Leave a review or star the project</h3>
+            <div>
+            <a href="https://alternativeto.net/software/sorana/" target="_blank"><img src="AlternativeTo.png" width="20%" alt="The Visual AI Workspace" /></a>
+						</div>
+						
+            <h3>Support via PayPal or Bitcoin Cash</h3>
+            <div class="payment-options">
+                <div class="paypal-option">
+                    <h4>PayPal</h4>
+                    <p><a href="paypal.me/Gigamegs">paypal.me/Gigamegs</a></p>
+                    <figure class="qr-figure">
+                        <img src="qrcode.png" alt="PayPal QR Code" class="qr-code">
+                    </figure>
+                </div>
+
+                <div class="bch-option">
+                    <h4>Bitcoin Cash (BCH)</h4>
+                    <p>bitcoincash:<br/>
+                    qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv</p>
+                    <figure class="qr-figure">
+                        <img src="bch_qrcode.png" alt="Bitcoin Cash QR Code" class="qr-code">
+                    </figure>
+                </div>
+            </div>
+   
+
+        </div>
+    </section>
+    </section>
+
+		<h2 id="discover-h2">Discover</h2>
+    <section class="discover-wrapper-section" id="discover">
+    <section class="other-products-section" id="other-products">
+
+			<div class="cta-box feature-detail-group">
+
+				 <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span>New Spaceship - Retro Mini Game</h3>
+       
+        <div class="feature-detail-content" style="display:none;" id="spaceship-intro">
+           
+            <p>Retro Arcade 2d side-scroller bullet-hell shmup game</p>
+
+					<div class="cta-box feature-detail-group">
+	            <h4 class="style-box">Website</h4>
+	            <figure class="product-fig">
+	                <a href="http://tetramatrix.github.io/spaceship" target="_blank">
+	                    <img src="start.jpg" title="Retro Arcade 2d side-scroller bullet-hell shmup game" alt="Spaceship" />
+	                </a>
+	            </figure>
+	
+	
+	            <h4 class="style-box">Featured on itch.io</h4>
+	            <figure class="product-fig">
+	                <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
+	                    <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship - Retro Mini Game" />
+	                </a>
+	            </figure>
+	
+	            <h4 class="style-box">Featured on IndieDB</h4>
+	            <figure class="product-fig">
+	                <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank">
+	                    <img src="https://button.indiedb.com/popularity/medium/games/86877.png" alt="New Spaceship" />
+	                </a>
+	            </figure>
+	        </div>
+        </div>
+	
+	
+				<h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span>🧩 TabNeuron - AI Spatial Tab Manager & Research Workspace</h3>
+        <div class="feature-detail-content" style="display:none;" id="tabneuron-intro">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            
+            <p>TabNeuron breaks your browser tabs out of the tab bar and maps them onto a 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups, all from a portable desktop app that runs fully offline with a built-in model.</p>
+            <figure class="screenshot-figure">
+                <a href="http://tetramatrix.github.io/TabNeuron" target="_blank"><img src="tabneuron.png" alt="TabNeuron AI Spatial Tab Manager Interface" class="sorana-screenshot"></a>
+                <figcaption>TabNeuron: Browser tabs organized on an infinite 2D canvas with AI-powered grouping</figcaption>
+            </figure>
+
+				<div class="cta-box feature-detail-group">
+	
+             <h4 class="style-box">Website & Community</h4>
+            <div class="download-buttons">
+                <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" class="btn btn-primary">🌐 Website</a>
+                <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">💬 Discord</a>
+            </div>
+            
+            <h4 class="style-box">Featured on Microsoft Store:</h4>
+            <p>
+                <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
+            </p>
+        </div>
+</div>
+
+				<h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
+        <div class="feature-detail-content" style="display:none;" id="ryzenzpilot-intro">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            
+            <p>RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
+            It allows users to adjust CPU performance, power limits, and thermal configurations
+            for optimal performance and efficiency.</p>
+
+
+			<div class="cta-box feature-detail-group">
+	
+            <h4 class="style-box">Website</h4>
+            <figure class="product-fig">
+                <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank">
+                    <img src="RyzenZPilot_3.1.3.png" title="AMD Ryzen Power Management Tool" alt="RyzenZPilot" />
+                </a>
+            </figure>
+        </div>
+			</div>
+			
+				<h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+            <span class="toggle-icon">◀</span>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
+      
+        <div class="feature-detail-content" style="display:none;" id="aicono-intro">
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
+            
+            <p>Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!</p>
+
+<div class="cta-box feature-detail-group">
+            <h4 class="style-box">Website</h4>
+            <figure class="product-fig">
+                <a href="http://tetramatrix.github.io/Aicono" target="_blank">
+                    <img src="main.png" title="AI Intelligent Desktop Icon Autopilot" alt="Aicono" />
+                </a>
+            </figure>
+
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+            <span class="toggle-icon">◀</span>Featured on Microsoft Store</h3>
+            <div class="feature-detail-content" style="display:none;">
+            <figure class="store-fig">
+                <a href="https://apps.microsoft.com/store/detail/9NGFC27J1VBX" target="_blank">
+                    <img src="ms-store.svg" width="50%" height="50%" alt="Get it from Microsoft" />
+                </a>
+            </figure>
+						</div>
+
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+            <span class="toggle-icon">◀</span>Featured on Softpedia</h3>
+            <div class="feature-detail-content" style="display:none;">
+            <figure class="store-fig">
+                <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank">
+                    <img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" />
+                </a>
+            </figure>
+						</div>
+            
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+            <span class="toggle-icon">◀</span>Featured on AlternativeTo</h3>
+            <div class="feature-detail-content" style="display:none;">
+            <figure class="store-fig">
+                <a href="https://alternativeto.net/software/aicono" title="Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!" target="_blank">
+                    <img src="AlternativeTo.png" width="20%" alt="Aicono - AI Intelligent Desktop Icon Autopilot" />
+                </a>
+            </figure>
+						</div>
+						
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+            <span class="toggle-icon">◀</span>Featured on Product Hunt</h3>
+            <div class="feature-detail-content" style="display:none;">
+            <figure class="store-fig">
+                <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank">
+                    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - The AI intelligent desktop icon autopilot for Windows | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+                </a>
+            </figure>
+            </div>
+        </div>
+</div>
+    </section>
+    </section>
+
+
+        <div class="cta-box">
+            <p style="text-align:center; color:#888;"><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color:#888; text-decoration:none;">↑ Back to Top</a></p>
+        </div>
+
+    <footer class="main-footer">
+        <p class="footer-text">
+            🏢 Developed by <b>Tetramatrix</b> | 🧠 Your personal AI knowledge workspace | 💝 Free for everyone
+    </p>
+        </p>
+    </footer>
+
+</main>
+
+<!-- Google Analytics (optional) -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+-->
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+====================================================================================================
+ FILE: main.css
+ PATH: D:\Benutzer\github\Sorana\docs\main.css
+====================================================================================================
+
+:root {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #2d2d30;
+  --bg-accent: #1a365d;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --accent-blue: #2c5282;
+  --accent-amd: #c53030;
+  --border: #404040;
+
+  /* Pastell-Farben für Hervorhebungen */
+  --pastel-green: #A8E6CF;
+  --pastel-blue: #A8D8EA;
+  --pastel-peach: #FFD3B6;
+  --pastel-lavender: #D5AAFF;
+  --pastel-yellow: #FFF5BA;
+  --pastel-pink: #FFB7B2;
+
+  /* Section-specific colors for h2 headings */
+  --section-inspiration: #4fd1c5;      /* Teal */
+  --section-what-is: #63b3ed;          /* Blue */
+  --section-solves: #f6ad55;           /* Amber */
+  --section-memory: #b794f4;           /* Purple */
+  --section-mcp: #4fdada;              /* Cyan */
+  --section-obsidian: #9f7aea;         /* Violet */
+  --section-ocr: #fc8181;              /* Coral */
+  --section-backends: #f6e05e;         /* Soft yellow */
+  --section-install: #9ae6b4;          /* Mint */
+  --section-requirements: #a0aec0;     /* Cool gray */
+  --section-download: #68d391;         /* Emerald */
+  --section-support: #f687b3;          /* Rose */
+  --section-products: #7f9cf5;         /* Indigo */
+
+  /* Custom Component Colors */
+  --black: #000;
+  --border-light: #444;
+  --border-medium: #555;
+  --shadow-color-light: rgba(0, 0, 0, 0.1);
+  --shadow-color-medium: rgba(0, 0, 0, 0.15);
+  --btn-primary-bg: #2c5282;
+  --code-bg-purple: #2d3748;
+  --code-bg-highlight: rgba(0, 0, 0, 0.3);
+  --code-text-highlight: #68d391;
+  --table-row-alt-bg: #3a3a3d;
+  --cta-gradient-start: #2c5282;
+  --cta-gradient-end: #1a365d;
+
+  /* Section spacing */
+  --section-margin: 32px 0;
+  --subsection-margin: 24px 0;
+
+  /* Obsidian Export Section Colors */
+  --obsidian-primary: #8b5cf6;
+  --obsidian-secondary: #c4b5fd;
+  --obsidian-accent: #ddd6fe;
+  --obsidian-bg: rgba(124, 58, 237, 0.08);
+  --obsidian-border: #a78bfa;
+}
+
+/* Animation Keyframes */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* === Mobile-First Basis-Styles === */
+body {
+  font-family: "Geist", "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 10px;
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 30%, #2c3e50 70%, #1a1a2e 100%);
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+  color: #e0e0e0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+}
+
+a, a:visited {
+  color: #64b5f6; /* Lighter blue for better contrast */
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: #90caf9;
+  transform: translateY(-2px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+  position: relative;
+  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--accent-blue) 100%);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #64b5f6;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+h1 {
+  font-size: 2.2em;
+  margin-top: 0.5em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-bottom: none;
+  border-left: 4px solid #68d391;
+}
+h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border-left: 5px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+h2:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section-specific h2 colors */
+#inspiration-h2 {
+  background: linear-gradient(135deg, rgba(56, 178, 172, 0.15) 0%, rgba(56, 178, 172, 0.05) 100%);
+  border-left-color: var(--section-inspiration);
+  color: #4fd1c5;
+}
+
+#what-is-sorana-h2 {
+  background: linear-gradient(135deg, rgba(66, 153, 225, 0.15) 0%, rgba(66, 153, 225, 0.05) 100%);
+  border-left-color: var(--section-what-is);
+  color: #63b3ed;
+}
+
+#what-sorana-solves-h2 {
+  background: linear-gradient(135deg, rgba(237, 137, 54, 0.15) 0%, rgba(237, 137, 54, 0.05) 100%);
+  border-left-color: var(--section-solves);
+  color: #f6ad55;
+}
+
+#ai-memory-rag-h2 {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.15) 0%, rgba(159, 122, 234, 0.05) 100%);
+  border-left-color: var(--section-memory);
+  color: #b794f4;
+}
+
+#mcp-section-h2 {
+  background: linear-gradient(135deg, rgba(0, 181, 216, 0.15) 0%, rgba(0, 181, 216, 0.05) 100%);
+  border-left-color: var(--section-mcp);
+  color: #4fdada;
+}
+
+#obsidian-export-h2 {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(124, 58, 237, 0.05) 100%);
+  border-left-color: var(--section-obsidian);
+  color: var(--obsidian-secondary);
+}
+
+/* Section-specific CTA box backgrounds matching h2 colors */
+#inspiration .cta-box {
+  background: rgba(56, 178, 172, 0.08);
+  border-color: var(--section-inspiration);
+}
+#inspiration .cta-box::before {
+  background: linear-gradient(90deg, var(--section-inspiration), transparent);
+}
+
+#what-is-sorana .cta-box {
+  background: rgba(66, 153, 225, 0.08);
+  border-color: var(--section-what-is);
+}
+#what-is-sorana .cta-box::before {
+  background: linear-gradient(90deg, var(--section-what-is), transparent);
+}
+
+#feature-details .cta-box {
+  background: rgba(237, 137, 54, 0.08);
+  border-color: var(--section-solves);
+}
+#feature-details .cta-box::before {
+  background: linear-gradient(90deg, var(--section-solves), transparent);
+}
+
+#ai-memory-rag .cta-box {
+  background: rgba(159, 122, 234, 0.08);
+  border-color: var(--section-memory);
+}
+#ai-memory-rag .cta-box::before {
+  background: linear-gradient(90deg, var(--section-memory), transparent);
+}
+
+#mcp-section .cta-box {
+  background: rgba(0, 181, 216, 0.08);
+  border-color: var(--section-mcp);
+}
+#mcp-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-mcp), transparent);
+}
+
+#obsidian-export .cta-box {
+  background: rgba(124, 58, 237, 0.08);
+  border-color: var(--section-obsidian);
+}
+#obsidian-export .cta-box::before {
+  background: linear-gradient(90deg, var(--section-obsidian), transparent);
+}
+
+#ocr-section .cta-box {
+  background: rgba(245, 101, 101, 0.08);
+  border-color: var(--section-ocr);
+}
+#ocr-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-ocr), transparent);
+}
+
+#ai-backends .cta-box {
+  background: rgba(236, 201, 75, 0.08);
+  border-color: var(--section-backends);
+}
+#ai-backends .cta-box::before {
+  background: linear-gradient(90deg, var(--section-backends), transparent);
+}
+
+#installation-setup .cta-box {
+  background: rgba(72, 187, 120, 0.08);
+  border-color: var(--section-install);
+}
+#installation-setup .cta-box::before {
+  background: linear-gradient(90deg, var(--section-install), transparent);
+}
+
+#system-requirements .cta-box {
+  background: rgba(113, 128, 150, 0.08);
+  border-color: var(--section-requirements);
+}
+#system-requirements .cta-box::before {
+  background: linear-gradient(90deg, var(--section-requirements), transparent);
+}
+
+.final-download-section .cta-box {
+  background: rgba(104, 211, 145, 0.06);
+  border-color: var(--section-download);
+}
+.final-download-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-download), transparent);
+}
+
+#support-donations .cta-box {
+  background: rgba(237, 100, 166, 0.08);
+  border-color: var(--section-support);
+}
+#support-donations .cta-box::before {
+  background: linear-gradient(90deg, var(--section-support), transparent);
+}
+
+#other-products .cta-box {
+  background: rgba(102, 126, 234, 0.08);
+  border-color: var(--section-products);
+}
+#other-products .cta-box::before {
+  background: linear-gradient(90deg, var(--section-products), transparent);
+}
+
+#ocr-section-h2 {
+  background: linear-gradient(135deg, rgba(245, 101, 101, 0.15) 0%, rgba(245, 101, 101, 0.05) 100%);
+  border-left-color: var(--section-ocr);
+  color: #fc8181;
+}
+
+#ai-backends-h2 {
+  background: linear-gradient(135deg, rgba(236, 201, 75, 0.15) 0%, rgba(236, 201, 75, 0.05) 100%);
+  border-left-color: var(--section-backends);
+  color: #f6e05e;
+}
+
+#installation-setup-h2 {
+  background: linear-gradient(135deg, rgba(72, 187, 120, 0.15) 0%, rgba(72, 187, 120, 0.05) 100%);
+  border-left-color: var(--section-install);
+  color: #68d391;
+}
+
+#system-requirements-h2 {
+  background: linear-gradient(135deg, rgba(113, 128, 150, 0.15) 0%, rgba(113, 128, 150, 0.05) 100%);
+  border-left-color: var(--section-requirements);
+  color: #a0aec0;
+}
+
+#final-download-h2 {
+  background: linear-gradient(135deg, rgba(104, 211, 145, 0.12) 0%, rgba(154, 230, 180, 0.08) 100%);
+  border-left-color: var(--section-download);
+  color: #bbf7d0;
+}
+
+#support-donations-h2 {
+  background: linear-gradient(135deg, rgba(237, 100, 166, 0.15) 0%, rgba(237, 100, 166, 0.05) 100%);
+  border-left-color: var(--section-support);
+  color: #f687b3;
+}
+
+#other-products-h2 {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(102, 126, 234, 0.05) 100%);
+  border-left-color: var(--section-products);
+  color: #7f9cf5;
+}
+
+/* Umbrella section tiles - match the content palette underneath them */
+#overview-h2,
+#why-sorana-h2,
+#core-features-h2,
+#ai-models-h2,
+#obsidian-export-h2,
+#setup-h2,
+#support-h2,
+#discover-h2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#overview-h2 {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.12) 0%, rgba(99, 179, 237, 0.10) 100%);
+  border-left-color: var(--section-inspiration);
+  color: #b2f5ea;
+}
+
+#why-sorana-h2 {
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.12) 0%, rgba(251, 211, 141, 0.08) 100%);
+  border-left-color: var(--section-solves);
+  color: #fbd38d;
+}
+
+#core-features-h2 {
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.10) 0%, rgba(79, 218, 218, 0.08) 52%, rgba(252, 129, 129, 0.06) 100%);
+  border-left-color: var(--section-memory);
+  color: #ddd6fe;
+}
+
+#ai-models-h2 {
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.12) 0%, rgba(160, 174, 192, 0.08) 100%);
+  border-left-color: var(--section-backends);
+  color: #faf089;
+}
+
+#obsidian-export-h2 {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(196, 181, 253, 0.08) 100%);
+  border-left-color: var(--section-obsidian);
+  color: var(--obsidian-accent);
+}
+
+#setup-h2 {
+  background: linear-gradient(135deg, rgba(154, 230, 180, 0.12) 0%, rgba(160, 174, 192, 0.08) 100%);
+  border-left-color: var(--section-install);
+  color: #dcfce7;
+}
+
+#support-h2 {
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.12) 0%, rgba(255, 255, 255, 0.06) 100%);
+  border-left-color: var(--section-support);
+  color: #fbcfe8;
+}
+
+#discover-h2 {
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.12) 0%, rgba(99, 179, 237, 0.08) 100%);
+  border-left-color: var(--section-products);
+  color: #dbeafe;
+}
+
+/* Outer umbrella wrappers get a matching soft tint so the section and header read as one unit */
+#overview,
+#why-sorana,
+#core-features,
+#ai-models,
+#obsidian-export,
+#setup,
+#support,
+#discover {
+  position: relative;
+  margin: 16px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.018) 0%, rgba(0, 0, 0, 0.038) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 6px 14px 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+#overview > section,
+#why-sorana > section,
+#core-features > section,
+#ai-models > section,
+#obsidian-export > section,
+#setup > section,
+#support > section,
+#discover > section {
+  margin: 14px 0;
+}
+
+#overview {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.035) 0%, rgba(99, 179, 237, 0.04) 100%);
+  border-color: rgba(99, 179, 237, 0.12);
+}
+
+#why-sorana {
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.035) 0%, rgba(251, 211, 141, 0.03) 100%);
+  border-color: rgba(246, 173, 85, 0.12);
+}
+
+#core-features {
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.03) 0%, rgba(79, 218, 218, 0.035) 52%, rgba(252, 129, 129, 0.025) 100%);
+  border-color: rgba(159, 122, 234, 0.12);
+}
+
+#ai-models {
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.035) 0%, rgba(160, 174, 192, 0.025) 100%);
+  border-color: rgba(246, 224, 94, 0.12);
+}
+
+#obsidian-export {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.035) 0%, rgba(196, 181, 253, 0.03) 100%);
+  border-color: rgba(167, 139, 250, 0.12);
+}
+
+#setup {
+  background: linear-gradient(135deg, rgba(154, 230, 180, 0.035) 0%, rgba(160, 174, 192, 0.025) 100%);
+  border-color: rgba(154, 230, 180, 0.12);
+}
+
+#support {
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.035) 0%, rgba(255, 255, 255, 0.025) 100%);
+  border-color: rgba(246, 135, 179, 0.12);
+}
+
+#discover {
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.035) 0%, rgba(99, 179, 237, 0.03) 100%);
+  border-color: rgba(127, 156, 245, 0.12);
+}
+h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-left: 4px solid #f6e05e;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+/* Neue h4-Klasse – nur der Look, kein Plus, kein Collapse */
+h4.style-box {
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: rgba(45, 45, 48, 0.7);
+  border: 1px solid var(--border);
+  border-left: 4px solid #fc8181;
+  padding: 14px 40px 14px 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+/* Alte h4-Styles bleiben als Fallback */
+h4 {
+  font-size: 1.3em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-left: 4px solid #fc8181;
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+
+.wikidoc {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  float: none;
+  box-sizing: border-box;
+  background: rgba(45, 45, 48, 0.6);
+  color: var(--text-primary);
+  clear: both;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+pre, code, .wikidoc pre, .wikidoc code {
+  background: var(--bg-secondary);
+  color: #e0e0e0; /* Lighter text for better contrast */
+  border-radius: 5px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  transition: background-color 0.3s ease;
+}
+
+pre:hover, code:hover, .wikidoc pre:hover, .wikidoc code:hover {
+  background: var(--code-bg-highlight);
+}
+
+table, th, td {
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  color: var(--text-primary);
+  word-break: break-word;
+  hyphens: auto;
+}
+th {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  color: var(--text-primary);
+  padding: 12px 8px;
+  font-weight: 600;
+  text-align: center;
+}
+td {
+  background: rgba(45, 45, 48, 0.7);
+  color: var(--text-secondary);
+  padding: 10px 8px;
+}
+
+/* Comparison table styling */
+.comparison-table {
+  border-spacing: 0;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.comparison-table thead th:first-child {
+  text-align: left;
+  width: 22%;
+}
+.comparison-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+}
+.comparison-table td {
+  text-align: center;
+  padding: 8px 6px;
+}
+.comparison-table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.table-note {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* Special styling for requirements table */
+.req-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.req-table th, .req-table td {
+  padding: 12px;
+  border: 1px solid var(--border);
+  transition: background-color 0.3s ease;
+}
+
+.req-table th {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.req-table tr:nth-child(even) {
+  background: rgba(74, 85, 104, 0.2);
+}
+
+.req-table tr:hover {
+  background: rgba(76, 175, 80, 0.15);
+}
+
+a[style*="background: #ff4444"] {
+  background: var(--accent-amd) !important;
+  color: var(--text-primary) !important;
+}
+a[style*="background: #44ff44"] {
+  background: var(--accent-blue) !important;
+  color: var(--text-primary) !important;
+}
+a[style*="background: linear-gradient"] {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Touchfreundliche Buttons/Links */
+a[style*="padding: 12px"], a[style*="padding: 15px"], a, button, input[type="button"], input[type="submit"] {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  margin: 8px 0;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 12px 16px;
+}
+
+a + a, button + button {
+  margin-top: 8px;
+}
+
+/* Bilder und Medien responsiv */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 10px auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+iframe:hover, embed:hover, object:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive iframe container for maintaining aspect ratio */
+.responsive-iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 1140px; /* Match original video width */
+  padding-bottom: 91.23%; /* 1040/1140 = 0.9123 (aspect ratio) */
+  height: 0;
+  overflow: hidden;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Video section styling */
+.video-section {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* Make the container break out of wikidoc constraints for more prominent display */
+.wikidoc .responsive-iframe-container {
+  width: calc(100% + 60px);
+  max-width: 1140px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.video-caption {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  text-align: center;
+}
+
+.responsive-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Sidebars und Fixed-Elemente auf Mobile ausblenden */
+/* Standardmäßig: Sidebars ausblenden (Mobile-First) */
+/* Sidebars und Fixed-Nav werden nur auf kleinen Bildschirmen ausgeblendet */
+@media (max-width: 768px) {
+  .left, .right, .fixed-nav {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+  }
+}
+
+/* FIX: Ensure the main content area (.wikidoc) is always visible,
+   overriding the display:none from .left, .right, etc. if they are on the same element. */
+.wikidoc {
+  display: block !important;
+}
+
+/* === Mobile Table Stacking (up to 480px) === */
+@media (max-width: 480px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    content: attr(data-label) ": ";
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+/* === Tablet-Styles (ab 601px) === */
+@media only screen and (min-width: 601px) {
+  body {
+    font-size: 15px;
+  }
+
+  .wikidoc {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  /* FIX: Reset table cell width for traditional table layout.
+     The mobile-first style sets td width to 100% for stacking,
+     which needs to be undone for wider screens. */
+  th, td {
+    width: auto;
+  }
+}
+
+/* === Desktop-Styles (ab 769px) === */
+/* REFACTOR: Replaced float layout with a modern, robust CSS Grid layout.
+   This is the ideal tool for creating multi-column page layouts. */
+@media only screen and (min-width: 769px) {
+  :root {
+    --left-sidebar-width: 120px;
+    --right-sidebar-width: 160px;
+    --content-gutter: 16px;
+  }
+
+  body {
+    display: grid;
+    /* Define 3 columns: left sidebar, flexible content, right sidebar */
+    grid-template-columns: minmax(var(--left-sidebar-width), 1fr) minmax(480px, 1.5fr) minmax(var(--right-sidebar-width), 1fr);
+    grid-gap: var(--content-gutter);
+  }
+
+  .wikidoc {
+    /* The content will live in the center column defined by the grid */
+    max-width: 900px; /* Enforce the maximum content width */
+    min-width: 480px; /* Ensure minimum readable width */
+    justify-self: center; /* Center the content within its grid column on wide screens */
+    width: 100%; /* Ensure it fills its column up to the max-width */
+    margin: 0; /* Reset margins used for float layout */
+  }
+
+  .left {
+    display: block !important;
+  }
+
+  .right {
+    display: block !important;
+  }
+
+  .fixed-nav {
+    /* position:fixed takes this element out of the grid flow, which is correct. */
+    display: block !important;
+    position: fixed !important;
+    top: 0;
+    z-index: 10;
+    width: var(--left-sidebar-width);
+  }
+}
+
+/* === Verbesserte Responsivität für mittlere Bildschirme (769px bis 1099px) === */
+@media screen and (min-width: 769px) and (max-width: 1099px) {
+  :root {
+    --left-sidebar-width: 100px;
+    --right-sidebar-width: 120px;
+    --content-gutter: 10px;
+  }
+
+  body {
+    grid-template-columns: minmax(var(--left-sidebar-width), 1fr) minmax(400px, 1.5fr) minmax(var(--right-sidebar-width), 1fr);
+  }
+
+  .wikidoc {
+    max-width: 800px;
+    min-width: 400px;
+  }
+
+  /* Optional: Leichte Anpassung der Schriftgröße für bessere Lesbarkeit */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* === Große Desktops (ab 1100px) === */
+@media (min-width: 1100px) {
+  :root {
+    --left-sidebar-width: 180px;
+    --right-sidebar-width: 240px;
+    --content-gutter: 20px;
+  }
+  .right {
+    /* On large screens, make the right sidebar 'sticky' */
+    position: fixed;
+    top: 0px;
+    right: 0;
+  }
+
+  .left {
+    /* On large screens, make the left sidebar 'sticky' */
+    position: fixed;
+    top: 0px;
+    left: 0;
+  }
+
+  /* When both sidebars are fixed, they leave the grid. Redefine the grid to 1 column
+     and add padding to the body to avoid content overlapping the fixed sidebars. */
+  body {
+    grid-template-columns: 1fr;
+    padding-left: calc(var(--left-sidebar-width) + var(--content-gutter));
+    padding-right: calc(var(--right-sidebar-width) + var(--content-gutter));
+  }
+}
+
+/* === Sehr kleine Desktop-Bildschirme (zwischen 769px und 1024px) === */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --left-sidebar-width: 80px;
+    --right-sidebar-width: 100px;
+    --content-gutter: 8px;
+  }
+
+  body {
+    grid-template-columns: minmax(var(--left-sidebar-width), 0.8fr) minmax(350px, 1.4fr) minmax(var(--right-sidebar-width), 0.8fr);
+  }
+
+  .wikidoc {
+    max-width: 700px;
+    min-width: 350px;
+  }
+
+  .wikidoc {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+/* === Nur linke Spalte ausblenden bei mittlerer Bildschirmbreite (zwischen 769px und 850px) === */
+@media screen and (min-width: 769px) and (max-width: 850px) {
+  :root {
+    --left-sidebar-width: 0px;
+  }
+
+  body {
+    grid-template-columns: minmax(var(--left-sidebar-width), 0fr) minmax(350px, 1.5fr) minmax(var(--right-sidebar-width), 1fr);
+  }
+
+  .left {
+    display: none;
+  }
+
+  .wikidoc {
+    max-width: 800px;
+    min-width: 350px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* === Beide Spalten ausblenden bei kleinerer Bildschirmbreite (unter 850px) === */
+@media screen and (max-width: 849px) {
+  :root {
+    --left-sidebar-width: 0px;
+    --right-sidebar-width: 0px;
+    --content-gutter: 0px;
+  }
+
+  body {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .left, .right {
+    display: none;
+  }
+
+  .wikidoc {
+    max-width: 100%;
+    min-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.0em;
+  }
+}
+
+/* === Custom Component & Page-Specific Styles === */
+
+/* Sidebar Spacing */
+.left-sidebar-ad-spacing {
+  margin-top: 20px;
+}
+.right-sidebar-ad-container {
+  margin-top: 20px;
+  height: 600px;
+}
+
+/* Ads */
+.ad-in-article-fluid {
+  display: block;
+  text-align: center;
+}
+.ad-in-article-spaced {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Logo & Screenshots */
+.logo {
+  max-width: 200px;
+  border-radius: 10px;
+  margin: 20px auto;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+.screenshot {
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px var(--shadow-color-light);
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.screenshot:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Video */
+.video-container {
+  text-align: center;
+  margin: 30px 0;
+}
+.video-player {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--border-medium); /* Dark theme friendly border */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px var(--shadow-color-medium);
+  background: var(--black);
+}
+.caption {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Download Sections & Buttons */
+.download-section {
+  text-align: center;
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  width: auto;
+  min-height: auto;
+  text-decoration: none;
+  color: var(--text-primary) !important; /* Ensure color overrides 'a' tag styles */
+  margin: 5px;
+  border-radius: 5px;
+}
+.btn-primary {
+  background: var(--btn-primary-bg);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease;
+}
+.btn-primary:hover {
+  background: #3182ce;
+}
+.btn-large {
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-large:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease;
+}
+.btn-large:hover {
+  background: #3182ce;
+}
+
+/* External Partner Buttons (Lemonade, FastFlowLM) */
+.btn-partner,
+.btn-partner-fastflow {
+  padding: 4px 8px !important;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 19px !important;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  width: 190px;
+  text-align: center;
+}
+
+.btn-partner {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #000 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-partner:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-partner-fastflow {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1e3a5f 100%);
+  color: #fff !important;
+  border: 1px solid #1a3a5c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.btn-partner-fastflow:hover {
+  background: linear-gradient(135deg, #2d5a87 0%, #3d7ab5 50%, #2d5a87 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Download buttons container */
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Partner buttons container (Lemonade, FastFlowLM) */
+.partner-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* External links container */
+.external-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* Ensure consistent button heights */
+.download-buttons .btn,
+.external-links .btn {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Code Blocks */
+.code-block-md5 {
+  background: var(--bg-secondary);
+  color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.code-block-md5-highlight {
+  background: var(--bg-secondary);
+  color: #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+/* Feature Comparison Table */
+.feature-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.feature-table th, .feature-table td {
+  padding: 12px;
+  border: 1px solid var(--border);
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.feature-table th {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.feature-table tr:hover td {
+  background: rgba(76, 175, 80, 0.15);
+  color: var(--text-primary);
+}
+.feature-table td {
+  background: rgba(45, 45, 48, 0.7);
+  color: var(--text-secondary);
+}
+.feature-table .row-alt td {
+  background: rgba(41, 98, 134, 0.3); /* More vibrant blue tint */
+  color: var(--text-primary);
+}
+
+/* Call to Action Box */
+.cta-box {
+  margin: 40px 0;
+  background: rgba(45, 45, 48, 0.7);
+  color: var(--text-primary);
+  padding: 36px 40px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+}
+
+/* Right accent stripe for navigation */
+.cta-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.cta-box:hover::after {
+  opacity: 1;
+  width: 20px;
+  background: linear-gradient(to bottom, #4CAF50, #2196F3);
+}
+
+/* Navigation arrow that appears on hover */
+.cta-box .nav-arrow-down,
+.cta-box .nav-arrow-up {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.1) 100%);
+  border: 1px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  font-size: 1.2em;
+  color: var(--pastel-blue);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.cta-box .nav-arrow-down {
+  top: 60%;
+  right: 12px;
+  transform: translateY(-50%) scale(0.8);
+}
+
+.cta-box .nav-arrow-up {
+  top: 30%;
+  right: 12px;
+  transform: translateY(-50%) scale(0.8);
+}
+
+.cta-box:hover .nav-arrow-down,
+.cta-box:hover .nav-arrow-up {
+  opacity: 1;
+  right: 18px;
+  pointer-events: auto;
+  cursor: pointer;
+  transform: translateY(-50%) scale(1);
+}
+
+.cta-box .nav-arrow-down:hover,
+.cta-box .nav-arrow-up:hover {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.4);
+  transform: translateY(-50%) scale(1.15) !important;
+}
+
+/* Rotated plus for open state */
+.cta-box .nav-arrow-down.rotated,
+.cta-box .nav-arrow-up.rotated {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.3) 0%, rgba(76, 175, 80, 0.15) 100%);
+  border-color: rgba(76, 175, 80, 0.4);
+  color: #68d391;
+  transform: translateY(-50%) !important;
+}
+
+.cta-box .nav-arrow-down.rotated:hover,
+.cta-box .nav-arrow-up.rotated:hover {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.4) 0%, rgba(76, 175, 80, 0.25) 100%);
+  border-color: rgba(76, 175, 80, 0.5);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.cta-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-color: var(--accent-blue);
+}
+.cta-box h3 {
+  color: var(--pastel-blue);
+  margin-top: 0;
+  border-bottom: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+  margin-top: -10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.cta-box p {
+  font-size: 16px;
+  margin: 18px 0;
+  color: #d0d0d0;
+  text-align: left;
+  line-height: 1.75;
+}
+.cta-box ul, .cta-box ol {
+  text-align: left;
+  padding-left: 28px;
+  margin: 18px 0;
+}
+.cta-box ul li, .cta-box ol li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+/* Nested lists */
+.cta-box ul ul, .cta-box ol ol {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding-left: 20px;
+}
+.cta-box ul ul li, .cta-box ol ol li {
+  margin-bottom: 4px;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+/* Semantic Elements */
+section {
+  margin: var(--section-margin);
+}
+
+article {
+  margin: var(--subsection-margin);
+}
+
+figure {
+  margin: 28px auto;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 14px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Specific section styles */
+.intro-section,
+.capabilities-section,
+.users-section,
+.operation-section,
+.technical-section,
+.ocr-section,
+.comparison-section,
+.setup-section,
+.requirements-section,
+.final-download-section,
+.support-section,
+.other-products-section {
+  margin: var(--section-margin);
+  padding: 0 16px; /* More breathing room */
+}
+
+/* ============================================
+   Main Header - Sorana Title & Subtitle
+   ============================================ */
+
+.page-header {
+  text-align: center;
+  padding: 48px 20px 36px;
+  margin-bottom: 26px;
+  position: relative;
+  background:
+    radial-gradient(circle at 50% 24%, rgba(167, 139, 250, 0.24) 0%, rgba(124, 58, 237, 0.10) 24%, transparent 65%),
+    radial-gradient(circle at 50% 100%, rgba(56, 178, 172, 0.10) 0%, transparent 56%);
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 14px 18px 18px;
+  border-radius: 28px;
+  border: 1px solid rgba(196, 181, 253, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.04) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.page-header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header h1 {
+  display: inline-block;
+  font-size: 3.9em;
+  font-weight: 900;
+  margin: 0;
+  padding: 16px 34px;
+  border-radius: 999px;
+  border-left: none;
+  border-bottom: none;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.14) 0%, transparent 58%),
+    linear-gradient(135deg, rgba(30, 41, 59, 0.72) 0%, rgba(88, 28, 135, 0.70) 48%, rgba(59, 130, 246, 0.58) 100%);
+  border: 1px solid rgba(196, 181, 253, 0.28);
+  color: #f8f7ff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-text-fill-color: initial;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  animation: fadeIn 0.8s ease forwards;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 12px 34px rgba(124, 58, 237, 0.20),
+    0 0 48px rgba(168, 216, 234, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  text-shadow: 0 0 18px rgba(196, 181, 253, 0.28), 0 0 42px rgba(124, 58, 237, 0.24);
+}
+
+.page-header h3 {
+  display: inline-block;
+  font-size: 1.02em;
+  font-weight: 600;
+  margin: 14px 0 0 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: #d7eafe;
+  background: rgba(12, 18, 32, 0.38);
+  border: 1px solid rgba(168, 216, 234, 0.16);
+  opacity: 0.94;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  animation: fadeIn 0.8s ease 0.2s forwards;
+  opacity: 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.logo-container {
+  margin-top: 20px;
+  animation: fadeIn 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5em;
+  }
+
+  .page-header h3 {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+
+/* Product sections */
+.product-section {
+  margin: var(--subsection-margin);
+  padding: 20px 0;
+}
+
+.product-fig {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.store-fig {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Payment options */
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.paypal-option,
+.bch-option {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.qr-figure {
+  display: inline-block;
+  margin: 10px;
+}
+
+.qr-code {
+  width: 130px;
+  height: 130px;
+  vertical-align: middle;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* Donations & Embeds */
+.embed-container {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.embed-item {
+  margin-bottom: 20px;
+}
+.embed-iframe {
+  max-width: 100%;
+  border: none;
+}
+
+/* Horizontal Table of Contents Navigation */
+.horizontal-toc-nav {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.18) 0%, transparent 38%),
+    radial-gradient(circle at bottom right, rgba(56, 178, 172, 0.14) 0%, transparent 40%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(30, 41, 59, 0.78) 45%, rgba(12, 18, 32, 0.88) 100%);
+  padding: 16px 14px;
+  border-radius: 18px;
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 0 0 1px rgba(167, 139, 250, 0.10);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(168, 216, 234, 0.14);
+  margin: 18px 0 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.horizontal-toc-nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.08) 50%, transparent 100%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.horizontal-toc-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.horizontal-toc-nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+.horizontal-toc-nav a {
+  color: #d8e2f2;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: block;
+  border-radius: 999px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(168, 216, 234, 0.12);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 4px 14px rgba(0, 0, 0, 0.14);
+  position: relative;
+  overflow: hidden;
+}
+
+.horizontal-toc-nav a:hover {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.18) 0%, transparent 36%),
+    linear-gradient(135deg, rgba(124, 58, 237, 0.22) 0%, rgba(56, 178, 172, 0.18) 100%);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow:
+    0 10px 22px rgba(124, 58, 237, 0.18),
+    0 0 0 1px rgba(168, 216, 234, 0.20),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  border-color: rgba(168, 216, 234, 0.28);
+}
+
+.horizontal-toc-nav a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.36) 48%, transparent 52%, transparent 100%);
+  transform: translateX(-130%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.horizontal-toc-nav a:hover::after {
+  transform: translateX(130%);
+}
+
+/* Section header container for navigation arrow */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Navigation arrows in headings */
+.nav-arrow {
+  font-size: 0.9em;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.nav-arrow:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  color: #64b5f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .horizontal-toc-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-toc-nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Footer */
+.main-footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Beta feature indicator */
+.beta-feature {
+  display: inline-block;
+  background-color: #ff4444; /* Red background */
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: super;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+/* === Collapsible Sections === */
+
+/* Collapsible H2 sections */
+h2.collapsible {
+  cursor: pointer;
+  position: relative;
+  padding-right: 0;
+  user-select: none;
+  transition: color 0.2s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+h2.collapsible::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+h2.collapsible:hover {
+  color: #64b5f6;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.08) 0%, rgba(168, 216, 234, 0.03) 100%);
+  border-color: rgba(168, 216, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.12);
+  transform: translateX(4px);
+}
+
+h2.collapsible:hover::before {
+  left: 100%;
+}
+
+h2.collapsible,
+h3.collapsible {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.h2-icon {
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.h2-icon.is-expanded {
+  transform: rotate(-90deg);
+}
+
+.chevron-badge,
+.feature-detail-toggle .toggle-icon,
+.h2-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  color: var(--pastel-blue);
+  font-size: 0.95em;
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 8px rgba(168, 216, 234, 0.5);
+  overflow: hidden;
+}
+
+.chevron-badge::after,
+.feature-detail-toggle .toggle-icon::after,
+.h2-icon::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 45%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.35) 55%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+h2.collapsible,
+h3.collapsible {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+h2.collapsible:hover,
+h3.collapsible:hover {
+  color: #64b5f6;
+}
+
+h2.collapsible:hover .h2-icon {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  color: #e3f2fd;
+  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+}
+
+.chevron-badge:hover,
+.h2-icon:hover,
+.feature-detail-toggle:hover .toggle-icon,
+.nav-arrow-down:hover,
+.nav-arrow-up:hover {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  color: #e3f2fd;
+}
+
+/* Collapsed sections and divs */
+section.collapsed {
+  display: none;
+}
+
+div.collapsed {
+  display: none;
+}
+
+/* Nav toggle arrows */
+.nav-arrow-down,
+.nav-arrow-up {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2em;
+  user-select: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  color: var(--pastel-blue);
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  text-align: center;
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.nav-arrow-down:hover,
+.nav-arrow-up:hover {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  color: #e3f2fd;
+}
+
+/* NEW badge */
+.new-badge {
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  padding: 8px 12px;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* === Pastell-Farben für Hervorhebungen === */
+
+/* Standard bold in CTA boxes – Pastell-Blau */
+.cta-box strong,
+.cta-box b {
+  color: var(--pastel-blue);
+}
+
+/* Feature-detail toggle titles – kein Pastell-Blau für bold */
+.feature-detail-toggle strong {
+  color: inherit;
+}
+
+/* Code-Blöcke – Lavendel */
+code,
+.code-block-md5 code {
+  color: var(--pastel-lavender);
+  background-color: rgba(213, 170, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Highlights – Peach */
+.highlight,
+.pastel-highlight {
+  color: var(--pastel-peach);
+  font-weight: 600;
+}
+
+/* Grüne Metriken (%, Tokens, Savings) */
+.metric-green {
+  color: var(--pastel-green);
+  font-weight: 600;
+}
+
+/* Lemonade-only Hinweis */
+.lemonade-only {
+  color: var(--pastel-yellow);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* === Feature-detail Groups (Collapsible in Features in Detail) === */
+.feature-detail-group {
+  margin: 16px 0;
+  padding: 20px 28px;
+  background: rgba(45, 45, 48, 0.5);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+.feature-detail-group:hover {
+  border-color: var(--accent-blue);
+}
+
+.feature-detail-toggle {
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.1) 0%, rgba(168, 216, 234, 0.05) 100%);
+  border: 1px solid rgba(168, 216, 234, 0.2);
+  border-radius: 10px;
+  font-size: 1.15em;
+  font-weight: 600;
+  color: var(--pastel-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-detail-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.feature-detail-toggle:hover {
+  color: #e3f2fd;
+  border-color: rgba(168, 216, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.2);
+  transform: translateX(4px);
+}
+
+.feature-detail-toggle:hover::before {
+  left: 100%;
+}
+
+.feature-detail-toggle:hover .chevron-badge {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  transform: scale(1.15) rotate(0deg);
+  color: #e3f2fd;
+  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+}
+
+.feature-detail-toggle:hover .chevron-badge::after {
+  opacity: 1;
+  animation: iconShineSweep 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes iconShineSweep {
+  0% { transform: rotate(45deg) translateX(-55%); opacity: 0; }
+  20% { opacity: 1; }
+  50% { transform: rotate(45deg) translateX(0%); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: rotate(45deg) translateX(55%); opacity: 0; }
+}
+
+.feature-detail-toggle.active .chevron-badge {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.35) 0%, rgba(76, 175, 80, 0.18) 100%);
+  border-color: rgba(76, 175, 80, 0.45);
+  color: #68d391;
+  transform: rotate(90deg);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+}
+
+.feature-detail-toggle.active:hover .chevron-badge {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.45) 0%, rgba(76, 175, 80, 0.25) 100%);
+  border-color: rgba(76, 175, 80, 0.55);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  transform: scale(1.08) rotate(90deg);
+  color: #9ae6b4;
+  text-shadow: 0 0 14px rgba(76, 175, 80, 0.8);
+}
+
+/* Content Area */
+.feature-detail-content {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.feature-detail-content ul {
+  padding-left: 24px;
+  margin: 12px 0;
+}
+.feature-detail-content ul li {
+  margin-bottom: 6px;
+  line-height: 1.65;
+}
+.feature-detail-content .chatbot-figure {
+  margin: 16px auto 8px;
+}
+
+/* === Mobile Responsive Anpassungen === */
+@media (max-width: 600px) {
+  .cta-box {
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+
+  .feature-detail-group {
+    margin: 12px 0;
+  }
+
+  .feature-detail-toggle {
+    padding: 12px 36px 12px 14px;
+    font-size: 1.05em;
+  }
+
+  .feature-detail-content {
+    padding: 16px 20px;
+  }
+
+  .cta-box p {
+    font-size: 15px;
+    margin: 14px 0;
+  }
+
+  .cta-box ul, .cta-box ol {
+    padding-left: 24px;
+  }
+
+  .cta-box ul ul, .cta-box ol ol {
+    padding-left: 16px;
+  }
+
+  .cta-box h3 {
+    font-size: 1.3em;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  figure {
+    margin: 20px 0;
+  }
+}
+
+/* ===========================
+   Lightbox — Image Enlargement
+   =========================== */
+
+.lightbox-link {
+  cursor: zoom-in;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.lightbox-link img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 6px;
+}
+
+.lightbox-link:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: zoom-out;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-overlay img.lightbox-active-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+  cursor: default;
+  animation: lightbox-zoom 0.25s ease;
+}
+
+@keyframes lightbox-zoom {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Lightbox caption */
+.lightbox-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
+  max-width: 90vw;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+/* Mobile: larger tap targets, better spacing */
+@media (max-width: 768px) {
+  .lightbox-overlay {
+    padding: 10px;
+  }
+
+  .lightbox-overlay img.lightbox-active-img {
+    max-width: 95vw;
+    max-height: 85vh;
+    border-radius: 4px;
+  }
+
+  .lightbox-caption {
+    font-size: 12px;
+    bottom: 10px;
+    padding: 6px 12px;
+  }
+}
+
+/* Prevent body scroll when lightbox is open */
+body.lightbox-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   Obsidian Export Section - Prominent Styling
+   ============================================ */
+
+.obsidian-export-section {
+  margin: var(--section-margin);
+  padding: 0 16px;
+}
+
+/* Highlighted CTA box with Obsidian purple theme */
+.obsidian-highlight {
+  background: linear-gradient(135deg, var(--obsidian-bg) 0%, rgba(124, 58, 237, 0.05) 100%);
+  border: 2px solid var(--obsidian-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.obsidian-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--obsidian-primary), var(--obsidian-secondary), var(--obsidian-accent));
+}
+
+.obsidian-highlight:hover {
+  border-color: var(--obsidian-primary);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.3);
+}
+
+/* Section heading with emoji */
+#obsidian-export-h2 {
+  color: var(--obsidian-secondary);
+}
+
+#obsidian-export-h2 .h2-icon {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+/* Features grid layout */
+.obsidian-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.obsidian-feature-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.obsidian-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--obsidian-border);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+}
+
+.obsidian-feature-card h3 {
+  color: var(--obsidian-accent);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.obsidian-feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.obsidian-feature-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.obsidian-feature-card ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.obsidian-feature-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--obsidian-secondary);
+  font-weight: bold;
+}
+
+/* CTA section with benefits */
+.obsidian-cta {
+  background: rgba(124, 58, 237, 0.08);
+  border-left: 4px solid var(--obsidian-primary);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 30px 0;
+}
+
+.obsidian-benefits {
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0 0 0;
+}
+
+.obsidian-benefits li {
+  padding: 8px 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.obsidian-benefits li strong {
+  color: var(--text-primary);
+}
+
+/* Workflow section */
+.obsidian-workflow {
+  background: rgba(45, 45, 48, 0.5);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 30px 0;
+}
+
+.obsidian-workflow h3 {
+  color: var(--pastel-blue);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+}
+
+.obsidian-workflow ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.obsidian-workflow ol li {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.obsidian-workflow ol li strong {
+  color: var(--text-primary);
+}
+
+/* Note text */
+.obsidian-note {
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  opacity: 0.8;
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 1px dashed var(--border);
+}
+
+/* Discover / Other Products */
+#other-products .feature-detail-group {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.04) 100%);
+  border-color: rgba(127, 156, 245, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+#other-products .feature-detail-group:hover {
+  border-color: rgba(127, 156, 245, 0.28);
+}
+
+#other-products .feature-detail-toggle {
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.12) 0%, rgba(79, 209, 197, 0.08) 100%);
+  border-color: rgba(127, 156, 245, 0.18);
+}
+
+#other-products h4.style-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(127, 156, 245, 0.18);
+  border-left: 4px solid var(--section-products);
+  color: #e2e8f0;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#other-products .product-fig,
+#other-products .store-fig {
+  margin: 14px auto 22px;
+  padding: 14px;
+  background: rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(127, 156, 245, 0.14);
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+#other-products .product-fig a,
+#other-products .store-fig a {
+  display: block;
+  line-height: 0;
+}
+
+#other-products .product-fig img,
+#other-products .store-fig img {
+  display: block;
+  max-width: min(100%, 520px);
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(168, 216, 234, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+#other-products .download-buttons {
+  margin: 12px 0 6px;
+  gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .obsidian-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .obsidian-feature-card {
+    padding: 20px;
+  }
+
+  #obsidian-export-h2 {
+    font-size: 1.8em;
+  }
+
+  .obsidian-cta {
+    padding: 16px;
+  }
+}
+
+
+
+====================================================================================================
+ FILE: main.js
+ PATH: D:\Benutzer\github\Sorana\docs\main.js
+====================================================================================================
+
+/**
+ * Scroll functions for Sorana Documentation
+ */
+
+/**
+ * Find the H2 element before a section
+ * @param {HTMLElement} section - The section element
+ * @returns {HTMLElement|null} - The H2 element or null
+ */
+function findH2ForSection(section) {
+    let prevElement = section.previousElementSibling;
+    while (prevElement && prevElement.tagName !== 'H2' && prevElement.tagName !== 'SECTION') {
+        prevElement = prevElement.previousElementSibling;
+    }
+    if (prevElement && prevElement.tagName === 'H2') {
+        return prevElement;
+    }
+    return null;
+}
+
+/**
+ * Open all ancestor sections needed to reveal a target element.
+ * @param {HTMLElement} element - The element we want to reveal.
+ */
+function openAncestorBranches(element) {
+    let current = element ? element.parentElement : null;
+
+    while (current) {
+        if (current.tagName === 'SECTION') {
+            current.classList.remove('collapsed');
+
+            let previousHeading = current.previousElementSibling;
+            while (previousHeading && previousHeading.tagName !== 'H2' && previousHeading.tagName !== 'H3') {
+                previousHeading = previousHeading.previousElementSibling;
+            }
+
+            if (previousHeading) {
+                previousHeading.classList.remove('collapsed');
+                setChevronBadgeState(previousHeading.querySelector('.chevron-badge'), false);
+            }
+        }
+
+        current = current.parentElement;
+    }
+}
+
+/**
+ * Open a section branch beneath a top-level H2 umbrella.
+ * @param {HTMLElement} h2Element - The umbrella heading.
+ */
+function openSectionBranch(h2Element) {
+    if (!h2Element) return;
+
+    h2Element.classList.remove('collapsed');
+
+    let nextElement = h2Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    if (!nextElement || nextElement.tagName !== 'SECTION') {
+        setChevronBadgeState(h2Element.querySelector('.chevron-badge'), false);
+        return;
+    }
+
+    nextElement.classList.remove('collapsed');
+    const firstChildSection = Array.from(nextElement.children).find(function(child) {
+        return child.tagName === 'SECTION';
+    });
+    if (firstChildSection) {
+        firstChildSection.classList.remove('collapsed');
+    }
+
+    setChevronBadgeState(h2Element.querySelector('.chevron-badge'), false);
+}
+
+/**
+ * Toggle an umbrella H2 and all nested sections beneath it.
+ * @param {HTMLElement} h2Element - The umbrella heading.
+ */
+function toggleSectionBranch(h2Element) {
+    if (!h2Element) return;
+
+    const shouldOpen = h2Element.classList.contains('collapsed');
+    if (shouldOpen) {
+        openSectionBranch(h2Element);
+        return;
+    }
+
+    h2Element.classList.add('collapsed');
+
+    let nextElement = h2Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    if (!nextElement || nextElement.tagName !== 'SECTION') {
+        setChevronBadgeState(h2Element.querySelector('.chevron-badge'), true);
+        return;
+    }
+
+    const sectionsToClose = [nextElement, ...nextElement.querySelectorAll('section')];
+    sectionsToClose.forEach(function(section) {
+        section.classList.add('collapsed');
+    });
+
+    setChevronBadgeState(h2Element.querySelector('.chevron-badge'), true);
+}
+
+/**
+ * Scroll to a section with smart positioning
+ * @param {string} targetId - The ID of the target section (with or without #)
+ */
+function scrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        openAncestorBranches(targetElement);
+        // If target is an H2, open its umbrella section first
+        if (targetElement.tagName === 'H2') {
+            openSectionBranch(targetElement);
+        }
+        // If target is a SECTION, open the section and its first content block.
+        else if (targetElement.tagName === 'SECTION') {
+            targetElement.classList.remove('collapsed');
+            const firstChildSection = Array.from(targetElement.children).find(function(child) {
+                return child.tagName === 'SECTION';
+            });
+            if (firstChildSection) {
+                firstChildSection.classList.remove('collapsed');
+            }
+        }
+
+        // Überprüfe, ob das Element bereits sichtbar ist
+        const rect = targetElement.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
+        if (isVisible && rect.top < window.innerHeight * 0.1) {
+            // Scrollen, sodass das Element in der Mitte des Viewports ist
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten normales Scrollen
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+/**
+ * Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
+ * @param {string} targetId - The ID of the target section (with or without #)
+ */
+function smartScrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        openAncestorBranches(targetElement);
+        // If target is an H2, open its umbrella section first
+        if (targetElement.tagName === 'H2') {
+            openSectionBranch(targetElement);
+        }
+        // If target is a SECTION, open the section and its first content block.
+        else if (targetElement.tagName === 'SECTION') {
+            targetElement.classList.remove('collapsed');
+            const firstChildSection = Array.from(targetElement.children).find(function(child) {
+                return child.tagName === 'SECTION';
+            });
+            if (firstChildSection) {
+                firstChildSection.classList.remove('collapsed');
+            }
+        }
+
+        const rect = targetElement.getBoundingClientRect();
+        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+        if (isInViewport) {
+            // Wenn das Element bereits sichtbar ist, zentriere es
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten scroll zum Anfang des Elements
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+/**
+ * Collapsible Sections for Sorana Documentation
+ * Makes all H2 elements in the main element clickable to toggle their sections
+ */
+
+/**
+ * Configure a chevron badge with collapsed and expanded glyphs.
+ * @param {HTMLElement} icon - The badge element.
+ * @param {string} collapsedText - Glyph shown when collapsed.
+ * @param {string} expandedText - Glyph shown when expanded.
+ * @param {boolean} isCollapsed - Whether the badge starts collapsed.
+ */
+function configureChevronBadge(icon, collapsedText, expandedText, isCollapsed) {
+    if (!icon) return null;
+
+    icon.classList.add('chevron-badge');
+    icon.dataset.collapsedIcon = collapsedText;
+    icon.dataset.expandedIcon = expandedText;
+    setChevronBadgeState(icon, isCollapsed);
+    return icon;
+}
+
+/**
+ * Update a chevron badge to match its collapsed state.
+ * @param {HTMLElement} icon - The badge element.
+ * @param {boolean} isCollapsed - Whether the badge should show its collapsed glyph.
+ */
+function setChevronBadgeState(icon, isCollapsed) {
+    if (!icon) return;
+
+    const isNavArrowDown = icon.classList.contains('nav-arrow-down');
+    const isNavArrowUp = icon.classList.contains('nav-arrow-up');
+    if (isNavArrowDown) {
+        icon.textContent = '▼';
+    } else if (isNavArrowUp) {
+        icon.textContent = '▲';
+    } else {
+        const collapsedText = icon.dataset.collapsedIcon || '◀';
+        const expandedText = icon.dataset.expandedIcon || '▼';
+        icon.textContent = isCollapsed ? collapsedText : expandedText;
+    }
+    icon.classList.toggle('is-collapsed', isCollapsed);
+    icon.classList.toggle('is-expanded', !isCollapsed);
+
+    const isNavArrow = isNavArrowDown || isNavArrowUp;
+    if (isNavArrow) {
+        icon.classList.toggle('rotated', !isCollapsed);
+    } else {
+        icon.classList.remove('rotated');
+    }
+}
+
+/**
+ * Toggle the visibility of a section associated with an H2 element
+ * @param {HTMLElement} h2Element - The H2 element that was clicked
+ */
+function toggleSection(h2Element) {
+    h2Element.classList.toggle('collapsed');
+
+    // Find the next section element following this h2 (skip any intermediate elements, stop at next H2)
+    let nextElement = h2Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    // Toggle the section if found
+    if (nextElement && nextElement.tagName === 'SECTION') {
+        nextElement.classList.toggle('collapsed');
+
+        const isCollapsed = nextElement.classList.contains('collapsed');
+        const arrows = nextElement.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
+        arrows.forEach(function(arrow) {
+            setChevronBadgeState(arrow, isCollapsed);
+        });
+    }
+
+    setChevronBadgeState(h2Element.querySelector('.chevron-badge'), h2Element.classList.contains('collapsed'));
+}
+
+/**
+ * Toggle the visibility of a div associated with an H3 element
+ * @param {HTMLElement} h3Element - The H3 element that was clicked
+ */
+function toggleH3Section(h3Element) {
+    h3Element.classList.toggle('collapsed');
+
+    // Find the next div element following this h3
+    let nextElement = h3Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    // Toggle the div if found
+    if (nextElement && (nextElement.tagName === 'DIV' || nextElement.tagName === 'SECTION')) {
+        nextElement.classList.toggle('collapsed');
+    }
+
+    setChevronBadgeState(h3Element.querySelector('.chevron-badge'), h3Element.classList.contains('collapsed'));
+}
+
+/**
+ * Toggle section from arrow button click
+ * @param {HTMLElement} arrowElement - The arrow span that was clicked
+ */
+function toggleSectionFromArrow(arrowElement) {
+    // Find the parent cta-box
+    const ctaBox = arrowElement.closest('.cta-box');
+    if (!ctaBox) return;
+
+    // Find the parent section of the cta-box
+    const parentSection = ctaBox.closest('section');
+    if (!parentSection) return;
+
+    // Toggle the section
+    parentSection.classList.toggle('collapsed');
+
+    // Update arrow symbols in this cta-box only (use rotated chevron instead of +)
+    const downArrow = ctaBox.querySelector('.nav-arrow-down');
+    const upArrow = ctaBox.querySelector('.nav-arrow-up');
+
+    if (parentSection.classList.contains('collapsed')) {
+        setChevronBadgeState(downArrow, true);
+        setChevronBadgeState(upArrow, true);
+    } else {
+        setChevronBadgeState(downArrow, false);
+        setChevronBadgeState(upArrow, false);
+    }
+
+    // Also update the H2 symbol if there is one in this section
+    const h2InSection = parentSection.querySelector('h2');
+    if (h2InSection) {
+        if (parentSection.classList.contains('collapsed')) {
+            h2InSection.classList.add('collapsed');
+        } else {
+            h2InSection.classList.remove('collapsed');
+        }
+        setChevronBadgeState(h2InSection.querySelector('.chevron-badge'), parentSection.classList.contains('collapsed'));
+    }
+}
+
+/**
+ * Initialize collapsible sections
+ */
+(function() {
+    // Collapse all sections by default
+    const allSections = document.querySelectorAll('main section');
+    allSections.forEach(function(section) {
+        section.classList.add('collapsed');
+    });
+
+    // Collapse all H3 divs by default
+    const h3Elements = document.querySelectorAll('main h3');
+    h3Elements.forEach(function(h3) {
+        // Skip if data-no-toggle is set
+        if (h3.getAttribute('data-no-toggle') === 'true') return;
+        // Skip feature-detail toggle headers
+        if (h3.classList.contains('feature-detail-toggle')) return;
+
+        h3.classList.add('collapsible');
+        h3.classList.add('collapsed');
+        let icon = h3.querySelector('.h3-icon');
+        if (!icon) {
+            icon = document.createElement('span');
+            icon.className = 'h3-icon';
+            h3.prepend(icon);
+        }
+        configureChevronBadge(icon, '▶', '▼', true);
+        // Find and collapse the next div
+        let nextElement = h3.nextElementSibling;
+        while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+            nextElement = nextElement.nextElementSibling;
+        }
+        if (nextElement && (nextElement.tagName === 'DIV' || nextElement.tagName === 'SECTION')) {
+            nextElement.classList.add('collapsed');
+        }
+    });
+
+    // Set nav arrows to their directional glyphs.
+    const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
+    allArrows.forEach(function(arrow) {
+        if (arrow.classList.contains('nav-arrow-up')) {
+            configureChevronBadge(arrow, '▲', '▲', true);
+        } else {
+            configureChevronBadge(arrow, '▼', '▼', true);
+        }
+    });
+
+    const featureToggleIcons = document.querySelectorAll('.feature-detail-toggle .toggle-icon');
+    featureToggleIcons.forEach(function(icon) {
+        configureChevronBadge(icon, '▶', '▶', true);
+    });
+
+    // Make the top TOC open the target umbrella instead of only jumping to it.
+    const tocLinks = document.querySelectorAll('.horizontal-toc-nav a');
+    tocLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            const href = link.getAttribute('href');
+            if (!href || !href.startsWith('#')) return;
+            e.preventDefault();
+            smartScrollToSection(href);
+        });
+    });
+
+    // Initialize H2 collapsible functionality
+    const h2Elements = document.querySelectorAll('main h2');
+    h2Elements.forEach(function(h2) {
+        // Skip if data-no-toggle is set
+        if (h2.getAttribute('data-no-toggle') === 'true') return;
+
+        h2.classList.add('collapsible');
+        h2.classList.add('collapsed');
+        let icon = h2.querySelector('.h2-icon');
+        if (!icon) {
+            icon = document.createElement('span');
+            icon.className = 'h2-icon';
+            if (h2.id === 'obsidian-export-h2') {
+                h2.prepend(icon);
+            } else {
+                h2.append(icon);
+            }
+        }
+        if (h2.id === 'obsidian-export-h2') {
+            configureChevronBadge(icon, '▶', '▼', true);
+        } else {
+            configureChevronBadge(icon, '◀', '◀', true);
+        }
+        h2.addEventListener('click', function(e) {
+            // Don't toggle if clicking on a link inside the h2
+            if (e.target.tagName !== 'A') {
+                toggleSectionBranch(h2);
+            }
+        });
+    });
+
+    // Initialize H3 collapsible functionality (toggle next div)
+    h3Elements.forEach(function(h3) {
+        // Skip if data-no-toggle is set
+        if (h3.getAttribute('data-no-toggle') === 'true') return;
+        // Skip feature-detail toggle headers
+        if (h3.classList.contains('feature-detail-toggle')) return;
+
+        h3.addEventListener('click', function(e) {
+            // Don't toggle if clicking on a link inside the h3
+            if (e.target.tagName !== 'A') {
+                toggleH3Section(h3);
+            }
+        });
+    });
+})();
+
+/**
+ * Toggle feature-detail group visibility
+ * @param {HTMLElement} toggleElement - The h3 element clicked
+ */
+function toggleFeatureDetail(toggleElement) {
+    const content = toggleElement.nextElementSibling;
+    if (!content) return;
+
+    const isHidden = content.style.display === 'none';
+    content.style.display = isHidden ? 'block' : 'none';
+
+    const icon = toggleElement.querySelector('.toggle-icon');
+    setChevronBadgeState(icon, !isHidden);
+
+    if (isHidden) {
+        toggleElement.classList.add('active');
+    } else {
+        toggleElement.classList.remove('active');
+    }
+}
+
+/**
+ * Lightbox — Click-to-enlarge images
+ * Responsive, mobile-friendly, no dependencies
+ */
+(function() {
+    // Create lightbox overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.id = 'lightbox-overlay';
+    overlay.innerHTML = '<img src="" alt="" class="lightbox-active-img"><div class="lightbox-caption"></div>';
+    document.body.appendChild(overlay);
+
+    const lightboxImg = overlay.querySelector('.lightbox-active-img');
+    const lightboxCaption = overlay.querySelector('.lightbox-caption');
+    let currentScrollY = 0;
+    let touchStartY = 0;
+
+    /**
+     * Open the lightbox with a given image
+     * @param {HTMLImageElement} img - The source image element
+     */
+    function openLightbox(img) {
+        currentScrollY = window.scrollY;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        overlay.classList.add('active');
+        document.body.classList.add('lightbox-open');
+
+        // Show caption if the image has a parent figure with figcaption
+        const figure = img.closest('figure');
+        const figcaption = figure ? figure.querySelector('figcaption') : null;
+        if (figcaption) {
+            lightboxCaption.textContent = figcaption.textContent;
+            lightboxCaption.style.display = 'block';
+        } else {
+            lightboxCaption.style.display = 'none';
+        }
+    }
+
+    /**
+     * Close the lightbox
+     */
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.classList.remove('lightbox-open');
+        // Restore scroll position
+        window.scrollTo(0, currentScrollY);
+    }
+
+    // Attach click handlers to all screenshots
+    function initLightboxLinks() {
+        // Wrap eligible images in lightbox links
+        const selectors = '.sorana-screenshot, .chatbot-screenshot';
+        document.querySelectorAll(selectors).forEach(function(img) {
+            // Skip if already wrapped
+            if (img.parentElement && img.parentElement.classList.contains('lightbox-link')) return;
+
+            const link = document.createElement('a');
+            link.className = 'lightbox-link';
+            link.href = img.src;
+            link.title = 'Click to enlarge';
+            link.setAttribute('aria-label', 'Enlarge image');
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                openLightbox(img);
+            });
+        });
+    }
+
+    // Close on overlay click (not on image click)
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeLightbox();
+        }
+    });
+
+    // Close on ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    // Mobile: swipe down to close
+    overlay.addEventListener('touchstart', function(e) {
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    overlay.addEventListener('touchend', function(e) {
+        const touchEndY = e.changedTouches[0].clientY;
+        const swipeDistance = touchEndY - touchStartY;
+        // Swipe down more than 80px → close
+        if (swipeDistance > 80) {
+            closeLightbox();
+        }
+    }, { passive: true });
+
+    // Prevent image drag from opening new tab on mobile
+    lightboxImg.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightboxLinks);
+    } else {
+        initLightboxLinks();
+    }
+})();
+
+
+
+====================================================================================================
+ FILE: README.md
+ PATH: D:\Benutzer\github\Sorana\docs\README.md
+====================================================================================================
+
+# Sorana, Your Personal AI That Actually Knows You
+
+> A second brain that remembers, organises, and acts. Built for knowledge workers who are tired of starting from zero every day.
+
+---
+
+## What is Sorana?
+
+Most AI tools forget you the moment you close the window. Sorana doesn't.
+
+Sorana is a personal AI knowledge workspace for Windows. It builds a lasting memory of your projects, files, and thinking style, so every time you open it, your AI already knows where you left off. Think of it as Obsidian's spatial canvas combined with an AI assistant that has actually read your notes, remembers your preferences, and can take action on your behalf.
+
+No subscriptions. No cloud required. Everything runs on your machine.
+
+---
+
+## Who Is Sorana For?
+
+- 📚 **Researchers & academics**, chat with hundreds of papers, books, and scanned notes in one unified workspace
+- ✍️ **Writers & journalists**, build a living reference library that remembers your style, sources, and ideas
+- 🧑‍💼 **Consultants & freelancers**, maintain full AI context across multiple long-running client projects
+- 🎓 **Students**, turn notes, PDFs, and lecture slides into a personal knowledge base you can actually talk to
+- 🧠 **Obsidian & Notion users**, add an AI layer that learns from your vault and can act on it
+- 🔒 **Privacy-conscious professionals**, full AI power, zero data leaving your machine
+
+---
+
+## The Problems Sorana Solves
+
+### 🧠 You're tired of re-explaining yourself every day
+Every AI chat starts from zero. You paste background context, re-explain your project, re-state your preferences, again and again. Sorana quietly learns from every conversation and greets you with full context next time you open it. No setup. No copy-pasting. Just continuity.
+
+### 📂 Your knowledge is scattered and hard to find
+Notes in Obsidian, files in folders, research in browser tabs. You spend more time searching than actually thinking. Sorana maps your files onto a 2D spatial canvas by topic and relationship, find anything by what it's about, not where it's saved.
+
+### 🔌 Your AI advises, but can't do anything
+Sorana's AI doesn't just answer questions, it acts. Organise files, summarise documents, fetch web content, manage emails, all through plain-language conversation. No app switching, no copy-pasting.
+
+### 👁️ Half your knowledge is locked in PDFs and images
+Scanned book pages, photographed receipts, PDF reports, dead to most AI tools. Sorana's built-in OCR and vision layer makes your entire archive searchable and chattable, including documents from years ago.
+
+### 💸 Long conversations get slow and expensive
+The longer a project runs, the heavier the AI context grows. Sorana automatically compresses old conversations into tight summaries, over 90% fewer tokens, full context preserved. Long-term projects stay fast and affordable.
+
+### 🔒 Your private files shouldn't live on someone else's server
+Every file you send to ChatGPT or Claude leaves your machine. Sorana runs AI models entirely on your computer. Your notes, files, and conversations never leave your hands.
+
+---
+
+## Key Features
+
+### 🧩 Spatial Knowledge Canvas
+AI maps your files onto a 2D canvas by topic and relationship, not alphabetically, not by date, but by meaning. Like Obsidian Canvas, but automatically organised by your AI. Drag, group, rename, and build mind maps of your folder structure.
+
+### 🧠 Persistent AI Memory
+Sorana automatically extracts facts, preferences, and project details from every conversation. Next session, your AI knows your name, your current projects, and how you like to work. Memory is shared across all your agents, building a single unified knowledge profile over time.
+
+### 💬 Chat With All Your Documents
+Drop any file, PDF, Word doc, code, text, scanned image, into your workspace and chat with it in plain language. Sorana searches your documents using multiple strategies in parallel to always find the right answer, even in large archives.
+
+### ⚡ Auto-Compaction (>90% Token Savings)
+Long conversations are automatically compressed into tight summaries. You keep 100% of the context at a fraction of the cost. Projects that span months stay fast and affordable.
+
+### 🤖 AI That Takes Action
+Beyond answering questions, Sorana's built-in automation layer lets your AI operate your file system, browse the web, and manage your Gmail, all through natural conversation. Tell it what you need done; it handles the rest.
+
+### 🚀 Obsidian Export
+Already using Obsidian? Export your Sorana workspace directly to Obsidian Canvas or Graph View. Your AI-organised knowledge structure, carried into your existing vault. Use Sorana for AI-powered work; keep Obsidian as your permanent archive.
+
+### 🔒 100% Local & Private
+Run AI models entirely on your machine via Lemonade, Ollama, Llama.cpp, or LM Studio. Your files never leave your computer. Cloud APIs (OpenAI, Mistral, Gemini, etc.) are supported if you choose them, but never required.
+
+### 📦 Truly Portable
+No installation. Unzip anywhere, run from a USB drive, take your entire workspace with you. All data stored in a single `.sorana/` folder you own completely.
+
+---
+
+## How Sorana Compares
+
+| What you get | Sorana ✨ | Obsidian / Notion | ChatGPT / Claude | OpenWebUI |
+|---|---|---|---|---|
+| AI remembers you between sessions | ✅ Automatic | ❌ Manual notes only | ⚠️ Limited / paid | ❌ None |
+| Visual knowledge canvas | ✅ AI-organised | ✅ Manual (Obsidian) | ❌ Chat only | ❌ Chat only |
+| Chat with your documents | ✅ Any file, any format | ⚠️ Plugin required | ⚠️ Per session upload | ⚠️ Basic |
+| AI takes action on files & web | ✅ Built-in automation | ❌ View only | ❌ Advice only | ⚠️ Community tools |
+| Runs 100% offline & private | ✅ Your machine | ✅ Notes are local | ❌ Cloud only | ✅ Local |
+| Stays fast over months of use | ✅ Auto-compaction | ✅ (no AI context) | ⚠️ Gets slow & costly | ❌ Manual |
+| Free to use | ✅ Free & portable | ⚠️ Free + paid tiers | ❌ $20+/month | ✅ Free |
+
+> Sorana combines what Obsidian/Notion do for knowledge organisation with what AI assistants do for conversation, plus the automation that neither offers.
+
+---
+
+## Quick Start
+
+1. **Download** the portable archive from [tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
+2. **Extract** anywhere, desktop, USB, external drive
+3. **Run** `Sorana.exe`, no installation needed
+4. **Open a folder** as your workspace via *Open Workspace*
+5. **Select an AI model** in *Model Manager* (built-in offline model included)
+
+Latest: `Sorana.exe v1.0.40`
+MD5: `44fc4a78b34b527108664d533f12d97a`
+
+📥 [Download (Portable)](tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
+🏪 [Microsoft Store](https://apps.microsoft.com/store/detail/9N8C43PZC1RN)
+
+---
+
+## System Requirements
+
+| Component | Minimum |
+|---|---|
+| OS | Windows 11 (64-bit) |
+| RAM | 4 GB (8 GB+ recommended for local AI models) |
+| Storage | 2 GB (app + model) + `.sorana/` data folder |
+| AI | Built-in offline model included; local or cloud AI optional |
+
+### AI Model Options
+- **Built-in model** (~806 MB), works fully offline out of the box
+- **Recommended**, Llama 3.1 8B Instruct or higher for best results (requires 8 GB RAM / 4 GB VRAM)
+- **Cloud**, OpenAI, Mistral, Gemini, Deepseek, NVIDIA, OpenRouter (free tiers available), no local hardware required
+- **Local servers**, 🍋 Lemonade (NPU acceleration), Ollama, LM Studio, Llama.cpp
+
+🎉 **Free tier APIs available**, Deepseek, Mistral, NVIDIA, Gemini, and OpenRouter all offer free tiers. Just add your API key.
+
+---
+
+## Obsidian Integration
+
+Sorana connects directly to your Obsidian vault:
+
+- **Export to Canvas**, bring your AI-organised workspace layout into Obsidian's infinite Canvas
+- **Export to Graph View**, generate a knowledge graph from your workspace structure, compatible with Obsidian's Graph View
+- Full compatibility with Dataview, Templater, Excalidraw, and all other Obsidian plugins
+- Standard Markdown files, no lock-in, your data stays yours
+
+---
+
+## Using MCP Automation
+
+1. Open **MCP Manager** and enable the servers you need
+2. Create an **agent** in your workspace
+3. Right-click the agent title → **Chat**
+4. Give instructions in plain language, files, web, email, all accessible
+
+Connect external services: Google Drive, GitHub, PostgreSQL, custom tools.
+
+---
+
+## OCR for Scanned Documents
+
+To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) and ensure it's in your system PATH. Once installed, Sorana processes scanned documents automatically, making your entire paper archive searchable.
+
+---
+
+## Links
+
+🌐 Website: [tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
+💬 Discord: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
+🏪 Microsoft Store: [apps.microsoft.com](https://apps.microsoft.com/store/detail/9N8C43PZC1RN)
+
+---
+
+## Other Tools by Tetramatrix
+
+- 🧩 [TabNeuron](http://tetramatrix.github.io/TabNeuron), AI spatial tab manager & browser research workspace
+- 🖥️ [Aicono](http://tetramatrix.github.io/Aicono), AI intelligent desktop icon organiser
+- 🔧 [RyzenZPilot](http://tetramatrix.github.io/RyzenZPilot), AMD Ryzen power management tool
+- 🚀 [Spaceship!](https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship), Retro 2D arcade game
+
+---
+
+🏢 Developed by **Tetramatrix** | 🧠 Your personal AI knowledge workspace | 💝 Free for everyone
+
+
