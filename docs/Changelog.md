@@ -1,5 +1,15 @@
 📋 Changelog 📋
 
+📅 Mai 9, 2026 — Version 1.0.40
+
+🐛 fix: update document loading logic to handle full content retrieval correctly
+
+🐛 **fix:** add missing history registration in FolderTab
+
+🐛 refactor: adjust max tokens limit in LLM config
+
+🐛 feat: add user authentication for multi-file routing fix
+
 📅 Mai 6, 2026 — Version 1.0.39
 
 🐛 fix: add memory entity classification fix for companies
@@ -234,8 +244,8 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 
 📅 February 2, 2026 - Version 1.0.4
 
-• Significant performance enhancement for organizing large folder structures using new iterative algorithms
-• New built-in MCP server for file operations:
+•  Significant performance enhancement for organizing large folder structures using new iterative algorithms
+•  New built-in MCP server for file operations:
 
 * read\_file: Read file contents with intelligent limits
 * read\_file\_from\_line: Read specific file ranges for pagination
@@ -247,15 +257,4 @@ Bugfix: MermaidView loading indicator thread-safe implementation
 * get\_file\_info: Get information about files/directories
 * edit\_file: Edit files with specific changes
 * get\_filesystem\_info: Get server configuration and capabilities
-  • Other minor bugfixes
-
-❤️ Support the Development ❤️
-
-If you find Sorana useful, please consider donating to support ongoing development!
-☕ Buy us a coffee or support via PayPal or Bitcoin Cash !
-
-💰 Bitcoin Cash (BCH): bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
-💳 PayPal: paypal.me/Gigamegs
-
-Thank you for your support!
-
+* Other minor bugfixes
