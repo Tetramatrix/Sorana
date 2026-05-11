@@ -1,5 +1,11 @@
 📋 Changelog 📋
 
+📅 Mai 11, 2026 — Version 1.0.41
+
+🐛 fix: refactor: remove hardcoded throttling and implement backend-aware rate limiting
+
+🐛 fix: refactor: add new helper function for embedding injection
+
 📅 Mai 9, 2026 — Version 1.0.40
 
 🐛 fix: update document loading logic to handle full content retrieval correctly
