@@ -1,5 +1,15 @@
 📋 Changelog 📋
 
+📅 Mai 13, 2026 — Version 1.0.43
+
+🐛 refactor: adjust batch sizes for consistency
+
+🐛 refactor: add progressive retry logic for file execution
+
+🐛 refactor: add anti-thinking prefixes and hints for tiered models
+
+🐛 refactor: normalize generic category name in consolidation responses
+
 📅 Mai 13, 2026 — Version 1.0.42
 
 🐛 refactor: implement stronger alias handling and fix pith-sdk parser issues
