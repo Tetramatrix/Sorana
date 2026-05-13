@@ -1,5 +1,11 @@
 📋 Changelog 📋
 
+📅 Mai 13, 2026 — Version 1.0.42
+
+🐛 refactor: implement stronger alias handling and fix pith-sdk parser issues
+
+🐛 refactor: refactor RAG path and consolidate prompt to prevent over-consolidation
+
 📅 Mai 11, 2026 — Version 1.0.41
 
 🐛 fix: refactor: remove hardcoded throttling and implement backend-aware rate limiting
