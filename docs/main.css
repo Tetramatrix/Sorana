@@ -1469,6 +1469,9 @@ figcaption {
    ============================================ */
 
 .page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 48px 20px 36px;
   margin-bottom: 26px;
@@ -1542,7 +1545,7 @@ figcaption {
 }
 
 .logo-container {
-  margin-top: 20px;
+  margin: 16px 0 0 0;
   animation: fadeIn 0.8s ease 0.4s forwards;
   opacity: 0;
 }
@@ -2327,10 +2330,6 @@ body.lightbox-open {
 }
 
 /* Section heading with emoji */
-#obsidian-export-h2 {
-  color: var(--obsidian-secondary);
-}
-
 #obsidian-export-h2 .h2-icon {
   margin-left: 0;
   margin-right: 8px;
