@@ -25,7 +25,7 @@
   --section-obsidian: #9f7aea;         /* Violet */
   --section-ocr: #fc8181;              /* Coral */
   --section-backends: #f6e05e;         /* Soft yellow */
-  --section-install: #fc8181;          /* Coral – warm & distinct from Overview teal & Support rose */
+  --section-install: #ed8936;          /* Amber-orange – warm & distinct from Support rose */
   --section-requirements: #a0aec0;     /* Cool gray */
   --section-download: #68d391;         /* Emerald */
   --section-support: #f687b3;          /* Rose */
@@ -296,15 +296,15 @@ h3#mcp-section-h2 {
   background: linear-gradient(90deg, var(--section-install), transparent);
 }
 
-/* Setup section – CTA boxes match the coral headline (#setup > #final-download-setup) */
+/* Setup section – CTA boxes match the amber-orange headline (#setup > #final-download-setup) */
 #setup .cta-box,
 #final-download-setup .cta-box {
-  background: rgba(252, 129, 129, 0.06);
+  background: rgba(237, 137, 54, 0.06);
   border-color: var(--section-install);
 }
 #setup .cta-box::before,
 #final-download-setup .cta-box::before {
-  background: linear-gradient(90deg, var(--section-install) 0%, rgba(252, 129, 129, 0.4) 100%);
+  background: linear-gradient(90deg, var(--section-install) 0%, rgba(237, 137, 54, 0.4) 100%);
 }
 
 #system-requirements .cta-box {
@@ -316,7 +316,7 @@ h3#mcp-section-h2 {
 }
 
 .final-download-section .cta-box {
-  background: rgba(252, 129, 129, 0.06);
+  background: rgba(237, 137, 54, 0.06);
   border-color: var(--section-install);
 }
 .final-download-section .cta-box::before {
@@ -425,9 +425,9 @@ h3#mcp-section-h2 {
 }
 
 #setup-h2 {
-  background: linear-gradient(135deg, rgba(252, 129, 129, 0.12) 0%, rgba(255, 255, 255, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(237, 137, 54, 0.12) 0%, rgba(255, 255, 255, 0.06) 100%);
   border-left-color: var(--section-install);
-  color: #fecaca;
+  color: #fbd38d;
 }
 
 #support-h2 {
@@ -497,8 +497,8 @@ h3#mcp-section-h2 {
 }
 
 #setup {
-  background: linear-gradient(135deg, rgba(252, 129, 129, 0.035) 0%, rgba(255, 255, 255, 0.025) 100%);
-  border-color: rgba(252, 129, 129, 0.12);
+  background: linear-gradient(135deg, rgba(237, 137, 54, 0.035) 0%, rgba(255, 255, 255, 0.025) 100%);
+  border-color: rgba(237, 137, 54, 0.12);
 }
 
 #support {
@@ -1338,14 +1338,14 @@ iframe:hover, embed:hover, object:hover {
   background: linear-gradient(to bottom, #4CAF50, #2196F3);
 }
 
-/* Setup section – right accent stripe coral */
+/* Setup section – right accent stripe amber-orange */
 #setup .cta-box::after {
-  background: linear-gradient(to bottom, var(--section-install) 0%, rgba(252, 129, 129, 0.6) 100%);
+  background: linear-gradient(to bottom, var(--section-install) 0%, rgba(237, 137, 54, 0.6) 100%);
 }
 
 /* Hover accent stripes */
 #setup .cta-box:hover::after {
-  background: linear-gradient(to bottom, #fc8181 0%, #f87171 100%);
+  background: linear-gradient(to bottom, #ed8936 0%, #dd6b20 100%);
 }
 
 /* Overview section – right accent stripe teal */
