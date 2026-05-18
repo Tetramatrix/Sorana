@@ -1,5 +1,15 @@
 📋 Changelog 📋
 
+📅 Mai 18, 2026 — Version 1.0.44
+
+🆕  Model Manager: Added a "Favorite" column to the Model Manager
+
+🆕  Added new provider support for StepFun
+
+🐛 refactor: add StepFun artifact stripping to response cleaning paths
+
+🐛 refactor: add two-stage consolidation filter
+
 📅 Mai 13, 2026 — Version 1.0.43
 
 🐛 refactor: adjust batch sizes for consistency
