@@ -1565,12 +1565,12 @@ figcaption {
   margin: 0 auto;
   position: relative;
   margin-top: 50px;
-  background: #0e0f11;
-  border-radius: 16px;
-  border: 2px solid #3ecfb2;
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .hero-eyebrow {
@@ -1603,8 +1603,19 @@ figcaption {
   font-style: italic;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  margin-top: 0 !important;
   letter-spacing: -0.02em;
   color: #ffffff;
+  background: transparent !important;
+  border: none !important;
+  border-left: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .hero h1 em {
