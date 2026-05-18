@@ -1123,25 +1123,27 @@ iframe:hover, embed:hover, object:hover {
 }
 
 .hero-actions .btn-primary {
-  background: #68d391;
-  color: #1a1a2e !important;
+  background: #4fd1c5;
+  color: #1e1e1e !important;
+  box-shadow: 0 0 20px rgba(79, 209, 197, 0.3);
 }
 
 .hero-actions .btn-primary:hover {
-  background: #48bb78;
+  background: #3ecfb2;
   transform: translateY(-1px);
+  box-shadow: 0 0 30px rgba(79, 209, 197, 0.5);
 }
 
 .hero-actions .btn-outline {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #ffffff !important;
-  background: transparent;
-  font-weight: 500;
+  border: 1px solid rgba(79, 209, 197, 0.3);
+  color: #4fd1c5 !important;
+  background: rgba(79, 209, 197, 0.05);
 }
 
 .hero-actions .btn-outline:hover {
-  border-color: #68d391;
-  background: rgba(104, 211, 145, 0.1);
+  border-color: #4fd1c5;
+  background: rgba(79, 209, 197, 0.15);
+  box-shadow: 0 0 20px rgba(79, 209, 197, 0.2);
 }
 
 /* Download Sections & Buttons */
@@ -1578,12 +1580,26 @@ figcaption {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #68d391;
-  background: rgba(104, 211, 145, 0.1);
+  color: #1e1e1e;
+  background: #4fd1c5;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   margin-bottom: 1.5rem;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  box-shadow: 0 0 20px rgba(79, 209, 197, 0.4);
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1e1e1e;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #4fd1c5;
+  text-shadow: 0 0 30px rgba(79, 209, 197, 0.5);
 }
 
 .badge-dot {
@@ -1654,10 +1670,11 @@ figcaption {
   font-size: 2.5rem;
   font-weight: 400;
   font-style: italic;
-  color: #68d391;
+  color: #4fd1c5;
   display: block;
   line-height: 1;
   margin-bottom: 0.25rem;
+  text-shadow: 0 0 20px rgba(79, 209, 197, 0.3);
 }
 
 .stat-label {
