@@ -40,7 +40,7 @@
 
     <main class="wikidoc">
         <!-- Hero Section - Landing Page Style -->
-        <section class="hero">
+        <section class="hero" style="display:block !important; visibility:visible !important; opacity:1 !important; min-height:400px;">
           <div class="hero-eyebrow">
             <span class="badge-dot"></span>
             Personal AI Workspace
@@ -1015,6 +1015,18 @@
 -->
 
 <script src="main.js"></script>
+<script>
+// Ensure hero section is visible
+document.addEventListener('DOMContentLoaded', function() {
+  var hero = document.querySelector('.hero');
+  if (hero) {
+    hero.classList.remove('collapsed');
+    hero.style.display = 'block';
+    hero.style.visibility = 'visible';
+    hero.style.opacity = '1';
+  }
+});
+</script>
 
 </body>
 </html>
