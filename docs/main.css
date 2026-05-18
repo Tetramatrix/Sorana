@@ -518,6 +518,7 @@ h3 {
   border-left: 4px solid #68d391;
   margin-top: 12px;
   margin-bottom: 12px;
+  color: #cccccc;
 }
 /* Neue h4-Klasse – nur der Look, kein Plus, kein Collapse */
 h4.style-box {
@@ -2496,7 +2497,7 @@ code,
   border-radius: 10px;
   font-size: 1.15em;
   font-weight: 600;
-  color: var(--pastel-blue);
+  color: #68d391 !important;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -2504,6 +2505,10 @@ code,
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+}
+
+h3.feature-detail-toggle {
+  color: #68d391 !important;
 }
 
 .feature-detail-toggle::before {
@@ -2517,24 +2522,28 @@ code,
   transition: left 0.5s ease;
 }
 
-.feature-detail-toggle:hover {
-  color: #e3f2fd;
-  border-color: rgba(168, 216, 234, 0.4);
-  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.2);
-  transform: translateX(4px);
+h3.feature-detail-toggle:hover {
+  color: #68d391 !important;
 }
 
 .feature-detail-toggle:hover::before {
   left: 100%;
 }
 
+h3.feature-detail-toggle:hover {
+  color: #68d391 !important;
+  border-color: rgba(104, 211, 145, 0.4);
+  box-shadow: 0 4px 12px rgba(104, 211, 145, 0.2);
+  transform: translateX(4px);
+}
+
 .feature-detail-toggle:hover .chevron-badge {
-  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
-  border-color: rgba(168, 216, 234, 0.5);
-  box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, rgba(104, 211, 145, 0.35) 0%, rgba(104, 211, 145, 0.2) 100%);
+  border-color: rgba(104, 211, 145, 0.5);
+  box-shadow: 0 6px 16px rgba(104, 211, 145, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
   transform: scale(1.15) rotate(0deg);
-  color: #e3f2fd;
-  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+  color: #68d391;
+  text-shadow: 0 0 12px rgba(104, 211, 145, 0.8);
 }
 
 .feature-detail-toggle:hover .chevron-badge::after {
