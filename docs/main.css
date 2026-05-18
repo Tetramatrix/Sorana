@@ -1581,12 +1581,142 @@ figcaption {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #1e1e1e;
-  background: #4fd1c5;
+  background: #68d391;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   margin-bottom: 1.5rem;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  box-shadow: 0 0 20px rgba(79, 209, 197, 0.4);
+  box-shadow: 0 0 20px rgba(104, 211, 145, 0.4);
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1e1e1e;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #68d391;
+  text-shadow: 0 0 30px rgba(104, 211, 145, 0.5);
+}
+
+.hero-sub {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-weight: 400;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #68d391;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 0 20px rgba(104, 211, 145, 0.3);
+}
+
+.stat-label {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-actions .btn-primary,
+.hero-actions .btn-outline {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 160ms ease, transform 120ms ease, border-color 160ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  border: none;
+  line-height: 1.2;
+}
+
+.hero-actions .btn-primary {
+  background: #68d391;
+  color: #1e1e1e !important;
+  box-shadow: 0 0 20px rgba(104, 211, 145, 0.3);
+}
+
+.hero-actions .btn-primary:hover {
+  background: #48bb78;
+  transform: translateY(-1px);
+  box-shadow: 0 0 30px rgba(104, 211, 145, 0.5);
+}
+
+.hero-actions .btn-outline {
+  border: 1px solid rgba(104, 211, 145, 0.3);
+  color: #68d391 !important;
+  background: rgba(104, 211, 145, 0.05);
+  font-weight: 500;
+}
+
+.hero-actions .btn-outline:hover {
+  border-color: #68d391;
+  background: rgba(104, 211, 145, 0.15);
+  box-shadow: 0 0 20px rgba(104, 211, 145, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+    margin-top: 70px;
+  }
+}
+
+.hero-actions .btn-primary {
+  background: #3ecfb2;
+  color: #0e0f11 !important;
+  box-shadow: 0 0 20px rgba(62, 207, 178, 0.3);
+}
+
+.hero-actions .btn-primary:hover {
+  background: #2fb89d;
+  transform: translateY(-1px);
+  box-shadow: 0 0 30px rgba(62, 207, 178, 0.5);
+}
+
+.hero-actions .btn-outline {
+  border: 1px solid rgba(62, 207, 178, 0.3);
+  color: #3ecfb2 !important;
+  background: rgba(62, 207, 178, 0.05);
+}
+
+.hero-actions .btn-outline:hover {
+  border-color: #3ecfb2;
+  background: rgba(62, 207, 178, 0.15);
+  box-shadow: 0 0 20px rgba(62, 207, 178, 0.2);
 }
 
 .badge-dot {
