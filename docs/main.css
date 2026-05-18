@@ -1576,15 +1576,15 @@ figcaption {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #1e1e1e;
   background: #68d391;
-  padding: 0.25rem 0.75rem;
+  padding: 0.375rem 1rem;
   border-radius: 9999px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   box-shadow: 0 0 20px rgba(104, 211, 145, 0.4);
 }
@@ -1604,17 +1604,17 @@ figcaption {
 
 .hero-sub {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
   font-weight: 400;
   color: #cccccc;
-  max-width: 600px;
-  margin: 0 auto 2.5rem;
+  max-width: 700px;
+  margin: 0 auto 3rem;
   line-height: 1.6;
 }
 
 .hero-stats {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -1625,7 +1625,23 @@ figcaption {
 
 .stat-number {
   font-family: "Instrument Serif", Georgia, serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #68d391;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 0 20px rgba(104, 211, 145, 0.3);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 3rem;
   font-weight: 400;
   font-style: italic;
   color: #68d391;
@@ -1741,13 +1757,13 @@ figcaption {
 
 .hero h1 {
   font-family: "Instrument Serif", Georgia, serif;
-  font-size: clamp(3rem, 1.5rem + 5vw, 5rem);
+  font-size: clamp(4rem, 2rem + 6vw, 7rem);
   font-weight: 400;
   font-style: italic;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
+  line-height: 1;
+  margin-bottom: 2rem;
   margin-top: 0 !important;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   color: #ffffff;
   background: transparent !important;
   border: none !important;
@@ -1778,7 +1794,7 @@ figcaption {
 
 .hero-actions {
   display: flex;
-  gap: 0.75rem;
+  gap: 1rem;
   justify-content: center;
   flex-wrap: nowrap;
   margin-bottom: 4rem;
@@ -1786,7 +1802,7 @@ figcaption {
 
 .hero-stats {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -1800,7 +1816,7 @@ figcaption {
   font-size: 2.5rem;
   font-weight: 400;
   font-style: italic;
-  color: #4fd1c5;
+  color: #68d391;
   display: block;
   line-height: 1;
   margin-bottom: 0.25rem;
