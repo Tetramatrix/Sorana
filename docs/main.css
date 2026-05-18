@@ -181,7 +181,8 @@ h2:hover {
   color: #4fd1c5;
 }
 
-#what-is-sorana-h2 {
+#what-is-sorana-h2,
+h3#what-is-sorana-h2 {
   background: linear-gradient(135deg, rgba(66, 153, 225, 0.15) 0%, rgba(66, 153, 225, 0.05) 100%);
   border-left-color: var(--section-what-is);
   color: #63b3ed;
@@ -193,13 +194,15 @@ h2:hover {
   color: #f6ad55;
 }
 
-#ai-memory-rag-h2 {
+#ai-memory-rag-h2,
+h3#ai-memory-rag-h2 {
   background: linear-gradient(135deg, rgba(159, 122, 234, 0.15) 0%, rgba(159, 122, 234, 0.05) 100%);
   border-left-color: var(--section-memory);
   color: #b794f4;
 }
 
-#mcp-section-h2 {
+#mcp-section-h2,
+h3#mcp-section-h2 {
   background: linear-gradient(135deg, rgba(0, 181, 216, 0.15) 0%, rgba(0, 181, 216, 0.05) 100%);
   border-left-color: var(--section-mcp);
   color: #4fdada;
@@ -1384,7 +1387,6 @@ iframe:hover, embed:hover, object:hover {
   border-color: var(--accent-blue);
 }
 .cta-box h3 {
-  color: var(--pastel-blue);
   margin-top: 0;
   border-bottom: none;
   font-size: 1.5em;
@@ -1395,6 +1397,7 @@ iframe:hover, embed:hover, object:hover {
   margin-bottom: 20px;
   letter-spacing: -0.01em;
   background: none;
+  color: inherit;
 }
 .cta-box p {
   font-size: 16px;
