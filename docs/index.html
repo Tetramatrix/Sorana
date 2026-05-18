@@ -40,7 +40,7 @@
 
     <main class="wikidoc">
         <!-- Hero Section - Landing Page Style -->
-        <section class="hero">
+        <section class="hero" data-no-toggle="true">
           <div class="hero-eyebrow">
             <span class="badge-dot"></span>
             Personal AI Workspace / PKM
@@ -73,6 +73,23 @@
               <span class="stat-label">Your Knowledge</span>
             </div>
           </div>
+        </section>
+
+        <!-- Free Models Screenshot Showcase -->
+        <section class="showcase" id="free-models-showcase" data-no-toggle="true">
+          <div class="screenshot-wrap">
+            <img src="freemodels.png"
+                 alt="Sorana Model Manager showing 50+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
+                 width="1140" height="820" loading="lazy">
+          </div>
+          <div class="floating-badges">
+            <span class="badge free"><span class="badge-dot"></span> Free tier models</span>
+            <span class="badge cloud"><span class="badge-dot"></span> Cloud providers</span>
+            <span class="badge local"><span class="badge-dot"></span> On-premise / Local</span>
+          </div>
+          <p class="screenshot-caption">
+            50+ free AI models from every major provider — just bring your own API key.
+          </p>
         </section>
 
         <!-- Horizontal Navigation Bar -->
@@ -1016,6 +1033,14 @@
 -->
 
 <script src="main.js"></script>
+<script>
+// Un-collapse hero and showcase sections after main.js runs
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.hero, .showcase').forEach(function(el) {
+    el.classList.remove('collapsed');
+  });
+});
+</script>
 
 </body>
 </html>
