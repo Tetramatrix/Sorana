@@ -1105,16 +1105,7 @@ iframe:hover, embed:hover, object:hover {
 .hero-actions .btn-primary {
   background: #68d391;
   color: #1a1a2e !important;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
   border: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background 160ms ease, transform 120ms ease;
-  display: inline-block;
 }
 
 .hero-actions .btn-primary:hover {
@@ -1123,23 +1114,14 @@ iframe:hover, embed:hover, object:hover {
 }
 
 .hero-actions .btn-outline {
-  border: 2px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff !important;
   background: transparent;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: border-color 160ms ease, background 160ms ease;
-  display: inline-block;
 }
 
 .hero-actions .btn-outline:hover {
   border-color: #68d391;
-  background: rgba(104, 211, 145, 0.2);
+  background: rgba(104, 211, 145, 0.1);
 }
 
 /* Download Sections & Buttons */
@@ -1641,7 +1623,7 @@ figcaption {
 
 .stat-number {
   font-family: "Instrument Serif", Georgia, serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   font-style: italic;
   color: #68d391;
