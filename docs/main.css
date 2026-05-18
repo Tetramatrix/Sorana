@@ -1568,9 +1568,6 @@ figcaption {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
 }
 
 .hero-eyebrow {
@@ -1581,8 +1578,8 @@ figcaption {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #1a1a2e;
-  background: #ffffff;
+  color: #68d391;
+  background: rgba(104, 211, 145, 0.1);
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   margin-bottom: 1.5rem;
@@ -1627,7 +1624,7 @@ figcaption {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   font-weight: 400;
-  color: #ffffff;
+  color: #cccccc;
   max-width: 600px;
   margin: 0 auto 2.5rem;
   line-height: 1.6;
@@ -1667,7 +1664,7 @@ figcaption {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #cccccc;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
