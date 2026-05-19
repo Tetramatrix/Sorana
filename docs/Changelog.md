@@ -1,5 +1,11 @@
 📋 Changelog 📋
 
+📅 Mai 19, 2026 — Version 1.0.45
+
+🐛 feat: add migration script for entity columns
+
+🐛 refactor: add StepFun artifact stripping to response cleaning paths
+
 📅 Mai 18, 2026 — Version 1.0.44
 
 🆕  Model Manager: Added a "Favorite" column to the Model Manager
