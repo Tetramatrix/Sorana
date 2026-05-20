@@ -1,5 +1,11 @@
 📋 Changelog 📋
 
+📅 Mai 20, 2026 — Version 1.0.46
+
+🆕  Add System tray with update check
+
+🐛 fix: Model Manager sort column state
+
 📅 Mai 19, 2026 — Version 1.0.45
 
 🐛 feat: add migration script for entity columns
