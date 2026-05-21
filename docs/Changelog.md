@@ -1,5 +1,13 @@
 📋 Changelog 📋
 
+📅 Mai 21, 2026 — Version 1.0.47
+
+🐛 fix: Agent delete
+
+🐛 fix: improve RAG query
+
+🐛 fix: refactor thinking and reasoning detection in Chat
+
 📅 Mai 20, 2026 — Version 1.0.46
 
 🆕  Add System tray with update check
