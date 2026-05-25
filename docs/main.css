@@ -3043,6 +3043,9 @@ body.lightbox-open {
   color: var(--text-primary);
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(196, 181, 253, 0.08) 100%);
   border-left: 5px solid #9f7aea;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 16px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -3068,7 +3071,11 @@ body.lightbox-open {
 
 .testimonials-heading:hover {
   transform: translateX(5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 12px rgba(139, 92, 246, 0.3);
+  border-left-color: #7c3aed;
+  border-right-color: rgba(255, 255, 255, 0.3);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
 .testimonials-grid {
