@@ -3027,21 +3027,21 @@ body.lightbox-open {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(180deg, rgba(45, 45, 48, 0.5) 0%, rgba(30, 30, 30, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(45, 45, 48, 0.4) 0%, rgba(30, 30, 30, 0.6) 100%);
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .testimonials-heading {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: var(--text-primary);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(196, 181, 253, 0.08) 100%);
+  color: var(--text-secondary);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(196, 181, 253, 0.05) 100%);
   border-left: 5px solid #9f7aea;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding: 16px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -3057,7 +3057,7 @@ body.lightbox-open {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
   transition: left 0.5s ease;
 }
 
@@ -3067,11 +3067,11 @@ body.lightbox-open {
 
 .testimonials-heading:hover {
   transform: translateX(5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 12px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 12px rgba(139, 92, 246, 0.2);
   border-left-color: #7c3aed;
-  border-right-color: rgba(255, 255, 255, 0.3);
-  border-top-color: rgba(255, 255, 255, 0.3);
-  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .testimonials-grid {
@@ -3082,10 +3082,10 @@ body.lightbox-open {
 }
 
 .testimonial-card {
-  background: rgba(45, 45, 48, 0.7);
+  background: rgba(45, 45, 48, 0.5);
   border-radius: 1rem;
   padding: 2rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   backdrop-filter: blur(10px);
@@ -3100,7 +3100,7 @@ body.lightbox-open {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.4) 0%, rgba(196, 181, 253, 0.2) 100%);
 }
 
 .testimonial-card::after {
@@ -3110,7 +3110,7 @@ body.lightbox-open {
   right: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(to bottom, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  background: linear-gradient(to bottom, rgba(139, 92, 246, 0.4) 0%, rgba(196, 181, 253, 0.2) 100%);
   opacity: 0.6;
   transition: all 0.3s ease;
 }
@@ -3118,7 +3118,7 @@ body.lightbox-open {
 .testimonial-card:hover::after {
   opacity: 1;
   width: 20px;
-  background: linear-gradient(to bottom, #4CAF50, #2196F3);
+  background: linear-gradient(to bottom, #7c3aed, #9f7aea);
 }
 
 .testimonial-card:hover {
@@ -3143,7 +3143,7 @@ body.lightbox-open {
 .testimonial-quote {
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   margin-bottom: 1.5rem;
   font-style: italic;
 }
