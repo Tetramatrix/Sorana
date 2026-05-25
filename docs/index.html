@@ -24,7 +24,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-		<div id="api-notice" style="position: fixed; top: 0; left: 0; right: 0; background: #00ff00; color: #ff00ff; text-align: center; padding: 10px; z-index: 1000; font-weight: bold;">🎉 Free to use! Run AI fully offline or add free API keys for StepFun, NVIDIA, Gemini, Mistral, Deepseek, or OpenRouter. 🎉</div>
+		<div id="api-notice" style="position: fixed; top: 0; left: 0; right: 0; background: #00ff00; color: #ff00ff; text-align: center; padding: 10px; z-index: 1000; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">🎉 Free to use! Run AI fully offline or add free API keys for <a href="https://github.com/stepfun-ai/Step-3.5-Flash">StepFun (Step-3.5-Flash free tier)</a>, NVIDIA, Gemini, Mistral, Deepseek, or OpenRouter. 🎉</div>
 
     <aside class="left">
         <nav class="fixed-nav">
@@ -92,6 +92,25 @@
           <p class="screenshot-caption">
             35+ free cloud AI models from every major provider — unlimited local models, just bring your own API key
           </p>
+         </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials" data-no-toggle="true">
+          <h2 class="testimonials-heading" data-no-toggle="true">Trusted by the Community</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <img src="https://www.majorgeeks.com/images/logos/majorgeeks-nostar.gif" alt="MajorGeeks" class="testimonial-logo">
+              <div class="testimonial-source">MajorGeeks</div>
+              <p class="testimonial-quote">"Sorana is a smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. What we like is that Sorana does not just slap a chatbot onto a file manager and call it progress. The canvas, document chat, OCR, and local AI support gives it a purpose."</p>
+              <a href="https://www.majorgeeks.com/files/details/sorana.html" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+            </div>
+            <div class="testimonial-card">
+              <img src="https://www.softpedia.com/images/icons/softpedia-40.png" alt="Softpedia" class="testimonial-logo">
+              <div class="testimonial-source">Softpedia</div>
+              <p class="testimonial-quote">[Softpedia testimonial excerpt will be added here once content is retrieved]</p>
+              <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+            </div>
+          </div>
         </section>
 
         <!-- Horizontal Navigation Bar -->
@@ -113,8 +132,6 @@
     <section class="overview-section" id="overview">
     <section class="inspiration-section" id="inspiration">
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
-            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
             
             <p>We got tired of re-explaining ourselves to AI every single day. Our notes were in Obsidian, our tasks scattered across folders, and every time we opened a new chat, the AI had forgotten everything. We wanted a workspace that thinks the way we do: through connections, context, and accumulated knowledge. So we built Sorana, a personal AI that learns your projects, remembers your preferences, and makes your knowledge actually work for you.</p>
         </div>
@@ -124,8 +141,6 @@
     <section class="intro-section" id="what-is-sorana">
 
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
-            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
             <p><strong>Sorana is your personal AI knowledge workspace, a second brain that actually acts.</strong> Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. Visualise your entire knowledge base on a spatial 2D canvas (like Obsidian Canvas, but AI-powered), chat with any document in plain language, and let your AI handle repetitive tasks, organising files, researching topics, managing emails, all without leaving your workspace. Everything runs on your machine. Your data stays yours.</p>
         </div>
 
@@ -688,7 +703,7 @@
 		            <ul>
 		                <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager</li>
 		                <li><strong>Local and On-Prem Services:</strong> 🍋 Lemonade (with FastFlowLM NPU), Llama.cpp, Ollama, and other self-hosted LLM solutions</li>
-		                <li><strong>Cloud Services:</strong> OpenRouter*, Deepseek*, StepFun*, NVIDIA*, OpenAI, Mistral*, Google Gemini*, Antrophic, Qwen and other cloud-based AI platforms</li>
+		                <li><strong>Cloud Services:</strong> OpenRouter*, Deepseek*, StepFun* (<a href="https://github.com/stepfun-ai/Step-3.5-Flash">Step-3.5-Flash free tier</a>), NVIDIA*, OpenAI, Mistral*, Google Gemini*, Antrophic, Qwen and other cloud-based AI platforms</li>
 		            </ul>
 		            <sup>*Free tier available through their platform</sup>
                 </div>
