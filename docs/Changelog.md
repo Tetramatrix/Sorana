@@ -1,5 +1,15 @@
 📋 Changelog 📋
 
+📅 Mai 25, 2026 — Version 1.0.48
+
+🆕 New Quick Chat tab: Start conversations instantly without creating agents or opening workspaces. Uses global system memories by default, so your AI has full
+
+context from day one.
+
+🆕  Model Manager: Added a Capabilities column to the Model Manager. If the mode support Thinking and Vision it can be manually enabled.
+
+🐛 fix: Tool Call loop
+
 📅 Mai 21, 2026 — Version 1.0.47
 
 🐛 fix: Agent delete
