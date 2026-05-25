@@ -519,6 +519,25 @@ h3 {
   margin-top: 12px;
   margin-bottom: 12px;
   color: #cccccc;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Swipe effect on all h3 elements */
+h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+
+h3:hover::before {
+  left: 100%;
 }
 /* Neue h4-Klasse – nur der Look, kein Plus, kein Collapse */
 h4.style-box {
@@ -2509,25 +2528,6 @@ code,
 
 h3.feature-detail-toggle {
   color: #68d391 !important;
-}
-
-.feature-detail-toggle::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  transition: left 0.5s ease;
-}
-
-h3.feature-detail-toggle:hover {
-  color: #68d391 !important;
-}
-
-.feature-detail-toggle:hover::before {
-  left: 100%;
 }
 
 h3.feature-detail-toggle:hover {
