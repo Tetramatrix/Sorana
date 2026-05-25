@@ -133,6 +133,14 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* Inline link override for paragraph/list text */
+.inline-link {
+  display: inline !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
   margin-top: 1.5em;
