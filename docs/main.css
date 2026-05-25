@@ -559,7 +559,7 @@ h4.style-box {
   border-radius: 8px;
   margin-top: 24px;
   margin-bottom: 14px;
-  color: #ffffff;
+  color: #d7eafe;
 }
 
 /* Alte h4-Styles bleiben als Fallback */
@@ -1260,7 +1260,7 @@ iframe:hover, embed:hover, object:hover {
 
 .btn-partner-fastflow {
   background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1e3a5f 100%);
-  color: #fff !important;
+  color: var(--text-secondary);
   border: 1px solid #1a3a5c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
@@ -1342,11 +1342,13 @@ iframe:hover, embed:hover, object:hover {
   transition: background-color 0.3s ease;
 }
 
-.feature-table th {
-  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
-  color: var(--text-primary);
+.comparison-table th {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.18) 0%, rgba(49, 130, 206, 0.12) 100%);
+  border-left: 4px solid #4fd1c5;
+  color: #4fd1c5;
   font-weight: 600;
   text-align: center;
+  padding: 14px 16px;
 }
 
 .feature-table tr:hover td {
@@ -1792,7 +1794,7 @@ figcaption {
   margin-bottom: 2rem;
   margin-top: 0 !important;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: #d7eafe;
   background: transparent !important;
   border: none !important;
   border-left: none !important;
@@ -2176,10 +2178,9 @@ figcaption {
 }
 
 .horizontal-toc-nav a:hover {
-  background:
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.18) 0%, transparent 36%),
+  background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.18) 0%, transparent 36%),
     linear-gradient(135deg, rgba(124, 58, 237, 0.22) 0%, rgba(56, 178, 172, 0.18) 100%);
-  color: #ffffff;
+  color: #b794f4;
   transform: translateY(-3px);
   box-shadow:
     0 10px 22px rgba(124, 58, 237, 0.18),
