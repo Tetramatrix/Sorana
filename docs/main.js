@@ -337,9 +337,10 @@ function toggleSectionFromArrow(arrowElement) {
  * Initialize collapsible sections
  */
 (function() {
-    // Collapse all sections by default
+    // Collapse all sections by default (skip data-no-toggle)
     const allSections = document.querySelectorAll('main section');
     allSections.forEach(function(section) {
+        if (section.getAttribute('data-no-toggle') === 'true') return;
         section.classList.add('collapsed');
     });
 
