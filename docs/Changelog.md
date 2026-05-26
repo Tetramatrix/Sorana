@@ -1,5 +1,9 @@
 📋 Changelog 📋
 
+📅 Mai 26, 2026 — Version 1.0.48
+
+🐛 fix: Model thinking support
+
 📅 Mai 25, 2026 — Version 1.0.48
 
 🆕 New Quick Chat tab: Start conversations instantly without creating agents or opening workspaces. Uses global system memories by default, so your AI has full
