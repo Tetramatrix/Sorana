@@ -1,6 +1,12 @@
 📋 Changelog 📋
 
-📅 Mai 26, 2026 — Version 1.0.48
+📅 Mai 28, 2026 — Version 1.0.50
+
+🆕 Added LM Studio support
+
+🐛 fix:Model thinking support
+
+📅 Mai 26, 2026 — Version 1.0.49
 
 🐛 fix: Model thinking support
 
