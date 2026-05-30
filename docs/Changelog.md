@@ -1,5 +1,17 @@
 📋 Changelog 📋
 
+📅 Mai 30, 2026 — Version 1.0.51
+
+🆕  Added Tool Workspace Selector
+
+🐛 fix: Model thinking and thinking renderer
+
+🐛 fix: Agent Config Path 
+
+🐛 fix: LLM API max Tokens
+
+🐛 fix: MCP Tool Call
+
 📅 Mai 28, 2026 — Version 1.0.50
 
 🆕 Added LM Studio support
