@@ -1,12 +1,28 @@
 📋 Changelog 📋
 
+📅 June 02, 2026 — Version 1.0.52
+
+🐛 fix: Model Manager Column Sort
+
+🐛 fix: Agent Config Path
+
+🐛 fix: Debug Logging
+
+🐛 refactor: update vocabulary index data
+
+🐛 fix: content filter in compactor node to handle empty Messages
+
+🐛 fix: circular Import
+
+🐛 fix: RAG Status bar filename handling
+
 📅 Mai 30, 2026 — Version 1.0.51
 
 🆕  Added Tool Workspace Selector
 
 🐛 fix: Model thinking and thinking renderer
 
-🐛 fix: Agent Config Path 
+🐛 fix: Agent Config Path
 
 🐛 fix: LLM API max Tokens
 
