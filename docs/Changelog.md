@@ -1,5 +1,11 @@
 📋 Changelog 📋
 
+📅 June 03, 2026 — Version 1.0.53
+
+🐛 fix: MCP Tool Call
+
+🐛 fix: LLM Thinking Model internal ops
+
 📅 June 02, 2026 — Version 1.0.52
 
 🐛 fix: Model Manager Column Sort
