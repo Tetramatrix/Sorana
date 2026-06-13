@@ -1,5 +1,91 @@
 📋 Changelog 📋
 
+📅 June 13, 2026 — Version 1.0.54
+
+🆕 LangGraph chat workflow with persistent tool call history and multi-turn execution
+
+🆕 Dynamic tool chaining — agent can call multiple tools across turns with automatic retry and synthesis
+
+🆕 Parallel tool execution — multiple tool calls run concurrently with sequential remainder handling
+
+🆕 Continuation planner — autonomous research mode with answer-marker detection and thinking extraction
+
+🆕 LLM-based file and query extraction for smarter document routing
+
+🆕 Default MCP servers (memory, filesystem, web\_content) auto-enabled for all new agents
+
+🆕 External Gmail MCP server configuration in agent settings
+
+🆕 RAG document pre-loading by name — documents are available immediately without re-retrieval
+
+🆕 XiaomiMiMo backend provider support
+
+🆕 Reload MCP server config without app restart
+
+🆕 Branded AppData directories for all variants (Sorana, Aicono, TabNeuron)
+
+🆕 Clickable update notification balloons — click to open website (uses windows-toasts)
+
+🆕 IMPORTANT RULES auto-injected into system prompt (no longer user-editable)
+
+🆕 Model Manager: model name added as third sort tiebreaker for easier model discovery
+
+🆕 MiniMax-M3 tool call support — parser for ]<]minimax\[> format with tool\_name\\n{json} pattern
+
+🆕 ThinkingExtractor — modular model-family-aware thinking extraction (StepFun, DeepSeek, Qwen, MiniMax, OpenAI)
+
+🆕 Web search query extraction — regex patterns for "research X in internet" → "X"
+
+🐛 fix: synthesis retry nullifying tool\_calls on initial pass
+
+🐛 fix: multi-document RAG routing logic in LangGraph workflow
+
+🐛 fix: RAG tool skipped when else branch overwrites early-return values
+
+🐛 fix: planning-only text leaking into status bar display
+
+🐛 fix: tool results missing rag\_context in synthesis prompts
+
+🐛 fix: infinite planning loop when documents already loaded
+
+🐛 fix: RAG tool not filtering by agent\_uid
+
+🐛 fix: router overmatching generic prose as RAG filenames
+
+🐛 fix: empty content recovery for reasoning-only responses
+
+🐛 fix: update notification toast not clickable (replaced with windows-toasts)
+
+🐛 fix: model dropdown not populated when editing agent from chat tab
+
+🐛 fix: IMPORTANT RULES block visible in editable system prompt
+
+🐛 fix: sys.stdout crash in Windows GUI (debug prints → logger)
+
+🐛 fix: CoreTabView passed as Tkinter parent (not a widget)
+
+🐛 fix: background thread TclError in model discovery callbacks
+
+🐛 fix: MiniMax-M3 truncated responses (model\_overrides missing from ChatState TypedDict)
+
+🐛 fix: MiniMax-M3 tool calls not detected (added MiniMaxToolParser)
+
+🐛 fix: tool calls suppressed in synthesis mode when model outputs new tools
+
+🔄 refactor: AIEngine split into 5-module package
+
+🔄 refactor: Chat node split into 4 focused files (chat\_helpers, rag\_context\_resolver, llm\_invocation, synthesis\_handler)
+
+🔄 refactor: router modularized into graph + helper modules
+
+🔄 refactor: LLMResponseParser split into 8-mixin package
+
+🔄 refactor: model\_manager\_view split into 8-module package
+
+🔄 refactor: synthesis logic simplified with embedded LLM classification
+
+🔄 refactor: prose-parsing logic consolidated into shared module
+
 📅 June 03, 2026 — Version 1.0.53
 
 🐛 fix: MCP Tool Call
