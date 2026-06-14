@@ -1,5 +1,19 @@
 📋 Changelog 📋
 
+📅 June 14, 2026 — Version 1.0.55
+
+🆕 Unified thinking module across 15+ files into single canonical module with deprecated shims removed
+
+🆕 Memory importance scoring with time decay, LLM contradiction filtering, and consolidation logic
+
+🆕 Production telemetry configuration and performance knobs for reduced overhead and improved inference latency
+
+🔄 Major refactoring: split agent controller, chat interface, browser tab, preview view, and chat management tab into smaller focused modules
+
+🔄 Added /help command for MCP tools guidance and improved sort state persistence
+
+🐛 Update notification balloon now uses windows-toasts for better UX
+
 📅 June 13, 2026 — Version 1.0.54
 
 🆕 LangGraph chat workflow with persistent tool call history and multi-turn execution
