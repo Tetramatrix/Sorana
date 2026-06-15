@@ -1,5 +1,15 @@
 📋 Changelog 📋
 
+📅 June 16, 2026 — Version 1.0.56
+
+🆕 Visual group collapse toggle for model and embedding tree with persistence and arrow visibility
+
+🆕 Backend summary UI — model count and API details update when backend selection changes
+
+🔄 Model and Embedding manager refactored with provider tree display, column hierarchy, sorting, and collapse logic
+
+🐛 Fixed import path in delta\_loader.py and visual group collapse state logging during shutdown
+
 📅 June 14, 2026 — Version 1.0.55
 
 🆕 Unified thinking module across 15+ files into single canonical module with deprecated shims removed
