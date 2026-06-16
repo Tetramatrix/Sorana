@@ -1,6 +1,20 @@
 📋 Changelog 📋
 
-📅 June 16, 2026 — Version 1.0.56
+📅 June 16, 2026 — Version 1.0.57
+
+🐛 Self-instruct visible content detection — models emitting "I'll read the file…" in visible response no longer leak as final answers. Three-layer defense: regex fallback patterns, LLM classification fallback, and §G-b escalation bypass fix.
+
+🐛 RAG multi-file context overflow — documents explicitly named by user (e.g. 6 files totaling 66k chars) are no longer truncated at 30k chars. Multi-file mode raises the cap to 3× the default limit.
+
+🐛 Telemetry log path — `thinking_telemetry.log` now resolves to `%LOCALAPPDATA%/Sorana/logs/` instead of next to the .exe. Fixed both the pith-sdk `_resolve_log_file()` fallback and the `ThinkingTelemetry._instance` singleton injection so the brand-aware path is always used.
+
+🐛 ConfirmDialog missing import — RAG document delete confirmation dialog no longer crashes with `NameError: name 'ConfirmDialog' is not defined`.
+
+🔄 Variable naming cleanup in synthesis_handler.py — renamed `_failed_tool_present_gb` → `failed_tool_present`, `_vis_intent` → `llm_intent`, `_vis_cls_err` → `classification_error`, `_dynamic_chain_retries_out_gb` → `dynamic_chain_retries`, `_gb_err` → `planner_error`.
+
+🔄 `CONTINUE_TOOLING_MARKERS` expanded — added `"i'll first"`, `"i will first"`, and other contraction/future-tense patterns for German, French, and English self-instruct detection.
+
+📅 June 15, 2026 — Version 1.0.56
 
 🆕 Visual group collapse toggle for model and embedding tree with persistence and arrow visibility
 
