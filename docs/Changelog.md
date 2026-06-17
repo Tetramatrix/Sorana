@@ -1,5 +1,19 @@
 📋 Changelog 📋
 
+📅 June 17, 2026 — Version 1.0.58
+
+🆕 MCP background threads — MCP servers now run on persistent background threads, enabling multi-agent coordination and surviving across tool calls without restart.
+
+🆕 Event-driven polling — chat response latency reduced and CPU usage lowered on local inference by switching from poll-interval loops to event-driven callbacks.
+
+🆕 StepFun Plan backend — new `stepfun_plan` provider added to `data/llm_config.json`.
+
+🔄 Self-instruct rollback — synthesis handler now detects self-instruct in escalation state and rolls back, preventing leaked internal reasoning from reaching the user.
+
+🔄 Orphan cleanup — removed unused modules and consolidated loose dependencies across the codebase.
+
+🔄 Mixin split — large mixin modules decomposed into thin orchestrator + dedicated mixin files for better maintainability.
+
 📅 June 16, 2026 — Version 1.0.57
 
 🐛 Self-instruct visible content detection — models emitting "I'll read the file…" in visible response no longer leak as final answers. Three-layer defense: regex fallback patterns, LLM classification fallback, and §G-b escalation bypass fix.
