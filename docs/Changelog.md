@@ -1,5 +1,41 @@
 📋 Changelog 📋
 
+📅 June 18, 2026 — Version 1.0.59
+
+🆕 Agent trace visualization — LangGraph chat workflow now shows agent thinking, tool usage, and per-tool progress in a dedicated trace panel.
+
+🆕 Markdown table rendering — chat views now parse and render markdown tables with monospace-aligned columns.
+
+🆕 Chat upload button — local agent chat window status bar gets an upload button for file attachments.
+
+🆕 Default MCP servers — new agents auto-configure memory, filesystem, web_content, and gmail MCP servers.
+
+🆕 LLM request caching — config and model capabilities cached with mtime-keyed invalidation to reduce redundant I/O and CPU cycles.
+
+🆕 Memory model enhancement — entity_type, entity_key, scope, and category fields added.
+
+🔄 Synthesis handler split into discrete middleware stages with clear interfaces.
+
+🔄 Tool node logging simplified and string formatting optimized in trace_models.py.
+
+🔄 LangGraph invoke moved to state update, removed unnecessary stream loop and intermediate variables.
+
+🔄 Progress indicator layout fixed to render on single line after "System:" prefix.
+
+🐛 fix: Agent prefix line break — leading newline before [timestamp] Agent: prefix to prevent broken output on non-newline terminated user messages.
+
+🐛 fix: Document list controller filter now correctly handles system agent documents by matching agent_uid directly.
+
+🐛 fix: Model name preservation in LangGraph state merge.
+
+🐛 fix: Trace collector auto-finish guard prevents active dot persistence after turn completion.
+
+🐛 fix: Memory MCP server wiring — resolved tool registry name mismatch and dispatcher stub issue.
+
+🐛 fix: Memory extraction profile generation now enforces internal budget constraints properly.
+
+🐛 fix: Shared _cap_text helper for consistent truncation with '...' indicator across all nodes.
+
 📅 June 17, 2026 — Version 1.0.58
 
 🆕 MCP background threads — MCP servers now run on persistent background threads, enabling multi-agent coordination and surviving across tool calls without restart.
