@@ -1,4 +1,18 @@
 📋 Changelog 📋
+📅 June 20, 2026 — Version 1.0.61
+🆕 Welcome card version source — health dashboard reads version from `BrandingConfig.version` property (reads `VERSION.txt` via 3-tier fallback), eliminating hardcoded version string.
+🆕 Memory clean button prompt rewrite — system and user prompts replaced with deterministic pattern-matching filter (5 literal patterns + worked example) to reduce LLM reasoning verbosity. Batch size reduced from 20 to 10.
+🆕 Extraction retry chain fix — JSON retry path system prompt now correctly says "Return ONLY a JSON array" instead of contradictory "Return ONLY plain text facts".
+4 rules (plaintext first, JSON as fallback, match system to user prompt, parse defensively).
+🆕 Memory tag generator — robust anti-garbage validation for auto-generated memory tags.
+🆕 Entity extraction audit — comprehensive audit and remediation plan for `_infer_entity_from_content` and `_extract_company_name` functions.
+🔄 Blacklist consolidation — shared blacklist definition across modules to prevent potential drift.
+🔄 Scope naming cleanup — renamed `scope='profile'` to `'consolidated'` and fixed category for consolidated memories.
+🔄 Bottom navigation bar — added category and search bar to bottom navigation.
+🔄 Memory extraction prompt safety — content truncation fix and safety improvements.
+🐛 fix: topic/project examples added to `EXTRACTION_PROMPT` and entity extraction fallback logic fixed.
+🐛 fix: dominant category metadata recovered before falling back to `'facts'` in migration plan.
+🐛 fix: memory extraction system resolves single-entity storage and soft-archived noise in importance scoring pipeline.
 📅 June 19, 2026 — Version 1.0.60
 🆕 Hugging Face backend provider — OpenAI-compatible Inference Router with auto-complete tool configuration for Hugging Face dashboard.
 🆕 Health dashboard — reusable card widgets with colored borders, status icons, dynamic data binding, mini-wizards for each system card, and backend provider card.
