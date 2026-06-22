@@ -1,4 +1,34 @@
 📋 Changelog 📋
+📅 June 22, 2026 — Version 1.0.63
+🆕 System-wide prompt manager UI: treeview for system/user prompt pairs with centralized storage in the branding folder and improved agent management interface.
+🆕 Prompt manager data flow: UI components and data binding for system/user prompt pair editing.
+🆕 Prompt store manager: dedicated store manager UI components for system prompts.
+🆕 Health dashboard card system: reusable card widgets with wizard pattern for llama.cpp Bridge configuration.
+🆕 Sorana Bridge documentation: lifecycle and configuration docs for the Bridge server.
+🆕 Vision handler multi-backend: vision now uses `LLMClient.send_request()` instead of hardcoded Lemonade SDK, with configurable endpoint URL.
+🆕 Reasoning effort whitelist protection: `reasoning_effort` no longer stripped when injected by `_apply_reasoning_config()`.
+🆕 Execution phase budget fix: prompt registry and sorting logic gap resolved for proper budget enforcement.
+🆕 RAG document sync fix: explicit `target_agent_uid` parameter fixes invisible synced docs in Manage Documents window.
+🆕 Canvas bounds checking: robust bounds validation prevents false positives on large groups where anchor is far from center.
+🆕 Empty group bounds: group bounds now update correctly for empty groups in free-form mode during save/load cycles.
+🆕 Startup cursor cleanup: defensive cleanup prevents inherited "watch" cursor on chat interface startup buttons.
+🆕 Vision button simplification: redundant vision button removed, visibility toggle logic streamlined.
+🔄 Endpoint whitelist hardening: reasoning/thinking keys added to all endpoint whitelists for payload cleaner.
+🔄 LLM client full_prompt: `send_request` now handles `full_prompt` parameter for direct prompt passthrough.
+🔄 Synthesis message suppression: synthesis fix messages suppressed when `disable_tools=True`.
+🔄 Capability cache composite IDs: cache lookup logic handles composite IDs correctly.
+🔄 Grid layout fix: cross-column shared grid replaced with two independent column Frames to fix asymmetric cell heights and drag-drop fragility.
+🔄 Card widget drag unification: click and drag state machine unified across all card widgets.
+🔄 Grid padding: reduced unnecessary padding in grid layout.
+🔄 Health card drag: drag handling added for health card header.
+🔄 AreaSelector safety: try/except wrapping and cursor/grab release fixes in `vision_handler`.
+🔄 Fastmcp compatibility: exception handling for legacy fastmcp compatibility in unit tests.
+🔄 Hard failure handling: clarity and consistency improvements in `graph_routing` and `router`.
+🐛 Defensive None guard: `strip_thinking` now handles raw response strings without TypeError.
+🐛 UnboundLocalError fix: redundant import of `re` removed from `_build_recovery_response()`.
+🐛 Anti-thinking prefix: missing prefix injection and model resolution bugs fixed in file grouping orchestrator.
+🐛 Vision handler endpoint: hardcoded Lemonade endpoint replaced with configurable URL; HTTP error handling added.
+🐛 Vision handler display: dead code removed; correct model now displayed and buttons function properly.
 📅 June 21, 2026 — Version 1.0.62
 🆕 Unified probe dialog: reasoning, vision, and audio probes consolidated into a single wizard dialog.
 🆕 Vision handler multi-backend support. Vision now works across all backends via `LLMClient.send_request()` instead of hardcoded Lemonade SDK.
