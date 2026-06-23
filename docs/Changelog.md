@@ -1,4 +1,16 @@
 📋 Changelog 📋
+📅 June 23, 2026 — Version 1.0.64
+🆕 Tab labels renamed to reflect agent context for clearer navigation.
+🆕 Vision button release visual feedback: button state now updates visually on mouse release.
+🔄 Status message cleanup: redundant status message logic removed from config_handlers.
+🔄 HuggingFace cache scanning fix: removed broken directory traversal logic that scanned parent directory instead of actual cache, restoring model discovery.
+🔄 HuggingFace wizard Treeview fix: switched to grid layout with zero-padding style to eliminate text bleeding between listview and scrollbar.
+🔄 Health dashboard HF logging: added INFO-level logging for cache path resolution and model count for diagnostics.
+🔄 Exception fallback: HF cache info now falls back to filesystem scan on any exception (not just ImportError), logged at WARNING level.
+🐛 Vision button stuck cursor fix (BUG_061): AreaSelector deadlock resolved by removing transient() on Windows, replacing with -topmost and deferred focus.
+🐛 Defensive None guard: strip_thinking handles raw response strings without TypeError.
+🐛 UnboundLocalError fix: removed redundant import of re from _build_recovery_response().
+🐛 Anti-thinking prefix: missing injection and model resolution bugs fixed in file grouping orchestrator.
 📅 June 22, 2026 — Version 1.0.63
 🆕 System-wide prompt manager UI: treeview for system/user prompt pairs with centralized storage in the branding folder and improved agent management interface.
 🆕 Prompt manager data flow: UI components and data binding for system/user prompt pair editing.
