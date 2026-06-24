@@ -1,4 +1,16 @@
 📋 Changelog 📋
+📅 June 24, 2026 — Version 1.0.65
+🆕 TTL cache for DocumentVectorStore.list_documents() and reused cached store in orchestrator/tool_executor.
+🆕 Caching for get_model_name() to avoid repeated config loads.
+🆕 Performance analysis for builtin function usage in token calculation and memory management.
+🔄 Performance optimization: consolidated redundant logic and added caching across 15 caches, 30 files, and 8 algorithmic fixes.
+🔄 Caching logic refactored in orchestrator and tool_executor to use shared _get_rag_store.
+🔄 Async I/O and connection pooling patterns added for performance optimization.
+🔄 Redundant dead code removed and data structures optimized (set instead of list).
+🔄 Redundant deep copy logic and unnecessary string slicing removed for tool_results.
+🔄 Redundant os.listdir() calls and unnecessary deepcopies removed for folder processing.
+🔄 Redundant lazy imports removed and stdlib imports hoisted to module level.
+🔄 re.compile() hoisted from hot paths.
 📅 June 23, 2026 — Version 1.0.64
 🆕 Tab labels renamed to reflect agent context for clearer navigation.
 🆕 Vision button release visual feedback: button state now updates visually on mouse release.
