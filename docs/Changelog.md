@@ -1,5 +1,27 @@
 📋 Changelog 📋
-📅 June 24, 2026 — Version 1.0.65
+📅 June 28, 2026 — Version 1.0.66
+🆕 Workflow Producer-Reviewer architecture with loop detection, hallucination safeguard, and inline upstream context markers.
+🆕 Multi-engine web search fallback: Wikipedia, DuckDuckGo, Brave, SearXNG, and manye more integration.
+🆕 RAG adaptive chunking for oversized document chunks via pytrieve-sdk, improving NPU embedding quality.
+🆕 MCP tool schema handling for workflow agents and chat agents in AIEngine.generate_response().
+🆕 Memory and RAG loading added to workflow system for producer-reviewer context.
+🆕 Token budget parameter for ThinkingAwareLLMClient to suppress tool calls in internal operations.
+🆕 Thread-safe TkinterSafeQueueManager for progress handling.
+🆕 Self-loop detection in chat routing prevents infinite recursion.
+🆕 Search engine registry with dynamic engine selection and config management.
+🆕 Context menu item for "Manage Memory & Knowledge".
+🔄 Global memories migration logic for agent orchestration and shared memory management.
+🔄 Trace collector support for agent execution chains and span tracking.
+🔄 Quality gate logic for reviewer feedback filtering in workflow graph builder.
+🔄 Event loop lifecycle fix on Windows: ProactorEventLoop hang resolved with asyncio.run().
+🔄 Prompt seeding logic made idempotent in PromptStore for missing default prompts.
+🔄 Code cleanup: removed unnecessary json imports, dead code, and whitespace.
+🐛 RAG alias matching guard (BUG_087) prevents LLM from drafting responses when explicit filenames present.
+🐛 RAG synthesis quality validation and escalation propagation fix in LangGraph workflow.
+🐛 Empty response when RAG already loaded documents in synthesis handler.
+🐛 Workflow loop router hallucination handling in reviewer context (BUG_034).
+🐛 reasoning_effort handling corrected for unsupported providers in internal ops.
+📅 June 24, 2026 — Version 1.0.66
 🆕 TTL cache for DocumentVectorStore.list_documents() and reused cached store in orchestrator/tool_executor.
 🆕 Caching for get_model_name() to avoid repeated config loads.
 🆕 Performance analysis for builtin function usage in token calculation and memory management.
