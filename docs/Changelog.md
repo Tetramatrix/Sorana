@@ -1,10 +1,56 @@
 📋 Changelog 📋
+📅 July 01, 2026 — Version 1.0.67
+🆕 Multi-Agent Pipeline template editor (TemplateEditorDialog) replaces Multi-Agent Pipeline EditorWindow for Multi-Agent Pipeline editing with context menu entry.
+🆕 Infinite retry loop detection and LangGraph state merging for tool failures in Multi-Agent Pipeline executor.
+🆕 Memory extraction logic for Multi-Agent Pipeline graph: extracts final loop memories from producers with thread support.
+🆕 Memory and compaction subgraphs for Phase 4 Multi-Agent Pipeline challenges.
+🆕 Progress message handling for normal chat path in LangGraph state management with Tkinter-safe queue.
+🆕 RAG context resolver with auto-filtering for missing documents in Multi-Agent Pipeline loops.
+🆕 Tracking for successful RAG reads to prevent infinite loops in self-instruct detection.
+🆕 Regex-based pseudo-XML tool call stripping utility for LLM invocation logic.
+🆕 Multi-filename check to fix planning prose escalation logic in Multi-Agent Pipeline graph.
+🆕 Reviewer agent check to skip forced rag_read_document for review agents during loops.
+🆕 Multi-Agent Pipeline role declarative model to decouple template execution logic from agent node branching.
+🆕 Unit tests for memory extraction Multi-Agent Pipeline and Multi-Agent Pipeline RouterFactory.
+🆕 Graph progress transport architecture documentation.
+🆕 Score degradation detection and early loop termination in Multi-Agent Pipeline routing.
+🆕 Multi-Agent Pipeline context menu entry for Multi-Agent Pipeline editor.
+🔄 Multi-Agent Pipeline codepath unified between AIEngine and LangGraph chat_node.
+🔄 route_request() split into pure intent classifier + state orchestrator in router module.
+🔄 tool_node refactored to use subgraph directly, removing redundant wrapper logic.
+🔄 Memory_node.py and compactor_node.py reduced to thin wrappers with re exports.
+🔄 Agent-specific memory extraction logic to skip drafts for loop-affected agents.
+🔄 Cycle-breaker logic to prevent self-instruct leak in synthesis handler.
+🔄 Reasoning budget caps removed from payload to prevent model default reasoning on empty content.
+🔄 Unnecessary reasoning keys removed from payload to optimize API token usage.
+🔄 Reviewer GATE CHECK prompt tightened for more explicit filtering criteria.
+🔄 Persistent loop state handling and stale-default refresh for all agents.
+🔄 Reviewer reasoning effort injection and RAG tool loading logic fixed.
+🔄 Producer loop source output injected into reviewer context for proper filtering.
+🔄 Stale config validation logic and improved agent defaults handling.
+🔄 Thread-safe progress handling for TkinterSafeQueueManager.
+🔄 Conditional chat visibility logic for Multi-Agent Pipeline agents in context menu.
+🔄 Idempotent prompt seeding logic in PromptStore for missing default prompts.
+🔄 Global memories migration logic for agent orchestration and shared memory management.
+🔄 Trace collector support for agent execution chains and span tracking.
+🔄 SearXNG engine added to mini wizard search test results with public instance handling.
+🐛 Multi-Agent Pipeline agent tool emission failure fixed by correcting MCP server overwrite logic in draft coverletter flow.
+🐛 Self-instruct leak fixed in Multi-Agent Pipeline codepath and synthesis handler.
+🐛 Multi-Agent Pipeline assertion mismatch bug in producer-reviewer loop processing resolved.
+🐛 Context loss in LangGraph state graph fixed by ensuring producer loop context propagation.
+🐛 max_tokens floor enforced to 16384 for chat path, preventing short garbage output.
+🐛 Context loss in Multi-Agent Pipeline executor when agent max token limit reached resolved.
+🐛 Multi-Agent Pipeline loop router hallucination handling in reviewer context (BUG_034).
+🐛 RAG alias matching guard (BUG_087) prevents LLM from drafting responses when explicit filenames present.
+🐛 RAG synthesis quality validation and escalation propagation fix in LangGraph Multi-Agent Pipeline.
+🐛 Empty response when RAG already loaded documents in synthesis handler.
+🐛 Reasoning effort handling corrected for unsupported providers in internal ops.
 📅 June 28, 2026 — Version 1.0.66
-🆕 Workflow Producer-Reviewer architecture with loop detection, hallucination safeguard, and inline upstream context markers.
+🆕 Multi-Agent Pipeline Producer-Reviewer architecture with loop detection, hallucination safeguard, and inline upstream context markers.
 🆕 Multi-engine web search fallback: Wikipedia, DuckDuckGo, Brave, SearXNG, and manye more integration.
 🆕 RAG adaptive chunking for oversized document chunks via pytrieve-sdk, improving NPU embedding quality.
-🆕 MCP tool schema handling for workflow agents and chat agents in AIEngine.generate_response().
-🆕 Memory and RAG loading added to workflow system for producer-reviewer context.
+🆕 MCP tool schema handling for Multi-Agent Pipeline agents and chat agents in AIEngine.generate_response().
+🆕 Memory and RAG loading added to Multi-Agent Pipeline system for producer-reviewer context.
 🆕 Token budget parameter for ThinkingAwareLLMClient to suppress tool calls in internal operations.
 🆕 Thread-safe TkinterSafeQueueManager for progress handling.
 🆕 Self-loop detection in chat routing prevents infinite recursion.
@@ -12,14 +58,14 @@
 🆕 Context menu item for "Manage Memory & Knowledge".
 🔄 Global memories migration logic for agent orchestration and shared memory management.
 🔄 Trace collector support for agent execution chains and span tracking.
-🔄 Quality gate logic for reviewer feedback filtering in workflow graph builder.
+🔄 Quality gate logic for reviewer feedback filtering in Multi-Agent Pipeline graph builder.
 🔄 Event loop lifecycle fix on Windows: ProactorEventLoop hang resolved with asyncio.run().
 🔄 Prompt seeding logic made idempotent in PromptStore for missing default prompts.
 🔄 Code cleanup: removed unnecessary json imports, dead code, and whitespace.
 🐛 RAG alias matching guard (BUG_087) prevents LLM from drafting responses when explicit filenames present.
-🐛 RAG synthesis quality validation and escalation propagation fix in LangGraph workflow.
+🐛 RAG synthesis quality validation and escalation propagation fix in LangGraph Multi-Agent Pipeline.
 🐛 Empty response when RAG already loaded documents in synthesis handler.
-🐛 Workflow loop router hallucination handling in reviewer context (BUG_034).
+🐛 Multi-Agent Pipeline loop router hallucination handling in reviewer context (BUG_034).
 🐛 reasoning_effort handling corrected for unsupported providers in internal ops.
 📅 June 24, 2026 — Version 1.0.66
 🆕 TTL cache for DocumentVectorStore.list_documents() and reused cached store in orchestrator/tool_executor.
@@ -119,7 +165,7 @@
 🔄 Folder tab active background colors and disabled force reorganize button.
 🔄 Simplified layout logic: removed redundant pack_configure calls and click propagation handling.
 📅 June 18, 2026 — Version 1.0.59
-🆕 Agent trace visualization: LangGraph chat workflow now shows agent thinking, tool usage, and per-tool progress in a dedicated trace panel.
+🆕 Agent trace visualization: LangGraph chat Multi-Agent Pipeline now shows agent thinking, tool usage, and per-tool progress in a dedicated trace panel.
 🆕 Markdown table rendering: chat views now parse and render markdown tables with monospace-aligned columns.
 🆕 Chat upload button: local agent chat window status bar gets an upload button for file attachments.
 🆕 Default MCP servers: new agents auto-configure memory, filesystem, web_content, and gmail MCP servers.
@@ -163,7 +209,7 @@
 🔄 Added /help command for MCP tools guidance and improved sort state persistence
 🐛 Update notification balloon now uses windows-toasts for better UX
 📅 June 13, 2026 — Version 1.0.54
-🆕 LangGraph chat workflow with persistent tool call history and multi-turn execution
+🆕 LangGraph chat Multi-Agent Pipeline with persistent tool call history and multi-turn execution
 🆕 Dynamic tool chaining: agent can call multiple tools across turns with automatic retry and synthesis
 🆕 Parallel tool execution: multiple tool calls run concurrently with sequential remainder handling
 🆕 Continuation planner: autonomous research mode with answer-marker detection and thinking extraction
@@ -181,7 +227,7 @@
 🆕 ThinkingExtractor: modular model-family-aware thinking extraction (StepFun, DeepSeek, Qwen, MiniMax, OpenAI)
 🆕 Web search query extraction: regex patterns for "research X in internet" → "X"
 🐛 fix: synthesis retry nullifying tool\_calls on initial pass
-🐛 fix: multi-document RAG routing logic in LangGraph workflow
+🐛 fix: multi-document RAG routing logic in LangGraph Multi-Agent Pipeline
 🐛 fix: RAG tool skipped when else branch overwrites early-return values
 🐛 fix: planning-only text leaking into status bar display
 🐛 fix: tool results missing rag\_context in synthesis prompts
