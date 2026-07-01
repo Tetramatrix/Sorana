@@ -3143,6 +3143,11 @@ body.lightbox-open {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
+.testimonial-logo.trishtech-logo {
+  width: 200px;
+  filter: drop-shadow(0 0 0 #fff) drop-shadow(0 0 6px #fff) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
 .testimonial-source {
   font-size: 0.875rem;
   color: var(--text-secondary);
