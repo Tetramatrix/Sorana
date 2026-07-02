@@ -1,4 +1,12 @@
 📋 Changelog 📋
+📅 July 02, 2026 — Version 1.0.68
+🆕 RAG-irrelevance bypass in synthesis quality gate. Valid parametric-knowledge answers no longer rejected when RAG returns irrelevant documents.
+🆕 Multilingual web-search intent examples added to intent recognizer for price/cost/research queries.
+🆕 Fake_useragent and certifi packages added to compilation to fix web search (BUG_088).
+🐛 Agent fails first attempt on general-knowledge questions. Intent system missed web-search routing, synthesis quality gate rejected valid answers (BUG_089).
+🔄 Markdown rendering improvements: reduced code block spacing, fixed bold text in chat window, resolved tag priority issues.
+🔄 Memory extraction categorization rules clarified to distinguish between preferences, facts, and situational context.
+🔄 Memory tool system prompt and role descriptions improved in template editor UI.
 📅 July 01, 2026 — Version 1.0.67
 🆕 Multi-Agent Pipeline template editor (TemplateEditorDialog) replaces Multi-Agent Pipeline EditorWindow for Multi-Agent Pipeline editing with context menu entry.
 🆕 Infinite retry loop detection and LangGraph state merging for tool failures in Multi-Agent Pipeline executor.
