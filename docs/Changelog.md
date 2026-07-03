@@ -4,6 +4,7 @@
 🆕 Learned intent patterns added to improve tool routing accuracy.
 🆕 Web-search intent recognition and keyword patterns to improve agent reasoning accuracy.
 🆕 Duplicate-tool guard in synthesis handler prevents infinite web_search loops when results already loaded (BUG_100).
+🆕 Guard now extracts different tool (e.g. web_fetch_content) when same tool is blocked, instead of just escalating synthesis.
 🆕 web_fetch_content and web_scrape_page alias support for prose-based tool extraction.
 🆕 WEB_CONTENT_TOOLS and _WEB_FAMILY updated with all MCP web tool names.
 🔄 Self-learning feedback loop: user message extraction logic added to tool_node for future learning signals.
