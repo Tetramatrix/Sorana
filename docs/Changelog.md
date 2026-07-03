@@ -1,4 +1,16 @@
 📋 Changelog 📋
+📅 July 03, 2026 — Version 1.0.69
+🆕 Source-label history and audit policy documentation for self-learning provenance tracking.
+🆕 Learned intent patterns added to improve tool routing accuracy.
+🆕 Web-search intent recognition and keyword patterns to improve agent reasoning accuracy.
+🆕 Duplicate-tool guard in synthesis handler prevents infinite web_search loops when results already loaded (BUG_100).
+🆕 web_fetch_content and web_scrape_page alias support for prose-based tool extraction.
+🆕 WEB_CONTENT_TOOLS and _WEB_FAMILY updated with all MCP web tool names.
+🔄 Self-learning feedback loop: user message extraction logic added to tool_node for future learning signals.
+🔄 Documentation cleanup: broken markdown links removed and path references corrected across docs.
+🧪 Sentinel memory store isolation added for test suite isolation.
+🧪 Jaccard-set-overlap deduplication logic for chat MCP server document matching.
+🧪 13 tests for BUG_100: duplicate-tool guard, web_fetch_content extraction, tool constants, planner family membership.
 📅 July 02, 2026 — Version 1.0.68
 🆕 RAG-irrelevance bypass in synthesis quality gate. Valid parametric-knowledge answers no longer rejected when RAG returns irrelevant documents.
 🆕 Multilingual web-search intent examples added to intent recognizer for price/cost/research queries.
