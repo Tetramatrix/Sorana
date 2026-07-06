@@ -1,4 +1,39 @@
 📋 Changelog 📋
+📅 July 06, 2026 — Version 1.0.70
+🆕 MCP marketplace treeview UI with Install button, alternating row colors, and server status indicators.
+🆕 Dynamic tool discovery via MCP `tools/list` endpoint. Tools now discovered at runtime instead of hardcoded.
+🆕 API key authentication for MCP servers with token validation and status indicator.
+🆕 External templates and OAuth2 config support for auth-gated MCP servers.
+🆕 Consolidated prompt injection paths. Standardized system prompt handling across built-in and external MCP servers.
+🆕 MCP architecture analysis documentation for file system, browser, and memory servers.
+🆕 Dual-model system support with model roles (Fast/Heavy/Both/Embedding) and per-agent override.
+🆕 Role assignment context menu with status-aware gating. Grays out roles for un-downloaded, corrupted, or unavailable models.
+🆕 Per-role highlighting and sorting in Model Manager view.
+🆕 Continuation planner decision store and confirmation logic for LLM-based planning.
+🆕 Extraction helpers for ContinuationPlanner to handle RAG and filesystem search results.
+🆕 Unified intent recognition via single pattern catalog replacing scattered intent systems.
+🆕 Duplicate-tool guard in synthesis handler prevents infinite loops when same tool re-emitted (BUG_089).
+🆕 Word boundary regex for language detection to prevent false negatives in French/English substrings.
+🆕 DM001 dialog geometry lint rule. Pre-commit hook flags manual `save_geometry()/destroy()` anti-pattern.
+🆕 DM002 raw Toplevel lint rule. Flags raw `tk.Toplevel(parent)` calls outside windowing module.
+🆕 DM005 Toplevel inheritance lint. Flags `class X(tk.Toplevel)` base-class declarations.
+🆕 Horizontal sash persistence binding for dialog windows with configurable default fraction.
+🆕 Fullscreen overlay support for area_selector_view.
+🔄 Windowing compliance: P0 + P1 + P2 + P3 migrations complete. 38 messagebox.* calls and 23 tkinter.filedialog.* calls migrated to DialogService, 0 raw messagebox calls remaining.
+🔄 16 manual save_geometry/destroy dialog calls replaced with self.close_window().
+🔄 5 triple-threat offenders (document_loader, loading_view, backend_wizard, reasoning_probe, prompt_picker) migrated to ManagedModalDialog subclasses.
+🔄 10 Tier 2 dialogs migrated to ManagedToplevel/ManagedModalDialog with fit_to_content geometry persistence fix.
+🔄 MiniWizard base classes migrated to ManagedModalDialog subclassing.
+🔄 30 parent_window.window / dialog.window AttributeErrors fixed across 16 files. ManagedToplevel IS the window (BUG_108).
+🔄 4 mini-wizard import paths fixed (...windowing → ..windowing) resolving to correct src.views.windowing (BUG_108).
+🔄 2 inner tk.Toplevel dialogs in agent_tools_dialog migrated to module-level ManagedModalDialog subclasses (BUG_109).
+🔄 Fixed lemonade_sdk LemonadeModelRecovery._model_management_supported AttributeError (BUG_110, fixed in lemonade-python-sdk).
+🔄 Fit_to_content geometry persistence fix. Auto-fit no longer overrides saved geometry on subsequent dialog opens.
+🔄 Removed per-role UI dropdowns, context-menu-only role assignment with auto-migration.
+🔄 Redundant internal client instantiation removed, refactored to use task key for faster clients.
+🔄 Test suite cleanup: removed dead imports, obsolete test scaffolding, debug scratch files.
+🔄 Python 3.14+ compatibility: lazy submodule discovery, removed eager langchain import loading.
+🐛 Blank agent component positions during workspace rebuilds. Missing _clear_stale_agent_positions() call.
 📅 July 03, 2026 — Version 1.0.69
 🆕 Source-label history and audit policy documentation for self-learning provenance tracking.
 🆕 Learned intent patterns added to improve tool routing accuracy.
