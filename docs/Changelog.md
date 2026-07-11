@@ -1,4 +1,51 @@
 📋 Changelog 📋
+📅 July 11, 2026 — Version 1.0.71
+🆕 Tool-family recovery registry (BUG_174/175) — universal envelope-check parity across all 4 family rules with per-rule telemetry counters.
+🆕 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm_invoc, compaction, autonomy, learned, etc.) for fine-grained `--debug-mute` control.
+🆕 Bracket-tags for untagged debug logs — `[POLLING]`, `[LANGGRAPH]`, `[LLM_INVOC]`, `[ORCHESTRATOR]` added to 4 noisiest files (~70 log calls).
+🆕 Dynamic token budget fix for chat nodes to prevent system prompt overage.
+🆕 Cross-reference layer for chat pipeline to detect memory-RAG-tool overlaps and gaps.
+🆕 Structured autonomy helpers — goal plans, evidence cache, and per-goal iteration limits for multi-goal synthesis.
+🆕 LLM-based summary-on-stash logic for multi-goal advancement with stuck goal filtering.
+🆕 Execution planner with context propagation, agent autonomy analysis, and parallel planner execution for independent tool steps.
+🆕 Continuation planner with LLM-powered Tier 2 decision making, circuit breaker for self-instruct loops, and intelligent resource routing.
+🆕 Tool subgraph adapter with budget guard and typed subgraph boundaries for RAG/tool nodes.
+🆕 Contradiction cache for per-turn memory deduplication and timeout handling for memory context.
+🆕 Synthesis intent extractor for tool-call directive extraction from LLM prose.
+🆕 MCP system prompt budget cap per-agent override.
+🆕 Async `search_files` implementation with max_results and timeout safety for Windows.
+🆕 Watchdog mechanism for recursive polling loops in chat view.
+🆕 Session-aware memory loading for orchestrator to prevent stale data issues.
+🔄 Tool-family recovery registry refactored with DRY static methods and paranoid test coverage.
+🔄 Production log noise reduced by ~50% — migrated md_render debug logs to dedicated child logger.
+🔄 Chat architecture simplified — tool result envelopes normalized, parallel tool safety derived from registry.
+🔄 `tool_node.py` + `rag_node.py` deleted (~1190 LoC) — consumers migrated to canonical homes.
+🔄 Legacy single-node paths soft-deprecated with C1+C2 gates.
+🔄 Synthesis handler split into `synthesis_sections.py` and `synthesis_context.py`.
+🔄 Learned patterns split into organized package structure with re-exports.
+🔄 Goal-stack reset logic consolidated into single helper across router and synthesis.
+🔄 Monolithic routing refactored into named single-responsibility functions.
+🔄 Per-agent config helpers consolidated into shared `resolve` function.
+🔄 LangGraph replaced with simple state machine logic in chat loop.
+🔄 13 xfail markers removed from equivalence tests — all divergences closed.
+🐛 BUG_175: Universal envelope-check parity across all 4 family rules.
+🐛 BUG_174: Tool-family recovery registry generalizes BUG_173.
+🐛 BUG_172: Broadened L1.5 gate to recover tool_calls from message history.
+🐛 BUG_171: Planner→dispatcher argument contract mismatch fixed.
+🐛 LLM backpressure handling — optional provider timeout recovery.
+🐛 G2 expansion logic corrected to use per-family checks instead of global flag.
+🐛 `rag_context` type guard for string binding in `apply_token_budget()`.
+🐛 Thread_id propagation fix for chat manager sidebar and MCP chat-session tools.
+🐛 Agent creator and prompt wizard window management — close button logic and destroy bypass fixed.
+🐛 Tool executor wrapper fix to propagate cross-thread rejection errors.
+🐛 Synthesis handler production failure modes fixed (BUG_112/116/117/118).
+🐛 ContinuationPlanner MCP tool directive handling — self-instruct loop fixed.
+🐛 Numbered selections and workspace paths handling in chat orchestrator.
+🐛 Task_key passed incorrectly for recovery calls — cheap model no longer used instead of primary.
+🐛 18 broken logger sites resolved across 6 files.
+📝 Chat architecture simplification documentation.
+📝 Execution planner overview and cross-reference layer documentation.
+📝 Sprint plan for Phase 7.5 shrink completion.
 📅 July 06, 2026 — Version 1.0.70
 🆕 MCP marketplace treeview UI with Install button, alternating row colors, and server status indicators.
 🆕 Dynamic tool discovery via MCP `tools/list` endpoint. Tools now discovered at runtime instead of hardcoded.
@@ -34,6 +81,9 @@
 🔄 Test suite cleanup: removed dead imports, obsolete test scaffolding, debug scratch files.
 🔄 Python 3.14+ compatibility: lazy submodule discovery, removed eager langchain import loading.
 🐛 Blank agent component positions during workspace rebuilds. Missing _clear_stale_agent_positions() call.
+🐛 Tool calls blocked for pathless tools (get_filesystem_info) — path_validator now skips tools that take no path parameter (BUG_111).
+🐛 Chat-only agents with no workspace path hallucinated filesystem paths — injected fallback instruction to always ask user for path (BUG_111).
+🐛 RAG not triggered for numbered selections (e.g. user sends "1" to select from a menu) — router now resolves numeric inputs against previous assistant message's numbered list (BUG_111).
 📅 July 03, 2026 — Version 1.0.69
 🆕 Source-label history and audit policy documentation for self-learning provenance tracking.
 🆕 Learned intent patterns added to improve tool routing accuracy.
