@@ -1,4 +1,31 @@
 📋 Changelog 📋
+📅 July 12, 2026 — Version 1.0.72
+🆕 MemorySearch None query guard — prevents 3 cascading errors (NPU embedding crash, BM25 .lower() on None, len() on None) when memory_search_query is not extracted (BUG_176).
+🆕 BM25 index build fix — fuzzy_mixin now passes dicts with id/content/metadata to index_documents() instead of plain strings, matching the pytrieve LexicalRAGRetriever API contract.
+🆕 Embedding preload auto-reload — on Lemonade "Server not available" failure, triggers model reload via /api/v1/load endpoint and retries preload once after 3s delay.
+🆕 Autonomous cross-turn document task management — chat orchestrator now tracks document tasks across turns for CV/cover-letter workflows.
+🆕 Duplicate pending tool call hard abort fix — subgraph defers to per-call validator instead of hard aborting all pending calls.
+🆕 RAG tool rewrite for failed read_file — tool_subgraph now rewrites failed read_file calls to rag_read_document, preventing silent context loss when documents are overwritten.
+🔄 Memory management optimization — reduced GC pressure in agent system for lower memory footprint.
+🔄 Phase 7.5 shrink completed — tool_node.py + rag_node.py deleted (~1190 LoC), all consumers migrated to canonical homes.
+🔄 Tool-family recovery registry refactored with per-rule telemetry counters (BUG_174/175).
+🔄 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm_invoc, compaction, autonomy, learned, etc.) for fine-grained --debug-mute control.
+🔄 Bracket-tags for untagged debug logs — [POLLING], [LANGGRAPH], [LLM_INVOC], [ORCHESTRATOR] added to noisiest files.
+🔄 Production log noise reduced by ~50% — migrated md_render debug logs to dedicated child logger.
+🔄 Backport toolkit consolidated — dedicated backport/ folder with AST rewriter, import walker, and cascade builder.
+🔄 13 xfail markers removed from equivalence tests — all divergences closed.
+🐛 BUG_176: MemorySearch crashes when memory_search_query is None (3 cascading errors).
+🐛 BUG_175: Universal envelope-check parity across all 4 family rules.
+🐛 BUG_174: Tool-family recovery registry generalizes BUG_173.
+🐛 BUG_172: Broadened L1.5 gate to recover tool_calls from message history.
+🐛 BUG_171: Planner→dispatcher argument contract mismatch fixed.
+🐛 LLM backpressure handling — optional provider timeout recovery.
+🐛 18 broken logger sites resolved across 6 files.
+🐛 G2 expansion logic corrected to use per-family checks instead of global flag.
+📝 Memory correction request handling documentation.
+📝 RAG context loss detection for short option follow-ups.
+📝 Comprehensive guide for RAG tool rewrite scenarios in chat execution.
+📝 Sprint plan for Phase 7.5 shrink completion.
 📅 July 11, 2026 — Version 1.0.71
 🆕 Tool-family recovery registry (BUG_174/175) — universal envelope-check parity across all 4 family rules with per-rule telemetry counters.
 🆕 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm_invoc, compaction, autonomy, learned, etc.) for fine-grained `--debug-mute` control.
