@@ -19,9 +19,9 @@
 🔄 Tool-family recovery registry refactored with DRY static methods and paranoid test coverage.
 🔄 Production log noise reduced by ~50% — migrated md_render debug logs to dedicated child logger.
 🔄 Chat architecture simplified — tool result envelopes normalized, parallel tool safety derived from registry.
-🔄 `tool_node.py` + `rag_node.py` deleted (~1190 LoC) — consumers migrated to canonical homes.
+🔄 `tool_node` + `rag_node` deleted (~1190 LoC) — consumers migrated to canonical homes.
 🔄 Legacy single-node paths soft-deprecated with C1+C2 gates.
-🔄 Synthesis handler split into `synthesis_sections.py` and `synthesis_context.py`.
+🔄 Synthesis handler split into `synthesis_sections` and `synthesis_context`.
 🔄 Learned patterns split into organized package structure with re-exports.
 🔄 Goal-stack reset logic consolidated into single helper across router and synthesis.
 🔄 Monolithic routing refactored into named single-responsibility functions.
@@ -124,7 +124,7 @@
 🔄 Multi-Agent Pipeline codepath unified between AIEngine and LangGraph chat_node.
 🔄 route_request() split into pure intent classifier + state orchestrator in router module.
 🔄 tool_node refactored to use subgraph directly, removing redundant wrapper logic.
-🔄 Memory_node.py and compactor_node.py reduced to thin wrappers with re exports.
+🔄 Memory_node and compactor_node reduced to thin wrappers with re exports.
 🔄 Agent-specific memory extraction logic to skip drafts for loop-affected agents.
 🔄 Cycle-breaker logic to prevent self-instruct leak in synthesis handler.
 🔄 Reasoning budget caps removed from payload to prevent model default reasoning on empty content.
