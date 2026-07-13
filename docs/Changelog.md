@@ -1,4 +1,27 @@
 📋 Changelog 📋
+📅 July 13, 2026 — Version 1.0.73
+🆕 BUG_197: Per-backend background RPM throttle for memory/contradiction rate limiting.
+🆕 BUG_198: CapabilityProbeDialog race condition fix.
+🔄 Centralized retry helper logic into `src/utils/retry_utils.py::with_retry()` — migrated 8 hardcoded call-sites across web_scraper, model_manager, file_grouping_orchestrator, agent_orchestrator, agent_chain_executor.
+🔄 Agent orchestrator migration to central with_retry helper (BUG_192).
+🔄 Pre-commit hook wiring — 3-hook parallel topology for cycle 16.
+🔄 Docs count-drift sweep + 4 untracked closeout docs.
+🔄 Cycle 24 FINAL approach-N + regex fix + empty-input fix.
+🔄 Cycle 23 commit-msg Conventional Commits gate.
+🔄 Cycle 22 root-scratch tidy + 1-pager closeout.
+🔄 Cycle 21 file-count reconciliation (table + Last Updated + 4 new Quick Links rows).
+🔄 Cycle 20 land .githooks/pre-push + tools/install_githooks.py.
+🔄 Docs index notable_bugs rebuild from filesystem ground truth.
+🐛 BUG_190: Extract digit-leading filenames like 250525_DB_Ref.txt from router.
+🐛 BUG_191: Default stepfun_plan concurrency_limit=1.
+🐛 BUG_192: Central with_retry helper + web_scraper.py migration.
+🐛 BUG_193: CapabilityProbeDialog Retry race condition.
+🐛 BUG_194: TS2305 phantom-fix audit.
+🐛 BUG_195: TS2440 + TS2484 regression audit.
+🐛 BUG_196: TS2339 client.patch missing fix.
+📝 Per-backend knobs documentation — 5-axis taxonomy + stepfun_plan inline comment.
+📝 V2 backend current status snapshot.
+📝 Post-commit polish for v2-class-b-fixes-1.0 subpackage.
 📅 July 12, 2026 — Version 1.0.72
 🆕 MemorySearch None query guard — prevents 3 cascading errors (NPU embedding crash, BM25 .lower() on None, len() on None) when memory_search_query is not extracted (BUG_176).
 🆕 BM25 index build fix — fuzzy_mixin now passes dicts with id/content/metadata to index_documents() instead of plain strings, matching the pytrieve LexicalRAGRetriever API contract.
