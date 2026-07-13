@@ -1,4 +1,7 @@
 📋 Changelog 📋
+📅 July 13, 2026 — Version 1.0.73
+🆕 BUG_200: Chat-session message listing routing + no-arg tool extraction fix.
+📝 BUG_199 + BUG_200 doc update + v2 extractor fix documentation.
 📅 July 12, 2026 — Version 1.0.72
 🆕 MemorySearch None query guard — prevents 3 cascading errors (NPU embedding crash, BM25 .lower() on None, len() on None) when memory_search_query is not extracted (BUG_176).
 🆕 BM25 index build fix — fuzzy_mixin now passes dicts with id/content/metadata to index_documents() instead of plain strings, matching the pytrieve LexicalRAGRetriever API contract.
