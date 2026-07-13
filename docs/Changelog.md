@@ -6,15 +6,18 @@
 🆕 Autonomous cross-turn document task management — chat orchestrator now tracks document tasks across turns for CV/cover-letter workflows.
 🆕 Duplicate pending tool call hard abort fix — subgraph defers to per-call validator instead of hard aborting all pending calls.
 🆕 RAG tool rewrite for failed read_file — tool_subgraph now rewrites failed read_file calls to rag_read_document, preventing silent context loss when documents are overwritten.
+🆕 BUG_197: Model Manager UI for background_rpm_limit — new UI field to configure per-backend RPM limits in Model Manager.
+🆕 BUG_197: Per-backend background RPM throttle — memory and contradiction operations now respect per-backend RPM throttling to prevent API rate-limit errors.
+🆕 BUG_191: Per-backend concurrency limits — rate-limited backends (e.g. StepFun) get configurable concurrency limits with new shared with_retry() helper migrated across 8 call-sites.
 🐛 BUG_183: Resumed short option loses document task — evidence_state now rebuilds _active_document_task from chat history on resume, preventing filesystem drift when RAG docs are loaded.
 🔄 Memory management optimization — reduced GC pressure in agent system for lower memory footprint.
-🔄 Phase 7.5 shrink completed — tool_node.py + rag_node.py deleted (~1190 LoC), all consumers migrated to canonical homes.
+🔄 Phase 7.5 shrink completed — tool_node + rag_node deleted (~1190 LoC), all consumers migrated to canonical homes.
 🔄 Tool-family recovery registry refactored with per-rule telemetry counters (BUG_174/175).
 🔄 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm_invoc, compaction, autonomy, learned, etc.) for fine-grained --debug-mute control.
 🔄 Bracket-tags for untagged debug logs — [POLLING], [LANGGRAPH], [LLM_INVOC], [ORCHESTRATOR] added to noisiest files.
 🔄 Production log noise reduced by ~50% — migrated md_render debug logs to dedicated child logger.
 🔄 Backport toolkit consolidated — dedicated backport/ folder with AST rewriter, import walker, and cascade builder.
-🔄 Backporter script fix — corrected import prefix from 'backend.app.core.X' to 'app.core.X' in v1_v2_backporter.py.
+🔄 Backporter script fix — corrected import prefix from 'backend.app.core.X' to 'app.core.X' in v1_v2_backporter.
 🔄 13 xfail markers removed from equivalence tests — all divergences closed.
 🐛 BUG_176: MemorySearch crashes when memory_search_query is None (3 cascading errors).
 🐛 BUG_175: Universal envelope-check parity across all 4 family rules.
@@ -24,6 +27,8 @@
 🐛 LLM backpressure handling — optional provider timeout recovery.
 🐛 18 broken logger sites resolved across 6 files.
 🐛 G2 expansion logic corrected to use per-family checks instead of global flag.
+🐛 BUG_191: Default stepfun_plan concurrency_limit=1 — StepFun Plan backend now defaults to concurrency 1 to prevent rate-limit collisions.
+🐛 BUG_190: Router digit-leading filenames — router now correctly extracts filenames starting with digits (e.g. 250525_XYZ.txt) instead of misrouting them.
 📝 Memory correction request handling documentation.
 📝 RAG context loss detection for short option follow-ups.
 📝 Comprehensive guide for RAG tool rewrite scenarios in chat execution.
