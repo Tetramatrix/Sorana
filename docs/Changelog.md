@@ -1,4 +1,25 @@
 📋 Changelog 📋
+📅 July 17, 2026 — Version 1.0.74
+🆕 Sash persistence wired to all 10 PanedWindows (workflow editor, template browser, MCP server list, model manager embedding, memory persona) with vertical orientation support. Chat retains intentional 80/20 split.
+🆕 Embedding manager support for model_manager_view — Lemonade embedding models displayed in dedicated tree pane.
+🆕 Stale-plan hygiene gate (BUG_204) — pure-Python checker + 17-test suite detects and cleans stale plan files.
+🆕 Tool extraction logic for synthesis sections in chat orchestrator.
+🆕 Kilo MCP integration with binary support for local-first AI memory engine.
+🆕 JSON compat wrappers (load/dump) replacing raw `import json` across all src/ files.
+🐛 Module-level logger binding added across 9 source files (BUG_201).
+🐛 Missing ConfigManager import fixed in orchestrator_loaders.py.
+🐛 Missing is_cloud_backend import fixed in external_model_discoverer.
+🐛 8 collection errors blocking pytest suite resolved.
+🐛 Test triage session 1 — substates + mock fixes (98→93 failures).
+🔄 848 f-string logger calls converted to lazy %s format for performance.
+🔄 Inline imports hoisted to module top level across 37+ files (Boy-Scott waves 3c-3e).
+🔄 Circular dependency cluster breaks — RateLimiter extracted, app_branding made pure leaf, llama_paths extracted, search_engines base extracted. Zero cycles remaining.
+🔄 Controllers Boy-Scott wave-3b cleanup (7 LIFTS + 5 LEAVE rows).
+🔄 ManagedToplevel.close_window() now calls flush_sashes() automatically.
+📝 BUG_202 workflow self-instruct leak — fix landed, plan closed.
+📝 BUG_204 stale-plan hygiene gate documentation.
+📝 Circular imports refactor completed documentation.
+📝 Wave-3a/3b/3d Boy-Scott closeout documentation.
 📅 July 13, 2026 — Version 1.0.73
 🆕 BUG_200: Chat-session message listing routing + no-arg tool extraction fix.
 📝 BUG_199 + BUG_200 doc update + v2 extractor fix documentation.
