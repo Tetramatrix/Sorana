@@ -1,25 +1,49 @@
 📋 Changelog 📋
-📅 July 17, 2026 — Version 1.0.74
-🆕 Sash persistence wired to all 10 PanedWindows (workflow editor, template browser, MCP server list, model manager embedding, memory persona) with vertical orientation support. Chat retains intentional 80/20 split.
-🆕 Embedding manager support for model_manager_view — Lemonade embedding models displayed in dedicated tree pane.
-🆕 Stale-plan hygiene gate (BUG_204) — pure-Python checker + 17-test suite detects and cleans stale plan files.
-🆕 Tool extraction logic for synthesis sections in chat orchestrator.
-🆕 Kilo MCP integration with binary support for local-first AI memory engine.
-🆕 JSON compat wrappers (load/dump) replacing raw `import json` across all src/ files.
+📅 July 19, 2026 — Version 1.0.74
+🆕 /help command overhaul — GFM markdown tables with 3-column examples, Codebase Search health card, Setup Guides block, hidden /admin command, and System-message markdown routing.
+🆕 Calendar MCP server integration — Google Calendar support with OAuth2 credentials, event fetching, and background thread async fix for Windows event loop compatibility.
+🆕 Dynamic tool loading by default — tools now discovered at runtime via MCP tools/list endpoint, reducing initial payload size.
+🆕 Codebase-aware research tools (P2.1) — continuation planner codebase strategy with regex tightening and orphan routing.
+🆕 Answer-quality feedback loop (P3.2) — LLM scoring + pattern decay for planner intelligence.
+🆕 Ambiguity detector (P3.1) — LLM-as-judge with targeted clarification questions.
+🆕 Multi-turn research autonomy — LangGraph P3 typed subgraphs with goal/clarification/evidence/trace state splits, dynamic tool loading, and Calendar MCP integration. Addresses 30-40% information loss in Layer-2 audits.
+🆕 JWT token refresh logic — background thread refreshes 30 seconds before expiry to prevent interrupted sessions.
+🆕 Schema versioning for checkpoint migration safety.
+🆕 File-integrity guard in pre-commit config (P0.2) — detects silent file deletion in src/chat/ and src/.
+🆕 AsyncLoopRunner deadlock guard — raises on event-loop thread calls to prevent deadlocks.
+🆕 BUG_221 Variant-A fix — drop task_key="probe" hijack in capability probe.
+🐛 BUG_220 — missing user_id arg to get_memory_stats/export_memories.
+🐛 BUG_219 — persist dispatch dedup state + drop wrapper tags + v2 backport reset_per_turn_flags.
+🐛 BUG_218 — normalize LLM alias keys to canonical path + 5 layer-2 literal-echo guard tests.
+🐛 BUG_217 — streaming_enabled=False default assertion test.
+🐛 BUG_216 — DRY consolidate _CHAT_SESSION_TOOLS to single source.
+🐛 BUG_215 — surface actual tool error on hard_failure.
+🐛 BUG_214 — stale response cross-turn leak.
+🐛 BUG_213 — gmail tools + gmail built-in.
+🐛 BUG_212 — planner override.
+🐛 BUG_209 — infinite delete_messages loop cascade (10 interlocking bugs fixed).
+🐛 BUG_208 — Calendar MCP backport.
+🐛 BUG_207 — pytest collection errors from MagicMock stub pollution.
+🐛 BUG_206 — synthesis failure cascade — 4 interacting fixes.
+🐛 Single-column GFM tables — _TABLE_SEP_RE quantifier fix.
 🐛 Module-level logger binding added across 9 source files (BUG_201).
 🐛 Missing ConfigManager import fixed in orchestrator_loaders.py.
 🐛 Missing is_cloud_backend import fixed in external_model_discoverer.
 🐛 8 collection errors blocking pytest suite resolved.
 🐛 Test triage session 1 — substates + mock fixes (98→93 failures).
+🔄 P0-P3 chat architecture refactoring complete — llm_invocation extraction, tool_subgraph node extraction, parallel_tool_node delegation, MessageWorkflow + ChatListManager extraction.
+🔄 Tkinter maintainability audit — 12 dialogs migrated to ManagedToplevel/ManagedModalDialog, geometry_registry for consistent path resolution.
+🔄 28 inline regex hoisted + 8 frozenset + 3 import hoists in chat hot paths.
 🔄 848 f-string logger calls converted to lazy %s format for performance.
+🔄 Batch metadata queries for agent/global documents.
+🔄 Pre-compile 3 inline regexes in markdown renderer.
+🔄 Remove redundant update_idletasks() calls + redundant see(tk.END).
 🔄 Inline imports hoisted to module top level across 37+ files (Boy-Scott waves 3c-3e).
 🔄 Circular dependency cluster breaks — RateLimiter extracted, app_branding made pure leaf, llama_paths extracted, search_engines base extracted. Zero cycles remaining.
-🔄 Controllers Boy-Scott wave-3b cleanup (7 LIFTS + 5 LEAVE rows).
 🔄 ManagedToplevel.close_window() now calls flush_sashes() automatically.
-📝 BUG_202 workflow self-instruct leak — fix landed, plan closed.
-📝 BUG_204 stale-plan hygiene gate documentation.
-📝 Circular imports refactor completed documentation.
-📝 Wave-3a/3b/3d Boy-Scott closeout documentation.
+🔄 Sash persistence wired to all 10 PanedWindows (workflow editor, template browser, MCP server list, model manager embedding, memory persona) with vertical orientation support.
+🔄 Embedding manager support for model_manager_view.
+🔄 JSON compat wrappers (load/dump) replacing raw `import json` across all src/ files.
 📅 July 13, 2026 — Version 1.0.73
 🆕 BUG_200: Chat-session message listing routing + no-arg tool extraction fix.
 📝 BUG_199 + BUG_200 doc update + v2 extractor fix documentation.
