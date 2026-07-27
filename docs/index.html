@@ -41,10 +41,17 @@
     <main class="wikidoc">
         <!-- Hero Section - Landing Page Style -->
         <section class="hero" data-no-toggle="true">
+          <div class="hero-beta-overlay" aria-hidden="true">
+            <div class="beta-ring beta-ring-1"></div>
+            <div class="beta-ring beta-ring-2"></div>
+            <div class="beta-ring beta-ring-3"></div>
+            <div class="beta-core">LIMITED TIME<span>100% FREE</span></div>
+          </div>
           <div class="hero-eyebrow">
             <span class="badge-dot"></span>
             Personal AI Workspace / PKM
           </div>
+          <div class="beta-badge">LIMITED TIME · 100% FREE</div>
           <h1>One tool.<br><em>That never forgets.</em></h1>
           <p class="hero-sub">
             Sorana is your personal AI knowledge workspace. A second brain that remembers your projects, 
@@ -153,7 +160,7 @@
     <section class="intro-section" id="what-is-sorana">
 
         <div class="cta-box">
-            <p><strong>Sorana is your personal AI knowledge workspace, a second brain that actually acts.</strong> Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. Visualise your entire knowledge base on a spatial 2D canvas (like Obsidian Canvas, but AI-powered), chat with any document in plain language, and let your AI handle repetitive tasks, organising files, researching topics, managing emails, all without leaving your workspace. Everything runs on your machine. Your data stays yours.</p>
+            <p><strong>Sorana is your personal AI knowledge workspace, a second brain that actually acts.</strong> Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. Visualise your entire knowledge base on a spatial 2D canvas (like Obsidian Canvas, but AI-powered), chat with any document in plain language, and let your AI handle repetitive tasks, organising files, researching topics, managing emails and your calendar, all without leaving your workspace. Everything runs on your machine. Your data stays yours.</p>
         </div>
 
         <!-- Video Section -->
@@ -237,6 +244,7 @@
                         <li><strong>File Operations:</strong> read, write, move, search, edit, all through conversation.</li>
                         <li><strong>Web Tools:</strong> Fetch, scrape, search, extract, AI has direct web access.</li>
                         <li><strong>Gmail:</strong> Full email control, list, send, label, trash, archive (JSON/EML/MBOX).</li>
+                        <li><strong>Google Calendar:</strong> View, create, update, and delete events through conversation.</li>
                         <li><strong>External Servers:</strong> Connect Google Drive, GitHub, PostgreSQL, custom tools.</li>
                     </ul>
                    </div>
@@ -334,6 +342,22 @@
                         </tbody>
                     </table>
                     <p class="table-note">Note: Sorana Community Edition provides the full core experience. Advanced Gmail automation (bulk processing) is tailored for the Studio & Pro version.</p>
+                  </div>
+                </div>
+
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> 🎯 Who Uses Sorana
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box feature-detail-group">
+                    <ul>
+                        <li>📚 <strong>Researchers &amp; academics</strong>, chat with hundreds of papers, books, and scanned notes in one place</li>
+                        <li>✍️ <strong>Writers &amp; journalists</strong>, build a living reference library that remembers your style, sources, and ideas</li>
+                        <li>🧑‍💼 <strong>Consultants &amp; freelancers</strong>, maintain full AI context across multiple long-running client projects</li>
+                        <li>🎓 <strong>Students</strong>, turn notes, PDFs, and lecture slides into a personal knowledge base you can actually talk to</li>
+                        <li>🧠 <strong>Obsidian &amp; Notion users</strong>, add an AI layer that learns from your vault and can act on it</li>
+                        <li>🔒 <strong>Privacy-conscious professionals</strong>, full AI power with zero data leaving your machine</li>
+                    </ul>
                   </div>
                 </div>
             </div>
@@ -571,6 +595,37 @@
             </figure>
                 </div>
             </div>
+
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                    <span class="toggle-icon">◀</span> Google Calendar MCP Server
+                </h3>
+                <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box feature-detail-group">
+                    <p><strong>Your schedule, accessible through conversation.</strong> Sorana connects to your Google Calendar so your AI knows your upcoming events, meetings, and deadlines. Ask about your schedule, create events, find free slots, all without leaving your workspace. Try: <em>"What meetings do I have tomorrow?"</em> or <em>"Schedule a team standup for Friday at 10am."</em></p>
+            <ul>
+                <li><strong>List</strong> calendars and events by date range</li>
+                <li><strong>Create</strong> new events with title, time, location, and description</li>
+                <li><strong>Update</strong> existing events directly from chat</li>
+                <li><strong>Delete</strong> events with confirmation</li>
+                <li><strong>Multi-calendar</strong> support — manage personal and work calendars separately</li>
+            </ul>
+
+            <p><strong>Example queries:</strong></p>
+            <ul>
+                <li>"What's on my calendar this week?"</li>
+                <li>"Create a meeting with the design team for Thursday 2pm"</li>
+                <li>"Find a free 1-hour slot tomorrow afternoon"</li>
+                <li>"Cancel my 3pm meeting and reschedule to Friday"</li>
+            </ul>
+
+            <p><strong>Configuration:</strong> Enable the Calendar server in MCP Manager, then authenticate with your Google account. OAuth2 tokens are cached securely on your machine.</p>
+
+            <figure class="screenshot-figure">
+                <img src="calendar.png" alt="Google Calendar Tab" class="sorana-screenshot">
+                <figcaption>Google Calendar Tab: multi-mode, events, archive</figcaption>
+            </figure>
+                </div>
+            </div>
            </div>
         </div>
     </section>
@@ -800,22 +855,6 @@
              <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">◀</span>
              <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">◀</span>
 
-             <p><strong>Your knowledge deserves an AI that actually knows it.</strong> Download Sorana today, runs fully offline, no subscription, no cloud, no blank slates. Build a personal AI workspace that grows smarter every time you use it.</p>
-
-             
-             <div class="cta-box feature-detail-group" style="margin: 1.5em 0;">
-
-                 <h3 style="margin-bottom: 0.8em;">🎯 Perfect For</h3>
-                 <ul>
-                     <li>📚 <strong>Researchers &amp; academics</strong>, chat with hundreds of papers, books, and scanned notes in one place</li>
-                     <li>✍️ <strong>Writers &amp; journalists</strong>, build a living reference library that remembers your style, sources, and ideas</li>
-                     <li>🧑‍💼 <strong>Consultants &amp; freelancers</strong>, maintain full AI context across multiple long-running client projects</li>
-                     <li>🎓 <strong>Students</strong>, turn notes, PDFs, and lecture slides into a personal knowledge base you can actually talk to</li>
-                     <li>🧠 <strong>Obsidian &amp; Notion users</strong>, add an AI layer that learns from your vault and can act on it</li>
-                     <li>🔒 <strong>Privacy-conscious professionals</strong>, full AI power with zero data leaving your machine</li>
-                 </ul>
-             </div>
-
              <div class="download-buttons">
                  <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn btn-primary btn-large">Download (Portable)</a>
                  <a href="README.md" class="btn btn-primary">Readme</a>
@@ -823,7 +862,7 @@
 
               <p style="font-size: 0.9em; color: #888; margin-top: 15px;">No installation required. Your data stays on your machine.</p>
 
-              <code>Sorana.exe v1.0.74</code>
+              <code>Sorana.exe v1.0.75</code>
          
              <a href="https://apps.microsoft.com/store/detail/9N8C43PZC1RN" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
 

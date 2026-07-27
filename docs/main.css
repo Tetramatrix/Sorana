@@ -1944,6 +1944,134 @@ figcaption {
 .badge.local { color: #f6ad55; background: rgba(246, 173, 85, 0.1); border-color: rgba(246, 173, 85, 0.25); }
 .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 
+/* Hero side overlay — round layered limited-time badge */
+.hero-beta-overlay {
+  position: absolute;
+  top: 44%;
+  right: 1%;
+  transform: translateY(-50%);
+  width: 140px;
+  height: 140px;
+  z-index: 2;
+  pointer-events: none;
+  animation: float 6s ease-in-out infinite;
+}
+
+.beta-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+.beta-ring-1 {
+  inset: 0;
+  border-color: #00f5ff;
+  animation: spin 18s linear infinite;
+  background: radial-gradient(circle, rgba(0, 245, 255, 0.2) 0%, transparent 70%);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3), inset 0 0 20px rgba(0, 245, 255, 0.1);
+}
+
+.beta-ring-2 {
+  inset: 14px;
+  border-color: #ff00ff;
+  animation: spin-reverse 24s linear infinite;
+  background: radial-gradient(circle, rgba(255, 0, 255, 0.15) 0%, transparent 70%);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3), inset 0 0 20px rgba(255, 0, 255, 0.1);
+}
+
+.beta-ring-3 {
+  inset: 28px;
+  border-color: #ffd700;
+  animation: spin 30s linear infinite;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.12) 0%, transparent 70%);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.beta-core {
+  position: absolute;
+  inset: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #00f5ff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  box-shadow:
+    0 0 30px rgba(0, 245, 255, 0.5),
+    0 0 60px rgba(255, 0, 255, 0.3),
+    0 0 90px rgba(255, 215, 0, 0.2),
+    inset 0 0 30px rgba(0, 245, 255, 0.15);
+  animation: pulse-glow 3s ease-in-out infinite, float 6s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.5);
+  border: 2px solid rgba(0, 245, 255, 0.5);
+}
+
+.beta-core span {
+  display: block;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  opacity: 0.9;
+  margin-top: 3px;
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 30px rgba(0, 245, 255, 0.5),
+      0 0 60px rgba(255, 0, 255, 0.3),
+      0 0 90px rgba(255, 215, 0, 0.2),
+      inset 0 0 30px rgba(0, 245, 255, 0.15);
+  }
+  50% {
+    box-shadow:
+      0 0 45px rgba(0, 245, 255, 0.7),
+      0 0 80px rgba(255, 0, 255, 0.45),
+      0 0 120px rgba(255, 215, 0, 0.3),
+      inset 0 0 45px rgba(0, 245, 255, 0.25);
+  }
+}
+
+/* Inline hero badge */
+.beta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: rgba(246, 173, 85, 0.12);
+  color: #fbd38d;
+  border: 1px solid rgba(246, 173, 85, 0.35);
+  animation: pulse 2.5s ease-in-out infinite;
+  margin-bottom: 0.75rem;
+}
+
+/* Mobile: hide side overlay, keep inline badge */
+@media (max-width: 480px) {
+  .hero-beta-overlay {
+    display: none;
+  }
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
