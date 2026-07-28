@@ -1,4 +1,126 @@
 📋 Changelog 📋
+📅 July 28, 2026 — Version 1.0.76
+🆕 Calendar dialog Nuitka onefile freeze fixed — root cause #2 resolved: missing `babel` locale-data files (1084 `.dat` files) required by `tkcalendar.DateEntry`. Added `--include-package-data=babel` to Nuitka compilation. Secondary: `--nofollow-import-to=tkinter.font` exclusion removed (used by tkcalendar popup rendering).
+🆕 Calendar dialog hardening — `[CAL_CLICK]` and `[CAL_DIALOG]` debug logs across all event click-to-dialog lifecycle phases. Exception cleanup hardened: `_safe_release_grab()` → `close_window()` → `destroy()` fallback.
+🆕 Two isolated Nuitka probes created: dialog lifecycle probe (8/8 tests) and DateEntry+babel isolation probe (5/5 tests).
+🆕 DM006 grab_set-before-deiconify lint rule (pre-commit hook) — flags orphan `grab_set()` in `ManagedToplevel.__init__` without matching `deiconify()`, preventing regressions of the Nuitka grab-freeze bug. 49 unit tests, 0 violations on real codebase.
+🆕 DM006 Check C — orphan `grab_set` in ManagedToplevel subclass without matching `deiconify`.
+🆕 BUG_NUITKA_GRAB: Calendar event click freeze in Nuitka onefile — `grab_set()` called on withdrawn window in `ManagedToplevel.__init__` blocks all input with no visible target. Fix: moved `grab_set()` from `__init__` to `show_window()` (after `deiconify()`). Audit found 2 more same-pattern bugs in `document_details_dialog` and `model_manager_view/__init__`. 14/14 grab stack tests pass.
+🆕 BUG_260: Google discovery docs not bundled in Nuitka onefile — `googleapiclient.discovery.build()` raises `UnknownApiNameOrVersion`. Fix: `--include-data-files` for just calendar.v3.json + gmail.v1.json (272 KB total, saved 97.7 MB). Defense-in-depth: `_BUILD_SERVICE_FAILED` runtime flag auto-switches to HTTP backend.
+🆕 BUG_PROACTIVE_DEAD: Proactive lead planner non-functional since creation — `_explored_lead_sigs.add()` ran during extraction BEFORE pop-loop check. Fix: removed premature signature marking. URL lead exception (URL-1/2/3) now live.
+🆕 BUG_FETCH_403: Cross-round tool_results preservation — `tool_results` overwritten between rounds caused web_search successes invisible after `web_fetch_content` 403s. Safety cap prevents unbounded list growth.
+🔄 Nuitka compilation hardening: 4 compile fixes (google namespace, pyparsing.testing, comtypes.test, babel data, tkinter.font).
+📝 4 new session docs: BUG_NUITKA_GRAB, DM006 lint rule, URL lead exception, 403/web_search fix.
+📝 Bug docs: BUG_260 (google discovery docs), BUG_PROACTIVE_DEAD (lead planner), BUG_calendar_dialog_babel_data_files.md.
+📝 Fix docs: FIX_calendar_dialog_debug_logs_and_cleanup_hardening.md.
+📅 July 26, 2026 — Version 1.0.75
+🆕 Calendar Tab — full Google Calendar view with 3-day/week/month modes, event CRUD, tkcalendar date pickers, persistent SQLite event cache, and card-based fallback placeholders.
+🆕 Documents tab in Manage Agent — embeds full document manager UI (tree, upload, scan, delete, import/export, sync) filtered to current agent.
+🆕 Proactive briefing — smart context injection with calendar/gmail/recent files, i18n greeting detection (7 languages), auto-trigger on chat window open, markdown table format.
+🆕 In-graph synthesis review node — eliminates external re-invoke, gives streaming automatic quality gates.
+🆕 Cross-family tool chaining in continuation planner (Tier 1.5) — chains to complementary tool families when primary is exhausted.
+🆕 Quality-aware backtracking — pivot on low usefulness score (<0.3) via evidence cache gradient.
+🆕 Mid-turn backtracking on empty tool results — retry with different tool family.
+🆕 LLM semantic lead extraction (Phase 2 proactive planner) — scans tool results for conceptual gaps.
+🆕 Cross-turn goal persistence — remaining multi-goal sub-tasks survive per-turn resets.
+🆕 Full i18n (internationalization) — 7 languages (EN, DE, FR, ES, IT, NL, PL) with intent recognition patterns, tool router keywords, self-instruct detector, prompt bundles, and intent catalogs migrated to registry. 166/166 tests passing.
+🆕 Codebase-aware research — P1-5 parallel synthesis + P2-8 code symbol index.
+🆕 Agentrouter + HCNSEC backend providers — new LLM backends with api_key_envvars fallback chain.
+🆕 Synthesis reviewer (P1-7) — orchestrator-level observational pass for response quality.
+🆕 Multi-goal quality gate (P2-10) — router-level gate for multi-goal synthesis routing.
+🆕 Tool-results block registry — 4-language tool-result prompt blocks for build_chat_prompt.
+🆕 Proactive gmail/calendar context injection for chat sessions.
+🆕 Trace panel improvements — success/fail status indicators, decision labels, tool display names/categories, internal step grouping, total tokens in status bar.
+🆕 LangGraph chat orchestration — cross-turn state management and tool routing for multi-agent pipelines.
+🆕 Continuation planner — empty-response tool routing logic and unsatisfied-goal tracking.
+🆕 Codebase Research Workflow — evidence floors and heuristic planning patterns documentation.
+🆕 Codebase synthesis gate — prevent prompt artifacts in graph responses.
+🆕 Automatic codebase search and read-file guidance in execution planner to prevent hallucination.
+🆕 RAG Explorer subgraph — full RAG document exploration subgraph with depth classifier (conceptual/semantic/structural/comparative), automatic execution planning, dedicated prompts, state wiring, graph integration, AGENT_CONFIG_SCHEMA, and comprehensive test suite.
+🆕 Web Explorer subgraph — dedicated web research sub-agent with isolated context (no conversation history), confidence-based gating, 4-node subgraph (router/chat/tool/synthesizer), up to 100 tool calls / 20 rounds, and 64 tests.
+🆕 Code Explorer subgraph — dedicated codebase analysis subgraph with retry logic, scratchpad tools, dedicated analytical system prompt, tool execution wiring, subgraph infrastructure, and comprehensive test suite.
+🆕 Codebase analysis depth — auto-continue mechanism (3 rounds), context window pruning between exploration rounds (41 edge-case tests), enhanced code exploration directives, and context prune summary generation.
+🆕 Nuitka onefile bundling improvements — Google namespace package bundling (google-auth + googleapiclient), i18n data directory bundling (fixes _ANSWER_MARKERS_RE=None crash), compression bug fix with defensive HTTP fallback, tkcalendar include, _CalendarHttpBackend instantiation guard, and logger positioning fix.
+🆕 Calendar tab: redesigned event dialog — full tkcalendar DateEntry date pickers, aligned date/time field sizes, geometry persistence, redesigned UI with styled card-based placeholder when not configured, immediate first-load events (no 60s wait), unified dialog with event click freeze fix, responsive description field, dynamic event text truncation in month view, RFC3339 fix.
+🆕 Contradiction source URL extraction — extract source URLs from contradiction description text into sources key for transparent evidence tracking.
+🆕 MCP credential sync — real-time OAuth2 auth state sync from MCPCredentialManager to prevent credential drift between sessions.
+🆕 Settings: disable thinking_telemetry — removed telemetry from default config (opt-in only).
+🆕 Scratchpad improvements — wire scratchpad_clear through executor/registry/LLM schema, add scratchpad instructions to Web Explorer system prompt.
+🔄 Decompose build_chat_prompt + resolve_routing mega-functions.
+🔄 Decompose chat_node mega-function (Phase 3).
+🔄 Router split into 3 files + facade (router_synthesis, router_tool, router_codebase).
+🔄 Phase 3 gate centralization complete (batches 3.3/3.5/3.7/3.8).
+🔄 Structural→behavioral test migration (25 files).
+🔄 Hoist CalendarService import to module level in 3 files.
+🔄 Guard google deps in mcp_gmail_server + hoist GmailService import.
+🔄 Migrate deprecated thinking_processor imports from chat codepath.
+🔄 Tool pipeline consistency fixes — July 21 session.
+🔄 28 inline regex hoisted + 8 frozenset + 3 import hoists in chat hot paths.
+🔄 Phase B frozenset migration + dead-code fallback removal.
+🔄 i18n Phase 5f TOOL_PATTERNS factory collapse + per-tool data files.
+🔄 graph_routing split into 4 themed submodules.
+🔄 execution_planner split into planner_dag/planner_imports/planner_heuristic.
+🔄 orchestrator response/context split into separate mixin files.
+🔄 prompts split into prompts_user + prompts_system facade.
+🔄 SynthesisDecisionEngine Phase 1 — centralized semantic gate module.
+🔄 Reviewer LLM Node — intelligent response quality validation.
+🐛 BUG_251 — continuation planner expansion guards + test isolation fix.
+🐛 BUG_250 — greeting hallucination-continuation from conversation history + briefing grouping not merging.
+🐛 BUG_247 — chat session sidebar delete leaves entries / doesn't remove from sidebar.
+🐛 BUG_246 — infinite recursion loop for simple greetings (recursion_limit=25).
+🐛 DocumentManagementTab — source_path property has no setter (removed assignment, uses BaseTab property).
+🐛 DocumentManagementTab — scan_handler AttributeError (wrapped handler commands in lambdas).
+🐛 Calendar tab — MCP Manager button opens old legacy dialog (now opens new MCPServerList).
+🐛 Calendar tab — MCPServerList missing Close button (added right-aligned Close button).
+🐛 Calendar tab — calendar tab doesn't respect per-agent MCP config (added _is_calendar_mcp_enabled check).
+🐛 MCPWindow freeze on open — missing show_window() + calendar placeholder newline/config fixes.
+🐛 Flashing empty windows at (0,0) — withdraw Toplevels immediately after creation.
+🐛 Gmail OAuth2 token persistence — 3 compounding bugs (data loss, triple-nested JSON, race condition).
+🐛 Calendar event click freeze — ManagedToplevel missing show_window().
+🐛 Calendar event detail fields empty — unsupported eventFields replaced with fields param.
+🐛 Calendar month view RFC3339 fix — accept **kwargs to ignore hallucinated LLM arguments.
+🐛 Briefing context injection order — inject AFTER MCP filtering.
+🐛 Briefing response lost after synthesis handler — fall through to build_success_return.
+🐛 Briefing instructions never injected — wrong marker check.
+🐛 Briefing greeting detection — use i18n greeting patterns instead of hardcoded English.
+🐛 7 failing chat tests — i18n verb gate + state key whitelist + structural fixes.
+🐛 Nuitka onefile NameError — move logger before try/except.
+🐛 Language detection signals missing for DE/FR/ES/IT/NL/PL — restored per-language detection.
+🐛 Non-RAG tool results not rendered in prompt — missing rendering code restored.
+🐛 Self-instruct detector rejects short structured responses (v1 backport).
+🐛 RAG escalation block + execution planner test patches.
+🐛 MemoryStore schema migration, limited build browser-on-exit, embedding model alignment.
+🐛 BUG_256: Calendar Nuitka fixes — wrong URL paths + cache tuple indexing fixed + pyparsing.testing exclusion root cause resolved + credential drift sync + v2 backport N/A section.
+🐛 BUG_245 — filesystem MCP allowed_root stuck on home dir fallback.
+🐛 BUG_244 — tool_workspace_path resolve to project root when empty.
+🐛 BUG_243 — codebase_search scoped to src/ + structure discovery steps + 17 unit tests.
+🧪 17 unit tests for BUG_243 codebase analysis 5-step plan.
+🐛 BUG_242 — codebase-search branch regression guard for non-codebase flows.
+🐛 BUG_239/240/241 — gmail/calendar tool routing regression + BUG_136 false-positive extraction.
+🐛 BUG_235 — plan continuation edge mutation regression.
+🐛 BUG_234 — max_tool_calls default alignment (5→8) + codebase content section.
+🐛 BUG_233 — deep codebase research collapse (plan continuation + sync + dedup).
+🐛 BUG_232 — dynamic tool call bump + execution planner codebase pattern + multi-goal connector detection + IndentationError fix.
+🐛 BUG_231 — parallel RAG zero-out.
+🐛 BUG_230 — synthesis-review-retry v2 + response truncation mid-word from thinking_effort budget.
+🐛 BUG_228 — quality gate §F skips tool re-emission when response=''.
+🐛 BUG_225 — planner-side user-filename bias over ripgrep rank + DRY helper.
+🐛 BUG_226 — multi-file imperative in code-exploration hint.
+🐛 BUG_224 — filename-first routing for code analyse/codesearch.
+🐛 BUG_223 — codebase_search tool ignored by LLM and dropped by validator (3 root causes).
+🐛 BUG_222 — disable-tools three-site guard.
+🐛 BUG_206 — synthesis failure cascade follow-up fixes.
+🐛 BUG_205c — i18n tool-results rendering regression fixed.
+🐛 BUG_205b — parallel_tool_node double-wraps tool results (v1 backport).
+🐛 BUG_136 — Gmail over-extraction regression + false-positive extraction.
+🐛 BUG_090: Google deps unavailable in Nuitka — added google-auth + googleapiclient to Nuitka includes, google namespace root, lazy calendar imports, and lazy dependency checks with inline DO NOT comments.
+🐛 search_files missing pattern TypeError + arg alias fix.
+🐛 Synthesis reviewer FAIL verdict not enforced with graph re-invoke.
+🐛 Context re-fetching on every turn.
+🐛 Briefing date accuracy + agent misreading date.
+🐛 Synthesis reviewer short-circuit — PASS for greeting + proactive briefing responses to prevent false rejection.
+🐛 Window grab-stack fixes — manually re-establish parent grab when closing modal dialogs, add defensive grab handling to ManagedToplevel and wizard dialog chains.
+🐛 Test marathon — 20+ test failures resolved to 0 (agent_config_store cleanup, mock targets, import paths, synthesis_reviewer edge maps, overlay counts, file-integrity stubs, timing fixes).
 📅 July 19, 2026 — Version 1.0.74
 🆕 /help command overhaul — GFM markdown tables with 3-column examples, Codebase Search health card, Setup Guides block, hidden /admin command, and System-message markdown routing.
 🆕 Calendar MCP server integration — Google Calendar support with OAuth2 credentials, event fetching, and background thread async fix for Windows event loop compatibility.
@@ -27,7 +149,7 @@
 🐛 BUG_206 — synthesis failure cascade — 4 interacting fixes.
 🐛 Single-column GFM tables — _TABLE_SEP_RE quantifier fix.
 🐛 Module-level logger binding added across 9 source files (BUG_201).
-🐛 Missing ConfigManager import fixed in orchestrator_loaders.py.
+🐛 Missing ConfigManager import fixed in orchestrator_loaders.
 🐛 Missing is_cloud_backend import fixed in external_model_discoverer.
 🐛 8 collection errors blocking pytest suite resolved.
 🐛 Test triage session 1 — substates + mock fixes (98→93 failures).
