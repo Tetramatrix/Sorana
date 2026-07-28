@@ -10,9 +10,6 @@
 🆕 BUG_PROACTIVE_DEAD: Proactive lead planner non-functional since creation — `_explored_lead_sigs.add()` ran during extraction BEFORE pop-loop check. Fix: removed premature signature marking. URL lead exception (URL-1/2/3) now live.
 🆕 BUG_FETCH_403: Cross-round tool_results preservation — `tool_results` overwritten between rounds caused web_search successes invisible after `web_fetch_content` 403s. Safety cap prevents unbounded list growth.
 🔄 Nuitka compilation hardening: 4 compile fixes (google namespace, pyparsing.testing, comtypes.test, babel data, tkinter.font).
-📝 4 new session docs: BUG_NUITKA_GRAB, DM006 lint rule, URL lead exception, 403/web_search fix.
-📝 Bug docs: BUG_260 (google discovery docs), BUG_PROACTIVE_DEAD (lead planner), BUG_calendar_dialog_babel_data_files.md.
-📝 Fix docs: FIX_calendar_dialog_debug_logs_and_cleanup_hardening.md.
 📅 July 26, 2026 — Version 1.0.75
 🆕 Calendar Tab — full Google Calendar view with 3-day/week/month modes, event CRUD, tkcalendar date pickers, persistent SQLite event cache, and card-based fallback placeholders.
 🆕 Documents tab in Manage Agent — embeds full document manager UI (tree, upload, scan, delete, import/export, sync) filtered to current agent.
