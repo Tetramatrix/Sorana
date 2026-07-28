@@ -64,6 +64,9 @@ Long conversations are automatically compressed into tight summaries. You keep 1
 ### 🤖 AI That Takes Action
 Beyond answering questions, Sorana's built-in automation layer lets your AI operate your file system, browse the web, and manage your Gmail, all through natural conversation. Tell it what you need done; it handles the rest.
 
+### 📅 Google Calendar Integration
+View, create, edit, and manage Google Calendar events directly within Sorana. Full month/week/day views with clickable events, persistent event cache for offline access, MCP-powered event management, and tkcalendar date picker. Secure OAuth2 authentication — your credentials stay local. Accessible as both a dedicated Calendar tab and through AI chat commands.
+
 ### 🚀 Obsidian Export
 Already using Obsidian? Export your Sorana workspace directly to Obsidian Canvas or Graph View. Your AI-organised knowledge structure, carried into your existing vault. Use Sorana for AI-powered work; keep Obsidian as your permanent archive.
 
@@ -83,6 +86,7 @@ No installation. Unzip anywhere, run from a USB drive, take your entire workspac
 | Visual knowledge canvas | ✅ AI-organised | ✅ Manual (Obsidian) | ❌ Chat only | ❌ Chat only |
 | Chat with your documents | ✅ Any file, any format | ⚠️ Plugin required | ⚠️ Per session upload | ⚠️ Basic |
 | AI takes action on files & web | ✅ Built-in automation | ❌ View only | ❌ Advice only | ⚠️ Community tools |
+| Google Calendar integration | ✅ Dedicated tab + MCP | ⚠️ Community plugins | ❌ Not available | ❌ Not available |
 | Runs 100% offline & private | ✅ Your machine | ✅ Notes are local | ❌ Cloud only | ✅ Local |
 | Stays fast over months of use | ✅ Auto-compaction | ✅ (no AI context) | ⚠️ Gets slow & costly | ❌ Manual |
 | Free to use | ✅ Free & portable | ⚠️ Free + paid tiers | ❌ $20+/month | ✅ Free |
@@ -99,7 +103,7 @@ No installation. Unzip anywhere, run from a USB drive, take your entire workspac
 4. **Open a folder** as your workspace via *Open Workspace*
 5. **Select an AI model** in *Model Manager* (built-in offline model included)
 
-Latest: `Sorana.exe v1.0.74`
+Latest: `Sorana.exe v1.0.76`
 📥 [Download (Portable)](tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
 🏪 [Microsoft Store](https://apps.microsoft.com/store/detail/9N8C43PZC1RN)
 
