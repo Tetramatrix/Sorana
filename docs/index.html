@@ -260,12 +260,28 @@
                         <li><strong>Gmail:</strong> Full email control, list, send, label, trash, archive (JSON/EML/MBOX).</li>
                         <li><strong>Google Calendar:</strong> View, create, update, and delete events through conversation.</li>
                         <li><strong>External Servers:</strong> Connect Google Drive, GitHub, PostgreSQL, custom tools.</li>
-                    </ul>
-                   </div>
+                    </ul>                </div>
                 </div>
-                
-             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
-                    <span class="toggle-icon">◀</span> 🔒 Your Knowledge Shouldn't Live on Someone Else's Server
+
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                     <span class="toggle-icon">◀</span> 🤖 Your AI Can't Think Strategically
+                 </h3>
+                 <div class="feature-detail-content" style="display:none;">
+                   <div class="cta-box feature-detail-group">
+                     <p><strong>The problem:</strong> Every AI chat works one question at a time. Ask something complex and it searches once, answers once, then waits for your next prompt. You end up breaking down your own questions into tiny steps and re-prompting when the first attempt fails.</p>
+                     <p><strong>How Sorana fixes it:</strong> Sorana's agent doesn't just answer. It plans, researches, checks its own work, and adapts when something doesn't work. You ask one question. The AI handles the rest.</p>
+                     <ul>
+                         <li><strong>Multi-step planning:</strong> One complex question triggers a 3-5 step plan with dependency ordering. The agent decides what to do first, second, and third.</li>
+                         <li><strong>Runs things in parallel:</strong> Searches, file reads, and web fetches happen simultaneously. Faster results, no sequential bottleneck.</li>
+                         <li><strong>Self-review before response:</strong> Every answer is quality-checked by a separate reviewer pass. Low-quality results trigger automatic retry with a new strategy.</li>
+                         <li><strong>Gracious fallback:</strong> If documents don't have the answer, it tries codebase search. If that fails, web search. Always a backup plan.</li>
+                         <li><strong>Never gets stuck:</strong> Recognises when it's repeating the same failing tool call and switches strategies. No infinite loops.</li>
+                     </ul>
+                   </div>
+                 </div>
+
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+                     <span class="toggle-icon">◀</span> 🔒 Your Knowledge Shouldn't Live on Someone Else's Server
                 </h3>
                 <div class="feature-detail-content" style="display:none;">
                     <div class="cta-box feature-detail-group">
