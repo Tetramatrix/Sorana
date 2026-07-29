@@ -1972,7 +1972,7 @@ figcaption {
 }
 
 .beta-ring-2 {
-  inset: 13px;
+  inset: 14px;
   border-color: rgba(255, 0, 255, 0.35);
   border-width: 1.5px;
   animation: spin-reverse 24s linear infinite, morph-ring 7s ease-in-out infinite reverse;
@@ -1980,7 +1980,7 @@ figcaption {
 }
 
 .beta-ring-3 {
-  inset: 26px;
+  inset: 28px;
   border-color: rgba(255, 215, 0, 0.3);
   border-width: 1.5px;
   animation: spin 30s linear infinite, morph-ring 6s ease-in-out infinite;
@@ -2207,9 +2207,6 @@ figcaption {
   75%  { opacity: 0.3; transform: translateY(-260px) scale(0.5); }100% { opacity: 0; transform: translateY(-380px) scale(0.2); }
 }
 
-@keyframes morph-ring {
-  0%, 100% { border-radius: 50%; }
-  33% { border-radius: 42% 58% 55% 45%; }
   66% { border-radius: 55% 45% 42% 58%; }
 }
 
