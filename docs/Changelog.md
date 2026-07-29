@@ -1,15 +1,14 @@
 📋 Changelog 📋
 📅 July 29, 2026 — Version 1.0.77
-🆕 **All 5 branch audits shipped** — 32/41 recommendations implemented across RAG, Tool-Calling, Planning, Memory, and Synthesis Quality Gates (100% Quick Wins + 100% Structural Fixes). 9 Deep Refactors remain (all HIGH risk, deferred).
-🆕 **RAG audit (9/11 shipped):** consolidated chunk config into rag_config.py, extracted shared retry/budget constants, promoted execute_rag_tool to tool_rag_helpers, consolidated name matching into single NameMatcher class, added 'deep' depth level for exhaustive search queries, extracted shared subgraph budget constants.
-🆕 **Tool-Calling audit (7/8 shipped):** ported cross-round preservation to tool subgraph, explorer subgraphs now query Registry for tool sets, async timeout (120s) on MCP execution, sync timeout via ThreadPoolExecutor, defensive metadata field stripping before schema validation, extracted shared _execute_web_tool helper, [TOOL_DISPATCH] and [MCP_CRED] debug logs at all dispatch/credential refresh sites.
-🆕 **Planning audit (6/6 shipped):** consolidated planner budget constants into rag_config.py, extracted per-family planner strategies into separate modules, added mid-turn plan revision trigger, extracted proactive lead scanning into shared module, [PLAN] debug logs for tier selection, skip execution_planner node hop when plan batch ready.
-🆕 **Memory audit (6/8 shipped):** wired importance scoring into memory context injection, sender_type guard blocking agent-output false memories, extraction prompts consolidated into 1 shared template, extraction graph made mandatory, blocking contradiction detection removed (now fully non-blocking).
-🆕 **Synthesis Quality Gates audit (4/5 shipped):** removed telemetry-only classify_response() call (-12 lines), eliminated duplicate in-graph/orchestrator synthesis reviewer (-220 lines), consolidated 3 retry budgets into shared _synthesis_total_retries counter (max 3). Bug caught during code review: unbounded escalation loop (counter never incremented — fixed). 14/14 tests pass.
-🆕 **MCP tool checkboxes wrapping grid** — `MCPServerItem` and `MCPServerConfigDialog` tool checkboxes changed from single-row overflow to max-4-per-row wrapping grid layout (`pack` → `grid`).
-🆕 **DocumentDetailsDialog managed migration (BUG_110 closed)** — Last legacy `tk.Toplevel + GeometryMixin` dialog migrated to `ManagedModalDialog`. Now has persistent geometry, parent centering, and `close_window()` semantics. Removed from DM002 `ALLOWED_OVERLAY_PATHS`.
-🆕 **ContextMenuHandler _tk_parent fix** — Resolved `DocumentManagementTab` (BaseTab, not a tkinter widget) compatibility with DocumentDetailsDialog by resolving actual widget parent via `getattr(parent, 'frame', parent)`.
-🆕 **Full lint compliance** — DM001/DM002/DM005 all 0 violations (81/752/808 files scanned). Comprehensive audit confirmed zero remaining migration candidates.
+🆕 RAG audit: consolidated chunk config into rag_config, extracted shared retry/budget constants, promoted execute_rag_tool to tool_rag_helpers, consolidated name matching into single NameMatcher class, added 'deep' depth level for exhaustive search queries, extracted shared subgraph budget constants.
+🆕 Tool-Calling audit: ported cross-round preservation to tool subgraph, explorer subgraphs now query Registry for tool sets, async timeout (120s) on MCP execution, sync timeout via ThreadPoolExecutor, defensive metadata field stripping before schema validation, extracted shared _execute_web_tool helper, [TOOL_DISPATCH] and [MCP_CRED] debug logs at all dispatch/credential refresh sites.
+🆕 Planning audit: consolidated planner budget constants into rag_config, extracted per-family planner strategies into separate modules, added mid-turn plan revision trigger, extracted proactive lead scanning into shared module, [PLAN] debug logs for tier selection, skip execution_planner node hop when plan batch ready.
+🆕 Memory audit: wired importance scoring into memory context injection, sender_type guard blocking agent-output false memories, extraction prompts consolidated into 1 shared template, extraction graph made mandatory, blocking contradiction detection removed (now fully non-blocking).
+🆕 Synthesis Quality Gates audit: removed telemetry-only classify_response() call (-12 lines), eliminated duplicate in-graph/orchestrator synthesis reviewer (-220 lines), consolidated 3 retry budgets into shared _synthesis_total_retries counter (max 3). Bug caught during code review: unbounded escalation loop (counter never incremented — fixed). 14/14 tests pass.
+🆕 MCP tool checkboxes wrapping grid — `MCPServerItem` and `MCPServerConfigDialog` tool checkboxes changed from single-row overflow to max-4-per-row wrapping grid layout (`pack` → `grid`).
+🆕 DocumentDetailsDialog managed migration (BUG_110 closed) — Last legacy `tk.Toplevel + GeometryMixin` dialog migrated to `ManagedModalDialog`. Now has persistent geometry, parent centering, and `close_window()` semantics. Removed from DM002 `ALLOWED_OVERLAY_PATHS`.
+🆕 ContextMenuHandler _tk_parent fix — Resolved `DocumentManagementTab` (BaseTab, not a tkinter widget) compatibility with DocumentDetailsDialog by resolving actual widget parent via `getattr(parent, 'frame', parent)`.
+🆕 Full lint compliance — DM001/DM002/DM005 all 0 violations (81/752/808 files scanned). Comprehensive audit confirmed zero remaining migration candidates.
 🔄 Master audit status table — all 5 branch audits tracked in cross-linked session docs with per-branch progress.
 🔄 Synthesis quality test rewrite — 3 previously skipped `_review_synthesis` tests rewritten to test in-graph `synthesis_reviewer` node directly (now 14/14 active).
 🔄 Documentation updates: BUG_110 migration doc (§10 added, stale sibling finding removed), Windowing Compliance Audit (Tier 2 table + DM002 count updated), docs index updated.
@@ -89,7 +88,7 @@
 🐛 Gmail OAuth2 token persistence — 3 compounding bugs (data loss, triple-nested JSON, race condition).
 🐛 Calendar event click freeze — ManagedToplevel missing show_window().
 🐛 Calendar event detail fields empty — unsupported eventFields replaced with fields param.
-🐛 Calendar month view RFC3339 fix — accept **kwargs to ignore hallucinated LLM arguments.
+🐛 Calendar month view RFC3339 fix — accept kwargs to ignore hallucinated LLM arguments.
 🐛 Briefing context injection order — inject AFTER MCP filtering.
 🐛 Briefing response lost after synthesis handler — fall through to build_success_return.
 🐛 Briefing instructions never injected — wrong marker check.
@@ -626,7 +625,7 @@ context from day one.
 🐛 fix: refactor: add new helper function for embedding injection
 📅 Mai 9, 2026 — Version 1.0.40
 🐛 fix: update document loading logic to handle full content retrieval correctly
-🐛 **fix:** add missing history registration in FolderTab
+🐛 fix: add missing history registration in FolderTab
 🐛 refactor: adjust max tokens limit in LLM config
 🐛 feat: add user authentication for multi-file routing fix
 📅 Mai 6, 2026 — Version 1.0.39
