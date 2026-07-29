@@ -55,6 +55,26 @@ AI maps your files onto a 2D canvas by topic and relationship, not alphabeticall
 ### 🧠 Persistent AI Memory
 Sorana automatically extracts facts, preferences, and project details from every conversation. Next session, your AI knows your name, your current projects, and how you like to work. Memory is shared across all your agents, building a single unified knowledge profile over time.
 
+### 🤖 An AI That Thinks for Itself
+Most AI tools answer one question and stop. Sorana works through problems like a real assistant:
+
+- **Breaks down big questions automatically.** Ask something complex and Sorana creates a step-by-step plan, runs the steps in the right order, and brings everything together. You don't need to tell it how.
+- **Works in parallel, not one thing at a time.** Instead of doing searches, file reads, and web fetches one after another, Sorana runs them all at once. Faster answers, less waiting.
+- **Checks its own answers.** Every response is reviewed for quality before you see it. If something's incomplete, it tries again with a different approach. Automatically.
+- **Always has a backup plan.** If your documents don't have the answer, it automatically searches your codebase. If that doesn't work, it searches the web. It keeps trying until it finds something useful.
+- **Adjusts how deep to dig.** Simple questions get quick answers. Complex research triggers a deep, multi-round investigation. Sorana decides how much effort your question needs.
+- **Spots interesting leads on its own.** When it finds useful results, Sorana picks up on related links, references, and topics you didn't mention. It follows them without being asked.
+- **Knows when it's stuck.** If it starts repeating the same failing approach, Sorana recognises the pattern and switches tactics. No infinite loops, no getting stuck.
+
+### 📝 Prompt Manager
+Your agents are only as good as the prompts they run on. Sorana's Prompt Manager is a central library where you create, organize, and assign prompt pairs (system + user) to any agent, pipeline, or chat session in one click:
+
+- **3-step wizard for quick creation.** Name it, write the system prompt, write the user prompt. Pick from 20+ built-in categories or add your own. Done in under a minute.
+- **Assign to any agent with one click.** Right-click any prompt pair and push it directly to an agent's system and user prompt fields. No file editing, no copy-pasting.
+- **Stay organized.** Research, Writing, Coding, Analysis, Translation, Creative and more. Filter by category, search by name.
+- **Full editor panel.** Treeview on the left, editor on the right. See everything at a glance, edit any prompt, and save.
+- **Instant updates.** Assign a prompt today, switch it tomorrow. Your agent's behavior changes instantly. Great for A/B testing prompt strategies.
+
 ### 💬 Chat With All Your Documents
 Drop any file, PDF, Word doc, code, text, scanned image, into your workspace and chat with it in plain language. Sorana searches your documents using multiple strategies in parallel to always find the right answer, even in large archives.
 
@@ -86,6 +106,9 @@ No installation. Unzip anywhere, run from a USB drive, take your entire workspac
 | Visual knowledge canvas | ✅ AI-organised | ✅ Manual (Obsidian) | ❌ Chat only | ❌ Chat only |
 | Chat with your documents | ✅ Any file, any format | ⚠️ Plugin required | ⚠️ Per session upload | ⚠️ Basic |
 | AI takes action on files & web | ✅ Built-in automation | ❌ View only | ❌ Advice only | ⚠️ Community tools |
+| Autonomous multi-step planning | ✅ **Breaks one question into 3–5 sub-tasks with dependency ordering** | ❌ No AI | ❌ Single-turn only | ❌ Single-turn only |
+| Parallel tool execution | ✅ **Multiple tools (search, read, web) run concurrently** | ❌ N/A | ❌ Sequential only | ⚠️ Basic only |
+| Central prompt library | ✅ **Create, organize, assign prompts to any agent in one click** | ❌ Manual templates only | ❌ Per-chat only | ⚠️ Basic templates |
 | Google Calendar integration | ✅ Dedicated tab + MCP | ⚠️ Community plugins | ❌ Not available | ❌ Not available |
 | Runs 100% offline & private | ✅ Your machine | ✅ Notes are local | ❌ Cloud only | ✅ Local |
 | Stays fast over months of use | ✅ Auto-compaction | ✅ (no AI context) | ⚠️ Gets slow & costly | ❌ Manual |
