@@ -27,6 +27,9 @@ No subscriptions. No cloud required. Everything runs on your machine.
 
 ## The Problems Sorana Solves
 
+### 🤖 Your AI can't think strategically
+Every AI chat works one question at a time. Ask something complex and it searches once, answers once, then waits for your next prompt. You end up breaking down your own questions into tiny steps. Sorana's agent doesn't just answer. It plans, researches multiple sources in parallel, checks its own work, and adapts when something doesn't work. You ask one question. The AI handles the rest.
+
 ### 🧠 You're tired of re-explaining yourself every day
 Every AI chat starts from zero. You paste background context, re-explain your project, re-state your preferences, again and again. Sorana quietly learns from every conversation and greets you with full context next time you open it. No setup. No copy-pasting. Just continuity.
 
