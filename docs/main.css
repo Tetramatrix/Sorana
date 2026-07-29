@@ -1965,29 +1965,26 @@ figcaption {
 
 .beta-ring-1 {
   inset: 0;
-  border-color: #00f5ff;
-  border-width: 3px;
+  border-color: rgba(0, 245, 255, 0.5);
+  border-width: 1.5px;
   animation: spin 18s linear infinite, morph-ring 5s ease-in-out infinite;
-  background: radial-gradient(circle, rgba(0, 245, 255, 0.2) 0%, transparent 70%);
-  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3), inset 0 0 20px rgba(0, 245, 255, 0.1);
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.15);
 }
 
 .beta-ring-2 {
   inset: 13px;
-  border-color: #ff00ff;
-  border-width: 3px;
+  border-color: rgba(255, 0, 255, 0.35);
+  border-width: 1.5px;
   animation: spin-reverse 24s linear infinite, morph-ring 7s ease-in-out infinite reverse;
-  background: radial-gradient(circle, rgba(255, 0, 255, 0.15) 0%, transparent 70%);
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3), inset 0 0 20px rgba(255, 0, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.10);
 }
 
 .beta-ring-3 {
   inset: 26px;
-  border-color: #ffd700;
-  border-width: 3px;
+  border-color: rgba(255, 215, 0, 0.3);
+  border-width: 1.5px;
   animation: spin 30s linear infinite, morph-ring 6s ease-in-out infinite;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.12) 0%, transparent 70%);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 215, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.08);
 }
 
 .beta-core {
