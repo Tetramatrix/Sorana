@@ -1965,26 +1965,26 @@ figcaption {
 
 .beta-ring-1 {
   inset: 0;
-  border-color: #00f5ff;
+  border-width: 1.5px;
+  border-color: rgba(0, 245, 255, 0.5);
   animation: spin 18s linear infinite;
-  background: radial-gradient(circle, rgba(0, 245, 255, 0.2) 0%, transparent 70%);
-  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3), inset 0 0 20px rgba(0, 245, 255, 0.1);
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.15);
 }
 
 .beta-ring-2 {
   inset: 14px;
-  border-color: #ff00ff;
+  border-width: 1.5px;
+  border-color: rgba(255, 0, 255, 0.4);
   animation: spin-reverse 24s linear infinite;
-  background: radial-gradient(circle, rgba(255, 0, 255, 0.15) 0%, transparent 70%);
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3), inset 0 0 20px rgba(255, 0, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.12);
 }
 
 .beta-ring-3 {
   inset: 28px;
-  border-color: #ffd700;
+  border-width: 1.5px;
+  border-color: rgba(255, 215, 0, 0.35);
   animation: spin 30s linear infinite;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.12) 0%, transparent 70%);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 215, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.10);
 }
 
 .beta-core {
@@ -2006,7 +2006,7 @@ figcaption {
     0 0 60px rgba(255, 0, 255, 0.3),
     0 0 90px rgba(255, 215, 0, 0.2),
     inset 0 0 30px rgba(0, 245, 255, 0.15);
-  animation: pulse-glow 3s ease-in-out infinite, float 6s ease-in-out infinite;
+  animation: pulse-glow 3s ease-in-out infinite, float 6s ease-in-out infinite, morph-text 8s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(0, 245, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.5);
   border: 2px solid rgba(0, 245, 255, 0.5);
 }
@@ -2031,6 +2031,191 @@ figcaption {
   from { transform: rotate(360deg); }
   to { transform: rotate(0deg); }
 }
+
+/* Hero floating bubbles */
+.hero-bubble {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+}
+
+.hero-bubble-1 {
+  width: 16px; height: 16px;
+  bottom: -20px; left: 15%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(0,245,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 12px rgba(0,245,255,0.6), inset 0 0 6px rgba(255,255,255,0.5);
+  animation: bubble-rise 5s linear infinite;
+  animation-delay: 0s;
+}
+
+.hero-bubble-2 {
+  width: 10px; height: 10px;
+  bottom: -20px; left: 40%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,0,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 10px rgba(255,0,255,0.6), inset 0 0 4px rgba(255,255,255,0.5);
+  animation: bubble-rise 6.5s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.hero-bubble-3 {
+  width: 20px; height: 20px;
+  bottom: -20px; left: 75%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,215,0,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 14px rgba(255,215,0,0.6), inset 0 0 6px rgba(255,255,255,0.5);
+  animation: bubble-rise 7s linear infinite;
+  animation-delay: 3s;
+}
+
+.hero-bubble-4 {
+  width: 7px; height: 7px;
+  bottom: -20px; left: 55%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(0,245,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 8px rgba(0,245,255,0.5), inset 0 0 3px rgba(255,255,255,0.5);
+  animation: bubble-rise 5.5s linear infinite;
+  animation-delay: 4.5s;
+}
+
+.hero-bubble-5 {
+  width: 12px; height: 12px;
+  bottom: -20px; left: 28%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,215,0,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 10px rgba(255,215,0,0.5), inset 0 0 4px rgba(255,255,255,0.5);
+  animation: bubble-rise 8s linear infinite;
+  animation-delay: 2s;
+}
+
+.hero-bubble-6 {
+  width: 14px; height: 14px;
+  bottom: -20px; left: 88%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(0,245,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 12px rgba(0,245,255,0.6), inset 0 0 5px rgba(255,255,255,0.5);
+  animation: bubble-rise 6s linear infinite;
+  animation-delay: 0.8s;
+}
+
+.hero-bubble-7 {
+  width: 9px; height: 9px;
+  bottom: -20px; left: 8%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,0,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 9px rgba(255,0,255,0.6), inset 0 0 4px rgba(255,255,255,0.5);
+  animation: bubble-rise 7.5s linear infinite;
+  animation-delay: 5.5s;
+}
+
+@keyframes bubble-rise {
+  0%   { opacity: 0; transform: translateY(0) scale(0.8); }
+  8%   { opacity: 1; transform: translateY(-10px) scale(1.2); }
+  25%  { opacity: 0.9; transform: translateY(-60px) scale(1.1); }
+  50%  { opacity: 0.6; transform: translateY(-150px) scale(0.8); }
+  75%  { opacity: 0.3; transform: translateY(-260px) scale(0.5); }
+  100% { opacity: 0; transform: translateY(-380px) scale(0.2); }
+}
+@keyframes morph-text {
+  0%, 100% { letter-spacing: 0.03em; font-size: 0.82rem; }
+  25% { letter-spacing: 0.1em; font-size: 0.88rem; }
+  50% { letter-spacing: 0.06em; font-size: 0.85rem; }
+  75% { letter-spacing: 0.08em; font-size: 0.87rem; }
+}
+
+
+
+/* Hero floating bubbles */
+.hero-bubble {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+}
+
+.hero-bubble-1 {
+  width: 16px; height: 16px;
+  bottom: -20px; left: 15%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(0,245,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 12px rgba(0,245,255,0.6), inset 0 0 6px rgba(255,255,255,0.5);
+  animation: bubble-rise 5s linear infinite;
+  animation-delay: 0s;
+}
+
+.hero-bubble-2 {
+  width: 10px; height: 10px;
+  bottom: -20px; left: 40%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,0,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 10px rgba(255,0,255,0.6), inset 0 0 4px rgba(255,255,255,0.5);
+  animation: bubble-rise 6.5s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.hero-bubble-3 {
+  width: 20px; height: 20px;
+  bottom: -20px; left: 75%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,215,0,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 14px rgba(255,215,0,0.6), inset 0 0 6px rgba(255,255,255,0.5);
+  animation: bubble-rise 7s linear infinite;
+  animation-delay: 3s;
+}
+
+.hero-bubble-4 {
+  width: 7px; height: 7px;
+  bottom: -20px; left: 55%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(0,245,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 8px rgba(0,245,255,0.5), inset 0 0 3px rgba(255,255,255,0.5);
+  animation: bubble-rise 5.5s linear infinite;
+  animation-delay: 4.5s;
+}
+
+.hero-bubble-5 {
+  width: 12px; height: 12px;
+  bottom: -20px; left: 28%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,215,0,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 10px rgba(255,215,0,0.5), inset 0 0 4px rgba(255,255,255,0.5);
+  animation: bubble-rise 8s linear infinite;
+  animation-delay: 2s;
+}
+
+.hero-bubble-6 {
+  width: 14px; height: 14px;
+  bottom: -20px; left: 88%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(0,245,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 12px rgba(0,245,255,0.6), inset 0 0 5px rgba(255,255,255,0.5);
+  animation: bubble-rise 6s linear infinite;
+  animation-delay: 0.8s;
+}
+
+.hero-bubble-7 {
+  width: 9px; height: 9px;
+  bottom: -20px; left: 8%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(255,0,255,0.6) 40%, transparent 72%);
+  box-shadow: 0 0 9px rgba(255,0,255,0.6), inset 0 0 4px rgba(255,255,255,0.5);
+  animation: bubble-rise 7.5s linear infinite;
+  animation-delay: 5.5s;
+}
+
+@keyframes bubble-rise {
+  0%   { opacity: 0; transform: translateY(0) scale(0.8); }
+  8%   { opacity: 1; transform: translateY(-10px) scale(1.2); }
+  25%  { opacity: 0.9; transform: translateY(-60px) scale(1.1); }
+  50%  { opacity: 0.6; transform: translateY(-150px) scale(0.8); }
+  75%  { opacity: 0.3; transform: translateY(-260px) scale(0.5); }
+  100% { opacity: 0; transform: translateY(-380px) scale(0.2); }
+}
+@keyframes morph-text {
+  0%, 100% { letter-spacing: 0.03em; font-size: 0.82rem; }
+  25% { letter-spacing: 0.1em; font-size: 0.88rem; }
+  50% { letter-spacing: 0.06em; font-size: 0.85rem; }
+  75% { letter-spacing: 0.08em; font-size: 0.87rem; }
+}
+
+@keyframes morph-text {
+  0%, 100% { letter-spacing: 0.03em; font-size: 0.82rem; }
+  25% { letter-spacing: 0.1em; font-size: 0.88rem; }
+  50% { letter-spacing: 0.06em; font-size: 0.85rem; }
+  75% { letter-spacing: 0.08em; font-size: 0.87rem; }
+}
+
+
 
 @keyframes pulse-glow {
   0%, 100% {
