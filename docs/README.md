@@ -49,12 +49,6 @@ Every file you send to ChatGPT or Claude leaves your machine. Sorana runs AI mod
 
 ## Key Features
 
-### 🧩 Spatial Knowledge Canvas
-AI maps your files onto a 2D canvas by topic and relationship, not alphabetically, not by date, but by meaning. Like Obsidian Canvas, but automatically organised by your AI. Drag, group, rename, and build mind maps of your folder structure.
-
-### 🧠 Persistent AI Memory
-Sorana automatically extracts facts, preferences, and project details from every conversation. Next session, your AI knows your name, your current projects, and how you like to work. Memory is shared across all your agents, building a single unified knowledge profile over time.
-
 ### 🤖 An AI That Thinks for Itself
 Most AI tools answer one question and stop. Sorana works through problems like a real assistant:
 
@@ -65,6 +59,12 @@ Most AI tools answer one question and stop. Sorana works through problems like a
 - **Adjusts how deep to dig.** Simple questions get quick answers. Complex research triggers a deep, multi-round investigation. Sorana decides how much effort your question needs.
 - **Spots interesting leads on its own.** When it finds useful results, Sorana picks up on related links, references, and topics you didn't mention. It follows them without being asked.
 - **Knows when it's stuck.** If it starts repeating the same failing approach, Sorana recognises the pattern and switches tactics. No infinite loops, no getting stuck.
+
+### 🧩 Spatial Knowledge Canvas
+AI maps your files onto a 2D canvas by topic and relationship, not alphabetically, not by date, but by meaning. Like Obsidian Canvas, but automatically organised by your AI. Drag, group, rename, and build mind maps of your folder structure.
+
+### 🧠 Persistent AI Memory
+Sorana automatically extracts facts, preferences, and project details from every conversation. Next session, your AI knows your name, your current projects, and how you like to work. Memory is shared across all your agents, building a single unified knowledge profile over time.
 
 ### 📝 Prompt Manager
 Your agents are only as good as the prompts they run on. Sorana's Prompt Manager is a central library where you create, organize, and assign prompt pairs (system + user) to any agent, pipeline, or chat session in one click:
@@ -123,10 +123,12 @@ No installation. Unzip anywhere, run from a USB drive, take your entire workspac
 1. **Download** the portable archive from [tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
 2. **Extract** anywhere, desktop, USB, external drive
 3. **Run** `Sorana.exe`, no installation needed
-4. **Open a folder** as your workspace via *Open Workspace*
-5. **Select an AI model** in *Model Manager* (built-in offline model included)
+4. **Select an AI model** in *Model Manager* (built-in offline model included)
+5. **Open a folder** as your workspace via *Open Workspace*
+6. Create an **agent** in your Workspace
+7. Chat 
 
-Latest: `Sorana.exe v1.0.76`
+Latest: `Sorana.exe v1.0.77`
 📥 [Download (Portable)](tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
 🏪 [Microsoft Store](https://apps.microsoft.com/store/detail/9N8C43PZC1RN)
 
