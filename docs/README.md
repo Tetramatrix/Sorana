@@ -72,6 +72,22 @@ Built-in OCR and vision AI make scanned documents, screenshots, and images searc
 - Vision results become searchable documents
 - JPEG, PNG, GIF, WEBP, BMP
 
+### Your powerful model is wasted on simple tasks
+When your AI plans strategically, reviews its own answers, fetches web results, and routes between tools, every internal step uses a model. Sorana uses a fast model for these internal operations and reserves your primary model for the actual conversation.
+
+- Fast model for internal operations like tool calls and routing
+- Primary model for user conversations
+- Dedicated embedding model for RAG and semantic search
+- Hardware acceleration when available
+
+### Your AI is a black box
+You ask a question and get an answer, but you have no idea how it got there. Did it search your files? Read the right documents? Did it check its work or just guess? Sorana shows you every step it took: what it searched, what it found, why it chose that answer, and when it changed its mind.
+
+- Step by step trace of searches, reads, and tool calls
+- See what the AI considered and what it discarded
+- Full reasoning shown before every answer
+- Understand and trust the result, or tweak the approach
+
 ---
 
 ## Core Features
@@ -128,25 +144,84 @@ Watch your AI think step by step. See what it searched, what it found, and why i
 Got a folder of code? Sorana reads it, searches it, and answers questions about it, like a teammate who already knows the project.
 
 ### Tesseract Image OCR
+
 Use Tesseract for image OCR on scanned photos, screenshots, and other images. When a vision-capable model is available, it can read the image directly as a fallback.
+
+---
+
+## Examples in Action
+
+Real things you can say to Sorana. No special syntax, no prompts to craft.
+
+### Memory & Knowledge
+- "Remember that my preferred working hours are 9am to 4pm"
+- "What did I learn about project budgeting last week?"
+- "Research electric car trends and save the key facts so I can find them later"
+- "Read this research paper and save the key findings to my notes"
+- "Compare what I know about option A versus option B from past research"
+
+### Research & Writing
+- "Summarize this document for me"
+- "Read these three articles and draft a summary memo, then save it to my project folder"
+- "Find relevant studies on this topic and add them to my knowledge base"
+- "Search my notes for the client meeting summary and send a follow up email"
+- "Organize this folder of research papers into topic groups and summarize each one"
+
+### Tasks & Scheduling
+- "Send an email to the team about the project update"
+- "What meetings do I have today?"
+- "Review the project brief, draft a response, and add the deadline to my calendar"
+- "Find free slots this week for a team review"
+- "Remind me about the invoice deadline next Friday"
+
+### Job Hunting
+- "Research this company's recent projects and leadership"
+- "Draft a cover letter using my CV and the job description I saved"
+- "Review my application and suggest improvements"
+- "Send a follow up email to the hiring manager"
+- "Add the interview date to my calendar and set a reminder"
+
+### Email & Calendar
+- "Show me unread emails from today"
+- "Draft a reply to this email about the project timeline"
+- "Schedule a meeting with the team next Tuesday at 2pm"
+- "Find my dentist appointment this month"
+- "Send meeting notes to everyone who attended"
+
+### Household & Personal
+- "What bills are due this month?"
+- "Compare internet plans from local providers and save the best option"
+- "Scan this letter and extract the important details to my knowledge base"
+- "Search my archives for the insurance policy and summarize the coverage"
+
+### Workflows & Pipelines
+- "Draft a project report, review it for gaps, and polish the final version"
+- "Research this topic, write a blog post, and have a second agent fact check every claim"
+- "Read these requirements, draft a technical spec, and review it for clarity"
+- "Analyze this customer feedback, summarize the key themes, and draft a response plan"
+- "Review this code change for bugs, suggest improvements, and generate a summary"
 
 ---
 
 ## How Sorana Compares
 
-| What you get | Sorana | Obsidian / Notion | ChatGPT / Claude |
+| What you get | Sorana | Obsidian / Notion | ChatGPT / Claude / others |
 |---|---|---|---|
-| Runs 100% offline & private | Your machine, your data | Obsidian local / Notion cloud | Cloud only |
-| AI remembers you between sessions | Automatic | Manual notes only | Limited / paid |
-| Visual knowledge canvas | AI-organized 2D canvas | Manual (Obsidian Canvas) | Chat only |
-| AI takes action on files & web | Built-in automation | View & edit only | Advice only |
-| Chat with documents | Any file, any format | Plugin required | Upload per session |
+| Runs fully offline & private | Your machine, your data. No internet needed. | Obsidian local / Notion cloud | Cloud only. Your data on their servers. |
+| Model flexibility | 25+ providers + capability probing | N/A | Locked to one vendor |
+| Triple Model Roles | Cheap model for routing, powerful for answers | N/A | One model for everything |
+| Multi-Agent Workflows | Predefined templates with agent teams that hand off work automatically | Simple automations only | Basic workflows / skills (paid) |
+| Agent Trace & Debug | Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. | No AI agent transparency | No agent tracing available |
+| Portable | Runs from a USB stick | App install required | Cloud / web only |
+| AI takes action | Built-in automation on files, web, email | View & edit only | Paid connectors with separate setup |
+| Visual knowledge canvas | AI-organised 2D canvas | Manual (Obsidian Canvas) | Chat only |
+| Chat with documents | Workspace-wide RAG indexing | Plugin required | Project uploads + per-session |
 | Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
-| Calendar & Scheduling | Manage directly via chat | View-only / manual plugins | No direct integration |
-| Stays fast over months | Auto-compaction | No AI context | Gets slow & costly |
-| MCP Tools & Marketplace | Built-in server marketplace | No native AI agents | Closed ecosystem / enterprise |
-| Model Manager & Probing | 25+ providers + capability probing | Advanced plugins required | Locked to one vendor |
-| Free to use | Free & portable | Free + paid tiers | $20+/month |
+| Tool integrations | Built-in MCP marketplace | No native AI agents | Connector marketplaces (paid) |
+| Calendar & Scheduling | Manage via chat | View-only plugins | Connector (paid) |
+| AI remembers you | Automatic memory across sessions, all categories free | Manual notes only | Basic free notes only; full memory paid |
+| Stays fast over months | Auto-compaction | No AI context | Varies (Claude yes, others no) |
+| Cost | Free app + your API keys (or free local) | Free + paid tiers | $8-200/month included |
 
 ---
 
