@@ -1,139 +1,165 @@
-# Sorana, Your Personal AI That Actually Knows You
+# Sorana: Your Personal AI That Actually Knows You
 
-> A second brain that remembers, organises, and acts. Built for knowledge workers who are tired of starting from zero every day.
+> A second brain that remembers your projects, learns your working style, and finds any file or note instantly.
 
 ---
 
-## What is Sorana?
+## What Is Sorana?
 
-Most AI tools forget you the moment you close the window. Sorana doesn't.
+Sorana is your personal AI knowledge workspace for Windows. Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
 
-Sorana is a personal AI knowledge workspace for Windows. It builds a lasting memory of your projects, files, and thinking style, so every time you open it, your AI already knows where you left off. Think of it as Obsidian's spatial canvas combined with an AI assistant that has actually read your notes, remembers your preferences, and can take action on your behalf.
+Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.
 
-No subscriptions. No cloud required. Everything runs on your machine.
+**Everything runs on your machine. Your data stays yours.**
 
 ---
 
 ## Who Is Sorana For?
 
-- 📚 **Researchers & academics**, chat with hundreds of papers, books, and scanned notes in one unified workspace
-- ✍️ **Writers & journalists**, build a living reference library that remembers your style, sources, and ideas
-- 🧑‍💼 **Consultants & freelancers**, maintain full AI context across multiple long-running client projects
-- 🎓 **Students**, turn notes, PDFs, and lecture slides into a personal knowledge base you can actually talk to
-- 🧠 **Obsidian & Notion users**, add an AI layer that learns from your vault and can act on it
-- 🔒 **Privacy-conscious professionals**, full AI power, zero data leaving your machine
+- **Researchers & academics** — Chat with hundreds of papers, books, and scanned notes in one place.
+- **Writers & journalists** — Build a living reference library that remembers your style, sources, and ideas.
+- **Consultants & freelancers** — Maintain full AI context across multiple long-running client projects.
+- **Students** — Turn notes, PDFs, and lecture slides into a personal knowledge base you can talk to.
+- **Job hunters** — Research companies, tailor CVs and cover letters, draft applications, send from Gmail, and add interviews to your calendar.
+- **Household & personal admin** — Manage landlords, energy, telecom, repairs, doctors, and banking. Keep sensitive letters, bills, and health records off the cloud by switching to private, local models.
+- **Obsidian & Notion users** — Add an AI layer that learns from your vault and can act on it.
+- **Privacy-conscious professionals** — Full AI power with zero data leaving your machine.
 
 ---
 
-## The Problems Sorana Solves
+## Why Sorana?
 
-### 🤖 Your AI can't think strategically
-Every AI chat works one question at a time. Ask something complex and it searches once, answers once, then waits for your next prompt. You end up breaking down your own questions into tiny steps. Sorana's agent doesn't just answer. It plans, researches multiple sources in parallel, checks its own work, and adapts when something doesn't work. You ask one question. The AI handles the rest.
+### Your AI can't think strategically
+Most AI answers one question and stops. Sorana plans, researches, checks its work, and adapts when something fails. You ask once; the AI handles the rest.
 
-### 🧠 You're tired of re-explaining yourself every day
-Every AI chat starts from zero. You paste background context, re-explain your project, re-state your preferences, again and again. Sorana quietly learns from every conversation and greets you with full context next time you open it. No setup. No copy-pasting. Just continuity.
+- Multi-step planning for complex questions
+- Parallel searches, file reads, and web fetches
+- Self-review and automatic fallback strategies
+- Double checks every answer before you see it
 
-### 📂 Your knowledge is scattered and hard to find
-Notes in Obsidian, files in folders, research in browser tabs. You spend more time searching than actually thinking. Sorana maps your files onto a 2D spatial canvas by topic and relationship, find anything by what it's about, not where it's saved.
+### You re-explain yourself every day
+Sorana quietly learns from every conversation, project, and preference. Next time you open it, you pick up exactly where you left off.
 
-### 🔌 Your AI advises, but can't do anything
-Sorana's AI doesn't just answer questions, it acts. Organise files, summarise documents, fetch web content, manage emails, all through plain-language conversation. No app switching, no copy-pasting.
+- Proactive context from recent work
+- Persistent personal profile across the workspace
+- No setup, no copy-pasting
 
-### 👁️ Half your knowledge is locked in PDFs and images
-Scanned book pages, photographed receipts, PDF reports, dead to most AI tools. Sorana's built-in OCR and vision layer makes your entire archive searchable and chattable, including documents from years ago.
+### Your AI talks but can't act
+Tell Sorana what to do in plain language. It organizes files, fetches web content, and manages Gmail and Google Calendar, all from one conversation.
 
-### 💸 Long conversations get slow and expensive
-The longer a project runs, the heavier the AI context grows. Sorana automatically compresses old conversations into tight summaries, over 90% fewer tokens, full context preserved. Long-term projects stay fast and affordable.
+- Visual manager for Google Drive, GitHub, Gmail
+- Read, write, move, search, edit via chat
+- Web fetch, scrape, search, and extract
 
-### 🔒 Your private files shouldn't live on someone else's server
-Every file you send to ChatGPT or Claude leaves your machine. Sorana runs AI models entirely on your computer. Your notes, files, and conversations never leave your hands.
+### Your knowledge lives on someone else's server
+Sorana runs AI models locally. Your notes, files, and conversations never leave your machine unless you want them to.
+
+- Lemonade, Ollama, Llama.cpp, LM Studio
+- Portable: runs from a USB stick
+- Cloud only when you choose
+
+### Long conversations get slow and expensive
+Auto-compaction compresses old conversations into tight summaries, cutting token use by over 90% while preserving full context.
+
+- Dozens of messages condensed into a short paragraph
+- Smart document search across your archive
+- Stays fast after months of use
+
+### Half your knowledge is locked in PDFs and images
+Built-in OCR and vision AI make scanned documents, screenshots, and images searchable and chattable.
+
+- Extract text from PDFs and images
+- Vision results become searchable documents
+- JPEG, PNG, GIF, WEBP, BMP
 
 ---
 
-## Key Features
+## Core Features
 
-### 🤖 An AI That Thinks for Itself
-Most AI tools answer one question and stop. Sorana works through problems like a real assistant:
+### An AI that thinks for itself
+Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. If your question is unclear, it asks before guessing. If one approach fails, it tries another. It even spots interesting tangents and follows them on its own.
 
-- **Breaks down big questions automatically.** Ask something complex and Sorana creates a step-by-step plan, runs the steps in the right order, and brings everything together. You don't need to tell it how.
-- **Works in parallel, not one thing at a time.** Instead of doing searches, file reads, and web fetches one after another, Sorana runs them all at once. Faster answers, less waiting.
-- **Checks its own answers.** Every response is reviewed for quality before you see it. If something's incomplete, it tries again with a different approach. Automatically.
-- **Always has a backup plan.** If your documents don't have the answer, it automatically searches your codebase. If that doesn't work, it searches the web. It keeps trying until it finds something useful.
-- **Adjusts how deep to dig.** Simple questions get quick answers. Complex research triggers a deep, multi-round investigation. Sorana decides how much effort your question needs.
-- **Spots interesting leads on its own.** When it finds useful results, Sorana picks up on related links, references, and topics you didn't mention. It follows them without being asked.
-- **Knows when it's stuck.** If it starts repeating the same failing approach, Sorana recognises the pattern and switches tactics. No infinite loops, no getting stuck.
+### Local & Global Memory
+A living knowledge profile captures facts and project context. Remembers what matters, spots contradictions, and scores importance automatically. Maintain both scoped local memories and a persistent global memory, and sync them anytime.
 
-### 🧩 Spatial Knowledge Canvas
-AI maps your files onto a 2D canvas by topic and relationship, not alphabetically, not by date, but by meaning. Like Obsidian Canvas, but automatically organised by your AI. Drag, group, rename, and build mind maps of your folder structure.
+### Visual Knowledge Canvas
+See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.
 
-### 🧠 Persistent AI Memory
-Sorana automatically extracts facts, preferences, and project details from every conversation. Next session, your AI knows your name, your current projects, and how you like to work. Memory is shared across all your agents, building a single unified knowledge profile over time.
+### Chat with Documents & OCR
+Extract text from PDFs, documents, and images with built-in OCR. Chat with any document to get answers and make your whole archive searchable.
 
-### 📝 Prompt Manager
-Your agents are only as good as the prompts they run on. Sorana's Prompt Manager is a central library where you create, organize, and assign prompt pairs (system + user) to any agent, pipeline, or chat session in one click:
+### RAG Knowledge Base
+Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data.
 
-- **3-step wizard for quick creation.** Name it, write the system prompt, write the user prompt. Pick from 20+ built-in categories or add your own. Done in under a minute.
-- **Assign to any agent with one click.** Right-click any prompt pair and push it directly to an agent's system and user prompt fields. No file editing, no copy-pasting.
-- **Stay organized.** Research, Writing, Coding, Analysis, Translation, Creative and more. Filter by category, search by name.
-- **Full editor panel.** Treeview on the left, editor on the right. See everything at a glance, edit any prompt, and save.
-- **Instant updates.** Assign a prompt today, switch it tomorrow. Your agent's behavior changes instantly. Great for A/B testing prompt strategies.
+### Supercharged Chat & MCP Tools
+Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Swap agent personas on the fly with the Prompt Manager. Every session is archived with full Markdown, reasoning, and tables, so you never lose context.
 
-### 💬 Chat With All Your Documents
-Drop any file, PDF, Word doc, code, text, scanned image, into your workspace and chat with it in plain language. Sorana searches your documents using multiple strategies in parallel to always find the right answer, even in large archives.
+### Calendar & Scheduling
+Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.
 
-### ⚡ Auto-Compaction (>90% Token Savings)
-Long conversations are automatically compressed into tight summaries. You keep 100% of the context at a fraction of the cost. Projects that span months stay fast and affordable.
+### Model Manager
+Browse, expand, and collapse models from 25+ providers and local sources. Mark favorites, sort by any column, and compare provider, name, and the capability column in one table.
 
-### 🤖 AI That Takes Action
-Beyond answering questions, Sorana's built-in automation layer lets your AI operate your file system, browse the web, and manage your Gmail, all through natural conversation. Tell it what you need done; it handles the rest.
+### Multi-Agent Pipeline
+Set up an AI writing team. One drafts, another reviews, a third fact checks. They hand off work automatically until the result is ready. Build your own workflow visually.
 
-### 📅 Google Calendar Integration
-View, create, edit, and manage Google Calendar events directly within Sorana. Full month/week/day views with clickable events, persistent event cache for offline access, MCP-powered event management, and tkcalendar date picker. Secure OAuth2 authentication — your credentials stay local. Accessible as both a dedicated Calendar tab and through AI chat commands.
+### Triple Model Roles
+Assign a quick model for lightweight tasks, a primary model for heavy reasoning, and an embedding model for semantic search. Uses hardware acceleration when available.
 
-### 🚀 Obsidian Export
-Already using Obsidian? Export your Sorana workspace directly to Obsidian Canvas or Graph View. Your AI-organised knowledge structure, carried into your existing vault. Use Sorana for AI-powered work; keep Obsidian as your permanent archive.
+### Model Probing
+One click tests if a model can reason, see images, or handle audio, so you know what it can do before relying on it.
 
-### 🔒 100% Local & Private
-Run AI models entirely on your machine via Lemonade, Ollama, Llama.cpp, or LM Studio. Your files never leave your computer. Cloud APIs (OpenAI, Mistral, Gemini, etc.) are supported if you choose them, but never required.
+### Prompt Manager
+Create, organize, and assign prompt pairs to any agent from a central library. 20+ categories, one-click assignment, no file editing.
 
-### 📦 Truly Portable
-No installation. Unzip anywhere, run from a USB drive, take your entire workspace with you. All data stored in a single `.sorana/` folder you own completely.
+### MCP Manager & Marketplace
+Browse, install, and manage MCP servers from a central marketplace. Extend Sorana with new tools and integrations without touching configuration files.
+
+### Health Dashboard
+Monitor system health, model status, and AI performance at a glance. Each card opens a mini wizard for guided installation and configuration of every dependency, including backends, OCR, search engines, HuggingFace cache, codebase search, MCP, and more.
+
+### Obsidian Export
+Use Sorana as your AI workspace, then export spatial groupings and graph relationships straight into your Obsidian vault.
+
+### Agent Trace & Debug
+Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. Helps you trust the result or tweak the approach.
+
+### Code Explorer
+Got a folder of code? Sorana reads it, searches it, and answers questions about it, like a teammate who already knows the project.
+
+### Tesseract Image OCR
+Use Tesseract for image OCR on scanned photos, screenshots, and other images. When a vision-capable model is available, it can read the image directly as a fallback.
 
 ---
 
 ## How Sorana Compares
 
-| What you get | Sorana ✨ | Obsidian / Notion | ChatGPT / Claude | OpenWebUI |
-|---|---|---|---|---|
-| AI remembers you between sessions | ✅ Automatic | ❌ Manual notes only | ⚠️ Limited / paid | ❌ None |
-| Visual knowledge canvas | ✅ AI-organised | ✅ Manual (Obsidian) | ❌ Chat only | ❌ Chat only |
-| Chat with your documents | ✅ Any file, any format | ⚠️ Plugin required | ⚠️ Per session upload | ⚠️ Basic |
-| AI takes action on files & web | ✅ Built-in automation | ❌ View only | ❌ Advice only | ⚠️ Community tools |
-| Autonomous multi-step planning | ✅ **Breaks one question into 3–5 sub-tasks with dependency ordering** | ❌ No AI | ❌ Single-turn only | ❌ Single-turn only |
-| Parallel tool execution | ✅ **Multiple tools (search, read, web) run concurrently** | ❌ N/A | ❌ Sequential only | ⚠️ Basic only |
-| Central prompt library | ✅ **Create, organize, assign prompts to any agent in one click** | ❌ Manual templates only | ❌ Per-chat only | ⚠️ Basic templates |
-| Google Calendar integration | ✅ Dedicated tab + MCP | ⚠️ Community plugins | ❌ Not available | ❌ Not available |
-| Runs 100% offline & private | ✅ Your machine | ✅ Notes are local | ❌ Cloud only | ✅ Local |
-| Stays fast over months of use | ✅ Auto-compaction | ✅ (no AI context) | ⚠️ Gets slow & costly | ❌ Manual |
-| Free to use | ✅ Free & portable | ⚠️ Free + paid tiers | ❌ $20+/month | ✅ Free |
-
-> Sorana combines what Obsidian/Notion do for knowledge organisation with what AI assistants do for conversation, plus the automation that neither offers.
+| What you get | Sorana | Obsidian / Notion | ChatGPT / Claude |
+|---|---|---|---|
+| Runs 100% offline & private | Your machine, your data | Obsidian local / Notion cloud | Cloud only |
+| AI remembers you between sessions | Automatic | Manual notes only | Limited / paid |
+| Visual knowledge canvas | AI-organized 2D canvas | Manual (Obsidian Canvas) | Chat only |
+| AI takes action on files & web | Built-in automation | View & edit only | Advice only |
+| Chat with documents | Any file, any format | Plugin required | Upload per session |
+| Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
+| Calendar & Scheduling | Manage directly via chat | View-only / manual plugins | No direct integration |
+| Stays fast over months | Auto-compaction | No AI context | Gets slow & costly |
+| MCP Tools & Marketplace | Built-in server marketplace | No native AI agents | Closed ecosystem / enterprise |
+| Model Manager & Probing | 25+ providers + capability probing | Advanced plugins required | Locked to one vendor |
+| Free to use | Free & portable | Free + paid tiers | $20+/month |
 
 ---
 
 ## Quick Start
 
-1. **Download** the portable archive from [tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
-2. **Extract** anywhere, desktop, USB, external drive
-3. **Run** `Sorana.exe`, no installation needed
-4. **Select an AI model** in *Model Manager* (built-in offline model included)
-5. **Open a folder** as your workspace via *Open Workspace*
-6. Create an **agent** in your Workspace
-7. Chat 
+1. **Download** the portable executable from [GitHub Releases](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)
+2. **Extract** anywhere — desktop, USB, external drive
+3. **Run** `Sorana.exe` — no installation needed
+4. **Choose a model** — use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio
+5. **Start working** — add your files, chat with documents, and let Sorana remember your projects and preferences
 
-Latest: `Sorana.exe v1.0.77`
-📥 [Download (Portable)](tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
-🏪 [Microsoft Store](https://apps.microsoft.com/store/detail/9N8C43PZC1RN)
+**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) (v1.0.77)  
+**Microsoft Store**: [Get from Store](https://apps.microsoft.com/detail/9n8c43pzc1rn)
 
 ---
 
@@ -148,11 +174,11 @@ Latest: `Sorana.exe v1.0.77`
 
 ### AI Model Options
 - **Built-in model** (~806 MB), works fully offline out of the box
-- **Recommended**, Llama 3.1 8B Instruct or higher for best results (requires 8 GB RAM / 4 GB VRAM)
-- **Cloud**, OpenAI, Mistral, Gemini, Deepseek, NVIDIA, OpenRouter (free tiers available), no local hardware required
-- **Local servers**, 🍋 Lemonade (NPU acceleration), Ollama, LM Studio, Llama.cpp
+- **Recommended**: Llama 3.1 8B Instruct or higher for best results (requires 8 GB RAM / 4 GB VRAM)
+- **Cloud**: OpenAI, Mistral, Gemini, DeepSeek, NVIDIA, OpenRouter (free tiers available), no local hardware required
+- **Local servers**: Lemonade (NPU acceleration), Ollama, LM Studio, Llama.cpp
 
-🎉 **Free tier APIs available**, Deepseek, Mistral, NVIDIA, Gemini, and OpenRouter all offer free tiers. Just add your API key.
+**30+ free cloud models** from every major provider. Just add your API key.
 
 ---
 
@@ -160,10 +186,10 @@ Latest: `Sorana.exe v1.0.77`
 
 Sorana connects directly to your Obsidian vault:
 
-- **Export to Canvas**, bring your AI-organised workspace layout into Obsidian's infinite Canvas
-- **Export to Graph View**, generate a knowledge graph from your workspace structure, compatible with Obsidian's Graph View
+- **Export to Canvas** — bring your AI-organized workspace layout into Obsidian's infinite Canvas
+- **Export to Graph View** — generate a knowledge graph from your workspace structure, compatible with Obsidian's Graph View
 - Full compatibility with Dataview, Templater, Excalidraw, and all other Obsidian plugins
-- Standard Markdown files, no lock-in, your data stays yours
+- Standard Markdown files, no lock-in
 
 ---
 
@@ -172,33 +198,36 @@ Sorana connects directly to your Obsidian vault:
 1. Open **MCP Manager** and enable the servers you need
 2. Create an **agent** in your workspace
 3. Right-click the agent title → **Chat**
-4. Give instructions in plain language, files, web, email, all accessible
+4. Give instructions in plain language — files, web, email, all accessible
 
-Connect external services: Google Drive, GitHub, PostgreSQL, custom tools.
+Connect external services: Google Drive, GitHub, PostgreSQL, and more from the marketplace.
 
 ---
 
 ## OCR for Scanned Documents
 
-To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) and ensure it's in your system PATH. Once installed, Sorana processes scanned documents automatically, making your entire paper archive searchable.
+To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) and ensure it is in your system PATH. Once installed, Sorana processes scanned documents automatically, making your entire paper archive searchable. A vision-capable model can read images directly as a fallback.
 
 ---
 
 ## Links
 
-🌐 Website: [tetramatrix.github.io/Sorana](http://tetramatrix.github.io/Sorana)
-💬 Discord: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
-🏪 Microsoft Store: [apps.microsoft.com](https://apps.microsoft.com/store/detail/9N8C43PZC1RN)
+- **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
+- **Download**: [GitHub Releases](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)
+- **Source**: [GitHub Repository](https://github.com/Tetramatrix/Sorana)
+- **Discord**: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
+- **Microsoft Store**: [apps.microsoft.com](https://apps.microsoft.com/detail/9n8c43pzc1rn)
+- **Support**: [Support Page](support.html)
 
 ---
 
 ## Other Tools by Tetramatrix
 
-- 🧩 [TabNeuron](http://tetramatrix.github.io/TabNeuron), AI spatial tab manager & browser research workspace
-- 🖥️ [Aicono](http://tetramatrix.github.io/Aicono), AI intelligent desktop icon organiser
-- 🔧 [RyzenZPilot](http://tetramatrix.github.io/RyzenZPilot), AMD Ryzen power management tool
-- 🚀 [Spaceship!](https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship), Retro 2D arcade game
+- **TabNeuron** — AI spatial tab manager & browser research workspace
+- **Aicono** — AI intelligent desktop icon organizer
+- **RyzenZPilot** — AMD Ryzen power management tool
+- **Spaceship!** — Retro 2D arcade game
 
 ---
 
-🏢 Developed by **Tetramatrix** | 🧠 Your personal AI knowledge workspace | 💝 Free for everyone
+Developed by **Tetramatrix** | Your personal AI knowledge workspace | Free and portable
