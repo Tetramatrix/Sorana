@@ -284,6 +284,25 @@ footer {
   max-width: 900px; margin: 0 auto;
 }
 
+/* ── ADSENSE INLINE ADS ── */
+.ad-container {
+  margin: var(--space-8) auto;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-4);
+  text-align: center;
+}
+.ad-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-2);
+}
+
 /* ── MOBILE ── */
 @media (max-width: 768px) {
   nav { padding: var(--space-4); }
@@ -376,6 +395,18 @@ footer {
     </a>
   </div>
 </section>
+
+<!-- AD SPOT - Support Page -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6449563648591184"
+       data-ad-slot="8924662119"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
 <!-- DONATE -->
 <section class="section section-alt" id="donate">
