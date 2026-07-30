@@ -309,6 +309,57 @@ nav {
   line-height: 1.65;
 }
 
+/* ── HOW IT WORKS STEPS ── */
+.steps {
+  display: flex;
+  gap: var(--space-6);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-8);
+}
+.step {
+  flex: 1;
+  min-width: 180px;
+  max-width: 280px;
+  text-align: center;
+}
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary-dim);
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+  border: 1px solid rgba(62,207,178,0.2);
+}
+.step h3 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+.step p {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+.step-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-faint);
+  font-size: var(--text-lg);
+}
+@media (max-width: 768px) {
+  .step-arrow { display: none; }
+  .steps { gap: var(--space-8); }
+}
+
 /* ── TESTIMONIALS ── */
 .testimonials-grid {
   display: grid;
@@ -500,6 +551,48 @@ nav {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   line-height: 1.6;
+}
+
+/* ── CHAT EXAMPLES ── */
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px,100%), 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+}
+.example-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  transition: border-color 200ms, box-shadow 200ms;
+}
+.example-card:hover {
+  border-color: rgba(62,207,178,0.2);
+  box-shadow: 0 8px 32px rgba(62,207,178,0.04);
+}
+.example-card h4 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+.example-card ul {
+  list-style: none;
+  padding: 0;
+}
+.example-card li {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: var(--space-2);
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--color-border);
+  transition: border-color 160ms;
+}
+.example-card li:hover {
+  border-left-color: var(--color-primary);
+  color: var(--color-text);
 }
 
 /* ── SCREENSHOT STRIP ── */
@@ -885,6 +978,33 @@ footer {
   </p>
 </section>
 
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works">
+  <div class="section-header">
+    <h2>How it <em>works.</em></h2>
+    <p>Three steps to your own AI workspace that knows you.</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Connect a model</h3>
+      <p>Use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio. No subscription needed.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Point it at your files</h3>
+      <p>Open any folder as your workspace. Sorana reads your documents, code, and notes, building a knowledge base that understands your projects.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Ask anything</h3>
+      <p>Research topics, manage emails, organize files, chat with documents. Your AI remembers everything and acts across all your tools.</p>
+    </div>
+  </div>
+</section>
+
 <!-- TRUSTED BY -->
 <section class="section section-alt" id="testimonials">
   <div class="section-header">
@@ -915,6 +1035,12 @@ footer {
       <div class="testimonial-source">PoweredByAI</div>
       <p class="testimonial-quote">"Sorana is an innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
       <a href="https://poweredbyai.app/project/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+    </div>
+    <div class="testimonial-card">
+      <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo has-bg">
+      <div class="testimonial-source">MCPMarket</div>
+      <p class="testimonial-quote">"Sorana redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. It replaces rigid folder hierarchies and forgetful AI chatbots with a persistent 2D canvas that semantically arranges files and automates tasks."</p>
+      <a href="https://mcpmarket.com/es/server/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
     </div>
   </div>
 </section>
@@ -988,6 +1114,16 @@ footer {
         <li>Dozens of messages condensed into a short paragraph</li>
         <li>Smart document search across your archive</li>
         <li>Stays fast after months of use</li>
+      </ul>
+    </div>
+    <div class="problem-card">
+      <h3>Your models are overkill or not enough</h3>
+      <p>When your AI plans strategically, reviews its own answers, fetches web results, and routes between tools, every internal step uses a model. Running all of that on your most powerful model is a waste. Sorana uses a fast model for internal operations and reserves your primary model for the actual conversation.</p>
+      <ul>
+        <li>Fast model for internal operations like tool calls and routing</li>
+        <li>Primary model for user conversations</li>
+        <li>Dedicated embedding model for RAG and semantic search</li>
+        <li>Hardware acceleration when available</li>
       </ul>
     </div>
     <div class="problem-card">
@@ -1088,7 +1224,7 @@ footer {
         </svg>
       </div>
       <h3>Triple Model Roles</h3>
-      <p>Assign a quick model for lightweight tasks, a primary model for heavy reasoning, and an embedding model for semantic search. Uses hardware acceleration when available.</p>
+      <p>Assign a fast model for internal operations like tool calls and routing, a primary model for user conversations, and a dedicated embedding model for RAG and semantic search. Each role gets the right tool, so nothing is wasted. Hardware acceleration when available.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1144,7 +1280,7 @@ footer {
         </svg>
       </div>
       <h3>Code Explorer</h3>
-      <p>Got a folder of code? Sorana reads it, searches it, and answers questions about it, like a teammate who already knows the project.</p>
+      <p>Ask Sorana about any codebase. It searches source files, reads project files, and analyzes code on its own. Sorana recognizes when you ask about code and switches to its code analysis tools automatically. A mini wizard helps you set everything up, no configuration needed.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1205,6 +1341,85 @@ footer {
       <img src="HealthDashboard.png" alt="Health Dashboard">
       <figcaption>Monitor system health, models, and AI performance.</figcaption>
     </figure>
+  </div>
+</section>
+
+<!-- CHAT EXAMPLES -->
+<section class="section" id="chat-examples">
+  <div class="section-header">
+    <h2>See what you can <em>ask Sorana.</em></h2>
+    <p>Your AI connects research, memory, files, email, and calendar. One question can span them all.</p>
+  </div>
+  <div class="examples-grid">
+    <div class="example-card">
+      <h4>Memory &amp; Knowledge</h4>
+      <ul>
+        <li>"Remember that my preferred working hours are 9am to 4pm"</li>
+        <li>"What did I learn about project budgeting last week?"</li>
+        <li>"Research electric car trends and save the key facts so I can find them later"</li>
+        <li>"Read this research paper and save the key findings to my notes"</li>
+        <li>"Compare what I know about option A versus option B from past research"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Research &amp; Writing</h4>
+      <ul>
+        <li>"Summarize this document for me"</li>
+        <li>"Read these three articles and draft a summary memo, then save it to my project folder"</li>
+        <li>"Find relevant studies on this topic and add them to my knowledge base"</li>
+        <li>"Search my notes for the client meeting summary and send a follow up email"</li>
+        <li>"Organize this folder of research papers into topic groups and summarize each one"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Tasks &amp; Scheduling</h4>
+      <ul>
+        <li>"Send an email to the team about the project update"</li>
+        <li>"What meetings do I have today?"</li>
+        <li>"Review the project brief, draft a response, and add the deadline to my calendar"</li>
+        <li>"Find free slots this week and schedule a call with the team"</li>
+        <li>"Search my emails for invoices from last quarter and archive them to a folder"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Job Hunting</h4>
+      <ul>
+        <li>"Research company ABC and save the key facts for my interview"</li>
+        <li>"Tailor my CV for this job description and save both versions"</li>
+        <li>"Draft a cover letter for this application"</li>
+        <li>"Send a follow up email after the interview"</li>
+        <li>"Find interview tips for this role and add them to my notes"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Email &amp; Calendar</h4>
+      <ul>
+        <li>"Find all unread emails from yesterday"</li>
+        <li>"Send a reply to the thread about the conference"</li>
+        <li>"Create a new event for next Tuesday at 3pm"</li>
+        <li>"What does my week look like?"</li>
+        <li>"Archive all emails from last month with label Projects"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Files &amp; Documents</h4>
+      <ul>
+        <li>"Show me all files in the project folder"</li>
+        <li>"Rename report_draft.docx to report_final.docx"</li>
+        <li>"Find all PDFs created this week"</li>
+        <li>"Create a new folder called Budget 2026"</li>
+        <li>"Copy the meeting notes to the shared folder"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Household &amp; Personal</h4>
+      <ul>
+        <li>"What bills are due this month?"</li>
+        <li>"Compare internet plans from local providers and save the best option"</li>
+        <li>"Scan this letter and extract the important details to my knowledge base"</li>
+        <li>"Search my archives for the insurance policy and summarize the coverage"</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -1288,6 +1503,11 @@ footer {
       <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
       <h3>Privacy-conscious professionals</h3>
       <p>Full AI power with zero data leaving your machine.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-4-4-6 6-4-4-6 6 4 4 6-6 4 4z"/></svg></div>
+      <h3>Coders &amp; programmers</h3>
+      <p>Search, read, and analyze any codebase through conversation. Understand your projects like a teammate who already knows the code.</p>
     </div>
   </div>
 </section>
