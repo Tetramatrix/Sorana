@@ -123,6 +123,13 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero::before { animation: none; }
+  .badge-dot { animation: none; }
+  .reveal { transition: none; opacity: 1; transform: none; }
+  .screenshot-card, .screenshot-card img, .discover-card { transition: none; }
+}
 body {
   min-height: 100dvh;
   font-family: var(--font-body);
@@ -1101,6 +1108,12 @@ footer {
     z-index: 1;
   }
   .overview-grid { grid-template-columns: 1fr; }
+  .hero::before {
+    inset: -10% -30% auto;
+    height: 50%;
+    filter: blur(28px);
+  }
+  .showcase .screenshot-wrap { border-radius: var(--radius-xl); }
 }
 
 /* Scrollbar styling */
