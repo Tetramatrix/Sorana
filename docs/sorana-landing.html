@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
+     crossorigin="anonymous"></script>
+
 <title>Sorana: Your Personal AI That Actually Knows You</title>
 <meta name="description" content="Sorana is your personal AI knowledge workspace. A second brain that remembers your projects, learns your preferences, and finds any file or note instantly. Run fully offline on Windows.">
 <meta property="og:title" content="Sorana: Your Personal AI That Actually Knows You">
@@ -182,7 +187,15 @@ nav {
 }
 .hero-actions {
   display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;
+  margin-bottom: var(--space-4);
+}
+.hero-badge {
+  display: flex; justify-content: center;
   margin-bottom: var(--space-12);
+}
+.hero-badge .badge {
+  font-size: var(--text-sm);
+  padding: var(--space-2) var(--space-4);
 }
 .hero-stats {
   display: flex; gap: var(--space-8); justify-content: center; flex-wrap: wrap;
@@ -831,6 +844,9 @@ footer {
     </a>
     <a href="#features" class="btn-outline">See all features ↓</a>
   </div>
+  <div class="hero-badge">
+    <span class="badge free"><span class="badge-dot"></span>100% free for a limited time</span>
+  </div>
   <div class="hero-stats">
     <div class="stat">
       <span class="stat-number">35+</span>
@@ -999,9 +1015,7 @@ footer {
       </div>
       <h3>An AI that thinks for itself</h3>
       <p>Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. You get a real answer, not the first thing the model found.</p>
-    </div>
-
-    <div class="feature-card">
+    </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/>
@@ -1009,69 +1023,15 @@ footer {
       </div>
       <h3>Local &amp; Global Memory</h3>
       <p>A living knowledge profile captures facts and project context. Maintain both scoped local memories and a persistent global memory, and sync them anytime.</p>
-    </div>
-
-    <div class="feature-card">
+    </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/>
         </svg>
       </div>
-      <h3>Prompt Manager</h3>
-      <p>Create, organise, and assign prompt pairs to any agent from a central library. 20+ categories, one-click assignment, no file editing.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 6h18M3 12h18M3 18h18"/>
-        </svg>
-      </div>
-      <h3>Model Manager</h3>
-      <p>Browse, expand, and collapse models from 25+ providers and local sources. Mark favorites, sort by any column, and compare provider, name, and the capability column in one table.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/>
-        </svg>
-      </div>
-      <h3>Triple Model Roles</h3>
-      <p>Assign a quick model for lightweight tasks, a primary model for heavy reasoning, and an embedding model for semantic search. Uses hardware acceleration when available.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-        </svg>
-      </div>
-      <h3>Model Probing</h3>
-      <p>Probe the hundreds of models in the Model Manager to discover which ones actually support reasoning, vision, audio, and more, even across different API families. The agent uses those results to route each task to a compatible model, so a non-vision model is never asked to handle images.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 2l-4 4-4-4"/>
-        </svg>
-      </div>
-      <h3>Supercharged Chat &amp; MCP Tools</h3>
-      <p>Research the web, query files, and manage your Gmail or calendar just by asking. The sidebar lists every saved session, answers render as Markdown with reasoning shown separately and proper tables, and every chat is archived so you can continue anytime.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/>
-        </svg>
-      </div>
-      <h3>Obsidian export</h3>
-      <p>Use Sorana as your AI workspace, then export spatial groupings and graph relationships straight into your Obsidian vault.</p>
-    </div>
-
-    <div class="feature-card">
+      <h3>Visual knowledge canvas</h3>
+      <p>See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.</p>
+    </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
@@ -1079,9 +1039,87 @@ footer {
       </div>
       <h3>Chat with Documents &amp; OCR</h3>
       <p>Extract text from documents and standard files using built-in OCR without needing Tesseract. When you need OCR for images, Tesseract handles scanned photos and screenshots. Chat dynamically with any document to get rapid answers and make your archive searchable.</p>
-    </div>
-
-    <div class="feature-card">
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+        </svg>
+      </div>
+      <h3>RAG Knowledge Base</h3>
+      <p>Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 2l-4 4-4-4"/>
+        </svg>
+      </div>
+      <h3>Supercharged Chat &amp; MCP Tools</h3>
+      <p>Research the web, query files, and manage your Gmail or calendar just by asking. The sidebar lists every saved session, answers render as Markdown with reasoning shown separately and proper tables, and every chat is archived so you can continue anytime.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="20" height="18" rx="2"/><path d="M2 10h20"/><path d="M8 2v4"/><path d="M16 2v4"/>
+        </svg>
+      </div>
+      <h3>Calendar &amp; Scheduling</h3>
+      <p>Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </div>
+      <h3>Model Manager</h3>
+      <p>Browse, expand, and collapse models from 25+ providers and local sources. Mark favorites, sort by any column, and compare provider, name, and the capability column in one table.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/>
+        </svg>
+      </div>
+      <h3>Triple Model Roles</h3>
+      <p>Assign a quick model for lightweight tasks, a primary model for heavy reasoning, and an embedding model for semantic search. Uses hardware acceleration when available.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+        </svg>
+      </div>
+      <h3>Model Probing</h3>
+      <p>Model probing lets Sorana discover a model's real capabilities, such as reasoning, vision, or audio, before relying on it. Because providers and model series follow different standards, probing is strongly recommended if you want to use the full capacity of a selected model. The results help Sorana match each task to a model that can truly handle it, so a non-vision model is never asked to process images.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+        </svg>
+      </div>
+      <h3>Prompt Manager</h3>
+      <p>Create, organise, and assign prompt pairs to any agent from a central library. 20+ categories, one-click assignment, no file editing.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/>
+        </svg>
+      </div>
+      <h3>MCP Manager &amp; Marketplace</h3>
+      <p>Browse, install, and manage MCP servers from a central marketplace. Extend Sorana with new tools and integrations without touching configuration files.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 12h-4"/><path d="M2 12h4"/><path d="M12 2v4"/><path d="M12 22v-4"/><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>
+        </svg>
+      </div>
+      <h3>Health Dashboard</h3>
+      <p>Monitor system health, model status, and AI performance at a glance. Catch issues before they slow you down.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/>
+        </svg>
+      </div>
+      <h3>Obsidian export</h3>
+      <p>Use Sorana as your AI workspace, then export spatial groupings and graph relationships straight into your Obsidian vault.</p>
+    </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/>
@@ -1090,86 +1128,16 @@ footer {
       <h3>Tesseract Image OCR</h3>
       <p>Use Tesseract for image OCR on scanned photos, screenshots, and other images. When a vision-capable model is available, it can read the image directly as a fallback.</p>
     </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/>
-        </svg>
-      </div>
-      <h3>Visual knowledge canvas</h3>
-      <p>See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/>
-        </svg>
-      </div>
-      <h3>MCP Manager &amp; Marketplace</h3>
-      <p>Browse, install, and manage MCP servers from a central marketplace. Extend Sorana with new tools and integrations without touching configuration files.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 12h-4"/><path d="M2 12h4"/><path d="M12 2v4"/><path d="M12 22v-4"/><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>
-        </svg>
-      </div>
-      <h3>Health Dashboard</h3>
-      <p>Monitor system health, model status, and AI performance at a glance. Catch issues before they slow you down.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
-        </svg>
-      </div>
-      <h3>RAG Knowledge Base</h3>
-      <p>Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="4" width="20" height="18" rx="2"/><path d="M2 10h20"/><path d="M8 2v4"/><path d="M16 2v4"/>
-        </svg>
-      </div>
-      <h3>Calendar &amp; Scheduling</h3>
-      <p>Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.</p>
-    </div>
   </div>
 
   <div class="screenshot-strip">
-    <figure class="screenshot-card">
-      <img src="Agent Process Trace.png" alt="Agent process trace">
-      <figcaption>Trace agent and tool pipelines visually.</figcaption>
-    </figure>
-    <figure class="screenshot-card">
-      <img src="chat-sidebar.png" alt="Chat sessions sidebar">
-      <figcaption>Switch between archived chat sessions and view formatted answers.</figcaption>
-    </figure>
     <figure class="screenshot-card">
       <img src="chat.png" alt="Chat with formatted answers">
       <figcaption>See Markdown answers, separated reasoning, and tables.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="Sorana_Multi_Agent_Pipeline.png" alt="Multi-agent pipeline">
-      <figcaption>Build and connect agents visually.</figcaption>
-    </figure>
-    <figure class="screenshot-card">
-      <img src="promptmanager.png" alt="Prompt manager">
-      <figcaption>Organise prompts in a central library.</figcaption>
-    </figure>
-    <figure class="screenshot-card">
-      <img src="mcpmanager.png" alt="MCP Manager and Marketplace">
-      <figcaption>Browse and install MCP servers from the marketplace.</figcaption>
-    </figure>
-    <figure class="screenshot-card">
-      <img src="HealthDashboard.png" alt="Health Dashboard">
-      <figcaption>Monitor system health, models, and AI performance.</figcaption>
+      <img src="chat-sidebar.png" alt="Chat sessions sidebar">
+      <figcaption>Switch between archived chat sessions and view formatted answers.</figcaption>
     </figure>
     <figure class="screenshot-card">
       <img src="mindmap.png" alt="Mind map">
@@ -1184,12 +1152,32 @@ footer {
       <figcaption>Manage events and free slots from chat.</figcaption>
     </figure>
     <figure class="screenshot-card">
+      <img src="Sorana_Multi_Agent_Pipeline.png" alt="Multi-agent pipeline">
+      <figcaption>Build and connect agents visually.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <img src="Agent Process Trace.png" alt="Agent process trace">
+      <figcaption>Trace agent and tool pipelines visually.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
       <img src="modelmanager.png" alt="Model Manager">
       <figcaption>Browse, sort, and favorite models from every provider.</figcaption>
     </figure>
     <figure class="screenshot-card">
       <img src="modelprobing.png" alt="Model Probing">
-      <figcaption>Probe models to discover their real capabilities.</figcaption>
+      <figcaption>Probe each model to discover its real capabilities before it is used.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <img src="promptmanager.png" alt="Prompt manager">
+      <figcaption>Organise prompts in a central library.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <img src="mcpmanager.png" alt="MCP Manager and Marketplace">
+      <figcaption>Browse and install MCP servers from the marketplace.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <img src="HealthDashboard.png" alt="Health Dashboard">
+      <figcaption>Monitor system health, models, and AI performance.</figcaption>
     </figure>
   </div>
 </section>
@@ -1211,16 +1199,16 @@ footer {
       </tr>
     </thead>
     <tbody>
+      <tr><td>Runs 100% offline &amp; private</td><td class="win">Your machine, your data</td><td>Notes are local</td><td>Cloud only</td></tr>
       <tr><td>AI remembers you between sessions</td><td class="win">Automatic</td><td>Manual notes only</td><td>Limited / paid</td></tr>
       <tr><td>Visual knowledge canvas</td><td class="win">AI-organised 2D canvas</td><td>Manual (Obsidian Canvas)</td><td>Chat only</td></tr>
-      <tr><td>Chat with documents</td><td class="win">Any file, any format</td><td>Plugin required</td><td>Upload per session</td></tr>
       <tr><td>AI takes action on files &amp; web</td><td class="win">Built-in automation</td><td>View &amp; edit only</td><td>Advice only</td></tr>
-      <tr><td>Runs 100% offline &amp; private</td><td class="win">Your machine, your data</td><td>Notes are local</td><td>Cloud only</td></tr>
-      <tr><td>Stays fast over months</td><td class="win">Auto-compaction</td><td>No AI context</td><td>Gets slow &amp; costly</td></tr>
-      <tr><td>Model Manager &amp; Probing</td><td class="win">25+ providers + capability probing</td><td>Advanced plugins required</td><td>Locked to one vendor</td></tr>
-      <tr><td>MCP Tools &amp; Marketplace</td><td class="win">1-click server installations</td><td>No native AI agents</td><td>Closed ecosystem / enterprise</td></tr>
+      <tr><td>Chat with documents</td><td class="win">Any file, any format</td><td>Plugin required</td><td>Upload per session</td></tr>
       <tr><td>Image OCR &amp; Vision AI</td><td class="win">Built-in Tesseract + AI fallback</td><td>External tools required</td><td>Cloud-only vision</td></tr>
       <tr><td>Calendar &amp; Scheduling</td><td class="win">Manage directly via chat</td><td>View-only / manual plugins</td><td>No direct integration</td></tr>
+      <tr><td>Stays fast over months</td><td class="win">Auto-compaction</td><td>No AI context</td><td>Gets slow &amp; costly</td></tr>
+      <tr><td>MCP Tools &amp; Marketplace</td><td class="win">1-click server installations</td><td>No native AI agents</td><td>Closed ecosystem / enterprise</td></tr>
+      <tr><td>Model Manager &amp; Probing</td><td class="win">25+ providers + capability probing</td><td>Advanced plugins required</td><td>Locked to one vendor</td></tr>
       <tr><td>Free to use</td><td class="win">Free &amp; portable</td><td>Free + paid tiers</td><td>$20+/month</td></tr>
     </tbody>
   </table>
