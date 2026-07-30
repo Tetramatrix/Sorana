@@ -24,9 +24,11 @@
 <meta property="og:description" content="A private AI workspace that remembers your projects, learns your style, and acts on your files.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
+<meta property="og:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sorana: Your Personal AI That Actually Knows You">
 <meta name="twitter:description" content="A private AI workspace that remembers your projects, learns your style, and acts on your files.">
+<meta name="twitter:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
   <link rel="icon" type="image/png" href="logo_small.png">
   <link rel="canonical" href="https://tetramatrix.github.io/Sorana/">
   <meta name="robots" content="index, follow">
@@ -423,6 +425,105 @@ nav.scrolled {
 .badge.cloud { color: var(--color-cloud); background: var(--color-cloud-dim); border-color: rgba(96,165,250,0.25); }
 .badge.local { color: var(--color-local); background: var(--color-local-dim); border-color: rgba(245,158,11,0.25); }
 .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+/* ── FAQ ACCORDION ── */
+.faq-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+}
+.faq-item summary {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  font-size: var(--text-lg);
+  font-weight: 300;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-left: var(--space-3);
+}
+.faq-item[open] summary::after { content: "−"; }
+.faq-item p {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── PRICING ── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: var(--space-6);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.pricing-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: flex-start;
+  transition: border-color 200ms, box-shadow 200ms;
+}
+.pricing-card:hover {
+  border-color: rgba(62,207,178,0.18);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+.pricing-card--accent {
+  border-color: rgba(62,207,178,0.35);
+  background: linear-gradient(180deg, rgba(62,207,178,0.06), transparent);
+}
+.pricing-card--accent:hover {
+  border-color: rgba(62,207,178,0.5);
+  box-shadow: 0 12px 40px rgba(62,207,178,0.1);
+}
+.pricing-icon {
+  width: 44px; height: 44px; border-radius: var(--radius-lg);
+  background: var(--color-primary-dim);
+  color: var(--color-primary);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: var(--space-3);
+  border: 1px solid rgba(62,207,178,0.2);
+}
+.pricing-icon svg { width: 20px; height: 20px; }
+.pricing-name { font-size: var(--text-base); font-weight: 600; color: var(--color-text); margin: 0; }
+.pricing-price {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-primary);
+  line-height: 1;
+}
+.pricing-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+.pricing-note {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  margin: 0 0 var(--space-2);
+}
+.pricing-cta {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+}
 
 /* ── SECTION BASE ── */
 .section {
@@ -1178,6 +1279,21 @@ footer {
   <div class="hero-badge">
     <span class="badge free"><span class="badge-dot"></span>$0/mo with free-tier models</span>
   </div>
+  <div class="showcase" style="padding:0;max-width:1100px;">
+    <div class="screenshot-wrap">
+      <img src="freemodels.png"
+           alt="Sorana Model Manager showing 30+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
+           width="1140" height="820" loading="lazy">
+    </div>
+    <div class="floating-badges">
+      <span class="badge free"><span class="badge-dot"></span> Free tier models</span>
+      <span class="badge cloud"><span class="badge-dot"></span> Cloud providers</span>
+      <span class="badge local"><span class="badge-dot"></span> On-premise / Local</span>
+    </div>
+    <p class="screenshot-caption">
+      The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
+    </p>
+  </div>
   <div class="hero-stats">
     <div class="stat">
       <span class="stat-number">30+</span>
@@ -1195,21 +1311,6 @@ footer {
       <span class="stat-number">100%</span>
       <span class="stat-label">Local &amp; Private</span>
     </div>
-  </div>
-  <div class="showcase" style="padding:0;max-width:1100px;">
-    <div class="screenshot-wrap">
-      <img src="freemodels.png"
-           alt="Sorana Model Manager showing 30+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
-           width="1140" height="820" loading="lazy">
-    </div>
-    <div class="floating-badges">
-      <span class="badge free"><span class="badge-dot"></span> Free tier models</span>
-      <span class="badge cloud"><span class="badge-dot"></span> Cloud providers</span>
-      <span class="badge local"><span class="badge-dot"></span> On-premise / Local</span>
-    </div>
-    <p class="screenshot-caption">
-      The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
-    </p>
   </div>
 </section>
 
@@ -2043,22 +2144,24 @@ footer {
     <h2>Simple <em>pricing.</em></h2>
     <p>Sorana is fully free today. A planned premium option is coming for users who want extra support.</p>
   </div>
-  <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(280px,100%), 1fr)); gap: var(--space-6); max-width: 900px; margin: 0 auto;">
-    <div class="feature-card" style="border-color: rgba(62,207,178,0.2);">
-      <div class="feature-icon">
+  <div class="pricing-grid">
+    <div class="pricing-card pricing-card--accent">
+      <div class="pricing-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
       </div>
-      <h3>Current: Free</h3>
-      <p>Unlimited use during public preview. Bring your own API key or run local models. No account, no trial clock.</p>
+      <h3 class="pricing-name">Free</h3>
+      <div class="pricing-price">$0</div>
+      <p class="pricing-desc">Unlimited use during public preview. Bring your own API key or run local models. No account, no trial clock.</p>
     </div>
-    <div class="feature-card" style="opacity: 0.9;">
-      <div class="feature-icon">
+    <div class="pricing-card">
+      <div class="pricing-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/></svg>
       </div>
-      <h3>Planned: Premium Support &amp; Early Access</h3>
-      <p>Optional paid tier. Priority setup help, early access to new integrations, and direct feedback channel. All current features remain available in the free tier.</p>
-      <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-3);">Not yet available. Join Discord for updates.</p>
-      <a href="https://discord.gg/4QkQSfSATF" target="_blank" rel="noopener" class="btn-outline" style="margin-top:var(--space-4);font-size:var(--text-sm);">Join Discord for updates</a>
+      <h3 class="pricing-name">Premium Support &amp; Early Access</h3>
+      <div class="pricing-price">Coming soon</div>
+      <p class="pricing-desc">Optional paid tier. Priority setup help, early access to new integrations, and direct feedback channel. All current features remain available in the free tier.</p>
+      <p class="pricing-note">Not yet available — join Discord for updates.</p>
+      <a href="https://discord.gg/4QkQSfSATF" target="_blank" rel="noopener" class="btn-outline pricing-cta">Join Discord for updates</a>
     </div>
   </div>
 </section>
@@ -2138,26 +2241,26 @@ footer {
     <p>Quick answers before you download.</p>
   </div>
   <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:760px;margin:0 auto;">
-    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
-      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">Does Sorana cost anything?</h3>
-      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">The app itself is free to download and use. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio.</p>
-    </div>
-    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
-      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">Does my data leave my machine?</h3>
-      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">By default, everything stays local. Sorana runs on your machine and stores its workspace data in a local <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;font-size:0.8rem;background:var(--color-surface-2);padding:2px 6px;border-radius:4px;">.sorana/</code> folder. Cloud providers are only used when you explicitly connect an API key.</p>
-    </div>
-    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
-      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">Can I run it from a USB stick?</h3>
-      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Yes. Sorana is a portable executable. Extract it anywhere — desktop, external drive, USB — and run it. No installation, no registry changes, no admin rights required.</p>
-    </div>
-    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
-      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">What models are supported?</h3>
-      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, and Alibaba. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
-    </div>
-    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
-      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">What happens to long conversations?</h3>
-      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Auto-compaction silently compresses old messages into tight summaries. You keep full context without paying for extra tokens. Conversations that span weeks or months stay fast and affordable.</p>
-    </div>
+    <details class="faq-item">
+      <summary>Does Sorana cost anything?</summary>
+      <p>The app itself is free to download and use. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does my data leave my machine?</summary>
+      <p>By default, everything stays local. Sorana runs on your machine and stores its workspace data in a local <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;font-size:0.8rem;background:var(--color-surface-2);padding:2px 6px;border-radius:4px;">.sorana/</code> folder. Cloud providers are only used when you explicitly connect an API key.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I run it from a USB stick?</summary>
+      <p>Yes. Sorana is a portable executable. Extract it anywhere and run it. No installation, no registry changes, no admin rights required.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What models are supported?</summary>
+      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, and Alibaba. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What happens to long conversations?</summary>
+      <p>Auto-compaction silently compresses old messages into tight summaries. You keep full context without paying for extra tokens. Conversations that span weeks or months stay fast and affordable.</p>
+    </details>
   </div>
 </section>
 
