@@ -731,6 +731,7 @@ nav {
 .discover-card:hover {
   border-color: rgba(62,207,178,0.2);
   box-shadow: 0 8px 32px rgba(62,207,178,0.04);
+  transform: translateY(-2px);
 }
 .discover-card img {
   width: 100%;
@@ -1069,7 +1070,7 @@ footer {
     <a href="#setup">Setup</a>
     <a href="#discover">Discover</a>
     <a href="support.html">Support</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Free</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
     <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
   </div>
   <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
@@ -1087,7 +1088,7 @@ footer {
     learns your working style, and finds any file or note instantly.
   </p>
   <div class="hero-actions">
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Get Sorana Free</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
@@ -1450,6 +1451,14 @@ footer {
          data-ad-client="ca-pub-6449563648591184"
          data-ad-slot="9713451440"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  <div class="cta-section" style="padding:var(--space-12) 0;max-width:900px;margin:0 auto;">
+    <h2 style="margin-bottom:var(--space-3);">Ready to try it?</h2>
+    <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:560px;margin-left:auto;margin-right:auto;">Download the portable executable and run it from anywhere. No installation, no account, no cloud sync unless you choose it.</p>
+    <div class="cta-actions">
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
+      <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
+    </div>
   </div>
   <div class="screenshot-strip">
     <figure class="screenshot-card">
@@ -2006,6 +2015,36 @@ footer {
           <a href="https://www.producthunt.com/products/aicono" target="_blank" rel="noopener">Product Hunt</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-header">
+    <h2>Common <em>questions.</em></h2>
+    <p>Quick answers before you download.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:760px;margin:0 auto;">
+    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
+      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">Does Sorana cost anything?</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">The app itself is free to download and use. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio.</p>
+    </div>
+    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
+      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">Does my data leave my machine?</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">By default, everything stays local. Sorana runs on your machine and stores its workspace data in a local <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;font-size:0.8rem;background:var(--color-surface-2);padding:2px 6px;border-radius:4px;">.sorana/</code> folder. Cloud providers are only used when you explicitly connect an API key.</p>
+    </div>
+    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
+      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">Can I run it from a USB stick?</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Yes. Sorana is a portable executable. Extract it anywhere — desktop, external drive, USB — and run it. No installation, no registry changes, no admin rights required.</p>
+    </div>
+    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
+      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">What models are supported?</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, and Alibaba. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+    </div>
+    <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);">
+      <h3 style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);">What happens to long conversations?</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Auto-compaction silently compresses old messages into tight summaries. You keep full context without paying for extra tokens. Conversations that span weeks or months stay fast and affordable.</p>
     </div>
   </div>
 </section>
