@@ -1257,14 +1257,18 @@ footer {
       <h3>Your knowledge lives on someone else's server</h3>
       <p>Sorana runs AI models locally. Your notes, files, and conversations never leave your machine unless you want them to.</p>
     </div>
-    <div class="problem-card">
-      <h3>Long conversations get slow and expensive</h3>
-      <p>Auto-compaction compresses old conversations into tight summaries, cutting token use by over 90% while preserving full context.</p>
-    </div>
-    <div class="problem-card">
-      <h3>Your powerful model is wasted on simple tasks</h3>
-      <p>Sorana uses a fast model for tool calls and routing, reserving your primary model for the actual conversation.</p>
-    </div>
+  <div class="problem-card">
+    <h3>Long conversations get slow and expensive</h3>
+    <p>Auto-compaction compresses old conversations into tight summaries, cutting token use by over 90% while preserving full context.</p>
+  </div>
+  <div class="problem-card">
+    <h3>Your powerful model is wasted on simple tasks</h3>
+    <p>Sorana routes every internal step to the right-sized model — fast model for tool calls, powerful model for reasoning — so you get the same quality for less cost.</p>
+  </div>
+  <div class="problem-card">
+    <h3>You can't switch agent behavior fast enough</h3>
+    <p>The Prompt Manager gives you a self-maintained library of prompt pairs. One click assigns a new persona or role to any agent, no file editing, no config digging.</p>
+  </div>
     <div class="problem-card">
       <h3>Half your knowledge is locked in PDFs and images</h3>
       <p>Built-in OCR and vision AI make scanned documents, screenshots, and images searchable and chattable.</p>
@@ -1291,6 +1295,30 @@ footer {
       </div>
       <h3>An AI that thinks for itself</h3>
       <p>Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. If your question is unclear, it asks before guessing. It double checks every answer before you see it. If one approach fails, it tries another. It even spots interesting tangents and follows them on its own. You get a real answer, not the first thing the model found.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/>
+        </svg>
+      </div>
+      <h3>Triple Model Roles</h3>
+      <p>Route every AI step to the right-sized model. Fast model for tool calls and routing, powerful model for reasoning, dedicated embedding model for search. Same quality, lower cost, no wasted tokens. Hardware acceleration when available.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+        </svg>
+      </div>
+      <h3>Prompt Manager</h3>
+      <p>A self-maintained library of prompt pairs. One click assigns a new persona or role to any agent. 20+ categories, no file editing, no config digging.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+        </svg>
+      </div>
+      <h3>Model Probing</h3>
+      <p>One-click capability test. Know if a model can reason, see images, or handle audio before you rely on it. The only reliable way to use a model at full capacity, because provider standards differ.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1341,7 +1369,7 @@ footer {
         </svg>
       </div>
       <h3>Supercharged Chat &amp; MCP Tools</h3>
-      <p>Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Swap agent personas on the fly with the Prompt Manager. Every session is archived with full Markdown, reasoning, and tables, so you never lose context.</p>
+      <p>Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Every session is archived with full Markdown, reasoning, and tables, so you never lose context.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1366,30 +1394,6 @@ footer {
       </div>
       <h3>Multi-Agent Pipeline</h3>
       <p>Build visual workflows with a drag-and-drop builder. Choose from pre-built templates or design your own pipeline. Supports conditional routing, parallel agent teams, and post-run memory extraction so every workflow gets smarter over time.</p>
-    </div><div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/>
-        </svg>
-      </div>
-      <h3>Triple Model Roles</h3>
-      <p>Assign a fast model for internal operations like tool calls and routing, a primary model for user conversations, and a dedicated embedding model for RAG and semantic search. Each role gets the right tool, so nothing is wasted. Hardware acceleration when available.</p>
-    </div><div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-        </svg>
-      </div>
-      <h3>Model Probing</h3>
-      <p>One click tests if a model can reason, see images, or handle audio, so you know what it can do before relying on it. Because providers and model series follow different standards, probing is strongly recommended if you want to use the full capacity of a selected model.</p>
-    </div><div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-        </svg>
-      </div>
-      <h3>Prompt Manager</h3>
-      <p>Create, organise, and assign prompt pairs to any agent from a central library. 20+ categories, one-click assignment, no file editing.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1441,7 +1445,7 @@ footer {
     </div>
   </div>
   <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
-    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">14 more features ↓</button>
+    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">10 more features ↓</button>
   </div>
   <div class="feature-card ad-card">
     <ins class="adsbygoogle"
@@ -2117,7 +2121,7 @@ footer {
     toggleBtn.addEventListener('click', function() {
       var visible = moreFeatures.style.display !== 'none';
       moreFeatures.style.display = visible ? 'none' : 'grid';
-      toggleBtn.textContent = visible ? '14 more features ↓' : 'Show fewer ↑';
+      toggleBtn.textContent = visible ? '10 more features ↓' : 'Show fewer ↑';
     });
   }
 })();
