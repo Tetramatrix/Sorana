@@ -161,6 +161,10 @@ nav {
   position: sticky; top: 0; z-index: 50;
   background: color-mix(in srgb, var(--color-bg) 90%, transparent);
   backdrop-filter: blur(12px);
+  transition: box-shadow 200ms ease;
+}
+nav.scrolled {
+  box-shadow: 0 1px 24px rgba(0,0,0,0.25);
 }
 .nav-logo {
   display: flex; align-items: center; gap: var(--space-3);
@@ -295,6 +299,67 @@ nav {
   color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+/* ── HERO ORB ── */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 70%;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(62,207,178,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 60%, rgba(96,165,250,0.08) 0%, transparent 60%);
+  filter: blur(40px);
+  animation: hero-orb 10s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero > * { position: relative; z-index: 1; }
+@keyframes hero-orb {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-3%, 4%) scale(1.06); }
+}
+
+/* ── SECTION REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── BADGE PULSE ── */
+@keyframes badge-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.6; transform: scale(1.25); }
+}
+.badge-dot { animation: badge-pulse 2.4s ease-in-out infinite; }
+
+/* ── SCREENSHOT HOVER ── */
+.screenshot-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.screenshot-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.35);
+}
+.screenshot-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-bottom: 1px solid var(--color-border);
+  transition: transform 300ms ease;
+}
+.screenshot-card:hover img {
+  transform: scale(1.04);
 }
 
 /* ── SCREENSHOT SHOWCASE ── */
@@ -1666,7 +1731,7 @@ footer {
 <section class="section" id="who-uses">
   <div class="section-header">
     <h2>Built for <em>knowledge workers.</em></h2>
-    <p>Researchers, writers, consultants, students, job hunters, and anyone managing personal admin — landlords, energy, telecom, repairs, doctors, banking, and more.</p>
+    <p>Researchers, writers, consultants, students, job hunters, and anyone managing personal admin, landlords, energy, telecom, repairs, doctors, banking, and more.</p>
     <p style="margin-top: var(--space-4); color: var(--color-text-muted); font-size: var(--text-sm);">No matter your role, the same core toolkit works for you: RAG over your documents and files, built-in web research, Gmail, calendar, and the Prompt Manager to swap agent personas for any task. Because you can keep everything local and switch to private models, it is just as useful for sensitive everyday tasks as it is for work.</p>
   </div>
   <div class="features-grid">
@@ -2124,6 +2189,60 @@ footer {
       toggleBtn.textContent = visible ? '10 more features ↓' : 'Show fewer ↑';
     });
   }
+
+  /* Nav shadow on scroll */
+  var nav = document.querySelector('nav');
+  if (nav) {
+    var onScroll = function() { nav.classList.toggle('scrolled', window.scrollY > 10); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* Section reveal on scroll */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.section, .showcase').forEach(function(el) {
+      el.classList.add('reveal');
+      io.observe(el);
+    });
+  }
+
+  /* Counter animation for stat numbers */
+  function animateCount(el, target, suffix) {
+    suffix = suffix || '';
+    var start = 0;
+    var duration = 900;
+    var startTime = null;
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(start + (target - start) * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  document.querySelectorAll('.stat-number').forEach(function(el) {
+    var text = el.textContent;
+    if (text === '∞' || text === '100%') { /* keep as-is */ }
+    else if (/^\d+\+$/.test(text)) {
+      var num = parseInt(text, 10);
+      /* trigger when visible */
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            animateCount(el, num, '+');
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(el);
+    }
+  });
 })();
 </script>
 
