@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<noscript><meta http-equiv="refresh" content="0; URL=https://tetramatrix.github.io/Sorana/"></noscript>
+<script>
+(function(){
+  var stored=localStorage.getItem('theme');
+  if(stored){document.documentElement.setAttribute('data-theme',stored);}
+  else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches){
+    document.documentElement.setAttribute('data-theme','light');
+  }
+})();
+</script>
 
 <!-- Google Ads -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
@@ -11,12 +21,39 @@
 <title>Sorana: Your Personal AI That Actually Knows You</title>
 <meta name="description" content="Sorana is your personal AI knowledge workspace. A second brain that remembers your projects, learns your preferences, and finds any file or note instantly. Run fully offline on Windows.">
 <meta property="og:title" content="Sorana: Your Personal AI That Actually Knows You">
-<meta property="og:description" content="A private AI workspace that remembers your projects, learns your style, and acts on your files.">  <meta property="og:type" content="website">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<meta property="og:description" content="A private AI workspace that remembers your projects, learns your style, and acts on your files.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sorana: Your Personal AI That Actually Knows You">
+<meta name="twitter:description" content="A private AI workspace that remembers your projects, learns your style, and acts on your files.">
+  <link rel="icon" type="image/png" href="logo_small.png">
+  <link rel="canonical" href="https://tetramatrix.github.io/Sorana/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0e0f11">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Sorana",
+      "operatingSystem": "Windows 11",
+      "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
+      "offers": { "@type": "Offer", "price": "0" },
+      "screenshot": ["freemodels.png", "chat.png", "mindmap.png"],
+      "url": "https://tetramatrix.github.io/Sorana/",
+      "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
+      "softwareVersion": "1.0.77",
+      "author": { "@type": "Organization", "name": "Tetramatrix" },
+      "sameAs": [
+        "https://github.com/Tetramatrix/Sorana",
+        "https://www.majorgeeks.com/files/details/sorana.html",
+        "https://www.softpedia.com/get/System/File-Management/Sorana.shtml"
+      ]
+    }
+  </script>
 
 <style>
 /* Art direction: AI knowledge workspace → technical, clean, confident
@@ -28,7 +65,6 @@
   --color-surface:        #141618;
   --color-surface-2:      #1a1c1f;
   --color-surface-3:      #202226;
-  --color-divider:        #2a2c30;
   --color-border:         rgba(255,255,255,0.08);
   --color-text:           #e8eaed;
   --color-text-muted:     #8a8f98;
@@ -62,8 +98,27 @@
 
   --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem;
   --radius-xl: 1rem; --radius-2xl: 1.5rem; --radius-full: 9999px;
-  --shadow-md: 0 4px 24px rgba(0,0,0,0.4);
-  --shadow-lg: 0 12px 48px rgba(0,0,0,0.5);
+}
+
+[data-theme="light"] {
+  --color-bg:             #f9fafb;
+  --color-surface:        #ffffff;
+  --color-surface-2:      #f3f4f6;
+  --color-surface-3:      #e5e7eb;
+  --color-border:         rgba(0,0,0,0.08);
+  --color-text:           #111827;
+  --color-text-muted:     #6b7280;
+  --color-text-faint:     #9ca3af;
+  --color-primary:        #0d9488;
+  --color-primary-hover:  #0f766e;
+  --color-primary-dim:    rgba(13,148,136,0.1);
+  --color-primary-glow:   rgba(13,148,136,0.05);
+  --color-free:           #16a34a;
+  --color-free-dim:       rgba(22,163,74,0.1);
+  --color-cloud:          #2563eb;
+  --color-cloud-dim:      rgba(37,99,235,0.1);
+  --color-local:          #d97706;
+  --color-local-dim:      rgba(217,119,6,0.1);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -79,6 +134,19 @@ body {
   padding-bottom: 240px; /* reserve space for Google Ads bottom banner */
 }
 img { display: block; max-width: 100%; height: auto; }
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-2) var(--space-4);
+  z-index: 100;
+  text-decoration: none;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-md);
+}
+.skip-link:focus { top: var(--space-2); left: var(--space-2); }
 ul { list-style: none; }
 a { color: var(--color-primary); text-decoration: none; }
 a:hover { color: var(--color-primary-hover); }
@@ -91,7 +159,7 @@ nav {
   padding: var(--space-5) var(--space-8);
   border-bottom: 1px solid var(--color-border);
   position: sticky; top: 0; z-index: 50;
-  background: rgba(14,15,17,0.9);
+  background: color-mix(in srgb, var(--color-bg) 90%, transparent);
   backdrop-filter: blur(12px);
 }
 .nav-logo {
@@ -133,6 +201,16 @@ nav {
   display: inline-block;
 }
 .btn-outline:hover { border-color: var(--color-primary); background: var(--color-primary-dim); }
+#toggleFeatures {
+  border-color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.06);
+  color: var(--color-text);
+}
+#toggleFeatures:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-dim);
+  color: var(--color-primary);
+}
 .btn-store {
   display: inline-flex;
   align-items: center;
@@ -338,6 +416,17 @@ nav {
   margin-bottom: var(--space-3);
   border: 1px solid rgba(62,207,178,0.2);
 }
+.logo-light-bg {
+  background: rgba(255,255,255,0.95);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+}
+[data-theme="light"] .logo-light-bg {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+}
 .step h3 {
   font-size: var(--text-sm);
   font-weight: 600;
@@ -418,6 +507,9 @@ nav {
   grid-template-columns: 1fr;
   gap: var(--space-8);
   align-items: center;
+}
+@media (min-width: 768px) {
+  .overview-grid { grid-template-columns: 1fr 1fr; }
 }
 .overview-text p {
   color: var(--color-text-muted);
@@ -785,7 +877,7 @@ nav {
   font-weight: 500;
   color: var(--color-text);
   flex: 1;
-  font-family: 'Courier New', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
   font-size: 0.8rem;
 }
 .model-desc {
@@ -881,10 +973,12 @@ footer {
   padding: var(--space-4);
   text-align: center;
   max-height: 520px; /* prevent oversized rendering */
+  min-height: 90px; /* prevent CLS while ads load */
 }
 .ad-inline {
   margin: var(--space-6) 0;
   text-align: center;
+  min-height: 60px; /* prevent CLS while ads load */
 }
 .feature-card.ad-card {
   display: flex;
@@ -907,8 +1001,23 @@ footer {
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
-  nav { padding: var(--space-4); }
-  .nav-links { display: none; }
+  #menuToggle { display: block !important; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    padding: var(--space-4);
+    gap: var(--space-3);
+    z-index: 40;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: var(--space-2) 0; }
+  nav { position: relative; }
   .hero { padding: var(--space-12) var(--space-5); }
   .showcase { padding: 0 var(--space-4) var(--space-16); }
   .section { padding: var(--space-12) var(--space-4); }
@@ -919,6 +1028,13 @@ footer {
   .comparison-table { font-size: var(--text-xs); }
   .comparison-table th,
   .comparison-table td { padding: var(--space-2); }
+  .comparison-table thead th {
+    position: sticky;
+    top: 0;
+    background: var(--color-surface-2);
+    z-index: 1;
+  }
+  .overview-grid { grid-template-columns: 1fr; }
 }
 
 /* Scrollbar styling */
@@ -927,7 +1043,9 @@ footer {
 ::-webkit-scrollbar-thumb { background: var(--color-surface-3); border-radius: 3px; }
 </style>
 </head>
-<body>
+<body id="main">
+
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- NAV -->
 <nav>
@@ -944,7 +1062,7 @@ footer {
     </svg>
     Sorana
   </a>
-  <div class="nav-links">
+  <div class="nav-links" id="navLinks">
     <a href="#features">Features</a>
     <a href="#models">Models</a>
     <a href="#providers">Providers</a>
@@ -952,7 +1070,9 @@ footer {
     <a href="#discover">Discover</a>
     <a href="support.html">Support</a>
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Free</a>
+    <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
   </div>
+  <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
 </nav>
 
 <!-- HERO -->
@@ -969,7 +1089,7 @@ footer {
   <div class="hero-actions">
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Get Sorana Free</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
-      <img src="ms-store.svg" alt="Get it from Microsoft">
+      <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
     <a href="#features" class="btn-outline">See all features ↓</a>
   </div>
@@ -994,23 +1114,21 @@ footer {
       <span class="stat-label">Local &amp; Private</span>
     </div>
   </div>
-</section>
-
-<!-- SCREENSHOT SHOWCASE -->
-<section class="showcase" id="showcase">
-  <div class="screenshot-wrap">
-    <img src="freemodels.png"
-         alt="Sorana Model Manager showing 30+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
-         width="1140" height="820" loading="lazy">
+  <div class="showcase" style="padding:0;max-width:1100px;">
+    <div class="screenshot-wrap">
+      <img src="freemodels.png"
+           alt="Sorana Model Manager showing 30+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
+           width="1140" height="820" loading="lazy">
+    </div>
+    <div class="floating-badges">
+      <span class="badge free"><span class="badge-dot"></span> Free tier models</span>
+      <span class="badge cloud"><span class="badge-dot"></span> Cloud providers</span>
+      <span class="badge local"><span class="badge-dot"></span> On-premise / Local</span>
+    </div>
+    <p class="screenshot-caption">
+      The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
+    </p>
   </div>
-  <div class="floating-badges">
-    <span class="badge free"><span class="badge-dot"></span> Free tier models</span>
-    <span class="badge cloud"><span class="badge-dot"></span> Cloud providers</span>
-    <span class="badge local"><span class="badge-dot"></span> On-premise / Local</span>
-  </div>
-  <p class="screenshot-caption">
-    The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
-  </p>
 </section>
 
 <!-- HOW IT WORKS -->
@@ -1058,33 +1176,33 @@ footer {
   </div>
   <div class="testimonials-grid">
     <div class="testimonial-card">
-      <img src="majorgeeks.gif" alt="MajorGeeks" class="testimonial-logo">
+      <img src="majorgeeks.gif" alt="MajorGeeks" class="testimonial-logo" loading="lazy" width="140" height="56">
       <div class="testimonial-source">MajorGeeks</div>
-      <p class="testimonial-quote">"Sorana is a smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. The canvas, document chat, OCR, and local AI support gives it a purpose."</p>
+      <p class="testimonial-quote">"A smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. The canvas, document chat, OCR, and local AI support give it a real purpose."</p>
       <a href="https://www.majorgeeks.com/files/details/sorana.html" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
     </div>
     <div class="testimonial-card">
-      <img src="softpedia.png" alt="Softpedia" class="testimonial-logo">
+      <img src="softpedia.png" alt="Softpedia" class="testimonial-logo" loading="lazy" width="140" height="56">
       <div class="testimonial-source">Softpedia</div>
-      <p class="testimonial-quote">"Sorana is a fresh and innovative approach to personal knowledge management. The spatial canvas and persistent memory features set it apart from traditional note-taking apps."</p>
+      <p class="testimonial-quote">"A fresh and innovative approach to personal knowledge management. The spatial canvas and persistent memory features set it apart from traditional note-taking apps."</p>
       <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
     </div>
     <div class="testimonial-card">
-      <img src="trishtech-logo.png" alt="TrishTech" class="testimonial-logo has-bg">
+      <img src="trishtech-logo.png" alt="TrishTech" class="testimonial-logo logo-light-bg" loading="lazy" width="140" height="56">
       <div class="testimonial-source">TrishTech</div>
-      <p class="testimonial-quote">"Sorana aims to offer all four: a capable, memory-persistent, privacy-respecting AI workspace that fits on a USB drive and costs nothing to run."</p>
+      <p class="testimonial-quote">"A capable, memory-persistent, privacy-respecting AI workspace that fits on a USB drive and costs nothing to run."</p>
       <a href="https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
     </div>
     <div class="testimonial-card">
-      <img src="poweredbyai-logo.svg" alt="PoweredByAI" class="testimonial-logo">
+      <img src="poweredbyai-logo.svg" alt="PoweredByAI" class="testimonial-logo" loading="lazy" width="140" height="56">
       <div class="testimonial-source">PoweredByAI</div>
-      <p class="testimonial-quote">"Sorana is an innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
+      <p class="testimonial-quote">"An innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
       <a href="https://poweredbyai.app/project/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
     </div>
     <div class="testimonial-card">
-      <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo">
+      <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo" loading="lazy" width="140" height="56">
       <div class="testimonial-source">MCPMarket</div>
-      <p class="testimonial-quote">"Sorana redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. It replaces rigid folder hierarchies and forgetful AI chatbots with a persistent 2D canvas that semantically arranges files and automates tasks."</p>
+      <p class="testimonial-quote">"Redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. Replaces rigid folders and forgetful chatbots with a persistent 2D canvas."</p>
       <a href="https://mcpmarket.com/es/server/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
     </div>
   </div>
@@ -1124,78 +1242,35 @@ footer {
   <div class="problem-grid">
     <div class="problem-card">
       <h3>Your AI can't think strategically</h3>
-      <p>Most AI answers one question and stops. Sorana plans, researches, checks its work, and adapts when something fails. You ask once; the AI handles the rest.</p>
-      <ul>
-        <li>Multi-step planning for complex questions</li>
-        <li>Parallel searches, file reads, and web fetches</li>
-        <li>Self-review and automatic fallback strategies</li>
-        <li>Double checks every answer before you see it</li>
-      </ul>
+      <p>Most AI answers one question and stops. Sorana plans, researches, checks its work, and adapts when something fails.</p>
     </div>
     <div class="problem-card">
       <h3>You re-explain yourself every day</h3>
-      <p>Sorana quietly learns from every conversation, project, and preference. Next time you open it, you pick up exactly where you left off.</p>
-      <ul>
-        <li>Proactive context from recent work</li>
-        <li>Persistent personal profile across the workspace</li>
-        <li>No setup, no copy-pasting</li>
-      </ul>
+      <p>Sorana learns from every conversation, project, and preference. Next time you open it, you pick up exactly where you left off.</p>
     </div>
     <div class="problem-card">
       <h3>Your AI talks but can't act</h3>
-      <p>Tell Sorana what to do in plain language. It organises files, fetches web content, and manages Gmail and Google Calendar, all from one conversation.</p>
-      <ul>
-        <li>Visual manager for Google Drive, GitHub, Gmail</li>
-        <li>Read, write, move, search, edit via chat</li>
-        <li>Web fetch, scrape, search, and extract</li>
-      </ul>
+      <p>Tell Sorana what to do in plain language. It organises files, fetches web content, and manages Gmail and Calendar from one conversation.</p>
     </div>
     <div class="problem-card">
       <h3>Your knowledge lives on someone else's server</h3>
       <p>Sorana runs AI models locally. Your notes, files, and conversations never leave your machine unless you want them to.</p>
-      <ul>
-        <li>Lemonade, Ollama, Llama.cpp, LM Studio</li>
-        <li>Portable: runs from a USB stick</li>
-        <li>Cloud only when you choose</li>
-      </ul>
     </div>
     <div class="problem-card">
       <h3>Long conversations get slow and expensive</h3>
       <p>Auto-compaction compresses old conversations into tight summaries, cutting token use by over 90% while preserving full context.</p>
-      <ul>
-        <li>Dozens of messages condensed into a short paragraph</li>
-        <li>Smart document search across your archive</li>
-        <li>Stays fast after months of use</li>
-      </ul>
     </div>
     <div class="problem-card">
       <h3>Your powerful model is wasted on simple tasks</h3>
-      <p>When your AI plans strategically, reviews its own answers, fetches web results, and routes between tools, every internal step uses a model. Sorana uses a fast model for these internal operations and reserves your primary model for the actual conversation.</p>
-      <ul>
-        <li>Fast model for internal operations like tool calls and routing</li>
-        <li>Primary model for user conversations</li>
-        <li>Dedicated embedding model for RAG and semantic search</li>
-        <li>Hardware acceleration when available</li>
-      </ul>
+      <p>Sorana uses a fast model for tool calls and routing, reserving your primary model for the actual conversation.</p>
     </div>
     <div class="problem-card">
       <h3>Half your knowledge is locked in PDFs and images</h3>
       <p>Built-in OCR and vision AI make scanned documents, screenshots, and images searchable and chattable.</p>
-      <ul>
-        <li>Extract text from PDFs and images</li>
-        <li>Vision results become searchable documents</li>
-        <li>JPEG, PNG, GIF, WEBP, BMP</li>
-      </ul>
     </div>
     <div class="problem-card">
       <h3>Your AI is a black box</h3>
-      <p>You ask a question and get an answer, but you have no idea how it got there. Did it search your files? Read the right documents? Did it check its work or just guess? Sorana shows you every step it took: what it searched, what it found, why it chose that answer, and when it changed its mind. You see the thinking behind every result.</p>
-      <ul>
-        <li>Step by step trace of searches, reads, and tool calls</li>
-        <li>See what the AI considered and what it discarded</li>
-        <li>Full reasoning shown before every answer</li>
-        <li>Understand and trust the result, or tweak the approach</li>
-      </ul>
+      <p>Sorana shows every step it took: searches, reads, tool calls, and reasoning. See what it considered and why it chose each answer.</p>
     </div>
   </div>
 </section>
@@ -1206,7 +1281,7 @@ footer {
     <h2>Core features for <em>serious AI work.</em></h2>
     <p>Everything you need in a single workspace: memory, agents, tools, and visual organisation.</p>
   </div>
-  <div class="features-grid">
+  <div class="features-grid" id="topFeatures">
     <div class="feature-card large">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1255,15 +1330,10 @@ footer {
       </div>
       <h3>Auto-Compaction</h3>
       <p>Long conversations are compressed into tight summaries, cutting token use by over 90% while keeping full context. Dozens of messages become a short paragraph without losing what matters. Projects that span months stay fast and affordable.</p>
-    </div><div class="feature-card ad-card">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-format="fluid"
-           data-ad-layout-key="-7g+ex-1i-2s+ay"
-           data-ad-client="ca-pub-6449563648591184"
-           data-ad-slot="9713451440"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div><div class="feature-card">
+    </div>
+  </div>
+  <div class="features-grid" id="moreFeatures" style="display:none;">
+    <div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 2l-4 4-4-4"/>
@@ -1294,7 +1364,7 @@ footer {
         </svg>
       </div>
       <h3>Multi-Agent Pipeline</h3>
-      <p>Choose from predefined workflow templates or build your own. One agent drafts, another reviews, a third fact checks. They hand off work automatically until the result is ready. Build any workflow visually.</p>
+      <p>Build visual workflows with a drag-and-drop builder. Choose from pre-built templates or design your own pipeline. Supports conditional routing, parallel agent teams, and post-run memory extraction so every workflow gets smarter over time.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1334,7 +1404,7 @@ footer {
         </svg>
       </div>
       <h3>Health Dashboard</h3>
-      <p>Monitor system health, model status, and AI performance at a glance. Each card opens a mini wizard for guided installation and configuration of every dependency, including backends, OCR, search engines, HuggingFace cache, codebase search, MCP, and more. Catch issues before they slow you down.</p>
+      <p>First-boot setup wizard plus ongoing monitoring. Covers OCR, search engines, model cache, MCP servers, backends, HuggingFace cache, codebase search, and more. Catch issues before they slow you down.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1369,54 +1439,65 @@ footer {
       <p>Use Tesseract for image OCR on scanned photos, screenshots, and other images. When a vision-capable model is available, it can read the image directly as a fallback.</p>
     </div>
   </div>
-
+  <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
+    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">14 more features ↓</button>
+  </div>
+  <div class="feature-card ad-card">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-7g+ex-1i-2s+ay"
+         data-ad-client="ca-pub-6449563648591184"
+         data-ad-slot="9713451440"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
   <div class="screenshot-strip">
     <figure class="screenshot-card">
-      <img src="chat.png" alt="Chat with formatted answers">
+      <img src="chat.png" alt="Chat with formatted answers" loading="lazy" width="640" height="400">
       <figcaption>See Markdown answers, separated reasoning, and tables.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="chat-sidebar.png" alt="Chat sessions sidebar">
+      <img src="chat-sidebar.png" alt="Chat sessions sidebar" loading="lazy" width="640" height="400">
       <figcaption>Switch between archived chat sessions and view formatted answers.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="mindmap.png" alt="Mind map">
+      <img src="mindmap.png" alt="Mind map" loading="lazy" width="640" height="400">
       <figcaption>Generate mind maps from folder hierarchies.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="rag.png" alt="RAG knowledge base">
+      <img src="rag.png" alt="RAG knowledge base" loading="lazy" width="640" height="400">
       <figcaption>Ground AI answers in your own documents and notes.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="calendar.png" alt="Calendar and scheduling">
+      <img src="calendar.png" alt="Calendar and scheduling" loading="lazy" width="640" height="400">
       <figcaption>Manage events and free slots from chat.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="Sorana_Multi_Agent_Pipeline.png" alt="Multi-agent pipeline">
+      <img src="Sorana_Multi_Agent_Pipeline.png" alt="Multi-agent pipeline" loading="lazy" width="640" height="400">
       <figcaption>Build and connect agents visually.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="Agent Process Trace.png" alt="Agent process trace">
+      <img src="Agent Process Trace.png" alt="Agent process trace" loading="lazy" width="640" height="400">
       <figcaption>Trace agent and tool pipelines visually.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="modelmanager.png" alt="Model Manager">
+      <img src="modelmanager.png" alt="Model Manager" loading="lazy" width="640" height="400">
       <figcaption>Browse, sort, and favorite models from every provider.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="modelprobing.png" alt="Model Probing">
+      <img src="modelprobing.png" alt="Model Probing" loading="lazy" width="640" height="400">
       <figcaption>Probe each model to discover what it can actually do.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="promptmanager.png" alt="Prompt manager">
+      <img src="promptmanager.png" alt="Prompt manager" loading="lazy" width="640" height="400">
       <figcaption>Organize prompts in a central library.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="mcpmanager.png" alt="MCP Manager and Marketplace">
+      <img src="mcpmanager.png" alt="MCP Manager and Marketplace" loading="lazy" width="640" height="400">
       <figcaption>Browse and install MCP servers from the marketplace.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="HealthDashboard.png" alt="Health Dashboard">
+      <img src="HealthDashboard.png" alt="Health Dashboard" loading="lazy" width="640" height="400">
       <figcaption>Monitor system health, models, and AI performance.</figcaption>
     </figure>
   </div>
@@ -1869,7 +1950,7 @@ footer {
   </div>
   <div class="discover-grid">
     <div class="discover-card">
-      <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship retro arcade game">
+      <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship retro arcade game" loading="lazy" width="640" height="400">
       <div class="discover-card-body">
         <h3>New Spaceship</h3>
         <p>Retro Arcade 2D side-scroller bullet-hell shmup game.</p>
@@ -1881,7 +1962,7 @@ footer {
       </div>
     </div>
     <div class="discover-card">
-      <img src="Audrix_Settings.png" alt="Audrix real-time transcription settings">
+      <img src="Audrix_Settings.png" alt="Audrix real-time transcription settings" loading="lazy" width="640" height="400">
       <div class="discover-card-body">
         <h3>Audrix</h3>
         <p>Real-time speech-to-text engine. Capture microphone or system audio, transcribe instantly with noise suppression and crosstalk detection. Runs entirely offline on Windows.</p>
@@ -1891,7 +1972,7 @@ footer {
       </div>
     </div>
     <div class="discover-card">
-      <img src="tabneuron.png" alt="TabNeuron AI spatial tab manager">
+      <img src="tabneuron.png" alt="TabNeuron AI spatial tab manager" loading="lazy" width="640" height="400">
       <div class="discover-card-body">
         <h3>TabNeuron</h3>
         <p>AI Spatial Tab Manager &amp; Research Workspace. Maps browser tabs onto a 2D canvas, AI groups them by content, chat with any page or the live internet, deploy no-code research agents, and sync back to Chrome Tab Groups.</p>
@@ -1903,7 +1984,7 @@ footer {
       </div>
     </div>
     <div class="discover-card">
-      <img src="RyzenZPilot_3.1.3.png" alt="RyzenZPilot AMD power management">
+      <img src="RyzenZPilot_3.1.3.png" alt="RyzenZPilot AMD power management" loading="lazy" width="640" height="400">
       <div class="discover-card-body">
         <h3>RyzenZPilot</h3>
         <p>Powerful tool for managing AMD Ryzen processor power settings on Windows. Adjust CPU performance, power limits, and thermal configurations.</p>
@@ -1913,7 +1994,7 @@ footer {
       </div>
     </div>
     <div class="discover-card">
-      <img src="main.png" alt="Aicono AI desktop icon organizer">
+      <img src="main.png" alt="Aicono AI desktop icon organizer" loading="lazy" width="640" height="400">
       <div class="discover-card-body">
         <h3>Aicono</h3>
         <p>AI Intelligent Desktop Icon Autopilot. Automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly.</p>
@@ -1936,7 +2017,7 @@ footer {
   <div class="cta-actions">
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
-      <img src="ms-store.svg" alt="Get it from Microsoft">
+      <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
     <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
   </div>
@@ -1944,9 +2025,64 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2026 Sorana. Built for AI explorers.</span>
-  <span>Supports 25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Ollama, LM Studio and more</span>
+  <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
+    <span>© 2026 Sorana. Built for AI explorers.</span>
+    <a href="Changelog.md" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
+    <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
+    <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>
+    <span style="color:var(--color-text-faint);font-size:var(--text-xs);">v1.0.77</span>
+  </div>
+  <div style="margin-top:var(--space-3);font-size:var(--text-xs);color:var(--color-text-faint);">
+    Discover more apps: <a href="http://tetramatrix.github.io/spaceship" target="_blank" rel="noopener" style="color:var(--color-text-muted);">New Spaceship</a> · <a href="http://tetramatrix.github.io/Audrix" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Audrix</a> · <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener" style="color:var(--color-text-muted);">TabNeuron</a> · <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener" style="color:var(--color-text-muted);">RyzenZPilot</a> · <a href="http://tetramatrix.github.io/Aicono" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Aicono</a>
+  </div>
+  <span style="margin-top:var(--space-2);display:block;">Supports 25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Ollama, LM Studio and more</span>
 </footer>
+
+<noscript>
+  <div style="text-align:center;padding:var(--space-8);color:var(--color-text-muted);font-size:var(--text-sm);">
+    Sorana is free. If you find it useful, consider supporting via the links in the footer.
+  </div>
+</noscript>
+
+<script>
+(function() {
+  'use strict';
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', function() {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+      toggle.textContent = expanded ? '☰' : '✕';
+    });
+  }
+  var themeBtn = document.getElementById('themeToggle');
+  var stored = localStorage.getItem('theme');
+  var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  var theme = stored || (prefersLight ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+  if (themeBtn) {
+    themeBtn.textContent = theme === 'dark' ? '🌙' : '☀️';
+    themeBtn.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      themeBtn.textContent = next === 'dark' ? '🌙' : '☀️';
+    });
+  }
+  var toggleBtn = document.getElementById('toggleFeatures');
+  var moreFeatures = document.getElementById('moreFeatures');
+  if (toggleBtn && moreFeatures) {
+    toggleBtn.addEventListener('click', function() {
+      var visible = moreFeatures.style.display !== 'none';
+      moreFeatures.style.display = visible ? 'none' : 'grid';
+      toggleBtn.textContent = visible ? '14 more features ↓' : 'Show fewer ↑';
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
