@@ -125,6 +125,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+section[id] { scroll-margin-top: 84px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero::before { animation: none; }
@@ -1283,7 +1284,7 @@ footer {
     <div class="screenshot-wrap">
       <img src="freemodels.png"
            alt="Sorana Model Manager showing 30+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
-           width="1140" height="820" loading="lazy">
+           width="1140" height="820" fetchpriority="high">
     </div>
     <div class="floating-badges">
       <span class="badge free"><span class="badge-dot"></span> Free tier models</span>
@@ -2281,7 +2282,7 @@ footer {
 <footer>
   <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
     <span>© 2026 Sorana. Built for AI explorers.</span>
-    <a href="Changelog.md" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
+    <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Changelog.md" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
     <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
     <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>
     <span style="color:var(--color-text-faint);font-size:var(--text-xs);">v1.0.77</span>
