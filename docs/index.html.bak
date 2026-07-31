@@ -1715,7 +1715,12 @@ footer {
       </div>
       <h3>Tesseract Image OCR</h3>
       <p>Use Tesseract for image OCR on scanned photos, screenshots, and other images. When a vision-capable model is available, it can read the image directly as a fallback.</p>
-    </div><div class="feature-card ad-card">
+    </div>
+  </div>
+  <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
+    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">10 more features ↓</button>
+  </div>
+  <div class="feature-card ad-card">
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-format="fluid"
@@ -1723,10 +1728,6 @@ footer {
          data-ad-client="ca-pub-6449563648591184"
          data-ad-slot="9713451440"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-  </div>
-  <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
-    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">10 more features ↓</button>
   </div>
   <div class="cta-section" style="padding:var(--space-12) 0;max-width:900px;margin:0 auto;">
     <h2 style="margin-bottom:var(--space-3);">Ready to try it?</h2>
