@@ -1,6 +1,9 @@
 # Qwen AI assistant
 .qwen/
 
+# Kilo local config
+.kilo/
+
 # Python
 __pycache__/
 *.py[cod]
