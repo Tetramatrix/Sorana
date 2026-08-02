@@ -1,4 +1,39 @@
 📋 Changelog 📋
+📅 August 2, 2026 — Version 1.0.78
+🆕 ChatState subgraph isolation (Phase 2) — 5 isolated subgraph states (memory / code explorer / web explorer / RAG explorer) with Strategy-C entry/exit adapters, new ParentOrchestratorState, provider-metadata merge (no last-write-wins in subgraphs), 17/17 pipeline-audit items complete.
+🆕 Pure-edge routing migration (rounds 2–6) — edge-mutating route_after_tool / route_after_chat strategies became pure readers; mutations moved into node-side routing_bookkeeping (~11 targets incl. reactive_tool_drift), dormant channels (codebase loop budgets, _question_type) activated, remaining-edge audit + regression guard.
+🆕 Autonomy control-plane (phases C–D) — production completion gate + continuation-budget gate wired, Phase-D contradiction-corroboration tier isolation, repeated_low_yield surfaced in the recovery policy, planner-level lead dedup (identical lead signatures consume no budget).
+🆕 ObjectiveContract now genuinely populated in production — router population seam, completion-gate write-back into state, node-side persistence, production completed_requirements writer (obligations advance to satisfied / final_answer on real research turns), intent-derived required_sources, completion-gate route_hint wired through existing edges (5th autonomy gate).
+🆕 ContinuationPlanner split — per-tier mixin split (3,479 → 1,915 lines, 4 behavior-preserving modules) then stage-2 dispatch split (1,837 → 765 lines, under the 1,000-line bar).
+🆕 Plan §5 reserved-tokens wiring — protected objective/goal block netted out of system_prompt_tokens and passed as reserved_tokens at both budget sites.
+🆕 Autonomous codebase execution contract — deterministic execution contract with validation enforcement for coding tasks.
+🆕 Token reporting — provider-neutral token usage with full-prompt fallback estimates, compact status labels, /help explanation, unified chat footnote styling, user-facing trace grouping (status / decision / tool display names), consistent neutral trace metadata.
+🆕 End-to-end latency phase breakdown — Total / LLM / Tools / Continuation / Memory / BG reported per turn.
+🆕 Tier-budget measurement tool (measure_tier_budget_defaults.py) — 6 budget scenarios measured through the deterministic harness; every tier's observed max equals its default cap (headroom +0), 4 invariants guarded.
+🆕 Per-explorer model selection (Phase 3 Track B1) + unified synthesis retry budget (_synthesis_total_retries, SF-A) + sequential §F–§K → §1–§7 section renames + goal-stack reset unification, plan-revision reason enum, register_tool_call centralization, explorer timeout guards + findings accumulation (Phase 3 Track B2–B4).
+🆕 4 new deterministic-harness budget-contract scenarios (tier starvation / LLM reserved slot / failed-tool alternate family) — harness baseline 23 → 27 scenarios.
+🆕 WS001 workspace-marker lint hook + codebase_tools project-root hardening.
+🆕 Greeting boundary + critical-path failure scenario documentation (web explorer gating, proactive briefing retry-loop fix).
+🔄 Pipeline audit Phase 2/3 — Track A/B/C plan statuses, ChatState split design doc, state-boundary enforcement, 5 isolated adapter implementations + 52 adapter unit tests, 17 integration tests for end-to-end state isolation.
+🔄 Round-6 route_after_tool pure-edge migration + remaining-edge audit closeout; baseline-sync cleanup (pinpointed + regenerated round-6 token_cost deltas); harness trace-recording quirk fix (_tools_from_trace falls back to calls_selected).
+🔄 Autonomy state writer migration closeout (P3) — canonical reducers for semantic writes.
+🐛 BUG_266 — automatic memory tags stopped working: stored_contents.append(content) NameError in artifacts-sdk aborted extraction before tag generation (fixed in artifacts-sdk).
+🐛 BUG_267 — /help footer lines rendered oversized: speaker_label regex false-positive on legend words; tightened to letter-only labels minus an exclusion set.
+🐛 BUG_268 — gmail tools dead in preloading briefing AND explicit chat, plus wrong filesystem allowed root (dev start path instead of user home). Four interlocking root causes fixed: planner tool override, Path.cwd() allowed-root default, wrong mcp_servers_enabled key, empty briefing state.mcp_servers, reviewer list-payload blindness → recursion limit 25.
+🐛 BUG_269 — state.mcp_servers empty in the LangGraph path + [MCP merge] agent=? : load_agent_config dropped the top-level uid/agent_uid; ChatOrchestrator.reset() wiped mcp_servers without re-applying compat writes.
+🐛 Stale on-disk checkpoints with empty mcp_servers now self-heal — LangGraph input-wins on the next invoke plus a proactive heal wired into orchestrator __init__/reset (fresh-thread guard prevents spurious checkpoint rows).
+🐛 Checkpoint-heal masking guard — a stale checkpoint can no longer re-enable a disabled MCP server (e.g. gmail): enabled-only normalization + two-way enabled-set sync; disabled-but-present server dicts never persisted.
+🐛 web_fetch_content only returned the hero section — now extracts the full page via find_all().
+🐛 P0 emergency override — when all synthesis retries are exhausted the stashed parallel synthesis result (or thinking) bypasses Layer 4 instead of showing 'Empty LLM response'; Layer 4 false positives reduced for short affirmatives (yes/ok).
+🐛 Chat sidebar delete no longer auto-creates a new chat; batch remove for multi-select.
+🐛 Numbered selection '1' no longer falsely routes to codebase mode; comment-code collision NameError fixed; new DC001 pre-commit lint hook.
+🐛 Unpicklable deepcopy in routing_bookkeeping probe avoided; round-5 explorer-dispatch pure-edge migration + node-side autonomy recorders.
+🐛 OAuth invalid_grant detection string unified across context/service files; stale CalendarService attributes removed; Credentials() expiry added for proactive auto-refresh.
+🐛 Always-FAIL synthesis reviewer now terminates at END (node-based review-retry budget fix); BUG_230 review keys declared as real ChatState channels.
+🐛 codebase_search flake root-cause analysis + reproduction run-loop; proactive-briefing retry-loop fix.
+🧪 17 state-isolation integration tests + 52 adapter unit tests; edge-purity regression guard + reviewed 7-scenario Phase-E baseline sync; critique-verification guard tests (non-matching-source false-positive, category-scoping, end-to-end satisfied → final_answer); compiled-graph probe proving the router-seeded objective_contract reaches the completion gate on real turns.
+🧪 Checkpoint migration test suite (30 tests) — input-wins correction, direct heal, agent-config fallback, fresh-thread no-spurious-checkpoint guards, and the masking-guard tests; mutation-checked (guard removal → 3 failures).
+🧪 4 budget-contract harness scenarios + baseline regen 23→27; 8 RAG-bypass unit tests; E2E real-LLM integration test for the 'research query → yes' failure chain; planner-level lead-dedup budget tests.
 📅 July 29, 2026 — Version 1.0.77
 🆕 RAG audit: consolidated chunk config into rag_config, extracted shared retry/budget constants, promoted execute_rag_tool to tool_rag_helpers, consolidated name matching into single NameMatcher class, added 'deep' depth level for exhaustive search queries, extracted shared subgraph budget constants.
 🆕 Tool-Calling audit: ported cross-round preservation to tool subgraph, explorer subgraphs now query Registry for tool sets, async timeout (120s) on MCP execution, sync timeout via ThreadPoolExecutor, defensive metadata field stripping before schema validation, extracted shared _execute_web_tool helper, [TOOL_DISPATCH] and [MCP_CRED] debug logs at all dispatch/credential refresh sites.
