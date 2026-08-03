@@ -6,7 +6,7 @@
 
 ## What Is Sorana?
 
-Sorana is your personal AI knowledge workspace for Windows. Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
+Sorana is your personal AI knowledge workspace for Windows and Linux. Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
 
 Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.
 
@@ -227,7 +227,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 ## Quick Start
 
-1. **Download** the executable from [GitHub Releases](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)
+1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) or [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana)
 2. **Run** anywhere — desktop, USB, external drive
 3. **Choose a model** — use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio
 4. **Start working** — add your files, chat with documents, and let Sorana remember your projects and preferences
@@ -241,7 +241,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 | Component | Minimum |
 |---|---|
-| OS | Windows 11 (64-bit) |
+| OS | Windows 11 (64-bit) or modern Linux (Ubuntu 20.04+, glibc-based) |
 | RAM | 4 GB (8 GB+ recommended for local AI models) |
 | Storage | 2 GB (app + model) + `.sorana/` data folder |
 | AI | Built-in offline model included; local or cloud AI optional |
@@ -287,7 +287,7 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 ## Links
 
 - **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
-- **Download**: [GitHub Releases](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)
+- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana)
 - **Source**: [GitHub Repository](https://github.com/Tetramatrix/Sorana)
 - **Discord**: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
 - **Microsoft Store**: [apps.microsoft.com](https://apps.microsoft.com/detail/9n8c43pzc1rn)
