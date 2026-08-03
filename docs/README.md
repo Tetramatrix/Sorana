@@ -227,13 +227,12 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 ## Quick Start
 
-1. **Download** the portable executable from [GitHub Releases](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)
-2. **Extract** anywhere — desktop, USB, external drive
-3. **Run** `Sorana.exe` — no installation needed
-4. **Choose a model** — use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio
-5. **Start working** — add your files, chat with documents, and let Sorana remember your projects and preferences
+1. **Download** the executable from [GitHub Releases](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)
+2. **Run** anywhere — desktop, USB, external drive
+3. **Choose a model** — use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio
+4. **Start working** — add your files, chat with documents, and let Sorana remember your projects and preferences
 
-**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) (v1.0.77)  
+**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)  
 **Microsoft Store**: [Get from Store](https://apps.microsoft.com/detail/9n8c43pzc1rn)
 
 ---
