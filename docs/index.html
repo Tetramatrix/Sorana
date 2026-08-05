@@ -173,7 +173,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-section[id] { scroll-margin-top: 84px; }
+section[id], #main { scroll-margin-top: 84px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero::before { animation: none; }
@@ -230,6 +230,15 @@ nav.scrolled {
   font-size: var(--text-lg);
   color: var(--color-text);
   text-decoration: none;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.nav-brand .version-pill {
+  font-size: 0.65rem;
+  padding: 2px 8px;
 }
 .nav-links { display: flex; align-items: center; gap: var(--space-6); }
 .nav-links a {
@@ -313,6 +322,30 @@ nav.scrolled {
   padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-full);
   margin-bottom: var(--space-6);
+}
+.hero-eyebrow-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+.hero-eyebrow-row .hero-eyebrow {
+  margin-bottom: 0;
+}
+.version-pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
 }
 .hero h1 {
   font-family: var(--font-display);
@@ -1317,13 +1350,14 @@ footer {
 ::-webkit-scrollbar-thumb { background: var(--color-surface-3); border-radius: 3px; }
 </style>
 </head>
-<body id="main">
+<body>
 
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- NAV -->
 <nav>
-  <a href="index.html" class="nav-logo">
+  <div class="nav-brand">
+    <a href="index.html" class="nav-logo">
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Sorana">
       <circle cx="14" cy="14" r="12" stroke="#3ecfb2" stroke-width="1.5" fill="none"/>
       <circle cx="14" cy="14" r="5" fill="#3ecfb2" opacity="0.8"/>
@@ -1335,7 +1369,9 @@ footer {
       <circle cx="6.5" cy="10" r="2" fill="#3ecfb2" opacity="0.5"/>
     </svg>
     Sorana
-  </a>
+    </a>
+    <span class="version-pill" title="Current Sorana version">v1.0.79</span>
+  </div>
   <div class="nav-links" id="navLinks">
     <a href="#features">Features</a>
     <a href="#models">Models</a>
@@ -1350,11 +1386,16 @@ footer {
   <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
 </nav>
 
+<main id="main">
+
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">
-    <span class="badge-dot" style="background:var(--color-primary)"></span>
-    Personal AI Workspace / PKM
+  <div class="hero-eyebrow-row">
+    <div class="hero-eyebrow">
+      <span class="badge-dot" style="background:var(--color-primary)"></span>
+      Personal AI Workspace / PKM
+    </div>
+    <span class="version-pill" id="versionPill" title="Current Sorana version">v1.0.79</span>
   </div>
   <h1>One tool.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
@@ -2402,10 +2443,13 @@ footer {
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
   <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
     <span>© 2026 Sorana. Built for AI explorers.</span>
+    <span class="version-pill" title="Current Sorana version">v1.0.79</span>
     <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Changelog.md" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
     <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
     <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>
@@ -2552,6 +2596,27 @@ footer {
       observer.observe(el);
     }
   });
+})();
+</script>
+
+<script>
+(function() {
+  'use strict';
+  /* Version pills - read VER_Sorana.txt so the version stays in sync automatically */
+  var pills = document.querySelectorAll('.version-pill');
+  if (!pills.length || !window.fetch) return;
+  fetch('VER_Sorana.txt', { cache: 'no-cache' })
+    .then(function(r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    })
+    .then(function(txt) {
+      var m = txt.trim().match(/^(\d+\.\d+\.\d+)/);
+      if (!m) return;
+      var v = 'v' + m[1];
+      pills.forEach(function(p) { p.textContent = v; });
+    })
+    .catch(function() { /* fetch failed (e.g. file:// or offline) - keep the static fallbacks visible */ });
 })();
 </script>
 
