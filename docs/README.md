@@ -304,4 +304,20 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 
 ---
 
+## Chat experience
+
+Sorana is designed to make AI conversations useful, readable, and easy to continue:
+
+- **Clear, easy-to-scan answers** — important details stand out instead of getting lost in a wall of text. Comparisons can be presented as clean, readable tables.
+- **Context that stays with your work** — Sorana remembers relevant facts, preferences, and project details, so you spend less time repeating yourself.
+- **Chat with your files** — ask questions about PDFs, documents, scans, and images in plain language. Sorana finds the useful information inside your archive.
+- **Helpful actions from one conversation** — find files, work with email, and handle connected tasks while you stay in control.
+- **Long conversations stay on track** — older parts are quietly condensed while important details remain available, keeping long-running projects easier to continue.
+- **Workflows for bigger tasks** — break complex work into connected steps, using a ready-made template or creating your own.
+- **A clearer view of the work** — when available, follow what Sorana searched, found, and used to build an answer, so you can better understand and guide the result.
+
+Formatted responses can include headings, emphasis, links, and comparison tables, making research, planning, writing, and document work easier to follow from the first question to the final result.
+
+---
+
 Developed by **Tetramatrix** | Your personal AI knowledge workspace | Free and portable
