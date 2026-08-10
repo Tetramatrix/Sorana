@@ -1,4 +1,74 @@
 📋 Changelog 📋
+📅 10.08.26 - Version 1.0.80
+🆕 Path validation and normalization — symbolic links, trailing slashes, case differences, and short names are resolved consistently; browser-mode detection is fixed in agent utilities and the agent tools dialog; tool arguments are validated before dispatch with clear error status; web tools gained URL-safety hardening.
+🆕 Linux and WSL experience — XDG configuration support, WSL model discovery with Windows API keys, idempotent provisioning, Linux download paths and buttons, tesseract and system file manager integration, platform-correct update links, MCP credentials in the correct Linux directory, Vulkan GPU offload helper, and hardened AMD GPU detection.
+🆕 OAuth and token resilience — proactive token refresh before expiry, unified expiry buffer across all surfaces, runtime reader delegates to shared helper, treeview expiry aligned with configure dialog, and external-server status re-probe when the MCP config dialog closes, cached email/calendar data no longer appears valid after a live service failure, and token exchange runs over a dedicated secure client.
+🆕 Proactive briefing polish — day and section labels are now colored via markdown for clearer visual separation, and the briefing footer shows which context sources were used.
+🆕 Plain-language UI — wizard install messages, status bar, health cards, sync/memory dialogs, and auth strings use non-technical labels; context menu exposes "Thinking effort"; Research trace shows "documents reviewed"; Agent Instructions and Message Instructions replace System Prompt and User Prompt.
+🆕 Chat and explorer hardening — codebase search uses two-pass source-first ranking, explorer scratchpads and final analysis render in UI, live status mirrors agent trace, quick-model responses are discarded and re-run with primary, redundant-work suppression prevents repeated calls, and malformed tool-call markup in responses is blocked.
+🔄 Chat pipeline contracts — research evidence chains, response-quality retry controls, execution trace snapshots, research context deduplication, timing safeguards, and reviewer output bounds are hardened; continuation planner, execution planner, and research synthesizers now wire through the populated state channels.
+🔄 Codebase research — Code Explorer runs under a single control plane with consistent routing, safe fallbacks, filename-first search, depth-limited exploration rounds, import-aware file reading, and research scratchpad tracking across web and document explorers.
+🆕 Startup and setup polish — the first-run setup screen is more reliable and informative: initialization no longer stalls silently, the choice to skip automatic setup is remembered, each setup stage has its own Skip button with clear progress transitions, and the Model Auto-Setup card now toggles in both directions.
+🔄 Agent setup and help polish — the agent creator's Advanced tab now groups the Auto/Passthrough/Verbose toggles with the Code Explorer budget behind a preset dropdown ("Auto prompt chaining"), Code Explorer depth and tool-call budgets are configurable per agent, and /help Codebase Search gained realistic example rows and a workspace-path tip.
+🔄 Memory extraction reliability — substantial research turns now run memory extraction as before, and extraction is skipped cleanly when the answer is already covered or the conversation is too large.
+🐛 BUG\_270 — Health Dashboard showed no cards on a fresh install; the grid is now built on first launch.
+🐛 BUG\_271 — repeated failures on a dead URL caused a recursion error; backtracking now only triggers on genuinely empty responses.
+🐛 BUG\_272 — the planner's tool replacement was dropped on the native tool path; it now reaches the executed call.
+🐛 BUG\_273 — web fetches returning 404 now provide clear "page not found" guidance and a parent-URL fallback.
+🐛 BUG\_274 — duplicate-call protection now blocks only the exact failed call instead of all read-only tools.
+🐛 BUG\_275 — web page tools with a missing URL fail cleanly before dispatch.
+🐛 BUG\_276 — a corrected URL is no longer replaced by an unrelated PDF lead.
+🐛 BUG\_282 — codebase-analysis no-answer loop fixed with planner code-family guard and DOC\_CONTINUITY redirect.
+🐛 BUG\_288 — search-read complement guard and CODE\_HINT pairing restored.
+🐛 BUG\_289 — internal operations now honor role bindings.
+🐛 BUG\_290 — CODE\_HINT regression and Guard 2 gap on hallucinated access refusals fixed.
+🐛 BUG\_296 — cancelled codebase plan routing restored to tool\_agent dispatch.
+🐛 BUG\_297 — import-following read extension revived in iterative planner with shared normalizer and budget fallback.
+🐛 BUG\_298 — codebase\_search falls back to path\_scope when src/ is absent.
+🐛 BUG\_299 — code tools remain on answer-gate retry when search evidence exists; failed reads excluded from re-extension.
+🐛 BUG\_301 — successful-only loop tracking and scratchpad scope agreement across explorer paths.
+🐛 BUG\_302 — Code Explorer runs under a single control plane with deterministic code-only dispatch.
+🐛 BUG\_303 — control-plane routing hardening.
+🐛 BUG\_306 — post-explorer final synthesis forced and synthesis prompt hardened.
+🐛 BUG\_307 — explorer scratchpad and final analysis render in the UI; topic-drift self-contamination fixed.
+🐛 BUG\_308 — leaked tool-continuation directives blocked from reaching the UI.
+🐛 BUG\_309 — explorer token budgets raised so reasoning cannot starve content.
+🐛 BUG\_310 — model request/response logs are now structured and complete, so provider-side debugging no longer fails on unreadable dumps.
+🐛 BUG\_311 — explorer payload bounded, reasoning persisted, scratchpad enforced.
+🐛 BUG\_312 — depth-scaled explorer round cap and filename-first discovery.
+🐛 BUG\_313 — codebase-analysis no-answer loop fixed with covered-target suppression and internal-op budget sweep.
+🐛 BUG\_314 — explorer content starvation fixed.
+🐛 BUG\_315 — OAuth auth-state regressions fixed.
+🐛 BUG\_316 — workspace path wiped by agent-config save fixed.
+🐛 BUG\_317 — reviewer gate silent pass and calendar invalid\_scope on refresh fixed.
+🐛 BUG\_319 — explorer auto-log scratchpad persists per round.
+🐛 BUG\_320 — bounded codebase\_search fallback and session documentation added.
+🐛 BUG\_321 — canonical llm\_client key and live memory-staleness query fixed.
+🐛 BUG\_322 — code-search pipeline query mangle and 3 search-pipeline defects fixed.
+🐛 BUG\_323 — the parent round no longer drops valid scratchpad tool calls during exploration; the tool allowlist stays in sync with the actual tool set.
+🐛 BUG\_324 — explorer read content crossing subgraph boundary fixed.
+🐛 BUG\_325 — hyphenation-guard follow-up and regex bug-class audit.
+🐛 BUG\_327 — parent post-explorer round forced off high-effort thinking fixed.
+🐛 BUG\_330 — Code Explorer strategy priority corrected.
+🐛 BUG\_331 — synthesis-quality retry rounds forced off hot thinking fixed.
+🐛 BUG\_332 — explorer terminal stop now accumulates reads instead of discarding them.
+🐛 BUG\_333 — post-explorer planning-marker gate rejected answer-shaped thinking fixed.
+🐛 BUG\_334 — post-explorer evidence chain fixed.
+🐛 BUG\_335 — the turn-timing breakdown can no longer report a single phase as longer than the whole turn, and raw model log dumps are now bounded.
+🐛 BUG\_336 — overlapping file reads in deep exploration no longer lose new lines, pointless re-reads of the same window are prevented, and compaction summaries keep real evidence instead of empty placeholders.
+🐛 BUG\_337 — planning state now persists correctly between research turns.
+🐛 BUG\_338 — research planning and exploration steps now share state correctly.
+🐛 BUG\_339 — execution traces now show complete decision history.
+🐛 BUG\_340 — research scratchpad deduplication and compaction summaries fixed.
+🐛 BUG\_341 — clarification attempts, tool logging, classification, and file resolution hardened.
+🐛 BUG\_342 — the answer reviewer no longer receives garbled evidence blocks, no longer rejects well-grounded answers, and its output cap is respected.
+🐛 BUG\_343 — pipeline contracts hardened and audit fixture added.
+🐛 BUG\_344 — strict workspace evidence and planner budget policies.
+🐛 BUG\_345 — bot-protection pages (captchas and interstitial text) are no longer presented as research evidence, post-research answers are no longer cut off, and memory-extraction status is now observable.
+🐛 BUG\_346 — the document-sync dialog now opens attached to the correct window, fixing centering, focus, and ownership.
+🐛 BUG\_347 — truncated tool-call markup is no longer shown as a visible answer; malformed tool protocol is cleaned up before display.
+🐛 BUG\_349 — generic org-noun entity capture and lost extraction JSON retry fixed.
+🐛 BUG\_350 — OAuth token expiry unified across all surfaces with a shared helper and 5-minute buffer.
 📅 05.08.26 - Version 1.0.79
 🆕 Home folder works as a workspace again on every platform — pointing the workspace tab at your home directory (or any project folder) is now valid; app data directories are guarded so they can never be selected as a workspace and silently merged into the built-in agent.
 🆕 Path handling hardened — workspace and database paths are resolved through one normalized helper, so symbolic links, trailing slashes, case differences and short names can no longer bypass the reserved-folder guard; browser-mode detection fixed in agent utils and the agent tools dialog.
@@ -6,13 +76,13 @@
 🆕 Memory operations contract — memory saves with empty content are repaired from the conversation, successful saves no longer trigger redundant follow-up searches or duplicate background extraction, result correlation tolerates wording differences, malformed pending tool calls are handled safely, and explicit verification requests ("confirm it", "did you save it") still work; lifecycle tracing for completion and recovery decisions.
 🆕 Tool execution contract — tool arguments validated before dispatch with clear error status; shared argument specs, canonical aliases and safe value coercion; unified success/failure/retry helpers for planning and recovery; web tools gained URL-safety hardening (blocks private/internal address targets, validates redirects, tracks canonical URLs).
 🆕 Web follow-up correctness — the assistant no longer discards a good answer after an empty tool round, no longer loops into recursion errors on a dead link, correctly forwards the planned tool replacement, stops re-attempting the exact failed call, and no longer substitutes an unrelated PDF or page for the URL you actually provided; binary files are rejected as page evidence.
-🐛 BUG_270 — Health Dashboard showed no cards on a fresh install; the grid is now built on first launch.
-🐛 BUG_271 — repeated failures on a dead URL caused a recursion error; backtracking now only triggers on genuinely empty responses, so good answers are kept and dead-link loops end cleanly.
-🐛 BUG_272 — the planner's tool replacement was dropped on the native tool path; it now reaches the executed call.
-🐛 BUG_273 — web fetches returning 404 now provide clear "page not found" guidance and a parent-URL fallback instead of an empty result.
-🐛 BUG_274 — duplicate-call protection now blocks only the exact failed call instead of all read-only tools.
-🐛 BUG_275 — web page tools with a missing URL fail cleanly before dispatch; a successful fetch is required before search results count as fetched content.
-🐛 BUG_276 — a corrected URL is no longer replaced by an unrelated PDF lead; URL ranking is scoped to the current request and explicit hosts are respected.
+🐛 BUG\_270 — Health Dashboard showed no cards on a fresh install; the grid is now built on first launch.
+🐛 BUG\_271 — repeated failures on a dead URL caused a recursion error; backtracking now only triggers on genuinely empty responses, so good answers are kept and dead-link loops end cleanly.
+🐛 BUG\_272 — the planner's tool replacement was dropped on the native tool path; it now reaches the executed call.
+🐛 BUG\_273 — web fetches returning 404 now provide clear "page not found" guidance and a parent-URL fallback instead of an empty result.
+🐛 BUG\_274 — duplicate-call protection now blocks only the exact failed call instead of all read-only tools.
+🐛 BUG\_275 — web page tools with a missing URL fail cleanly before dispatch; a successful fetch is required before search results count as fetched content.
+🐛 BUG\_276 — a corrected URL is no longer replaced by an unrelated PDF lead; URL ranking is scoped to the current request and explicit hosts are respected.
 🐛 Local model server fixes — legacy configuration no longer overrides the active endpoint (the "'prompt' not found" error is fixed), the context window self-heals when a request is too large, and reasoning budgets are no longer sent to local models that do not support reasoning.
 🐛 Model Manager crash — model type detection now handles both internal and external model objects, so opening the window no longer crashes.
 🆕 Linux/WSL usability — six gaps fixed: tesseract download and detection paths, the "Open GitHub Releases" link, opening files and folders in the system file manager, the validation interpreter default, and platform-correct update download links; MCP credentials are now stored in the correct Linux data directory; 18 new regression tests.
@@ -47,10 +117,10 @@
 🔄 Pipeline audit Phase 2/3 — plan statuses, state-boundary enforcement, 5 isolated adapters + 52 adapter unit tests, 17 integration tests for end-to-end state isolation.
 🔄 Routing migration closeout — remaining-edge audit completed; baseline-sync cleanup and a harness trace-recording quirk fix.
 🔄 Autonomy state writer migration — canonical reducers for semantic writes.
-🐛 BUG_266 — automatic memory tags stopped working; extraction aborted before tag generation — fixed.
-🐛 BUG_267 — /help footer lines rendered oversized; legend words were misdetected — tightened to letter-only labels.
-🐛 BUG_268 — gmail tools were dead in both the preloading briefing and explicit chat, and the filesystem tools allowed the wrong root folder. Four interlocking root causes fixed.
-🐛 BUG_269 — MCP server configuration went missing on some chat paths; compatibility writes are no longer dropped.
+🐛 BUG\_266 — automatic memory tags stopped working; extraction aborted before tag generation — fixed.
+🐛 BUG\_267 — /help footer lines rendered oversized; legend words were misdetected — tightened to letter-only labels.
+🐛 BUG\_268 — gmail tools were dead in both the preloading briefing and explicit chat, and the filesystem tools allowed the wrong root folder. Four interlocking root causes fixed.
+🐛 BUG\_269 — MCP server configuration went missing on some chat paths; compatibility writes are no longer dropped.
 🐛 Stale sessions self-heal — stale saved sessions with empty MCP server state now self-heal on the next run; a fresh-session guard prevents spurious rows.
 🐛 A stale saved session can no longer re-enable a disabled MCP server (e.g. gmail); only enabled servers are persisted.
 🐛 Fetching a page's content only returned the hero section — now extracts the full page.
@@ -123,10 +193,10 @@
 🔄 Decomposed oversized prompt-building and routing functions; router split into specialized modules; chat node decomposed; phase-gate centralization complete; structural→behavioral test migration (25 files); import hoisting in hot paths; tool pipeline consistency fixes; i18n pattern factory collapse.
 🔄 Centralized semantic gate module for synthesis decisions.
 🔄 Reviewer node — intelligent response quality validation.
-🐛 BUG_251 — continuation planner expansion guards + test isolation fix.
-🐛 BUG_250 — greeting hallucination-continuation from conversation history + briefing grouping not merging.
-🐛 BUG_247 — chat session sidebar delete leaves entries / doesn't remove from sidebar.
-🐛 BUG_246 — infinite recursion loop for simple greetings.
+🐛 BUG\_251 — continuation planner expansion guards + test isolation fix.
+🐛 BUG\_250 — greeting hallucination-continuation from conversation history + briefing grouping not merging.
+🐛 BUG\_247 — chat session sidebar delete leaves entries / doesn't remove from sidebar.
+🐛 BUG\_246 — infinite recursion loop for simple greetings.
 🐛 Document tab — no longer crashes on scan; source path handling fixed.
 🐛 Calendar tab — MCP Manager button opens the new server list; missing Close button added; respects per-agent MCP config.
 🐛 MCP window freeze on open — fixed; calendar placeholder/config fixes.
@@ -140,30 +210,30 @@
 🐛 Language detection signals missing for DE/FR/ES/IT/NL/PL — restored per-language detection.
 🐛 Non-RAG tool results not rendered in prompt — missing rendering code restored.
 🐛 Self-instruct detector rejects short structured responses — fixed.
-🐛 BUG_256 — calendar fixes — wrong URL paths, cache indexing, dependency exclusion root cause, credential drift sync.
-🐛 BUG_245 — filesystem MCP allowed root stuck on home-dir fallback.
-🐛 BUG_244 — tool workspace path now resolves to project root when empty.
-🐛 BUG_243 — codebase search scoped to the code folder + structure discovery steps + 17 unit tests.
-🐛 BUG_242 — codebase-search branch regression guard for non-codebase flows.
-🐛 BUG_239/240/241 — gmail/calendar tool routing regression + false-positive extraction.
-🐛 BUG_235 — plan continuation edge mutation regression.
-🐛 BUG_234 — max tool calls default alignment (5→8) + codebase content section.
-🐛 BUG_233 — deep codebase research collapse (plan continuation + sync + dedup).
-🐛 BUG_232 — dynamic tool call bump + codebase pattern + multi-goal connector detection + syntax fix.
-🐛 BUG_231 — parallel RAG zero-out.
-🐛 BUG_230 — synthesis-review-retry v2 + response truncation mid-word from the thinking budget.
-🐛 BUG_228 — quality gate skips tool re-emission when the response is empty.
-🐛 BUG_225 — planner-side user-filename bias over search rank + DRY helper.
-🐛 BUG_226 — multi-file imperative in code-exploration hint.
-🐛 BUG_224 — filename-first routing for code analyse/codesearch.
-🐛 BUG_223 — codebase search tool ignored by the LLM and dropped by the validator (3 root causes).
-🐛 BUG_222 — disable-tools three-site guard.
-🐛 BUG_206 — synthesis failure cascade follow-up fixes.
-🐛 BUG_205c — tool-results rendering regression fixed.
-🐛 BUG_205b — parallel tool execution double-wraps tool results.
-🐛 BUG_136 — gmail over-extraction regression + false-positive extraction.
-🐛 BUG_090 — Google deps unavailable in the packaged app — added Google libraries, lazy calendar imports, lazy dependency checks.
-🐛 search_files missing pattern TypeError + argument alias fix.
+🐛 BUG\_256 — calendar fixes — wrong URL paths, cache indexing, dependency exclusion root cause, credential drift sync.
+🐛 BUG\_245 — filesystem MCP allowed root stuck on home-dir fallback.
+🐛 BUG\_244 — tool workspace path now resolves to project root when empty.
+🐛 BUG\_243 — codebase search scoped to the code folder + structure discovery steps + 17 unit tests.
+🐛 BUG\_242 — codebase-search branch regression guard for non-codebase flows.
+🐛 BUG\_239/240/241 — gmail/calendar tool routing regression + false-positive extraction.
+🐛 BUG\_235 — plan continuation edge mutation regression.
+🐛 BUG\_234 — max tool calls default alignment (5→8) + codebase content section.
+🐛 BUG\_233 — deep codebase research collapse (plan continuation + sync + dedup).
+🐛 BUG\_232 — dynamic tool call bump + codebase pattern + multi-goal connector detection + syntax fix.
+🐛 BUG\_231 — parallel RAG zero-out.
+🐛 BUG\_230 — synthesis-review-retry v2 + response truncation mid-word from the thinking budget.
+🐛 BUG\_228 — quality gate skips tool re-emission when the response is empty.
+🐛 BUG\_225 — planner-side user-filename bias over search rank + DRY helper.
+🐛 BUG\_226 — multi-file imperative in code-exploration hint.
+🐛 BUG\_224 — filename-first routing for code analyse/codesearch.
+🐛 BUG\_223 — codebase search tool ignored by the LLM and dropped by the validator (3 root causes).
+🐛 BUG\_222 — disable-tools three-site guard.
+🐛 BUG\_206 — synthesis failure cascade follow-up fixes.
+🐛 BUG\_205c — tool-results rendering regression fixed.
+🐛 BUG\_205b — parallel tool execution double-wraps tool results.
+🐛 BUG\_136 — gmail over-extraction regression + false-positive extraction.
+🐛 BUG\_090 — Google deps unavailable in the packaged app — added Google libraries, lazy calendar imports, lazy dependency checks.
+🐛 search\_files missing pattern TypeError + argument alias fix.
 🐛 Synthesis reviewer FAIL verdict not enforced — now enforced with a graph re-invoke.
 🐛 Context re-fetching on every turn — fixed.
 🐛 Briefing date accuracy + agent misreading the date — fixed.
@@ -182,20 +252,20 @@
 🆕 Schema versioning for checkpoint migration safety.
 🆕 File-integrity guard in pre-commit config — detects silent file deletion in source folders.
 🆕 Async loop deadlock guard — raises on event-loop thread calls to prevent deadlocks.
-🆕 BUG_221 Variant-A fix — drop the capability probe task-key hijack.
-🐛 BUG_220 — missing user id argument to memory stats/export.
-🐛 BUG_219 — persist dispatch dedup state + drop wrapper tags.
-🐛 BUG_218 — normalize LLM alias keys + 5 layer-2 literal-echo guard tests.
-🐛 BUG_217 — streaming-disabled default assertion test.
-🐛 BUG_216 — consolidate chat session tools to a single source.
-🐛 BUG_215 — surface the actual tool error on hard failure.
-🐛 BUG_214 — stale response cross-turn leak.
-🐛 BUG_213 — gmail tools + gmail built-in.
-🐛 BUG_212 — planner override.
-🐛 BUG_209 — infinite delete_messages loop cascade (10 interlocking bugs fixed).
-🐛 BUG_208 — Calendar backport.
-🐛 BUG_207 — test collection errors from mock pollution.
-🐛 BUG_206 — synthesis failure cascade — 4 interacting fixes.
+🆕 BUG\_221 Variant-A fix — drop the capability probe task-key hijack.
+🐛 BUG\_220 — missing user id argument to memory stats/export.
+🐛 BUG\_219 — persist dispatch dedup state + drop wrapper tags.
+🐛 BUG\_218 — normalize LLM alias keys + 5 layer-2 literal-echo guard tests.
+🐛 BUG\_217 — streaming-disabled default assertion test.
+🐛 BUG\_216 — consolidate chat session tools to a single source.
+🐛 BUG\_215 — surface the actual tool error on hard failure.
+🐛 BUG\_214 — stale response cross-turn leak.
+🐛 BUG\_213 — gmail tools + gmail built-in.
+🐛 BUG\_212 — planner override.
+🐛 BUG\_209 — infinite delete\_messages loop cascade (10 interlocking bugs fixed).
+🐛 BUG\_208 — Calendar backport.
+🐛 BUG\_207 — test collection errors from mock pollution.
+🐛 BUG\_206 — synthesis failure cascade — 4 interacting fixes.
 🐛 Single-column GFM tables — table separator fix.
 🐛 Module-level logger binding added across 9 source files.
 🐛 Missing imports fixed (config manager, cloud backend detection).
@@ -211,45 +281,45 @@
 🔄 Embedding manager support for the model manager view.
 🔄 JSON compat wrappers replacing raw imports across all source files.
 📅 July 13, 2026 — Version 1.0.73
-🆕 BUG_200: chat-session message listing routing + no-arg tool extraction fix.
-📝 BUG_199 + BUG_200 doc update + v2 extractor fix documentation.
+🆕 BUG\_200: chat-session message listing routing + no-arg tool extraction fix.
+📝 BUG\_199 + BUG\_200 doc update + v2 extractor fix documentation.
 📅 July 12, 2026 — Version 1.0.72
-🆕 MemorySearch None query guard — prevents 3 cascading errors (embedding crash, lower() on None, len() on None) when the memory search query is not extracted (BUG_176).
+🆕 MemorySearch None query guard — prevents 3 cascading errors (embedding crash, lower() on None, len() on None) when the memory search query is not extracted (BUG\_176).
 🆕 BM25 index build fix — fuzzy matching now passes the right structure to the indexer.
 🔄 Reverted embedding preload auto-reload — restored the original simple preload callback (auto-reload broke auto-discovery).
 🆕 Autonomous cross-turn document task management — the chat orchestrator now tracks document tasks across turns for CV/cover-letter workflows.
 🆕 Duplicate pending tool call hard abort fix — defers to a per-call validator instead of aborting all pending calls.
 🆕 RAG tool rewrite for failed read calls — failed read calls are rewritten to document reads, preventing silent context loss when documents are overwritten.
-🆕 BUG_197: Model Manager UI for per-backend RPM limits — new UI field to configure background rate limits per backend.
-🆕 BUG_197: Per-backend background throttle — memory and contradiction operations now respect per-backend rate limits to prevent API rate-limit errors.
-🆕 BUG_191: Per-backend concurrency limits — rate-limited backends get configurable concurrency limits with a new shared retry helper migrated across 8 call-sites.
-🐛 BUG_183: Resumed short option loses document task — the active document task is rebuilt from chat history on resume, preventing filesystem drift when RAG docs are loaded.
+🆕 BUG\_197: Model Manager UI for per-backend RPM limits — new UI field to configure background rate limits per backend.
+🆕 BUG\_197: Per-backend background throttle — memory and contradiction operations now respect per-backend rate limits to prevent API rate-limit errors.
+🆕 BUG\_191: Per-backend concurrency limits — rate-limited backends get configurable concurrency limits with a new shared retry helper migrated across 8 call-sites.
+🐛 BUG\_183: Resumed short option loses document task — the active document task is rebuilt from chat history on resume, preventing filesystem drift when RAG docs are loaded.
 🔄 Memory management optimization — reduced GC pressure for a lower memory footprint.
 🔄 Large shrink refactor completed — tool and RAG nodes deleted, all consumers migrated to canonical homes.
-🔄 Tool-family recovery registry refactored with per-rule telemetry counters (BUG_174/175).
-🔄 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm_invoc, compaction, autonomy, learned, etc.) for fine-grained --debug-mute control.
+🔄 Tool-family recovery registry refactored with per-rule telemetry counters (BUG\_174/175).
+🔄 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm\_invoc, compaction, autonomy, learned, etc.) for fine-grained --debug-mute control.
 🔄 Bracket tags for untagged debug logs — added to the noisiest files.
 🔄 Production log noise reduced ~50% — migrated debug logs to a dedicated child logger.
 🔄 Backport toolkit consolidated — dedicated backport folder with AST rewriter, import walker, and cascade builder.
-🔄 Backporter script fix — corrected import prefix in the v1_v2 backporter.
+🔄 Backporter script fix — corrected import prefix in the v1\_v2 backporter.
 🔄 13 xfail markers removed from equivalence tests — all divergences closed.
-🐛 BUG_176: MemorySearch crashes when the memory search query is None (3 cascading errors).
-🐛 BUG_175: universal envelope-check parity across all 4 family rules.
-🐛 BUG_174: tool-family recovery registry generalizes BUG_173.
-🐛 BUG_172: broadened gate to recover tool calls from message history.
-🐛 BUG_171: planner→dispatcher argument contract mismatch fixed.
+🐛 BUG\_176: MemorySearch crashes when the memory search query is None (3 cascading errors).
+🐛 BUG\_175: universal envelope-check parity across all 4 family rules.
+🐛 BUG\_174: tool-family recovery registry generalizes BUG\_173.
+🐛 BUG\_172: broadened gate to recover tool calls from message history.
+🐛 BUG\_171: planner→dispatcher argument contract mismatch fixed.
 🐛 LLM backpressure handling — optional provider timeout recovery.
 🐛 18 broken logger sites resolved across 6 files.
 🐛 Expansion logic corrected to use per-family checks instead of a global flag.
-🐛 BUG_191: rate-limited plan backend now defaults to concurrency 1 to prevent rate-limit collisions.
-🐛 BUG_190: router digit-leading filenames — the router now correctly extracts filenames starting with digits (e.g. 250525_XYZ.txt) instead of misrouting them.
+🐛 BUG\_191: rate-limited plan backend now defaults to concurrency 1 to prevent rate-limit collisions.
+🐛 BUG\_190: router digit-leading filenames — the router now correctly extracts filenames starting with digits (e.g. 250525\_XYZ.txt) instead of misrouting them.
 📝 Memory correction request handling documentation.
 📝 RAG context loss detection for short option follow-ups.
 📝 Comprehensive guide for RAG tool rewrite scenarios in chat execution.
 📝 Sprint plan for shrink refactor completion.
 📅 July 11, 2026 — Version 1.0.71
-🆕 Tool-family recovery registry (BUG_174/175) — universal envelope-check parity across all 4 family rules with per-rule telemetry counters.
-🆕 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm_invoc, compaction, autonomy, learned, etc.) for fine-grained --debug-mute control.
+🆕 Tool-family recovery registry (BUG\_174/175) — universal envelope-check parity across all 4 family rules with per-rule telemetry counters.
+🆕 Debug namespace expansion — 22 new mute tags (polling, langgraph, llm\_invoc, compaction, autonomy, learned, etc.) for fine-grained --debug-mute control.
 🆕 Bracket tags for untagged debug logs — added to the 4 noisiest files (~70 log calls).
 🆕 Dynamic token budget fix for chat nodes to prevent system prompt overage.
 🆕 Cross-reference layer for the chat pipeline — detects memory-RAG-tool overlaps and gaps.
@@ -261,7 +331,7 @@
 🆕 Contradiction cache — per-turn memory deduplication with timeout handling.
 🆕 Synthesis intent extractor — tool-call directive extraction from LLM prose.
 🆕 MCP system prompt budget cap — per-agent override.
-🆕 Async search_files implementation — max_results and timeout safety for Windows.
+🆕 Async search\_files implementation — max\_results and timeout safety for Windows.
 🆕 Watchdog mechanism for recursive polling loops in the chat view.
 🆕 Session-aware memory loading — prevents stale data issues.
 🔄 Tool-family recovery registry refactored with DRY static methods and paranoid test coverage.
@@ -275,17 +345,17 @@
 🔄 Monolithic routing refactored into named single-responsibility functions.
 🔄 Per-agent config helpers consolidated into a shared resolve function.
 🔄 13 xfail markers removed from equivalence tests — all divergences closed.
-🐛 BUG_175: universal envelope-check parity across all 4 family rules.
-🐛 BUG_174: tool-family recovery registry generalizes BUG_173.
-🐛 BUG_172: broadened gate to recover tool calls from message history.
-🐛 BUG_171: planner→dispatcher argument contract mismatch fixed.
+🐛 BUG\_175: universal envelope-check parity across all 4 family rules.
+🐛 BUG\_174: tool-family recovery registry generalizes BUG\_173.
+🐛 BUG\_172: broadened gate to recover tool calls from message history.
+🐛 BUG\_171: planner→dispatcher argument contract mismatch fixed.
 🐛 LLM backpressure handling — optional provider timeout recovery.
 🐛 Expansion logic corrected to use per-family checks instead of a global flag.
 🐛 RAG context type guard in the token budget application.
 🐛 Thread id propagation fix for chat manager sidebar and MCP chat-session tools.
 🐛 Agent creator and prompt wizard window management — close button logic and destroy bypass fixed.
 🐛 Tool executor wrapper fix to propagate cross-thread rejection errors.
-🐛 Synthesis handler production failure modes fixed (BUG_112/116/117/118).
+🐛 Synthesis handler production failure modes fixed (BUG\_112/116/117/118).
 🐛 Continuation planner MCP tool directive handling — self-instruct loop fixed.
 🐛 Numbered selections and workspace paths handling in chat orchestration.
 🐛 Task key passed incorrectly for recovery calls — cheap model no longer used instead of primary.
@@ -306,7 +376,7 @@
 🆕 Continuation planner decision store and confirmation logic for LLM-based planning.
 🆕 Extraction helpers for the continuation planner to handle RAG and filesystem search results.
 🆕 Unified intent recognition — single pattern catalog replacing scattered intent systems.
-🆕 Duplicate-tool guard in the synthesis handler prevents infinite loops when the same tool is re-emitted (BUG_089).
+🆕 Duplicate-tool guard in the synthesis handler prevents infinite loops when the same tool is re-emitted (BUG\_089).
 🆕 Word boundary regex for language detection — prevents false negatives in French/English substrings.
 🆕 Three new pre-commit lint rules — dialog geometry, raw top-level window usage, and window inheritance compliance.
 🆕 Horizontal sash persistence binding for dialog windows with a configurable default fraction.
@@ -316,37 +386,37 @@
 🔄 5 offenders (document loader, loading view, backend wizard, reasoning probe, prompt picker) migrated to managed modal dialogs.
 🔄 10 Tier 2 dialogs migrated to managed window classes with a fit-to-content geometry persistence fix.
 🔄 Wizard base classes migrated to managed modal dialogs.
-🔄 30 parent-window AttributeErrors fixed across 16 files — the managed window IS the window (BUG_108).
-🔄 4 wizard import paths fixed (BUG_108).
-🔄 2 inner dialogs in the agent tools dialog migrated to module-level managed dialogs (BUG_109).
-🔄 Model recovery AttributeError fixed in the lemonade-python-sdk (BUG_110).
+🔄 30 parent-window AttributeErrors fixed across 16 files — the managed window IS the window (BUG\_108).
+🔄 4 wizard import paths fixed (BUG\_108).
+🔄 2 inner dialogs in the agent tools dialog migrated to module-level managed dialogs (BUG\_109).
+🔄 Model recovery AttributeError fixed in the lemonade-python-sdk (BUG\_110).
 🔄 Fit-to-content geometry persistence fix — auto-fit no longer overrides saved geometry on subsequent opens.
 🔄 Removed per-role UI dropdowns — context-menu-only role assignment with auto-migration.
 🔄 Redundant internal client instantiation removed — refactored to use the task key for faster clients.
 🔄 Test suite cleanup — removed dead imports, obsolete scaffolding, debug scratch files.
 🔄 Python 3.14+ compatibility — lazy submodule discovery, removed eager langchain import loading.
 🐛 Blank agent component positions during workspace rebuilds — fixed missing stale-position cleanup.
-🐛 Tool calls blocked for pathless tools (filesystem info) — the path validator now skips tools that take no path parameter (BUG_111).
-🐛 Chat-only agents with no workspace path hallucinated filesystem paths — injected fallback instruction to always ask the user for a path (BUG_111).
-🐛 RAG not triggered for numbered selections (e.g. user sends "1" to select from a menu) — the router now resolves numeric inputs against the previous assistant message's numbered list (BUG_111).
+🐛 Tool calls blocked for pathless tools (filesystem info) — the path validator now skips tools that take no path parameter (BUG\_111).
+🐛 Chat-only agents with no workspace path hallucinated filesystem paths — injected fallback instruction to always ask the user for a path (BUG\_111).
+🐛 RAG not triggered for numbered selections (e.g. user sends "1" to select from a menu) — the router now resolves numeric inputs against the previous assistant message's numbered list (BUG\_111).
 📅 July 03, 2026 — Version 1.0.69
 🆕 Source-label history and audit policy documentation for self-learning provenance tracking.
 🆕 Learned intent patterns added to improve tool routing accuracy.
 🆕 Web-search intent recognition and keyword patterns to improve agent reasoning accuracy.
-🆕 Duplicate-tool guard in the synthesis handler prevents infinite web_search loops when results are already loaded (BUG_100).
-🆕 Guard now extracts a different tool (e.g. web_fetch_content) when the same tool is blocked, instead of just escalating synthesis.
-🆕 web_fetch_content and web_scrape_page alias support for prose-based tool extraction.
+🆕 Duplicate-tool guard in the synthesis handler prevents infinite web\_search loops when results are already loaded (BUG\_100).
+🆕 Guard now extracts a different tool (e.g. web\_fetch\_content) when the same tool is blocked, instead of just escalating synthesis.
+🆕 web\_fetch\_content and web\_scrape\_page alias support for prose-based tool extraction.
 🆕 Web content tool set updated with all MCP web tool names.
 🔄 Self-learning feedback loop — user message extraction logic added to the tool node for future learning signals.
 🔄 Documentation cleanup — broken markdown links removed and path references corrected across docs.
 🧪 Sentinel memory store isolation added for test suite isolation.
 🧪 Jaccard-set-overlap deduplication logic for chat MCP server document matching.
-🧪 13 tests for BUG_100 — duplicate-tool guard, web content extraction, tool constants, planner family membership.
+🧪 13 tests for BUG\_100 — duplicate-tool guard, web content extraction, tool constants, planner family membership.
 📅 July 02, 2026 — Version 1.0.68
 🆕 RAG-irrelevance bypass in the synthesis quality gate — valid parametric-knowledge answers no longer rejected when RAG returns irrelevant documents.
 🆕 Multilingual web-search intent examples added to the intent recognizer for price/cost/research queries.
-🆕 Web search fixed (BUG_088) — missing packages added to the build.
-🐛 Agent fails first attempt on general-knowledge questions — intent system missed web-search routing; the synthesis quality gate rejected valid answers (BUG_089).
+🆕 Web search fixed (BUG\_088) — missing packages added to the build.
+🐛 Agent fails first attempt on general-knowledge questions — intent system missed web-search routing; the synthesis quality gate rejected valid answers (BUG\_089).
 🔄 Markdown rendering improvements — reduced code block spacing, fixed bold text in the chat window, resolved tag priority issues.
 🔄 Memory extraction categorization rules clarified — distinguish preferences, facts, and situational context.
 🔄 Memory tool system prompt and role descriptions improved in the template editor UI.
@@ -388,8 +458,8 @@
 🐛 Context loss in the state graph fixed by ensuring producer loop context propagation.
 🐛 Max tokens floor enforced for the chat path, preventing short garbage output.
 🐛 Context loss in the pipeline executor when an agent's max token limit is reached — resolved.
-🐛 Pipeline loop router hallucination handling in reviewer context (BUG_034).
-🐛 RAG alias matching guard (BUG_087) — prevents drafting responses when explicit filenames are present.
+🐛 Pipeline loop router hallucination handling in reviewer context (BUG\_034).
+🐛 RAG alias matching guard (BUG\_087) — prevents drafting responses when explicit filenames are present.
 🐛 RAG synthesis quality validation and escalation propagation fix in the pipeline.
 🐛 Empty response when RAG already loaded documents in the synthesis handler.
 🐛 Reasoning effort handling corrected for unsupported providers in internal operations.
@@ -403,17 +473,17 @@
 🆕 Thread-safe progress queue manager.
 🆕 Self-loop detection in chat routing prevents infinite recursion.
 🆕 Search engine registry — dynamic engine selection and config management.
-🆕 Context menu item for "Manage Memory & Knowledge".
+🆕 Context menu item for "Manage Memory \& Knowledge".
 🔄 Global memories migration logic for agent orchestration and shared memory management.
 🔄 Trace collector support for agent execution chains and span tracking.
 🔄 Quality gate logic for reviewer feedback filtering in the pipeline graph builder.
 🔄 Event loop lifecycle fix on Windows — proactor event loop hang resolved.
 🔄 Prompt seeding logic made idempotent for missing default prompts.
 🔄 Code cleanup — removed unnecessary imports, dead code, and whitespace.
-🐛 RAG alias matching guard (BUG_087) — prevents drafting responses when explicit filenames are present.
+🐛 RAG alias matching guard (BUG\_087) — prevents drafting responses when explicit filenames are present.
 🐛 RAG synthesis quality validation and escalation propagation fix in the pipeline.
 🐛 Empty response when RAG already loaded documents in the synthesis handler.
-🐛 Pipeline loop router hallucination handling in reviewer context (BUG_034).
+🐛 Pipeline loop router hallucination handling in reviewer context (BUG\_034).
 🐛 Reasoning effort handling corrected for unsupported providers in internal operations.
 📅 June 24, 2026 — Version 1.0.66
 🆕 TTL cache for document list queries — reused cached store in the orchestrator/tool executor.
@@ -435,7 +505,7 @@
 🔄 Model wizard treeview fix — switched to a grid layout to eliminate text bleeding between listview and scrollbar.
 🔄 Health dashboard diagnostics — added logging for cache path resolution and model count.
 🔄 Exception fallback — cache info now falls back to a filesystem scan on any exception.
-🐛 Vision button stuck cursor fix (BUG_061) — area selector deadlock resolved on Windows.
+🐛 Vision button stuck cursor fix (BUG\_061) — area selector deadlock resolved on Windows.
 🐛 Defensive None guard — thinking stripping handles raw response strings without a TypeError.
 🐛 UnboundLocalError fix — removed a redundant import from a recovery builder.
 🐛 Anti-thinking prefix — missing injection and model resolution bugs fixed in the file grouping orchestrator.
@@ -721,7 +791,7 @@
 🐛 Tool call source path fix.
 🐛 Chat window rendering fix.
 📅 April 9, 2026 — Version 1.0.24
-🆕 Vision support in chat & RAG.
+🆕 Vision support in chat \& RAG.
 🐛 Intent engine fix.
 🐛 Tool call graceful fallback fix.
 🐛 Model Manager auto-discovery fix.
@@ -752,10 +822,10 @@
 🆕 MCP Manager — visual interface for managing MCP servers. Enable/disable, configure, and monitor servers without editing config files.
 🆕 Gmail MCP server — full agentic Gmail control: list, get, send, label, trash, and archive emails. Archive command saves emails in 3 formats (JSON, EML, MBOX) — perfect for backups.
 🧠 4-tier memory improvements — profile-first retrieval (61% token savings), conversation compaction (93% token reduction), auto-extraction from conversations.
-🔀 Intelligent Router & Intent Engine — smart tool call routing, intent classification (memory search, tool call, document query), max 3 tool calls per request (loop prevention).
+🔀 Intelligent Router \& Intent Engine — smart tool call routing, intent classification (memory search, tool call, document query), max 3 tool calls per request (loop prevention).
 💬 Chat history awareness — the agent remembers from your last conversation. Prompts augmented with semantic memories + episodic summaries.
 📊 Live session stats — real-time token usage, tokens/sec, and time-to-first-token in the chat window. Monitor AI performance: input/output tokens, prompt tokens, response speed. (Lemonade backend only)
-🐛 4-tier memory & RAG improvements.
+🐛 4-tier memory \& RAG improvements.
 🐛 MCP server tool calls fix.
 🐛 Chat engine stability fix.
 📅 March 31, 2026 — Version 1.0.17
@@ -777,55 +847,56 @@ Bugfix: sdk import
 Bugfix: chat history
 📅 March 24, 2026 — Version 1.0.11
 🆕 Mermaid diagram loading indicator — thread-safe implementation.
+
 * Thread-safe loading label updates via the safe queue
 * Timeouts for diagram rendering (90s and 120s)
 * Fix 'main thread is not in main loop' errors
-📅 March 22, 2026 — Version 1.0.10
-💬 Chat history: all your past conversations in a sidebar. Search, reload, delete. Nothing gets lost.
-🧠 Memory that stacks: short-term, summaries, long-term (personas, facts, preferences), and document search. Each layer builds on the last.
-☁️ Google Gemini support: add your API key and it works, including free tier models.
-🔍 Works without AI hardware: document search falls back to text-based retrieval if no NPU is available. 15+ languages for document retrieval, auto-detected.
-⚡ RAG opens 40x faster: startup went from 4s to under 0.1s.
-🗃️ All data stored in a single private data folder. Existing installs migrate automatically.
-📅 March 16, 2026 — Version 1.0.9
-• Major: AI core completely rewritten: now powered by Pith SDK
-• Scalable batch processing: handles thousands of items (no single-prompt limits)
-• Smart prompt tiers optimized for 1B, 8B, and 30B models
-• Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization
-• Major: Externalized Llama.cpp with automatic download & caching
-• Major: Much smaller binary
-• Internal: Core engine refactored for improved stability
-• Bugfix: UI buttons rebuilt and refreshed for a cleaner experience
-• Bugfix: Context Menu rebuilt and cleaned up
-• Bugfix: Grid-points
-• Bugfix: Model Manager select and activate model
-• Bugfix: Splash screen freeze
-• Bugfix: ssl certificate
-• Bugfix: batch size
-📅 March 09, 2026 — Version 1.0.8
-• minor UI/UX update
-• minor core engine update (bugfixes, stability, architecture)
-• smaller binary
-📅 February 18, 2026 — Version 1.0.7
-• Bugfix About Window version display
-• Update Model Manager created time to local time
-• Update extra Full-Reorganize button in the main window to organize from start
-• Update Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk
-📅 February 14, 2026 — Version 1.0.6
-• Bugfix Model Manager on-prem and cloud model activation
-📅 February 5, 2026 — Version 1.0.5
-• Bugfix built-in models
-📅 February 2, 2026 — Version 1.0.4
-• Significant performance enhancement for organizing large folder structures using new iterative algorithms
-• New built-in MCP server for file operations:
-* read_file: Read file contents with intelligent limits
-* read_file_from_line: Read specific file ranges for pagination
-* write_file: Write content to files
-* list_directory: List directory contents
-* create_directory: Create directories
-* move_file: Move or rename files/directories
-* search_files: Search for files in directories
-* get_file_info: Get information about files/directories
-* edit_file: Edit files with specific changes
-* get_filesystem_info: Get server configuration and capabilities
+  📅 March 22, 2026 — Version 1.0.10
+  💬 Chat history: all your past conversations in a sidebar. Search, reload, delete. Nothing gets lost.
+  🧠 Memory that stacks: short-term, summaries, long-term (personas, facts, preferences), and document search. Each layer builds on the last.
+  ☁️ Google Gemini support: add your API key and it works, including free tier models.
+  🔍 Works without AI hardware: document search falls back to text-based retrieval if no NPU is available. 15+ languages for document retrieval, auto-detected.
+  ⚡ RAG opens 40x faster: startup went from 4s to under 0.1s.
+  🗃️ All data stored in a single private data folder. Existing installs migrate automatically.
+  📅 March 16, 2026 — Version 1.0.9
+  • Major: AI core completely rewritten: now powered by Pith SDK
+  • Scalable batch processing: handles thousands of items (no single-prompt limits)
+  • Smart prompt tiers optimized for 1B, 8B, and 30B models
+  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping \& categorization
+  • Major: Externalized Llama.cpp with automatic download \& caching
+  • Major: Much smaller binary
+  • Internal: Core engine refactored for improved stability
+  • Bugfix: UI buttons rebuilt and refreshed for a cleaner experience
+  • Bugfix: Context Menu rebuilt and cleaned up
+  • Bugfix: Grid-points
+  • Bugfix: Model Manager select and activate model
+  • Bugfix: Splash screen freeze
+  • Bugfix: ssl certificate
+  • Bugfix: batch size
+  📅 March 09, 2026 — Version 1.0.8
+  • minor UI/UX update
+  • minor core engine update (bugfixes, stability, architecture)
+  • smaller binary
+  📅 February 18, 2026 — Version 1.0.7
+  • Bugfix About Window version display
+  • Update Model Manager created time to local time
+  • Update extra Full-Reorganize button in the main window to organize from start
+  • Update Lemonade integration with Lemonade-Python-SDK: https://github.com/Tetramatrix/lemonade-python-sdk
+  📅 February 14, 2026 — Version 1.0.6
+  • Bugfix Model Manager on-prem and cloud model activation
+  📅 February 5, 2026 — Version 1.0.5
+  • Bugfix built-in models
+  📅 February 2, 2026 — Version 1.0.4
+  • Significant performance enhancement for organizing large folder structures using new iterative algorithms
+  • New built-in MCP server for file operations:
+* read\_file: Read file contents with intelligent limits
+* read\_file\_from\_line: Read specific file ranges for pagination
+* write\_file: Write content to files
+* list\_directory: List directory contents
+* create\_directory: Create directories
+* move\_file: Move or rename files/directories
+* search\_files: Search for files in directories
+* get\_file\_info: Get information about files/directories
+* edit\_file: Edit files with specific changes
+* get\_filesystem\_info: Get server configuration and capabilities
 * Other minor bugfixes
