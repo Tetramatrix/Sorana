@@ -1,4 +1,23 @@
 📋 Changelog 📋
+📅 11.08.26 - Version 1.0.81
+🆕 Faster, stabler chat windows — reopening the same agent's chat now reuses its live session instead of rebuilding it from scratch on every open: windows open quickly, the conversation context is preserved, and the session is cleanly released when the last chat window closes; a session is never shared between two open windows at the same time.
+🆕 Health Dashboard upgrades — the card grid is now responsive to window size, data loads in the background so the window no longer stalls, and the grid rebuilds itself automatically if a load fails; a new system database care area shows the database size with a guided cleanup wizard.
+🆕 Linux and WSL display fixes — icons and emoji now render as clean monochrome glyphs instead of empty boxes, UI fonts resolve correctly across all windows, the workspace tab toolbar is restored, and chat control and model capability labels are readable again.
+🆕 Multi-monitor and window positioning — window geometry is hardened on Windows and Linux multi-monitor setups, the WSLg window now reliably becomes visible at startup, the splash screen centers correctly (including under WSL), off-screen window positions are corrected, and splash icons fall back to SVG when the regular assets are unavailable.
+🆕 Renaming a chat or group is now instant — the dialog opens with the input field already focused and the current name pre-selected, so you can type the new name right away.
+🔄 Memory improvements — copy-pasted life summaries (jobs, companies, skills) are saved to memory again, and the app now always shows in the agent trace when memories are being stored, with a careful review pass for ambiguous content.
+
+🔄 Shared configuration across chat windows — chats opened from different entry points now share the same configuration and model manager, so model choices and settings stay consistent across the app.
+🔄 Agent setup reliability — errors during agent creation are now reported instead of silently swallowed, and custom Code Explorer budgets are preserved when the agent creator is reopened.
+🔄 Built-in agent cleanup — database compaction actions that do not apply to the built-in agent are now hidden in the Health Dashboard.
+🐛 Opening a chat window could crash in some configurations; chat windows now open reliably in all cases.
+🐛 Reopening a chat could crash on a second open; the reopen path is now stable.
+🐛 Prompt assignments saved from the Health Dashboard were silently lost; they are saved correctly now.
+🐛 The system tray show/hide of the preview window could target a stale window; it now targets the live one.
+🐛 Six rare crashes caused by missing imports across utility modules were fixed.
+🐛 Drafting a CV and cover letter from your documents no longer misfires when the pasted job description contains technical wording — the right documents are now always loaded and used.
+🐛 A dialog could open as a tiny sliver after an interrupted session; window sizes are now always restored and saved at a usable minimum.
+
 📅 10.08.26 - Version 1.0.80
 🆕 Path validation and normalization — symbolic links, trailing slashes, case differences, and short names are resolved consistently; browser-mode detection is fixed in agent utilities and the agent tools dialog; tool arguments are validated before dispatch with clear error status; web tools gained URL-safety hardening.
 🆕 Linux and WSL experience — XDG configuration support, WSL model discovery with Windows API keys, idempotent provisioning, Linux download paths and buttons, tesseract and system file manager integration, platform-correct update links, MCP credentials in the correct Linux directory, Vulkan GPU offload helper, and hardened AMD GPU detection.
