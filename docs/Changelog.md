@@ -1,4 +1,25 @@
 📋 Changelog 📋
+📅 12.08.26 — Version 1.0.82
+🆕 Model Manager: a fourth model role — Vision — is here. The old blunt "vision model" toggle (which switched vision on without ever testing the model) is replaced by a dedicated **Vision** role you assign per model, exactly like the Primary, Quick and Embed roles. Assignment is capability-gated: it unlocks only after the Test-capabilities check confirms the model can actually see images.
+🆕 The Vision buttons (screenshot in chat, upload in the document manager) use the assigned Vision model, and fall back to your primary model only when that model is itself vision-capable.
+🆕 Model capability probing now also tests embeddings — the Test-capabilities check includes an embedding probe, so you can verify a model's embedding support before assigning it.
+🔄 Assigning the Embed role is now capability-gated too — only models confirmed (by probe or by name) to support embeddings can be assigned, so you can't bind a chat-only model to vector search by accident.
+🔄 The Model Manager status column now shows all roles a model holds — for example "Primary + Vision" or all four roles together — each with its own color highlight, so multi-role models are easy to spot at a glance.
+🔄 Dual-pane model window — embedding models (Lemonade on-prem) are now activated from a right-click menu ("Assign to Embed") instead of double-click, which previously fought with the collapse/expand gesture, flickered the list and could hide the active model.
+🐛 Assigning an on-prem embedding model from the model window no longer fails silently — the Embed role is now actually saved, so the selected embedding model stays active after restart.
+🆕 Chat window polish — the agent button now shows the active agent's name (with a tooltip when it is truncated) and sits at the far left of the status bar; the workspace button shows the full folder path on hover; and the Upload button moved into the memories window to free up space.
+🐛 Folder scan and database cleanup in the document manager now behave correctly for the built-in agent (respecting the workspace folder; hiding the non-applicable Compact Database action).
+🐛 Vision messages in the chat log now render with the same styled, colored prefix as the other prompt types instead of plain smaller text.
+🆕 New cloud model provider — Tabitoken is now available as an OpenAI-compatible backend, so you can connect additional cloud models straight from the Model Manager.
+🆕 Agent and chat pipeline documentation — the end-to-end architecture, component overview, and design rationale are now documented.
+🐛 Switching to an existing chat could leave the assistant with no memory of the conversation even though every message was visible; the full chat history is now always restored into the model context.
+🐛 Conversations with missing timestamps could be read back in the wrong order, making the assistant treat older messages as the newest; chat history is now always ordered correctly.
+🐛 The Vision control could stay gray and the screenshot-region selector would not open even for vision-capable models; the indicator now lights up correctly, region selection opens reliably, and vision requests are sent to the right model and backend.
+🔄 Memory extraction is more precise — when a message contains several facts, each one is now preserved instead of only part of the message, and duplicate memories are avoided; memory timestamps are handled reliably so saved memories stay accurate and in order.
+🔄 Language support is more robust — fallback behavior is centralized and language coverage is formally defined, so the interface degrades gracefully when a language is not fully supported.
+🔄 Developer tooling — heuristic ownership is now governed by an automated audit and a documented guide, keeping behavior decisions consistent across the codebase.
+🧪 Regression coverage added for vision capability detection and the screen-selection lifecycle.
+
 📅 11.08.26 - Version 1.0.81
 🆕 Faster, stabler chat windows — reopening the same agent's chat now reuses its live session instead of rebuilding it from scratch on every open: windows open quickly, the conversation context is preserved, and the session is cleanly released when the last chat window closes; a session is never shared between two open windows at the same time.
 🆕 Health Dashboard upgrades — the card grid is now responsive to window size, data loads in the background so the window no longer stalls, and the grid rebuilds itself automatically if a load fails; a new system database care area shows the database size with a guided cleanup wizard.
