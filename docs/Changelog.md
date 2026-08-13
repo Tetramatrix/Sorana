@@ -1,4 +1,17 @@
 📋 Changelog 📋
+📅 13.08.26 - Version 1.0.83
+🆕 Live thinking streaming — the "Thinking Process:" block now fills in while the model reasons, with a live token counter and elapsed-time indicator, instead of appearing only after the answer completes.
+🆕 Streamed thinking is saved with the message, so reopening a conversation from history shows the thinking block exactly as it happened.
+🆕 Thinking is now captured correctly for more model providers — DeepSeek, OpenAI, Anthropic, Gemini, Grok and MiniMax reasoning fields are recognized in both streaming and non-streaming responses, including structured reasoning blocks.
+🔄 The "show thinking" toggle in the Model Manager is now honored reliably — thinking appears whenever the active model's setting is on, and the check uses the same model the request was actually sent with.
+🐛 Mixed document + web requests ("apply to this job and research the company") no longer lose the document evidence or expose internal reasoning in the answer.
+🐛 An explicit "research X on the web" request can no longer be hijacked by an older learned preference — it always performs the actual search with the correct query (dotted names like pst.ag are preserved).
+🐛 Mixed research no longer ends with an empty answer or a repeated page URL — web results are evaluated before synthesis and remaining evidence steps complete.
+🐛 Unrelated proactive context is no longer injected — Calendar events, Gmail messages and recent files were prefetched into every request; context is now limited to what the request actually uses.
+🔄 Research answers now show where claims come from — the source footer distinguishes web, file, Gmail and Calendar sources from documents, and company/financial figures carry "verified / reported / estimated / unknown" labels instead of being stated as fact.
+🔄 Linux/WSL build setup now remembers your compile choices between sessions.
+🧪 Regression coverage added for thinking streaming, the show-thinking toggle, and mixed document/web routing.
+
 📅 12.08.26 — Version 1.0.82
 🆕 Model Manager: a fourth model role — Vision — is here. The old blunt "vision model" toggle (which switched vision on without ever testing the model) is replaced by a dedicated **Vision** role you assign per model, exactly like the Primary, Quick and Embed roles. Assignment is capability-gated: it unlocks only after the Test-capabilities check confirms the model can actually see images.
 🆕 The Vision buttons (screenshot in chat, upload in the document manager) use the assigned Vision model, and fall back to your primary model only when that model is itself vision-capable.
