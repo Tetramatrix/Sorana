@@ -1,4 +1,27 @@
 📋 Changelog 📋
+📅 15.08.26 - Version 1.0.84
+🆕 New free cloud provider — FreeRouter is now available in the Model Manager: a completely free OpenAI-compatible API (no credit card, no quotas) that includes the latest Qwen 3.8 Max model. Great for testing and getting started at zero cost.
+🆕 Risky actions ask first — sending email, writing to your calendar, or running external tools now pauses for your explicit approval before executing, and pending approvals survive app restarts.
+🆕 Duplicate-safe tool calls — a retried or replayed action can never run twice; every execution carries a durable identity that survives restarts, so interrupted runs recover cleanly instead of double-sending.
+🆕 Failed runs clean up after themselves — external actions with an unclear outcome (a timeout where the service may have applied the change) are checked automatically in the background, and approved rollbacks (like deleting a file a failed run created) are executed and logged.
+🆕 Background safety workers — reconciliation and compensation checks now run on their own schedules inside the app, no manual trigger needed.
+🆕 Browser tools actually work — the browser session tools (get tabs, save/load sessions, update groups, delete sessions) run against the live browser instead of reporting "not implemented".
+🆕 Automatic token refresh — access tokens are refreshed 30 seconds before expiry in the background, so authenticated sessions are no longer cut off by an expiring token.
+🔄 One control plane for every path — legacy and main chat tool execution now share the same validation, approval, duplicate-protection, journaling and tracing, so no route can bypass the safety rules.
+🔄 Recovery is storm-proof — after a failure only one recovery probe is allowed per agent at a time, so a flaky provider can no longer trigger a flood of parallel retries.
+🔄 Review is stricter — a confused reviewer response ("I see no upstream output") now triggers a review retry instead of auto-approving the draft; repeated confusion fails the workflow cleanly instead of passing unapproved output as success.
+🔄 Saved API keys now actually work — keys entered in the setup wizard or Model Manager are used for requests; environment variables still take priority and placeholder text ("YOUR_KEY_HERE") is never sent as a real credential.
+🔄 Provider settings are never silently lost — saving configuration can no longer quietly drop a provider block (FreeRouter, Anthropic); the app fails loudly instead of erasing it.
+🔄 Reconciliation results land on the original run — background outcomes (reconciled / compensated / needs manual review) are written back to the archived trace, and old traces are evicted automatically to keep history bounded.
+🔄 Chat sessions stay isolated — one chat's state can no longer leak into another chat's turn.
+🔄 Document manager consistency — Manage Documents shows the full workspace store again, including system-synced documents after an agent is recreated.
+🔄 Long code-research turns keep results compact — codebase search results are compressed consistently, including symbol search.
+🔄 Gmail and Calendar expiry checks are unified — an expired token is no longer treated as valid on some paths while others refresh correctly.
+🔄 Cold on-premise models are tolerated — embedding models (Lemonade) that take time to load no longer time out in the app.
+🔄 Greeting briefings are back — the greeting again triggers the daily briefing.
+🔄 RAG searches degrade gracefully when the index is stale or memory extraction fails.
+🧪 Regression coverage added for approval gating, duplicate-safe execution, circuit-breaker single-flight, workflow review retries, config-save integrity and the FreeRouter provider.
+
 📅 13.08.26 - Version 1.0.83
 🆕 Live thinking streaming — the "Thinking Process:" block now fills in while the model reasons, with a live token counter and elapsed-time indicator, instead of appearing only after the answer completes.
 🆕 Streamed thinking is saved with the message, so reopening a conversation from history shows the thinking block exactly as it happened.
