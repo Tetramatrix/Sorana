@@ -150,14 +150,14 @@
   <div class="hero-eyebrow-row">
     <div class="hero-eyebrow">
       <span class="badge-dot" style="background:var(--color-primary)"></span>
-      Personal AI Workspace / PKM
+      Autonomous AI Agent &middot; Personal Workspace
     </div>
     <span class="version-pill" id="versionPill" title="Current Sorana version">v1.0.79</span>
   </div>
   <h1>One tool.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
-    Sorana is your personal AI knowledge workspace. A second brain that remembers your projects,
-    learns your working style, and finds any file or note instantly.
+    Sorana is your autonomous AI assistant. A goal-driven agent that plans multi-step work, acts across your files, web, email, and calendar,
+    and never forgets a project, preference, or decision.
   </p>
   <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 auto var(--space-8);max-width:520px;">
     Runs from a USB stick. No install, no account, no cloud sync.<br>Available for Windows and Linux.
@@ -218,7 +218,7 @@
     <div class="step">
       <div class="step-number">1</div>
       <h3>Connect a model</h3>
-      <p>Use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio. No subscription needed.</p>
+      <p>Use a free cloud model with your own API key &mdash; FreeRouter's free API or OpenRouter's free-tier are zero-cost starts &mdash; or run local models through Lemonade, Ollama, or LM Studio. No subscription needed.</p>
     </div>
     <div class="step-arrow">→</div>
     <div class="step">
@@ -380,8 +380,8 @@
           <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
         </svg>
       </div>
-      <h3>An AI that thinks things through</h3>
-      <p>Give Sorana a big request and it breaks the work into manageable steps and gathers the relevant information. If something is unclear, it asks instead of guessing—so you can move from a complicated question to a useful answer more easily.</p>
+      <h3>Plans. Acts. Delivers.</h3>
+      <p>Give Sorana a goal and it plans the multi-step work, uses its tools across your files, web, email, and calendar, and checks the result before answering. When an action touches the outside world, it pauses for your approval first &mdash; so you stay in control while the work gets done.</p>
     </div><div class="feature-card large formatted-chat-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -643,7 +643,7 @@
 <section class="section" id="chat-examples">
   <div class="section-header">
     <h2>See what you can <em>ask Sorana.</em></h2>
-    <p>Your AI connects research, memory, files, email, and calendar. One question can span them all.</p>
+    <p>Your AI connects research, memory, files, email, and calendar &mdash; and acts on them. One request can plan, execute, and verify multi-step work across all of them.</p>
   </div>
   <div class="examples-grid">
     <div class="example-card">
@@ -762,6 +762,7 @@
       <tr><td>See how answers are built</td><td class="win">Follow what Sorana searched, found, and used to reach an answer.</td><td>No AI agent transparency</td><td>No agent tracing available</td></tr>
       <tr><td>Portable</td><td class="win">Runs from a USB stick</td><td>App install required</td><td>Cloud / web only</td></tr>
       <tr><td>AI takes action</td><td class="win">Built-in automation on files, web, email</td><td>View &amp; edit only</td><td>Paid connectors with separate setup</td></tr>
+      <tr><td>Goal-driven autonomy</td><td class="win">Plans multi-step work, executes it with 70+ tools, and verifies results before answering</td><td>No autonomous agent</td><td>Agent mode / workflows (paid)</td></tr>
       <tr><td>Visual knowledge canvas</td><td class="win">AI-organised 2D canvas</td><td>Manual (Obsidian Canvas)</td><td>Chat only</td></tr>
       <tr><td>Chat with documents</td><td class="win">Search across your whole workspace</td><td>Plugin required</td><td>Project uploads + per-session</td></tr>
       <tr><td>Image OCR &amp; Vision AI</td><td class="win">Built-in OCR + AI fallback</td><td>External tools required</td><td>Cloud-only vision</td></tr>
@@ -769,7 +770,7 @@
       <tr><td>Calendar &amp; Scheduling</td><td class="win">Manage via chat</td><td>View-only plugins</td><td>Connector (paid)</td></tr>
       <tr><td>AI remembers you</td><td class="win">Remembers your projects and preferences</td><td>Manual notes only</td><td>Basic free notes only; full memory paid</td></tr>
       <tr><td>Stays useful over months</td><td class="win">Keeps the important context</td><td>No AI context</td><td>Varies by service</td></tr>
-      <tr><td>Cost</td><td class="win">$0 — use free-tier OpenRouter APIs or local models (your call)</td><td>Free + paid tiers</td><td>$20/mo for GPT-4 / Claude<sup><a href="#cost-note" style="color:inherit;text-decoration:none;">*</a></sup></td></tr>
+      <tr><td>Cost</td><td class="win">$0 — FreeRouter free API, free-tier OpenRouter, or local models (your call)</td><td>Free + paid tiers</td><td>$20/mo for GPT-4 / Claude<sup><a href="#cost-note" style="color:inherit;text-decoration:none;">*</a></sup></td></tr>
     </tbody>
   </table>
   <p id="cost-note" style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">*Publicly disclosed approximate cost as of July 2026; Sorana lets you use those same models without subscription if you already have API credits, or swap in free-tier and local models instead.</p>
@@ -932,6 +933,10 @@
       <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M4 8h8" stroke="#8a8f98" stroke-width="1.5"/></svg>
       BadTheoryLabs
     </div>
+    <a class="provider-chip" href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="12" r="1.6" fill="#8a8f98"/><path d="M5.2 9.4a4 4 0 0 1 5.6 0" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M2.8 7a7.4 7.4 0 0 1 10.4 0" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      FreeRouter
+    </a>
     <div class="provider-chip">
       <img src="https://cdn.simpleicons.org/huggingface/8a8f98" class="icon" alt="" aria-hidden="true">
       HuggingFace
@@ -962,7 +967,12 @@
   </div>
 </section>
 
+<div style="text-align:center;margin:var(--space-8) auto 0;max-width:720px;">
+  <span class="badge free" style="margin-right:var(--space-2);"><span class="badge-dot"></span>New &middot; FreeRouter &mdash; 100% free API</span>
+  <span style="font-size:var(--text-sm);color:var(--color-text-muted);">One model (<strong>qwen3.8-max</strong>), zero cost, no subscription &mdash; the perfect first model for testing Sorana's autonomous agents. <a href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer" style="color:var(--color-free);">Get a free API key &rarr;</a></span>
+</div>
 <!-- MODEL PREVIEW -->
+
 <section class="model-preview" id="models">
   <div class="model-preview-inner">
     <div class="section-header" style="margin-bottom: var(--space-8);">
@@ -1001,6 +1011,12 @@
         <span class="model-tag free">FREE</span>
       </div>
       <div class="model-row">
+        <span class="model-provider">FreeRouter</span>
+        <span class="model-name">qwen3.8-max</span>
+        <span class="model-desc">Qwen 3.8B Max via the free FreeRouter API — zero cost, no subscription</span>
+        <span class="model-tag free">FREE</span>
+      </div>
+      <div class="model-row">
         <span class="model-provider">Lemonade (Local)</span>
         <span class="model-name">Qwen3.6-35B-A3B-UD-IQ2_M</span>
         <span class="model-desc">Local on-premise quantized model</span>
@@ -1023,7 +1039,7 @@
     </div>
     <div class="setup-card">
       <h3>Choose a model</h3>
-      <p>Use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio.</p>
+      <p>Use a free cloud model with your own API key &mdash; including FreeRouter's 100% free API &mdash; or run local models through Lemonade, Ollama, or LM Studio.</p>
     </div>
     <div class="setup-card">
       <h3>Start working</h3>
@@ -1196,7 +1212,7 @@
   <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:760px;margin:0 auto;">
     <details class="faq-item">
       <summary>Does Sorana cost anything?</summary>
-      <p>The app itself is free to download and use. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio.</p>
+      <p>The app itself is free to download and use. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio &mdash; or start for $0 with FreeRouter's free API (no subscription, no credits).</p>
     </details>
     <details class="faq-item">
       <summary>Does my data leave my machine?</summary>
@@ -1208,7 +1224,11 @@
     </details>
     <details class="faq-item">
       <summary>What models are supported?</summary>
-      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, and Alibaba. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and the free FreeRouter API. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is Sorana really an autonomous AI agent?</summary>
+      <p>Yes. Give Sorana a goal and it plans the steps, picks the right tools, and works through them on its own &mdash; searching and reading your files, browsing the web, managing email and calendar, and checking its own output before it answers. It stays in control the whole time: risky external actions pause for your approval, every step is traceable, and nothing leaves your machine unless you connect a provider.</p>
     </details>
     <details class="faq-item">
       <summary>What happens to long conversations?</summary>
