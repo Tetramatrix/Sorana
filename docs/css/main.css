@@ -1176,6 +1176,50 @@ nav.scrolled {
   color: var(--color-text-muted);
   margin-bottom: var(--space-3);
 }
+
+/* ── FreeRouter hero CTA (zero-cost start) ── */
+.freerouter-cta {
+  display: inline-flex; align-items: center; gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, rgba(74,222,128,0.18), rgba(62,207,178,0.14));
+  border: 1px solid rgba(74,222,128,0.55);
+  box-shadow: 0 0 24px rgba(74,222,128,0.16), inset 0 0 14px rgba(74,222,128,0.05);
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  transition: transform 160ms, box-shadow 160ms, border-color 160ms;
+}
+.freerouter-cta:hover {
+  transform: translateY(-1px);
+  border-color: rgba(74,222,128,0.85);
+  box-shadow: 0 0 36px rgba(74,222,128,0.30), inset 0 0 14px rgba(74,222,128,0.08);
+}
+.freerouter-cta .fr-free-chip {
+  background: var(--color-free);
+  color: #0e0f11;
+  border: none;
+  padding: 3px 10px;
+  font-weight: 700;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.freerouter-cta .fr-key-btn {
+  background: var(--color-free);
+  color: #0e0f11;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+.freerouter-cta .fr-provider { color: var(--color-free); font-weight: 700; }
+@media (prefers-reduced-motion: reduce) {
+  .freerouter-cta { transition: none; }
+  .freerouter-cta:hover { transform: none; }
+}
 .providers-sub-label + .providers-grid { margin-bottom: var(--space-8); }
 .providers-grid + .providers-sub-label { margin-top: var(--space-10); }
 
