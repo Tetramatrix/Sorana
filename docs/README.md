@@ -1,6 +1,8 @@
 # Sorana: Your Autonomous AI Assistant
 
 > A goal-driven agent that plans multi-step work, acts across your files, web, email, and calendar — and never forgets a project, preference, or decision.
+>
+> **Start for $0** — pair Sorana with FreeRouter's 100% free API (one model, no subscription) and put the autonomous agent to work before adding anything else.
 
 ---
 
