@@ -1252,6 +1252,17 @@ nav.scrolled {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
 }
+.fr-ltd-note .fr-check {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--color-free);
+  color: #0e0f11;
+  font-size: 11px;
+  font-weight: 800;
+  margin-right: 6px;
+  vertical-align: -3px;
+}
 .fr-ltd-note strong {
   color: var(--color-free);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
