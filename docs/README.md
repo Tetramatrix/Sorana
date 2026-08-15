@@ -1,12 +1,12 @@
-# Sorana: Your Personal AI That Actually Knows You
+# Sorana: Your Autonomous AI Assistant
 
-> A second brain that remembers your projects, learns your working style, and finds any file or note instantly.
+> A goal-driven agent that plans multi-step work, acts across your files, web, email, and calendar — and never forgets a project, preference, or decision.
 
 ---
 
 ## What Is Sorana?
 
-Sorana is your personal AI knowledge workspace for Windows and Linux. Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
+Sorana is your autonomous AI assistant for Windows and Linux — a goal-driven agent that plans multi-step work, executes it with tools across your files, web, email, and calendar, and reviews its output before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals. Unlike chatbots that forget you the moment you close the window, it builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
 
 Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.
 
@@ -35,7 +35,7 @@ Most AI answers one question and stops. Sorana plans, researches, checks its wor
 - Multi-step planning for complex questions
 - Parallel searches, file reads, and web fetches
 - Self-review and automatic fallback strategies
-- Double checks every answer before you see it
+- Reviews its own output before answering
 
 ### You re-explain yourself every day
 Sorana quietly learns from every conversation, project, and preference. Next time you open it, you pick up exactly where you left off.
@@ -47,7 +47,7 @@ Sorana quietly learns from every conversation, project, and preference. Next tim
 ### Your AI talks but can't act
 Tell Sorana what to do in plain language. It organizes files, fetches web content, and manages Gmail and Google Calendar, all from one conversation.
 
-- Visual manager for Google Drive, GitHub, Gmail
+- Connect Google Drive, GitHub, Gmail — read, write, search, and manage from chat
 - Read, write, move, search, edit via chat
 - Web fetch, scrape, search, and extract
 
@@ -214,6 +214,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Agent Trace & Debug | Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. | No AI agent transparency | No agent tracing available |
 | Portable | Runs from a USB stick | App install required | Cloud / web only |
 | AI takes action | Built-in automation on files, web, email | View & edit only | Paid connectors with separate setup |
+| Goal-driven autonomy | Plans multi-step work, executes it with 70+ tools, and reviews results before answering | No autonomous agent | Agent mode / workflows (paid) |
 | Visual knowledge canvas | AI-organised 2D canvas | Manual (Obsidian Canvas) | Chat only |
 | Chat with documents | Workspace-wide RAG indexing | Plugin required | Project uploads + per-session |
 | Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
@@ -221,7 +222,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Calendar & Scheduling | Manage via chat | View-only plugins | Connector (paid) |
 | AI remembers you | Automatic memory across sessions, all categories free | Manual notes only | Basic free notes only; full memory paid |
 | Stays fast over months | Auto-compaction | No AI context | Varies (Claude yes, others no) |
-| Cost | Free app + your API keys (or free local) | Free + paid tiers | $8-200/month included |
+| Cost | Free app + FreeRouter free API or your API keys (or free local) | Free + paid tiers | $8-200/month included |
 
 ---
 
@@ -229,7 +230,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) or [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana)
 2. **Run** anywhere — desktop, USB, external drive
-3. **Choose a model** — use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio
+3. **Choose a model** — use a free cloud model with your own API key (FreeRouter's free API or OpenRouter's free-tier cost nothing), or run local models through Lemonade, Ollama, or LM Studio
 4. **Start working** — add your files, chat with documents, and let Sorana remember your projects and preferences
 
 **Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)  
@@ -249,10 +250,10 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 ### AI Model Options
 - **Built-in model** (~806 MB), works fully offline out of the box
 - **Recommended**: Llama 3.1 8B Instruct or higher for best results (requires 8 GB RAM / 4 GB VRAM)
-- **Cloud**: OpenAI, Mistral, Gemini, DeepSeek, NVIDIA, OpenRouter (free tiers available), no local hardware required
+- **Cloud**: OpenAI, Mistral, Gemini, DeepSeek, NVIDIA, OpenRouter (free tiers available), FreeRouter (100% free API), no local hardware required
 - **Local servers**: Lemonade (NPU acceleration), Ollama, LM Studio, Llama.cpp
 
-**30+ free cloud models** from every major provider. Just add your API key.
+**30+ free cloud models** from every major provider — plus FreeRouter's 100% free API. Just add your API key.
 
 ---
 
@@ -311,7 +312,7 @@ Sorana is designed to make AI conversations useful, readable, and easy to contin
 - **Clear, easy-to-scan answers** — important details stand out instead of getting lost in a wall of text. Comparisons can be presented as clean, readable tables.
 - **Context that stays with your work** — Sorana remembers relevant facts, preferences, and project details, so you spend less time repeating yourself.
 - **Chat with your files** — ask questions about PDFs, documents, scans, and images in plain language. Sorana finds the useful information inside your archive.
-- **Helpful actions from one conversation** — find files, work with email, and handle connected tasks while you stay in control.
+- **Goal-driven execution from one conversation** — give Sorana a goal and it plans and works through it across your files, email, and calendar while you stay in control.
 - **Long conversations stay on track** — older parts are quietly condensed while important details remain available, keeping long-running projects easier to continue.
 - **Workflows for bigger tasks** — break complex work into connected steps, using a ready-made template or creating your own.
 - **A clearer view of the work** — when available, follow what Sorana searched, found, and used to build an answer, so you can better understand and guide the result.
@@ -320,4 +321,4 @@ Formatted responses can include headings, emphasis, links, and comparison tables
 
 ---
 
-Developed by **Tetramatrix** | Your personal AI knowledge workspace | Free and portable
+Developed by **Tetramatrix** | Your autonomous AI assistant | Free and portable
