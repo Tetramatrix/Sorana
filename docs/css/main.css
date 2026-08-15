@@ -1196,26 +1196,6 @@ nav.scrolled {
   border-color: rgba(74,222,128,0.8);
   box-shadow: 0 0 48px rgba(74,222,128,0.32), inset 0 0 20px rgba(74,222,128,0.07);
 }
-/* Top row: free chip + reassurance. */
-.freerouter-cta .fr-top {
-  display: flex; align-items: center; gap: var(--space-2);
-}
-.freerouter-cta .fr-free-chip {
-  background: var(--color-free);
-  color: #0e0f11;
-  border: none;
-  padding: 3px 10px;
-  font-weight: 700;
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.freerouter-cta .fr-no-sub {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  font-weight: 500;
-  white-space: nowrap;
-}
 /* Hero: the model name. */
 .freerouter-cta .fr-model {
   display: inline-flex; align-items: center; gap: 8px;
