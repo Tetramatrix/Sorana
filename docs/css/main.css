@@ -24,6 +24,10 @@
   --color-local:          #f59e0b;
   --color-local-dim:      rgba(245,158,11,0.12);
 
+  --color-freerouter:      #60a5fa;
+  --color-freerouter-dim:  rgba(96,165,250,0.12);
+  --color-freerouter-glow: rgba(96,165,250,0.06);
+
   --font-display: 'Instrument Serif', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
 
@@ -63,6 +67,10 @@
   --color-cloud-dim:      rgba(37,99,235,0.1);
   --color-local:          #d97706;
   --color-local-dim:      rgba(217,119,6,0.1);
+
+  --color-freerouter:      #2563eb;
+  --color-freerouter-dim:  rgba(37,99,235,0.1);
+  --color-freerouter-glow: rgba(37,99,235,0.05);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1179,98 +1187,101 @@ nav.scrolled {
 
 /* ── FreeRouter hero CTA (zero-cost start) ── */
 .freerouter-cta {
-  display: inline-flex; align-items: center; gap: var(--space-3);
-  padding: var(--space-2) var(--space-3);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
   border-radius: var(--radius-full);
-  background: linear-gradient(135deg, rgba(74,222,128,0.20), rgba(62,207,178,0.16), rgba(96,165,250,0.12));
-  border: 1px solid rgba(74,222,128,0.55);
-  box-shadow:
-    0 0 26px rgba(74,222,128,0.18),
-    0 0 18px rgba(96,165,250,0.10),
-    inset 0 0 14px rgba(74,222,128,0.05);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
   text-decoration: none;
   color: var(--color-text);
   font-size: var(--text-sm);
-  font-weight: 600;
-  transition: transform 160ms, box-shadow 160ms, border-color 160ms;
+  font-weight: 500;
+  transition: border-color 160ms, box-shadow 160ms, transform 160ms;
 }
 .freerouter-cta:hover {
-  transform: translateY(-1px);
-  border-color: rgba(74,222,128,0.85);
-  box-shadow:
-    0 0 40px rgba(74,222,128,0.30),
-    0 0 26px rgba(96,165,250,0.16),
-    inset 0 0 14px rgba(74,222,128,0.08);
+  border-color: var(--color-freerouter);
+  box-shadow: 0 0 24px var(--color-freerouter-glow), 0 4px 20px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
 }
-/* Model pill — the free-model highlight. */
+/* Model pill — monospace, distinct from the green badges. */
 .freerouter-cta .fr-model {
-  display: inline-flex; align-items: center; gap: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
   font-weight: 700;
   font-size: var(--text-sm);
-  color: #eafff2;
-  background: linear-gradient(135deg, rgba(74,222,128,0.30), rgba(62,207,178,0.26), rgba(96,165,250,0.22));
-  border: 1px solid rgba(74,222,128,0.75);
+  color: var(--color-freerouter);
+  background: var(--color-freerouter-dim);
+  border: 1px solid rgba(96,165,250,0.30);
   border-radius: var(--radius-full);
-  padding: 5px 12px;
-  box-shadow:
-    0 0 14px rgba(74,222,128,0.30),
-    0 0 10px rgba(96,165,250,0.14),
-    inset 0 0 10px rgba(74,222,128,0.12);
+  padding: 5px 14px;
   white-space: nowrap;
 }
 .freerouter-cta .fr-model-live {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: conic-gradient(from 40deg, #4ade80, #3ecfb2, #60a5fa, #4ade80);
-  box-shadow:
-    0 0 8px rgba(74,222,128,0.9),
-    0 0 14px rgba(96,165,250,0.5);
-  animation: badge-pulse 2.4s ease-in-out infinite;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--color-freerouter);
+  animation: fr-pulse 2s ease-in-out infinite;
 }
+@keyframes fr-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+/* "100% FREE" accent tag. */
 .freerouter-cta .fr-model-tag {
-  background: #0e0f11;
-  color: var(--color-free);
+  display: inline-block;
+  background: var(--color-freerouter);
+  color: #fff;
   font-family: var(--font-body);
-  font-size: var(--text-xs);
+  font-size: 10px;
   font-weight: 800;
-  letter-spacing: 0.04em;
-  padding: 1px 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 8px;
   border-radius: var(--radius-full);
   white-space: nowrap;
+  line-height: 1.4;
 }
-/* Provider line. */
+/* Pitch line. */
 .freerouter-cta .fr-text {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   font-weight: 500;
   white-space: nowrap;
 }
-.freerouter-cta .fr-provider { color: var(--color-free); font-weight: 700; }
+.freerouter-cta .fr-provider {
+  color: var(--color-freerouter);
+  font-weight: 700;
+}
 /* CTA button. */
 .freerouter-cta .fr-key-btn {
-  background: linear-gradient(135deg, #4ade80, #3ecfb2);
-  color: #0e0f11;
+  display: inline-block;
+  background: var(--color-freerouter);
+  color: #fff;
   font-weight: 700;
   font-size: var(--text-sm);
-  padding: 7px 16px;
+  padding: 7px 18px;
   border-radius: var(--radius-full);
   white-space: nowrap;
-  box-shadow: 0 3px 14px rgba(74,222,128,0.30);
+  transition: background 160ms;
 }
+.freerouter-cta:hover .fr-key-btn {
+  background: color-mix(in srgb, var(--color-freerouter), #fff 15%);
+}
+/* Accessibility. */
 @media (prefers-reduced-motion: reduce) {
   .freerouter-cta { transition: none; }
   .freerouter-cta:hover { transform: none; }
   .freerouter-cta .fr-model-live { animation: none; }
 }
+/* Existing .fr-ltd-note rule (unchanged). */
 .fr-ltd-note strong {
   color: var(--color-free);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
   font-weight: 700;
-}
-@media (prefers-reduced-motion: reduce) {
-  .freerouter-cta { transition: none; }
-  .freerouter-cta:hover { transform: none; }
-  .freerouter-cta .fr-model-live { animation: none; }
 }
 .providers-sub-label + .providers-grid { margin-bottom: var(--space-8); }
 .providers-grid + .providers-sub-label { margin-top: var(--space-10); }
