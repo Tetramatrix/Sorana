@@ -41,13 +41,13 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Sorana",
-      "operatingSystem": "Windows 11",
+      "operatingSystem": "Windows 11, Linux",
       "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
       "offers": { "@type": "Offer", "price": "0" },
       "screenshot": ["freemodels.png", "chat.png", "mindmap.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
       "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
-      "softwareVersion": "1.0.77",
+      "alternateDownloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana",
       "author": { "@type": "Organization", "name": "Tetramatrix" },
       "sameAs": [
         "https://github.com/Tetramatrix/Sorana",
@@ -82,7 +82,7 @@
           "name": "Can I run it from a USB stick?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Sorana is a portable executable. Extract it anywhere and run it. No installation, no registry changes, no admin rights required."
+            "text": "Yes. Sorana is a portable executable. Run it directly. No installation, no registry changes, no admin rights required."
           }
         },
         {
@@ -98,1226 +98,23 @@
           "name": "What happens to long conversations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Auto-compaction silently compresses old messages into tight summaries. You keep full context without paying for extra tokens. Conversations that span weeks or months stay fast and affordable."
+            "text": "Sorana quietly condenses older parts of a conversation while keeping the important context, so conversations that span weeks or months stay fast and easy to continue."
           }
         }
       ]
     }
   </script>
 
-<style>
-/* Art direction: AI knowledge workspace → technical, clean, confident
-   Palette: deep dark surfaces, teal accent, restrained color
-   Typography: Instrument Serif display + Inter body */
-
-:root, [data-theme="dark"] {
-  --color-bg:             #0e0f11;
-  --color-surface:        #141618;
-  --color-surface-2:      #1a1c1f;
-  --color-surface-3:      #202226;
-  --color-border:         rgba(255,255,255,0.08);
-  --color-text:           #e8eaed;
-  --color-text-muted:     #8a8f98;
-  --color-text-faint:     #4a4f58;
-  --color-primary:        #3ecfb2;
-  --color-primary-hover:  #2fb89d;
-  --color-primary-dim:    rgba(62,207,178,0.12);
-  --color-primary-glow:   rgba(62,207,178,0.06);
-  --color-free:           #4ade80;
-  --color-free-dim:       rgba(74,222,128,0.12);
-  --color-cloud:          #60a5fa;
-  --color-cloud-dim:      rgba(96,165,250,0.12);
-  --color-local:          #f59e0b;
-  --color-local-dim:      rgba(245,158,11,0.12);
-
-  --font-display: 'Instrument Serif', Georgia, serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-
-  --text-xs:   clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-  --text-sm:   clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
-  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  --text-lg:   clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
-  --text-xl:   clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
-  --text-2xl:  clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
-  --text-hero: clamp(2.5rem, 1rem + 5vw, 5rem);
-
-  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
-  --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
-  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
-  --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
-
-  --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem;
-  --radius-xl: 1rem; --radius-2xl: 1.5rem; --radius-full: 9999px;
-}
-
-[data-theme="light"] {
-  --color-bg:             #f9fafb;
-  --color-surface:        #ffffff;
-  --color-surface-2:      #f3f4f6;
-  --color-surface-3:      #e5e7eb;
-  --color-border:         rgba(0,0,0,0.08);
-  --color-text:           #111827;
-  --color-text-muted:     #6b7280;
-  --color-text-faint:     #9ca3af;
-  --color-primary:        #0d9488;
-  --color-primary-hover:  #0f766e;
-  --color-primary-dim:    rgba(13,148,136,0.1);
-  --color-primary-glow:   rgba(13,148,136,0.05);
-  --color-free:           #16a34a;
-  --color-free-dim:       rgba(22,163,74,0.1);
-  --color-cloud:          #2563eb;
-  --color-cloud-dim:      rgba(37,99,235,0.1);
-  --color-local:          #d97706;
-  --color-local-dim:      rgba(217,119,6,0.1);
-}
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-section[id] { scroll-margin-top: 84px; }
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .hero::before { animation: none; }
-  .badge-dot { animation: none; }
-  .reveal { transition: none; opacity: 1; transform: none; }
-  .screenshot-card, .screenshot-card img, .discover-card { transition: none; }
-}
-body {
-  min-height: 100dvh;
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  color: var(--color-text);
-  background: var(--color-bg);
-  line-height: 1.6;
-  overflow-x: hidden;
-  padding-bottom: 240px; /* reserve space for Google Ads bottom banner */
-}
-img { display: block; max-width: 100%; height: auto; }
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--color-primary);
-  color: #fff;
-  padding: var(--space-2) var(--space-4);
-  z-index: 100;
-  text-decoration: none;
-  font-size: var(--text-sm);
-  border-radius: var(--radius-md);
-}
-.skip-link:focus { top: var(--space-2); left: var(--space-2); }
-ul { list-style: none; }
-a { color: var(--color-primary); text-decoration: none; }
-a:hover { color: var(--color-primary-hover); }
-
-/* ── NAV ── */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-5) var(--space-8);
-  border-bottom: 1px solid var(--color-border);
-  position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--color-bg) 90%, transparent);
-  backdrop-filter: blur(12px);
-  transition: box-shadow 200ms ease;
-}
-nav.scrolled {
-  box-shadow: 0 1px 24px rgba(0,0,0,0.25);
-}
-.nav-logo {
-  display: flex; align-items: center; gap: var(--space-3);
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  color: var(--color-text);
-  text-decoration: none;
-}
-.nav-links { display: flex; align-items: center; gap: var(--space-6); }
-.nav-links a {
-  color: var(--color-text-muted); text-decoration: none;
-  font-size: var(--text-sm); transition: color 160ms ease;
-}
-.nav-links a:hover { color: var(--color-text); }
-.nav-links a.active { color: var(--color-text); font-weight: 500; }
-.btn-primary {
-  background: var(--color-primary);
-  color: #0a1a17;
-  font-size: var(--text-sm);
-  font-weight: 600;
-  padding: var(--space-2) var(--space-5);
-  border-radius: var(--radius-full);
-  border: none; cursor: pointer;
-  text-decoration: none;
-  transition: background 160ms ease, transform 120ms ease;
-  display: inline-block;
-}
-.btn-primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); color: #0a1a17; }
-.btn-outline {
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  padding: var(--space-2) var(--space-5);
-  border-radius: var(--radius-full);
-  cursor: pointer;
-  text-decoration: none;
-  transition: border-color 160ms ease, background 160ms ease;
-  display: inline-block;
-}
-.btn-outline:hover { border-color: var(--color-primary); background: var(--color-primary-dim); }
-#toggleFeatures {
-  border-color: rgba(255,255,255,0.35);
-  background: rgba(255,255,255,0.06);
-  color: var(--color-text);
-}
-#toggleFeatures:hover {
-  border-color: var(--color-primary);
-  background: var(--color-primary-dim);
-  color: var(--color-primary);
-}
-.btn-store {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: none;
-  background: transparent;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  transition: transform 120ms ease;
-}
-.btn-store:hover { transform: translateY(-1px); }
-.btn-store img { height: 40px; width: auto; display: block; }
-
-/* ── HERO ── */
-.hero {
-  padding: clamp(var(--space-16), 10vw, var(--space-24)) var(--space-8);
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-}
-.hero-eyebrow {
-  display: inline-flex; align-items: center; gap: var(--space-2);
-  font-size: var(--text-xs);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-primary);
-  background: var(--color-primary-dim);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
-  margin-bottom: var(--space-6);
-}
-.hero h1 {
-  font-family: var(--font-display);
-  font-size: var(--text-hero);
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: var(--space-6);
-  letter-spacing: -0.02em;
-}
-.hero h1 em {
-  font-style: italic;
-  color: var(--color-primary);
-}
-.hero-sub {
-  font-size: var(--text-lg);
-  color: var(--color-text-muted);
-  max-width: 680px;
-  margin: 0 auto var(--space-10);
-  line-height: 1.65;
-}
-.hero-actions {
-  display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;
-  margin-bottom: var(--space-4);
-}
-.hero-badge {
-  display: flex; justify-content: center;
-  margin-bottom: var(--space-12);
-}
-.hero-badge .badge {
-  font-size: var(--text-sm);
-  padding: var(--space-2) var(--space-4);
-}
-.hero-stats {
-  display: flex; gap: var(--space-8); justify-content: center; flex-wrap: wrap;
-}
-.stat {
-  text-align: center;
-  min-width: 120px;
-}
-.stat-number {
-  font-family: var(--font-display);
-  font-size: var(--text-xl);
-  color: var(--color-text);
-  display: block;
-  line-height: 1;
-}
-.stat-label {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-/* ── HERO ORB ── */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: -20% -10% auto;
-  height: 70%;
-  background:
-    radial-gradient(ellipse at 30% 20%, rgba(62,207,178,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 60%, rgba(96,165,250,0.08) 0%, transparent 60%);
-  filter: blur(40px);
-  animation: hero-orb 10s ease-in-out infinite alternate;
-  pointer-events: none;
-  z-index: 0;
-}
-.hero > * { position: relative; z-index: 1; }
-@keyframes hero-orb {
-  0%   { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(-3%, 4%) scale(1.06); }
-}
-
-/* ── SECTION REVEAL ── */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 700ms ease, transform 700ms ease;
-}
-.reveal.revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ── BADGE PULSE ── */
-@keyframes badge-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%      { opacity: 0.6; transform: scale(1.25); }
-}
-.badge-dot { animation: badge-pulse 2.4s ease-in-out infinite; }
-
-/* ── SCREENSHOT HOVER ── */
-.screenshot-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  transition: transform 200ms ease, box-shadow 200ms ease;
-}
-.screenshot-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 48px rgba(0,0,0,0.35);
-}
-.screenshot-card img {
-  width: 100%;
-  aspect-ratio: 16/10;
-  object-fit: cover;
-  border-bottom: 1px solid var(--color-border);
-  transition: transform 300ms ease;
-}
-.screenshot-card:hover img {
-  transform: scale(1.04);
-}
-
-/* ── SCREENSHOT SHOWCASE ── */
-.showcase {
-  padding: 0 var(--space-8) var(--space-20);
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.screenshot-wrap {
-  position: relative;
-  border-radius: var(--radius-2xl);
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  box-shadow:
-    0 0 0 1px rgba(62,207,178,0.08),
-    0 24px 80px rgba(0,0,0,0.6),
-    0 0 120px rgba(62,207,178,0.04);
-}
-.screenshot-wrap::before {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(to bottom,
-    transparent 70%,
-    rgba(14,15,17,0.6) 100%);
-  z-index: 1; pointer-events: none;
-  border-radius: var(--radius-2xl);
-}
-.screenshot-wrap img {
-  width: 100%; display: block;
-  border-radius: var(--radius-2xl);
-}
-.screenshot-caption {
-  text-align: center;
-  margin-top: var(--space-6);
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-}
-
-/* ── FREE BADGE FLOATING ── */
-.floating-badges {
-  display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;
-  margin-top: var(--space-8);
-  margin-bottom: var(--space-4);
-}
-.badge {
-  display: inline-flex; align-items: center; gap: var(--space-2);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-full);
-  font-size: var(--text-xs);
-  font-weight: 600;
-  border: 1px solid;
-}
-.badge.free { color: var(--color-free); background: var(--color-free-dim); border-color: rgba(74,222,128,0.25); }
-.badge.cloud { color: var(--color-cloud); background: var(--color-cloud-dim); border-color: rgba(96,165,250,0.25); }
-.badge.local { color: var(--color-local); background: var(--color-local-dim); border-color: rgba(245,158,11,0.25); }
-.badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-
-/* ── FAQ ACCORDION ── */
-.faq-item {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-5);
-}
-.faq-item summary {
-  font-size: var(--text-sm);
-  font-weight: 600;
-  color: var(--color-text);
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after {
-  content: "+";
-  font-size: var(--text-lg);
-  font-weight: 300;
-  color: var(--color-primary);
-  flex-shrink: 0;
-  margin-left: var(--space-3);
-}
-.faq-item[open] summary::after { content: "−"; }
-.faq-item p {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.65;
-  margin-top: var(--space-3);
-  padding-top: var(--space-3);
-  border-top: 1px solid var(--color-border);
-}
-
-/* ── PRICING ── */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-  gap: var(--space-6);
-  max-width: 900px;
-  margin: 0 auto;
-}
-.pricing-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  align-items: flex-start;
-  transition: border-color 200ms, box-shadow 200ms;
-}
-.pricing-card:hover {
-  border-color: rgba(62,207,178,0.18);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
-}
-.pricing-card--accent {
-  border-color: rgba(62,207,178,0.35);
-  background: linear-gradient(180deg, rgba(62,207,178,0.06), transparent);
-}
-.pricing-card--accent:hover {
-  border-color: rgba(62,207,178,0.5);
-  box-shadow: 0 12px 40px rgba(62,207,178,0.1);
-}
-.pricing-icon {
-  width: 44px; height: 44px; border-radius: var(--radius-lg);
-  background: var(--color-primary-dim);
-  color: var(--color-primary);
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: var(--space-3);
-  border: 1px solid rgba(62,207,178,0.2);
-}
-.pricing-icon svg { width: 20px; height: 20px; }
-.pricing-name { font-size: var(--text-base); font-weight: 600; color: var(--color-text); margin: 0; }
-.pricing-price {
-  font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  color: var(--color-primary);
-  line-height: 1;
-}
-.pricing-desc {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.65;
-  margin: 0;
-}
-.pricing-note {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  margin: 0 0 var(--space-2);
-}
-.pricing-cta {
-  margin-top: var(--space-3);
-  font-size: var(--text-sm);
-}
-
-/* ── SECTION BASE ── */
-.section {
-  padding: var(--space-20) var(--space-8);
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.section-alt {
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
-.section-header {
-  max-width: 640px;
-  margin: 0 auto var(--space-12);
-  text-align: center;
-}
-.section-header h2,
-.section-header .h2 {
-  font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: 400;
-  line-height: 1.15;
-  margin-bottom: var(--space-4);
-}
-.section-header h2 em,
-.section-header .h2 em {
-  font-style: italic;
-  color: var(--color-primary);
-}
-.section-header p {
-  color: var(--color-text-muted);
-  font-size: var(--text-base);
-  line-height: 1.65;
-}
-
-/* ── HOW IT WORKS STEPS ── */
-.steps {
-  display: flex;
-  gap: var(--space-6);
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: var(--space-8);
-}
-.step {
-  flex: 1;
-  min-width: 180px;
-  max-width: 280px;
-  text-align: center;
-}
-.step-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--color-primary-dim);
-  color: var(--color-primary);
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 600;
-  margin-bottom: var(--space-3);
-  border: 1px solid rgba(62,207,178,0.2);
-}
-.logo-light-bg {
-  background: rgba(255,255,255,0.95);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-md);
-}
-[data-theme="light"] .logo-light-bg {
-  background: transparent;
-  border: 1px solid var(--color-border);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-md);
-}
-.step h3 {
-  font-size: var(--text-sm);
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: var(--space-2);
-}
-.step p {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  line-height: 1.5;
-}
-.step-arrow {
-  display: flex;
-  align-items: center;
-  color: var(--color-text-faint);
-  font-size: var(--text-lg);
-}
-@media (max-width: 768px) {
-  .step-arrow { display: none; }
-  .steps { gap: var(--space-8); }
-}
-
-/* ── TESTIMONIALS ── */
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(320px,100%), 1fr));
-  gap: var(--space-4);
-}
-.testimonial-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  transition: border-color 200ms, box-shadow 200ms;
-}
-.testimonial-card:hover {
-  border-color: rgba(62,207,178,0.2);
-  box-shadow: 0 8px 32px rgba(62,207,178,0.04);
-}
-.testimonial-logo {
-  max-width: 140px;
-  max-height: 56px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  object-position: left center;
-  display: block;
-  margin-bottom: var(--space-4);
-}
-.testimonial-logo.has-bg {
-  background: rgba(255, 255, 255, 0.95);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-md);
-}
-.testimonial-source {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-3);
-}
-.testimonial-quote {
-  font-size: var(--text-sm);
-  color: var(--color-text);
-  line-height: 1.65;
-  margin-bottom: var(--space-4);
-}
-.testimonial-link {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-/* ── OVERVIEW / ABOUT ── */
-.overview-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-8);
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .overview-grid { grid-template-columns: 1fr 1fr; }
-}
-.overview-text p {
-  color: var(--color-text-muted);
-  font-size: var(--text-base);
-  line-height: 1.75;
-  margin-bottom: var(--space-4);
-}
-.overview-text strong {
-  color: var(--color-text);
-}
-.overview-video {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface-2);
-}
-.overview-video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* ── PROBLEM / SOLUTION CARDS ── */
-.problem-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(300px,100%), 1fr));
-  gap: var(--space-4);
-}
-.problem-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  transition: border-color 200ms, box-shadow 200ms;
-}
-.problem-card:hover {
-  border-color: rgba(62,207,178,0.2);
-  box-shadow: 0 8px 32px rgba(62,207,178,0.04);
-}
-.problem-card h3 {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: var(--space-3);
-  line-height: 1.35;
-}
-.problem-card p {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.65;
-  margin-bottom: var(--space-3);
-}
-.problem-card ul {
-  list-style: disc;
-  padding-left: var(--space-5);
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-}
-.problem-card li {
-  margin-bottom: var(--space-2);
-  line-height: 1.5;
-}
-
-/* ── COMPARISON ── */
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  font-size: var(--text-sm);
-}
-.comparison-table th,
-.comparison-table td {
-  padding: var(--space-3) var(--space-4);
-  border-bottom: 1px solid var(--color-border);
-  text-align: left;
-}
-.comparison-table th {
-  background: var(--color-surface-2);
-  color: var(--color-text);
-  font-weight: 600;
-}
-.comparison-table td {
-  color: var(--color-text-muted);
-}
-.comparison-table tr:last-child td { border-bottom: none; }
-.comparison-table td:first-child { color: var(--color-text); font-weight: 500; }
-.comparison-table .win { color: var(--color-free); }
-
-/* ── FEATURES ── */
-.features-header { text-align: left; }
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(300px,100%), 1fr));
-  gap: var(--space-4);
-}
-.feature-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  transition: border-color 200ms, box-shadow 200ms;
-}
-.feature-card:hover {
-  border-color: rgba(62,207,178,0.2);
-  box-shadow: 0 8px 32px rgba(62,207,178,0.04);
-}
-.feature-card.large { grid-column: span 2; }
-.feature-icon {
-  width: 36px; height: 36px;
-  background: var(--color-primary-dim);
-  border-radius: var(--radius-md);
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: var(--space-4);
-  color: var(--color-primary);
-}
-.feature-icon svg { width: 18px; height: 18px; }
-.feature-card h3 {
-  font-size: var(--text-base);
-  font-weight: 600;
-  margin-bottom: var(--space-2);
-  color: var(--color-text);
-}
-.feature-card p {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
-
-/* ── CHAT EXAMPLES ── */
-.examples-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(240px,100%), 1fr));
-  gap: var(--space-4);
-  margin-top: var(--space-8);
-}
-.example-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-5);
-  transition: border-color 200ms, box-shadow 200ms;
-}
-.example-card:hover {
-  border-color: rgba(62,207,178,0.2);
-  box-shadow: 0 8px 32px rgba(62,207,178,0.04);
-}
-.example-card h4 {
-  font-size: var(--text-sm);
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-bottom: var(--space-3);
-}
-.example-card ul {
-  list-style: none;
-  padding: 0;
-}
-.example-card li {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  line-height: 1.65;
-  margin-bottom: var(--space-2);
-  padding-left: var(--space-3);
-  border-left: 2px solid var(--color-border);
-  transition: border-color 160ms;
-}
-.example-card li:hover {
-  border-left-color: var(--color-primary);
-  color: var(--color-text);
-}
-
-/* ── SCREENSHOT STRIP ── */
-.screenshot-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(260px,100%), 1fr));
-  gap: var(--space-4);
-  margin-top: var(--space-12);
-}
-.screenshot-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-}
-.screenshot-card img {
-  width: 100%;
-  aspect-ratio: 16/10;
-  object-fit: cover;
-  border-bottom: 1px solid var(--color-border);
-}
-.screenshot-card figcaption {
-  padding: var(--space-4);
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.5;
-}
-
-/* ── DISCOVER / OTHER APPS ── */
-.discover-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(300px,100%), 1fr));
-  gap: var(--space-4);
-}
-.discover-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  transition: border-color 200ms, box-shadow 200ms;
-  display: flex;
-  flex-direction: column;
-}
-.discover-card:hover {
-  border-color: rgba(62,207,178,0.2);
-  box-shadow: 0 8px 32px rgba(62,207,178,0.04);
-  transform: translateY(-2px);
-}
-.discover-card img {
-  width: 100%;
-  aspect-ratio: 16/10;
-  object-fit: cover;
-  border-bottom: 1px solid var(--color-border);
-}
-.discover-card-body {
-  padding: var(--space-5);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.discover-card h3 {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: var(--space-2);
-}
-.discover-card p {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.6;
-  margin-bottom: var(--space-4);
-  flex: 1;
-}
-.discover-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-}
-.discover-links a {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  color: var(--color-primary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-full);
-  padding: var(--space-1) var(--space-3);
-  transition: background 160ms, border-color 160ms;
-}
-.discover-links a:hover {
-  background: var(--color-primary-dim);
-  border-color: var(--color-primary);
-}
-
-/* ── PROVIDERS ── */
-.providers-section {
-  padding: var(--space-16) var(--space-8);
-  text-align: center;
-  border-top: 1px solid var(--color-border);
-}
-.section-label {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text-faint);
-  margin-bottom: var(--space-8);
-}
-.providers-grid {
-  display: flex; flex-wrap: wrap; gap: var(--space-3);
-  justify-content: center;
-  max-width: 800px; margin: 0 auto;
-}
-.provider-chip {
-  display: inline-flex; align-items: center; gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-full);
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  transition: border-color 160ms, color 160ms, background 160ms;
-}
-.provider-chip:hover {
-  border-color: var(--color-primary);
-  color: var(--color-text);
-  background: var(--color-primary-dim);
-}
-.provider-chip .icon { width: 16px; height: 16px; object-fit: contain; }
-.providers-sub-label {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-3);
-}
-.providers-sub-label + .providers-grid { margin-bottom: var(--space-8); }
-.providers-grid + .providers-sub-label { margin-top: var(--space-10); }
-
-/* ── FREE MODEL COUNTER ── */
-.free-highlight {
-  margin: var(--space-4) 0 0;
-  padding: var(--space-4) var(--space-5);
-  background: var(--color-free-dim);
-  border: 1px solid rgba(74,222,128,0.2);
-  border-radius: var(--radius-lg);
-  display: flex; align-items: center; gap: var(--space-3);
-}
-.free-highlight-num {
-  font-family: var(--font-display);
-  font-size: var(--text-xl);
-  color: var(--color-free);
-  line-height: 1;
-}
-.free-highlight-text {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-}
-
-/* ── MODEL TABLE PREVIEW ── */
-.model-preview {
-  padding: var(--space-20) var(--space-8);
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
-.model-preview-inner {
-  max-width: 900px; margin: 0 auto;
-}
-.model-preview h2 {
-  font-family: var(--font-display);
-  font-size: var(--text-xl);
-  font-weight: 400;
-  margin-bottom: var(--space-8);
-}
-.model-rows {
-  display: flex; flex-direction: column; gap: var(--space-2);
-}
-.model-row {
-  display: flex; align-items: center; gap: var(--space-4);
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  transition: border-color 160ms;
-}
-.model-row:hover { border-color: rgba(62,207,178,0.2); }
-.model-provider {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  width: 130px; flex-shrink: 0;
-}
-.model-name {
-  font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--color-text);
-  flex: 1;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
-  font-size: 0.8rem;
-}
-.model-desc {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  flex: 2;
-  display: none;
-}
-@media (min-width: 640px) { .model-desc { display: block; } }
-.model-tag {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  flex-shrink: 0;
-}
-.model-tag.free { color: var(--color-free); background: var(--color-free-dim); }
-.model-tag.configured { color: var(--color-local); background: var(--color-local-dim); }
-.model-tag.installed { color: var(--color-primary); background: var(--color-primary-dim); }
-
-/* ── SETUP / SUPPORT CARDS ── */
-.setup-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(260px,100%), 1fr));
-  gap: var(--space-4);
-}
-.setup-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-}
-.setup-card h3 {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: var(--space-3);
-}
-.setup-card p,
-.setup-card li {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.65;
-}
-.setup-card ul {
-  list-style: disc;
-  padding-left: var(--space-5);
-}
-.setup-card li { margin-bottom: var(--space-2); }
-
-/* ── CTA SECTION ── */
-.cta-section {
-  padding: clamp(var(--space-16), 10vw, var(--space-24)) var(--space-8);
-  text-align: center;
-  max-width: 700px; margin: 0 auto;
-}
-.cta-section h2 {
-  font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: var(--space-5);
-}
-.cta-section h2 em { font-style: italic; color: var(--color-primary); }
-.cta-section p {
-  color: var(--color-text-muted);
-  font-size: var(--text-base);
-  margin-bottom: var(--space-8);
-}
-.cta-actions {
-  display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;
-}
-
-/* ── FOOTER ── */
-footer {
-  padding: var(--space-8);
-  border-top: 1px solid var(--color-border);
-  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
-  gap: var(--space-4);
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  max-width: 1100px; margin: 0 auto;
-}
-
-/* ── BACK TO TOP ── */
-#backToTop {
-  position: fixed;
-  right: var(--space-5);
-  bottom: var(--space-5);
-  z-index: 60;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface-2);
-  color: var(--color-text-muted);
-  font-size: 18px;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-}
-#backToTop.show { opacity: 1; visibility: visible; }
-#backToTop:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-  transform: translateY(-2px);
-}
-@media (prefers-reduced-motion: reduce) {
-  #backToTop { transition: none; }
-}
-
-/* ── ADSENSE INLINE ADS ── */
-.ad-container {
-  margin: var(--space-8) auto;
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: var(--radius-xl);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  padding: var(--space-4);
-  text-align: center;
-  max-height: 520px; /* prevent oversized rendering */
-  min-height: 90px; /* prevent CLS while ads load */
-}
-.ad-inline {
-  margin: var(--space-6) 0;
-  text-align: center;
-  min-height: 60px; /* prevent CLS while ads load */
-}
-.feature-card.ad-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 160px;
-  padding: var(--space-2);
-}
-.feature-card.ad-card ins {
-  width: 100%;
-  max-width: 100%;
-}
-.ad-label {
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--color-text-faint);
-  margin-bottom: var(--space-2);
-}
-
-/* ── MOBILE ── */
-@media (max-width: 768px) {
-  #menuToggle { display: block !important; }
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
-    flex-direction: column;
-    padding: var(--space-4);
-    gap: var(--space-3);
-    z-index: 40;
-  }
-  .nav-links.open { display: flex; }
-  .nav-links a { padding: var(--space-2) 0; }
-  nav { position: relative; }
-  .hero { padding: var(--space-12) var(--space-5); }
-  .showcase { padding: 0 var(--space-4) var(--space-16); }
-  .section { padding: var(--space-12) var(--space-4); }
-  .feature-card.large { grid-column: span 1; }
-  .model-preview { padding: var(--space-12) var(--space-4); }
-  .providers-section { padding: var(--space-10) var(--space-4); }
-  .hero-stats { gap: var(--space-5); }
-  .comparison-table { font-size: var(--text-xs); }
-  .comparison-table th,
-  .comparison-table td { padding: var(--space-2); }
-  .comparison-table thead th {
-    position: sticky;
-    top: 0;
-    background: var(--color-surface-2);
-    z-index: 1;
-  }
-  .comparison-table th:first-child,
-  .comparison-table td:first-child {
-    position: sticky;
-    left: 0;
-    background: var(--color-surface-2);
-    z-index: 2;
-    min-width: 110px;
-  }
-  .comparison-table thead th:first-child { z-index: 3; }
-  .overview-grid { grid-template-columns: 1fr; }
-  .hero::before {
-    inset: -10% -30% auto;
-    height: 50%;
-    filter: blur(28px);
-  }
-  .showcase .screenshot-wrap { border-radius: var(--radius-xl); }
-}
-
-/* Scrollbar styling */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--color-bg); }
-::-webkit-scrollbar-thumb { background: var(--color-surface-3); border-radius: 3px; }
-</style>
+<link rel="stylesheet" href="css/main.css">
 </head>
-<body id="main">
+<body>
 
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- NAV -->
 <nav>
-  <a href="index.html" class="nav-logo">
+  <div class="nav-brand">
+    <a href="index.html" class="nav-logo">
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Sorana">
       <circle cx="14" cy="14" r="12" stroke="#3ecfb2" stroke-width="1.5" fill="none"/>
       <circle cx="14" cy="14" r="5" fill="#3ecfb2" opacity="0.8"/>
@@ -1329,7 +126,9 @@ footer {
       <circle cx="6.5" cy="10" r="2" fill="#3ecfb2" opacity="0.5"/>
     </svg>
     Sorana
-  </a>
+    </a>
+    <span class="version-pill" title="Current Sorana version">v1.0.79</span>
+  </div>
   <div class="nav-links" id="navLinks">
     <a href="#features">Features</a>
     <a href="#models">Models</a>
@@ -1337,35 +136,49 @@ footer {
     <a href="#setup">Setup</a>
     <a href="#discover">Discover</a>
     <a href="support.html">Support</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
     <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
   </div>
   <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
 </nav>
 
+<main id="main">
+
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">
-    <span class="badge-dot" style="background:var(--color-primary)"></span>
-    Personal AI Workspace / PKM
+  <div class="hero-eyebrow-row">
+    <div class="hero-eyebrow">
+      <span class="badge-dot" style="background:var(--color-primary)"></span>
+      Autonomous AI Agent &middot; Personal Workspace
+    </div>
+    <span class="version-pill" id="versionPill" title="Current Sorana version">v1.0.79</span>
   </div>
   <h1>One tool.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
-    Sorana is your personal AI knowledge workspace. A second brain that remembers your projects,
-    learns your working style, and finds any file or note instantly.
+    Sorana is your autonomous AI assistant. A goal-driven agent that plans multi-step work, acts across your files, web, email, and calendar,
+    and never forgets a project, preference, or decision.
   </p>
   <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 auto var(--space-8);max-width:520px;">
-    Runs from a USB stick. No install, no account, no cloud sync.
+    Runs from a USB stick. No install, no account, no cloud sync.<br>Available for Windows and Linux.
   </p>
   <div class="hero-actions">
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
     <a href="#features" class="btn-outline">See all features ↓</a>
   </div>
+  <div style="display:flex;justify-content:center;margin:var(--space-4) 0 var(--space-4);">
+    <a class="freerouter-cta" href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer">
+      <span class="fr-model"><span class="fr-model-live"></span>Qwen 3.8 Max<span class="fr-model-tag">100% FREE</span></span>
+      <span class="fr-text"><span class="fr-provider">FreeRouter</span> &middot; no credit card</span>
+      <span class="fr-key-btn">Get a free key &rarr;</span>
+    </a>
+  </div>
   <div class="hero-badge">
-    <span class="badge free"><span class="badge-dot"></span>$0/mo with free-tier models</span>
+    <span class="badge free"><span class="badge-dot"></span>$0/mo with free-tier models · weekly promos</span>
   </div>
   <div class="showcase" style="padding:0;max-width:1100px;">
     <div class="screenshot-wrap">
@@ -1374,8 +187,8 @@ footer {
            width="1140" height="820" fetchpriority="high">
     </div>
     <div class="floating-badges">
-      <span class="badge free"><span class="badge-dot"></span> Free tier models</span>
-      <span class="badge cloud"><span class="badge-dot"></span> Cloud providers</span>
+      <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+      <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
       <span class="badge local"><span class="badge-dot"></span> On-premise / Local</span>
     </div>
     <p class="screenshot-caption">
@@ -1385,7 +198,7 @@ footer {
   <div class="hero-stats">
     <div class="stat">
       <span class="stat-number">30+</span>
-      <span class="stat-label">free OpenRouter models at $0/mo</span>
+      <span class="stat-label">$0/mo with free-tier models · weekly promos</span>
     </div>
     <div class="stat">
       <span class="stat-number">25+</span>
@@ -1406,13 +219,13 @@ footer {
 <section class="section" id="how-it-works">
   <div class="section-header">
     <h2>How it <em>works.</em></h2>
-    <p>Three steps to your own AI workspace that knows you.</p>
+    <p>Three steps to an AI assistant that knows you and gets things done.</p>
   </div>
   <div class="steps">
     <div class="step">
       <div class="step-number">1</div>
       <h3>Connect a model</h3>
-      <p>Use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio. No subscription needed.</p>
+      <p>Use a free cloud model with your own API key &mdash; FreeRouter's free API or OpenRouter's free-tier are zero-cost starts &mdash; or run local models through Lemonade, Ollama, or LM Studio. No subscription needed.</p>
     </div>
     <div class="step-arrow">→</div>
     <div class="step">
@@ -1424,7 +237,7 @@ footer {
     <div class="step">
       <div class="step-number">3</div>
       <h3>Ask anything</h3>
-      <p>Research topics, manage emails, organize files, chat with documents. Your AI remembers everything and acts across all your tools.</p>
+      <p>Give Sorana a goal &mdash; it plans the steps, works through them across your files, web, email, and calendar, and remembers everything it learns along the way.</p>
     </div>
   </div>
 </section>
@@ -1435,39 +248,48 @@ footer {
     <h2>Trusted by the <em>community.</em></h2>
     <p>Reviewed and recommended by publications across the AI and software space.</p>
   </div>
-  <div class="testimonials-grid">
-    <div class="testimonial-card">
-      <img src="majorgeeks.gif" alt="MajorGeeks" class="testimonial-logo" loading="lazy" width="140" height="56">
-      <div class="testimonial-source">MajorGeeks</div>
-      <p class="testimonial-quote">"A smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. The canvas, document chat, OCR, and local AI support give it a real purpose."</p>
-      <a href="https://www.majorgeeks.com/files/details/sorana.html" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      <div class="testimonials-band">
+    <button type="button" class="testimonial-arrow prev" id="testimonialPrev" aria-label="Scroll testimonials left">‹</button>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="majorgeeks.gif" alt="MajorGeeks" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">MajorGeeks</div>
+        <p class="testimonial-quote">"A smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. The canvas, document chat, OCR, and local AI support give it a real purpose."</p>
+        <a href="https://www.majorgeeks.com/files/details/sorana.html" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="softpedia.png" alt="Softpedia" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">Softpedia</div>
+        <p class="testimonial-quote">"A fresh and innovative approach to personal knowledge management. The spatial canvas and persistent memory features set it apart from traditional note-taking apps."</p>
+        <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="trishtech-logo.png" alt="TrishTech" class="testimonial-logo logo-light-bg" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">TrishTech</div>
+        <p class="testimonial-quote">"A capable, memory-persistent, privacy-respecting AI workspace that fits on a USB drive and costs nothing to run."</p>
+        <a href="https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="poweredbyai-logo.svg" alt="PoweredByAI" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">PoweredByAI</div>
+        <p class="testimonial-quote">"An innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
+        <a href="https://poweredbyai.app/project/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">MCPMarket</div>
+        <p class="testimonial-quote">"Redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. Replaces rigid folders and forgetful chatbots with a persistent 2D canvas."</p>
+        <a href="https://mcpmarket.com/es/server/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="warp2search-logo.png" alt="Warp2Search" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">Warp2Search</div>
+        <p class="testimonial-quote">"A bold step in the evolution of file organization tools, a free AI-powered visual workspace whose canvas, document chat, OCR, and flexible local or cloud AI support set it apart from traditional file management."</p>
+        <a href="https://www.warp2search.net/story/sorana-10770-released/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
     </div>
-    <div class="testimonial-card">
-      <img src="softpedia.png" alt="Softpedia" class="testimonial-logo" loading="lazy" width="140" height="56">
-      <div class="testimonial-source">Softpedia</div>
-      <p class="testimonial-quote">"A fresh and innovative approach to personal knowledge management. The spatial canvas and persistent memory features set it apart from traditional note-taking apps."</p>
-      <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-    </div>
-    <div class="testimonial-card">
-      <img src="trishtech-logo.png" alt="TrishTech" class="testimonial-logo logo-light-bg" loading="lazy" width="140" height="56">
-      <div class="testimonial-source">TrishTech</div>
-      <p class="testimonial-quote">"A capable, memory-persistent, privacy-respecting AI workspace that fits on a USB drive and costs nothing to run."</p>
-      <a href="https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-    </div>
-    <div class="testimonial-card">
-      <img src="poweredbyai-logo.svg" alt="PoweredByAI" class="testimonial-logo" loading="lazy" width="140" height="56">
-      <div class="testimonial-source">PoweredByAI</div>
-      <p class="testimonial-quote">"An innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
-      <a href="https://poweredbyai.app/project/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-    </div>
-    <div class="testimonial-card">
-      <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo" loading="lazy" width="140" height="56">
-      <div class="testimonial-source">MCPMarket</div>
-      <p class="testimonial-quote">"Redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. Replaces rigid folders and forgetful chatbots with a persistent 2D canvas."</p>
-      <a href="https://mcpmarket.com/es/server/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-    </div>
-  </div>
-</section>
+    <button type="button" class="testimonial-arrow next" id="testimonialNext" aria-label="Scroll testimonials right">›</button>
+  </div></section>
 
 <!-- AD SPOT A -->
 <div class="ad-container">
@@ -1516,7 +338,7 @@ footer {
   <div class="problem-grid">
     <div class="problem-card">
       <h3>Your AI can't think strategically</h3>
-      <p>Most AI answers one question and stops. Sorana plans, researches, checks its work, and adapts when something fails.</p>
+      <p>Most AI answers one question and stops. Sorana plans ahead, researches, checks its work, and tries another approach when something goes wrong.</p>
     </div>
     <div class="problem-card">
       <h3>You re-explain yourself every day</h3>
@@ -1532,23 +354,22 @@ footer {
     </div>
   <div class="problem-card">
     <h3>Long conversations get slow and expensive</h3>
-    <p>Auto-compaction compresses old conversations into tight summaries, cutting token use by over 90% while preserving full context.</p>
+    <p>Sorana quietly condenses older parts of a conversation while keeping the important context, so even long-running projects stay fast and easy to continue.</p>
   </div>
   <div class="problem-card">
     <h3>Your powerful model is wasted on simple tasks</h3>
-    <p>Sorana routes every internal step to the right-sized model — fast model for tool calls, powerful model for reasoning — so you get the same quality for less cost.</p>
+    <p>Sorana uses a fast model for simple steps and a stronger one when the task needs deeper thinking, so you get capable answers without wasting resources.</p>
   </div>
-  <div class="problem-card">
-    <h3>You can't switch agent behavior fast enough</h3>
-    <p>The Prompt Manager gives you a self-maintained library of prompt pairs. One click assigns a new persona or role to any agent, no file editing, no config digging.</p>
+  <div class="problem-card"><h3>You need a different working style</h3>
+      <p>Choose from ready-made roles and working styles, then switch whenever the task changes. Give your AI the right approach for research, writing, planning, or everyday work.</p>
   </div>
     <div class="problem-card">
       <h3>Half your knowledge is locked in PDFs and images</h3>
-      <p>Built-in OCR and vision AI make scanned documents, screenshots, and images searchable and chattable.</p>
+      <p>Built-in OCR and vision AI make scanned documents, screenshots, and images searchable and ready to discuss.</p>
     </div>
     <div class="problem-card">
       <h3>Your AI is a black box</h3>
-      <p>Sorana shows every step it took: searches, reads, tool calls, and reasoning. See what it considered and why it chose each answer.</p>
+      <p>Sorana makes its work visible: see what it searched, what it found, and why it reached an answer. You stay informed instead of treating the result like a black box.</p>
     </div>
   </div>
 </section>
@@ -1556,8 +377,8 @@ footer {
 <!-- CORE FEATURES -->
 <section class="section" id="features">
   <div class="section-header">
-    <h2>Core features for <em>serious AI work.</em></h2>
-    <p>Everything you need in a single workspace: memory, agents, tools, and visual organisation.</p>
+    <h2>A smarter way to <em>work with AI.</em></h2>
+    <p>Everything you need in one workspace: clear answers, lasting context, autonomous execution, and your knowledge close at hand.</p>
   </div>
   <div class="features-grid" id="topFeatures">
     <div class="feature-card large">
@@ -1566,40 +387,76 @@ footer {
           <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
         </svg>
       </div>
-      <h3>An AI that thinks for itself</h3>
-      <p>Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. If your question is unclear, it asks before guessing. It double checks every answer before you see it. If one approach fails, it tries another. It even spots interesting tangents and follows them on its own. You get a real answer, not the first thing the model found.</p>
+      <h3>Plans. Acts. Delivers.</h3>
+      <p>Give Sorana a goal and it plans the multi-step work, uses its tools across your files, web, email, and calendar, and checks the result before answering.</p>
+    </div><div class="feature-card large formatted-chat-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+          <path d="M8 9h8M8 13h5"/>
+        </svg>
+      </div>
+      <h3>Chat that’s easy to read</h3>
+      <p>Get clear, easy-to-scan answers instead of a wall of text. Sorana highlights what matters, keeps explanations separate from the final answer, and turns comparisons into clean, readable tables.</p>
+      <div class="formatted-chat-preview" aria-label="Example of Sorana formatted chat with a comparison table">
+        <div class="formatted-chat-toolbar" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span class="formatted-chat-title">Formatted response</span>
+        </div>
+        <div class="formatted-chat-message user">
+          <span class="formatted-chat-avatar">You</span>
+          <div class="formatted-chat-bubble">Compare the top options and show the key numbers.</div>
+        </div>
+        <div class="formatted-chat-message">
+          <span class="formatted-chat-avatar">S</span>
+          <div class="formatted-chat-bubble">
+            <strong>Here’s the short version:</strong> <span class="chat-accent">Option A</span> is the best balance of speed and cost. The full answer keeps headings, <span class="chat-code">inline code</span>, emphasis, and <a class="chat-link" href="#comparison">links</a> easy to scan.
+            <div class="formatted-chat-table-wrap">
+              <table class="formatted-chat-table">
+                <caption>Comparison table</caption>
+                <thead><tr><th scope="col">Option</th><th scope="col">Speed</th><th scope="col">Cost</th><th scope="col">Fit</th></tr></thead>
+                <tbody>
+                  <tr><td>Option A</td><td class="chat-value">Fast</td><td>$0</td><td class="chat-good">Best</td></tr>
+                  <tr><td>Option B</td><td>Medium</td><td class="chat-warm">$8</td><td>Good</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <span class="formatted-chat-note">▸ Explanations shown separately · table formatted automatically</span>
+          </div>
+        </div>
+      </div>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M4 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/>
         </svg>
       </div>
-      <h3>Triple Model Roles</h3>
-      <p>Route every AI step to the right-sized model. Fast model for tool calls and routing, powerful model for reasoning, dedicated embedding model for search. Same quality, lower cost, no wasted tokens. Hardware acceleration when available.</p>
+      <h3>The right AI for every task</h3>
+      <p>Sorana chooses a quick model for simple jobs and a more powerful one for difficult questions, keeping your workspace responsive while giving important work the attention it deserves.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
         </svg>
       </div>
-      <h3>Prompt Manager</h3>
-      <p>A self-maintained library of prompt pairs. One click assigns a new persona or role to any agent. 20+ categories, no file editing, no config digging.</p>
+      <h3>Make the AI work your way</h3>
+      <p>Choose from ready-made roles and working styles, then switch whenever the task changes. Give your AI the right personality for research, writing, planning, or everyday work.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
         </svg>
       </div>
-      <h3>Model Probing</h3>
-      <p>One-click capability test. Know if a model can reason, see images, or handle audio before you rely on it. The only reliable way to use a model at full capacity, because provider standards differ.</p>
+      <h3>Know what your AI can do</h3>
+      <p>Check whether a model can handle images, audio, or deeper reasoning before you depend on it. Choose with confidence instead of discovering limitations halfway through a task.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/>
         </svg>
       </div>
-      <h3>Local &amp; Global Memory</h3>
-      <p>A living knowledge profile captures facts and project context. Remembers what matters, spots contradictions, and scores importance automatically. Maintain both scoped local memories and a persistent global memory, and sync them anytime.</p>
+      <h3>Memory that grows with you</h3>
+      <p>Sorana remembers the facts, preferences, and project details that matter to you. Keep knowledge tied to one project or available when you need it, so you spend less time repeating yourself.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1614,24 +471,24 @@ footer {
           <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
         </svg>
       </div>
-      <h3>Chat with Documents &amp; OCR</h3>
-      <p>Extract text from PDFs, documents, and images with built-in OCR. Chat with any document to get answers and make your whole archive searchable.</p>
+      <h3>Chat with your files</h3>
+      <p>Ask questions about PDFs, documents, scans, and images in plain language. Sorana finds the useful information inside and makes your whole archive easier to search.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
         </svg>
       </div>
-      <h3>RAG Knowledge Base</h3>
-      <p>Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data.</p>
+      <h3>Answers grounded in your knowledge</h3>
+      <p>Bring together documents, notes, and web pages in one searchable knowledge base. Sorana finds the right context automatically, so answers are based on your information—not guesswork.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
         </svg>
       </div>
-      <h3>Auto-Compaction</h3>
-      <p>Long conversations are compressed into tight summaries, cutting token use by over 90% while keeping full context. Dozens of messages become a short paragraph without losing what matters. Projects that span months stay fast and affordable.</p>
+      <h3>Long conversations stay on track</h3>
+      <p>Older parts of a conversation are quietly condensed while the important details stay available. Keep working for weeks or months without losing the thread or slowing down.</p>
     </div><div class="feature-card ad-card">
     <ins class="adsbygoogle"
          style="display:block"
@@ -1649,8 +506,8 @@ footer {
           <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 2l-4 4-4-4"/>
         </svg>
       </div>
-      <h3>Supercharged Chat &amp; MCP Tools</h3>
-      <p>Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Every session is archived with full Markdown, reasoning, and tables, so you never lose context.</p>
+      <h3>One chat, many helpful actions</h3>
+      <p>Ask Sorana to find a file, work with your email, or handle a connected task from one conversation. It brings the right information together while you stay in control, and your sessions remain available when you want to return to them.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1673,16 +530,16 @@ footer {
           <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
         </svg>
       </div>
-      <h3>Multi-Agent Pipeline</h3>
-      <p>Build visual workflows with a drag-and-drop builder. Choose from pre-built templates or design your own pipeline. Supports conditional routing, parallel agent teams, and post-run memory extraction so every workflow gets smarter over time.</p>
+      <h3>Workflows that work for you</h3>
+      <p>Break larger tasks into connected steps with a simple visual builder. Start from a ready-made template or create your own workflow to keep the work moving.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/>
         </svg>
       </div>
-      <h3>MCP Manager &amp; Marketplace</h3>
-      <p>Browse, install, and manage MCP servers from a central marketplace. Extend Sorana with new tools and integrations without touching configuration files.</p>
+      <h3>Add new capabilities</h3>
+      <p>Browse and connect new tools and services from one central place. Extend what Sorana can do without digging through settings or configuration files.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1690,7 +547,7 @@ footer {
         </svg>
       </div>
       <h3>Health Dashboard</h3>
-      <p>First-boot setup wizard plus ongoing monitoring. Covers OCR, search engines, model cache, MCP servers, backends, HuggingFace cache, codebase search, and more. Catch issues before they slow you down.</p>
+      <p>A first-boot setup guide plus ongoing monitoring for the services Sorana relies on. Catch issues early, before they slow you down.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1705,8 +562,8 @@ footer {
           <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
         </svg>
       </div>
-      <h3>Agent Trace &amp; Debug</h3>
-      <p>Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. Helps you trust the result or tweak the approach.</p>
+      <h3>See how Sorana works</h3>
+      <p>Follow along as Sorana searches, reads, and builds an answer. See what it found and why it took that path, so you can trust the result or guide it another way.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1721,8 +578,8 @@ footer {
           <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/>
         </svg>
       </div>
-      <h3>Tesseract Image OCR</h3>
-      <p>Use Tesseract for image OCR on scanned photos, screenshots, and other images. When a vision-capable model is available, it can read the image directly as a fallback.</p>
+      <h3>Read scans and images</h3>
+      <p>Make scanned photos, screenshots, and other images searchable. When image-aware AI is available, Sorana can also understand the picture directly.</p>
     </div>
   </div>
   <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
@@ -1730,27 +587,28 @@ footer {
   </div>
   <div class="cta-section" style="padding:var(--space-12) 0;max-width:900px;margin:0 auto;">
     <h2 style="margin-bottom:var(--space-3);">Ready to try it?</h2>
-    <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:560px;margin-left:auto;margin-right:auto;">Download the portable executable and run it from anywhere. No installation, no account, no cloud sync unless you choose it.</p>
+    <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:560px;margin-left:auto;margin-right:auto;">Download the executable and run it directly. No installation, no account, no cloud sync unless you choose it.</p>
     <div class="cta-actions">
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
   </div>
   <div class="screenshot-strip">
     <figure class="screenshot-card">
-      <img src="chat.png" alt="Chat with formatted answers" loading="lazy" width="640" height="400">
-      <figcaption>See Markdown answers, separated reasoning, and tables.</figcaption>
+      <img src="chat.png" alt="Sorana chat with clearly formatted answers" loading="lazy" width="640" height="400">
+      <figcaption>See clear answers, separate explanations, and readable tables.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="chat-sidebar.png" alt="Chat sessions sidebar" loading="lazy" width="640" height="400">
-      <figcaption>Switch between archived chat sessions and view formatted answers.</figcaption>
+      <img src="chat-sidebar.png" alt="Sorana chat sessions sidebar" loading="lazy" width="640" height="400">
+      <figcaption>Return to past conversations and pick up where you left off.</figcaption>
     </figure>
     <figure class="screenshot-card">
       <img src="mindmap.png" alt="Mind map" loading="lazy" width="640" height="400">
       <figcaption>Generate mind maps from folder hierarchies.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="rag.png" alt="RAG knowledge base" loading="lazy" width="640" height="400">
+      <img src="rag.png" alt="Sorana knowledge base for grounded answers" loading="lazy" width="640" height="400">
       <figcaption>Ground AI answers in your own documents and notes.</figcaption>
     </figure>
     <figure class="screenshot-card">
@@ -1759,11 +617,11 @@ footer {
     </figure>
     <figure class="screenshot-card">
       <img src="Sorana_Multi_Agent_Pipeline.png" alt="Multi-agent pipeline" loading="lazy" width="640" height="400">
-      <figcaption>Build and connect agents visually.</figcaption>
+      <figcaption>Build and connect workflows visually.</figcaption>
     </figure>
     <figure class="screenshot-card">
       <img src="Agent Process Trace.png" alt="Agent process trace" loading="lazy" width="640" height="400">
-      <figcaption>Trace agent and tool pipelines visually.</figcaption>
+      <figcaption>Follow connected workflows visually.</figcaption>
     </figure>
     <figure class="screenshot-card">
       <img src="modelmanager.png" alt="Model Manager" loading="lazy" width="640" height="400">
@@ -1778,8 +636,8 @@ footer {
       <figcaption>Organize prompts in a central library.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="mcpmanager.png" alt="MCP Manager and Marketplace" loading="lazy" width="640" height="400">
-      <figcaption>Browse and install MCP servers from the marketplace.</figcaption>
+      <img src="mcpmanager.png" alt="Sorana integrations marketplace" loading="lazy" width="640" height="400">
+      <figcaption>Browse and connect new tools from the integrations marketplace.</figcaption>
     </figure>
     <figure class="screenshot-card">
       <img src="HealthDashboard.png" alt="Health Dashboard" loading="lazy" width="640" height="400">
@@ -1792,7 +650,7 @@ footer {
 <section class="section" id="chat-examples">
   <div class="section-header">
     <h2>See what you can <em>ask Sorana.</em></h2>
-    <p>Your AI connects research, memory, files, email, and calendar. One question can span them all.</p>
+    <p>Your AI connects research, memory, files, email, and calendar &mdash; and acts on them. One request can plan, execute, and verify multi-step work across all of them.</p>
   </div>
   <div class="examples-grid">
     <div class="example-card">
@@ -1891,7 +749,7 @@ footer {
 <section class="section section-alt" id="comparison">
   <div class="section-header">
     <h2>How Sorana <em>compares.</em></h2>
-    <p>The best parts of a note-taking app, an AI chat, and a local file manager in one place.</p>
+    <p>An autonomous AI agent, a personal knowledge base, and a visual workspace &mdash; in one tool.</p>
   </div>
   <div style="overflow-x: auto; display: block;">
   <table class="comparison-table">
@@ -1906,19 +764,20 @@ footer {
     <tbody>
       <tr><td>Runs fully offline &amp; private</td><td class="win">Your machine, your data. No internet needed.</td><td>Obsidian local / Notion cloud</td><td>Cloud only. Your data on their servers.</td></tr>
       <tr><td>Model flexibility</td><td class="win">25+ providers + capability probing</td><td>N/A</td><td>Locked to one vendor</td></tr>
-      <tr><td>Triple Model Roles</td><td class="win">Cheap model for routing, powerful for answers</td><td>N/A</td><td>One model for everything</td></tr>
-      <tr><td>Multi-Agent Workflows</td><td class="win">Predefined templates with agent teams that hand off work automatically</td><td>Simple automations only</td><td>Basic workflows / skills (paid)</td></tr>
-      <tr><td>Agent Trace &amp; Debug</td><td class="win">Watch your AI think step by step. See what it searched, what it found, and why it chose each answer.</td><td>No AI agent transparency</td><td>No agent tracing available</td></tr>
+      <tr><td>The right AI for each task</td><td class="win">Quick model for simple steps, stronger model for harder work</td><td>N/A</td><td>One model for everything</td></tr>
+      <tr><td>AI teamwork</td><td class="win">Ready-made workflows where helpers share and review the work</td><td>Simple automations only</td><td>Basic workflows / skills (paid)</td></tr>
+      <tr><td>See how answers are built</td><td class="win">Follow what Sorana searched, found, and used to reach an answer.</td><td>No AI agent transparency</td><td>No agent tracing available</td></tr>
       <tr><td>Portable</td><td class="win">Runs from a USB stick</td><td>App install required</td><td>Cloud / web only</td></tr>
       <tr><td>AI takes action</td><td class="win">Built-in automation on files, web, email</td><td>View &amp; edit only</td><td>Paid connectors with separate setup</td></tr>
+      <tr><td>Goal-driven autonomy</td><td class="win">Plans multi-step work, executes it with 90+ tools, and verifies results before answering</td><td>No autonomous agent</td><td>Agent mode / workflows (paid)</td></tr>
       <tr><td>Visual knowledge canvas</td><td class="win">AI-organised 2D canvas</td><td>Manual (Obsidian Canvas)</td><td>Chat only</td></tr>
-      <tr><td>Chat with documents</td><td class="win">Workspace-wide RAG indexing</td><td>Plugin required</td><td>Project uploads + per-session</td></tr>
+      <tr><td>Chat with documents</td><td class="win">Search across your whole workspace</td><td>Plugin required</td><td>Project uploads + per-session</td></tr>
       <tr><td>Image OCR &amp; Vision AI</td><td class="win">Built-in OCR + AI fallback</td><td>External tools required</td><td>Cloud-only vision</td></tr>
-      <tr><td>Tool integrations</td><td class="win">Built-in MCP marketplace</td><td>No native AI agents</td><td>Connector marketplaces (paid)</td></tr>
+      <tr><td>Tool integrations</td><td class="win">Built-in integration marketplace</td><td>No native AI agents</td><td>Connector marketplaces (paid)</td></tr>
       <tr><td>Calendar &amp; Scheduling</td><td class="win">Manage via chat</td><td>View-only plugins</td><td>Connector (paid)</td></tr>
-      <tr><td>AI remembers you</td><td class="win">Automatic memory across sessions, all categories free</td><td>Manual notes only</td><td>Basic free notes only; full memory paid</td></tr>
-      <tr><td>Stays fast over months</td><td class="win">Auto-compaction</td><td>No AI context</td><td>Varies (Claude yes, others no)</td></tr>
-      <tr><td>Cost</td><td class="win">$0 — use free-tier OpenRouter APIs or local models (your call)</td><td>Free + paid tiers</td><td>$20/mo for GPT-4 / Claude<sup><a href="#cost-note" style="color:inherit;text-decoration:none;">*</a></sup></td></tr>
+      <tr><td>AI remembers you</td><td class="win">Remembers your projects and preferences</td><td>Manual notes only</td><td>Basic free notes only; full memory paid</td></tr>
+      <tr><td>Stays useful over months</td><td class="win">Keeps the important context</td><td>No AI context</td><td>Varies by service</td></tr>
+      <tr><td>Cost</td><td class="win">$0 — FreeRouter free API, free-tier OpenRouter, or local models (your call)</td><td>Free + paid tiers</td><td>$20/mo for GPT-4 / Claude<sup><a href="#cost-note" style="color:inherit;text-decoration:none;">*</a></sup></td></tr>
     </tbody>
   </table>
   <p id="cost-note" style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">*Publicly disclosed approximate cost as of July 2026; Sorana lets you use those same models without subscription if you already have API credits, or swap in free-tier and local models instead.</p>
@@ -1939,8 +798,7 @@ footer {
 <section class="section" id="who-uses">
   <div class="section-header">
     <h2>Built for <em>knowledge workers.</em></h2>
-    <p>Researchers, writers, consultants, students, job hunters, and anyone managing personal admin, landlords, energy, telecom, repairs, doctors, banking, and more.</p>
-    <p style="margin-top: var(--space-4); color: var(--color-text-muted); font-size: var(--text-sm);">No matter your role, the same core toolkit works for you: RAG over your documents and files, built-in web research, Gmail, calendar, and the Prompt Manager to swap agent personas for any task. Because you can keep everything local and switch to private models, it is just as useful for sensitive everyday tasks as it is for work.</p>
+    <p>Researchers, writers, consultants, students, job hunters, and anyone managing personal admin, landlords, energy, telecom, repairs, doctors, banking, and more.</p><p style="margin-top: var(--space-4); color:var(--color-text-muted); font-size:var(--text-sm);">No matter your role, the same core toolkit works for you: ask questions across your documents and files, research the web, manage Gmail and Calendar, and switch the AI’s working style for any task. Because you can keep everything local and use private models, it is just as useful for sensitive everyday tasks as it is for work.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card">
@@ -2082,6 +940,10 @@ footer {
       <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M4 8h8" stroke="#8a8f98" stroke-width="1.5"/></svg>
       BadTheoryLabs
     </div>
+    <a class="provider-chip" href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="12" r="1.6" fill="#8a8f98"/><path d="M5.2 9.4a4 4 0 0 1 5.6 0" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M2.8 7a7.4 7.4 0 0 1 10.4 0" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      FreeRouter
+    </a>
     <div class="provider-chip">
       <img src="https://cdn.simpleicons.org/huggingface/8a8f98" class="icon" alt="" aria-hidden="true">
       HuggingFace
@@ -2111,8 +973,8 @@ footer {
     </div>
   </div>
 </section>
-
 <!-- MODEL PREVIEW -->
+
 <section class="model-preview" id="models">
   <div class="model-preview-inner">
     <div class="section-header" style="margin-bottom: var(--space-8);">
@@ -2150,11 +1012,17 @@ footer {
         <span class="model-desc">Mistral AI's most capable open foundation</span>
         <span class="model-tag free">FREE</span>
       </div>
+      <div class="model-row model-row-featured">
+        <span class="model-provider">FreeRouter</span>
+        <span class="model-name">qwen3.8-max</span>
+        <span class="model-desc">FreeRouter is a totally free API, no credit card, no quotas, including the latest Qwen 3.8 Max.</span>
+        <span class="model-tag free">FREE · NEW</span>
+      </div>
       <div class="model-row">
         <span class="model-provider">Lemonade (Local)</span>
         <span class="model-name">Qwen3.6-35B-A3B-UD-IQ2_M</span>
-        <span class="model-desc">Local on-premise quantized model</span>
-        <span class="model-tag installed">ACTIVE</span>
+        <span class="model-desc">Local on-premise quantized model, runs entirely on your hardware, free forever</span>
+        <span class="model-tag free">FREE · LOCAL</span>
       </div>
     </div>
   </div>
@@ -2164,25 +1032,26 @@ footer {
 <section class="section" id="setup">
   <div class="section-header">
     <h2>Get started in <em>minutes.</em></h2>
-    <p>Download, extract, and run. No installation required.</p>
+    <p>Download and run. No installation required.</p>
   </div>
   <div class="setup-grid">
     <div class="setup-card">
       <h3>Download</h3>
-      <p>Grab the latest portable executable from GitHub. Extract it anywhere, even a USB drive.</p>
+      <p>Grab the latest executable from GitHub. Run it directly from any folder, even a USB drive.</p>
     </div>
     <div class="setup-card">
       <h3>Choose a model</h3>
-      <p>Use a free cloud model with your own API key, or run local models through Lemonade, Ollama, or LM Studio.</p>
+      <p>Use a free cloud model with your own API key &mdash; including FreeRouter's 100% free API &mdash; or run local models through Lemonade, Ollama, or LM Studio.</p>
     </div>
     <div class="setup-card">
       <h3>Start working</h3>
-      <p>Add your files, chat with documents, and let Sorana remember your projects and preferences.</p>
+      <p>Add your files, then give Sorana a goal. It plans the steps and works through them across files, web, email, and calendar &mdash; while remembering your projects and preferences.</p>
     </div>
   </div>
   <div class="cta-section" style="padding: var(--space-12) 0 0; max-width: none;">
     <div class="cta-actions">
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
   </div>
@@ -2345,7 +1214,7 @@ footer {
   <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:760px;margin:0 auto;">
     <details class="faq-item">
       <summary>Does Sorana cost anything?</summary>
-      <p>The app itself is free to download and use. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio.</p>
+      <p>The app itself is free to download and use. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio &mdash; or start for $0 with FreeRouter's free API (no credit card, no quotas).</p>
     </details>
     <details class="faq-item">
       <summary>Does my data leave my machine?</summary>
@@ -2353,15 +1222,19 @@ footer {
     </details>
     <details class="faq-item">
       <summary>Can I run it from a USB stick?</summary>
-      <p>Yes. Sorana is a portable executable. Extract it anywhere and run it. No installation, no registry changes, no admin rights required.</p>
+      <p>Yes. Sorana is a portable executable. Run it directly. No installation, no registry changes, no admin rights required.</p>
     </details>
     <details class="faq-item">
       <summary>What models are supported?</summary>
-      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, and Alibaba. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and the free FreeRouter API. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is Sorana really an autonomous AI agent?</summary>
+      <p>Yes. Give Sorana a goal and it plans the steps, picks the right tools, and works through them on its own. Reading files, searching the web, and querying your knowledge base happen automatically. Writes to your filesystem and external actions like email and calendar pause for your approval first, and you decide per action, and you can set persistent allow/deny rules. Every step is traceable in the agent trace, and nothing leaves your machine unless you connect a provider.</p>
     </details>
     <details class="faq-item">
       <summary>What happens to long conversations?</summary>
-      <p>Auto-compaction silently compresses old messages into tight summaries. You keep full context without paying for extra tokens. Conversations that span weeks or months stay fast and affordable.</p>
+      <p>Sorana quietly condenses older parts of a conversation while keeping the important context, so conversations that span weeks or months stay fast and easy to continue.</p>
     </details>
   </div>
 </section>
@@ -2369,19 +1242,29 @@ footer {
 <!-- AD SPOT H -->
 <div class="ad-container">
   <p class="ad-label">Sponsored</p>
-  <ins class="adsbygoogle"
-       style="display:inline-block;width:728px;height:90px"
-       data-ad-client="ca-pub-6449563648591184"
-       data-ad-slot="PENDING_SLOT_BEFORE_FOOTER"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:728px;height:90px"
+	     data-ad-client="ca-pub-6449563648591184"
+	     data-ad-slot="9816026248"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 </div>
 
 <!-- FOOTER CTA -->
 <section class="cta-section">
   <h2>Start using the best free models <em>today.</em></h2>
   <p>Download Sorana and get instant access to 30+ free models from every major provider. Free, open, and built for serious AI work.</p>
+  <p class="cta-fr">
+    <a class="freerouter-cta" href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer">
+      <span class="fr-model"><span class="fr-model-live"></span>Qwen 3.8 Max<span class="fr-model-tag">100% FREE</span></span>
+      <span class="fr-text"><span class="fr-provider">FreeRouter</span> &middot; no credit card</span>
+      <span class="fr-key-btn">Get a free key &rarr;</span>
+    </a>
+  </p>
   <div class="cta-actions">
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download Sorana Free</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
@@ -2389,14 +1272,16 @@ footer {
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
   <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
     <span>© 2026 Sorana. Built for AI explorers.</span>
+    <span class="version-pill" title="Current Sorana version">v1.0.79</span>
     <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Changelog.md" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
     <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
     <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>
-    <span style="color:var(--color-text-faint);font-size:var(--text-xs);">v1.0.77</span>
   </div>
   <div style="margin-top:var(--space-3);font-size:var(--text-xs);color:var(--color-text-faint);">
     Discover more apps: <a href="http://tetramatrix.github.io/spaceship" target="_blank" rel="noopener" style="color:var(--color-text-muted);">New Spaceship</a> · <a href="http://tetramatrix.github.io/Audrix" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Audrix</a> · <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener" style="color:var(--color-text-muted);">TabNeuron</a> · <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener" style="color:var(--color-text-muted);">RyzenZPilot</a> · <a href="http://tetramatrix.github.io/Aicono" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Aicono</a>
@@ -2412,136 +1297,13 @@ footer {
 
 <button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
 
-<script>
-(function() {
-  'use strict';
-  var toggle = document.getElementById('menuToggle');
-  var links = document.getElementById('navLinks');
-  if (toggle && links) {
-    toggle.addEventListener('click', function() {
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-      toggle.textContent = expanded ? '☰' : '✕';
-    });
-  }
-  var themeBtn = document.getElementById('themeToggle');
-  var stored = localStorage.getItem('theme');
-  var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  var theme = stored || (prefersLight ? 'light' : 'dark');
-  document.documentElement.setAttribute('data-theme', theme);
-  if (themeBtn) {
-    themeBtn.textContent = theme === 'dark' ? '🌙' : '☀️';
-    themeBtn.addEventListener('click', function() {
-      var current = document.documentElement.getAttribute('data-theme');
-      var next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      themeBtn.textContent = next === 'dark' ? '🌙' : '☀️';
-    });
-  }
-  var toggleBtn = document.getElementById('toggleFeatures');
-  var moreFeatures = document.getElementById('moreFeatures');
-  if (toggleBtn && moreFeatures) {
-    toggleBtn.addEventListener('click', function() {
-      var visible = moreFeatures.style.display !== 'none';
-      moreFeatures.style.display = visible ? 'none' : 'grid';
-      toggleBtn.textContent = visible ? '10 more features ↓' : 'Show fewer ↑';
-    });
-  }
 
-  /* Nav shadow on scroll */
-  var nav = document.querySelector('nav');
-  if (nav) {
-    var onScroll = function() { nav.classList.toggle('scrolled', window.scrollY > 10); };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  }
 
-  /* Active nav link highlight */
-  var navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
-  if (navAnchors.length && 'IntersectionObserver' in window) {
-    var sectionMap = {};
-    navAnchors.forEach(function(a) { sectionMap[a.getAttribute('href').slice(1)] = a; });
-    var activeObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var link = sectionMap[entry.target.id];
-        if (!link) return;
-        if (entry.isIntersecting) {
-          navAnchors.forEach(function(a) { a.classList.remove('active'); });
-          link.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    Object.keys(sectionMap).forEach(function(id) {
-      var el = document.getElementById(id);
-      if (el) activeObserver.observe(el);
-    });
-  }
 
-  /* Section reveal on scroll */
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.section, .showcase').forEach(function(el) {
-      el.classList.add('reveal');
-      io.observe(el);
-    });
-  }
 
-  /* Back to top */
-  var btt = document.getElementById('backToTop');
-  if (btt) {
-    window.addEventListener('scroll', function() {
-      btt.classList.toggle('show', window.scrollY > 600);
-    }, { passive: true });
-    btt.addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-})();
-</script>
 
-<script>
-(function() {
-  'use strict';
-  /* Counter animation for stat numbers */
-  function animateCount(el, target, suffix) {
-    suffix = suffix || '';
-    var start = 0;
-    var duration = 900;
-    var startTime = null;
-    function step(timestamp) {
-      if (!startTime) startTime = timestamp;
-      var progress = Math.min((timestamp - startTime) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(start + (target - start) * eased) + suffix;
-      if (progress < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-  document.querySelectorAll('.stat-number').forEach(function(el) {
-    var text = el.textContent;
-    if (text === '∞' || text === '100%') { /* keep as-is */ }
-    else if (/^\d+\+$/.test(text)) {
-      var num = parseInt(text, 10);
-      /* trigger when visible */
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            animateCount(el, num, '+');
-            observer.unobserve(el);
-          }
-        });
-      }, { threshold: 0.5 });
-      observer.observe(el);
-    }
-  });
-})();
-</script>
 
+
+<script src="js/main.js"></script>
 </body>
 </html>

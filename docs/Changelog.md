@@ -1,4 +1,33 @@
 📋 Changelog 📋
+📅 18.08.26 - Version 1.0.85
+🆕 FreeRouter models update automatically — the Model Manager now shows every model FreeRouter currently offers, fetched live from its model list; the default model is kiro-auto.
+🆕 The agent plans, acts, and self-corrects — for multi-step goals the agent now follows a built-in plan/act/review/correct/retry loop, so complex tasks finish without getting stuck.
+🆕 Stuck plans break out automatically — when the planner hits a dead end it re-decomposes the goal and tries a new approach instead of looping or timing out.
+🆕 Approval policies are persistent and scoped — approvals can cover multiple dependent actions, survive restarts, and are configurable per action type in settings.
+🆕 Sessions survive token expiry — access tokens refresh automatically in the background, so authenticated work is no longer cut off mid-task.
+🔄 Final answers are complete — answers cut off by a provider token limit are retried or replaced, so you no longer get partial text.
+🔄 Document and web research use the right scope — RAG search stays restricted to the active agent's documents, and web fetches that the server rejects no longer break the answer.
+🔄 Multi-tool turns complete cleanly — duplicate-tool guards no longer discard fresh results mid-turn.
+🔄 Provider settings are preserved on save — saving configuration can no longer quietly remove a provider block.
+🔄 Unconfigured API keys fail cleanly — placeholder keys in config no longer produce confusing "you did not provide an API key" errors from providers.
+🧪 Regression coverage added for approval scope, routing integrity, final-answer truncation, RAG document scoping, API-key validation, web-research resilience, memory extraction quality, and first-launch performance.
+🐛 Web research no longer ends with an "empty response" error after a successful search — the follow-up page fetches the research planned now actually run.
+🔄 Web research keeps going when a page refuses to load — pages stuck in redirect loops or blocked by anti-bot protection are remembered so they are not fetched again, and the next source is tried instead.
+🔄 Substantive answers from mid-turn work are delivered — a complete answer produced while working with tools is no longer discarded in favor of a shorter continuation.
+🐛 Memory extraction no longer parrots existing knowledge back as new memories — repeated facts are filtered out instead of being saved again, and near-duplicate memories with different wording are now recognized as duplicates.
+🐛 German phrase extraction is fixed — phrases like "für X im Y" now capture the full entity instead of dropping part of it.
+🔄 The first memory search is fast again — the on-device embedding index is built in one batched pass instead of embedding every memory one by one, and memory deduplication falls back to text matching within a reasonable time if the embedding service is slow.
+🔄 The first chat no longer stalls for minutes — the semantic index behind quick intent detection is precomputed in one batched pass instead of embedding hundreds of examples one by one.
+🆕 Capability probe results now show up immediately — after "Test capabilities" confirms a model can reason or see images, the Model Manager row and its context menu reflect it right away, instead of looking like the probe never ran.
+🆕 A Stop button in the chat window — a request that runs too long can be halted with one click, and the chat stays responsive so a new message can be sent right away.
+🆕 The vision indicator is now a proper status-bar button — it matches the other chat buttons, uses a platform-appropriate camera icon, and shows a single clean progress line while capturing or processing an image.
+🔄 Live token statistics moved from the chat status bar to the Health Dashboard — a new "Lemonade Token Stats" card appears when Lemonade is the active backend, and the "Circuit Breakers" and "Sub-Agent Scheduler" cards are merged into a single "AI Engine" card.
+🔄 The chat status bar is decluttered — the document/RAG status text is removed; per-request usage is shown in the inline stats under each answer instead.
+🔄 Model Manager remembers collapsed groups — which provider groups you collapsed stays that way across window reopens, and sorting a column no longer resets them; models assigned to a role (Primary, Quick, Embed, Vision) stay pinned to the top of the list in that order.
+🔄 The context menu's Thinking effort options now only show what the active model actually supports.
+🔄 App startup no longer stalls when the on-device AI service is offline — the app quickly checks whether the embedding model is ready instead of waiting out a long timeout, and keeps checking in the background so it recovers once the service is back.
+🐛 Asking for a document by name no longer starts deep code research — filenames like ".pdf" or ".docx" are recognized as documents instead of code signals, requests that point at the RAG or memories are honored, and code research on a folder without any code stops immediately instead of burning minutes.
+
 📅 15.08.26 - Version 1.0.84
 🆕 New free cloud provider — FreeRouter is now available in the Model Manager: a completely free OpenAI-compatible API (no credit card, no quotas) that includes the latest Qwen 3.8 Max model. Great for testing and getting started at zero cost.
 🆕 Risky actions ask first — sending email, writing to your calendar, or running external tools now pauses for your explicit approval before executing, and pending approvals survive app restarts.
