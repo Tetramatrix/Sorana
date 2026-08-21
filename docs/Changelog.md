@@ -1,4 +1,28 @@
 📋 Changelog 📋
+📅 20.08.26 - Version 1.0.86
+🆕 The chat status bar is simpler — document/RAG status text is removed; the vision indicator is now a clean inline footnote, and per-request usage is shown under each answer instead.
+🆕 Vision capture is consistent across platforms — the chat status-bar button now uses a platform-appropriate icon (camera emoji on Windows, ◉ on Linux), shows a single animated progress line while capturing or processing, and is rendered as a proper button instead of a label.
+🆕 Stop long-running requests with one click — a new Stop button halts a request and keeps the chat responsive so a new message can be sent right away.
+🆕 Lemonade token statistics live on the Health Dashboard — a new "Lemonade Token Stats" card appears when Lemonade is the active backend, and the "Circuit Breakers" and "Sub-Agent Scheduler" cards are merged into a single "AI Engine" card.
+🆕 Automatic token refresh keeps sessions alive — access tokens refresh automatically in the background before expiry, so authenticated work is no longer cut off mid-task.
+🆕 Document tasks are recognized correctly — filenames like ".pdf" or ".docx" are treated as documents instead of code signals, and requests that point at RAG or memories are no longer hijacked into codebase research.
+🔄 Memory extraction is more precise — when a message contains several facts, each one is now preserved instead of only part of the message, and duplicate memories are avoided; memory timestamps are handled reliably so saved memories stay accurate and in order.
+🔄 Memory storage is scoped correctly — every memory write now targets the active agent's scope instead of a shared global store, so agents no longer see or overwrite each other's memories.
+🔄 Memory-store commands stay on the right track — direct store commands no longer trigger keyword cascades, web_search, or research-verb extraction; they are routed straight to memory storage.
+🔄 Model Manager remembers collapsed groups — which provider groups you collapsed stays that way across window reopens, and sorting a column no longer resets them; models assigned to a role (Primary, Quick, Embed, Vision) stay pinned to the top of the list in that order.
+🔄 The context menu's Thinking effort options now only show what the active model actually supports, and positive capability-probe results are reflected immediately in the Model Manager row and its context menu.
+🔄 Embedding dispatch is batched — intent semantic precompute and cloud embedding calls are now sent as a single array POST instead of hundreds of sequential requests, so the first chat and first memory search are fast again.
+🔄 Research answers are delivered complete — a complete answer produced while working with tools is no longer discarded in favor of a shorter continuation; parallel-synthesis variants now seed from the stashed best-answer candidate.
+🔄 Web research keeps going when a page refuses to load — pages stuck in redirect loops or blocked by anti-bot protection are remembered so they are not fetched again, and the next source is tried instead.
+🔄 Autonomy control plane is canonical — legacy retry and budget counters are consolidated behind a single action ledger, and control-plane contracts are now the single source of truth for routing and execution.
+🧪 Regression coverage added for vision capture lifecycle, document-task routing, memory scope isolation, memory extraction quality, embedding batch dispatch, capability-probe display, Model Manager collapse persistence, role-pinned sorting, and web-research resilience.
+🔄 Session statistics and memory MCP calls follow the active agent — per-session counters and memory routing now respect the current agent's scope instead of mixing global and workspace data.
+🔄 Gmail and Calendar actions route deterministically — send, get, and trash operations now read the correct target so the right message or event is always acted on.
+🔄 Parallel approval-blocked rounds are recorded correctly — the action ledger now stamps every approval-blocked execution so the trace shows what was actually gated.
+🐛 On-device embedding no longer hangs when the service is offline — a fast-fail probe detects the dead backend immediately, and the connection is kept alive for automatic recovery.
+🆕 Memory validation is accelerated — agent-creator memory checks now use on-device hardware acceleration when available, and the full validation sweep is documented.
+🐛 Cloud embedding overrides no longer loop — a watchdog prevents unbounded retry loops when cloud providers handle single-text embedding requests.
+
 📅 18.08.26 - Version 1.0.85
 🆕 FreeRouter models update automatically — the Model Manager now shows every model FreeRouter currently offers, fetched live from its model list; the default model is kiro-auto.
 🆕 The agent plans, acts, and self-corrects — for multi-step goals the agent now follows a built-in plan/act/review/correct/retry loop, so complex tasks finish without getting stuck.

@@ -18,16 +18,16 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
      crossorigin="anonymous"></script>
 
-<title>Sorana: Your Personal AI That Actually Knows You</title>
-<meta name="description" content="Sorana is your personal AI knowledge workspace. A second brain that remembers your projects, learns your preferences, and finds any file or note instantly. Run fully offline on Windows.">
-<meta property="og:title" content="Sorana: Your Personal AI That Actually Knows You">
-<meta property="og:description" content="A private AI workspace that remembers your projects, learns your style, and acts on your files.">
+<title>Sorana: Your Agentic AI That Actually Knows You</title>
+<meta name="description" content="Sorana is agentic AI, a multi-agent workspace where a primary agent plans, dispatches specialized subagents, acts across your files, web, email, and calendar, and remembers your projects. Runs fully offline on Windows.">
+<meta property="og:title" content="Sorana: Your Agentic AI That Actually Knows You">
+<meta property="og:description" content="A multi-agent workspace where a primary agent plans, dispatches specialized subagents, acts across your files, web, email, and calendar, and remembers your projects.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
 <meta property="og:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sorana: Your Personal AI That Actually Knows You">
-<meta name="twitter:description" content="A private AI workspace that remembers your projects, learns your style, and acts on your files.">
+<meta name="twitter:title" content="Sorana: Your Agentic AI That Actually Knows You">
+<meta name="twitter:description" content="A multi-agent workspace where a primary agent plans, dispatches specialized subagents, acts across your files, web, email, and calendar, and remembers your projects.">
 <meta name="twitter:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
   <link rel="icon" type="image/png" href="logo_small.png">
   <link rel="canonical" href="https://tetramatrix.github.io/Sorana/">
@@ -100,6 +100,14 @@
             "@type": "Answer",
             "text": "Sorana quietly condenses older parts of a conversation while keeping the important context, so conversations that span weeks or months stay fast and easy to continue."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Sorana use multiple AI agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When a task needs it, Sorana's primary agent dispatches specialized subagents, a web researcher, a code analyst, a fact-check or review agent, each with its own budget, running parts of the work in parallel. The primary agent then assembles and reviews the results before answering."
+          }
         }
       ]
     }
@@ -150,14 +158,13 @@
   <div class="hero-eyebrow-row">
     <div class="hero-eyebrow">
       <span class="badge-dot" style="background:var(--color-primary)"></span>
-      Autonomous AI Agent &middot; Personal Workspace
+      Agentic AI · Multi-Agent Workspace
     </div>
     <span class="version-pill" id="versionPill" title="Current Sorana version">v1.0.79</span>
   </div>
-  <h1>One tool.<br><em>That never forgets.</em></h1>
+  <h1>One agent.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
-    Sorana is your autonomous AI assistant. A goal-driven agent that plans multi-step work, acts across your files, web, email, and calendar,
-    and never forgets a project, preference, or decision.
+    Sorana is agentic AI, a primary agent that plans your work, dispatches specialized subagents, and acts across your files, web, email, and calendar, reviewing its own results before answering. It never forgets a project, preference, or decision.
   </p>
   <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 auto var(--space-8);max-width:520px;">
     Runs from a USB stick. No install, no account, no cloud sync.<br>Available for Windows and Linux.
@@ -215,81 +222,48 @@
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- HOW THE AGENT WORKS -->
 <section class="section" id="how-it-works">
   <div class="section-header">
-    <h2>How it <em>works.</em></h2>
-    <p>Three steps to an AI assistant that knows you and gets things done.</p>
+    <h2>How the agent <em>works.</em></h2>
+    <p>Give it a goal. It plans, dispatches specialized subagents, acts, and reviews its own work across your files, web, email, and calendar.</p>
   </div>
   <div class="steps">
     <div class="step">
       <div class="step-number">1</div>
-      <h3>Connect a model</h3>
-      <p>Use a free cloud model with your own API key &mdash; OpenRouter's free-tier is a zero-cost start &mdash; or run local models through Lemonade, Ollama, or LM Studio. No subscription needed.</p>
+      <h3>Plan</h3>
+      <p>Breaks your goal into ordered steps, picks the right tools and models for each part, and decides what can run in parallel.</p>
     </div>
     <div class="step-arrow">→</div>
     <div class="step">
       <div class="step-number">2</div>
-      <h3>Point it at your files</h3>
-      <p>Open any folder as your workspace. Sorana reads your documents, code, and notes, building a knowledge base that understands your projects.</p>
+      <h3>Dispatch</h3>
+      <p>Sends specialized subagents, web research, code analysis, fact-check or review, to work on parts in parallel, each with its own budget and scope.</p>
     </div>
     <div class="step-arrow">→</div>
     <div class="step">
       <div class="step-number">3</div>
-      <h3>Ask anything</h3>
-      <p>Give Sorana a goal &mdash; it plans the steps, works through them across your files, web, email, and calendar, and remembers everything it learns along the way.</p>
+      <h3>Act</h3>
+      <p>Runs the steps across your files, web, email, and calendar. The primary agent stays in control while specialized workers handle their assigned parts.</p>
     </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <h3>Review &amp; correct</h3>
+      <p>Checks its own results, retries on failure, then assembles the final answer. You see the full trace of what was done and why.</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-4);margin-top:var(--space-10);">
+    <figure style="max-width:520px;margin:0;">
+      <img src="Sorana_Multi_Agent_Pipeline.png" alt="A primary agent dispatching specialized subagents" loading="lazy" width="640" height="400" style="width:100%;border-radius:8px;">
+      <figcaption style="text-align:center;margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);">A primary agent dispatching specialized subagents.</figcaption>
+    </figure>
+    <figure style="max-width:520px;margin:0;">
+      <img src="Agent Process Trace.png" alt="Every step planned, acted, and reviewed, traceable" loading="lazy" width="640" height="400" style="width:100%;border-radius:8px;">
+      <figcaption style="text-align:center;margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);">Every step planned, acted, and reviewed, traceable.</figcaption>
+    </figure>
   </div>
 </section>
-
-<!-- TRUSTED BY -->
-<section class="section section-alt" id="testimonials">
-  <div class="section-header">
-    <h2>Trusted by the <em>community.</em></h2>
-    <p>Reviewed and recommended by publications across the AI and software space.</p>
-  </div>
-      <div class="testimonials-band">
-    <button type="button" class="testimonial-arrow prev" id="testimonialPrev" aria-label="Scroll testimonials left">‹</button>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <img src="majorgeeks.gif" alt="MajorGeeks" class="testimonial-logo" loading="lazy" width="140" height="56">
-        <div class="testimonial-source">MajorGeeks</div>
-        <p class="testimonial-quote">"A smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. The canvas, document chat, OCR, and local AI support give it a real purpose."</p>
-        <a href="https://www.majorgeeks.com/files/details/sorana.html" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-      </div>
-      <div class="testimonial-card">
-        <img src="softpedia.png" alt="Softpedia" class="testimonial-logo" loading="lazy" width="140" height="56">
-        <div class="testimonial-source">Softpedia</div>
-        <p class="testimonial-quote">"A fresh and innovative approach to personal knowledge management. The spatial canvas and persistent memory features set it apart from traditional note-taking apps."</p>
-        <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-      </div>
-      <div class="testimonial-card">
-        <img src="trishtech-logo.png" alt="TrishTech" class="testimonial-logo logo-light-bg" loading="lazy" width="140" height="56">
-        <div class="testimonial-source">TrishTech</div>
-        <p class="testimonial-quote">"A capable, memory-persistent, privacy-respecting AI workspace that fits on a USB drive and costs nothing to run."</p>
-        <a href="https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-      </div>
-      <div class="testimonial-card">
-        <img src="poweredbyai-logo.svg" alt="PoweredByAI" class="testimonial-logo" loading="lazy" width="140" height="56">
-        <div class="testimonial-source">PoweredByAI</div>
-        <p class="testimonial-quote">"An innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
-        <a href="https://poweredbyai.app/project/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-      </div>
-      <div class="testimonial-card">
-        <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo" loading="lazy" width="140" height="56">
-        <div class="testimonial-source">MCPMarket</div>
-        <p class="testimonial-quote">"Redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. Replaces rigid folders and forgetful chatbots with a persistent 2D canvas."</p>
-        <a href="https://mcpmarket.com/es/server/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-      </div>
-      <div class="testimonial-card">
-        <img src="warp2search-logo.png" alt="Warp2Search" class="testimonial-logo" loading="lazy" width="140" height="56">
-        <div class="testimonial-source">Warp2Search</div>
-        <p class="testimonial-quote">"A bold step in the evolution of file organization tools, a free AI-powered visual workspace whose canvas, document chat, OCR, and flexible local or cloud AI support set it apart from traditional file management."</p>
-        <a href="https://www.warp2search.net/story/sorana-10770-released/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
-      </div>
-    </div>
-    <button type="button" class="testimonial-arrow next" id="testimonialNext" aria-label="Scroll testimonials right">›</button>
-  </div></section>
 
 <!-- AD SPOT A -->
 <div class="ad-container">
@@ -305,11 +279,11 @@
 <section class="section" id="overview">
   <div class="section-header">
     <h2>Your knowledge. <em>Your AI.</em> Your rules.</h2>
-    <p>Sorana is a personal AI that learns your projects, remembers your preferences, and makes your knowledge actually work for you.</p>
+    <p>Sorana is an agentic AI workspace, a primary agent that plans your work, dispatches specialized subagents, and never forgets.</p>
   </div>
   <div class="overview-grid">
     <div class="overview-text">
-      <p><strong>Sorana is your personal AI knowledge workspace, a second brain that actually acts.</strong> Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.</p>
+      <p><strong>Sorana is agentic AI, a primary agent that plans your work, dispatches specialized subagents, acts across your files, web, email, and calendar, and remembers your projects.</strong> Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.</p>
       <p>Visualize your entire knowledge base on a spatial 2D canvas, chat with any document in plain language, and let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.</p>
       <p><strong>Everything runs on your machine. Your data stays yours.</strong></p>
     </div>
@@ -338,7 +312,7 @@
   <div class="problem-grid">
     <div class="problem-card">
       <h3>Your AI can't think strategically</h3>
-      <p>Most AI answers one question and stops. Sorana plans ahead, researches, checks its work, and tries another approach when something goes wrong.</p>
+      <p>Most AI does one thing at a time. Sorana breaks a goal into steps and dispatches specialized subagents, research, code, fact-check, to work parts in parallel, then reviews the results.</p>
     </div>
     <div class="problem-card">
       <h3>You re-explain yourself every day</h3>
@@ -387,8 +361,8 @@
           <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
         </svg>
       </div>
-      <h3>Plans. Acts. Delivers.</h3>
-      <p>Give Sorana a goal and it plans the multi-step work, uses its tools across your files, web, email, and calendar, and checks the result before answering.</p>
+      <h3>Plans. Dispatches. Acts. Reviews.</h3>
+      <p>When a task needs it, Sorana's primary agent dispatches specialized subagents, web research, code analysis, fact-check, to work parts in parallel with their own budgets, then reviews the results before answering.</p>
     </div><div class="feature-card large formatted-chat-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -396,7 +370,7 @@
           <path d="M8 9h8M8 13h5"/>
         </svg>
       </div>
-      <h3>Chat that’s easy to read</h3>
+      <h3>Command it in plain language</h3>
       <p>Get clear, easy-to-scan answers instead of a wall of text. Sorana highlights what matters, keeps explanations separate from the final answer, and turns comparisons into clean, readable tables.</p>
       <div class="formatted-chat-preview" aria-label="Example of Sorana formatted chat with a comparison table">
         <div class="formatted-chat-toolbar" aria-hidden="true">
@@ -471,7 +445,7 @@
           <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
         </svg>
       </div>
-      <h3>Chat with your files</h3>
+      <h3>Ask about any file</h3>
       <p>Ask questions about PDFs, documents, scans, and images in plain language. Sorana finds the useful information inside and makes your whole archive easier to search.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
@@ -480,7 +454,7 @@
         </svg>
       </div>
       <h3>Answers grounded in your knowledge</h3>
-      <p>Bring together documents, notes, and web pages in one searchable knowledge base. Sorana finds the right context automatically, so answers are based on your information—not guesswork.</p>
+      <p>Bring together documents, notes, and web pages in one searchable knowledge base. Sorana finds the right context automatically, so answers are based on your information, not guesswork.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -562,7 +536,7 @@
           <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
         </svg>
       </div>
-      <h3>See how Sorana works</h3>
+      <h3>See every step your agent takes</h3>
       <p>Follow along as Sorana searches, reads, and builds an answer. See what it found and why it took that path, so you can trust the result or guide it another way.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
@@ -616,12 +590,12 @@
       <figcaption>Manage events and free slots from chat.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="Sorana_Multi_Agent_Pipeline.png" alt="Multi-agent pipeline" loading="lazy" width="640" height="400">
-      <figcaption>Build and connect workflows visually.</figcaption>
+      <img src="Sorana_Multi_Agent_Pipeline.png" alt="A primary agent dispatching specialized subagents" loading="lazy" width="640" height="400">
+      <figcaption>A primary agent dispatching specialized subagents.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <img src="Agent Process Trace.png" alt="Agent process trace" loading="lazy" width="640" height="400">
-      <figcaption>Follow connected workflows visually.</figcaption>
+      <img src="Agent Process Trace.png" alt="Every step planned, acted, and reviewed, traceable" loading="lazy" width="640" height="400">
+      <figcaption>Every step planned, acted, and reviewed, traceable.</figcaption>
     </figure>
     <figure class="screenshot-card">
       <img src="modelmanager.png" alt="Model Manager" loading="lazy" width="640" height="400">
@@ -646,13 +620,23 @@
   </div>
 </section>
 
-<!-- CHAT EXAMPLES -->
+<!-- TASK YOUR AGENT WITH -->
 <section class="section" id="chat-examples">
   <div class="section-header">
-    <h2>See what you can <em>ask Sorana.</em></h2>
+    <h2>See what you can <em>task your agent with.</em></h2>
     <p>Your AI connects research, memory, files, email, and calendar &mdash; and acts on them. One request can plan, execute, and verify multi-step work across all of them.</p>
   </div>
   <div class="examples-grid">
+    <div class="example-card">
+      <h4>Workflows &amp; Pipelines</h4>
+      <ul>
+        <li>"Draft a project report, review it for gaps, and polish the final version"</li>
+        <li>"Research this topic, write a blog post, and have a second agent fact check every claim"</li>
+        <li>"Read these requirements, draft a technical spec, and review it for clarity"</li>
+        <li>"Analyze this customer feedback, summarize the key themes, and draft a response plan"</li>
+        <li>"Review this code change for bugs, suggest improvements, and generate a summary. Run the review in parallel with the analysis."</li>
+      </ul>
+    </div>
     <div class="example-card">
       <h4>Memory &amp; Knowledge</h4>
       <ul>
@@ -722,16 +706,6 @@
         <li>"Search my archives for the insurance policy and summarize the coverage"</li>
       </ul>
     </div>
-    <div class="example-card">
-      <h4>Workflows &amp; Pipelines</h4>
-      <ul>
-        <li>"Draft a project report, review it for gaps, and polish the final version"</li>
-        <li>"Research this topic, write a blog post, and have a second agent fact check every claim"</li>
-        <li>"Read these requirements, draft a technical spec, and review it for clarity"</li>
-        <li>"Analyze this customer feedback, summarize the key themes, and draft a response plan"</li>
-        <li>"Review this code change for bugs, suggest improvements, and generate a summary"</li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -765,11 +739,11 @@
       <tr><td>Runs fully offline &amp; private</td><td class="win">Your machine, your data. No internet needed.</td><td>Obsidian local / Notion cloud</td><td>Cloud only. Your data on their servers.</td></tr>
       <tr><td>Model flexibility</td><td class="win">25+ providers + capability probing</td><td>N/A</td><td>Locked to one vendor</td></tr>
       <tr><td>The right AI for each task</td><td class="win">Quick model for simple steps, stronger model for harder work</td><td>N/A</td><td>One model for everything</td></tr>
-      <tr><td>AI teamwork</td><td class="win">Ready-made workflows where helpers share and review the work</td><td>Simple automations only</td><td>Basic workflows / skills (paid)</td></tr>
+      <tr><td>Multi-agent orchestration</td><td class="win">A primary agent dispatches specialized subagents that work in parallel with their own budgets.</td><td>Simple automations only</td><td>Basic workflows / skills (paid)</td></tr>
       <tr><td>See how answers are built</td><td class="win">Follow what Sorana searched, found, and used to reach an answer.</td><td>No AI agent transparency</td><td>No agent tracing available</td></tr>
       <tr><td>Portable</td><td class="win">Runs from a USB stick</td><td>App install required</td><td>Cloud / web only</td></tr>
       <tr><td>AI takes action</td><td class="win">Built-in automation on files, web, email</td><td>View &amp; edit only</td><td>Paid connectors with separate setup</td></tr>
-      <tr><td>Goal-driven autonomy</td><td class="win">Plans multi-step work, executes it with 90+ tools, and verifies results before answering</td><td>No autonomous agent</td><td>Agent mode / workflows (paid)</td></tr>
+      <tr><td>Goal-driven autonomy</td><td class="win">Plans multi-step work, dispatches specialized subagents in parallel, acts with 90+ tools, and reviews its own work before answering.</td><td>No autonomous agent</td><td>Agent mode / workflows (paid)</td></tr>
       <tr><td>Visual knowledge canvas</td><td class="win">AI-organised 2D canvas</td><td>Manual (Obsidian Canvas)</td><td>Chat only</td></tr>
       <tr><td>Chat with documents</td><td class="win">Search across your whole workspace</td><td>Plugin required</td><td>Project uploads + per-session</td></tr>
       <tr><td>Image OCR &amp; Vision AI</td><td class="win">Built-in OCR + AI fallback</td><td>External tools required</td><td>Cloud-only vision</td></tr>
@@ -777,12 +751,61 @@
       <tr><td>Calendar &amp; Scheduling</td><td class="win">Manage via chat</td><td>View-only plugins</td><td>Connector (paid)</td></tr>
       <tr><td>AI remembers you</td><td class="win">Remembers your projects and preferences</td><td>Manual notes only</td><td>Basic free notes only; full memory paid</td></tr>
       <tr><td>Stays useful over months</td><td class="win">Keeps the important context</td><td>No AI context</td><td>Varies by service</td></tr>
-      <tr><td>Cost</td><td class="win">$0 — free-tier OpenRouter or local models (your call)</td><td>Free + paid tiers</td><td>$20/mo for GPT-4 / Claude<sup><a href="#cost-note" style="color:inherit;text-decoration:none;">*</a></sup></td></tr>
+      <tr><td>Cost</td><td class="win">$0, free-tier OpenRouter or local models (your call)</td><td>Free + paid tiers</td><td>$20/mo for GPT-4 / Claude<sup><a href="#cost-note" style="color:inherit;text-decoration:none;">*</a></sup></td></tr>
     </tbody>
   </table>
   <p id="cost-note" style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">*Publicly disclosed approximate cost as of July 2026; Sorana lets you use those same models without subscription if you already have API credits, or swap in free-tier and local models instead.</p>
   </div>
 </section>
+
+<!-- TRUSTED BY -->
+<section class="section section-alt" id="testimonials">
+  <div class="section-header">
+    <h2>Trusted by the <em>community.</em></h2>
+    <p>Reviewed and recommended by publications across the AI and software space.</p>
+  </div>
+      <div class="testimonials-band">
+    <button type="button" class="testimonial-arrow prev" id="testimonialPrev" aria-label="Scroll testimonials left">‹</button>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="majorgeeks.gif" alt="MajorGeeks" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">MajorGeeks</div>
+        <p class="testimonial-quote">"A smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. The canvas, document chat, OCR, and local AI support give it a real purpose."</p>
+        <a href="https://www.majorgeeks.com/files/details/sorana.html" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="softpedia.png" alt="Softpedia" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">Softpedia</div>
+        <p class="testimonial-quote">"A fresh and innovative approach to personal knowledge management. The spatial canvas and persistent memory features set it apart from traditional note-taking apps."</p>
+        <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="trishtech-logo.png" alt="TrishTech" class="testimonial-logo logo-light-bg" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">TrishTech</div>
+        <p class="testimonial-quote">"A capable, memory-persistent, privacy-respecting AI workspace that fits on a USB drive and costs nothing to run."</p>
+        <a href="https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="poweredbyai-logo.svg" alt="PoweredByAI" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">PoweredByAI</div>
+        <p class="testimonial-quote">"An innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
+        <a href="https://poweredbyai.app/project/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">MCPMarket</div>
+        <p class="testimonial-quote">"Redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. Replaces rigid folders and forgetful chatbots with a persistent 2D canvas."</p>
+        <a href="https://mcpmarket.com/es/server/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="warp2search-logo.png" alt="Warp2Search" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">Warp2Search</div>
+        <p class="testimonial-quote">"A bold step in the evolution of file organization tools, a free AI-powered visual workspace whose canvas, document chat, OCR, and flexible local or cloud AI support set it apart from traditional file management."</p>
+        <a href="https://www.warp2search.net/story/sorana-10770-released/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+    </div>
+    <button type="button" class="testimonial-arrow next" id="testimonialNext" aria-label="Scroll testimonials right">›</button>
+  </div></section>
 
 <!-- AD SPOT E -->
 <div class="ad-container">
@@ -1015,7 +1038,7 @@
       <div class="model-row model-row-featured">
         <span class="model-provider"><s>FreeRouter</s></span>
         <span class="model-name"><s>qwen3.8-max</s></span>
-        <span class="model-desc">FreeRouter shut down in August 2026 — the service is no longer operating. The announcement is still online for reference.</span>
+        <span class="model-desc">FreeRouter shut down in August 2026. The service is no longer operating. The announcement is still online for reference.</span>
         <span class="model-tag">DISCONTINUED</span>
       </div>
       <div class="model-row">
@@ -1119,7 +1142,7 @@
       <h3 class="pricing-name">Premium Support &amp; Early Access</h3>
       <div class="pricing-price">Coming soon</div>
       <p class="pricing-desc">Optional paid tier. Priority setup help, early access to new integrations, and direct feedback channel. All current features remain available in the free tier.</p>
-      <p class="pricing-note">Not yet available — join Discord for updates.</p>
+      <p class="pricing-note">Not yet available. Join Discord for updates.</p>
       <a href="https://discord.gg/4QkQSfSATF" target="_blank" rel="noopener" class="btn-outline pricing-cta">Join Discord for updates</a>
     </div>
   </div>
@@ -1231,6 +1254,10 @@
     <details class="faq-item">
       <summary>Is Sorana really an autonomous AI agent?</summary>
       <p>Yes. Give Sorana a goal and it plans the steps, picks the right tools, and works through them on its own. Reading files, searching the web, and querying your knowledge base happen automatically. Writes to your filesystem and external actions like email and calendar pause for your approval first, and you decide per action, and you can set persistent allow/deny rules. Every step is traceable in the agent trace, and nothing leaves your machine unless you connect a provider.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does Sorana use multiple AI agents?</summary>
+      <p>When a task needs it, Sorana's primary agent dispatches specialized subagents &mdash; a web researcher, a code analyst, a fact-check or review agent &mdash; each with its own budget, running parts of the work in parallel. The primary agent then assembles and reviews the results before answering.</p>
     </details>
     <details class="faq-item">
       <summary>What happens to long conversations?</summary>
