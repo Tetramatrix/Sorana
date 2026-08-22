@@ -1281,7 +1281,7 @@ nav.scrolled {
 }
 
 /* ── CheaperInference affiliate CTA (2026-08-22) ─────────────────────── */
-/* Same pill layout as .freerouter-cta, own green accent, self-contained
+/* Same pill layout as .freerouter-cta, own purple accent, self-contained
    colors (no :root additions needed). */
 .ci-cta {
   display: inline-flex;
@@ -1298,8 +1298,8 @@ nav.scrolled {
   transition: border-color 160ms, box-shadow 160ms, transform 160ms;
 }
 .ci-cta:hover {
-  border-color: #d946ef;
-  box-shadow: 0 0 24px rgba(217,70,239,0.35), 0 4px 20px rgba(0,0,0,0.25);
+  border-color: #9d7cd8;
+  box-shadow: 0 0 24px rgba(157,124,216,0.35), 0 4px 20px rgba(0,0,0,0.25);
   transform: translateY(-2px);
 }
 .ci-cta .ci-model {
@@ -1309,17 +1309,17 @@ nav.scrolled {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
   font-weight: 700;
   font-size: var(--text-sm);
-  color: #e879f9;
-  background: rgba(217,70,239,0.12);
-  border: 1px solid rgba(217,70,239,0.30);
+  color: #9d7cd8;
+  background: rgba(157,124,216,0.12);
+  border: 1px solid rgba(157,124,216,0.30);
   border-radius: var(--radius-full);
   padding: 5px 14px;
   white-space: nowrap;
 }
 .ci-cta .ci-model-tag {
   display: inline-block;
-  background: #d946ef;
-  color: #4a044e;
+  background: #9d7cd8;
+  color: #2d1f3d;
   font-family: var(--font-body);
   font-size: 10px;
   font-weight: 800;
@@ -1337,13 +1337,13 @@ nav.scrolled {
   white-space: nowrap;
 }
 .ci-cta .ci-provider {
-  color: #e879f9;
+  color: #9d7cd8;
   font-weight: 700;
 }
 .ci-cta .ci-key-btn {
   display: inline-block;
-  background: #d946ef;
-  color: #4a044e;
+  background: #9d7cd8;
+  color: #2d1f3d;
   font-weight: 700;
   font-size: var(--text-sm);
   padding: 7px 18px;
@@ -1352,7 +1352,7 @@ nav.scrolled {
   transition: background 160ms;
 }
 .ci-cta:hover .ci-key-btn {
-  background: #e879f9;
+  background: #b29de0;
 }
 /* ── CheaperInference sponsored leaderboard (inside .ad-container) ───── */
 /* Reuses the site's AdSense container (box + .ad-label "Sponsored").

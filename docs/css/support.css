@@ -360,3 +360,64 @@ footer {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-bg); }
 ::-webkit-scrollbar-thumb { background: var(--color-surface-3); border-radius: 3px; }
+
+/* ── CheaperInference sponsored leaderboard (inside .ad-container) ───── */
+/* Reuses the site's AdSense container (box + .ad-label "Sponsored").
+   The unit itself is a 728x90-style horizontal bar. */
+.ci-adbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 728px;
+  min-height: 90px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface-2);
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: border-color 160ms, box-shadow 160ms;
+}
+.ci-adbar:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 0 20px rgba(245,158,11,0.18);
+}
+.ci-adbody { flex: 1; min-width: 0; }
+.ci-adhead {
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--color-text);
+}
+.ci-adbar:hover .ci-adlink { color: #fbbf24; }
+.ci-addesc {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: 3px;
+}
+.ci-adurl {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-faint, var(--color-text-muted));
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  margin-top: 4px;
+}
+.ci-adurl b { color: #4ade80; font-weight: 700; }
+.ci-adbtn {
+  flex-shrink: 0;
+  display: inline-block;
+  background: #f59e0b;
+  color: #451a03;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  transition: background 160ms;
+}
+.ci-adbar:hover .ci-adbtn { background: #fbbf24; }
+@media (max-width: 760px) {
+  .ci-adbar { flex-direction: column; align-items: flex-start; gap: 8px; min-height: 0; }
+  .ci-adbtn { align-self: stretch; text-align: center; }
+}
