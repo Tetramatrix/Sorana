@@ -1354,87 +1354,65 @@ nav.scrolled {
 .ci-cta:hover .ci-key-btn {
   background: #fbbf24;
 }
-/* ── CheaperInference sponsored ad strip (Google-Ads-mimic) ──────────── */
-.ci-adwrap {
-  max-width: 1100px;
-  margin: var(--space-6) auto;
-  padding: 0 var(--space-4);
-}
+/* ── CheaperInference sponsored leaderboard (inside .ad-container) ───── */
+/* Reuses the site's AdSense container (box + .ad-label "Sponsored").
+   The unit itself is a 728x90-style horizontal bar. */
 .ci-adbar {
   display: flex;
-  align-items: stretch;
-  border: 1px dashed var(--color-border-strong, var(--color-border));
-  border-radius: var(--radius-md, 10px);
+  align-items: center;
+  gap: 20px;
+  max-width: 728px;
+  min-height: 90px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
   background: var(--color-surface-2);
-  overflow: hidden;
+  padding: 10px 16px;
   text-decoration: none;
   transition: border-color 160ms, box-shadow 160ms;
 }
 .ci-adbar:hover {
   border-color: #f59e0b;
-  box-shadow: 0 0 18px rgba(245,158,11,0.18);
+  box-shadow: 0 0 20px rgba(245,158,11,0.18);
 }
-.ci-adbar .ci-sponsored {
-  display: flex;
-  align-items: center;
-  padding: 0 12px;
-  font-size: 10px;
+.ci-adbody { flex: 1; min-width: 0; }
+.ci-adhead {
+  display: block;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-text-faint, var(--color-text-muted));
-  border-right: 1px dashed var(--color-border);
-  background: var(--color-surface);
-  writing-mode: horizontal-tb;
-  white-space: nowrap;
-}
-.ci-adbar .ci-adbody {
-  flex: 1;
-  padding: 12px 16px;
-  min-width: 0;
-}
-.ci-adbar .ci-adhead {
-  font-weight: 700;
-  font-size: var(--text-base, 15px);
+  font-size: 17px;
   color: var(--color-text);
 }
-.ci-adbar .ci-adhead .ci-adlink { color: inherit; }
-.ci-adbar:hover .ci-adhead .ci-adlink { color: #fbbf24; }
-.ci-adbar .ci-addesc {
+.ci-adbar:hover .ci-adlink { color: #fbbf24; }
+.ci-addesc {
+  display: block;
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-  margin-top: 2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  margin-top: 3px;
 }
-.ci-adbar .ci-adurl {
+.ci-adurl {
+  display: block;
   font-size: 11px;
   color: var(--color-text-faint, var(--color-text-muted));
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  margin-top: 3px;
+  margin-top: 4px;
 }
-.ci-adbar .ci-adurl b { color: #4ade80; font-weight: 700; }
-.ci-adbar .ci-adbtn {
-  display: flex;
-  align-items: center;
-  padding: 0 18px;
-  margin: 10px 12px;
-  border-radius: var(--radius-full);
+.ci-adurl b { color: #4ade80; font-weight: 700; }
+.ci-adbtn {
+  flex-shrink: 0;
+  display: inline-block;
   background: #f59e0b;
   color: #451a03;
   font-weight: 700;
   font-size: var(--text-sm);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
   white-space: nowrap;
-  align-self: center;
   transition: background 160ms;
 }
 .ci-adbar:hover .ci-adbtn { background: #fbbf24; }
-@media (max-width: 720px) {
-  .ci-adbar { flex-wrap: wrap; }
-  .ci-adbar .ci-sponsored { width: 100%; padding: 6px 12px; border-right: 0; border-bottom: 1px dashed var(--color-border); }
-  .ci-adbar .ci-adbtn { margin: 0 12px 12px; }
-  .ci-adbar .ci-addesc { white-space: normal; }
+@media (max-width: 760px) {
+  .ci-adbar { flex-direction: column; align-items: flex-start; gap: 8px; min-height: 0; }
+  .ci-adbtn { align-self: stretch; text-align: center; }
 }
 @media (max-width: 720px) {
   .ci-cta { flex-wrap: wrap; justify-content: center; white-space: normal; }
