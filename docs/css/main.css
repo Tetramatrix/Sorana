@@ -17,7 +17,7 @@
   --color-primary-hover:  #2fb89d;
   --color-primary-dim:    rgba(62,207,178,0.12);
   --color-primary-glow:   rgba(62,207,178,0.06);
-  --color-free:           #4ade80;
+  --color-free:           #fbbf24;
   --color-free-dim:       rgba(74,222,128,0.12);
   --color-cloud:          #60a5fa;
   --color-cloud-dim:      rgba(96,165,250,0.12);
@@ -1298,8 +1298,8 @@ nav.scrolled {
   transition: border-color 160ms, box-shadow 160ms, transform 160ms;
 }
 .ci-cta:hover {
-  border-color: #22c55e;
-  box-shadow: 0 0 24px rgba(34,197,94,0.35), 0 4px 20px rgba(0,0,0,0.25);
+  border-color: #f59e0b;
+  box-shadow: 0 0 24px rgba(245,158,11,0.35), 0 4px 20px rgba(0,0,0,0.25);
   transform: translateY(-2px);
 }
 .ci-cta .ci-model {
@@ -1309,17 +1309,17 @@ nav.scrolled {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
   font-weight: 700;
   font-size: var(--text-sm);
-  color: #4ade80;
-  background: rgba(34,197,94,0.12);
-  border: 1px solid rgba(34,197,94,0.30);
+  color: #fbbf24;
+  background: rgba(245,158,11,0.12);
+  border: 1px solid rgba(245,158,11,0.30);
   border-radius: var(--radius-full);
   padding: 5px 14px;
   white-space: nowrap;
 }
 .ci-cta .ci-model-tag {
   display: inline-block;
-  background: #22c55e;
-  color: #052e16;
+  background: #f59e0b;
+  color: #451a03;
   font-family: var(--font-body);
   font-size: 10px;
   font-weight: 800;
@@ -1337,13 +1337,13 @@ nav.scrolled {
   white-space: nowrap;
 }
 .ci-cta .ci-provider {
-  color: #4ade80;
+  color: #fbbf24;
   font-weight: 700;
 }
 .ci-cta .ci-key-btn {
   display: inline-block;
-  background: #22c55e;
-  color: #052e16;
+  background: #f59e0b;
+  color: #451a03;
   font-weight: 700;
   font-size: var(--text-sm);
   padding: 7px 18px;
@@ -1352,7 +1352,89 @@ nav.scrolled {
   transition: background 160ms;
 }
 .ci-cta:hover .ci-key-btn {
-  background: #4ade80;
+  background: #fbbf24;
+}
+/* ── CheaperInference sponsored ad strip (Google-Ads-mimic) ──────────── */
+.ci-adwrap {
+  max-width: 1100px;
+  margin: var(--space-6) auto;
+  padding: 0 var(--space-4);
+}
+.ci-adbar {
+  display: flex;
+  align-items: stretch;
+  border: 1px dashed var(--color-border-strong, var(--color-border));
+  border-radius: var(--radius-md, 10px);
+  background: var(--color-surface-2);
+  overflow: hidden;
+  text-decoration: none;
+  transition: border-color 160ms, box-shadow 160ms;
+}
+.ci-adbar:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 0 18px rgba(245,158,11,0.18);
+}
+.ci-adbar .ci-sponsored {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-faint, var(--color-text-muted));
+  border-right: 1px dashed var(--color-border);
+  background: var(--color-surface);
+  writing-mode: horizontal-tb;
+  white-space: nowrap;
+}
+.ci-adbar .ci-adbody {
+  flex: 1;
+  padding: 12px 16px;
+  min-width: 0;
+}
+.ci-adbar .ci-adhead {
+  font-weight: 700;
+  font-size: var(--text-base, 15px);
+  color: var(--color-text);
+}
+.ci-adbar .ci-adhead .ci-adlink { color: inherit; }
+.ci-adbar:hover .ci-adhead .ci-adlink { color: #fbbf24; }
+.ci-adbar .ci-addesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ci-adbar .ci-adurl {
+  font-size: 11px;
+  color: var(--color-text-faint, var(--color-text-muted));
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  margin-top: 3px;
+}
+.ci-adbar .ci-adurl b { color: #4ade80; font-weight: 700; }
+.ci-adbar .ci-adbtn {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  margin: 10px 12px;
+  border-radius: var(--radius-full);
+  background: #f59e0b;
+  color: #451a03;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  white-space: nowrap;
+  align-self: center;
+  transition: background 160ms;
+}
+.ci-adbar:hover .ci-adbtn { background: #fbbf24; }
+@media (max-width: 720px) {
+  .ci-adbar { flex-wrap: wrap; }
+  .ci-adbar .ci-sponsored { width: 100%; padding: 6px 12px; border-right: 0; border-bottom: 1px dashed var(--color-border); }
+  .ci-adbar .ci-adbtn { margin: 0 12px 12px; }
+  .ci-adbar .ci-addesc { white-space: normal; }
 }
 @media (max-width: 720px) {
   .ci-cta { flex-wrap: wrap; justify-content: center; white-space: normal; }
