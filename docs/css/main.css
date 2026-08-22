@@ -1271,14 +1271,6 @@ nav.scrolled {
 .freerouter-cta:hover .fr-key-btn {
   background: color-mix(in srgb, var(--color-freerouter), #fff 15%);
 }
-/* Discontinued provider (FreeRouter shut down 2026-08-18). The badge
-   stays visible and clickable (the domain shows the shutdown notice),
-   but the model / provider names are struck through and the glow/live
-   indicators are removed. */
-.freerouter-cta.fr-discontinued {
-  border-color: var(--color-border);
-  opacity: 0.8;
-}
 
 /* ── CheaperInference affiliate CTA (2026-08-22) ─────────────────────── */
 /* Same pill layout as .freerouter-cta, own purple accent, self-contained
@@ -1417,27 +1409,7 @@ nav.scrolled {
 @media (max-width: 720px) {
   .ci-cta { flex-wrap: wrap; justify-content: center; white-space: normal; }
 }
-.freerouter-cta.fr-discontinued:hover {
-  border-color: var(--color-border);
-  box-shadow: none;
-  transform: none;
-}
-.freerouter-cta.fr-discontinued .fr-model-live {
-  display: none; /* no longer live */
-}
-.freerouter-cta.fr-discontinued .fr-model,
-.freerouter-cta.fr-discontinued .fr-provider {
-  text-decoration: line-through;
-  text-decoration-thickness: 1.5px;
-  text-decoration-color: var(--color-text-faint);
-}
-.freerouter-cta.fr-discontinued .fr-model-tag,
-.freerouter-cta.fr-discontinued .fr-key-btn {
-  background: var(--color-text-faint);
-}
-.freerouter-cta.fr-discontinued:hover .fr-key-btn {
-  background: var(--color-text-faint);
-}
+
 /* Accessibility. */
 @media (prefers-reduced-motion: reduce) {
   .freerouter-cta { transition: none; }
