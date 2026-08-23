@@ -5,6 +5,7 @@
 🔄 Role-pinned sorting covers the new role and every combination — Primary stays pinned 1st, Quick 2nd, Embed 3rd, Vision 4th, Reviewer 5th, even when one model holds several roles at once; a combined assignment always sorts by its highest role.
 🔄 Your agent learns from declined actions — when you say No to a proposed action, the assistant remembers the pattern and gradually adapts future suggestions to your preferences instead of repeating them.
 🧪 Regression coverage added for reviewer-role assignment and routing, multi-role status display, rejection recording, and preference learning from declined approvals.
+🐛 Agents keep their place after a workspace reload — re-scanning a workspace without saving its layout no longer drops agents onto the top-left corner or stacks them over other groups; each agent returns to its last saved spot or settles cleanly beside the groups already on the canvas.
 📅 20.08.26 - Version 1.0.86
 🆕 The chat status bar is simpler — document/RAG status text is removed; the vision indicator is now a clean inline footnote, and per-request usage is shown under each answer instead.
 🆕 Vision capture is consistent across platforms — the chat status-bar button now uses a platform-appropriate icon (camera emoji on Windows, ◉ on Linux), shows a single animated progress line while capturing or processing, and is rendered as a proper button instead of a label.
