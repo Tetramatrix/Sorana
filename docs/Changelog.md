@@ -10,6 +10,7 @@
 🔄 A tidier Model Manager right-click menu — the rarely used per-backend rate-limit controls moved into a new "Advanced" submenu so everyday actions stay front and center; everything works exactly as before.
 🚀 Snappier multi-tool turns — batches of purely local file/memory/codebase operations now execute in wider parallel waves, while network-dependent tools keep their careful pace automatically.
 🔒 Log privacy hardening with zero setup — detailed provider request/response dumps are now strictly opt-in for debugging, and even when enabled, credential patterns inside payloads are masked before anything reaches disk.
+🛟 Model failover you control — assign a Backup model per role and one global Spare in the Model Manager; when a provider fails mid-chat, Sorana hops to healthy alternatives automatically (never the same dead provider twice), benches free tiers that hit daily quota until their reset, and shows every chain plus active pauses on the Health Dashboard.
 📅 20.08.26 - Version 1.0.86
 🆕 The chat status bar is simpler — document/RAG status text is removed; the vision indicator is now a clean inline footnote, and per-request usage is shown under each answer instead.
 🆕 Vision capture is consistent across platforms — the chat status-bar button now uses a platform-appropriate icon (camera emoji on Windows, ◉ on Linux), shows a single animated progress line while capturing or processing, and is rendered as a proper button instead of a label.
