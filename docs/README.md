@@ -1,6 +1,6 @@
-# Sorana: Your Agentic AI That Actually Knows You
+# Sorana: Your Personal Desktop AI Agent That Never Forgets
 
-> Agentic AI, a primary agent that plans your work, dispatches specialized subagents, and acts across your files, web, email, and calendar, reviewing its own results before answering. It never forgets a project, preference, or decision.
+> Sorana is a personal desktop AI agent: a primary agent that plans your work, dispatches specialized subagents, and acts across your files, web, email, and calendar, reviewing its own results before answering. It runs entirely on your machine and never forgets a project, preference, or decision.
 >
 > **Start for $0**, FreeRouter is a totally free API (no subscription, no credits) and includes the latest Qwen 3.8 Max. Pair it with Sorana and put the agentic AI to work before adding anything else.
 
@@ -8,7 +8,7 @@
 
 ## What Is Sorana?
 
-Sorana is agentic AI for Windows and Linux, a primary agent that plans your work, dispatches specialized subagents, acts across your files, web, email, and calendar, and reviews its own results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals. Unlike chatbots that forget you the moment you close the window, it builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
+Sorana is a personal desktop AI agent for Windows and Linux, a primary agent that plans your work, dispatches specialized subagents, acts across your files, web, email, and calendar, and reviews its own results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals. Unlike chatbots that forget you the moment you close the window, it builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
 
 Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.
 
@@ -224,7 +224,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Calendar & Scheduling | Manage via chat | View-only plugins | Connector (paid) |
 | AI remembers you | Automatic memory across sessions, all categories free | Manual notes only | Basic free notes only; full memory paid |
 | Stays fast over months | Auto-compaction | No AI context | Varies (Claude yes, others no) |
-| Cost | Free app + FreeRouter free API or your API keys (or free local) | Free + paid tiers | $8-200/month included |
+| Cost | Free app today (planned premium optional) + FreeRouter free API or your API keys (or free local) | Free + paid tiers | $8-200/month included |
 
 ---
 
@@ -323,4 +323,4 @@ Formatted responses can include headings, emphasis, links, and comparison tables
 
 ---
 
-Developed by **Tetramatrix** | Your autonomous AI assistant | Free and portable
+Developed by **Tetramatrix** | Your autonomous AI assistant | Portable and private
