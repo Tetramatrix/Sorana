@@ -1,4 +1,10 @@
 📋 Changelog 📋
+📅 23.08.26 - Version 1.0.87
+🆕 New optional model role: Reviewer — right-click any model in the Model Manager and choose "Assign to Reviewer" to give answer quality checks their own independent second opinion on a different model, while everything else keeps running exactly as before.
+🆕 The Model Manager shows every role a model holds — a model serving as both Primary and Reviewer now reads "Primary + Reviewer" in the status column instead of hiding the extra role; newly assigned roles appear immediately.
+🔄 Role-pinned sorting covers the new role and every combination — Primary stays pinned 1st, Quick 2nd, Embed 3rd, Vision 4th, Reviewer 5th, even when one model holds several roles at once; a combined assignment always sorts by its highest role.
+🔄 Your agent learns from declined actions — when you say No to a proposed action, the assistant remembers the pattern and gradually adapts future suggestions to your preferences instead of repeating them.
+🧪 Regression coverage added for reviewer-role assignment and routing, multi-role status display, rejection recording, and preference learning from declined approvals.
 📅 20.08.26 - Version 1.0.86
 🆕 The chat status bar is simpler — document/RAG status text is removed; the vision indicator is now a clean inline footnote, and per-request usage is shown under each answer instead.
 🆕 Vision capture is consistent across platforms — the chat status-bar button now uses a platform-appropriate icon (camera emoji on Windows, ◉ on Linux), shows a single animated progress line while capturing or processing, and is rendered as a proper button instead of a label.
