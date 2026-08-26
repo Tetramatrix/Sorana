@@ -98,7 +98,7 @@ You ask a question and get an answer, but you have no idea how it got there. Did
 Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. If your question is unclear, it asks before guessing. If one approach fails, it tries another. It even spots interesting tangents and follows them on its own.
 
 ### Local & Global Memory
-A living knowledge profile captures facts and project context. Remembers what matters, spots contradictions, and scores importance automatically. Maintain both scoped local memories and a persistent global memory, and sync them anytime.
+A living knowledge profile captures facts and project context. Remembers what matters, spots contradictions, and scores importance automatically. Maintain both scoped local memories and a persistent global memory, and sync them anytime. When you decline a proposed action, the agent remembers the pattern and adapts future suggestions to your preferences.
 
 ### Visual Knowledge Canvas
 See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.
@@ -107,7 +107,7 @@ See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generat
 Extract text from PDFs, documents, and images with built-in OCR. Chat with any document to get answers and make your whole archive searchable.
 
 ### RAG Knowledge Base
-Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data.
+Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data. Every answer lists the sources it used, filtered by relevance so you only see what mattered.
 
 ### Supercharged Chat & MCP Tools
 Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Swap agent personas on the fly with the Prompt Manager. Every session is archived with full Markdown, reasoning, and tables, so you never lose context.
@@ -116,13 +116,13 @@ Your AI brain connected to your knowledge and everything you can act on: web, em
 Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.
 
 ### Model Manager
-Browse, expand, and collapse models from 25+ providers and local sources. Mark favorites, sort by any column, and compare provider, name, and the capability column in one table.
+Browse, expand, and collapse models from 25+ providers and local sources. Assign any model to five role slots — Primary, Quick, Embed, Vision, and Reviewer — then set a Backup or Spare per role for automatic failover. Mark favorites, sort by any column, and probe capabilities before you commit.
 
 ### Specialized Subagents
 When a task needs it, Sorana's primary agent dispatches specialized subagents, web research, code analysis, fact-check, to work parts in parallel with their own budgets, then reviews the results before answering.
 
-### Triple Model Roles
-Assign a quick model for lightweight tasks, a primary model for heavy reasoning, and an embedding model for semantic search. Uses hardware acceleration when available.
+### Five Model Roles + Failover
+Assign any model to five role slots — Primary, Quick, Embed, Vision, and Reviewer — each optimized for its task. The Reviewer gives answer quality checks an independent second opinion on a different model. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
 
 ### Model Probing
 One click tests if a model can reason, see images, or handle audio, so you know what it can do before relying on it.
@@ -211,9 +211,10 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 |---|---|---|---|
 | Runs fully offline & private | Your machine, your data. No internet needed. | Obsidian local / Notion cloud | Cloud only. Your data on their servers. |
 | Model flexibility | 25+ providers + capability probing | N/A | Locked to one vendor |
-| Triple Model Roles | Cheap model for routing, powerful for answers | N/A | One model for everything |
+| Five Model Roles + Failover | Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer). Set a Backup or Spare per role for automatic failover. | N/A | One model for everything |
 | Multi-agent orchestration | A primary agent dispatches specialized subagents that work in parallel with their own budgets. | Simple automations only | Basic workflows / skills (paid) |
 | Agent Trace & Debug | Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. | No AI agent transparency | No agent tracing available |
+| Sources you can verify | Every answer lists the web pages and documents it used, filtered by relevance. | N/A | Basic citations on paid tier only |
 | Portable | Runs from a USB stick | App install required | Cloud / web only |
 | AI takes action | Built-in automation on files, web, email | View & edit only | Paid connectors with separate setup |
 | Goal-driven autonomy | Plans multi-step work, dispatches specialized subagents in parallel, acts with tools, and reviews its own work before answering | No autonomous agent | Agent mode / workflows (paid) |

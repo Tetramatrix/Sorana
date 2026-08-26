@@ -1,5 +1,5 @@
 📋 Changelog 📋
-📅 23.08.26 - Version 1.0.87
+📅 24.08.26 - Version 1.0.87
 🆕 New optional model role: Reviewer — right-click any model in the Model Manager and choose "Assign to Reviewer" to give answer quality checks their own independent second opinion on a different model, while everything else keeps running exactly as before.
 🆕 The Model Manager shows every role a model holds — a model serving as both Primary and Reviewer now reads "Primary + Reviewer" in the status column instead of hiding the extra role; newly assigned roles appear immediately.
 🔄 Role-pinned sorting covers the new role and every combination — Primary stays pinned 1st, Quick 2nd, Embed 3rd, Vision 4th, Reviewer 5th, even when one model holds several roles at once; a combined assignment always sorts by its highest role.
@@ -11,6 +11,24 @@
 🚀 Snappier multi-tool turns — batches of purely local file/memory/codebase operations now execute in wider parallel waves, while network-dependent tools keep their careful pace automatically.
 🔒 Log privacy hardening with zero setup — detailed provider request/response dumps are now strictly opt-in for debugging, and even when enabled, credential patterns inside payloads are masked before anything reaches disk.
 🛟 Model failover you control — assign a Backup model per role and one global Spare in the Model Manager; when a provider fails mid-chat, Sorana hops to healthy alternatives automatically (never the same dead provider twice), benches free tiers that hit daily quota until their reset, shows every chain plus active pauses on the Health Dashboard, and badges assigned backups/spares right on the model row — pinned to the top of your list.
+🐛 Cross-thread answer contamination fixed — a research question no longer displays an answer from a different conversation.
+🐛 Web-research requests no longer degrade to read_file loops — the planner correctly identifies web-search intent and routes it properly instead of deriving spurious filenames from planning prose.
+🐛 BUG_439 follow-ups resolved — §H argument synthesis, loop-END status, and embedding probe flap fixed.
+🐛 Synthesis reviewer overfail fixed — calibrated PASS/FAIL contract prevents false rejections of valid answers; Health Dashboard fallback chain display corrected.
+🔒 Security hardening applied — memory tenant isolation, MCP HTTP request hardening, DPAPI secrets protection, checkpoint sanitizer, and persistence source audit completed.
+🛡️ Web content fetching hardened against redirect-based spoofing — DNS pinning ensures fetched pages come from the domain you asked for, closing a gap where a redirect could swap in an unexpected host.
+🔄 Memory data lifecycle managed automatically — observations, preferences, and profile data each keep appropriate retention durations, and personally sensitive memories expire earlier than the rest.
+🔄 Completion-gate LLM consultation — when the agent reaches a judgment call (partial answer, qualified answer, or explain-why-it-can't), it now asks the LLM whether a better answer is within reach before giving up, so borderline cases get a second chance instead of a hard stop.
+🔄 Structured router decisions on managed backends — when the local model supports structured output, the routing decision is requested under a hard decode constraint instead of relying on regex heuristics, making intent classification more reliable.
+🔄 Time-aware turn gates — the engine now tracks wall-clock time and synthesizes answers before the timeout deadline instead of starting a new research round too late to finish.
+🔄 Extended research budget — the default turn budget is raised to 15 minutes with doubled analysis extension, giving deep research and code-analysis turns enough room to complete on local and slow providers.
+🔄 Cleaner source footers — web sources with zero relevance to the query are filtered out of the source list, so the answer only shows sources that actually contributed.
+🔄 Turn-pinned primary model — mid-turn model switches can no longer mix outputs from different models within one research answer; the primary model is locked for the duration of a turn.
+🐛 Graph timeout now delivers the best answer — when a research turn exceeds its time budget, the best answer found so far is returned instead of being silently discarded.
+🐛 Quality-gate internals stripped from answers — reviewer reasoning and internal chain-of-thought markers no longer leak into the user-facing answer text.
+🐛 Tool-parse recovery — malformed or incomplete tool calls are now gracefully recovered with actionable hints instead of ending the turn with an empty response.
+🐛 Ambiguity judge reasoning fixed — the ambiguity detector no longer starves on short reasoning bursts, so ambiguous queries are properly classified instead of defaulting to the wrong intent.
+🧪 /help command catalog verified — all 43 advertised commands now have live regression tests ensuring they work as documented.
 📅 20.08.26 - Version 1.0.86
 🆕 The chat status bar is simpler — document/RAG status text is removed; the vision indicator is now a clean inline footnote, and per-request usage is shown under each answer instead.
 🆕 Vision capture is consistent across platforms — the chat status-bar button now uses a platform-appropriate icon (camera emoji on Windows, ◉ on Linux), shows a single animated progress line while capturing or processing, and is rendered as a proper button instead of a label.
