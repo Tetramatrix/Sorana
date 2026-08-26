@@ -1415,6 +1415,8 @@ nav.scrolled {
   .ci-adbtn { align-self: stretch; text-align: center; }
 }
 @media (max-width: 720px) {
+  .freerouter-cta { flex-wrap: wrap; justify-content: center; white-space: normal; max-width: 100%; box-sizing: border-box; }
+  .freerouter-cta .fr-text { white-space: normal; text-align: center; }
   .ci-cta { flex-wrap: wrap; justify-content: center; white-space: normal; }
 }
 
