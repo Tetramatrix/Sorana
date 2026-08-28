@@ -32,9 +32,9 @@
   --color-freebuff-dim:    rgba(236,72,153,0.12);
   --color-freebuff-glow:   rgba(236,72,153,0.06);
 
-  --color-openrouter:      #06b6d4;
-  --color-openrouter-dim:  rgba(6,182,212,0.12);
-  --color-openrouter-glow: rgba(6,182,212,0.06);
+  --color-openrouter:      #f97316;
+  --color-openrouter-dim:  rgba(249,115,22,0.12);
+  --color-openrouter-glow: rgba(249,115,22,0.06);
 
   --font-display: 'Instrument Serif', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
@@ -84,9 +84,9 @@
   --color-freebuff-dim:    rgba(219,39,119,0.1);
   --color-freebuff-glow:   rgba(219,39,119,0.05);
 
-  --color-openrouter:      #0891b2;
-  --color-openrouter-dim:  rgba(8,145,178,0.1);
-  --color-openrouter-glow: rgba(8,145,178,0.05);
+  --color-openrouter:      #ea580c;
+  --color-openrouter-dim:  rgba(234,88,12,0.1);
+  --color-openrouter-glow: rgba(234,88,12,0.05);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1391,7 +1391,7 @@ nav.scrolled {
   font-size: var(--text-sm);
   color: var(--color-openrouter);
   background: var(--color-openrouter-dim);
-  border: 1px solid rgba(6,182,212,0.30);
+  border: 1px solid rgba(249,115,22,0.30);
   border-radius: var(--radius-full);
   padding: 5px 14px;
 }
@@ -1536,7 +1536,7 @@ nav.scrolled {
   white-space: nowrap;
   transition: background 160ms;
 }
-.or-adbar:hover .or-adbtn { background: #22d3ee; }
+.or-adbar:hover .or-adbtn { background: #fb923c; }
 @media (max-width: 760px) {
   .or-adbar { flex-direction: column; align-items: flex-start; gap: 8px; min-height: 0; }
   .or-adbtn { align-self: stretch; text-align: center; }
