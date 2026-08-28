@@ -105,6 +105,14 @@
         },
         {
           "@type": "Question",
+          "name": "How do I use OpenRouter for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open Sorana → Model Manager → find 'OpenRouter (Cloud)' → set openrouter/free as your Primary model. OpenRouter auto-selects the best available free model from its catalog. No credit card, no API key needed for free-tier models."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What happens to long conversations?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -199,6 +207,13 @@
       <span class="ci-model">GPT &middot; Claude &middot; Gemini &amp; more<span class="ci-model-tag">CHEAPER API</span></span>
       <span class="ci-text"><span class="ci-provider">CheaperInference</span> &middot; pay less for the popular models</span>
       <span class="ci-key-btn">Compare prices &rarr;</span>
+    </a>
+  </div>
+  <div style="display:flex;justify-content:center;margin:var(--space-4) 0;">
+    <a class="or-cta" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
+      <span class="or-model">openrouter/free<span class="or-model-tag">100% FREE</span></span>
+      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; auto-picks best free model</span>
+      <span class="or-key-btn">Browse free models &rarr;</span>
     </a>
   </div>
   <div class="hero-badge">
@@ -955,10 +970,10 @@
   <p class="section-label">Supported out of the box</p>
   <p class="section-label providers-sub-label">Cloud Providers</p>
   <div class="providers-grid">
-    <div class="provider-chip">
+    <a class="provider-chip" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
       <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="#8a8f98"/></svg>
-      OpenRouter
-    </div>
+      OpenRouter <span style="font-size:10px;font-weight:700;color:var(--color-openrouter);margin-left:4px;">FREE</span>
+    </a>
     <div class="provider-chip">
       <img src="https://cdn.simpleicons.org/openai/8a8f98" class="icon" alt="" aria-hidden="true">
       OpenAI
@@ -1116,6 +1131,12 @@
         <span class="model-name">devstral-2512</span>
         <span class="model-desc">Mistral AI's most capable open foundation</span>
         <span class="model-tag free">FREE</span>
+      </div>
+      <div class="model-row model-row-featured" style="border-color:rgba(124,58,237,0.25);">
+        <span class="model-provider">OpenRouter (Cloud)</span>
+        <span class="model-name">openrouter/free</span>
+        <span class="model-desc">Auto-selects the best free model from OpenRouter's catalog &mdash; no setup required</span>
+        <span class="model-tag free">100% FREE</span>
       </div>
       <div class="model-row model-row-featured">
         <span class="model-provider">FreeRouter</span>
@@ -1322,6 +1343,18 @@
   </div>
 </section>
 
+<!-- OPENROUTER FREE BANNER -->
+<div class="ad-container" style="border-color:rgba(124,58,237,0.25);">
+  <p class="ad-label" style="color:var(--color-openrouter);">Free Cloud AI</p>
+  <a href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;padding:var(--space-4) var(--space-6);text-decoration:none;color:var(--color-text);border-radius:var(--radius-lg);background:var(--color-openrouter-dim);border:1px solid rgba(124,58,237,0.25);transition:border-color 160ms,box-shadow 160ms;" onmouseover="this.style.borderColor='var(--color-openrouter)';this.style.boxShadow='0 0 24px var(--color-openrouter-glow)'" onmouseout="this.style.borderColor='rgba(124,58,237,0.25)';this.style.boxShadow='none'">
+    <span>
+      <span style="display:block;font-size:var(--text-sm);font-weight:700;color:var(--color-openrouter);margin-bottom:var(--space-1);">OpenRouter &middot; openrouter/free</span>
+      <span style="display:block;font-size:var(--text-xs);color:var(--color-text-muted);">Auto-selects the best free model from OpenRouter's catalog. No API key needed for free-tier models. Works on Windows, Linux, and USB.</span>
+    </span>
+    <span style="background:var(--color-openrouter);color:#fff;font-weight:700;padding:7px 18px;border-radius:var(--radius-full);font-size:var(--text-xs);white-space:nowrap;">Try it free &rarr;</span>
+  </a>
+</div>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="section-header">
@@ -1348,6 +1381,10 @@
     <details class="faq-item">
       <summary>What models are supported?</summary>
       <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and more. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How do I use OpenRouter for free?</summary>
+      <p>Open Sorana &rarr; Model Manager &rarr; find &ldquo;OpenRouter (Cloud)&rdquo; &rarr; set <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;font-size:0.8rem;background:var(--color-surface-2);padding:2px 6px;border-radius:4px;">openrouter/free</code> as your Primary model. OpenRouter auto-selects the best available free model from its catalog. No credit card, no API key needed for free-tier models. Works instantly on Windows, Linux, and from a USB stick.</p>
     </details>
     <details class="faq-item">
       <summary>Is Sorana really an autonomous AI agent?</summary>
@@ -1393,6 +1430,13 @@
       <span class="ci-model">GPT &middot; Claude &middot; Gemini<span class="ci-model-tag">CHEAPER API</span></span>
       <span class="ci-text"><span class="ci-provider">CheaperInference</span> &middot; cheaper API</span>
       <span class="ci-key-btn">Compare prices &rarr;</span>
+    </a>
+  </p>
+  <p class="cta-fr" style="margin-top:var(--space-3);display:flex;justify-content:center;">
+    <a class="or-cta" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
+      <span class="or-model">openrouter/free<span class="or-model-tag">100% FREE</span></span>
+      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; auto-picks best free model</span>
+      <span class="or-key-btn">Browse free models &rarr;</span>
     </a>
   </p>
   <div class="cta-actions">

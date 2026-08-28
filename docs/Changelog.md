@@ -2,10 +2,11 @@
 📅 28.08.26 - Version 1.0.88
 🆕 The assistant now knows its own identity — brand name and personality are injected into every conversation, so the assistant introduces itself correctly instead of giving generic answers.
 🆕 RAG and memory tools only appear when relevant — the model no longer sees file-search or memory-search options when there are no indexed documents or stored memories, keeping responses focused.
-🆕 Precise entity resolution from stored documents — the agent now detects relevant entities from your stored memories and documents during conversation, improving factual accuracy and reducing hallucinations.
+🆕 Precise entity resolution from stored documents — the agent now detects relevant entities from your stored memories and documents during conversation, improving factual accuracy and reducing hallucination.
 🆕 Smarter request routing — simple requests like greetings or quick questions now skip the full planning pipeline and go straight to an answer, making everyday interactions faster.
 🆕 Extended research budget — the default research time limit is raised further with doubled analysis capacity, giving deep research and code-analysis tasks even more room on local and slow providers.
 🆕 File editing now supports string replacement — when editing files, you can specify an exact string to find and replace, giving more precise control alongside the existing full-file and line-range modes.
+🆕 OpenRouter free-tier integration — landing page now features `openrouter/free` as the easiest way to use Sorana with a cloud backend at zero cost, with hero pill, banner, FAQ how-to, and model preview row.
 🔄 Session context budget and web-fetch caps raised — memory handling is more efficient, web pages render more completely before summarization.
 🔄 Memory retention hardened — expired memories are properly cleaned up with a hard-delete tier, orphaned profiles are swept automatically, and personally sensitive data retention is reduced.
 🔄 Memory readback fixed — reading back saved memories no longer surfaces the wrong profile data or user information.
