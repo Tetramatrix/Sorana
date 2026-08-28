@@ -1441,8 +1441,8 @@ nav.scrolled {
   transition: border-color 160ms, box-shadow 160ms;
 }
 .ci-adbar:hover {
-  border-color: #f59e0b;
-  box-shadow: 0 0 20px rgba(245,158,11,0.18);
+  border-color: #9d7cd8;
+  box-shadow: 0 0 20px rgba(157,124,216,0.18);
 }
 .ci-adbody { flex: 1; min-width: 0; }
 .ci-adhead {
@@ -1451,7 +1451,7 @@ nav.scrolled {
   font-size: 17px;
   color: var(--color-text);
 }
-.ci-adbar:hover .ci-adlink { color: #fbbf24; }
+.ci-adbar:hover .ci-adlink { color: #c4b5fd; }
 .ci-addesc {
   display: block;
   font-size: var(--text-sm);
@@ -1469,8 +1469,8 @@ nav.scrolled {
 .ci-adbtn {
   flex-shrink: 0;
   display: inline-block;
-  background: #f59e0b;
-  color: #451a03;
+  background: #9d7cd8;
+  color: #2d1f3d;
   font-weight: 700;
   font-size: var(--text-sm);
   padding: 10px 22px;
@@ -1478,7 +1478,7 @@ nav.scrolled {
   white-space: nowrap;
   transition: background 160ms;
 }
-.ci-adbar:hover .ci-adbtn { background: #fbbf24; }
+.ci-adbar:hover .ci-adbtn { background: #b29de0; }
 @media (max-width: 760px) {
   .ci-adbar { flex-direction: column; align-items: flex-start; gap: 8px; min-height: 0; }
   .ci-adbtn { align-self: stretch; text-align: center; }
