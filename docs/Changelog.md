@@ -1,4 +1,29 @@
 📋 Changelog 📋
+📅 28.08.26 - Version 1.0.88
+🆕 The assistant now knows its own identity — brand name and personality are injected into every conversation, so the assistant introduces itself correctly instead of giving generic answers.
+🆕 RAG and memory tools only appear when relevant — the model no longer sees file-search or memory-search options when there are no indexed documents or stored memories, keeping responses focused.
+🆕 Precise entity resolution from stored documents — the agent now detects relevant entities from your stored memories and documents during conversation, improving factual accuracy and reducing hallucinations.
+🆕 Smarter request routing — simple requests like greetings or quick questions now skip the full planning pipeline and go straight to an answer, making everyday interactions faster.
+🆕 Extended research budget — the default research time limit is raised further with doubled analysis capacity, giving deep research and code-analysis tasks even more room on local and slow providers.
+🆕 File editing now supports string replacement — when editing files, you can specify an exact string to find and replace, giving more precise control alongside the existing full-file and line-range modes.
+🔄 Session context budget and web-fetch caps raised — memory handling is more efficient, web pages render more completely before summarization.
+🔄 Memory retention hardened — expired memories are properly cleaned up with a hard-delete tier, orphaned profiles are swept automatically, and personally sensitive data retention is reduced.
+🔄 Memory readback fixed — reading back saved memories no longer surfaces the wrong profile data or user information.
+🔄 Deterministic tool matching — the router now resolves tool calls more reliably instead of letting the LLM's ambiguity judge override correct matches.
+🔄 Lifecycle trace accuracy — each step in the conversation trace is now correctly labeled with its own message instead of inheriting labels from previous turns.
+🔄 /help command accuracy — web, codebase, and Gmail help rows now reflect the actual production tool set, and all 43 advertised commands have regression tests.
+🔄 User messages used as reviewer evidence — the assistant now considers the user's own message when evaluating answer quality, and memory agents handle all edge cases gracefully.
+🔄 Abbreviation-aware sentence splitting — text extraction and compaction now correctly handle abbreviated words (e.g. "e.g.", "i.e.") when splitting sentences.
+🔄 Inline citation formatting — superscript citation markers no longer break words in the middle when placing dot-separated reference numbers.
+🐛 Progress percentage display crash fixed — the progress indicator no longer crashes when encountering format strings it can't parse.
+🐛 Editing empty files no longer degrades — previously, editing a file with no content would silently convert the operation into a full write instead of failing clearly.
+🐛 Vision button lights up correctly — the vision indicator now activates using evidence from sibling backend probes, so it no longer stays gray when the model is actually vision-capable.
+🐛 Cross-thread answer contamination fixed — a research question no longer displays an answer from a different conversation.
+🐛 Synthesis reviewer overfail fixed — the quality reviewer no longer falsely rejects valid answers; the Health Dashboard fallback chain display is also corrected.
+🐛 Web-research requests no longer degrade to file-reading loops — the planner correctly identifies web-search intent and routes it properly.
+🐛 Reasoning-channel answer recovery — answers returned through the reasoning channel (instead of the main content channel) are now properly recovered instead of being silently lost.
+🐛 Answer-marker detection improved — short affirmative responses ("yes", "ok") are no longer misclassified as non-answers.
+🐛 Stop-word query capture fixed — short or common-word queries no longer get lost during the routing phase.
 📅 24.08.26 - Version 1.0.87
 🆕 New optional model role: Reviewer — right-click any model in the Model Manager and choose "Assign to Reviewer" to give answer quality checks their own independent second opinion on a different model, while everything else keeps running exactly as before.
 🆕 The Model Manager shows every role a model holds — a model serving as both Primary and Reviewer now reads "Primary + Reviewer" in the status column instead of hiding the extra role; newly assigned roles appear immediately.
