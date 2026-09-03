@@ -1649,9 +1649,11 @@ nav.scrolled {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .model-preview-inner {
-  max-width: 900px; margin: 0 auto;
+  margin: 0 auto;
 }
 .model-preview h2 {
   font-family: var(--font-display);
