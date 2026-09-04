@@ -1,4 +1,59 @@
 📋 Changelog 📋
+📅 04.09.26 - Version 1.0.90
+🆕 Agent Advanced tab redesigned — per-role model overrides, preset selection, and an embedded agent-scoped Model Manager pane replace the legacy role-bypass controls with a unified two-column layout.
+🆕 Agent cards upgraded — whole-card context menu, resizable via the SE grip, per-agent color picker, help text with connection port, and a hybrid rich-container layout that always shows the full card but can collapse to a container on demand.
+🆕 Model Manager view remembers your layout — sort order, column widths, and collapsed groups persist across window reopens.
+🆕 Embedded mode now uses the full window for global model operations.
+🆕 Supervised subagent runtime for multi-explorer batch processing — batches run under bounded supervision with contract-checked invocation for safer concurrent research.
+🔄 Token refresh logic prevents session interruption — access tokens refresh automatically in the background before expiry so authenticated work is never cut off mid-task.
+🔄 Agentic-audit Phase 3+4 features — registry-driven connector dispatch with per-family breakers, spend/breaker alerts, reviewer timing, run manifests, and warmup controls.
+🔄 Multi-angle coverage proof now visible at the answer boundary, with cross-turn LRU feeding the duplicate guards to prevent repeated research.
+🔄 Reviewer verdict now supports judge-independence decisions and degraded-review marking at the verdict choke point.
+🔄 Grounding precision telemetry for evidence floor enforcement — tracks how well cited claims are anchored to source material.
+🔄 Agent card body now fills with the picked color and the border auto-adapts.
+🔄 Agent card default sentinel resolves to the primary model ID.
+🔄 Synthesis parser no longer blanks prose around suppressed tool markup.
+🔄 Internal-jargon tool errors sanitized on non-hard paths, with a consistent sanitizer for hard-failure tool errors at the user seam.
+🔄 Tool-limit exhaustion now degrades gracefully instead of hard-failing to end the turn.
+🔄 Hard-failure guard sites audited — graceful siblings now clear dispatch state to prevent silent recursion.
+🔄 Domain-scan research — deterministic root and robots.txt probe closes the classification gap for company/product research; stronger-model runs refine the phrasing-gated gap.
+🔄 Memory tool results are now citable as evidence in answer synthesis.
+🔄 Document selection reads the durable stats surface when tool results are cleared mid-turn.
+🔄 Model preview background constrained to a centered card width.
+🐛 Agent card text no longer buried under the body — stray layer ordering and absolute stacking fixed.
+🐛 Agent card clipped into the viewport with diagnostics for text visibility.
+🐛 Group-press error on boundless groups fixed (logger typo + uninitialized index).
+🐛 Orphaned-variable sweep — 9 latent errors in chat controllers resolved.
+🐛 Live analysis results error resolved (harness was undefined after the Q3 refactor).
+🐛 Advanced tab layout — preset section above sampling, model section full-width below.
+🐛 Linux-safe card color picker with palette fallback.
+📅 01.09.26 - Version 1.0.89
+🆕 Deep web research now runs two parallel lanes — a broad web-search lane and a dedicated site-crawl lane that systematically maps the sites it finds (site structure file → sitemap → key subpages). Company and product research therefore gathers structured on-site data instead of relying on whatever links the assistant happens to fetch.
+🆕 Site-crawl research now always engages on deep research requests — researching a company or product (size, products, revenues, salary) reliably triggers the full crawl protocol, even when the assistant starts searching on its own. Previously the crawl could be silently skipped when the assistant improvised its own searches.
+🔄 The research engine is now modular — specialized research lanes can be added as pluggable parallel workers, so new research strategies slot in without touching the core pipeline.
+🔄 Parallel research lanes run on separate tracks — each lane researches independently and its findings are combined into a single answer, so running several research angles at once never loses or duplicates results.
+🆕 Recent/price questions (latest news, prices, quotes, stock) now automatically engage the dedicated news-research lane — freshness-focused research alongside the regular web search, without the heavier site-crawl pass.
+🔄 Source lists only include pages that actually loaded — if a website blocks the assistant (bot protection, payment-walled) or returns no readable content, it is no longer cited as a source, so the listed references genuinely back the answer.
+🆕 Final answers appear immediately — the quality review now runs behind the scenes instead of delaying an already-complete answer, removing the long pause after the response is ready.
+🔄 Research depth now matched to intent — quick lookups stay quick with a tight cap on rounds and pages, while deep research still does thorough multi-source work but can no longer grind for minutes into blocked pages.
+🔄 The app no longer re-queries a search provider that is down or rate-limited — and when every provider is unavailable it stops reformulating the same query against an empty pool.
+🐛 Failing research no longer loops forever — it finishes gracefully with what it found instead of re-dispatching the same crawl.
+🔄 The activity view groups web research into one step (N rounds · M actions) instead of flooding the trace with every page fetched, and the summary now reflects pages actually read.
+🐛 Blocked bot-protection pages are no longer counted as successful reads — empty challenge pages are marked blocked without wasting retries, so answers are not penalized for sites that refuse access.
+🔄 Turn-scoped caching — repeated identical checks within one research turn no longer re-run, making multi-step research slightly faster.
+🐛 Company research no longer spawns an extra news crawl when not asked — the news lane only runs for freshness questions.
+🐛 Duplicate research work eliminated — a page already assigned to one lane is not re-fetched by the other, and progress counts are not double-reported.
+🔄 Document search is now called Library — the name is consistent across the Manager, chat tools, and help text.
+🔄 Memories and Library documents now stay with the correct agent — shared documents are visible again, workspace documents keep their owner, and memory search is scoped to the active agent.
+🐛 Reading back saved memories no longer shows data from the wrong profile.
+🐛 Daily greeting no longer asks for clarification — the morning briefing appears again as before.
+🐛 Numbered answers no longer truncated mid-list — long structured lists render intact and follow-up answers keep their formatting.
+🐛 Web research on a company now correctly triggers the full site-mapping pass instead of staying shallow.
+🐛 Edge-case crashes in the request pipeline fixed — the assistant stays responsive instead of erroring when internal state is incomplete.
+🔄 File editing now fills in missing content from your instruction when the draft directive is clear — a create-file request no longer fails for an empty body.
+🔄 Account connection handling hardened — token refresh no longer blocks on shutdown, the account list no longer shows green Active for an expired session, and sign-in quietly refreshes instead of forcing the browser.
+🔄 Window dividers keep a usable minimum size — dragging the model-manager and chat splits can no longer collapse a pane to an unusable sliver.
+🔄 Memory consolidation for long histories now processes in batches — large sets of stored facts no longer fail to save.
 📅 28.08.26 - Version 1.0.88
 🆕 The assistant now knows its own identity — brand name and personality are injected into every conversation, so the assistant introduces itself correctly instead of giving generic answers.
 🆕 RAG and memory tools only appear when relevant — the model no longer sees file-search or memory-search options when there are no indexed documents or stored memories, keeping responses focused.
