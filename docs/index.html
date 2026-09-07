@@ -46,7 +46,7 @@
       "keywords": "personal desktop AI agent, desktop AI agent, offline AI agent, private AI assistant, local AI workspace, portable AI app",
       "featureList": ["Multi-agent orchestration", "Persistent project memory", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution"],
       "offers": { "@type": "Offer", "price": "0" },
-      "screenshot": ["freemodels.png", "chat.png", "mindmap.png"],
+      "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
       "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
       "alternateDownloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana",
@@ -440,10 +440,11 @@
                 </tbody>
               </table>
             </div>
-            <span class="formatted-chat-note">▸ Explanations shown separately · table formatted automatically</span>
           </div>
         </div>
       </div>
+    </div>
+
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -602,6 +603,22 @@
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <h3>Agent guardrails</h3>
+      <p>Oversee and control what your agent can do. Set permissions for tasks like writing files, reading data, or sending email, so the AI stays within the boundaries you define.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72 1.42-1.42"/>
+        </svg>
+      </div>
+      <h3>Themes</h3>
+      <p>Choose the look that fits your workflow. Pick from different color schemes and visual themes to make Sorana feel like yours.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
         </svg>
       </div>
@@ -626,7 +643,7 @@
     </div>
   </div>
   <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
-    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">10 more features ↓</button>
+    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">12 more features ↓</button>
   </div>
 
   <!-- OPENROUTER FREE BANNER -->
@@ -703,6 +720,14 @@
     <figure class="screenshot-card" style="grid-column:span 2;">
       <img src="openrouter_free.png" alt="OpenRouter free model and multi-role selection" loading="lazy" width="640" height="400" style="object-fit:contain;background:var(--color-surface-2);padding:var(--space-4);max-height:220px;">
       <figcaption>Set openrouter/free as Primary. Assign models to multiple roles.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <img src="guardrails.png" alt="Agent permission guardrails" loading="lazy" width="640" height="400">
+      <figcaption>Review and control what the agent is allowed to do.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <img src="themes.png" alt="Theme selection" loading="lazy" width="640" height="400">
+      <figcaption>Pick a color scheme that fits your workflow.</figcaption>
     </figure>
   </div>
 </section>
