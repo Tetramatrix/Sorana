@@ -1,4 +1,28 @@
 📋 Changelog 📋
+📅 07.09.26 - Version 1.0.91
+🆕 13 selectable themes with a dedicated picker — switch between curated palettes or light/dark mode instantly from the Appearance card.
+🆕 Whole-app theme sweep — agent cards, calendar, chat, Model Manager, and open windows all repaint consistently on theme change.
+🆕 Central color palette replaces 1,145 hardcoded hex values — light-mode surfaces polished for softer readability.
+🆕 Full IT/NL/PL language parity across 27 chat sections, prompts, and tool instructions.
+🆕 Natural-wording coverage expanded to 7 languages (EN/DE/FR/ES/IT/NL/PL) for web research queries.
+🆕 Agent cards upgraded — whole-card context menu, resizable via the SE grip, per-agent color picker, and help text with connection port.
+🆕 Model Manager remembers your layout — sort order, column widths, and collapsed groups persist across reopens.
+🆕 Chat and notes sidebars are drag-resizable with a shared gutter; widths persist across restarts; notes sidebar gains full-text search.
+🆕 Agent "Max reply length" (n_predict) now enforced as the local output cap.
+🆕 Background JWT token refresh prevents session interruption — access tokens renew automatically before expiry.
+🆕 Agent process trace now uses a responsive flow layout for clearer step visualization.
+🆕 Spend gate refusals surface in the footer as "Spend: n calls withheld" for transparent budget tracking.
+🔄 Documentation links cleaned up — public documentation URLs no longer carry affiliate referral parameters.
+🐛 Fixed theme-toggle crashes and color artifacts on calendar, chat, and open windows after switching between light and dark mode.
+🐛 Fixed markdown inline parser stalling on unclosed special characters.
+🐛 Fixed memory tag corruption and missing forward tags in chat sessions.
+🐛 Fixed Model Manager row colors and contrast in dark and light modes.
+🐛 Fixed tooltip colors, toolbar spacing, and context-menu wording across workspace and browser modes.
+🐛 Fixed reviewer PASS-with-limitation losing claim citations, routing decisions, and synthesis grounding thresholds.
+🐛 Fixed anaphora false positives and tool-name echo queries in multi-language tool routing.
+🛡️ UI hardening — saturated blues removed from menus, selections, and buttons for a calmer visual experience.
+🚀 Second-wave UI hot-path audit improves responsiveness across views and utilities.
+
 📅 04.09.26 - Version 1.0.90
 🆕 Agent Advanced tab redesigned — per-role model overrides, preset selection, and an embedded agent-scoped Model Manager pane replace the legacy role-bypass controls with a unified two-column layout.
 🆕 Agent cards upgraded — whole-card context menu, resizable via the SE grip, per-agent color picker, help text with connection port, and a hybrid rich-container layout that always shows the full card but can collapse to a container on demand.
