@@ -21,13 +21,13 @@
 <title>Sorana: Your Personal Desktop AI Agent That Never Forgets</title>
 <meta name="description" content="Sorana is a personal desktop AI agent for Windows and Linux. It plans multi-step work, runs specialized subagents, and never forgets your projects.">
 <meta property="og:title" content="Sorana: Your Personal Desktop AI Agent That Never Forgets">
-<meta property="og:description" content="A personal desktop AI agent for Windows and Linux. Plans multi-step work, dispatches specialized subagents across your files, web, email, and calendar — and remembers your projects.">
+<meta property="og:description" content="A personal desktop AI agent for Windows and Linux. Plans multi-step work, dispatches specialized subagents across your files, web, email, and calendar, and remembers your projects.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
 <meta property="og:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sorana: Your Personal Desktop AI Agent That Never Forgets">
-<meta name="twitter:description" content="A personal desktop AI agent for Windows and Linux. Plans multi-step work, dispatches specialized subagents across your files, web, email, and calendar — and remembers your projects.">
+<meta name="twitter:description" content="A personal desktop AI agent for Windows and Linux. Plans multi-step work, dispatches specialized subagents across your files, web, email, and calendar, and remembers your projects.">
 <meta name="twitter:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
   <link rel="icon" type="image/png" href="logo_small.png">
   <link rel="canonical" href="https://tetramatrix.github.io/Sorana/">
@@ -44,7 +44,7 @@
       "operatingSystem": "Windows 11, Linux",
       "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
       "keywords": "personal desktop AI agent, desktop AI agent, offline AI agent, private AI assistant, local AI workspace, portable AI app",
-      "featureList": ["Multi-agent orchestration", "Persistent project memory", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution"],
+      "featureList": ["Multi-agent orchestration", "Persistent project memory", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations"],
       "offers": { "@type": "Offer", "price": "0" },
       "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
@@ -68,7 +68,7 @@
           "name": "Is Sorana a desktop AI agent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Sorana is a personal desktop AI agent that runs natively on Windows and Linux as a portable executable — no browser, no account, no installation. It works on your local files and only uses cloud providers when you explicitly connect an API key."
+            "text": "Yes. Sorana is a personal desktop AI agent that runs natively on Windows and Linux as a portable executable. No browser, no account, no installation. It works on your local files and only uses cloud providers when you explicitly connect an API key."
           }
         },
         {
@@ -182,7 +182,7 @@
   </div>
   <h1>A desktop AI agent.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
-    Sorana is a personal desktop AI agent: a primary agent that plans your work, dispatches specialized subagents, and acts across your files, web, email, and calendar, reviewing its own results before answering. It runs entirely on your machine and never forgets a project, preference, or decision.
+    Sorana is a personal desktop AI agent: a primary agent that plans your work, dispatches specialized subagents, and acts across your files, web, email, and calendar, reviewing its own results before answering. It runs on your machine and never forgets a project, preference, or decision.
   </p>
   <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 auto var(--space-8);max-width:520px;">
     A portable desktop app: runs from a USB stick. No install, no account, no cloud sync.<br>Available for Windows and Linux.
@@ -198,7 +198,7 @@
   <div style="display:flex;justify-content:center;margin:var(--space-4) 0 var(--space-4);">
     <a class="or-cta" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
       <span class="or-model">openrouter/free<span class="or-model-tag">100% FREE</span></span>
-      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; free API key, best free model</span>
+      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; free API key, top-rated free models</span>
       <span class="or-key-btn">Browse free models &rarr;</span>
     </a>
   </div>
@@ -222,7 +222,7 @@
   <div class="showcase" style="padding:0;max-width:1100px;">
     <div class="screenshot-wrap">
       <img src="freemodels.png"
-           alt="Sorana Model Manager showing 30+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
+            alt="Sorana Model Manager showing 25+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
            width="1140" height="820" fetchpriority="high">
     </div>
     <div class="floating-badges">
@@ -236,7 +236,7 @@
   </div>
   <div class="hero-stats">
     <div class="stat">
-      <span class="stat-number">30+</span>
+      <span class="stat-number">25+</span>
       <span class="stat-label">$0/mo with free-tier models · weekly promos</span>
     </div>
     <div class="stat">
@@ -435,8 +435,8 @@
                 <caption>Comparison table</caption>
                 <thead><tr><th scope="col">Option</th><th scope="col">Speed</th><th scope="col">Cost</th><th scope="col">Fit</th></tr></thead>
                 <tbody>
-                  <tr><td>Option A</td><td class="chat-value">Fast</td><td>$0</td><td class="chat-good">Best</td></tr>
-                  <tr><td>Option B</td><td>Medium</td><td class="chat-warm">$8</td><td>Good</td></tr>
+                  <tr><th scope="row">Option A</td><td class="chat-value">Fast</td><td>$0</td><td class="chat-good">Best</td></tr>
+                  <tr><th scope="row">Option B</td><td>Medium</td><td class="chat-warm">$8</td><td>Good</td></tr>
                 </tbody>
               </table>
             </div>
@@ -468,7 +468,7 @@
         </svg>
       </div>
       <h3>Make the AI work your way</h3>
-      <p>Assign any model to five role slots — Primary, Quick, Embed, Vision, and Reviewer — then switch whenever the task changes. The Reviewer gives answer quality checks an independent second opinion on a different model, while everything else keeps running as before.</p>
+      <p>Assign any model to five role slots - Primary, Quick, Embed, Vision, and Reviewer - then switch whenever the task changes. The Reviewer gives answer quality checks an independent second opinion on a different model, while everything else keeps running as before.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -651,7 +651,7 @@
     <p class="ad-label">Sponsored</p>
     <a class="or-adbar" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
       <span class="or-adbody">
-        <span class="or-adhead"><span class="or-adlink">openrouter/free. Auto-picks the best free model.</span></span>
+        <span class="or-adhead"><span class="or-adlink">openrouter/free. Auto-picks top-rated free models.</span></span>
         <span class="or-addesc">Get a free API key in 30 seconds. OpenRouter routes you to the best available free model from its catalog. No credit card required.</span>
         <span class="or-adurl">https://<b>openrouter.ai</b>/models?q=free</span>
       </span>
@@ -733,13 +733,13 @@
 </section>
 
 <!-- TASK YOUR AGENT WITH -->
-<!-- SPONSORED: CheaperInference (affiliate) — free slot between features and chat examples -->
+<!-- SPONSORED: CheaperInference (affiliate) - free slot between features and chat examples -->
 <div class="ad-container">
   <p class="ad-label">Sponsored</p>
   <a class="ci-adbar" href="https://cheaperinference.com/?ref=IED5pC6EJx" target="_blank" rel="sponsored noopener noreferrer">
     <span class="ci-adbody">
       <span class="ci-adhead"><span class="ci-adlink">Same frontier models. Smaller invoice.</span></span>
-      <span class="ci-addesc">Cut your GPT / Claude / Gemini spend without switching tooling — drop-in OpenAI-compatible API.</span>
+      <span class="ci-addesc">Cut your GPT / Claude / Gemini spend without switching tooling - drop-in OpenAI-compatible API.</span>
       <span class="ci-adurl">https://<b>cheaperinference.com</b>/</span>
     </span>
     <span class="ci-adbtn">See the savings &rarr;</span>
@@ -847,7 +847,7 @@
 <section class="section section-alt" id="comparison">
   <div class="section-header">
     <h2>How Sorana <em>compares.</em></h2>
-    <p>An autonomous desktop AI agent, a personal knowledge base, and a visual workspace &mdash; in one tool.</p>
+    <p>Compare Sorana with note apps, cloud assistants, and the self-hosted Odysseus workspace.</p>
   </div>
   <div style="overflow-x: auto; display: block;">
   <table class="comparison-table">
@@ -855,32 +855,33 @@
       <tr>
         <th>What you get</th>
         <th>Sorana</th>
+        <th>Odysseus</th>
         <th>Obsidian / Notion</th>
         <th>ChatGPT / Claude / others</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>Native desktop app. Runs fully offline &amp; private</td><td class="win">Your machine, your data. No internet needed.</td><td>Obsidian local / Notion cloud</td><td>Cloud only. Your data on their servers.</td></tr>
-      <tr><td>Model flexibility</td><td class="win">25+ providers + capability probing</td><td>N/A</td><td>Locked to one vendor</td></tr>
-      <tr><td>The right AI for each task</td><td class="win">Quick model for simple steps, stronger model for harder work</td><td>N/A</td><td>One model for everything</td></tr>
-      <tr><td>Provider goes down or hits quota</td><td class="win">Automatic failover to your Backup or Spare model — dead free tiers paused until reset</td><td>N/A</td><td>Wait, upgrade, or switch manually</td></tr>
-      <tr><td>Multi-agent orchestration</td><td class="win">A primary agent dispatches specialized subagents that work in parallel with their own budgets.</td><td>Simple automations only</td><td>Basic workflows / skills (paid)</td></tr>
-      <tr><td>See how answers are built</td><td class="win">Follow what Sorana searched, found, and used to reach an answer.</td><td>No AI agent transparency</td><td>No agent tracing available</td></tr>
-      <tr><td>Sources you can verify</td><td class="win">Every answer lists the web pages and documents it used, filtered by relevance.</td><td>N/A</td><td>Basic citations on paid tier only</td></tr>
-      <tr><td>Portable</td><td class="win">Runs from a USB stick</td><td>App install required</td><td>Cloud / web only</td></tr>
-      <tr><td>AI takes action</td><td class="win">Built-in automation on files, web, email</td><td>View &amp; edit only</td><td>Paid connectors with separate setup</td></tr>
-      <tr><td>Goal-driven autonomy</td><td class="win">Plans multi-step work, dispatches specialized subagents in parallel, acts with 90+ tools, and reviews its own work before answering.</td><td>No autonomous agent</td><td>Agent mode / workflows (paid)</td></tr>
-      <tr><td>Visual knowledge canvas</td><td class="win">AI-organised 2D canvas</td><td>Manual (Obsidian Canvas)</td><td>Chat only</td></tr>
-      <tr><td>Chat with documents</td><td class="win">Search across your whole workspace</td><td>Plugin required</td><td>Project uploads + per-session</td></tr>
-      <tr><td>Image OCR &amp; Vision AI</td><td class="win">Built-in OCR + AI fallback</td><td>External tools required</td><td>Cloud-only vision</td></tr>
-      <tr><td>Tool integrations</td><td class="win">Built-in integration marketplace</td><td>No native AI agents</td><td>Connector marketplaces (paid)</td></tr>
-      <tr><td>Calendar &amp; Scheduling</td><td class="win">Manage via chat</td><td>View-only plugins</td><td>Connector (paid)</td></tr>
-      <tr><td>AI remembers you</td><td class="win">Remembers your projects and preferences</td><td>Manual notes only</td><td>Basic free notes only; full memory paid</td></tr>
-      <tr><td>Stays useful over months</td><td class="win">Keeps the important context</td><td>No AI context</td><td>Varies by service</td></tr>
-      <tr><td>Cost</td><td class="win">$0, free-tier OpenRouter or local models (your call)</td><td>Free + paid tiers</td><td>$20/mo for GPT-4 / Claude<sup><a href="#cost-note" style="color:inherit;text-decoration:none;">*</a></sup></td></tr>
+      <tr><th scope="row">Native desktop app. Runs fully offline &amp; private</th><td class="win">Native portable app for Windows and Linux. Runs on your machine with your data. Cloud only when you explicitly connect an API key.</td><td>Self-hosted web app. Local-first and no telemetry.</td><td>Obsidian local-first. Notion cloud-hosted.</td><td>Cloud-only. Your data on their servers.</td></tr>
+      <tr><th scope="row">Model flexibility</th><td class="win">Cloud and unlimited local models via Lemonade, Ollama, Llama.cpp, and LM Studio. 25+ providers plus capability probing on any model. Browse, favorite, and probe before you commit.</td><td>Bring your own models. Local or external endpoints with 270+ catalogued models.</td><td>No native AI. Optional plugins connect external providers.</td><td>One vendor per service. Limited switching between models.</td></tr>
+      <tr><th scope="row">The right AI for each task</td><td class="win">Assign any model to five role slots (Primary, Quick, Reviewer, Vision, Embed) with Backup or Spare per role for automatic failover.</td><td>Choose local or external endpoints. Compare several models side-by-side.</td><td>Single model per plugin or integration. No role-based routing.</td><td>One model per session. Stronger models require plan upgrade.</td></tr>
+      <tr><th scope="row">Provider goes down or hits quota</td><td class="win">Automatic failover to your Backup or Spare model. Dead free tiers pause until reset.</td><td>Endpoint and model choice is manual. No failover behavior described.</td><td>Depends on plugin or provider. No automatic failover.</td><td>Wait, upgrade, or switch manually.</td></tr>
+      <tr><th scope="row">Multi-agent orchestration</td><td class="win">A primary agent plans your work, dispatches specialized subagents in parallel, and reviews their results before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Simple automations and community plugins.</td><td>Basic workflows and skills available with paid plans.</td></tr>
+      <tr><th scope="row">See how answers are built</td><td class="win">See the full trace of every step planned, searched, and reviewed to reach the answer.</td><td>Agent tracing is not described on the current site.</td><td>Plugin-dependent transparency. Limited by design.</td><td>Agent tracing varies by service and plan.</td></tr>
+      <tr><th scope="row">Sources you can verify</td><td class="win">Every answer lists the web pages and documents it used, with relevance-filtered citations you can verify.</td><td>Deep Research gathers, reads, and cites sources.</td><td>Plugin-dependent citation support.</td><td>Citations vary by service and plan.</td></tr>
+      <tr><th scope="row">Portable</td><td class="win">Portable executable for Windows and Linux. Runs from a USB stick with no installation, no account, and no registry changes.</td><td>Self-hosted web app. No portable-desktop claim.</td><td>Obsidian local files. Notion requires account and sync.</td><td>Cloud and web only. Limited desktop applications.</td></tr>
+      <tr><th scope="row">AI takes action</td><td class="win">Built-in automation across files, web, email, and calendar.</td><td>Tools, MCP, email, research, and autonomous agents.</td><td>View and edit. Limited native AI actions.</td><td>Paid connectors with separate setup.</td></tr>
+      <tr><th scope="row">Goal-driven autonomy</td><td class="win">Plans multi-step work, dispatches specialized subagents in parallel, acts with 90+ tools, and reviews its own work before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Workflow plugins available. No native autonomous agent.</td><td>Agent modes and workflows available with paid plans.</td></tr>
+      <tr><th scope="row">Visual knowledge canvas</td><td class="win">AI-organised 2D spatial canvas for visual knowledge management.</td><td>Visual canvas is not described on the current site.</td><td>Obsidian Canvas (manual). Notion database views.</td><td>Chat-first interface. Canvas features limited or absent.</td></tr>
+      <tr><th scope="row">Chat with documents</td><td class="win">Chat with hundreds of papers, books, and scanned notes across your whole workspace.</td><td>Document editor. Document-chat scope is not described.</td><td>Community plugins for document chat.</td><td>Project uploads and per-session context.</td></tr>
+      <tr><th scope="row">Image OCR &amp; Vision AI</td><td class="win">Built-in OCR with AI vision fallback for images and documents.</td><td>Image gallery. OCR and vision are not described.</td><td>External tools or plugins required.</td><td>Vision features vary by service.</td></tr>
+      <tr><th scope="row">Tool integrations</td><td class="win">Built-in integration marketplace plus MCP server support.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
+      <tr><th scope="row">Calendar &amp; Scheduling</td><td class="win">Manage Gmail and Calendar through natural chat.</td><td>Calendar and scheduling are not described.</td><td>View-only calendar plugins.</td><td>Calendar connectors vary by service.</td></tr>
+      <tr><th scope="row">AI remembers you</td><td class="win">Persistent memory that remembers your projects, preferences, and decisions.</td><td>Persistent memory across all conversations.</td><td>Manual notes and tags. No persistent AI memory.</td><td>Memory features vary by service and plan.</td></tr>
+      <tr><th scope="row">Stays useful over months</td><td class="win">Quietly condenses older conversations while keeping the important context for months of continued work.</td><td>Persistent memory across conversations. Retention period not stated.</td><td>Manual organization. No AI context retention.</td><td>Context retention varies by service.</td></tr>
+      <tr><th scope="row">Cost</td><td class="win">Free to use. $0/mo with free-tier cloud models or local models. Your choice.</td><td>Open source and free. Self-hosted.</td><td>Free tier available. Paid tiers for collaboration and sync.</td><td>Subscription pricing varies by model and provider.</td></tr>
     </tbody>
   </table>
-  <p id="cost-note" style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">*Publicly disclosed approximate cost as of July 2026; Sorana lets you use those same models without subscription if you already have API credits, or swap in free-tier and local models instead.</p>
+  <p id="cost-note" style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">*Publicly disclosed approximate cost as of 2026; Sorana lets you use those same models without subscription if you already have API credits, or swap in free-tier and local models instead. Odysseus cells reflect its public website as checked on 2026-09-09; "not described" means the current site does not claim that capability.</p>
   </div>
 </section>
 
@@ -1160,7 +1161,7 @@
       <div class="model-row model-row-featured" style="border-color:rgba(6,182,212,0.25);">
         <span class="model-provider">OpenRouter</span>
         <span class="model-name">openrouter/free</span>
-        <span class="model-desc">Auto-selects the best free model. Free API key at openrouter.ai, no credit card</span>
+         <span class="model-desc">Auto-selects top-rated free models. Free API key at openrouter.ai, no credit card</span>
         <span class="model-tag free">100% FREE</span>
       </div>
       <div class="model-row model-row-featured">
@@ -1185,7 +1186,7 @@
   <p class="ad-label">Sponsored</p>
   <a class="ci-adbar" href="https://cheaperinference.com/?ref=IED5pC6EJx" target="_blank" rel="sponsored noopener noreferrer">
     <span class="ci-adbody">
-      <span class="ci-adhead"><span class="ci-adlink">Every provider on one bill — at the cheapest rate.</span></span>
+      <span class="ci-adhead"><span class="ci-adlink">Every provider on one bill - at the cheapest rate.</span></span>
       <span class="ci-addesc">Stop juggling API keys and price sheets. CheaperInference aggregates the popular models below retail.</span>
       <span class="ci-adurl">https://<b>cheaperinference.com</b>/</span>
     </span>
@@ -1313,7 +1314,7 @@
         <h3>New Spaceship</h3>
         <p>Retro Arcade 2D side-scroller bullet-hell shmup game.</p>
         <div class="discover-links">
-          <a href="http://tetramatrix.github.io/spaceship" target="_blank" rel="noopener">Website</a>
+          <a href="https://tetramatrix.github.io/spaceship" target="_blank" rel="noopener">Website</a>
           <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship" target="_blank" rel="noopener">itch.io</a>
           <a href="https://www.indiedb.com/games/new-spaceship" target="_blank" rel="noopener">IndieDB</a>
         </div>
@@ -1325,7 +1326,7 @@
         <h3>Audrix</h3>
         <p>Real-time speech-to-text engine. Capture microphone or system audio, transcribe instantly with noise suppression and crosstalk detection. Runs entirely offline on Windows.</p>
         <div class="discover-links">
-          <a href="http://tetramatrix.github.io/Audrix" target="_blank" rel="noopener">Website</a>
+          <a href="https://tetramatrix.github.io/Audrix" target="_blank" rel="noopener">Website</a>
         </div>
       </div>
     </div>
@@ -1335,7 +1336,7 @@
         <h3>TabNeuron</h3>
         <p>AI Spatial Tab Manager &amp; Research Workspace. Maps browser tabs onto a 2D canvas, AI groups them by content, chat with any page or the live internet, deploy no-code research agents, and sync back to Chrome Tab Groups.</p>
         <div class="discover-links">
-          <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener">Website</a>
+          <a href="https://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener">Website</a>
           <a href="https://discord.gg/4QkQSfSATF" target="_blank" rel="noopener">Discord</a>
           <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener">Microsoft Store</a>
         </div>
@@ -1347,7 +1348,7 @@
         <h3>RyzenZPilot</h3>
         <p>Powerful tool for managing AMD Ryzen processor power settings on Windows. Adjust CPU performance, power limits, and thermal configurations.</p>
         <div class="discover-links">
-          <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener">Website</a>
+          <a href="https://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener">Website</a>
         </div>
       </div>
     </div>
@@ -1357,7 +1358,7 @@
         <h3>Aicono</h3>
         <p>AI Intelligent Desktop Icon Autopilot. Automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly.</p>
         <div class="discover-links">
-          <a href="http://tetramatrix.github.io/Aicono" target="_blank" rel="noopener">Website</a>
+          <a href="https://tetramatrix.github.io/Aicono" target="_blank" rel="noopener">Website</a>
           <a href="https://apps.microsoft.com/store/detail/9NGFC27J1VBX" target="_blank" rel="noopener">Microsoft Store</a>
           <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank" rel="noopener">Softpedia</a>
           <a href="https://alternativeto.net/software/aicono" target="_blank" rel="noopener">AlternativeTo</a>
@@ -1373,7 +1374,7 @@
   <p class="ad-label">Sponsored</p>
   <a class="or-adbar" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
     <span class="or-adbody">
-      <span class="or-adhead"><span class="or-adlink">openrouter/free. Auto-picks the best free model.</span></span>
+      <span class="or-adhead"><span class="or-adlink">openrouter/free. Auto-picks top-rated free models.</span></span>
       <span class="or-addesc">Get a free API key in 30 seconds. OpenRouter routes you to the best available free model from its catalog. No credit card required.</span>
       <span class="or-adurl">https://<b>openrouter.ai</b>/models?q=free</span>
     </span>
@@ -1390,7 +1391,7 @@
   <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:760px;margin:0 auto;">
     <details class="faq-item">
       <summary>Is Sorana a desktop AI agent?</summary>
-      <p>Yes. Sorana is a personal desktop AI agent that runs natively on Windows and Linux as a portable executable — no browser, no account, no installation. It works on your local files and only uses cloud providers when you explicitly connect an API key.</p>
+      <p>Yes. Sorana is a personal desktop AI agent that runs natively on Windows and Linux as a portable executable. No browser, no account, no installation. It works on your local files and only uses cloud providers when you explicitly connect an API key.</p>
     </details>
     <details class="faq-item">
       <summary>Does Sorana cost anything?</summary>
@@ -1411,7 +1412,7 @@
     <details class="faq-item">
       <summary>Which providers have free tiers?</summary>
       <p>Several providers let you use AI models for free. Here is how each one works:</p>
-      <p><strong>OpenRouter</strong> is the easiest way to start. Sign up at openrouter.ai, grab a free API key (no credit card needed), then open Sorana's Model Manager, find "openrouter/free", and set it as your Primary model or for all roles if you don't have other models. OpenRouter automatically picks the best free model from its catalog for every request.</p>
+      <p><strong>OpenRouter</strong> is the easiest way to start. Sign up at openrouter.ai, grab a free API key (no credit card needed), then open Sorana's Model Manager, find "openrouter/free", and set it as your Primary model or for all roles if you don't have other models.       OpenRouter automatically picks top-rated free models from its catalog for every request.</p>
       <p><strong>FreeRouter</strong> is free to use. Sign up at freerouter.eu.cc, get a free API key (no credit card), then open the Model Manager, select "Kiro Auto", and start chatting. It is 100% free with no limits.</p>
       <p><strong>Nvidia</strong> offers multiple models for free, including nemotron-3-super-120b. Sign up at build.nvidia.com, grab an API key, and add it in the Model Manager under Nvidia. Browse all free models at <a href="https://build.nvidia.com" target="_blank" rel="noopener noreferrer">build.nvidia.com</a>.</p>
       <p><strong>Mistral</strong> offers devstral-2512 for free. Create an account at mistral.ai, grab your API key, and connect it in Sorana's Model Manager.</p>
@@ -1424,7 +1425,7 @@
     </details>
     <details class="faq-item">
       <summary>Does Sorana use multiple AI agents?</summary>
-      <p>When a task needs it, Sorana's primary agent dispatches specialized subagents &mdash; a web researcher, a code analyst, a fact-check or review agent &mdash; each with its own budget, running parts of the work in parallel. The primary agent then assembles and reviews the results before answering.</p>
+      <p>When a task needs it, Sorana's primary agent dispatches specialized subagents - a web researcher, a code analyst, a fact-check or review agent - each with its own budget, running parts of the work in parallel. The primary agent then assembles and reviews the results before answering.</p>
     </details>
     <details class="faq-item">
       <summary>What happens to long conversations?</summary>
@@ -1447,12 +1448,12 @@
 
 <!-- FOOTER CTA -->
 <section class="cta-section">
-  <h2>Start using the best free models <em>today.</em></h2>
+  <h2>Start using top-rated free models <em>today.</em></h2>
   <p>Download Sorana and get instant access to 30+ free models from every major provider. Private by design and built for serious AI work.</p>
   <p class="cta-fr">
     <a class="or-cta" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
       <span class="or-model">openrouter/free<span class="or-model-tag">100% FREE</span></span>
-      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; free API key, best free model</span>
+      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; free API key, top-rated free models</span>
       <span class="or-key-btn">Browse free models &rarr;</span>
     </a>
   </p>
@@ -1485,14 +1486,14 @@
 <!-- FOOTER -->
 <footer>
   <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
-    <span>© 2026 Sorana — your personal desktop AI agent for Windows & Linux.</span>
+    <span>© 2026 Sorana - your personal desktop AI agent for Windows & Linux.</span>
     <span class="version-pill" title="Current Sorana version">v1.0.79</span>
     <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Changelog.md" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
     <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
     <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>
   </div>
   <div style="margin-top:var(--space-3);font-size:var(--text-xs);color:var(--color-text-faint);">
-    Discover more apps: <a href="http://tetramatrix.github.io/spaceship" target="_blank" rel="noopener" style="color:var(--color-text-muted);">New Spaceship</a> · <a href="http://tetramatrix.github.io/Audrix" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Audrix</a> · <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener" style="color:var(--color-text-muted);">TabNeuron</a> · <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener" style="color:var(--color-text-muted);">RyzenZPilot</a> · <a href="http://tetramatrix.github.io/Aicono" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Aicono</a>
+    Discover more apps: <a href="https://tetramatrix.github.io/spaceship" target="_blank" rel="noopener" style="color:var(--color-text-muted);">New Spaceship</a> · <a href="https://tetramatrix.github.io/Audrix" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Audrix</a> · <a href="https://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener" style="color:var(--color-text-muted);">TabNeuron</a> · <a href="https://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener" style="color:var(--color-text-muted);">RyzenZPilot</a> · <a href="https://tetramatrix.github.io/Aicono" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Aicono</a>
   </div>
   <span style="margin-top:var(--space-2);display:block;">Supports 25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Ollama, LM Studio and more</span>
 </footer>
