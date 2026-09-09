@@ -1,6 +1,6 @@
-# Sorana: Your Personal Desktop AI Agent That Never Forgets
+# Sorana: The Desktop AI Workspace That Never Forgets
 
-> Sorana is a personal desktop AI agent: a primary agent that plans your work, dispatches specialized subagents, and acts across your files, web, email, and calendar, reviewing its own results before answering. It runs entirely on your machine and never forgets a project, preference, or decision.
+> Sorana is a personal desktop AI workspace: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, and run local models all in one private workspace. It runs entirely on your machine and never forgets a project, preference, or decision.
 >
 > **Start for $0**, FreeRouter is a totally free API (no subscription, no credits) and includes the latest Qwen 3.8 Max. Pair it with Sorana and put the agentic AI to work before adding anything else.
 
@@ -8,7 +8,7 @@
 
 ## What Is Sorana?
 
-Sorana is a personal desktop AI agent for Windows and Linux, a primary agent that plans your work, dispatches specialized subagents, acts across your files, web, email, and calendar, and reviews its own results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals. Unlike chatbots that forget you the moment you close the window, it builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off.
+Sorana is a personal desktop AI workspace for Windows and Linux. It learns from your documents, conversations, and actions, building a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. When a task needs it, Sorana dispatches specialized subagents to work in parallel then reviews the results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals.
 
 Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.
 
@@ -94,8 +94,8 @@ You ask a question and get an answer, but you have no idea how it got there. Did
 
 ## Core Features
 
-### An AI that thinks for itself
-Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. If your question is unclear, it asks before guessing. If one approach fails, it tries another. It even spots interesting tangents and follows them on its own.
+### A workspace that thinks for itself
+Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. When a task needs specialized help, the workspace dispatches subagents then assembles and reviews the results.
 
 ### Local & Global Memory
 A living knowledge profile captures facts and project context. Remembers what matters, spots contradictions, and scores importance automatically. Maintain both scoped local memories and a persistent global memory, and sync them anytime. When you decline a proposed action, the agent remembers the pattern and adapts future suggestions to your preferences.
@@ -116,13 +116,13 @@ Your AI brain connected to your knowledge and everything you can act on: web, em
 Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.
 
 ### Model Manager
-Browse, expand, and collapse models from 25+ providers and local sources. Assign any model to five role slots — Primary, Quick, Embed, Vision, and Reviewer — then set a Backup or Spare per role for automatic failover. Mark favorites, sort by any column, and probe capabilities before you commit.
+Browse, expand, and collapse models from 25+ providers and local sources. Assign any model to five role slots: Primary, Quick, Embed, Vision, and Reviewer then set a Backup or Spare per role for automatic failover. Mark favorites, sort by any column, and probe capabilities before you commit.
 
 ### Specialized Subagents
-When a task needs it, Sorana's primary agent dispatches specialized subagents, web research, code analysis, fact-check, to work parts in parallel with their own budgets, then reviews the results before answering.
+When a task needs it, Sorana dispatches specialized subagents, web research, code analysis, and fact-check to work in parallel with their own budgets, then reviews the results before answering.
 
 ### Five Model Roles + Failover
-Assign any model to five role slots — Primary, Quick, Embed, Vision, and Reviewer — each optimized for its task. The Reviewer gives answer quality checks an independent second opinion on a different model. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
+Assign any model to five role slots: Primary, Quick, Embed, Vision, and Reviewer each optimized for its task. The Reviewer gives answer quality checks an independent second opinion on a different model. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
 
 ### Model Probing
 One click tests if a model can reason, see images, or handle audio, so you know what it can do before relying on it.
@@ -212,12 +212,12 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Runs fully offline & private | Your machine, your data. No internet needed. | Obsidian local / Notion cloud | Cloud only. Your data on their servers. |
 | Model flexibility | 25+ providers + capability probing | N/A | Locked to one vendor |
 | Five Model Roles + Failover | Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer). Set a Backup or Spare per role for automatic failover. | N/A | One model for everything |
-| Multi-agent orchestration | A primary agent dispatches specialized subagents that work in parallel with their own budgets. | Simple automations only | Basic workflows / skills (paid) |
+| Multi-agent orchestration | Specialized subagents work in parallel with their own budgets when the workspace needs them. | Simple automations only | Basic workflows / skills (paid) |
 | Agent Trace & Debug | Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. | No AI agent transparency | No agent tracing available |
 | Sources you can verify | Every answer lists the web pages and documents it used, filtered by relevance. | N/A | Basic citations on paid tier only |
 | Portable | Runs from a USB stick | App install required | Cloud / web only |
 | AI takes action | Built-in automation on files, web, email | View & edit only | Paid connectors with separate setup |
-| Goal-driven autonomy | Plans multi-step work, dispatches specialized subagents in parallel, acts with tools, and reviews its own work before answering | No autonomous agent | Agent mode / workflows (paid) |
+| Goal-driven autonomy | Plans multi-step work, dispatches subagents when needed, acts with tools, and reviews its own work before answering | No autonomous agent | Agent mode / workflows (paid) |
 | Visual knowledge canvas | AI-organised 2D canvas | Manual (Obsidian Canvas) | Chat only |
 | Chat with documents | Workspace-wide RAG indexing | Plugin required | Project uploads + per-session |
 | Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
@@ -324,4 +324,4 @@ Formatted responses can include headings, emphasis, links, and comparison tables
 
 ---
 
-Developed by **Tetramatrix** | Your autonomous AI assistant | Portable and private
+Developed by **Tetramatrix** | Your desktop AI workspace | Portable and private

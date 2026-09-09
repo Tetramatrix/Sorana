@@ -1,4 +1,4 @@
-🚀 Sorana - The AI Workspace That Actually Remembers You 🚀
+🚀 Sorana: The Desktop AI Workspace That Never Forgets 🚀
 
 Stop talking to strangers. Sorana is a visual AI workspace that replaces amnesiac chat boxes with a persistent, spatial 2D canvas. It semantically arranges your files, automates tasks via an MCP server, and processes documents with OCR.
 
@@ -6,7 +6,7 @@ Powered by a 4-tier memory system (Embeddings + BM25 + Keywords + Full Text), So
 
 ✨ Inspiration ✨
 
-We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this—moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.
+We were frustrated by the limitations of traditional file managers. For decades, we've been forced to organize digital lives into rigid, list-based hierarchies and nested folders that hide information rather than reveal it. Our brains don't work in lists; they work through associations and spatial relationships. We wanted to build a system that reflects this-moving away from "where did I save that file?" to "what is this project about?" by using semantic and visual grouping to reveal the hidden structure of our data.
 
 💡 What Sorana Solves 💡
 
@@ -16,11 +16,11 @@ We were frustrated by the limitations of traditional file managers. For decades,
 • Token Bloat → Long chats get expensive and slow. Sorana's memory compaction boils history down to essentials, saving >90% of tokens.
 • "Does the AI actually know my project?" → Adaptive 4-tier document search (Semantic + BM25 + Keyword + Full Text) ensures perfect retrieval without indexing your whole hard drive.
 • Scanned PDFs are blind to AI → Integrated OCR extracts text, making images and scans fully searchable.
-• Cloud Privacy Risks → Data goes to third parties. Sorana runs AI models locally—your files never leave your machine.
+• Cloud Privacy Risks → Data goes to third parties. Sorana runs AI models locally-your files never leave your machine.
 
 🔑 Features in Detail 🔑
 
-📂 The Visual Workspace — Set the Stage for AI
+📂 The Visual Workspace: Set the Stage for AI
 Problem: Navigating nested folders hides your data.
 Solution: AI maps your files onto a 2D canvas by topic and relationship. You set the boundaries by choosing the folder, and the AI organizes the chaos. Visually locate files by what they're about, not where they're saved.
 
@@ -38,7 +38,7 @@ Solution: Chat directly with your files (PDFs, code, text). Built-in web tools g
 
 📁 File Automation (Built-in MCP Server)
 Problem: Repetitive file tasks require manual clicking.
-Solution: Automate operations through natural language. Tell the AI: "Create a folder called 'Project_X', move report.docx there, and summarize it" — done in one message.
+Solution: Automate operations through natural language. Tell the AI: "Create a folder called 'Project_X', move report.docx there, and summarize it" done in one message.
 
 👁️ Vision / Image Analysis
 Problem: Scans, diagrams, and screenshots are "dead data" to most file managers.
@@ -62,7 +62,7 @@ Solution: Sorana is fully portable. Extract it to a USB drive, and your entire w
 
 📦 Portable
 
-The application is portable — extract anywhere, run from USB, keeps data under your control. All data stored in a single .sorana/ folder. Existing installs migrate automatically.
+The application is portable: extract anywhere, run from USB, keeps data under your control. All data stored in a single .sorana/ folder. Existing installs migrate automatically.
 
 🚀 Quick Start 🚀
 
@@ -95,9 +95,9 @@ Just add your own API keys for Deepseek, Mistral, Nvidia, Gemini, or OpenRouter 
 
 🧠 Built-in Models: The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex files as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.
 
-⚡ Performance Notes: For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size - fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
+⚡ Performance Notes: For optimal performance, we strongly recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the folder size; fewer files mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
 
-⚠️ IMPORTANT HARDWARE NOTE: Running larger 8B parameter models locally requires sufficient hardware - ideally 16 GB RAM or 8 GB VRAM - to function smoothly. If hardware is limited, the app includes a smaller portable model (which works fully offline but may classify complex files as "Miscellaneous") or allows connection to cloud-based LLMs for high accuracy without the local hardware cost.
+⚠️ IMPORTANT HARDWARE NOTE: Running larger 8B parameter models locally requires sufficient hardware, ideally 16 GB RAM or 8 GB VRAM, to function smoothly. If hardware is limited, the app includes a smaller portable model (which works fully offline but may classify complex files as "Miscellaneous") or allows connection to cloud-based LLMs for high accuracy without the local hardware cost.
 
 📄 OCR Requirements for PDFs with Images
 
@@ -107,7 +107,7 @@ To enable OCR for PDFs with images, you need to install the official Tesseract O
 
 🤖 Using MCP Servers
 
-Sorana includes a visual MCP Manager — enable/disable servers, configure settings, and monitor connection health without editing config files.
+Sorana includes a visual MCP Manager: enable/disable servers, configure settings, and monitor connection health without editing config files.
 
 To use file operations and web tools:
 1. Open MCP Manager to configure and enable servers
@@ -117,7 +117,7 @@ To use file operations and web tools:
 
 🚀 Export to Obsidian
 
-Connect Sorana to Obsidian — the popular knowledge base used by thousands. Export your workspace groups and files directly to Obsidian in two useful formats:
+Connect Sorana to Obsidian, the popular knowledge base used by thousands. Export your workspace groups and files directly to Obsidian in two useful formats:
 
 📄 Export to Canvas
 Export your Sorana workspace groups and file arrangements to Obsidian's infinite Canvas. Preserve the visual organization and spatial grouping of your files, bringing your AI-workspace layout into Obsidian's visual environment.
@@ -135,11 +135,11 @@ Generate a knowledge graph from your workspace file structure and groupings. Vis
 
 Why this matters:
 Obsidian is one of the most popular knowledge management tools, with a massive community. By exporting to Obsidian, you can:
-✅ Leverage your existing Obsidian vault — integrate Sorana's AI workspace into your established knowledge base
-✅ Use Obsidian's powerful plugins — Dataview, Templater, Excalidraw, and hundreds more
+✅ Leverage your existing Obsidian vault; integrate Sorana's AI workspace into your established knowledge base
+✅ Use Obsidian's powerful plugins; Dataview, Templater, Excalidraw, and hundreds more
 ✅ Sync across all your devices via Obsidian Sync, Git, or cloud storage
-✅ Share with the Obsidian community — fully compatible with the entire ecosystem
-✅ Never lock-in — your data remains in standard Markdown files you own
+✅ Share with the Obsidian community, fully compatible with the entire ecosystem
+✅ Never lock-in; your data remains in standard Markdown files you own
 
 🔗 Connecting Agents
 
@@ -175,7 +175,7 @@ To create agent pipelines:
 
 🔧 RyzenZPilot! 🔧
 
-💻 RyzenZPilot - AMD Ryzen Power Management Tool
+💻 RyzenZPilot: AMD Ryzen Power Management Tool
 
 RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
 It allows users to adjust CPU performance, power limits, and thermal configurations
@@ -184,7 +184,7 @@ for optimal performance and efficiency.
 🌐 Website: http://tetramatrix.github.io/RyzenZPilot
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🖥️ Aicono - AI intelligent desktop icon autopilot 🖥️
+🖥️ Aicono: AI intelligent desktop icon autopilot 🖥️
 
 Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and can operate fully offline via manual JSON configuration when AI services are unavailable.
 
@@ -194,9 +194,9 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 💻 Chip: https://www.chip.de/downloads/Aicono_186527264.html
 💬 Discord: https://discord.gg/4QkQSfSATF
 
-🧩 TabNeuron - AI spatial tab manager & research workspace 🧩
+🧩 TabNeuron: AI spatial tab manager & research workspace 🧩
 
-TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infinite 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.
+TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infinite 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups, all from a portable desktop app that runs fully offline with a built-in model.
 
 🌐 Website: http://tetramatrix.github.io/TabNeuron
 💬 Discord: https://discord.gg/4QkQSfSATF
