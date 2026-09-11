@@ -1,4 +1,24 @@
 📋 Changelog 📋
+📅 11.09.26 - Version 1.0.92
+🆕 Slash command to list available MCP tools with usage hints — discover what the assistant can call without leaving chat.
+🔄 Research answer quality improved — fetched URL sources outrank pasted text evidence, table rows promote to citable claims, and explorer findings feed into evidence evaluation.
+🔄 Research trace enriched — domain-scan completion appears in the stats footer, research-status line shows the active lane, recovered citations are preserved, and DNS lookup results are bounded.
+🔄 Live-suite hardening — thread-scoped memory prevents cross-thread contamination, retry ceilings stop runaway tool loops, prose search patterns are safer, and 429 retries respect provider limits.
+🔄 Reviewer cost control — per-turn reviewer cost flag skips cheap review passes when the model is unlikely to add value, keeping deep-research turns faster.
+🔄 Background job tracking — long-running research runs show as detached background jobs with per-event governance retention so the trace reflects what actually ran.
+🔄 Memory distillation — failure-lesson writes are approval-gated so only confirmed lessons are stored, and identity facts stay consistent across sessions.
+🆕 Local output cap for agents — daily token budgets now have explicit UI control with honest refusal messages instead of silent truncation.
+🆕 Graceful search degradation — when a search provider is rate-limited or down, the assistant degrades to alternative lanes instead of surfacing raw timeout errors.
+🐛 Fixed provided-URL verdict chain — deep links are probed before falling back to search, so linked content is fetched reliably.
+🐛 Fixed cross-thread memory bleed — thread-scoped memory and RAG queries no longer leak state between concurrent research threads.
+🐛 Fixed sidebar chat orphans — removed chats no longer leave stale entries in the sidebar, and memory extraction silence is restored on busy turns.
+🐛 Fixed synthesis telemetry leak — internal timing spans no longer surface in user-facing traces.
+🐛 Fixed approval-resume crashes — resuming from an approval block no longer raises a key error, and the welcome hint renders correctly on first run.
+🐛 Fixed auto-proactive briefing — the briefing no longer fires automatically on chat open when it would interrupt the user.
+🐛 Fixed bulk Gmail archive acknowledgement — background archive operations report progress instead of appearing to stall.
+🐛 Fixed claim-warning hedge framing — warning text no longer includes agent-style hedging language that confused the message.
+🧪 Live-suite regression coverage expanded — classifier tags, answer-contract invariants, approval-queue gaps, menu refresh, and slash-command coverage are all guarded by automated live tests.
+📝 Website copy refreshed — landing and support pages now reflect the workspace-first, memory-centric product positioning.
 📅 07.09.26 - Version 1.0.91
 🆕 13 selectable themes with a dedicated picker — switch between curated palettes or light/dark mode instantly from the Appearance card.
 🆕 Whole-app theme sweep — agent cards, calendar, chat, Model Manager, and open windows all repaint consistently on theme change.
