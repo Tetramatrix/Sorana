@@ -1,0 +1,17 @@
+{
+  "name": "Sorana — Desktop AI Workspace",
+  "short_name": "Sorana",
+  "description": "Free desktop AI workspace for Windows and Linux that never forgets.",
+  "start_url": "https://tetramatrix.github.io/Sorana/",
+  "scope": "https://tetramatrix.github.io/Sorana/",
+  "display": "standalone",
+  "background_color": "#0e0f11",
+  "theme_color": "#0e0f11",
+  "icons": [
+    {
+      "src": "logo_small.png",
+      "sizes": "300x279",
+      "type": "image/png"
+    }
+  ]
+}

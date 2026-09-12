@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sorana releases</title>
+    <link>https://tetramatrix.github.io/Sorana/</link>
+    <description>Release notes for Sorana, the free desktop AI workspace for Windows and Linux.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2026 00:00:00 +0200</lastBuildDate>
+    <item>
+      <title>Sorana 1.0.92</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.0.92</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0200</pubDate>
+      <description>MCP tools slash command, research answer quality (fetched sources outrank pasted text), enriched research trace, live-suite hardening, reviewer cost control, background job tracking, approval-gated memory distillation, agent output caps, graceful search degradation, and fixes for URL probing, memory bleed, sidebar orphans, telemetry leaks, approval-resume crashes, and Gmail archive progress.</description>
+    </item>
+    <item>
+      <title>Sorana 1.0.91</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.0.91</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0200</pubDate>
+      <description>13 selectable themes with picker, whole-app theme sweep, central color palette, IT/NL/PL language parity, natural wording in 7 languages, agent card upgrades, persistent Model Manager layout, resizable sidebars, enforced max reply length, background token refresh, responsive trace flow layout, and theme/markdown/memory fixes.</description>
+    </item>
+    <item>
+      <title>Sorana 1.0.90</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.0.90</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0200</pubDate>
+      <description>Redesigned Agent Advanced tab, agent card upgrades, persistent Model Manager layout, supervised subagent runtime, token refresh, multi-angle coverage proof, reviewer judge-independence, grounding telemetry, and synthesis/parser fixes.</description>
+    </item>
+  </channel>
+</rss>
