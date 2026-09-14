@@ -1,4 +1,33 @@
 📋 Changelog 📋
+
+📅 14.09.26 - Version 1.0.93
+🆕 Memory system now understands life domains — research, intent, and temporal context boost recall so stored facts surface when they are actually relevant.
+🆕 Input history recall lets you cycle through previous messages instantly, and zero-yield memory recovery prevents lost facts when extraction returns nothing new.
+🆕 Automatic token refresh keeps authenticated sessions alive — access tokens renew in the background before expiry so work is never interrupted mid-task.
+🆕 Theme system relabelled with real-life concept names and richer multi-accent palettes — dark chrome now bakes accent richness in at generate time for a more polished look.
+🔄 Panel chrome unified across the app — theme-accent tint now covers every chrome role, split sashes are flattened, and window widths snap cleanly to fitted columns on resize.
+🔄 Trace view polished — bottom status lines wrap into multiple rows, dead space removed, and agent trace layout enforces consistent spacing between content and scrollbar.
+🔄 Chat fallback wording is honest and chat-scoped — empty answers and clarification delivery now show clear status messages instead of generic placeholders.
+🔄 Reviewer retry is budget-aware — when the turn budget cannot fit a quality review, the engine skips it instead of forcing a late retry that cannot finish.
+🔄 Retry-waste trace counters make slow turns debuggable — wasted iterations are visible in the trace so you can see where the engine gave up on a dead path.
+🔄 Web research is more reliable — layered deadlines and chain observability prevent silent wedges, and the learned-patterns store survives busy files without data loss.
+🔄 Prompt-prefix caching wired for fan-out and retry rounds — repeated LLM calls reuse cached prefixes so retries are faster and cheaper.
+🔄 Citation and evidence handling hardened — truncated RAG evidence no longer triggers false-FAIL verdicts, and citation references use a single source of truth for consistency.
+🐛 Fixed web_search silent wedge — layered deadlines and chain observability prevent the search lane from hanging silently when a provider is slow or rate-limited.
+🐛 Fixed learned-patterns store corruption on busy files — the quarantine mechanism now survives WinError 32 sharing violations without losing learned routing data.
+🐛 Fixed OAuth secret leakage in logs — MCP config log dumps now redact sensitive paths and credentials before anything reaches disk.
+🐛 Fixed web-research loop on blocked pages — pages stuck in redirect loops or bot protection are remembered and skipped on retry.
+🐛 Fixed zero-gain dynamic-chain iterations — the planner no longer counts the same iteration twice, preventing phantom progress in multi-step research.
+🐛 Fixed clarification-turn delivery — when the LLM returns an empty response during a clarification question, the pending question is delivered instead of ending the turn.
+🐛 Fixed reviewer false-FAIL on truncated evidence — the quality reviewer now handles partial RAG evidence gracefully instead of rejecting valid answers.
+🐛 Fixed malformed pseudo-XML stripping — synthesis retries tolerate strip-to-empty edge cases without corrupting the prompt envelope.
+🐛 Fixed planner argument carriage — planned tool arguments now reach the executed call instead of being dropped on the native tool path.
+🐛 Fixed memory extraction collisions — BUG_601 SSOT pass verifies enablement reader, floor aliases, ineligible kinds, and memory-db-path as a single source of truth.
+🐛 Fixed model-fallback routing — the memory readback judge is now correctly mapped to the quick role, and orphan task keys produce a warning instead of failing silently.
+📝 Extensive audit documentation added — session closeout notes cover the Einhell under-extraction arc, BUG_436 open-task audit, web-research reliability sweeps, theming overhaul, and prompt-cost caching arc.
+📝 Zero-tolerance baseline completed — all tool execution sites converted to strict fail-open behavior with audit documentation and changelog coverage.
+🧪 Regression coverage expanded — SSOT behaviour tests, pattern-audit gates, web-research reliability pins, and memory extraction quality tests guard against future regressions.
+
 📅 11.09.26 - Version 1.0.92
 🆕 Slash command to list available MCP tools with usage hints — discover what the assistant can call without leaving chat.
 🔄 Research answer quality improved — fetched URL sources outrank pasted text evidence, table rows promote to citable claims, and explorer findings feed into evidence evaluation.
