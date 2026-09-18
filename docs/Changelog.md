@@ -1,5 +1,19 @@
 📋 Changelog 📋
 
+📅 18.09.26 - Version 1.0.94
+🆕 Tool execution progress now visible in chat — a cleaner progress indicator tracks active tools so you can see when the assistant is working.
+🆕 Health dashboard and advanced settings now share a responsive card grid — layout adapts cleanly across window sizes with consistent card sizing and centered content.
+🆕 Close and save buttons simplified across the main window and dialogs — cleaner chrome with fewer redundant controls.
+🔄 Memory extraction is more reliable — robustness improvements handle edge cases in subject recognition, completeness checks, and empty-yield recovery so stored facts are captured more consistently.
+🔄 Chat stability improved — a sweep of module boundary issues and undefined references in the chat and memory paths reduces unexpected behavior during long sessions.
+🔄 Research citations are accurate — content fetched during the same turn is no longer misattributed, so source lists reflect what was actually retrieved.
+🔄 Session handling hardened — provider session-revocation paths now fail fast consistently, preventing wasted retries on expired credentials.
+🔄 Layout polish — preview and full-width builders center reliably, and the advanced tab no longer janks on resize.
+🐛 Fixed responsive grid jank on the health dashboard and advanced tab — layout stays centered and cards resize cleanly without overlap or drift.
+🐛 Fixed memory extraction edge cases — multi-word subjects, enumeration patterns, and zero-yield turns no longer cause incomplete or duplicated memory entries.
+🐛 Fixed research provenance drift — same-turn fetched content is no longer silently replaced by stale envelope excerpts, keeping citations honest.
+🐛 Fixed follow-up failure chain — phantom provider errors and hard-stop endings no longer kill satisfiable turns.
+
 📅 14.09.26 - Version 1.0.93
 🆕 Memory system now understands life domains — research, intent, and temporal context boost recall so stored facts surface when they are actually relevant.
 🆕 Input history recall lets you cycle through previous messages instantly, and zero-yield memory recovery prevents lost facts when extraction returns nothing new.
@@ -27,6 +41,7 @@
 📝 Extensive audit documentation added — session closeout notes cover the Einhell under-extraction arc, BUG_436 open-task audit, web-research reliability sweeps, theming overhaul, and prompt-cost caching arc.
 📝 Zero-tolerance baseline completed — all tool execution sites converted to strict fail-open behavior with audit documentation and changelog coverage.
 🧪 Regression coverage expanded — SSOT behaviour tests, pattern-audit gates, web-research reliability pins, and memory extraction quality tests guard against future regressions.
+
 
 📅 11.09.26 - Version 1.0.92
 🆕 Slash command to list available MCP tools with usage hints — discover what the assistant can call without leaving chat.
