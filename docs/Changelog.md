@@ -1,5 +1,24 @@
 📋 Changelog 📋
 
+📅 21.09.26 - Version 1.0.95
+🆕 Agent token budgets now have a dedicated wizard — set daily caps per agent from the health dashboard and manage them through a guided mini-wizard.
+🆕 Chat sidebar can auto-close after sending — the advanced settings toggle keeps the workspace tidy without manual cleanup.
+🆕 Close buttons on MCP server rows and memory entries let you dismiss items directly instead of opening extra dialogs.
+🔄 Memory capture is more resilient — extraction now handles malformed output, empty yields, and research-turn edge cases without losing facts or storing noise.
+🔄 Memory consolidation is more robust — profiles with missing metadata no longer freeze entity merging, and quarantine heuristics keep the store healthy.
+🔄 Session limits are clearer — chat sidebar and agent tabs now respect tier-aware caps consistently instead of capping arbitrarily low.
+🔄 Status-line wording is cleaner — the agent trace now reads like plain language ("On it", "Library dive", "Memory banks") instead of internal jargon.
+🔄 Setting toggles and pill buttons now follow your shape preference everywhere — switches morph between round and square across all settings panels, MCP grids, and dialog buttons.
+🔄 Window chrome is more polished — vertical dividers are thinner and invisible until grabbed, scrollbars match the theme, and the main window now preserves its geometry correctly on close.
+🔄 Windows titlebar tint is reliable — the caption color now applies correctly on the main window instead of only on dialogs.
+🐛 Fixed memory gate over-rejection — dialog-shaped questions no longer block research queries, and concurrent memory probes no longer cross-contaminate under test parallelism.
+🐛 Fixed stop-button freeze — themed chat stop buttons no longer lock up after a few ticks and lose hover highlighting.
+🐛 Fixed advanced-tab and About-window glitches — card order persists after reopening, and vendor buttons now follow the pill/rect shape toggle correctly.
+🐛 Fixed chat status-line duplication — "Thinking: Thinking..." no longer repeats on every progress tick.
+🐛 Fixed URL-detection gaps — bare domains with uncommon TLDs now promote to web search instead of falling through to generic routing.
+🐛 Fixed focus-rectangle artifacts — the dotted Windows focus ring is now suppressed on all themed buttons, not just the focused state.
+🐛 Fixed chat sidebar and memory tab scrollbars — unused horizontal scrollbars are removed and replaced with themed versions.
+
 📅 18.09.26 - Version 1.0.94
 🆕 Tool execution progress now visible in chat — a cleaner progress indicator tracks active tools so you can see when the assistant is working.
 🆕 Health dashboard and advanced settings now share a responsive card grid — layout adapts cleanly across window sizes with consistent card sizing and centered content.
