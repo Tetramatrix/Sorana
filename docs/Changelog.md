@@ -1,5 +1,29 @@
 📋 Changelog 📋
 
+📅 25.09.26 - Version 1.0.96
+🆕 Background tool work now reports durable progress in the Health Dashboard and chat status, so long-running actions no longer look stalled.
+🆕 Prompt management is now centralized in a two-pane Prompts workspace with editable AI polish suggestions, clearer labels, and helpful guidance.
+🆕 Prompt creation gains draft generation and a more guided setup flow, making it easier to turn a rough idea into a reusable prompt.
+🆕 Authenticated sessions renew access automatically before expiry, reducing interruptions during long chats and background work.
+🆕 The About window now includes a responsive update check that uses the existing application update flow, alongside the community and support actions.
+🔄 The main window is less crowded: Discord and Bug Tracker actions now live in About, where they can be used without competing with the primary workspace controls.
+🔄 Calendar views now expand correctly after switching tabs, and the calendar remains useful offline by showing cached events when a connection or login is unavailable.
+🔄 Calendar setup cards use full-color icons, clearer spacing, and more reliable rendering across the app's visual themes.
+🔄 Theme preferences are applied more consistently across the interface, including model rows, chat and memory icons, window sizing, and high-DPI displays.
+🔄 Model Manager rows now have clearer headings, better contrast in light mode, improved status indicators, and more consistent spacing and alignment.
+🔄 Memory capture is more dependable across malformed, empty, research, and multi-fact turns; important context is retained while unsupported or duplicate material is filtered out.
+🔄 Memory recall and consolidation are more stable, with stronger intent ranking, better profile handling, clearer admission decisions, and safer cleanup of incomplete records.
+🔄 Web research handles blocked pages, slow providers, redirects, and unavailable search services more gracefully, while preserving useful evidence when a lane fails.
+🔄 Research answers keep stronger provenance and citation consistency, including evidence-backed captures and clearer recovery when a response is incomplete.
+🔄 Chat recovery is more reliable: stale answers, repeated tool attempts, missing final content, and reviewer timing issues no longer end turns prematurely or duplicate work.
+🔄 Tool execution now distinguishes provider and network failures from ordinary tool errors, and retryable file operations can recover without forcing a restart.
+🛡️ Long-running chat, research, and tool paths have additional safeguards against silent wedges, runaway retries, and misleading success or failure messages.
+🔄 Interface polish includes consistent button shapes, clearer icon alignment, improved divider and scrollbar behavior, and more reliable focus handling.
+🐛 Fixed several memory, routing, citation, reviewer, and research edge cases that could lose context, select the wrong route, or report an answer as complete too early.
+🐛 Fixed background-job, health-card, session-status, and progress reporting issues so the interface communicates what is happening more honestly.
+🐛 Fixed MCP status and spacing issues, vision-picker assignment problems, and save flows that previously required unnecessary restarts.
+🐛 Fixed theme and layout regressions affecting calendar visibility, row contrast, high-DPI placement, and color-emoji rendering.
+
 📅 21.09.26 - Version 1.0.95
 🆕 Agent token budgets now have a dedicated wizard — set daily caps per agent from the health dashboard and manage them through a guided mini-wizard.
 🆕 Chat sidebar can auto-close after sending — the advanced settings toggle keeps the workspace tidy without manual cleanup.
