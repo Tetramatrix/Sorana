@@ -1,5 +1,33 @@
 📋 Changelog 📋
 
+📅 27.09.26 - Version 1.0.97
+🆕 Adding an agent to a workspace is now guided — the empty-workspace shortcut opens a dialog that creates the agent and can load it with the System Agent's knowledge. You confirm before anything is created, and the load only ever pulls knowledge in; it never writes back to the shared store other agents read from.
+🆕 Long answers stream far more smoothly, and the chat feels noticeably more responsive while the assistant is working.
+🆕 Workspaces with many icons open, pan, and zoom much faster — large boards redraw substantially quicker and grid dragging stays fluid at high densities.
+🔄 Reset View genuinely resets again. Very large layouts previously hit a zoom floor intended for manual zooming, so the view showed only part of the content while appearing to succeed.
+🔄 The workspace re-fits its view after you switch tabs, so the saved zoom and pan agree with Reset View for the same content.
+🔄 Health dashboard card order now survives closing and reopening the window — a reorder is no longer silently discarded and the cards return in the order you set.
+🔄 Model fallback notices now name the role that actually failed, so a fallback message points at the right model instead of reversing your configured roles.
+🔄 A running local model server is no longer mistaken for an absent one. Availability checks no longer collide with each other, a server that is still starting is no longer written off for a cooling-off period, and the app no longer loses its local backend after a cold start.
+🔄 Local model servers are found faster, so startup and model selection are quicker.
+🔄 The document sync hover tooltip now appears when a name genuinely does not fit its column, at any width you drag the column to, and for non-Latin filenames too.
+🔄 Chat and notes sidebar search boxes now behave properly: the placeholder clears as soon as you type, and results update on every edit instead of sticking on the first query.
+🔄 Connected-service failures are now classified from the real response rather than guessed from message text, so a rejected request is no longer reported to you as a sign-in problem.
+🔄 The chat no longer shows internal diagnostics or request details when a connected service fails, and it names the service that actually failed instead of sending you elsewhere.
+🔄 The assistant is no longer working from a stale current date, so relative requests like "next Monday" resolve against the real date.
+🔄 Background interface updates no longer leave polling loops running after a window is closed, so idle views stop consuming resources in the background.
+🔄 The workspace recalculates its layout only when something actually changed, instead of on every frame.
+🔄 Large workspaces no longer silently lose icon positions as they grow, so a busy canvas keeps placing things where you put them.
+🔄 Release builds no longer bundle leftover development data, so installers are cleaner and packaging no longer fails after a build.
+🛡️ Failure paths that used to pass unnoticed are now instrumented, so previously invisible errors surface properly instead of degrading quietly.
+🐛 Fixed a white flash at the wrong screen position on startup — the main window now opens directly at its saved position on every platform.
+🐛 Fixed chat staying truncated after switching to Calendar and back; the tab area no longer collapses partway down the window and stays that way for the rest of the session.
+🐛 Fixed the snap-to-grid drop preview disappearing on frames where the pointer sat exactly on a grid point, and fixed a crash when dragging an empty group.
+🐛 Fixed the notes sidebar rendering completely empty in dark mode — notes now appear in the list and searching them works.
+🐛 Fixed the app failing to start after an automated code-cleanup pass removed imports that were still in use.
+🐛 Fixed a search box that accepted your text but silently filtered nothing, caused by its state being bound to the wrong window.
+🐛 Fixed the confirmation prompt after adding an agent never appearing, and simplified that dialog to a single clear action with no ambiguous extra button.
+
 📅 25.09.26 - Version 1.0.96
 🆕 Background tool work now reports durable progress in the Health Dashboard and chat status, so long-running actions no longer look stalled.
 🆕 Prompt management is now centralized in a two-pane Prompts workspace with editable AI polish suggestions, clearer labels, and helpful guidance.
