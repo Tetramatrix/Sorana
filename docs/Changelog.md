@@ -1,5 +1,19 @@
 📋 Changelog 📋
 
+📅 28.09.26 - Version 1.0.98
+
+🆕 The grid density slider now changes the size of your workspace as well as how many points it has. One step doubles the space, so a denser grid gives you finer control instead of squeezing everything into the same box.
+🆕 Each workspace now remembers its own grid size. Set one workspace to fine, switch to another, and come back: it is still fine. Previously every workspace opened at whatever density happened to be set, and the last workspace you opened changed that default for all of them.
+🔄 The grid now lines up with where your items actually sit. The dots used to be drawn at a different spacing from the items at every density except the default, so the grid was not marking the slots an item could occupy.
+🔄 Changing density no longer throws your workspace across the screen. Positions shifted by well over a thousand pixels for a single step, which read as the whole workspace collapsing.
+🔄 You can now zoom out far enough to see the entire workspace at any density. The limit was fixed at one fifth, which was more than enough when workspaces were small and then quietly stopped being reachable as they grew.
+🔄 Workspaces with many items are noticeably quicker to open, redraw, pan and drag, and everyday interactions no longer slow down as the grid gets denser.
+🐛 Fixed the grid collapsing into an undifferentiated dense field at higher densities.
+🐛 Fixed the Health dashboard and the Advanced tab showing their cards in two columns at any window width while the extra columns sat empty. Moving a card to another column now also survives closing and reopening the window, and the default window sizes can reach more columns.
+🐛 Fixed reordering a card in those windows sometimes appearing to work while nothing was actually saved.
+🆕 The launcher's debug-output menu gained individual toggles for the remaining areas, and your selection there is now remembered correctly.
+🐛 Fixed pressing Enter at the launcher's debug menu silently switching on eight unrelated log areas and saving that, and fixed a stray space doing the same.
+
 📅 27.09.26 - Version 1.0.97
 🆕 Adding an agent to a workspace is now guided — the empty-workspace shortcut opens a dialog that creates the agent and can load it with the System Agent's knowledge. You confirm before anything is created, and the load only ever pulls knowledge in; it never writes back to the shared store other agents read from.
 🆕 Long answers stream far more smoothly, and the chat feels noticeably more responsive while the assistant is working.
