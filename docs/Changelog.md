@@ -1,5 +1,32 @@
 📋 Changelog 📋
 
+📅 29.09.26 - Version 1.0.99
+
+🆕 Web research now answers with what it actually found. A research turn that had already gathered findings and sources was dropping them one step before delivery, so you got a message saying a complete overview could not be put together while the material sat unused. The assistant now reports the research it completed, and keeps verbatim page extracts clearly separate from its own conclusions.
+🆕 Search results a turn already paid for are now used. When a search returned titled results with snippets but the answer still came back empty, those snippets now reach you instead of being discarded.
+🔄 When a page has moved, the source list now says so. A source reached through a redirect is shown with the address you asked for and the address the content actually came from, instead of quietly listing only the original.
+🔄 A page reached through a redirect now counts as genuinely fetched, so the claims drawn from it keep their source. Previously the retrieved content was set aside and the claim about that page was left with no source at all.
+🔄 Running out of budget part way through an answer is now reported as a refusal to spend more, rather than as an empty response, so the diagnostics no longer point at the model when the budget was the real cause.
+🔄 Work the assistant cannot pay for is no longer prepared in the first place. A retry is now checked against what is left of the budget before the request is built, so you no longer wait on a long prompt that gets turned down on arrival.
+🐛 Fixed a research turn announcing that it could not produce an overview even though it had already collected findings and sources.
+🐛 Fixed search results being discarded when a turn finished without an answer, leaving the assistant with nothing to work from.
+🐛 Fixed a source that had redirected being presented as consulted when the content actually came from a different page.
+🐛 Fixed claims about a page that was genuinely fetched losing their source and being shown as unsourced.
+🐛 Fixed a claim whose only source was a disclaimer being rendered as though the disclaimer were a real citation.
+
+🆕 A turn that goes over its token cap now still gets you an answer. Once the cap is passed, the reply is built from a shortened version of the conversation instead of the full one, so you receive a response rather than a stop.
+🔄 The limit on internal work is now its own setting, separate from the limit that slows down tool use, so changing one no longer quietly changes the other. Both still default to their previous values.
+🔄 Token spend on internal work is now recorded, so a turn's own record adds up to the number it was refused on.
+🔄 Prompt size limits are now real limits. The marker showing that a message was shortened is counted inside the cap instead of being added on top of it.
+🐛 Fixed the winning answer being charged as a losing attempt, which inflated a turn's token total and could refuse a turn that was still comfortably within budget.
+🐛 Fixed the daily usage total picking up unrelated spending from the same day, so the figure you see reflects your own session.
+
+🔄 Repeated internal handoffs can no longer restart the tool loop. The first one still runs, and a second is now cancelled visibly instead of repeating.
+🔄 The assistant's working plan now uses your wording rather than tool names, so a step it kept aside no longer appears in your request as an instruction to run an internal function.
+
+🐛 Fixed an agent created on a brand new workspace reporting itself as created but never appearing on the canvas, with neither reloading nor rebuilding recovering it. A workspace opened while empty and saved after files appeared could record a layout that pointed at files it held no items for, which then became impossible to load. Affected workspaces now recover by themselves the next time you open them.
+🐛 Fixed an agent group containing no items never being given a position on the canvas.
+
 📅 28.09.26 - Version 1.0.98
 
 🆕 The grid density slider now changes the size of your workspace as well as how many points it has. One step doubles the space, so a denser grid gives you finer control instead of squeezing everything into the same box.
