@@ -1,5 +1,21 @@
 📋 Changelog 📋
 
+📅 01.10.26 - Version 1.0.101
+🆕 A research turn can no longer answer you with the previous turn's research. When a reply came back empty after research had already run earlier in the conversation, the recovery path reached for the last thing that had researched and sent it to you, complete with its source list, as though it were the answer to what you had just asked. The result read confidently and was about something else entirely.
+🔄 The limit on a single turn is a turn limit again. Background work that runs on its own thread was being counted against one shared total that was never emptied, so after a while every turn started being refused for work it had not done. In one session this turned away 29 requests in 16 minutes.
+🔄 A link you pasted in is now left alone. Every address in an answer that the assistant had not fetched was labelled as not fetched, including the one you supplied yourself, so your drafts came back with your own link marked as something you were meant to check.
+🔄 The Workspace and Projects boards no longer draw at one size and then jump to another when you switch to them. The board was drawn against the height of the tallest tab rather than the one you had open, so it came up small and corrected itself a moment later. This was happening on roughly a third of the frames.
+🔄 Agent and project cards now use the width you give them. The model name stopped in the same place whatever the card's width, so a wide card was mostly empty space. Each line is now measured with the font it is actually drawn in.
+🔄 A card can be made much smaller than before. The old minimum size existed because of the text limit above, so lifting that limit meant the floor could come down as well. The new floor is the point at which the Chat button and the last line stop being drawn, rather than a round number chosen by feel.
+🔄 The completeness score under a research answer now means something. A drafting request that happened to mention several topics in passing was read as a list of research questions, so your own instructions counted as covered: a good turn was reported at 92 percent and the best answer of that session at 42.
+🐛 Fixed the assistant reading your instructions as research questions, which is what produced the score above.
+🐛 Fixed a project card refusing to move the first time you dragged it, then moving correctly on every attempt after that.
+🐛 Fixed right clicking a project card showing no menu. The click landed in the middle of the card, which is exactly where the card was checking for a drag handle.
+🐛 Fixed resizing a project card bouncing back to a size you had just dragged away from, and behaving as though it had a minimum width.
+🐛 Fixed an answer reaching you without a quality review, with nothing recording that the review had been skipped.
+🔄 Ordinary turns are no longer logged as though work was left undone, including the ones that went best.
+🛡️ Errors raised while the interface is responding to you now reach the app log. Anything that failed inside a scheduled or delayed callback used to vanish, so a menu that did nothing and a menu that had already failed left identical traces.
+
 📅 01.10.26 - Version 1.0.100
 🆕 A Projects board is here. It is a second workspace of its own, and every project you place on it gets its own assistant, its own folder that the app keeps and looks after, and its own notes. Right click the board to start a project, and right click a project card to open it.
 🔄 The Workspace and Projects boards no longer interfere with each other. Switching between them used to double the cards, garble the groups and leave the wrong board's items drawn over the current one. Both boards now keep their own view, their own grid density, their own zoom and pan, and their own remembered positions, and each one comes back the way you left it.
