@@ -1,5 +1,49 @@
 📋 Changelog 📋
 
+📅 01.10.26 - Version 1.0.100
+
+🆕 A Projects board is here. It is a second workspace of its own, and every project you place on it gets its own assistant, its own folder that the app keeps and looks after, and its own notes. Right click the board to start a project, and right click a project card to open it.
+
+🔄 The Workspace and Projects boards no longer interfere with each other. Switching between them used to double the cards, garble the groups and leave the wrong board's items drawn over the current one. Both boards now keep their own view, their own grid density, their own zoom and pan, and their own remembered positions, and each one comes back the way you left it.
+
+🔄 Projects behave like Workspace. A project card follows your pointer when you drag it instead of snapping to a nearby grid point, cards are drawn at a consistent size instead of changing size as you zoom, and the grid surface matches the density you set.
+
+🔄 Dragging is pixel exact. Free form groups landed a few pixels off from where you released them, and one of the ordering calls could blank the whole workspace frame mid drag.
+
+🔄 Each board now remembers its own grid density. Set the Projects board to fine and the Workspace board to coarse, and both keep their setting instead of the last board you opened deciding for all of them.
+
+🔄 Groups on the Workspace board each get their own colour, drawn as a light tint behind the group so you can tell groups apart at a glance, and the tint is now visible against the real canvas surface instead of being tuned against a background the icons are never drawn on.
+
+🔄 File type icons no longer sit on a white box. The area around the letter is see through so the group colour shows behind it, while the enclosed parts of the letter stay solid, and icons that had drifted onto nearly the same colour, such as folder and document, are now distinguishable from each other.
+
+🔄 Group resize handles appear when your pointer is over a group and vanish when it leaves, so a busy workspace is no longer covered in grabbers. Hovering a group's name reveals them too, and a long group name now wraps inside its own border instead of running past it.
+
+🔄 The agent and project wording follows the board you are on. Menus, dialogs, the documents window, the chat title, the status button and the activity view all say Project on the Projects board and Agent on the Workspace board, so "Manage Project" no longer opens a window titled "Manage Agent".
+
+🔄 Notes for a project are opened from the Projects board itself, and stay with that project rather than being shared. They no longer disappear from the menu when a project's agent has an automation setting switched on, which is not something you can see or change from the menu.
+
+🔄 The right click actions on the Desktop and Browser boards now act on the board you are on. Editing a layout configuration opened the Workspace one, deleting it refused, moving a Browser tab into a group looked it up under the wrong key, and the active tab name was permanently stuck on Browser.
+
+🔄 A project created without a goal now starts from the default persona instead of being left blank, and the window says the prompt is the default rather than crediting you with one you never wrote.
+
+🔄 A chat opened from a project shows the project's name in the window title and the status button. Previously the button failed on every call and stayed on the placeholder.
+
+🔄 A chat you reopen after restarting the app now shows the date and your local time. It showed a bare clock reading, and a UTC clock rather than yours, until the next reply arrived.
+
+🔄 Confirm dialogs are properly centred now. The button pair sat hard against the left edge, and the body text sat hard against the left even though each line inside it was centred, so the dialog looked lopsided.
+
+🐛 Fixed switching between the Workspace and Projects boards destroying the board's contents, with cards duplicated and groups garbled.
+🐛 Fixed the grid drawing over groups, borders and icons instead of sitting behind them.
+🐛 Fixed a board's zoom and pan being thrown away when you left it for another tab and came back, so the same board came back at a different size and a much smaller height.
+🐛 Fixed project cards overlapping each other whenever you were zoomed out, because the card was drawn at a fixed size while the space reserved for it shrank with the zoom.
+🐛 Fixed the Workspace agent card collapsing to a tiny marker when you zoomed out.
+🐛 Fixed an agent card's title being drawn outside the card it belongs to.
+🐛 Fixed a long group name being drawn roughly three times wider than the group it labels.
+🐛 Fixed dropping an agent card into a group removing the source group from the board.
+🐛 Fixed moving items out of an agent group appearing to work and then reverting on the next interaction, which could also evict the moved items from their new group.
+🐛 Fixed the Projects card advertising a file drop on a board where there are no files to drop.
+🐛 Fixed the surrounding frame disappearing when switching boards.
+
 📅 29.09.26 - Version 1.0.99
 
 🆕 Web research now answers with what it actually found. A research turn that had already gathered findings and sources was dropping them one step before delivery, so you got a message saying a complete overview could not be put together while the material sat unused. The assistant now reports the research it completed, and keeps verbatim page extracts clearly separate from its own conclusions.
