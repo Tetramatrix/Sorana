@@ -1,6 +1,6 @@
-# Sorana: The Desktop AI Workspace That Never Forgets
+# Sorana: Desktop AI Knowledge Workspace & Agent Harness That Never Forgets
 
-> Sorana is a personal desktop AI workspace: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, and run local models all in one private workspace. It runs entirely on your machine and never forgets a project, preference, or decision.
+> Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs entirely on your machine and never forgets a project, preference, or decision.
 >
 > **Start for $0**, FreeRouter is a totally free API (no subscription, no credits) and includes the latest Qwen 3.8 Max. Pair it with Sorana and put the agentic AI to work before adding anything else.
 
@@ -8,7 +8,7 @@
 
 ## What Is Sorana?
 
-Sorana is a personal desktop AI workspace for Windows and Linux. It learns from your documents, conversations, and actions, building a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. When a task needs it, Sorana dispatches specialized subagents to work in parallel then reviews the results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals.
+Sorana is a personal desktop AI knowledge workspace and agent harness for Windows and Linux. It learns from your documents, conversations, and actions, building a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. When a task needs it, the harness dispatches specialized subagents to work in parallel then reviews the results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals.
 
 Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.
 
@@ -97,6 +97,12 @@ You ask a question and get an answer, but you have no idea how it got there. Did
 ### A workspace that thinks for itself
 Sorana breaks complex requests into step-by-step plans, runs searches and file reads in parallel, reviews its own output, and switches tactics when it gets stuck. When a task needs specialized help, the workspace dispatches subagents then assembles and reviews the results.
 
+### Projects Canvas
+A second canvas beside your Workspace board. Every project gets its own card, its own assistant, its own folder that Sorana keeps and looks after, and its own notes. Right-click the canvas to start a project, right-click a card to open or chat with it. Each canvas keeps its own view, zoom, pan, grid density, and remembered positions, and each one comes back exactly the way you left it.
+
+### Agent Budgets & Limits
+Set a daily token cap per agent from the Health Dashboard through a guided wizard, and track spend in real time. Leave the field blank to use the app default or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight, and withheld calls are reported honestly rather than silently truncated.
+
 ### Local & Global Memory
 A living knowledge profile captures facts and project context. Remembers what matters, spots contradictions, and scores importance automatically. Maintain both scoped local memories and a persistent global memory, and sync them anytime. When you decline a proposed action, the agent remembers the pattern and adapts future suggestions to your preferences.
 
@@ -131,7 +137,7 @@ One click tests if a model can reason, see images, or handle audio, so you know 
 Create, organize, and assign prompt pairs to any agent from a central library. 20+ categories, one-click assignment, no file editing.
 
 ### MCP Manager & Marketplace
-Browse, install, and manage MCP servers from a central marketplace. Extend Sorana with new tools and integrations without touching configuration files.
+Browse, install, and manage MCP servers from a central marketplace. Extend Sorana with new tools and integrations without touching configuration files. See the MCP Servers section below for what ships today.
 
 ### Health Dashboard
 Monitor system health, model status, and AI performance at a glance. Each card opens a mini wizard for guided installation and configuration of every dependency, including backends, OCR, search engines, HuggingFace cache, codebase search, MCP, and more.
@@ -221,7 +227,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Visual knowledge canvas | AI-organised 2D canvas | Manual (Obsidian Canvas) | Chat only |
 | Chat with documents | Workspace-wide RAG indexing | Plugin required | Project uploads + per-session |
 | Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
-| Tool integrations | Built-in MCP marketplace | No native AI agents | Connector marketplaces (paid) |
+| Tool integrations | Built-in MCP servers incl. ListenBrainz music history, plus ToolForest with 30+ toolkits over one connection | No native AI agents | Connector marketplaces (paid) |
 | Calendar & Scheduling | Manage via chat | View-only plugins | Connector (paid) |
 | AI remembers you | Automatic memory across sessions, all categories free | Manual notes only | Basic free notes only; full memory paid |
 | Stays fast over months | Auto-compaction | No AI context | Varies (Claude yes, others no) |
@@ -271,6 +277,61 @@ Sorana connects directly to your Obsidian vault:
 
 ---
 
+## MCP Servers
+
+Sorana reaches tools over MCP on three paths, all managed from the **MCP Manager** with no config files to hand-edit.
+
+### Built-in servers
+
+Seven servers ship with the app. Most are enabled by default, and each can be switched per agent.
+
+| Server | What it gives the agent |
+|---|---|
+| **Memory** | Long-term memory storage, search, consolidation, and export |
+| **Filesystem** | Read, write, search, and move local files and folders |
+| **Web content** | Fetch and extract web page content |
+| **Gmail** | List, read, send, label, trash, and archive email |
+| **Calendar** | Read schedules, create and update events, find free slots |
+| **Chat sessions** | Inspect and manage session messages, context usage, and compaction |
+| **ListenBrainz** | Your music listening history (new, see below) |
+
+### ListenBrainz (built-in, new)
+
+Ask your assistant about years of music listening in plain language. Twelve tools cover public charts, your own listening history, and a full local archive of everything you have ever played.
+
+- **Public charts and top artists** — the sitewide chart plus your own most played artists over a week, month, year or all time
+- **Now playing and recent listens** — what is playing right now, and your last 100 listens with time bounds and paging
+- **Full history export** — ListenBrainz only releases a complete history through its export API, so Sorana queues the export as a background job, downloads it, and imports it locally. The import resumes automatically if it is interrupted, never double counts, and keeps running while you keep working
+- **Queries across the imported archive** — top artists over any date range, full history for one artist, and a rediscovery tool that finds artists you played heavily years ago and have not played since
+
+Setup is one step: paste your ListenBrainz user token (found in your ListenBrainz profile settings) into the Configure dialog. Public charts need no token at all. Ask things like "my top 50 artists this year", "what am I playing right now", "export my full history", or "which artists did I love years ago but never play anymore".
+
+### ToolForest (marketplace, new)
+
+ToolForest is a hosted MCP aggregator that gives you 30+ toolkits over a single remote connection, with nothing to install. Add your API key, authorize the toolkits you want at [app.toolforest.io](https://app.toolforest.io), and Sorana discovers the available tools step by step before calling them. ToolForest tools are separate from the built-in Gmail, Calendar and ListenBrainz servers above.
+
+Toolkits grouped in domains:
+
+- **Google Workspace** — Docs, Sheets, Slides, Gmail, Calendar, Tasks, Drive
+- **Music** — ListenBrainz, MusicBrainz, Last.fm, Apple Music
+- **Fitness** — Fitbit, Oura Ring, Google Health
+- **Prediction Markets** — Polymarket, Kalshi, Gemini, Metaculus, Rothera
+- **Social** — X (Twitter), Reddit
+- **Learning** — Anki, Mochi
+- **Planet Earth** — GDELT, Geo, Earth Observation, Google Earth Engine
+- **Other** — GitHub, Notion
+
+Highlights:
+
+- **Polymarket** — public prediction market odds, orderbooks, and price history. No account needed.
+- **GDELT** — rolling global news and machine-coded events with tone and geography. No API key needed.
+
+### Other marketplace servers
+
+Marketplace entries for Google Drive, GitHub, Slack, PostgreSQL and movies are under construction and still need manual credential setup. ToolForest already covers most of that ground today.
+
+---
+
 ## Using MCP Automation
 
 1. Open **MCP Manager** and enable the servers you need
@@ -278,7 +339,7 @@ Sorana connects directly to your Obsidian vault:
 3. Right-click the agent title → **Chat**
 4. Give instructions in plain language, files, web, email, all accessible
 
-Connect external services: Google Drive, GitHub, PostgreSQL, and more from the marketplace.
+Add external servers from the marketplace: the ToolForest aggregator for 30+ toolkits over one connection, or single-service servers for a specific tool.
 
 ---
 
@@ -324,4 +385,4 @@ Formatted responses can include headings, emphasis, links, and comparison tables
 
 ---
 
-Developed by **Tetramatrix** | Your desktop AI workspace | Portable and private
+Developed by **Tetramatrix** | Your desktop AI knowledge workspace and agent harness | Portable and private

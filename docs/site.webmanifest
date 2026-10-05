@@ -1,7 +1,7 @@
 {
-  "name": "Sorana — Desktop AI Workspace",
+  "name": "Sorana — Desktop AI Knowledge Workspace",
   "short_name": "Sorana",
-  "description": "Free desktop AI workspace for Windows and Linux that never forgets.",
+  "description": "Free desktop AI knowledge workspace and agent harness for Windows and Linux that never forgets.",
   "start_url": "https://tetramatrix.github.io/Sorana/",
   "scope": "https://tetramatrix.github.io/Sorana/",
   "display": "standalone",

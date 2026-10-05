@@ -1,5 +1,40 @@
 📋 Changelog 📋
 
+📅 02.10.26 - Version 1.0.102
+
+🆕 New Features
+🆕 Direct ListenBrainz Integration: The app now connects directly to your listening history, pulling a complete local copy. You can query top/bottom artists, unplayed tracks, current charts, and import status.
+🆕 ListenBrainz Help Panel: Added eight worked examples clarifying which questions use the live service vs. imported history, preventing empty results from appearing broken.
+🆕 Chat-Scoped Document Attachments: Documents attached to a single chat stay within that chat and do not become part of the agent's permanent library, preventing cross-chat leakage.
+🆕 Document Enumeration: The assistant can now list available documents and files (e.g., "What documents do I have?") rather than only performing fragmented searches.
+🆕 Consolidated Status Bar: The chat status bar is now a single overflow button (containing Agent, Library, and Workspace). The agent entry displays the actual agent's name.
+
+🔄 Improvements & Changes
+🔄Background Job Reporting: Long-running jobs (listening history imports, mail archives) now report progress and completion directly in the chat that started them, rather than only on the dashboard or in silence.
+🔄Resilient Imports: A briefly unavailable service no longer freezes an import; progress is reported continuously, not just on success.
+🔄Archive Safety: Imported archives are now copied into your agent folder, ensuring a half-written copy is never left behind looking complete.
+🔄Multi-Card Selection: Shift-click adds to selection, drag-box selects, and dragging the selection moves all chosen cards together while maintaining their grid shape.
+🔄Card Management: Rename and recolor options are now restricted to a single card; dropping multiple cards together no longer incorrectly merges them.
+🔄Server Toggling: Turning a server on or off now takes effect immediately without requiring a chat restart. Installed but inactive servers now correctly display as "installed but off".
+🔄Tool Clarity: The tool list clearly marks every server as built-in or external, with simplified wording. Read-only tools (e.g., public listen counts) no longer require repetitive permission dialogs, and approved tools do not re-prompt in the same session.
+🔄UI Refinements: The overflow menu opens upward without a title bar (behaving like a true menu). The window title now accurately describes the app as a "knowledge workspace with an agent harness". The grid density slider now applies changes correctly on release. Switching tabs no longer unnecessarily rewrites saved board settings.
+
+🛡️ Security & Stability
+🛡️API Key & Tool Rejection: The app now immediately indicates when a service refuses an API key or remote tool, rather than showing a misleading "Signed in" badge and waiting for a chat turn to fail.
+🛡️Failed Call Handling: Failed remote calls are now correctly recorded as failures (not usable results), allowing retries and preventing error text from being quoted back to you as evidence.
+🛡️Interface Diagnostics: The app now actively detects and reports when a board loses its mouse handling, rather than appearing empty while ignoring all clicks.
+
+🐛 Bug Fixes
+🐛Projects Board: Fixed the board becoming completely unresponsive to mouse interactions (dragging, dropping, right-clicking) while appearing visually normal. Fixed selection loss due to silent gesture-handling failures. Fixed right-clicks logging false menu failures or landing on the wrong project after deletion.
+🐛Marketplace Servers: Fixed installations failing silently, getting stuck, or never starting due to missing packages, incorrect Windows launcher rules, background thread UI access violations, or active status without actual launch.
+🐛Remote Servers & Tools: Fixed remote servers being impossible to add (path/credential mismatches). Fixed remote tool calls failing due to missing headers or incorrect argument names. Fixed stopped servers retaining cached tools and continuing to answer queries.
+🐛Agent Folder: Fixed the Agent Folder row missing from standalone chats, defaulting to the app's project folder instead of the home folder, and choices being forgotten on restart. Fixed inconsistent icon shapes and confirmation prompts.
+🐛Query Logic: Fixed local library queries (e.g., "top twenty artists over two years", "latest ten songs") incorrectly triggering web research or news lookups. Fixed "artists I played least" returning the most played artists. Fixed listening tools unnecessarily demanding usernames/tokens for sitewide charts.
+🐛Tool Execution: Fixed successful tool results being incorrectly shown to the assistant as failures. Fixed tool results being arbitrarily truncated (e.g., returning 6 of 100 tracks). Fixed the tool list dropping rows on large requests or offering tools from switched-off servers.
+🐛History Counts: Fixed artist credits on others' tracks counting as your plays. Rankings now specify their count basis, and ties at the cutoff are explicitly disclosed.
+🐛Settings & Reasoning: Fixed settings edits being silently erased by the running copy. Fixed an answer's reasoning being erased by the final round of a turn. Fixed the workspace grouping phase inventing nonsensical categories from model reasoning budgets.
+🐛Miscellaneous UI: Fixed chat status bar border alignment, overflow button flickering, stopped servers appearing connected, and screen capture failing with generic errors. Fixed renaming/deleting project cards failing to save or passing unrecognized parameters.
+
 📅 01.10.26 - Version 1.0.101
 🆕 A research turn can no longer answer you with the previous turn's research. When a reply came back empty after research had already run earlier in the conversation, the recovery path reached for the last thing that had researched and sent it to you, complete with its source list, as though it were the answer to what you had just asked. The result read confidently and was about something else entirely.
 🔄 The limit on a single turn is a turn limit again. Background work that runs on its own thread was being counted against one shared total that was never emptied, so after a while every turn started being refused for work it had not done. In one session this turned away 29 requests in 16 minutes.

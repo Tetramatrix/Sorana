@@ -252,6 +252,9 @@ nav.scrolled {
 .hero-eyebrow-row .hero-eyebrow {
   margin-bottom: 0;
 }
+/* Static label, not a live status indicator: no pulse, so the dot keeps the
+   same 6px footprint as the badge dots further down the page. */
+.hero-eyebrow .badge-dot { animation: none; }
 .version-pill {
   display: inline-flex;
   align-items: center;
@@ -431,7 +434,16 @@ nav.scrolled {
 .badge.free { color: var(--color-free); background: var(--color-free-dim); border-color: rgba(74,222,128,0.25); }
 .badge.cloud { color: var(--color-cloud); background: var(--color-cloud-dim); border-color: rgba(96,165,250,0.25); }
 .badge.local { color: var(--color-local); background: var(--color-local-dim); border-color: rgba(245,158,11,0.25); }
-.badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+/* `display` + `flex` are load-bearing: without them the 6px geometry only
+   applies while the span is a flex item, and the pulse animation's
+   scale(1.25) makes a dot read larger than its neighbours. */
+.badge-dot {
+  display: block;
+  flex: 0 0 auto;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
 
 /* ── FAQ ACCORDION ── */
 .faq-item {
