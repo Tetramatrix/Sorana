@@ -252,9 +252,6 @@ nav.scrolled {
 .hero-eyebrow-row .hero-eyebrow {
   margin-bottom: 0;
 }
-/* Static label, not a live status indicator: no pulse, so the dot keeps the
-   same 6px footprint as the badge dots further down the page. */
-.hero-eyebrow .badge-dot { animation: none; }
 .version-pill {
   display: inline-flex;
   align-items: center;
