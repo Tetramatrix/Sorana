@@ -47,11 +47,11 @@ Sorana quietly learns from every conversation, project, and preference. Next tim
 - No setup, no copy-pasting
 
 ### Your AI talks but can't act
-Tell Sorana what to do in plain language. It organizes files, fetches web content, and manages Gmail and Google Calendar, all from one conversation.
+Tell Sorana what to do in plain language. It organizes files, searches the web, and manages Gmail and Google Calendar, all from one conversation.
 
 - Connect Google Drive, GitHub, Gmail, read, write, search, and manage from chat
 - Read, write, move, search, edit via chat
-- Web fetch, scrape, search, and extract
+- Web search that shows its sources
 
 ### Your knowledge lives on someone else's server
 Sorana runs AI models locally. Your notes, files, and conversations never leave your machine unless you want them to.
@@ -101,7 +101,7 @@ Sorana breaks complex requests into step-by-step plans, runs searches and file r
 A second canvas beside your Workspace board. Every project gets its own card, its own assistant, its own folder that Sorana keeps and looks after, and its own notes. Right-click the canvas to start a project, right-click a card to open or chat with it. Each canvas keeps its own view, zoom, pan, grid density, and remembered positions, and each one comes back exactly the way you left it.
 
 ### Agent Budgets & Limits
-Set a daily token cap per agent from the Health Dashboard through a guided wizard, and track spend in real time. Leave the field blank to use the app default or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight, and withheld calls are reported honestly rather than silently truncated.
+Set a daily usage limit per agent from the Health Dashboard through a guided wizard, and track it in real time. Leave the field blank to use the app default or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight, and withheld calls are reported honestly rather than silently truncated.
 
 ### Local & Global Memory
 A living knowledge profile captures facts and project context. Remembers what matters, spots contradictions, and scores importance automatically. Maintain both scoped local memories and a persistent global memory, and sync them anytime. When you decline a proposed action, the agent remembers the pattern and adapts future suggestions to your preferences.
@@ -289,7 +289,7 @@ Seven servers ship with the app. Most are enabled by default, and each can be sw
 |---|---|
 | **Memory** | Long-term memory storage, search, consolidation, and export |
 | **Filesystem** | Read, write, search, and move local files and folders |
-| **Web content** | Fetch and extract web page content |
+| **Web search** | Search the web and read the pages it finds |
 | **Gmail** | List, read, send, label, trash, and archive email |
 | **Calendar** | Read schedules, create and update events, find free slots |
 | **Chat sessions** | Inspect and manage session messages, context usage, and compaction |
@@ -323,7 +323,7 @@ Toolkits grouped in domains:
 
 Highlights:
 
-- **Polymarket** — public prediction market odds, orderbooks, and price history. No account needed.
+- **Polymarket** — public prediction market odds and price history. No account needed.
 - **GDELT** — rolling global news and machine-coded events with tone and geography. No API key needed.
 
 ### Other marketplace servers

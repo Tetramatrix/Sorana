@@ -53,7 +53,7 @@
       "operatingSystem": "Windows 11, Linux",
       "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
       "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations"],
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations"],
       "offers": { "@type": "Offer", "price": "0" },
       "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
@@ -245,7 +245,7 @@
     <div class="floating-badges">
       <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
       <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
-      <span class="badge local"><span class="badge-dot"></span> On-premise / Local</span>
+      <span class="badge local"><span class="badge-dot"></span> Local</span>
     </div>
     <p class="screenshot-caption">
       The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
@@ -369,7 +369,7 @@
     </div>
     <div class="problem-card">
       <h3>Your AI talks but can't act</h3>
-      <p>Tell Sorana what to do in plain language. It organises files, fetches web content, and manages Gmail and Calendar from one conversation.</p>
+      <p>Tell Sorana what to do in plain language. It organises files, searches the web, and manages Gmail and Calendar from one conversation.</p>
     </div>
     <div class="problem-card">
       <h3>Your knowledge lives on someone else's server</h3>
@@ -384,7 +384,7 @@
     <p>Sorana uses a fast model for simple steps and a stronger one when the task needs deeper thinking, so you get capable answers without wasting resources.</p>
   </div>
   <div class="problem-card"><h3>You need a different working style</h3>
-      <p>Choose from ready-made roles and working styles, then switch whenever the task changes. Give your AI the right approach for research, writing, planning, or everyday work.</p>
+      <p>Choose a ready-made working style for research, writing, planning, or everyday work, then switch whenever the task changes.</p>
   </div>
     <div class="problem-card">
       <h3>Half your knowledge is locked in PDFs and images</h3>
@@ -452,8 +452,8 @@
                 <caption>Comparison table</caption>
                 <thead><tr><th scope="col">Option</th><th scope="col">Speed</th><th scope="col">Cost</th><th scope="col">Fit</th></tr></thead>
                 <tbody>
-                  <tr><th scope="row">Option A</td><td class="chat-value">Fast</td><td>$0</td><td class="chat-good">Best</td></tr>
-                  <tr><th scope="row">Option B</td><td>Medium</td><td class="chat-warm">$8</td><td>Good</td></tr>
+                  <tr><th scope="row">Option A</th><td class="chat-value">Fast</td><td>$0</td><td class="chat-good">Best</td></tr>
+                  <tr><th scope="row">Option B</th><td>Medium</td><td class="chat-warm">$8</td><td>Good</td></tr>
                 </tbody>
               </table>
             </div>
@@ -485,7 +485,7 @@
         </svg>
       </div>
       <h3>Make the AI work your way</h3>
-      <p>Assign any model to five role slots: Primary, Quick, Embed, Vision, and Reviewer then switch whenever the task changes. The Reviewer gives answer quality checks an independent second opinion on a different model, while everything else keeps running as before.</p>
+      <p>Assign any model to five role slots: Primary (your main model), Quick (fast answers), Embed (indexes your documents for search), Vision (reads images and scans), and Reviewer (a second opinion on answer quality), then switch whenever the task changes. The Reviewer gives answer quality checks an independent second opinion on a different model, while everything else keeps running as before.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -664,7 +664,7 @@
         </svg>
       </div>
       <h3>Budget &amp; limits</h3>
-      <p>Set a daily token cap per agent and track spend in real time. Leave the field blank to use the app default, or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight.</p>
+      <p>Set a daily usage limit per agent and track it in real time. Leave the field blank to use the app default, or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -786,7 +786,7 @@
 <section class="section section-alt" id="mcp">
   <div class="section-header">
     <h2>One workspace. <em>Every tool.</em></h2>
-    <p>Sorana connects to tools through MCP servers on three paths. Built in servers work out of the box and cover memory, files, web, Gmail, Calendar, chat sessions and ListenBrainz music history. The marketplace adds external servers, from the ToolForest aggregator with 30+ toolkits over a single connection to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
+    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, and ListenBrainz music history. The marketplace adds external servers, from the ToolForest aggregator with 30+ toolkits over a single connection to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card large">
@@ -817,7 +817,7 @@
         <div class="provider-chip">Planet Earth</div>
         <div class="provider-chip">and more</div>
       </div>
-      <p style="margin-top:var(--space-4);">Highlights: <strong>Polymarket</strong> with public odds, orderbooks and price history and no account needed. <strong>GDELT</strong> with rolling global news and coded events with tone and geography and no key needed. Plus Gmail, Sheets, Reddit, X, Fitbit, Anki and GitHub toolkits.</p>
+      <p style="margin-top:var(--space-4);">Highlights: <strong>Polymarket</strong> with public odds and price history and no account needed. <strong>GDELT</strong> with rolling global news and coded events with tone and geography and no key needed. Plus Gmail, Sheets, Reddit, X, Fitbit, Anki and GitHub toolkits.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">
@@ -826,7 +826,7 @@
         </svg>
       </div>
       <h3>Built-ins included</h3>
-      <p>Memory that never forgets · Files you can read, write and search · Web page extraction · Gmail and Calendar actions · Chat session tools. All managed from the MCP Manager with no config files.</p>
+      <p>Memory that never forgets · Files you can read, write and search · Web search · Gmail and Calendar actions · Your past chats. All managed from the MCP Manager with no config files.</p>
     </div>
   </div>
   <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-6);">Marketplace servers for Drive, GitHub, Slack, Postgres and movies are under construction and need manual auth. ToolForest covers most of that ground today.</p>
@@ -950,22 +950,22 @@
     <tbody>
       <tr><th scope="row">Native desktop app. Runs fully offline &amp; private</th><td class="win">Native portable app for Windows and Linux. Runs on your machine with your data. Cloud only when you explicitly connect an API key.</td><td>Self-hosted web app. Local-first and no telemetry.</td><td>Obsidian local-first. Notion cloud-hosted.</td><td>Cloud-only. Your data on their servers.</td></tr>
       <tr><th scope="row">Model flexibility</th><td class="win">Cloud and unlimited local models via Lemonade, Ollama, Llama.cpp, and LM Studio. 25+ providers plus capability probing on any model. Browse, favorite, and probe before you commit.</td><td>Bring your own models. Local or external endpoints with 270+ catalogued models.</td><td>No native AI. Optional plugins connect external providers.</td><td>One vendor per service. Limited switching between models.</td></tr>
-      <tr><th scope="row">The right AI for each task</td><td class="win">Assign any model to five role slots (Primary, Quick, Reviewer, Vision, Embed) with Backup or Spare per role for automatic failover.</td><td>Choose local or external endpoints. Compare several models side-by-side.</td><td>Single model per plugin or integration. No role-based routing.</td><td>One model per session. Stronger models require plan upgrade.</td></tr>
-      <tr><th scope="row">Provider goes down or hits quota</td><td class="win">Automatic failover to your Backup or Spare model. Dead free tiers pause until reset.</td><td>Endpoint and model choice is manual. No failover behavior described.</td><td>Depends on plugin or provider. No automatic failover.</td><td>Wait, upgrade, or switch manually.</td></tr>
-      <tr><th scope="row">Multi-agent orchestration</td><td class="win">A primary agent plans your work, dispatches specialized subagents in parallel, and reviews their results before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Simple automations and community plugins.</td><td>Basic workflows and skills available with paid plans.</td></tr>
-      <tr><th scope="row">See how answers are built</td><td class="win">See the full trace of every step planned, searched, and reviewed to reach the answer.</td><td>Agent tracing is not described on the current site.</td><td>Plugin-dependent transparency. Limited by design.</td><td>Agent tracing varies by service and plan.</td></tr>
-      <tr><th scope="row">Sources you can verify</td><td class="win">Every answer lists the web pages and documents it used, with relevance-filtered citations you can verify.</td><td>Deep Research gathers, reads, and cites sources.</td><td>Plugin-dependent citation support.</td><td>Citations vary by service and plan.</td></tr>
-      <tr><th scope="row">Portable</td><td class="win">Portable executable for Windows and Linux. Runs from a USB stick with no installation, no account, and no registry changes.</td><td>Self-hosted web app. No portable-desktop claim.</td><td>Obsidian local files. Notion requires account and sync.</td><td>Cloud and web only. Limited desktop applications.</td></tr>
-      <tr><th scope="row">AI takes action</td><td class="win">Built-in automation across files, web, email, and calendar.</td><td>Tools, MCP, email, research, and autonomous agents.</td><td>View and edit. Limited native AI actions.</td><td>Paid connectors with separate setup.</td></tr>
-      <tr><th scope="row">Goal-driven autonomy</td><td class="win">Plans multi-step work, dispatches specialized subagents in parallel, acts with 90+ tools, and reviews its own work before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Workflow plugins available. No native autonomous agent.</td><td>Agent modes and workflows available with paid plans.</td></tr>
-      <tr><th scope="row">Visual knowledge canvas</td><td class="win">AI-organised 2D spatial canvas for visual knowledge management.</td><td>Visual canvas is not described on the current site.</td><td>Obsidian Canvas (manual). Notion database views.</td><td>Chat-first interface. Canvas features limited or absent.</td></tr>
-      <tr><th scope="row">Chat with documents</td><td class="win">Chat with hundreds of papers, books, and scanned notes across your whole workspace.</td><td>Document editor. Document-chat scope is not described.</td><td>Community plugins for document chat.</td><td>Project uploads and per-session context.</td></tr>
-      <tr><th scope="row">Image OCR &amp; Vision AI</td><td class="win">Built-in OCR with AI vision fallback for images and documents.</td><td>Image gallery. OCR and vision are not described.</td><td>External tools or plugins required.</td><td>Vision features vary by service.</td></tr>
-      <tr><th scope="row">Tool integrations</td><td class="win">Built-in MCP servers (memory, files, web, Gmail, Calendar, ListenBrainz music history) plus the ToolForest aggregator with 30+ toolkits over one connection.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
-      <tr><th scope="row">Calendar &amp; Scheduling</td><td class="win">Manage Gmail and Calendar through natural chat.</td><td>Calendar and scheduling are not described.</td><td>View-only calendar plugins.</td><td>Calendar connectors vary by service.</td></tr>
-      <tr><th scope="row">AI remembers you</td><td class="win">Persistent memory that remembers your projects, preferences, and decisions.</td><td>Persistent memory across all conversations.</td><td>Manual notes and tags. No persistent AI memory.</td><td>Memory features vary by service and plan.</td></tr>
-      <tr><th scope="row">Stays useful over months</td><td class="win">Quietly condenses older conversations while keeping the important context for months of continued work.</td><td>Persistent memory across conversations. Retention period not stated.</td><td>Manual organization. No AI context retention.</td><td>Context retention varies by service.</td></tr>
-      <tr><th scope="row">Cost</td><td class="win">Free to use. $0/mo with free-tier cloud models or local models. Your choice.</td><td>Open source and free. Self-hosted.</td><td>Free tier available. Paid tiers for collaboration and sync.</td><td>Subscription pricing varies by model and provider.</td></tr>
+      <tr><th scope="row">The right AI for each task</th><td class="win">Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer) with Backup or Spare per role for automatic failover.</td><td>Choose local or external endpoints. Compare several models side-by-side.</td><td>Single model per plugin or integration. No role-based routing.</td><td>One model per session. Stronger models require plan upgrade.</td></tr>
+      <tr><th scope="row">Provider goes down or hits quota</th><td class="win">Automatic failover to your Backup or Spare model. Dead free tiers pause until reset.</td><td>Endpoint and model choice is manual. No failover behavior described.</td><td>Depends on plugin or provider. No automatic failover.</td><td>Wait, upgrade, or switch manually.</td></tr>
+      <tr><th scope="row">Multi-agent orchestration</th><td class="win">A primary agent plans your work, dispatches specialized subagents in parallel, and reviews their results before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Simple automations and community plugins.</td><td>Basic workflows and skills available with paid plans.</td></tr>
+      <tr><th scope="row">See how answers are built</th><td class="win">See the full trace of every step planned, searched, and reviewed to reach the answer.</td><td>Agent tracing is not described on the current site.</td><td>Plugin-dependent transparency. Limited by design.</td><td>Agent tracing varies by service and plan.</td></tr>
+      <tr><th scope="row">Sources you can verify</th><td class="win">Every answer lists the web pages and documents it used, with relevance-filtered citations you can verify.</td><td>Deep Research gathers, reads, and cites sources.</td><td>Plugin-dependent citation support.</td><td>Citations vary by service and plan.</td></tr>
+      <tr><th scope="row">Portable</th><td class="win">Portable executable for Windows and Linux. Runs from a USB stick with no installation, no account, and no registry changes.</td><td>Self-hosted web app. No portable-desktop claim.</td><td>Obsidian local files. Notion requires account and sync.</td><td>Cloud and web only. Limited desktop applications.</td></tr>
+      <tr><th scope="row">AI takes action</th><td class="win">Built-in automation across files, web, email, and calendar.</td><td>Tools, MCP, email, research, and autonomous agents.</td><td>View and edit. Limited native AI actions.</td><td>Paid connectors with separate setup.</td></tr>
+      <tr><th scope="row">Goal-driven autonomy</th><td class="win">Plans multi-step work, dispatches specialized subagents in parallel, acts with 90+ tools, and reviews its own work before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Workflow plugins available. No native autonomous agent.</td><td>Agent modes and workflows available with paid plans.</td></tr>
+      <tr><th scope="row">Visual knowledge canvas</th><td class="win">AI-organised 2D spatial canvas for visual knowledge management.</td><td>Visual canvas is not described on the current site.</td><td>Obsidian Canvas (manual). Notion database views.</td><td>Chat-first interface. Canvas features limited or absent.</td></tr>
+      <tr><th scope="row">Chat with documents</th><td class="win">Chat with hundreds of papers, books, and scanned notes across your whole workspace.</td><td>Document editor. Document-chat scope is not described.</td><td>Community plugins for document chat.</td><td>Project uploads and per-session context.</td></tr>
+      <tr><th scope="row">Image OCR &amp; Vision AI</th><td class="win">Built-in OCR with AI vision fallback for images and documents.</td><td>Image gallery. OCR and vision are not described.</td><td>External tools or plugins required.</td><td>Vision features vary by service.</td></tr>
+      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history) plus the ToolForest aggregator with 30+ toolkits over one connection.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
+      <tr><th scope="row">Calendar &amp; Scheduling</th><td class="win">Manage Gmail and Calendar through natural chat.</td><td>Calendar and scheduling are not described.</td><td>View-only calendar plugins.</td><td>Calendar connectors vary by service.</td></tr>
+      <tr><th scope="row">AI remembers you</th><td class="win">Persistent memory that remembers your projects, preferences, and decisions.</td><td>Persistent memory across all conversations.</td><td>Manual notes and tags. No persistent AI memory.</td><td>Memory features vary by service and plan.</td></tr>
+      <tr><th scope="row">Stays useful over months</th><td class="win">Quietly condenses older conversations while keeping the important context for months of continued work.</td><td>Persistent memory across conversations. Retention period not stated.</td><td>Manual organization. No AI context retention.</td><td>Context retention varies by service.</td></tr>
+      <tr><th scope="row">Cost</th><td class="win">Free to use. $0/mo with free-tier cloud models or local models. Your choice.</td><td>Open source and free. Self-hosted.</td><td>Free tier available. Paid tiers for collaboration and sync.</td><td>Subscription pricing varies by model and provider.</td></tr>
     </tbody>
   </table>
   <p id="cost-note" style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">*Publicly disclosed approximate cost as of 2026; Sorana lets you use those same models without subscription if you already have API credits, or swap in free-tier and local models instead. Odysseus cells reflect its public website as checked on 2026-09-09; "not described" means the current site does not claim that capability.</p>
@@ -1098,7 +1098,7 @@
 
 <!-- PROVIDERS -->
 <section class="providers-section" id="providers">
-  <p class="section-label">Supported out of the box</p>
+  <p class="section-label">Supported providers</p>
   <p class="section-label providers-sub-label">Cloud Providers</p>
   <div class="providers-grid">
     <a class="provider-chip" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
@@ -1190,7 +1190,7 @@
       Mimo
     </div>
   </div>
-  <p class="section-label providers-sub-label">Local / On-premise</p>
+  <p class="section-label providers-sub-label">Local models</p>
   <div class="providers-grid">
     <div class="provider-chip">
       <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="6" fill="none" stroke="#8a8f98" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#8a8f98"/></svg>
@@ -1254,13 +1254,13 @@
       <div class="model-row model-row-featured">
         <span class="model-provider">FreeRouter</span>
         <span class="model-name">Kiro Auto</span>
-        <span class="model-desc">FreeRouter is back, popular models, 100% free, no credit card, no limits.</span>
+        <span class="model-desc">Kiro Auto: popular models, 100% free, no credit card, no limits.</span>
         <span class="model-tag free">100% FREE</span>
       </div>
       <div class="model-row">
         <span class="model-provider">Lemonade (Local)</span>
         <span class="model-name">Qwen3.6-35B-A3B-UD-IQ2_M</span>
-        <span class="model-desc">Local on-premise quantized model, runs entirely on your hardware, free forever</span>
+        <span class="model-desc">A local quantised model that runs entirely on your hardware, free forever</span>
         <span class="model-tag free">FREE · LOCAL</span>
       </div>
     </div>

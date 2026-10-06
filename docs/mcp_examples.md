@@ -6,7 +6,7 @@ This document provides practical examples of using Sorana's built-in MCP (Model 
 
 Sorana's AI agents support **any third-party external MCP server**, making it incredibly flexible:
 
-- **Built-in servers**: Filesystem, Memory, Web Content, Gmail
+- **Built-in servers**: Filesystem, Memory, Web search, Gmail
 - **External MCP servers**: Connect any compatible MCP server (Google Drive, GitHub, PostgreSQL, custom tools, etc.)
 - **Mix & match**: Use multiple servers simultaneously for complex workflows
 - **OAuth2 support**: Secure authentication for cloud services
