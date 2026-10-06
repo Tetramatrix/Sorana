@@ -304,7 +304,7 @@ Ask your assistant about years of music listening in plain language. Twelve tool
 - **Full history export** — ListenBrainz only releases a complete history through its export API, so Sorana queues the export as a background job, downloads it, and imports it locally. The import resumes automatically if it is interrupted, never double counts, and keeps running while you keep working
 - **Queries across the imported archive** — top artists over any date range, full history for one artist, and a rediscovery tool that finds artists you played heavily years ago and have not played since
 
-Setup is one step: paste your ListenBrainz user token (found in your ListenBrainz profile settings) into the Configure dialog. Public charts need no token at all. Ask things like "my top 50 artists this year", "what am I playing right now", "export my full history", or "which artists did I love years ago but never play anymore".
+Setup is one step: paste your ListenBrainz user token (found in your ListenBrainz profile settings) into the Configure dialog. Ask things like "my top 50 artists this year", "what am I playing right now", "export my full history", or "which artists did I love years ago but never play anymore".
 
 ### ToolForest (marketplace, new)
 
