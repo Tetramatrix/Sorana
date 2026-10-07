@@ -237,12 +237,12 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 ## Quick Start
 
-1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) or [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana)
+1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 2. **Run** anywhere, desktop, USB, external drive
 3. **Choose a model**, use a free cloud model with your own API key (FreeRouter's free API or OpenRouter's free-tier cost nothing), or run local models through Lemonade, Ollama, or LM Studio
 4. **Start working**, add your files, chat with documents, and let Sorana remember your projects and preferences
 
-**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe)  
+**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)  
 **Microsoft Store**: [Get from Store](https://apps.microsoft.com/detail/9n8c43pzc1rn)
 
 ---
@@ -251,7 +251,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 | Component | Minimum |
 |---|---|
-| OS | Windows 11 (64-bit) or modern Linux (Ubuntu 20.04+, glibc-based) |
+| OS | Windows 11 (64-bit), modern Linux (Ubuntu 20.04+, glibc-based), or MacOS |
 | RAM | 4 GB (8 GB+ recommended for local AI models) |
 | Storage | 2 GB (app + model) + `.sorana/` data folder |
 | AI | Built-in offline model included; local or cloud AI optional |
@@ -352,7 +352,7 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 ## Links
 
 - **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
-- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana)
+- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 - **Source**: [GitHub Repository](https://github.com/Tetramatrix/Sorana)
 - **Discord**: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
 - **Microsoft Store**: [apps.microsoft.com](https://apps.microsoft.com/detail/9n8c43pzc1rn)
