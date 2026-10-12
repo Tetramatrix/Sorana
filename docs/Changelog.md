@@ -1,5 +1,34 @@
 📋 Changelog 📋
 
+📅 12.10.26 - Version 1.0.103
+
+🆕 New Features
+🆕 macOS Support: Sorana now runs on macOS as well as Windows and Linux, so the same workspace and the same agent are available on a Mac.
+🆕 Video Generation Probing: The capability wizard can now test video generation models alongside the other kinds, and its sections collapse as you move on so the page stays short. The effort probe can be skipped, which makes the wizard noticeably quicker.
+🆕 Spare Vision Slot and Bulk Backup: The Model Manager gains a spare slot for a vision model and a bulk backup action that assigns backup roles to many models at once. Choosing a vision backup now respects the shared capability check, and the Backup and Spare menus no longer carry entries left over from a rename.
+🆕 Uninterrupted Sessions: A sign-in that is about to expire now renews itself in the background shortly beforehand, so a long automated workflow is no longer cut off in the middle.
+🆕 Model Setup Deadline: Setting up a model now has a time limit, so a download stage that stalls can no longer leave the wizard hanging with no end in sight.
+
+🔄 Improvements & Changes
+🔄ListenBrainz Answers From Your Own History: Personal listening questions such as your top artists over the last month, the tracks you played least, or the current charts are now answered from the local copy of your history that you already imported, instead of sending the assistant off to search the web. Relative periods such as the last 30 days are read correctly, album and release questions now reach the right place, and the least played table no longer comes back empty.
+🔄ListenBrainz Setup: The token field is offered directly instead of the sign-in card, and the help text now spells out which questions use the live service and which use your imported history.
+🔄Markdown Tables: A table whose rows are separated by blank lines now renders correctly, and the separator row is drawn at the exact width of the columns it sits under.
+🔄Web Research Reliability: A round of outside reviews of the research turn has been closed out, covering how findings are collected, how sources are credited to a claim, and how a finished answer is judged complete.
+🔄Tool Calls In Unusual Wrappers: A tool call that the provider wrapped in a generic envelope is now recovered and executed instead of being dropped on the floor.
+
+🛡️ Security & Stability
+🛡️Rendering No Longer Crashes: Drawing certain combinations of text and fonts no longer faults, which could take the whole app down while a board or a document was on screen.
+🛡️Diagnostics Survive A Drawing Error: The trace and the status updates keep running after a rendering error instead of going quiet, so what went wrong is still visible afterwards.
+🛡️One Limit, One Place: The ceiling on how much a family of tools may be used is now applied from a single place, so it can no longer be worked out differently depending on which part of a turn asks.
+
+🐛 Bug Fixes
+🐛Similar Names: A single ordinary word in your message no longer pulls in a document just because the document's name happens to resemble it.
+🐛Delivered Answers: An answer you had already received is no longer overwritten by a later pass that ran out of budget, and a turn that has nothing to say no longer publishes an empty placeholder as though it were the answer.
+🐛Research Claims: How strongly a claim is stated now follows the evidence actually collected for it rather than how much it overlaps with other claims, and a topic is no longer counted as covered merely because a neighbouring topic was.
+🐛Citations: Citations that share a sentence are kept apart in the body of an answer, and numbering marks that the model adds by itself are removed before the list is renumbered.
+🐛Chat Diagnostics: The trace and the closing summary no longer record steps that did not happen, and the research report now tells genuinely different outcomes apart instead of presenting them alike.
+🐛Model Manager: Fixed the reasoning label ignoring what a model can actually do, fixed the progress bar in the capability wizard running past its maximum, and fixed the help panel generating its text incorrectly.
+
 📅 02.10.26 - Version 1.0.102
 
 🆕 New Features
