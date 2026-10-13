@@ -1,5 +1,18 @@
 📋 Changelog 📋
 
+📅 13.10.26 - Version 1.0.104
+
+🐛 Bug Fixes
+🐛Wrong Tool For A Mention: A message about drafting or scheduling a post no longer sends a listening charts call just because it mentions ListenBrainz, and ordinary sentences that merely share a word with the music categories no longer pull in a tool at all.
+🐛A Service That Is Switched Off: A question that lands on a server you have turned off now names that server and tells you to enable it under MCP settings, instead of failing quietly or reporting a model failure for a turn in which no model ever ran.
+🐛Shortcuts Overruling You: A shortcut remembered from an earlier question no longer beats what you are asking now just because the two share an everyday word such as week, and being looked up often can no longer turn a guess into knowledge. Only a dispatch that really ran, with matching vocabulary, counts as confirmation.
+🐛Empty Results Treated As Answers: A tool result that declares itself empty is no longer accepted as a successful structured answer, so the turn backs off and retries instead of delivering it as the answer.
+🐛A Service Blamed For Never Being Contacted: A long mixed message no longer comes back saying the connected service could not be reached when it was never contacted. The planning step that prepares a turn now has the room to do its work, and a turn that is already committed to a tool resolves that tool directly instead of dispatching nothing.
+🐛Freezes During Research: The interface no longer stalls for seconds at a stretch during a research turn, because the work that used to run for every single event on the main thread now runs at a bounded rate and in the background.
+
+🔄 Improvements & Changes
+🔄Stall Attribution: When the interface does stall, the app log now names the frame that was holding the main thread, how long it held it, and which updates were missed, so a freeze can be traced to a cause instead of guessed at.
+
 📅 12.10.26 - Version 1.0.103
 
 🆕 New Features
