@@ -3,9 +3,6 @@
 
 📅 15.10.26 - Version 1.0.105
 
-🆕 New Features
-🆕Replaying An Archive Under Another Tier: A bulk mail archive can be replayed, and an identical request under a different licence tier now runs again instead of answering with the earlier tier's result.
-
 🔄 Improvements & Changes
 🔄Stall Reports That Add Up: When the interface does stall, the report now counts the missed updates against the interval it names and points at the application's own code rather than the toolkit's, so a freeze can be traced to a cause instead of guessed at.
 🔄Fewer Repeated Searches: A search that only repeats one already made in the same turn is skipped and reported as redundant, so a research turn spends less of its time waiting.
