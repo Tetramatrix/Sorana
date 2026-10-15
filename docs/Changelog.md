@@ -1,5 +1,34 @@
 📋 Changelog 📋
 
+
+📅 15.10.26 - Version 1.0.105
+
+🆕 New Features
+🆕Replaying An Archive Under Another Tier: A bulk mail archive can be replayed, and an identical request under a different licence tier now runs again instead of answering with the earlier tier's result.
+
+🔄 Improvements & Changes
+🔄Stall Reports That Add Up: When the interface does stall, the report now counts the missed updates against the interval it names and points at the application's own code rather than the toolkit's, so a freeze can be traced to a cause instead of guessed at.
+🔄Fewer Repeated Searches: A search that only repeats one already made in the same turn is skipped and reported as redundant, so a research turn spends less of its time waiting.
+🔄Coverage Figures That Agree: The coverage figure in the status line now counts the same things as the coverage block beside it, and the quality score has left the status line for the log and the trace, where it belongs.
+🔄Honest Engine Health: A search engine that answered with nothing is no longer reported as broken, one engine out of several running out of its monthly quota no longer counts as a degraded pool, and an engine that refuses now names its own reason instead of the data being reported as missing.
+🔄Listing Files And Documents: The options for listing your files and documents are now declared and checked like every other tool's, so they behave the way they are described.
+
+🛡️ Security & Stability
+🛡️No Silent Export Of A Whole Mailbox: A mail archive whose filter could not be resolved no longer turns into an export of the whole mailbox. It lists what it found, carries one honest count, and asks before anything runs, and the limit of your licence tier is now the only ceiling on how much one archive may take.
+🛡️Retries That Carry Their Request: Asking to try an archive again now carries the earlier request instead of being read as a fresh sentence, and only genuinely destructive mail actions are held back from a retry. An archive that would touch the whole mailbox still asks first, however the request arrived.
+
+🐛 Bug Fixes
+🐛The Wrong Answer Shipped: A turn that produced several drafts could deliver a short one it had already discarded in place of the accepted answer, and raw search snippets could ship where a finished answer belonged. Delivery now follows the answer the turn accepted, and a recovery step can no longer replace it with tool output.
+🐛A Quality Verdict For The Wrong Draft: An answer could be held back by a quality verdict computed for a shorter, earlier draft. The verdict now belongs to the answer it measured, and the review's own wording no longer reaches the answer body.
+🐛Answers Cut Short: An answer delivered again after a recovery is no longer cut off part way through, and a turn that reaches its internal step limit now says so plainly instead of coming back empty.
+🐛Supported Answers Refused: An answer backed by the whole document set could be refused as unsupported because the check read the wrong item, and a short but complete answer could lose to text the same turn had already discarded. Every candidate is now asked the same question.
+🐛Company Questions With A Place: Asking about a company from a particular city no longer discards the official registry for naming a different registered office, so the question gets an answer instead of nothing.
+🐛A Search That Fetched Nothing: A search that ran but returned no content no longer counts as having the data, so an answer no longer claims it had what it needed.
+🐛Sources Cut In Half: An address containing a comma is no longer cut in half, which had broken the check behind a source and stranded a note in the middle of the address.
+🐛Empty Answers Counted As Covered: A sentence whose whole content is that there is no data no longer counts as an answer, in the table or in the answer itself.
+🐛Spinner Freeze: The chat status spinner forced a full redraw on every frame, which could hold the interface for seconds at a stretch during a long turn. It no longer forces that redraw.
+🐛Stray Character In The Status Line: A status message beginning with an emoji no longer strands a single character at the end of the line.
+
 📅 13.10.26 - Version 1.0.104
 
 🐛 Bug Fixes
