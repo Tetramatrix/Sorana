@@ -1,5 +1,28 @@
 📋 Changelog 📋
 
+📅 18.10.26 - Version 1.0.106
+
+🆕 New Features
+🆕 Local Inference Backend (Gufo): A new OpenAI compatible backend for local inference joins the supported providers, so models served by a local Gufo instance can be used like any other backend.
+🆕 Reasoning Models (qwen27b): Reasoning support lands for qwen27b, including effort levels and source links, so a reasoning model can be configured and used for deeper answers.
+🆕 Delivery Integrity Gate: The delivery step is now bound to the response it measured, and the delivery gate has been promoted from an advisory check to a violation, so an answer can no longer be replaced by tool output or a shorter draft after it was accepted.
+
+🔄 Improvements & Changes
+🔄 Coverage Verdicts That Match: Six coverage verdicts that shipped wrong have been corrected, including a case where a table row outranked an exact mention. The coverage figure now agrees with the block beside it.
+🔄 Fewer Repeated Tool Calls: Tool calls now share one canonical record and the migration of the legacy readers is measured, so a research turn spends less time on redundant calls.
+🔄 Model Manager Reasoning Labels: Reasoning labels in the Model Manager now reflect the configured capability instead of a stale default.
+
+🛡️ Security & Stability
+🛡️ No Dot Directory Leak: The code explorer no longer leaks dot directories into project listings.
+🛡️ No Whole Mailbox Export: A mail archive whose filter cannot be resolved lists what it found and asks before running, instead of exporting the whole mailbox.
+🛡️ Recovery Bypass Narrowed: The recovery bypass that could grant itself on nothing now requires the response to actually look like the failure mode it exists for.
+
+🐛 Bug Fixes
+🐛 Supported Answers Refused: An answer backed by the whole document set could be refused as unsupported because the check read the wrong item; every candidate is now asked the same question.
+🐛 Answers Cut Short: An answer delivered again after a recovery is no longer cut off part way through.
+🐛 One Character Table Values: A table value of a single character is now accepted in bullet rescue instead of being dropped.
+🐛 Spinner Freeze: The chat status spinner no longer forces a full redraw on every frame.
+🐛 Stray Character In The Status Line: A status message beginning with an emoji no longer strands a single character at the end of the line.
 
 📅 15.10.26 - Version 1.0.105
 
