@@ -1,5 +1,33 @@
 📋 Changelog 📋
 
+📅 19.10.26 - Version 1.0.107
+
+🆕 New Features
+🆕 Per-Lane Tool Call Limits: Tool calls now have per-lane limits and a resolver, so a research turn spends less time on redundant calls and stops when a lane is exhausted.
+🆕 Trace IDs End To End: Trace IDs are now resolved and tracked across the chat pipeline, so a conversation's trace can be followed from request to response.
+🆕 Coverage Verdict Instrument: Answer coverage is now measured by a structural verdict instrument, so the reported coverage agrees with the source it was checked against.
+
+🔄 Improvements & Changes
+🔄 Filesystem And External MCP Through The Gateway: Filesystem and external MCP calls now dispatch through the tool gateway, unifying how tools are invoked.
+🔄 One Completion Concept: The answer completion decision now has a single owner in the completion contract, so an answer is no longer replaced after it was accepted.
+🔄 Tool-Call Readers Unified: Tool-call readers now use the canonical accessors, so redundant reads are reduced.
+🔄 Evidence Handling Hardened: The evidence failure question has a single owner and the tool-result boundary is enforced with gateway types.
+🔄 Retry Budget: A retry budget now tracks attempts with a single ceiling and an env-gated enforce mode controls when retries stop.
+🔄 Status Authority Gate: A status authority gate now tracks which sites are legitimate, with 40 sites baselined with reasons.
+
+🛡️ Security & Stability
+🛡️ Isolation Scan Read-Only: The isolation scan is now importable and read-only by default, so it cannot mutate the tree while scanning.
+🛡️ Circular Import Timeout: The circular-import check timeout was raised above its measured runtime, so it no longer aborts early.
+🛡️ Status Authority Reverted: An over-broad exclude widening was reverted and the 40 legitimate sites were baselined, so the gate stays honest.
+
+🐛 Bug Fixes
+🐛 Trace-View Crash Fixed: The agent trace view no longer crashes when opened.
+🐛 Built-In Server Key No Longer Restated: Core no longer restates a built-in server key, avoiding duplicate registration.
+🐛 Evidence Envelope Gaps Closed: Shape-table gaps in the evidence envelope (status failed/ok 0) are closed.
+🐛 Empty-Check Unified: Recovery rules now delegate the empty check to the completion contract, so recovery decisions are consistent.
+🐛 Delivery Disposition Type Corrected: The final delivery disposition type was corrected and annotated consistently.
+🐛 Retry Budget Restored: The retry budget was restored to its fuller implementation.
+
 📅 18.10.26 - Version 1.0.106
 
 🆕 New Features
