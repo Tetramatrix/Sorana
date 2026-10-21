@@ -52,8 +52,8 @@
       "name": "Sorana",
       "operatingSystem": "Windows 11, Linux, MacOS",
       "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
-      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations"],
+      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data",
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations"],
       "offers": { "@type": "Offer", "price": "0" },
       "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
@@ -118,7 +118,7 @@
           "name": "Which providers have free tiers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "OpenRouter lets you start for free with openrouter/free (auto-picks the best model, no credit card). FreeRouter is free at freerouter.eu.cc (Kiro Auto, no credit card). Nvidia offers multiple free models at build.nvidia.com. Mistral offers devstral-2512 for free at mistral.ai. Google offers Gemma models for free at ai.google.dev. All are free with no credit card required."
+            "text": "OpenRouter lets you start for free with openrouter/free (auto-picks the best model, no credit card). Nvidia offers multiple free models at build.nvidia.com. Mistral offers devstral-2512 for free at mistral.ai. Google offers Gemma models for free at ai.google.dev. All are free with no credit card required."
           }
         },
         {
@@ -143,6 +143,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "When a task needs it, Sorana dispatches specialized subagents, a web researcher, a code analyst, a fact-check or review agent, each with its own budget, running parts of the work in parallel. The workspace assembles and reviews the results before answering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I check crypto prices in chat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Add the CoinGecko server from the MCP Marketplace and then ask in plain language: \"What is bitcoin's price in USD right now?\" or \"What is Bitcoin Cash trading at right now?\". It needs no account and no API key, and it only reads, so there is nothing to approve before it answers. It covers prices, market caps, trading volumes and coin metadata for Bitcoin, Bitcoin Cash, Ethereum and thousands of coins besides."
           }
         }
       ]
@@ -171,7 +179,7 @@
     </svg>
     Sorana
     </a>
-    <span class="version-pill" title="Current Sorana version">v1.0.102</span>
+    <span class="version-pill" title="Current Sorana version">v1.0.108</span>
   </div>
   <div class="nav-links" id="navLinks">
     <a href="#features">Features</a>
@@ -197,7 +205,7 @@
     <div class="hero-eyebrow">
       AI Workspace · Agent Harness · Chat · Agents · Documents · Email · Calendar · Files · Web
     </div>
-    <span class="version-pill" id="versionPill" title="Current Sorana version">v1.0.102</span>
+    <span class="version-pill" id="versionPill" title="Current Sorana version">v1.0.108</span>
   </div>
    <h1>The desktop AI knowledge workspace.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
@@ -220,13 +228,6 @@
       <span class="or-model">openrouter/free<span class="or-model-tag">100% FREE</span></span>
       <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; free API key, top-rated free models</span>
       <span class="or-key-btn">Browse free models &rarr;</span>
-    </a>
-  </div>
-  <div style="display:flex;justify-content:center;margin:var(--space-4) 0 var(--space-4);">
-    <a class="freerouter-cta" href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer">
-      <span class="fr-model"><span class="fr-model-live"></span>Kiro Auto<span class="fr-model-tag">100% FREE</span></span>
-      <span class="fr-text"><span class="fr-provider">FreeRouter</span> &middot; no credit card</span>
-      <span class="fr-key-btn">Get a free key &rarr;</span>
     </a>
   </div>
   <div style="display:flex;justify-content:center;margin:var(--space-4) 0;">
@@ -790,7 +791,7 @@
 <section class="section section-alt" id="mcp">
   <div class="section-header">
     <h2>One workspace. <em>Every tool.</em></h2>
-    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, and ListenBrainz music history. The marketplace adds external servers, from the ToolForest aggregator with 30+ toolkits over a single connection to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
+    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, and ListenBrainz music history. The marketplace adds external servers, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko crypto market feed to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card large">
@@ -823,6 +824,25 @@
       </div>
       <p style="margin-top:var(--space-4);">Highlights: <strong>Polymarket</strong> with public odds and price history and no account needed. <strong>GDELT</strong> with rolling global news and coded events with tone and geography and no key needed. Plus Gmail, Sheets, Reddit, X, Fitbit, Anki and GitHub toolkits.</p>
     </div>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M7 15l3.5-4 2.5 2.5L18 8"/>
+        </svg>
+      </div>
+      <h3>Live crypto market data <span class="model-tag free">NEW</span></h3>
+      <p><strong>CoinGecko is now a keyless marketplace server.</strong> No account, no API key, nothing to install. Ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, list the top coins by market cap or trading volume, or pull a 30 day price history. The answer comes from live market data rather than a cached web page, and the server only reads: there is no write endpoint.</p>
+      <p style="margin-bottom:var(--space-2);">Coins it covers include:</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">Bitcoin</div>
+        <div class="provider-chip">Bitcoin Cash</div>
+        <div class="provider-chip">Ethereum</div>
+        <div class="provider-chip">Solana</div>
+        <div class="provider-chip">Dogecoin</div>
+        <div class="provider-chip">and more</div>
+      </div>
+      <p style="margin-top:var(--space-4);">Ask it things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", or "Compare bitcoin and ethereum by market cap". Sorana already accepts Bitcoin Cash donations, so you can check the price of the coin you already back.</p>
+    </div>
     <div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -833,7 +853,7 @@
       <p>Memory that never forgets · Files you can read, write and search · Web search · Gmail and Calendar actions · Your past chats. All managed from the MCP Manager with no config files.</p>
     </div>
   </div>
-  <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-6);">Marketplace servers for Drive, GitHub, Slack, Postgres and movies are under construction and need manual auth. ToolForest covers most of that ground today.</p>
+  <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-6);">Marketplace servers for Drive, GitHub, Slack, Postgres and movies are under construction and need manual auth. ToolForest covers most of that ground today, and CoinGecko needs no setup at all.</p>
 </section>
 
 <section class="section" id="chat-examples">
@@ -921,6 +941,17 @@
         <li>"Search my archives for the insurance policy and summarize the coverage"</li>
       </ul>
     </div>
+    <div class="example-card">
+      <h4>Crypto &amp; Market Data</h4>
+      <ul>
+        <li>"What is bitcoin's price in USD right now?"</li>
+        <li>"What is Bitcoin Cash trading at right now?"</li>
+        <li>"Show ethereum's 24h change and market cap"</li>
+        <li>"Compare bitcoin and ethereum by market cap"</li>
+        <li>"List the top 10 coins by market cap"</li>
+        <li>"Show bitcoin's price over the last 30 days"</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -965,7 +996,7 @@
       <tr><th scope="row">Visual knowledge canvas</th><td class="win">AI-organised 2D spatial canvas for visual knowledge management.</td><td>Visual canvas is not described on the current site.</td><td>Obsidian Canvas (manual). Notion database views.</td><td>Chat-first interface. Canvas features limited or absent.</td></tr>
       <tr><th scope="row">Chat with documents</th><td class="win">Chat with hundreds of papers, books, and scanned notes across your whole workspace.</td><td>Document editor. Document-chat scope is not described.</td><td>Community plugins for document chat.</td><td>Project uploads and per-session context.</td></tr>
       <tr><th scope="row">Image OCR &amp; Vision AI</th><td class="win">Built-in OCR with AI vision fallback for images and documents.</td><td>Image gallery. OCR and vision are not described.</td><td>External tools or plugins required.</td><td>Vision features vary by service.</td></tr>
-      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history) plus the ToolForest aggregator with 30+ toolkits over one connection.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
+      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history) plus the ToolForest aggregator with 30+ toolkits over one connection and keyless CoinGecko crypto market data.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
       <tr><th scope="row">Calendar &amp; Scheduling</th><td class="win">Manage Gmail and Calendar through natural chat.</td><td>Calendar and scheduling are not described.</td><td>View-only calendar plugins.</td><td>Calendar connectors vary by service.</td></tr>
       <tr><th scope="row">AI remembers you</th><td class="win">Persistent memory that remembers your projects, preferences, and decisions.</td><td>Persistent memory across all conversations.</td><td>Manual notes and tags. No persistent AI memory.</td><td>Memory features vary by service and plan.</td></tr>
       <tr><th scope="row">Stays useful over months</th><td class="win">Quietly condenses older conversations while keeping the important context for months of continued work.</td><td>Persistent memory across conversations. Retention period not stated.</td><td>Manual organization. No AI context retention.</td><td>Context retention varies by service.</td></tr>
@@ -1181,10 +1212,6 @@
       <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M4 8h8" stroke="#8a8f98" stroke-width="1.5"/></svg>
       BadTheoryLabs
     </div>
-    <a class="provider-chip" href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="12" r="1.6" fill="#8a8f98"/><path d="M5.2 9.4a4 4 0 0 1 5.6 0" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M2.8 7a7.4 7.4 0 0 1 10.4 0" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
-      FreeRouter
-    </a>
     <div class="provider-chip">
       <img src="https://cdn.simpleicons.org/huggingface/8a8f98" class="icon" alt="" aria-hidden="true">
       HuggingFace
@@ -1253,12 +1280,6 @@
         <span class="model-provider">OpenRouter</span>
         <span class="model-name">openrouter/free</span>
          <span class="model-desc">Auto-selects top-rated free models. Free API key at openrouter.ai, no credit card</span>
-        <span class="model-tag free">100% FREE</span>
-      </div>
-      <div class="model-row model-row-featured">
-        <span class="model-provider">FreeRouter</span>
-        <span class="model-name">Kiro Auto</span>
-        <span class="model-desc">Kiro Auto: popular models, 100% free, no credit card, no limits.</span>
         <span class="model-tag free">100% FREE</span>
       </div>
       <div class="model-row">
@@ -1504,7 +1525,6 @@
       <summary>Which providers have free tiers?</summary>
       <p>Several providers let you use AI models for free. Here is how each one works:</p>
       <p><strong>OpenRouter</strong> is the easiest way to start. Sign up at openrouter.ai, grab a free API key (no credit card needed), then open Sorana's Model Manager, find "openrouter/free", and set it as your Primary model or for all roles if you don't have other models.       OpenRouter automatically picks top-rated free models from its catalog for every request.</p>
-      <p><strong>FreeRouter</strong> is free to use. Sign up at freerouter.eu.cc, get a free API key (no credit card), then open the Model Manager, select "Kiro Auto", and start chatting. It is 100% free with no limits.</p>
       <p><strong>Nvidia</strong> offers multiple models for free, including nemotron-3-super-120b. Sign up at build.nvidia.com, grab an API key, and add it in the Model Manager under Nvidia. Browse all free models at <a href="https://build.nvidia.com" target="_blank" rel="noopener noreferrer">build.nvidia.com</a>.</p>
       <p><strong>Mistral</strong> offers devstral-2512 for free. Create an account at mistral.ai, grab your API key, and connect it in Sorana's Model Manager.</p>
       <p><strong>Google</strong> offers Gemma models for free. Get an API key at ai.google.dev and add it under Google in the Model Manager.</p>
@@ -1529,6 +1549,10 @@
     <details class="faq-item">
       <summary>What does ToolForest add?</summary>
       <p>ToolForest is a hosted MCP aggregator with 30+ toolkits over a single connection — Google Workspace, prediction markets like Polymarket, global news via GDELT, Reddit, X, fitness trackers, flashcards and more. Add your API key, authorize toolkits at app.toolforest.io, and ask normally. Its tools are separate from Sorana's built-in Gmail, Calendar, and ListenBrainz servers.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I check crypto prices in chat?</summary>
+      <p>Yes. Add the CoinGecko server from the MCP Marketplace and then ask in plain language: "What is bitcoin's price in USD right now?" or "What is Bitcoin Cash trading at right now?". It needs no account and no API key, and it only reads, so there is nothing to approve before it answers. It covers prices, market caps, trading volumes and coin metadata for Bitcoin, Bitcoin Cash, Ethereum and thousands of coins besides.</p>
     </details>
     <details class="faq-item">
       <summary>What happens to long conversations?</summary>
@@ -1561,13 +1585,6 @@
     </a>
   </p>
   <p class="cta-fr" style="margin-top:var(--space-3);display:flex;justify-content:center;">
-    <a class="freerouter-cta" href="https://freerouter.eu.cc" target="_blank" rel="noopener noreferrer">
-      <span class="fr-model"><span class="fr-model-live"></span>Kiro Auto<span class="fr-model-tag">100% FREE</span></span>
-      <span class="fr-text"><span class="fr-provider">FreeRouter</span> &middot; no credit card</span>
-      <span class="fr-key-btn">Get a free key &rarr;</span>
-    </a>
-  </p>
-  <p class="cta-fr" style="margin-top:var(--space-3);display:flex;justify-content:center;">
     <a class="ci-cta" href="https://cheaperinference.com/?ref=IED5pC6EJx" target="_blank" rel="sponsored noopener noreferrer">
       <span class="ci-model">GPT &middot; Claude &middot; Gemini<span class="ci-model-tag">CHEAPER API</span></span>
       <span class="ci-text"><span class="ci-provider">CheaperInference</span> &middot; cheaper API</span>
@@ -1591,7 +1608,7 @@
 <footer>
   <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
     <span>© 2026 Sorana: your personal desktop AI knowledge workspace and agent harness for Windows, Linux, &amp; MacOS.</span>
-    <span class="version-pill" title="Current Sorana version">v1.0.102</span>
+    <span class="version-pill" title="Current Sorana version">v1.0.108</span>
     <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Changelog.md" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
     <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
     <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>

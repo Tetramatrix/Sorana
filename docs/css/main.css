@@ -24,10 +24,6 @@
   --color-local:          #f59e0b;
   --color-local-dim:      rgba(245,158,11,0.12);
 
-  --color-freerouter:      #60a5fa;
-  --color-freerouter-dim:  rgba(96,165,250,0.12);
-  --color-freerouter-glow: rgba(96,165,250,0.06);
-
   --color-freebuff:        #ec4899;
   --color-freebuff-dim:    rgba(236,72,153,0.12);
   --color-freebuff-glow:   rgba(236,72,153,0.06);
@@ -75,10 +71,6 @@
   --color-cloud-dim:      rgba(37,99,235,0.1);
   --color-local:          #d97706;
   --color-local-dim:      rgba(217,119,6,0.1);
-
-  --color-freerouter:      #2563eb;
-  --color-freerouter-dim:  rgba(37,99,235,0.1);
-  --color-freerouter-glow: rgba(37,99,235,0.05);
 
   --color-freebuff:        #db2777;
   --color-freebuff-dim:    rgba(219,39,119,0.1);
@@ -1210,96 +1202,9 @@ nav.scrolled {
   margin-bottom: var(--space-3);
 }
 
-/* ── FreeRouter hero CTA (zero-cost start) ── */
-.freerouter-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  padding: 10px 14px;
-  border-radius: var(--radius-full);
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  transition: border-color 160ms, box-shadow 160ms, transform 160ms;
-}
-.freerouter-cta:hover {
-  border-color: var(--color-freerouter);
-  box-shadow: 0 0 24px var(--color-freerouter-glow), 0 4px 20px rgba(0,0,0,0.25);
-  transform: translateY(-2px);
-}
-/* Model pill — monospace, distinct from the green badges. */
-.freerouter-cta .fr-model {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
-  font-weight: 700;
-  font-size: var(--text-sm);
-  color: var(--color-freerouter);
-  background: var(--color-freerouter-dim);
-  border: 1px solid rgba(96,165,250,0.30);
-  border-radius: var(--radius-full);
-  padding: 5px 14px;
-  white-space: nowrap;
-}
-.freerouter-cta .fr-model-live {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--color-freerouter);
-  animation: fr-pulse 2s ease-in-out infinite;
-}
-@keyframes fr-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.35; }
-}
-/* "100% FREE" accent tag. */
-.freerouter-cta .fr-model-tag {
-  display: inline-block;
-  background: var(--color-freerouter);
-  color: #fff;
-  font-family: var(--font-body);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  white-space: nowrap;
-  line-height: 1.4;
-}
-/* Pitch line. */
-.freerouter-cta .fr-text {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  font-weight: 500;
-  white-space: nowrap;
-}
-.freerouter-cta .fr-provider {
-  color: var(--color-freerouter);
-  font-weight: 700;
-}
-/* CTA button. */
-.freerouter-cta .fr-key-btn {
-  display: inline-block;
-  background: var(--color-freerouter);
-  color: #fff;
-  font-weight: 700;
-  font-size: var(--text-sm);
-  padding: 7px 18px;
-  border-radius: var(--radius-full);
-  white-space: nowrap;
-  transition: background 160ms;
-}
-.freerouter-cta:hover .fr-key-btn {
-  background: color-mix(in srgb, var(--color-freerouter), #fff 15%);
-}
-
 /* ── CheaperInference affiliate CTA (2026-08-22) ─────────────────────── */
-/* Same pill layout as .freerouter-cta, own purple accent, self-contained
-   colors (no :root additions needed). */
+/* Same pill layout as the other provider CTAs, own purple accent,
+   self-contained colors (no :root additions needed). */
 .ci-cta {
   display: inline-flex;
   align-items: center;
@@ -1551,8 +1456,6 @@ nav.scrolled {
   .or-adbtn { align-self: stretch; text-align: center; }
 }
 @media (max-width: 720px) {
-  .freerouter-cta { flex-wrap: wrap; justify-content: center; white-space: normal; max-width: 100%; box-sizing: border-box; }
-  .freerouter-cta .fr-text { white-space: normal; text-align: center; }
   .ci-cta { flex-wrap: wrap; justify-content: center; white-space: normal; }
   .or-cta { flex-wrap: wrap; justify-content: center; white-space: normal; max-width: 100%; box-sizing: border-box; }
   .or-cta .or-text { white-space: normal; text-align: center; }
@@ -1560,9 +1463,10 @@ nav.scrolled {
 
 /* Accessibility. */
 @media (prefers-reduced-motion: reduce) {
-  .freerouter-cta { transition: none; }
-  .freerouter-cta:hover { transform: none; }
-  .freerouter-cta .fr-model-live { animation: none; }
+  .ci-cta { transition: none; }
+  .ci-cta:hover { transform: none; }
+  .or-cta { transition: none; }
+  .or-cta:hover { transform: none; }
 }
 /* ── Freebuff sponsored leaderboard banner (2026-08-23) ────────────── */
 .fb-adbar {

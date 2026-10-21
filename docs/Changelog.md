@@ -1,5 +1,25 @@
 📋 Changelog 📋
 
+📅 21.10.26 - Version 1.0.108
+
+🆕 New Features
+🆕 Live Crypto Market Data: A keyless CoinGecko server is now in the MCP marketplace, so you can ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, list the top coins by trading volume, or pull a 30 day price history. No account, no API key and nothing to install, and it only reads market data, so there is nothing to approve before it answers.
+🆕 CoinGecko Pro Sign-in: The paid CoinGecko endpoint is available too and authenticates through the browser, so the higher tier of market data can be reached without pasting a key by hand.
+🆕 Two More Search Engines: Exa and Firecrawl join the search engine setup, and a page that cannot be read (a blocked request or a script-only shell) is now retried through the fallback reader instead of coming back empty.
+🆕 External Servers That Publish Their Own Steps: A marketplace server whose tools form a multi step sequence is now walked in the order it declares, one step per round, instead of the first call ending the turn.
+
+🔄 Improvements & Changes
+🔄 Tool Arguments Written As Prose: When a tool call arrives with its arguments written as prose, they are now shaped to the schema the server published, so the call goes through instead of being refused.
+🔄 A Tool Reporting Completion Counts: A server that answers a call with a completion status is now treated as successful evidence rather than a failure.
+🔄 Refused Tool Calls Say Why: A tool call that cannot be dispatched is now refused with the reason and the correction, instead of being dropped without a reason.
+🔄 Reasoning Effort Is Resolved Once: The effort level and the specification behind it now come from the same place, so a cached value can no longer disagree with the model it was chosen for.
+🔄 Date Ranges Are Checked Before They Are Sent: A request whose date window the service cannot serve is now caught before it is sent and answered from the range the service can serve, instead of coming back as a refusal.
+
+🐛 Bug Fixes
+🐛 A Number Argument Is No Longer Overwritten With A Date: A request argument whose schema says it takes a number is now left as the model set it, instead of being replaced by a timestamp.
+🐛 The Overflow Menu No Longer Hangs: The menu now closes from the position of the pointer rather than from the event target.
+🐛 Expired Mail Accounts Say So: When a mail account can no longer be reached, the assistant asks you to sign in again and keeps the quoted sender scoped to that account.
+
 📅 19.10.26 - Version 1.0.107
 
 🆕 New Features

@@ -2,7 +2,7 @@
 
 > Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs entirely on your machine and never forgets a project, preference, or decision.
 >
-> **Start for $0**, FreeRouter is a totally free API (no subscription, no credits) and includes the latest Qwen 3.8 Max. Pair it with Sorana and put the agentic AI to work before adding anything else.
+> **Start for $0**, OpenRouter's free tier gives you a free API key (no subscription, no credits) and auto-picks the best free model for every request. Pair it with Sorana and put the agentic AI to work before adding anything else.
 
 ---
 
@@ -227,11 +227,11 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Visual knowledge canvas | AI-organised 2D canvas | Manual (Obsidian Canvas) | Chat only |
 | Chat with documents | Workspace-wide RAG indexing | Plugin required | Project uploads + per-session |
 | Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
-| Tool integrations | Built-in MCP servers incl. ListenBrainz music history, plus ToolForest with 30+ toolkits over one connection | No native AI agents | Connector marketplaces (paid) |
+| Tool integrations | Built-in MCP servers incl. ListenBrainz music history, plus ToolForest with 30+ toolkits over one connection and keyless CoinGecko crypto market data | No native AI agents | Connector marketplaces (paid) |
 | Calendar & Scheduling | Manage via chat | View-only plugins | Connector (paid) |
 | AI remembers you | Automatic memory across sessions, all categories free | Manual notes only | Basic free notes only; full memory paid |
 | Stays fast over months | Auto-compaction | No AI context | Varies (Claude yes, others no) |
-| Cost | Free app today (planned premium optional) + FreeRouter free API or your API keys (or free local) | Free + paid tiers | $8-200/month included |
+| Cost | Free app today (planned premium optional) + OpenRouter's free tier or your API keys (or free local) | Free + paid tiers | $8-200/month included |
 
 ---
 
@@ -239,7 +239,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 2. **Run** anywhere, desktop, USB, external drive
-3. **Choose a model**, use a free cloud model with your own API key (FreeRouter's free API or OpenRouter's free-tier cost nothing), or run local models through Lemonade, Ollama, or LM Studio
+3. **Choose a model**, use a free cloud model with your own API key (OpenRouter's free tier costs nothing), or run local models through Lemonade, Ollama, or LM Studio
 4. **Start working**, add your files, chat with documents, and let Sorana remember your projects and preferences
 
 **Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)  
@@ -259,10 +259,10 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 ### AI Model Options
 - **Built-in model** (~806 MB), works fully offline out of the box
 - **Recommended**: Llama 3.1 8B Instruct or higher for best results (requires 8 GB RAM / 4 GB VRAM)
-- **Cloud**: OpenAI, Mistral, Gemini, DeepSeek, NVIDIA, OpenRouter (free tiers available), FreeRouter (100% free API), no local hardware required
+- **Cloud**: OpenAI, Mistral, Gemini, DeepSeek, NVIDIA, OpenRouter (free tiers available), no local hardware required
 - **Local servers**: Lemonade (NPU acceleration), Ollama, LM Studio, Llama.cpp
 
-**30+ free cloud models** from every major provider, plus FreeRouter's 100% free API. Just add your API key.
+**30+ free cloud models** from every major provider, plus unlimited local models. Just add your API key.
 
 ---
 
@@ -306,6 +306,17 @@ Ask your assistant about years of music listening in plain language. Twelve tool
 
 Setup is one step: paste your ListenBrainz user token (found in your ListenBrainz profile settings) into the Configure dialog. Ask things like "my top 50 artists this year", "what am I playing right now", "export my full history", or "which artists did I love years ago but never play anymore".
 
+### CoinGecko (marketplace, new)
+
+Ask for crypto prices in plain language. The public CoinGecko endpoint needs no account, no API key and nothing to install, so it is one of the few marketplace servers you can add and use immediately.
+
+- **Live prices** — the current price of any coin in any supported currency
+- **Market cap and volume** — market capitalisation, 24 hour change and trading volume, plus the top coins by market cap or by volume
+- **Price history** — how a coin's price moved over a period such as the last 30 days
+- **Coin metadata** — name, symbol, rank and related details
+
+Setup is nothing at all: add CoinGecko from the marketplace and enable it for the agent. Ask things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", "Compare bitcoin and ethereum by market cap", or "List the top 10 coins by market cap". The server only reads market data, so there is nothing to approve before it answers. Sorana already accepts Bitcoin Cash donations, so you can check the price of the coin you already back.
+
 ### ToolForest (marketplace, new)
 
 ToolForest is a hosted MCP aggregator that gives you 30+ toolkits over a single remote connection, with nothing to install. Add your API key, authorize the toolkits you want at [app.toolforest.io](https://app.toolforest.io), and Sorana discovers the available tools step by step before calling them. ToolForest tools are separate from the built-in Gmail, Calendar and ListenBrainz servers above.
@@ -339,7 +350,7 @@ Marketplace entries for Google Drive, GitHub, Slack, PostgreSQL and movies are u
 3. Right-click the agent title → **Chat**
 4. Give instructions in plain language, files, web, email, all accessible
 
-Add external servers from the marketplace: the ToolForest aggregator for 30+ toolkits over one connection, or single-service servers for a specific tool.
+Add external servers from the marketplace: the ToolForest aggregator for 30+ toolkits over one connection, the keyless CoinGecko feed for crypto market data, or single-service servers for a specific tool.
 
 ---
 
