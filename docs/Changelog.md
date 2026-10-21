@@ -4,6 +4,8 @@
 
 🆕 New Features
 🆕 Live Crypto Market Data: A keyless CoinGecko server is now in the MCP marketplace, so you can ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, list the top coins by trading volume, or pull a 30 day price history. No account, no API key and nothing to install.
+🆕 Every ToolForest Toolkit Listed: The MCP marketplace's ToolForest server now shows a worked example for each toolkit it fronts, from Gmail and Google Sheets to GDELT, prediction markets, Oura and Anki, so you can see what to ask before you authorise anything.
+🔄 News Questions That Come Back With Headlines: The GDELT examples now ask for the most-reported event and the outlets that covered it, instead of a daily count that carried no headline, no outlet and no place.
 🆕 CoinGecko Pro Sign-in: The paid CoinGecko endpoint is available too and authenticates through the browser, so the higher tier of market data can be reached without pasting a key by hand.
 🆕 Two More Search Engines: Exa and Firecrawl join the search engine setup, and a page that cannot be read (a blocked request or a script-only shell) is now retried through the fallback reader instead of coming back empty.
 🆕 External Servers That Publish Their Own Steps: A marketplace server whose tools form a multi step sequence is now walked in the order it declares, one step per round, instead of the first call ending the turn.

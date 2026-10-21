@@ -333,8 +333,8 @@ Toolkits grouped in domains:
 
 - **Google Workspace** — Docs, Sheets, Slides, Gmail, Calendar, Tasks, Drive
 - **Music** — ListenBrainz, MusicBrainz, Last.fm, Apple Music
-- **Fitness** — Fitbit, Oura Ring, Google Health
-- **Prediction Markets** — Polymarket, Kalshi, Gemini, Metaculus, Rothera
+- **Health & Fitness** — Fitbit, Oura Ring, Google Health
+- **Prediction Markets** — Kalshi, Polymarket, Gemini, Metaculus, Rothera
 - **Social** — X (Twitter), Reddit
 - **Learning** — Anki, Mochi
 - **Planet Earth** — GDELT, Geo, Earth Observation, Google Earth Engine
@@ -342,8 +342,11 @@ Toolkits grouped in domains:
 
 Highlights:
 
-- **Polymarket** — public prediction market odds and price history. No account needed.
-- **GDELT** — rolling global news and machine-coded events with tone and geography. No API key needed.
+- **GDELT** — global news coverage and machine-coded events by place, actor, theme and tone, including the headlines and the outlets behind each event. No API key needed.
+- **Kalshi and Polymarket** — public prediction market odds and price history. No account needed.
+- **Earth Observation** — Sentinel satellite imagery of an area over time, so you can ask what changed on a coastline.
+
+Ask things like "Summarize the most recent emails across all my connected Gmail accounts", "Using GDELT, what is the most-reported event in Iran this week, and which outlets covered it?", "According to my Oura data, am I recovered enough to train hard today?", or "What moved this Kalshi market, and when?".
 
 ### Other marketplace servers
 
