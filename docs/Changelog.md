@@ -3,7 +3,7 @@
 📅 21.10.26 - Version 1.0.108
 
 🆕 New Features
-🆕 Live Crypto Market Data: A keyless CoinGecko server is now in the MCP marketplace, so you can ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, list the top coins by trading volume, or pull a 30 day price history. No account, no API key and nothing to install, and it only reads market data, so there is nothing to approve before it answers.
+🆕 Live Crypto Market Data: A keyless CoinGecko server is now in the MCP marketplace, so you can ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, list the top coins by trading volume, or pull a 30 day price history. No account, no API key and nothing to install.
 🆕 CoinGecko Pro Sign-in: The paid CoinGecko endpoint is available too and authenticates through the browser, so the higher tier of market data can be reached without pasting a key by hand.
 🆕 Two More Search Engines: Exa and Firecrawl join the search engine setup, and a page that cannot be read (a blocked request or a script-only shell) is now retried through the fallback reader instead of coming back empty.
 🆕 External Servers That Publish Their Own Steps: A marketplace server whose tools form a multi step sequence is now walked in the order it declares, one step per round, instead of the first call ending the turn.

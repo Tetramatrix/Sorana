@@ -315,7 +315,7 @@ Ask for crypto prices in plain language. The public CoinGecko endpoint needs no 
 - **Price history** — how a coin's price moved over a period such as the last 30 days
 - **Coin metadata** — name, symbol, rank and related details
 
-Setup is one step: add CoinGecko from the marketplace and enable it for the agent. Ask things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", "Compare bitcoin and ethereum by market cap", or "List the top 10 coins by market cap". The server only reads market data, so there is nothing to approve before it answers.
+Setup is one step: add CoinGecko from the marketplace and enable it for the agent. Ask things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", "Compare bitcoin and ethereum by market cap", or "List the top 10 coins by market cap".
 
 ### ToolForest (marketplace, new)
 
