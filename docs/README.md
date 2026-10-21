@@ -315,7 +315,7 @@ Ask for crypto prices in plain language. The public CoinGecko endpoint needs no 
 - **Price history** — how a coin's price moved over a period such as the last 30 days
 - **Coin metadata** — name, symbol, rank and related details
 
-Setup is nothing at all: add CoinGecko from the marketplace and enable it for the agent. Ask things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", "Compare bitcoin and ethereum by market cap", or "List the top 10 coins by market cap". The server only reads market data, so there is nothing to approve before it answers. Sorana already accepts Bitcoin Cash donations, so you can check the price of the coin you already back.
+Setup is nothing at all: add CoinGecko from the marketplace and enable it for the agent. Ask things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", "Compare bitcoin and ethereum by market cap", or "List the top 10 coins by market cap". The server only reads market data, so there is nothing to approve before it answers.
 
 ### ToolForest (marketplace, new)
 
