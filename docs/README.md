@@ -346,7 +346,7 @@ Highlights:
 - **Kalshi and Polymarket** — public prediction market odds and price history. No account needed.
 - **Earth Observation** — Sentinel satellite imagery of an area over time, so you can ask what changed on a coastline.
 
-Ask things like "Summarize the most recent emails across all my connected Gmail accounts", "Using GDELT, what is the most-reported event in Iran this week, and which outlets covered it?", "According to my Oura data, am I recovered enough to train hard today?", or "What moved this Kalshi market, and when?".
+Ask things like "Using ToolForest, summarize the most recent emails across all my connected Gmail accounts", "Using ToolForest, which event did GDELT report most in Iran this week, and which outlets covered it?", "Using ToolForest, according to my Oura data, am I recovered enough to train hard today?", or "Using ToolForest, what moved this Kalshi market, and when?". Every one of them names ToolForest, because that is the part the assistant cannot infer from the question alone.
 
 ### Other marketplace servers
 
