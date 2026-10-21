@@ -308,14 +308,14 @@ Setup is one step: paste your ListenBrainz user token (found in your ListenBrain
 
 ### CoinGecko (marketplace, new)
 
-Ask for crypto prices in plain language. The public CoinGecko endpoint needs no account, no API key and nothing to install, so it is one of the few marketplace servers you can add and use immediately.
+Ask for crypto prices in plain language. The public CoinGecko endpoint needs no account and no API key, so you can add it from the marketplace and start asking straight away.
 
 - **Live prices** — the current price of any coin in any supported currency
 - **Market cap and volume** — market capitalisation, 24 hour change and trading volume, plus the top coins by market cap or by volume
 - **Price history** — how a coin's price moved over a period such as the last 30 days
 - **Coin metadata** — name, symbol, rank and related details
 
-Setup is nothing at all: add CoinGecko from the marketplace and enable it for the agent. Ask things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", "Compare bitcoin and ethereum by market cap", or "List the top 10 coins by market cap". The server only reads market data, so there is nothing to approve before it answers.
+Setup is one step: add CoinGecko from the marketplace and enable it for the agent. Ask things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", "Compare bitcoin and ethereum by market cap", or "List the top 10 coins by market cap". The server only reads market data, so there is nothing to approve before it answers.
 
 ### ToolForest (marketplace, new)
 
@@ -350,7 +350,7 @@ Marketplace entries for Google Drive, GitHub, Slack, PostgreSQL and movies are u
 3. Right-click the agent title → **Chat**
 4. Give instructions in plain language, files, web, email, all accessible
 
-Add external servers from the marketplace: the ToolForest aggregator for 30+ toolkits over one connection, the keyless CoinGecko feed for crypto market data, or single-service servers for a specific tool.
+Add external servers from the marketplace: the ToolForest aggregator for 30+ toolkits over one connection, the keyless CoinGecko server for crypto market data, or single-service servers for a specific tool.
 
 ---
 
