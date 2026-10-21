@@ -202,6 +202,14 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 - "Scan this letter and extract the important details to my knowledge base"
 - "Search my archives for the insurance policy and summarize the coverage"
 
+### Crypto & Market Data
+- "What is bitcoin's price in USD right now?"
+- "What is Bitcoin Cash trading at right now?"
+- "Show ethereum's 24h change and market cap"
+- "Compare bitcoin and ethereum by market cap"
+- "List the top 10 coins by market cap"
+- "Show bitcoin's price over the last 30 days"
+
 ### Workflows & Pipelines
 - "Draft a project report, review it for gaps, and polish the final version"
 - "Research this topic, write a blog post, and have a second agent fact check every claim"
@@ -308,7 +316,7 @@ Setup is one step: paste your ListenBrainz user token (found in your ListenBrain
 
 ### CoinGecko (marketplace, new)
 
-Ask for crypto prices in plain language. The public CoinGecko endpoint needs no account and no API key, so you can add it from the marketplace and start asking straight away.
+Ask for crypto prices in plain language. Every price comes straight from CoinGecko's API, so it is today's number rather than one the model remembered. The endpoint needs no account and no API key, so you can add it from the marketplace and start asking straight away.
 
 - **Live prices** — the current price of any coin in any supported currency
 - **Market cap and volume** — market capitalisation, 24 hour change and trading volume, plus the top coins by market cap or by volume
