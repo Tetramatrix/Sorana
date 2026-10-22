@@ -5,13 +5,13 @@
     <link>https://tetramatrix.github.io/Sorana/</link>
     <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows and Linux.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0200</lastBuildDate>
     <item>
       <title>Sorana 1.0.108</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
       <guid isPermaLink="false">sorana-1.0.108</guid>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 +0200</pubDate>
-      <description>Live crypto market data in chat: a keyless CoinGecko server joins the MCP marketplace, so you can ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, and pull price history with no account and no key.</description>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0200</pubDate>
+      <description>Live crypto market data in chat, and a model change that now reaches the open chat: a keyless CoinGecko server joins the MCP marketplace for prices in any currency, while changing which model a role uses takes effect straight away, a hidden provider stays hidden, and a slow server is no longer waited for a third time.</description>
     </item>
     <item>
       <title>Sorana 1.0.102</title>

@@ -1,6 +1,6 @@
 📋 Changelog 📋
 
-📅 21.10.26 - Version 1.0.108
+📅 22.10.26 - Version 1.0.108
 
 🆕 New Features
 🆕 Live Crypto Market Data: A keyless CoinGecko server is now in the MCP marketplace, so you can ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, list the top coins by trading volume, or pull a 30 day price history. No account, no API key and nothing to install.
@@ -16,11 +16,26 @@
 🔄 Refused Tool Calls Say Why: A tool call that cannot be dispatched is now refused with the reason and the correction, instead of being dropped without a reason.
 🔄 Reasoning Effort Is Resolved Once: The effort level and the specification behind it now come from the same place, so a cached value can no longer disagree with the model it was chosen for.
 🔄 Date Ranges Are Checked Before They Are Sent: A request whose date window the service cannot serve is now caught before it is sent and answered from the range the service can serve, instead of coming back as a refusal.
+🔄 A Chain Costs Less: A multi step server chain no longer spends a whole model round deciding each step, so a longer chain fits inside one turn and costs less to run.
+🔄 A Server Is Asked For Its Tools The Way It Expects: The app now asks a server for its tool names in the way that server documents, and shows the model the individual tools it can call, so the right tool is named instead of a vague step that goes nowhere.
+🔄 One Place For Every Search Engine: Adding a search engine is now one entry in one place, and the setup, the settings screen and the assistant all read from it, so a new engine arrives with its own key field instead of a permanent "No key" that cannot be cleared.
+🔄 A Failing Engine Says Why: An engine that hit its quota or broke is now told apart from one that simply found nothing, and the reason is named, so one bad engine no longer empties the whole engine report.
 
 🐛 Bug Fixes
 🐛 A Number Argument Is No Longer Overwritten With A Date: A request argument whose schema says it takes a number is now left as the model set it, instead of being replaced by a timestamp.
 🐛 The Overflow Menu No Longer Hangs: The menu now closes from the position of the pointer rather than from the event target.
 🐛 Expired Mail Accounts Say So: When a mail account can no longer be reached, the assistant asks you to sign in again and keeps the quoted sender scoped to that account.
+🐛 A Live Question Keeps Its Web Tools: A question the assistant had already recognised as needing live information no longer loses its search tools on the way to the answer, so live data questions are answered from live data.
+🐛 Code Sent To A Sandbox Now Runs: Code handed to a server that runs it is now sent in the shape that server documents, so the answer comes from the market data you asked for instead of a web search standing in for it.
+🐛 A Model Change Reaches The Open Chat: Changing which model a role uses now takes effect in a chat you already have open, instead of the old model answering that turn and the turn falling back when it failed.
+🐛 A Retired Provider Is Gone From The List: A provider that no longer exists is no longer offered as a backend and no longer ships in the default settings, and a key you already saved for it is kept rather than deleted.
+🐛 A Hidden Provider Stays Hidden: A provider you collapsed is still collapsed after the app is reopened, including the models that joined it in the meantime.
+🐛 Your Backup Model Stays At The Top: The model holding your backup and spare slots now sorts with the other role models instead of sinking down among the ordinary ones.
+🐛 A Refusal No Longer Locks The Server Out: When a server refuses one call over a bad argument, the app no longer treats that as the server being broken, so your corrected retry is not refused in turn.
+🐛 The Arguments Are Checked Before The Call Goes Out: A call is now checked against the arguments the server published, including the ones nested inside it, and a call the app turned down is not sent to the server a moment later anyway.
+🐛 A Blocked Answer Is Not Replaced: An answer that was held back is now kept with a note saying what was missing, instead of a different answer taking its place.
+🐛 The Sources Match The Answer You See: When a draft is replaced, the sources listed underneath are recomputed for the text that ships, so the citations describe the answer in front of you.
+🐛 A Slow Server Is Waited For Twice, Not Three Times: A server that keeps timing out is given two chances in a turn rather than three, and the closing message now names the server, the tool, how long each wait took and the request id to quote.
 
 📅 19.10.26 - Version 1.0.107
 
