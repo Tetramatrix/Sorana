@@ -1,5 +1,30 @@
 📋 Changelog 📋
 
+📅 22.10.26 - Version 1.0.109
+
+🆕 New Features
+🆕 The Turn's Outcome Is Recorded: The agent trace now carries how a turn ended and how each tool fared within it, so a run that failed or a tool that misfired is visible instead of looking like a turn that did nothing.
+🆕 Roles Follow The Settings You Just Changed: A model role assigned in the Model Manager now reaches the next turn of a chat that is already open, and the settings behind the roles are refreshed on their own, so a turn no longer runs on the model you replaced.
+
+🔄 Improvements & Changes
+🔄 The Model Manager Opens Faster: The model list now paints before the embedding panel is filled in, a burst of background refreshes is merged into a single rebuild, a rebuild no longer rediscovers the embeddings it already knows, and a refresh arriving during a rebuild waits for it instead of starting another one.
+🔄 The Model Manager Keeps Your View: A refresh no longer resets the sort order or silently re-expands a collapsed group, expanding a family keeps the row you clicked on screen, and models with equal names now come back in the same catalogue order every time.
+🔄 Every Group Header Works: Each visible group header in the model list now expands and collapses its group, not only the first one of a provider.
+🔄 The Collapse State Belongs To The Provider: Which groups are expanded is remembered per provider instead of per row, and the backup role row now stays pinned with the other role rows.
+🔄 A Server You Switched Off Is No Longer Advertised: After you turn a server off, it is no longer described in the assistant's instructions and no longer listed to the planner, so the assistant stops claiming a capability it does not have.
+🔄 The Calendar Is Only Loaded When It Matters: Your calendar is fetched only when the question is about your calendar, the fetch is capped so a slow service cannot hold up the turn, and a calendar that times out keeps the last known briefing instead of serving an empty one.
+🔄 A Remote Refusal Is Not Waited For A Third Time: A service that has already refused a call twice is not waited on again, and the refusal now names the service, the number of attempts and the request id the service returned.
+🔄 The Retired Provider Is Gone: A provider that no longer exists is no longer offered in the Model Manager and no longer shipped in the configuration, while a key you had already saved for it is left where it is.
+🔄 The Community Edition Opens Its Support Page On Close: Closing the free edition opens the support page for the brand you are using, and the paid editions open nothing at all.
+🔄 A Web Research Turn Can Read The Pages It Found: A research turn now has enough allowance to open the pages its search turned up, so the claims it makes can be checked against the page itself and not only against the search result.
+
+🐛 Bug Fixes
+🐛 An Answer Is No Longer Replaced By A Shorter One: A long answer that had been reviewed and accepted could still be overwritten at the last moment by a short earlier draft, and the turn reached you as one line instead of the answer that was ready.
+🐛 A Follow-Up Question Can Search Again: A question that followed a web research turn could lose the search tools entirely, leaving the assistant with no way to look anything up and answering that it had found nothing. The follow-up keeps the search tools and can continue the research.
+🐛 A Model Manager Role Change Reaches The Open Chat: Assigning a model role while a chat is open now takes effect on the next turn, instead of the turn quietly running on the model you had replaced.
+🐛 A Converted Request Goes Out Converted: A request whose value had already been checked and converted could still be sent in its original form, and a service refusing a request was treated as an unreachable connection, so the assistant's own corrected retry was refused as well.
+🐛 A Palette Colour Is A Colour: A colour taken from the palette is no longer shown as a success state, so a colour never claims that something worked when it did not.
+
 📅 21.10.26 - Version 1.0.108
 
 🆕 New Features
