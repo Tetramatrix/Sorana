@@ -15,7 +15,6 @@
 🔄 The Calendar Is Only Loaded When It Matters: Your calendar is fetched only when the question is about your calendar, the fetch is capped so a slow service cannot hold up the turn, and a calendar that times out keeps the last known briefing instead of serving an empty one.
 🔄 A Remote Refusal Is Not Waited For A Third Time: A service that has already refused a call twice is not waited on again, and the refusal now names the service, the number of attempts and the request id the service returned.
 🔄 The Retired Provider Is Gone: A provider that no longer exists is no longer offered in the Model Manager and no longer shipped in the configuration, while a key you had already saved for it is left where it is.
-🔄 The Community Edition Opens Its Support Page On Close: Closing the free edition opens the support page for the brand you are using, and the paid editions open nothing at all.
 🔄 A Web Research Turn Can Read The Pages It Found: A research turn now has enough allowance to open the pages its search turned up, so the claims it makes can be checked against the page itself and not only against the search result.
 
 🐛 Bug Fixes
