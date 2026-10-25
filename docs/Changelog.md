@@ -1,5 +1,31 @@
 📋 Changelog 📋
 
+📅 25.10.26 - Version 1.0.110
+
+🆕 New Features
+🆕 The Planner Knows Every Tool Of An External Server: A server you added from the marketplace is no longer limited to the first tool the planner noticed, every tool it publishes is now offered, so a server with several tools can be used to its full extent.
+🆕 An Empty Response Becomes A Typed Refusal: When a model returns nothing useful, the assistant now answers with a typed refusal instead of an empty or confusing reply, so you can see that nothing was produced rather than guessing.
+🆕 A Side-Effect Claim Is Bound To Its Turn Before Publishing: A claim that something was written or changed is now tied to the turn that actually did it, so a claim can no longer outrun the work behind it.
+🆕 A Delivered Verdict Is Bound To The Artifact It Graded: A verdict is now attached to the specific answer or artifact it judged, so the grade and the thing it grades stay together.
+
+🔄 Improvements & Changes
+🔄 A Finished Goal No Longer Hijacks The Next Turn: A goal that has already finished no longer carries over into the following question, and the planner now has a sense of the current time, so plans that depend on now are made against the right moment.
+🔄 Counted Charts And Export Asks Reach Their ListenBrainz Tools: A request for a counted chart or an export is now routed to the ListenBrainz tool that produces it, instead of being sent to a generic path.
+🔄 The Router Decision And External Tool Arguments Are Restored: The router's decision is restored after a detour, and the arguments for an external tool are planned from its own schema, so the call goes out correctly shaped.
+🔄 Proactive Context Providers Are Gated On Turn Relevance: Background context that is not relevant to the current question is no longer pulled in, keeping the turn focused and avoiding stray information.
+🔄 A Successful Object Tool Result Reaches The Evidence Cache: A tool that returns a structured result now has that result recorded as evidence, so later steps can rely on what it found.
+
+🐛 Bug Fixes
+🐛 A Document Turn Is Answered From Its Documents: A question about a document is now answered from the document's own content instead of from pasted text, so the answer reflects what the document says.
+🐛 A Mixed Code And Document Turn Keeps Both Lanes: A turn that mixes code and a document no longer drops one of the two, both are handled in the same turn.
+🐛 Web Research No Longer Publishes A Weak Or Non-Answer: A web research turn that gathered too little grounding, or found nothing, no longer publishes a weak or empty answer, the publication gate now holds it back.
+🐛 A Pasted Document No Longer Arms Web Research: Pasting a document no longer triggers a web research run, so a paste is treated as content to work with rather than a topic to search.
+🐛 A File Write Claim Needs A Receipt, Not A Narration: A claim that a file was written now requires the actual receipt of the write, so a narrated but unwritten change can no longer pass as done.
+🐛 Conversation History Is Reloaded After A Restart Or Thread Switch: Reopening the app or switching threads now reloads the conversation history, so you are not left looking at a stale or empty view.
+🐛 A Tool Result's Own Success Flag Is Read, Not Inferred: Whether a tool call succeeded is now taken from the tool's own report instead of being guessed, so a misclassified result can no longer flip the outcome.
+🐛 An Owed Explorer Turn Stays Alive Through Retry And Escalation: A research step that still owes work no longer dies during retry or escalation, it runs to completion instead of stopping early.
+🐛 A Voided Verdict Says So In The Footer And The Trace: When a verdict is voided, that is now stated in the footer and the trace, so a cancelled judgement is visible instead of looking like a valid one.
+
 📅 22.10.26 - Version 1.0.109
 
 🆕 New Features
