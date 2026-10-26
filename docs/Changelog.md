@@ -8,11 +8,7 @@
 🆕 A Turn Has One Deadline: A single deadline now propagates through a turn, and a service that is already too late fails fast instead of being waited on, so a slow upstream can no longer stall the whole turn.
 
 🔄 Improvements & Changes
-🔄 A Live Provider Is No Longer Skipped By A Stale Cooldown: A provider that is actually available is no longer skipped because a cooldown from an earlier failure is still recorded, so a live service is used instead of being passed over.
-🔄 A Pasted Document Stays In Its Own Scope: A document you paste no longer pulls in a web research run, and its routing stays confined to its own scope, so a paste is treated as content to work with.
-🔄 A Refused Tool Is Reported And Never Advertised: A tool that is refused or switched off is now reported as such and is no longer listed to the planner, so the assistant stops claiming a capability it does not have.
 🔄 A Refused Gateway Call Settles And Is Not Re-Dispatched: A gateway call that is refused now settles and is never re-dispatched, so a refused call no longer loops.
-🔄 A Failed Code Step Is Repaired With The Server's Own Diagnostic: When a code step fails, the server's own diagnostic is now used to repair it, so a failed step is recovered instead of being abandoned.
 🔄 A Recovered Code Argument No Longer Carries A Stray Word: A code argument recovered from prose no longer carries an unrelated English word, so the recovered call runs as intended.
 
 🐛 Bug Fixes
