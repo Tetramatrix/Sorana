@@ -1,5 +1,27 @@
 📋 Changelog 📋
 
+📅 26.10.26 - Version 1.0.111
+
+🆕 New Features
+🆕 External Tools Are Called With Their Own Signature: A tool published by an external server is now called with the parameter names and types that server documents, and an arity the server refuses is learned from the refusal, so the call goes out correctly shaped instead of being rejected and retried.
+🆕 A Tool Call Is Traced From Request To Result: A tool call can now be followed from request to result, because the turn's trace is carried on every step instead of being dropped along the way.
+🆕 A Turn Has One Deadline: A single deadline now propagates through a turn, and a service that is already too late fails fast instead of being waited on, so a slow upstream can no longer stall the whole turn.
+
+🔄 Improvements & Changes
+🔄 A Live Provider Is No Longer Skipped By A Stale Cooldown: A provider that is actually available is no longer skipped because a cooldown from an earlier failure is still recorded, so a live service is used instead of being passed over.
+🔄 A Pasted Document Stays In Its Own Scope: A document you paste no longer pulls in a web research run, and its routing stays confined to its own scope, so a paste is treated as content to work with.
+🔄 A Refused Tool Is Reported And Never Advertised: A tool that is refused or switched off is now reported as such and is no longer listed to the planner, so the assistant stops claiming a capability it does not have.
+🔄 A Refused Gateway Call Settles And Is Not Re-Dispatched: A gateway call that is refused now settles and is never re-dispatched, so a refused call no longer loops.
+🔄 A Failed Code Step Is Repaired With The Server's Own Diagnostic: When a code step fails, the server's own diagnostic is now used to repair it, so a failed step is recovered instead of being abandoned.
+🔄 A Recovered Code Argument No Longer Carries A Stray Word: A code argument recovered from prose no longer carries an unrelated English word, so the recovered call runs as intended.
+
+🐛 Bug Fixes
+🐛 A Successful Tool Result Now Reaches The Evidence Cache: A tool that returns a structured result now has that result recorded as evidence, so later steps can rely on what it found.
+🐛 A Refused Tool No Longer Loops: Fixed a refused dynamic tool being re-advertised and re-dispatched.
+🐛 A Live Provider Is No Longer Skipped: Fixed a stale quota cooldown skipping a provider that was actually available.
+🐛 A Pasted Document No Longer Arms Web Research: Fixed pasting a document triggering a web research run.
+🐛 A Failed Code Step No Longer Stalls: Fixed a failed code step not being repaired with the server's diagnostic.
+
 📅 25.10.26 - Version 1.0.110
 
 🆕 New Features
