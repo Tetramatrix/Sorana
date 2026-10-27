@@ -1,5 +1,21 @@
 📋 Changelog 📋
 
+📅 27.10.26 - Version 1.0.112
+
+🆕 New Features
+🆕 Autonomy Depth Presets For Each Agent: Each agent now has an Autonomy depth setting (Focused, Balanced, Deep) controlling how many tool calls, tool rounds, and how much time a turn may spend. Leave it blank to inherit the runtime default, or type your own values.
+🆕 Per Memory Kind Follow Switches For Workspace Agents: A workspace agent can now follow or ignore the global background, procedures, and preferences memories independently, so switching all three off fully isolates that agent from the shared store while its own memories still load.
+
+🔄 Improvements & Changes
+🔄 Memory Preferences Now Have Their Own Card: The follow global preferences toggle moved out of Agent behavior into a dedicated Memory preferences card that is always shown, disabled on the system agent, so there is no longer a duplicate or hidden switch.
+🔄 Stored Style Rules Survive Long Conversations: Style rules you saved (such as "no em-dashes") are now kept even when a long conversation trims older context, so the assistant keeps following them instead of forgetting.
+🔄 Recovery No Longer Re-Asks What You Already Gave: A recovery answer no longer asks again for the role, cover letter, changelog, or agent details you already provided in your message.
+
+🐛 Bug Fixes
+🐛 A Failed Turn Now Refuses Instead Of Shipping A Stub: When a turn fails its review several times in a row, the assistant now gives an explicit refusal instead of delivering a tiny leftover draft as though it were the answer.
+🐛 An Unreviewed Restored Draft Is No Longer Delivered: A draft brought back from a stash without passing review is no longer shipped as a degraded answer; the honest fallback is used instead.
+🐛 Copy No Longer Carries Citation Footers: Text copied from an answer no longer includes trailing citation footers.
+
 📅 26.10.26 - Version 1.0.111
 
 🆕 New Features
