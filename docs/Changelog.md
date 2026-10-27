@@ -1,5 +1,20 @@
 📋 Changelog 📋
 
+📅 28.10.26 - Version 1.0.113
+
+🆕 New Features
+🆕 A Research Turn Now Ends In A Dedicated Final Answer: After exploring, the assistant composes its reply in a separate step that has no tool access, so the answer you receive is a real reply instead of another round of tool calls.
+
+🔄 Improvements & Changes
+🔄 A Turn Now Publishes Only What It Verified: Audit style specifics are withheld unless at least one file was actually read and the search actually scanned something, so an answer no longer presents plausible but unverified details as fact.
+
+🐛 Bug Fixes
+🐛 A Codebase Audit No Longer Refuses On A Missing Server Entry: Asking an agent without an explicit codebase server entry to audit its codebase now works instead of being refused with a message pointing at a setting that does not exist.
+🐛 A Narrated Save With Leaked Tool JSON Is No Longer Shipped: An answer that narrated a file save while pasting raw tool call JSON, without ever reading or writing a file, is now rejected instead of being delivered.
+🐛 A Degraded Review No Longer Ships A Weak Answer: When the reviewer passes but the quality score is far below the shipped answer, the assistant now refuses instead of delivering a weak reply.
+🐛 A Correction After A False Save Promise Now Completes: When the assistant wrongly promised to save a memory it never stored, a follow up correction now runs to completion instead of failing review three times and falling back to a generic refusal.
+🐛 A Quality Verdict Returned As An Object Is Now Read Correctly: A verdict returned as an object is now coerced to its string before validation, so the quality check no longer drifts.
+
 📅 27.10.26 - Version 1.0.112
 
 🆕 New Features
