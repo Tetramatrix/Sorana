@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<noscript><meta http-equiv="refresh" content="0; URL=https://tetramatrix.github.io/Sorana/"></noscript>
+<script>
+(function(){
+  var stored=localStorage.getItem('theme');
+  if(stored){document.documentElement.setAttribute('data-theme',stored);}
+  else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches){
+    document.documentElement.setAttribute('data-theme','light');
+  }
+})();
+</script>
+
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
+     crossorigin="anonymous"></script>
+
+<title>Sorana: Desktop AI Knowledge Workspace & Agent Harness That Never Forgets</title>
+<meta name="description" content="Sorana is a free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It remembers your documents, chats, email and calendar — chat, dispatch agents, run local models.">
+<meta property="og:title" content="Sorana: Desktop AI Knowledge Workspace & Agent Harness That Never Forgets">
+<meta property="og:description" content="Sorana is a free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It remembers your documents, chats, email and calendar — chat, dispatch agents, run local models.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
+<meta property="og:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
+<meta property="og:image:alt" content="Sorana desktop AI knowledge workspace and agent harness">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Sorana">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sorana: Desktop AI Knowledge Workspace & Agent Harness That Never Forgets">
+<meta name="twitter:description" content="Sorana is a free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It remembers your documents, chats, email and calendar — chat, dispatch agents, run local models.">
+<meta name="twitter:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
+<meta name="twitter:image:alt" content="Sorana desktop AI knowledge workspace and agent harness">
+  <link rel="icon" type="image/png" href="logo_small.png">
+  <link rel="apple-touch-icon" href="logo_small.png">
+  <link rel="canonical" href="https://tetramatrix.github.io/Sorana/">
+  <link rel="alternate" type="application/rss+xml" title="Sorana releases" href="https://tetramatrix.github.io/Sorana/feed.xml">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0e0f11">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Sorana",
+      "operatingSystem": "Windows 11, Linux, MacOS",
+      "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
+      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data",
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
+      "offers": { "@type": "Offer", "price": "0" },
+      "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
+      "url": "https://tetramatrix.github.io/Sorana/",
+      "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
+      "alternateDownloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana",
+      "macosDownloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip",
+      "author": { "@type": "Organization", "name": "Tetramatrix" },
+      "sameAs": [
+        "https://github.com/Tetramatrix/Sorana",
+        "https://www.majorgeeks.com/files/details/sorana.html",
+        "https://www.softpedia.com/get/System/File-Management/Sorana.shtml"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Sorana a desktop AI knowledge workspace and agent harness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sorana is a personal desktop AI knowledge workspace and agent harness that runs natively on Windows, Linux, and MacOS as a portable executable. No browser, no account, no installation. It works on your local files and only uses cloud providers when you explicitly connect an API key. Inside the workspace, you can chat with documents, dispatch AI agents, manage email and calendar, browse the web, and run local models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Sorana cost anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sorana is free to download and use today; a planned premium option will add extra support while all current features remain available in the free tier. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my data leave my machine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By default, everything stays local. Sorana runs on your machine and stores its workspace data in a local .sorana/ folder. Cloud providers are only used when you explicitly connect an API key."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I run it from a USB stick?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sorana is a portable executable. Run it directly. No installation, no registry changes, no admin rights required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What models are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, and Alibaba. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which providers have free tiers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenRouter lets you start for free with openrouter/free (auto-picks the best model, no credit card). Nvidia offers multiple free models at build.nvidia.com. Mistral offers devstral-2512 for free at mistral.ai. Google offers Gemma models for free at ai.google.dev. All are free with no credit card required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to long conversations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sorana quietly condenses older parts of a conversation while keeping the important context, so conversations that span weeks or months stay fast and easy to continue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Sorana an agent harness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sorana is a private desktop agent harness: give it a goal and it plans the steps, dispatches specialized subagents in parallel with per-agent budgets, acts across files, web, email and calendar, and reviews its own work. It is model-agnostic across 25+ cloud providers plus local models, and everything runs on your machine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Sorana use multiple AI agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When a task needs it, Sorana dispatches specialized subagents, a web researcher, a code analyst, a fact-check or review agent, each with its own budget, running parts of the work in parallel. The workspace assembles and reviews the results before answering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I check crypto prices in chat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Add the CoinGecko server from the MCP Marketplace and then ask in plain language: \"What is bitcoin's price in USD right now?\" or \"What is Bitcoin Cash trading at right now?\". It needs no account and no API key. It covers prices, market caps, trading volumes and coin metadata for Bitcoin, Bitcoin Cash, Ethereum and thousands of coins besides."
+          }
+        }
+      ]
+    }
+  </script>
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <a href="index.html" class="nav-logo">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Sorana">
+      <circle cx="14" cy="14" r="12" stroke="#3ecfb2" stroke-width="1.5" fill="none"/>
+      <circle cx="14" cy="14" r="5" fill="#3ecfb2" opacity="0.8"/>
+      <circle cx="14" cy="5" r="2" fill="#3ecfb2"/>
+      <circle cx="21.5" cy="10" r="2" fill="#3ecfb2" opacity="0.5"/>
+      <circle cx="21.5" cy="18" r="2" fill="#3ecfb2" opacity="0.5"/>
+      <circle cx="14" cy="23" r="2" fill="#3ecfb2" opacity="0.3"/>
+      <circle cx="6.5" cy="18" r="2" fill="#3ecfb2" opacity="0.5"/>
+      <circle cx="6.5" cy="10" r="2" fill="#3ecfb2" opacity="0.5"/>
+    </svg>
+    Sorana
+    </a>
+    <span class="version-pill" title="Current Sorana version">v1.1.0</span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#features">Features</a>
+    <a href="#mcp">MCP</a>
+    <a href="#models">Models</a>
+    <a href="#providers">Providers</a>
+    <a href="#setup">Setup</a>
+    <a href="#discover">Discover</a>
+    <a href="support.html">Support</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
+  </div>
+  <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow-row">
+    <div class="hero-eyebrow">
+      AI Workspace · Agent Harness · Chat · Agents · Documents · Email · Calendar · Files · Web
+    </div>
+    <span class="version-pill" id="versionPill" title="Current Sorana version">v1.1.0</span>
+  </div>
+   <h1>The desktop AI knowledge workspace.<br><em>That never forgets.</em></h1>
+  <p class="hero-sub">
+    Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs on your machine and never forgets a project, preference, or decision.
+  </p>
+  <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 auto var(--space-8);max-width:520px;">
+    A portable desktop app: runs from a USB stick. No install, no account, no cloud sync.<br>    Available for Windows, Linux, and MacOS.
+  </p>
+  <div class="hero-actions">
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
+      <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
+    </a>
+    <a href="#features" class="btn-outline">See all features ↓</a>
+  </div>
+  <div style="display:flex;justify-content:center;margin:var(--space-4) 0 var(--space-4);">
+    <a class="or-cta" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
+      <span class="or-model">openrouter/free<span class="or-model-tag">100% FREE</span></span>
+      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; free API key, top-rated free models</span>
+      <span class="or-key-btn">Browse free models &rarr;</span>
+    </a>
+  </div>
+  <div style="display:flex;justify-content:center;margin:var(--space-4) 0;">
+    <a class="ci-cta" href="https://cheaperinference.com/?ref=IED5pC6EJx" target="_blank" rel="sponsored noopener noreferrer">
+      <span class="ci-model">GPT &middot; Claude &middot; Gemini &amp; more<span class="ci-model-tag">CHEAPER API</span></span>
+      <span class="ci-text"><span class="ci-provider">CheaperInference</span> &middot; pay less for the popular models</span>
+      <span class="ci-key-btn">Compare prices &rarr;</span>
+    </a>
+  </div>
+  <div class="hero-badge">
+    <span class="badge free"><span class="badge-dot"></span>$0/mo with free-tier models · weekly promos</span>
+  </div>
+  <div class="showcase" style="padding:0;max-width:1100px;">
+    <div class="screenshot-wrap">
+      <picture><source srcset="freemodels.webp" type="image/webp"><img src="freemodels.png"
+            alt="Sorana Model Manager showing 25+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
+           width="1140" height="820" fetchpriority="high"></picture>
+    </div>
+    <div class="floating-badges">
+      <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+      <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+      <span class="badge local"><span class="badge-dot"></span> Local</span>
+    </div>
+    <p class="screenshot-caption">
+      The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
+    </p>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-number">25+</span>
+      <span class="stat-label">$0/mo with free-tier models · weekly promos</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">25+</span>
+      <span class="stat-label">Providers</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">∞</span>
+      <span class="stat-label">Local Models</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Local &amp; Private</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW SORANA WORKS -->
+<section class="section" id="how-it-works">
+  <div class="section-header">
+    <h2>How Sorana <em>works.</em></h2>
+    <p>Give your workspace a goal. This is the harness loop: Sorana plans the work, dispatches specialized subagents, web research, and code analysis, acts across your files, email, calendar, and knowledge base, then reviews the results. All on your machine.</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Plan</h3>
+      <p>Breaks your goal into ordered steps, picks the right tools and models for each part, and decides what can run in parallel.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Dispatch</h3>
+      <p>Sends specialized subagents, web research, code analysis, fact-check or review, to work on parts in parallel, each with its own budget and scope.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Act</h3>
+      <p>Runs the steps across your files, web, email, and calendar. The primary agent stays in control while specialized workers handle their assigned parts.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <h3>Review &amp; correct</h3>
+      <p>Checks its own results, retries on failure, then assembles the final answer. You see the full trace of what was done and why.</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-4);margin-top:var(--space-10);">
+    <figure style="max-width:520px;margin:0;">
+      <picture><source srcset="Sorana_Multi_Agent_Pipeline.webp" type="image/webp"><img src="Sorana_Multi_Agent_Pipeline.png" alt="A primary agent dispatching specialized subagents" loading="lazy" width="640" height="400" style="width:100%;border-radius:8px;"></picture>
+      <figcaption style="text-align:center;margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);">A primary agent dispatching specialized subagents.</figcaption>
+    </figure>
+    <figure style="max-width:520px;margin:0;">
+      <picture><source srcset="Agent Process Trace.webp" type="image/webp"><img src="Agent Process Trace.png" alt="Every step planned, acted, and reviewed, traceable" loading="lazy" width="640" height="400" style="width:100%;border-radius:8px;"></picture>
+      <figcaption style="text-align:center;margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);">Every step planned, acted, and reviewed, traceable.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- AD SPOT A -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-6449563648591184"
+       data-ad-slot="8924662119"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- OVERVIEW -->
+<section class="section" id="overview">
+  <div class="section-header">
+    <h2>Your knowledge. <em>Your harness.</em> Your rules.</h2>
+    <p>Sorana is a personal desktop AI knowledge workspace and agent harness that learns from your documents, conversations, and actions and uses that memory to help you work across your files, web, email, and calendar.</p>
+  </div>
+  <div class="overview-grid">
+    <div class="overview-text">
+      <p><strong>Sorana is a desktop AI knowledge workspace. It learns from every conversation, file, and preference, building a lasting memory of your projects and thinking style. Open it tomorrow and it already knows where you left off. When a task needs it, Sorana dispatches specialized subagents to work in parallel then reviews the results before answering.</strong></p>
+      <p>Visualize your entire knowledge base on a spatial 2D canvas, chat with any document in plain language, and let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.</p>
+      <p><strong>Everything runs on your machine. Your data stays yours.</strong></p>
+    </div>
+    <div class="overview-video">
+      <iframe src="https://www.youtube.com/embed/IItG9BwXkqo" title="Sorana demo video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- AD SPOT B -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:468px;height:60px"
+       data-ad-client="ca-pub-6449563648591184"
+       data-ad-slot="6119369521"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- WHY SORANA -->
+<section class="section section-alt" id="why-sorana">
+  <div class="section-header">
+    <h2>Why Sorana? Because <em>your workspace should know you.</em></h2>
+    <p>Common AI frustrations and how Sorana solves them.</p>
+  </div>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <h3>Your AI can't think strategically</h3>
+      <p>Most AI does one thing at a time. Sorana breaks a goal into steps and dispatches specialized subagents, research, code, and fact-check when needed all from one workspace, with full review of the results.</p>
+    </div>
+    <div class="problem-card">
+      <h3>You re-explain yourself every day</h3>
+      <p>Sorana learns from every conversation, project, and preference. Next time you open it, you pick up exactly where you left off.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Your AI talks but can't act</h3>
+      <p>Tell Sorana what to do in plain language. It organises files, searches the web, and manages Gmail and Calendar from one conversation.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Your knowledge lives on someone else's server</h3>
+      <p>Sorana runs AI models locally. Your notes, files, and conversations never leave your machine unless you want them to.</p>
+    </div>
+  <div class="problem-card">
+    <h3>Long conversations get slow and expensive</h3>
+    <p>Sorana quietly condenses older parts of a conversation while keeping the important context, so even long-running projects stay fast and easy to continue.</p>
+  </div>
+  <div class="problem-card">
+    <h3>Your powerful model is wasted on simple tasks</h3>
+    <p>Sorana uses a fast model for simple steps and a stronger one when the task needs deeper thinking, so you get capable answers without wasting resources.</p>
+  </div>
+  <div class="problem-card"><h3>You need a different working style</h3>
+      <p>Choose a ready-made working style for research, writing, planning, or everyday work, then switch whenever the task changes.</p>
+  </div>
+    <div class="problem-card">
+      <h3>Half your knowledge is locked in PDFs and images</h3>
+      <p>Built-in OCR and vision AI make scanned documents, screenshots, and images searchable and ready to discuss.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Your AI is a black box</h3>
+      <p>Sorana makes its work visible: see what it searched, what it found, and why it reached an answer. You stay informed instead of treating the result like a black box.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORED: Freebuff (affiliate) -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <a class="fb-adbar" href="https://freebuff.com/?ref=ref-79a3f30b-4b6a-4572-a271-29a2eb21761b" target="_blank" rel="sponsored noopener noreferrer">
+    <span class="fb-adbody">
+      <span class="fb-adhead"><span class="fb-adlink">Free AI coding agent with GPT, DeepSeek, MiMo &amp; more. No subscription, no API key.</span></span>
+      <span class="fb-addesc">Freebuff runs in your terminal with GPT, Luna, MiMo 2.5, DeepSeek, GLM 5.2 and more. Zero setup, frontier models included.</span>
+      <span class="fb-adurl">https://<b>freebuff.com</b>/</span>
+    </span>
+    <span class="fb-adbtn">Try it free &rarr;</span>
+  </a>
+</div>
+
+<!-- CORE FEATURES -->
+<section class="section" id="features">
+  <div class="section-header">
+    <h2>A smarter way to <em>work.</em></h2>
+    <p>Everything you need in one workspace and agent harness: chat with documents, dispatch AI agents, manage email and calendar, browse the web, and run local models, all with persistent memory that learns from every interaction.</p>
+  </div>
+  <div class="features-grid" id="topFeatures">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <h3>Agent harness: parallel subagents with budgets</h3>
+      <p>When a task needs it, Sorana's harness loop dispatches specialized subagents, web research, code analysis, and fact-check to work in parallel, each with its own budget. The workspace reviews the results before you see the answer.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+      </div>
+      <h3>State-of-the-art desktop interface</h3>
+      <p>The entire desktop interface has been rebuilt in Rust and Tauri. The new architecture delivers a modern, scalable UI with crisp, pixel-perfect rendering. It features native window management, system tray integration, and native menus, all backed by exceptional speed and low resource usage.</p>
+    </div>
+    <div class="feature-card large formatted-chat-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+          <path d="M8 9h8M8 13h5"/>
+        </svg>
+      </div>
+      <h3>Command it in plain language</h3>
+      <p>Get clear, easy-to-scan answers instead of a wall of text. Sorana highlights what matters, keeps explanations separate from the final answer, and turns comparisons into clean, readable tables.</p>
+      <div class="formatted-chat-preview" aria-label="Example of Sorana formatted chat with a comparison table">
+        <div class="formatted-chat-toolbar" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span class="formatted-chat-title">Formatted response</span>
+        </div>
+        <div class="formatted-chat-message user">
+          <span class="formatted-chat-avatar">You</span>
+          <div class="formatted-chat-bubble">Compare the top options and show the key numbers.</div>
+        </div>
+        <div class="formatted-chat-message">
+          <span class="formatted-chat-avatar">S</span>
+          <div class="formatted-chat-bubble">
+            <strong>Here’s the short version:</strong> <span class="chat-accent">Option A</span> is the best balance of speed and cost. The full answer keeps headings, <span class="chat-code">inline code</span>, emphasis, and <a class="chat-link" href="#comparison">links</a> easy to scan.
+            <div class="formatted-chat-table-wrap">
+              <table class="formatted-chat-table">
+                <caption>Comparison table</caption>
+                <thead><tr><th scope="col">Option</th><th scope="col">Speed</th><th scope="col">Cost</th><th scope="col">Fit</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Option A</th><td class="chat-value">Fast</td><td>$0</td><td class="chat-good">Best</td></tr>
+                  <tr><th scope="row">Option B</th><td>Medium</td><td class="chat-warm">$8</td><td>Good</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/>
+        </svg>
+      </div>
+      <h3>The right AI for every task</h3>
+      <p>Sorana chooses a quick model for simple jobs and a more powerful one for difficult questions, keeping your workspace responsive while giving important work the attention it deserves.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/>
+        </svg>
+      </div>
+      <h3>A provider dies? Keep working.</h3>
+      <p>Assign a backup model per role and one global spare. When a provider hits its limit or goes down mid-chat, Sorana switches to a healthy alternative automatically and benches dead free tiers until they reset.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+        </svg>
+      </div>
+      <h3>Make the AI work your way</h3>
+      <p>Assign any model to five role slots: Primary (your main model), Quick (fast answers), Embed (indexes your documents for search), Vision (reads images and scans), and Reviewer (a second opinion on answer quality), then switch whenever the task changes. The Reviewer gives answer quality checks an independent second opinion on a different model, while everything else keeps running as before.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+        </svg>
+      </div>
+      <h3>Know what your AI can do</h3>
+      <p>Check whether a model can handle images, audio, or deeper reasoning before you depend on it. Choose with confidence instead of discovering limitations halfway through a task.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/>
+        </svg>
+      </div>
+      <h3>Memory that grows with you</h3>
+      <p>Sorana remembers the facts, preferences, and project details that matter to you. Keep knowledge tied to one project or available when you need it, so you spend less time repeating yourself.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/>
+        </svg>
+      </div>
+      <h3>Visual knowledge canvas</h3>
+      <p>See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+        </svg>
+      </div>
+      <h3>Ask about any file</h3>
+      <p>Ask questions about PDFs, documents, scans, and images in plain language. Sorana finds the useful information inside and makes your whole archive easier to search.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+        </svg>
+      </div>
+      <h3>Answers grounded in your knowledge</h3>
+      <p>Bring together documents, notes, and web pages in one searchable knowledge base. Sorana finds the right context automatically, so answers are based on your information, not guesswork.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/>
+        </svg>
+      </div>
+      <h3>Every answer shows its sources</h3>
+      <p>Web search results list which pages were actually used. Document answers show which files were retrieved. Sources are filtered by relevance so you only see what mattered, not noise.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/>
+        </svg>
+      </div>
+      <h3>Learns your preferences</h3>
+      <p>When you decline a proposed action, the agent remembers the pattern and adapts future suggestions to your preferences instead of repeating them.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+        </svg>
+      </div>
+      <h3>Projects canvas <span class="model-tag free">NEW</span></h3>
+      <p>A second canvas beside your Workspace: every project gets its own card, its own assistant, its own folder the app looks after, and its own notes. Right-click the canvas to start a project, right-click a card to chat with it. Each canvas keeps its own view, zoom, and grid density.</p>
+    </div><div class="feature-card ad-card">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-7g+ex-1i-2s+ay"
+         data-ad-client="ca-pub-6449563648591184"
+         data-ad-slot="9713451440"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  </div>
+  <div class="features-grid" id="moreFeatures" style="display:none;">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 2l-4 4-4-4"/>
+        </svg>
+      </div>
+      <h3>One chat, many helpful actions</h3>
+      <p>Ask Sorana to find a file, work with your email, or handle a connected task from one conversation. It brings the right information together while you stay in control, and your sessions remain available when you want to return to them.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="20" height="18" rx="2"/><path d="M2 10h20"/><path d="M8 2v4"/><path d="M16 2v4"/>
+        </svg>
+      </div>
+      <h3>Calendar &amp; Scheduling</h3>
+      <p>Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </div>
+      <h3>Model Manager</h3>
+      <p>Browse and compare models from 25+ providers and local sources. Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer), set a Backup or Spare per role for automatic failover, mark favorites, sort by any column, and probe capabilities before you commit.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <h3>Workflows that work for you</h3>
+      <p>Break larger tasks into connected steps with a simple visual builder. Start from a ready-made template or create your own workflow to keep the work moving.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/>
+        </svg>
+      </div>
+      <h3>Add new capabilities</h3>
+      <p>Browse and connect new tools and services from one central place. Extend what Sorana can do without digging through settings or configuration files.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 12h-4"/><path d="M2 12h4"/><path d="M12 2v4"/><path d="M12 22v-4"/><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>
+        </svg>
+      </div>
+      <h3>Health Dashboard</h3>
+      <p>A first-boot setup guide plus ongoing monitoring for the services Sorana relies on. Catch issues early, before they slow you down.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/>
+        </svg>
+      </div>
+      <h3>Obsidian export</h3>
+      <p>Use Sorana as your AI workspace, then export spatial groupings and graph relationships straight into your Obsidian vault.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <h3>Agent guardrails</h3>
+      <p>Oversee and control what your agent can do. Set permissions for tasks like writing files, reading data, or sending email, so the AI stays within the boundaries you define.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72 1.42-1.42"/>
+        </svg>
+      </div>
+      <h3>Themes</h3>
+      <p>Choose the look that fits your workflow. Pick from different color schemes and visual themes to make Sorana feel like yours.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+        </svg>
+      </div>
+      <h3>See every step Sorana takes</h3>
+      <p>Follow along as Sorana searches, reads, and builds an answer. See what it found and why it took that path, so you can trust the result or guide it another way.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/>
+        </svg>
+      </div>
+      <h3>Code Explorer</h3>
+      <p>Ask Sorana about any codebase. It searches source files, reads project files, and analyzes code on its own. Sorana recognizes when you ask about code and switches to its code analysis tools automatically. A mini wizard helps you set everything up, no configuration needed.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/>
+        </svg>
+      </div>
+      <h3>Read scans and images</h3>
+      <p>Make scanned photos, screenshots, and other images searchable. When image-aware AI is available, Sorana can also understand the picture directly.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/>
+        </svg>
+      </div>
+      <h3>Budget &amp; limits</h3>
+      <p>Set a daily usage limit per agent and track it in real time. Leave the field blank to use the app default, or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight.</p>
+    </div><div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <h3>Long conversations stay on track</h3>
+      <p>Older parts of a conversation are quietly condensed while the important details stay available. Keep working for weeks or months without losing the thread or slowing down.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
+    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">14 more features ↓</button>
+  </div>
+
+  <!-- OPENROUTER FREE BANNER -->
+  <div class="ad-container">
+    <p class="ad-label">Sponsored</p>
+    <a class="or-adbar" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
+      <span class="or-adbody">
+        <span class="or-adhead"><span class="or-adlink">openrouter/free. Auto-picks top-rated free models.</span></span>
+        <span class="or-addesc">Get a free API key in 30 seconds. OpenRouter routes you to the best available free model from its catalog. No credit card required.</span>
+        <span class="or-adurl">https://<b>openrouter.ai</b>/models?q=free</span>
+      </span>
+      <span class="or-adbtn">Try it free &rarr;</span>
+    </a>
+  </div>
+
+  <div class="cta-section" style="padding:var(--space-12) 0;max-width:900px;margin:0 auto;">
+    <h2 style="margin-bottom:var(--space-3);">Ready to try it?</h2>
+    <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:560px;margin-left:auto;margin-right:auto;">Download the executable and run it directly. No installation, no account, no cloud sync unless you choose it.</p>
+    <div class="cta-actions">
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+      <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
+    </div>
+  </div>
+  <div class="screenshot-strip">
+    <figure class="screenshot-card">
+      <picture><source srcset="chat.webp" type="image/webp"><img src="chat.png" alt="Sorana chat with clearly formatted answers" loading="lazy" width="640" height="400"></picture>
+      <figcaption>See clear answers, separate explanations, and readable tables.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="chat-sidebar.webp" type="image/webp"><img src="chat-sidebar.png" alt="Sorana chat sessions sidebar" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Return to past conversations and pick up where you left off.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="mindmap.webp" type="image/webp"><img src="mindmap.png" alt="Mind map" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Generate mind maps from folder hierarchies.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="rag.webp" type="image/webp"><img src="rag.png" alt="Sorana knowledge base for grounded answers" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Ground AI answers in your own documents and notes.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="calendar.webp" type="image/webp"><img src="calendar.png" alt="Calendar and scheduling" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Manage events and free slots from chat.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="Sorana_Multi_Agent_Pipeline.webp" type="image/webp"><img src="Sorana_Multi_Agent_Pipeline.png" alt="A primary agent dispatching specialized subagents" loading="lazy" width="640" height="400"></picture>
+      <figcaption>A primary agent dispatching specialized subagents.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="Agent Process Trace.webp" type="image/webp"><img src="Agent Process Trace.png" alt="Every step planned, acted, and reviewed, traceable" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Every step planned, acted, and reviewed, traceable.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="projects_board.webp" type="image/webp"><img src="projects_board.png" alt="Projects canvas with per-project assistant cards" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Each project on its own canvas, with its own assistant and notes.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="modelmanager.webp" type="image/webp"><img src="modelmanager.png" alt="Model Manager" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Browse, sort, and favorite models from every provider.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="modelprobing.webp" type="image/webp"><img src="modelprobing.png" alt="Model Probing" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Probe each model to discover what it can actually do.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="promptmanager.webp" type="image/webp"><img src="promptmanager.png" alt="Prompt manager" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Organize prompts in a central library.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="mcpmanager.webp" type="image/webp"><img src="mcpmanager.png" alt="Sorana integrations marketplace" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Browse and connect new tools from the integrations marketplace.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="HealthDashboard.webp" type="image/webp"><img src="HealthDashboard.png" alt="Health Dashboard" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Monitor system health, models, and AI performance.</figcaption>
+    </figure>
+    <figure class="screenshot-card" style="grid-column:span 2;">
+      <picture><source srcset="openrouter_free.webp" type="image/webp"><img src="openrouter_free.png" alt="OpenRouter free model and multi-role selection" loading="lazy" width="640" height="400" style="object-fit:contain;background:var(--color-surface-2);padding:var(--space-4);max-height:220px;"></picture>
+      <figcaption>Set openrouter/free as Primary. Assign models to multiple roles.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="guardrails.webp" type="image/webp"><img src="guardrails.png" alt="Agent permission guardrails" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Review and control what the agent is allowed to do.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <img src="coingecko_example.png" alt="CoinGecko live crypto market data in chat" loading="lazy" width="640" height="400">
+      <figcaption>Ask for live crypto prices, market caps, and 30-day price history.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- TASK YOUR AGENT WITH -->
+<!-- SPONSORED: CheaperInference (affiliate) / free slot between features and chat examples -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <a class="ci-adbar" href="https://cheaperinference.com/?ref=IED5pC6EJx" target="_blank" rel="sponsored noopener noreferrer">
+    <span class="ci-adbody">
+      <span class="ci-adhead"><span class="ci-adlink">Same frontier models. Smaller invoice.</span></span>
+      <span class="ci-addesc">Cut your GPT / Claude / Gemini spend without switching tooling. Drop-in OpenAI-compatible API.</span>
+      <span class="ci-adurl">https://<b>cheaperinference.com</b>/</span>
+    </span>
+    <span class="ci-adbtn">See the savings &rarr;</span>
+  </a>
+</div>
+<!-- MCP SERVERS -->
+<section class="section section-alt" id="mcp">
+  <div class="section-header">
+    <h2>One workspace. <em>Every tool.</em></h2>
+    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, and ListenBrainz music history. The marketplace adds external servers, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <h3>Built-ins included</h3>
+      <p>Memory that never forgets · Files you can read, write and search · Web search · Gmail and Calendar actions · Your past chats. All managed from the MCP Manager with no config files.</p>
+    </div>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M9 9v6l6-3z"/>
+        </svg>
+      </div>
+      <h3>Chat with your music history <span class="model-tag free">NEW</span></h3>
+       <p><strong>ListenBrainz is now a built-in server with 12 tools.</strong> Ask for the sitewide top artists, your own most played artists, what is playing right now, or your last 100 listens. For the deep questions, request a full history export: Sorana queues it as a background job, imports the archive locally, and then answers across years of listening with range queries, per artist history, and forgotten artists rediscovery.</p>
+      <figure style="margin-top:var(--space-4);">
+        <img src="listenbrainz_example.png" alt="ListenBrainz music history in chat" loading="lazy" width="908" height="441" style="width:100%;border-radius:8px;">
+      </figure>
+    </div>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z"/>
+        </svg>
+      </div>
+      <h3>ToolForest: 30+ toolkits, one connection <span class="model-tag free">NEW</span></h3>
+      <p><strong>ToolForest is a hosted MCP aggregator.</strong> One remote connection, nothing to install. Add your API key, authorize toolkits at app.toolforest.io, and Sorana discovers tools step by step. First it lists toolkits, then tools, then schemas, then it executes. Its tools are separate from the built in Gmail, Calendar and ListenBrainz servers.</p>
+      <p style="margin-bottom:var(--space-2);">Toolkits grouped in domains:</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">Google Workspace</div>
+        <div class="provider-chip">Health &amp; Fitness</div>
+        <div class="provider-chip">Planet Earth</div>
+        <div class="provider-chip">Prediction Markets</div>
+        <div class="provider-chip">Social</div>
+        <div class="provider-chip">Music</div>
+        <div class="provider-chip">Learning</div>
+        <div class="provider-chip">and more</div>
+      </div>
+      <figure style="margin-top:var(--space-4);">
+        <img src="gdelt_example.png" alt="GDELT global news and events in chat" loading="lazy" width="797" height="750" style="width:100%;border-radius:8px;">
+      </figure>
+      <p style="margin-top:var(--space-4);">Highlights: <strong>GDELT</strong> with global news and coded events, including the headlines and the outlets behind each event, no key needed. <strong>Kalshi</strong> and <strong>Polymarket</strong> with public odds and price history, no account needed. And the rest of the catalogue: Gmail, Sheets, Docs, Slides, Calendar, Tasks, Oura, Fitbit, Google Health, Last.fm, Apple Music, MusicBrainz, Reddit, X, Anki, Mochi, GitHub, maps and satellite imagery.</p>
+    </div>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M7 15l3.5-4 2.5 2.5L18 8"/>
+        </svg>
+      </div>
+      <h3>Live crypto market data <span class="model-tag free">NEW</span></h3>
+      <p><strong>CoinGecko is now a keyless marketplace server.</strong> No account, no API key, nothing to install. Ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, list the top coins by market cap or trading volume, or pull a 30 day price history. Every price comes straight from CoinGecko's API, so it is today's number rather than one the model remembered.</p>
+      <p style="margin-bottom:var(--space-2);">Coins it covers include:</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">Bitcoin</div>
+        <div class="provider-chip">Bitcoin Cash</div>
+        <div class="provider-chip">Ethereum</div>
+        <div class="provider-chip">Solana</div>
+        <div class="provider-chip">Dogecoin</div>
+        <div class="provider-chip">and more</div>
+      </div>
+      <figure style="margin-top:var(--space-4);">
+        <img src="coingecko_example.png" alt="CoinGecko live crypto market data in chat" loading="lazy" width="675" height="896" style="width:100%;border-radius:8px;">
+      </figure>
+      <p style="margin-top:var(--space-4);">Ask it things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", or "Compare bitcoin and ethereum by market cap".</p>
+    </div>
+  </div>
+  <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-6);">Marketplace servers for Drive, GitHub, Slack, Postgres and movies are under construction and need manual auth. ToolForest covers most of that ground today, and CoinGecko needs no setup.</p>
+</section>
+
+<section class="section" id="chat-examples">
+  <div class="section-header">
+    <h2>See what you can <em>do with Sorana.</em></h2>
+    <p>Your workspace connects research, memory, files, email, and calendar. One request can plan, execute, and verify multi-step work across all of them.</p>
+  </div>
+  <div class="examples-grid">
+    <div class="example-card">
+      <h4>Workflows &amp; Pipelines</h4>
+      <ul>
+        <li>"Draft a project report, review it for gaps, and polish the final version"</li>
+        <li>"Research this topic, write a blog post, and have a second agent fact check every claim"</li>
+        <li>"Read these requirements, draft a technical spec, and review it for clarity"</li>
+        <li>"Analyze this customer feedback, summarize the key themes, and draft a response plan"</li>
+        <li>"Review this code change for bugs, suggest improvements, and generate a summary. Run the review in parallel with the analysis."</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Memory &amp; Knowledge</h4>
+      <ul>
+        <li>"Remember that my preferred working hours are 9am to 4pm"</li>
+        <li>"What did I learn about project budgeting last week?"</li>
+        <li>"Research electric car trends and save the key facts so I can find them later"</li>
+        <li>"Read this research paper and save the key findings to my notes"</li>
+        <li>"Compare what I know about option A versus option B from past research"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Research &amp; Writing</h4>
+      <ul>
+        <li>"Summarize this document for me"</li>
+        <li>"Read these three articles and draft a summary memo, then save it to my project folder"</li>
+        <li>"Find relevant studies on this topic and add them to my knowledge base"</li>
+        <li>"Search my notes for the client meeting summary and send a follow up email"</li>
+        <li>"Organize this folder of research papers into topic groups and summarize each one"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Tasks &amp; Scheduling</h4>
+      <ul>
+        <li>"Send an email to the team about the project update"</li>
+        <li>"What meetings do I have today?"</li>
+        <li>"Review the project brief, draft a response, and add the deadline to my calendar"</li>
+        <li>"Find free slots this week and schedule a call with the team"</li>
+        <li>"Search my emails for invoices from last quarter and archive them to a folder"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Job Hunting</h4>
+      <ul>
+        <li>"Research company ABC and save the key facts for my interview"</li>
+        <li>"Tailor my CV for this job description and save both versions"</li>
+        <li>"Draft a cover letter for this application"</li>
+        <li>"Send a follow up email after the interview"</li>
+        <li>"Find interview tips for this role and add them to my notes"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Email &amp; Calendar</h4>
+      <ul>
+        <li>"Find all unread emails from yesterday"</li>
+        <li>"Send a reply to the thread about the conference"</li>
+        <li>"Create a new event for next Tuesday at 3pm"</li>
+        <li>"What does my week look like?"</li>
+        <li>"Archive all emails from last month with label Projects"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Files &amp; Documents</h4>
+      <ul>
+        <li>"Show me all files in the project folder"</li>
+        <li>"Rename report_draft.docx to report_final.docx"</li>
+        <li>"Find all PDFs created this week"</li>
+        <li>"Create a new folder called Budget 2026"</li>
+        <li>"Copy the meeting notes to the shared folder"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Household &amp; Personal</h4>
+      <ul>
+        <li>"What bills are due this month?"</li>
+        <li>"Compare internet plans from local providers and save the best option"</li>
+        <li>"Scan this letter and extract the important details to my knowledge base"</li>
+        <li>"Search my archives for the insurance policy and summarize the coverage"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>Crypto &amp; Market Data</h4>
+      <ul>
+        <li>"What is bitcoin's price in USD right now?"</li>
+        <li>"What is Bitcoin Cash trading at right now?"</li>
+        <li>"Show ethereum's 24h change and market cap"</li>
+        <li>"Compare bitcoin and ethereum by market cap"</li>
+        <li>"List the top 10 coins by market cap"</li>
+        <li>"Show bitcoin's price over the last 30 days"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h4>ToolForest</h4>
+      <ul>
+        <li>"Summarize the most recent emails across all my connected Gmail accounts"</li>
+        <li>"Using GDELT, what is the most-reported event in Iran this week, and which outlets covered it?"</li>
+        <li>"According to my Oura data, am I recovered enough to train hard today?"</li>
+        <li>"What moved this Kalshi market, and when?"</li>
+        <li>"Map the collaboration web around this band on MusicBrainz"</li>
+        <li>"Turn this article into clean flashcards in a new Anki deck"</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- AD SPOT D -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:300px;height:250px"
+       data-ad-client="ca-pub-6449563648591184"
+       data-ad-slot="3798779788"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- COMPARISON -->
+<section class="section section-alt" id="comparison">
+  <div class="section-header">
+    <h2>How Sorana <em>compares.</em></h2>
+    <p>Compare Sorana with note apps, cloud assistants, and other self-hosted AI workspaces.</p>
+  </div>
+  <div style="overflow-x: auto; display: block;">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>What you get</th>
+        <th>Sorana</th>
+        <th>Odysseus</th>
+        <th>Obsidian / Notion</th>
+        <th>ChatGPT / Claude / others</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Native desktop app. Runs fully offline &amp; private</th><td class="win">Native portable app for Windows, Linux, and MacOS. Runs on your machine with your data. Cloud only when you explicitly connect an API key.</td><td>Self-hosted web app. Local-first and no telemetry.</td><td>Obsidian local-first. Notion cloud-hosted.</td><td>Cloud-only. Your data on their servers.</td></tr>
+      <tr><th scope="row">Model flexibility</th><td class="win">Cloud and unlimited local models via Lemonade, Ollama, Llama.cpp, and LM Studio. 25+ providers plus capability probing on any model. Browse, favorite, and probe before you commit.</td><td>Bring your own models. Local or external endpoints with 270+ catalogued models.</td><td>No native AI. Optional plugins connect external providers.</td><td>One vendor per service. Limited switching between models.</td></tr>
+      <tr><th scope="row">The right AI for each task</th><td class="win">Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer) with Backup or Spare per role for automatic failover.</td><td>Choose local or external endpoints. Compare several models side-by-side.</td><td>Single model per plugin or integration. No role-based routing.</td><td>One model per session. Stronger models require plan upgrade.</td></tr>
+      <tr><th scope="row">Provider goes down or hits quota</th><td class="win">Automatic failover to your Backup or Spare model. Dead free tiers pause until reset.</td><td>Endpoint and model choice is manual. No failover behavior described.</td><td>Depends on plugin or provider. No automatic failover.</td><td>Wait, upgrade, or switch manually.</td></tr>
+      <tr><th scope="row">Multi-agent orchestration</th><td class="win">A primary agent plans your work, dispatches specialized subagents in parallel, and reviews their results before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Simple automations and community plugins.</td><td>Basic workflows and skills available with paid plans.</td></tr>
+      <tr><th scope="row">See how answers are built</th><td class="win">See the full trace of every step planned, searched, and reviewed to reach the answer.</td><td>Agent tracing is not described on the current site.</td><td>Plugin-dependent transparency. Limited by design.</td><td>Agent tracing varies by service and plan.</td></tr>
+      <tr><th scope="row">Sources you can verify</th><td class="win">Every answer lists the web pages and documents it used, with relevance-filtered citations you can verify.</td><td>Deep Research gathers, reads, and cites sources.</td><td>Plugin-dependent citation support.</td><td>Citations vary by service and plan.</td></tr>
+      <tr><th scope="row">Portable</th><td class="win">Portable executable for Windows, Linux, and MacOS. Runs from a USB stick with no installation, no account, and no registry changes.</td><td>Self-hosted web app. No portable-desktop claim.</td><td>Obsidian local files. Notion requires account and sync.</td><td>Cloud and web only. Limited desktop applications.</td></tr>
+      <tr><th scope="row">AI takes action</th><td class="win">Built-in automation across files, web, email, and calendar.</td><td>Tools, MCP, email, research, and autonomous agents.</td><td>View and edit. Limited native AI actions.</td><td>Paid connectors with separate setup.</td></tr>
+      <tr><th scope="row">Goal-driven autonomy</th><td class="win">Plans multi-step work, dispatches specialized subagents in parallel, acts with 90+ tools, and reviews its own work before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Workflow plugins available. No native autonomous agent.</td><td>Agent modes and workflows available with paid plans.</td></tr>
+      <tr><th scope="row">Visual knowledge canvas</th><td class="win">AI-organised 2D spatial canvas for visual knowledge management.</td><td>Visual canvas is not described on the current site.</td><td>Obsidian Canvas (manual). Notion database views.</td><td>Chat-first interface. Canvas features limited or absent.</td></tr>
+      <tr><th scope="row">Chat with documents</th><td class="win">Chat with hundreds of papers, books, and scanned notes across your whole workspace.</td><td>Document editor. Document-chat scope is not described.</td><td>Community plugins for document chat.</td><td>Project uploads and per-session context.</td></tr>
+      <tr><th scope="row">Image OCR &amp; Vision AI</th><td class="win">Built-in OCR with AI vision fallback for images and documents.</td><td>Image gallery. OCR and vision are not described.</td><td>External tools or plugins required.</td><td>Vision features vary by service.</td></tr>
+      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history) plus the ToolForest aggregator with 30+ toolkits over one connection and keyless CoinGecko crypto market data.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
+      <tr><th scope="row">Calendar &amp; Scheduling</th><td class="win">Manage Gmail and Calendar through natural chat.</td><td>Calendar and scheduling are not described.</td><td>View-only calendar plugins.</td><td>Calendar connectors vary by service.</td></tr>
+      <tr><th scope="row">AI remembers you</th><td class="win">Persistent memory that remembers your projects, preferences, and decisions.</td><td>Persistent memory across all conversations.</td><td>Manual notes and tags. No persistent AI memory.</td><td>Memory features vary by service and plan.</td></tr>
+      <tr><th scope="row">Stays useful over months</th><td class="win">Quietly condenses older conversations while keeping the important context for months of continued work.</td><td>Persistent memory across conversations. Retention period not stated.</td><td>Manual organization. No AI context retention.</td><td>Context retention varies by service.</td></tr>
+      <tr><th scope="row">Cost</th><td class="win">Free to use. $0/mo with free-tier cloud models or local models. Your choice.</td><td>Open source and free. Self-hosted.</td><td>Free tier available. Paid tiers for collaboration and sync.</td><td>Subscription pricing varies by model and provider.</td></tr>
+    </tbody>
+  </table>
+  <p id="cost-note" style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">*Publicly disclosed approximate cost as of 2026; Sorana lets you use those same models without subscription if you already have API credits, or swap in free-tier and local models instead. Odysseus cells reflect its public website as checked on 2026-09-09; "not described" means the current site does not claim that capability.</p>
+  </div>
+</section>
+
+<!-- TRUSTED BY -->
+<section class="section section-alt" id="testimonials">
+  <div class="section-header">
+    <h2>Trusted by the <em>community.</em></h2>
+    <p>Reviewed and recommended by publications across the AI and software space.</p>
+  </div>
+      <div class="testimonials-band">
+    <button type="button" class="testimonial-arrow prev" id="testimonialPrev" aria-label="Scroll testimonials left">‹</button>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="majorgeeks.gif" alt="MajorGeeks" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">MajorGeeks</div>
+        <p class="testimonial-quote">"A smart, slightly odd, and genuinely interesting Windows tool for organizing files with AI. The canvas, document chat, OCR, and local AI support give it a real purpose."</p>
+        <a href="https://www.majorgeeks.com/files/details/sorana.html" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="softpedia.png" alt="Softpedia" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">Softpedia</div>
+        <p class="testimonial-quote">"A fresh and innovative approach to personal knowledge management. The spatial canvas and persistent memory features set it apart from traditional note-taking apps."</p>
+        <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="trishtech-logo.png" alt="TrishTech" class="testimonial-logo logo-light-bg" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">TrishTech</div>
+        <p class="testimonial-quote">"A capable, memory-persistent, privacy-respecting AI workspace that fits on a USB drive and costs nothing to run."</p>
+        <a href="https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="poweredbyai-logo.svg" alt="PoweredByAI" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">PoweredByAI</div>
+        <p class="testimonial-quote">"An innovative AI-powered visual workspace that revolutionizes the way individuals and teams organize, process, and interact with digital files."</p>
+        <a href="https://poweredbyai.app/project/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="mcpmarketlogo.png" alt="MCPMarket" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">MCPMarket</div>
+        <p class="testimonial-quote">"Redefines digital organization by transforming traditional file management into an intelligent, visual AI workspace. Replaces rigid folders and forgetful chatbots with a persistent 2D canvas."</p>
+        <a href="https://mcpmarket.com/es/server/sorana" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+      <div class="testimonial-card">
+        <img src="warp2search-logo.png" alt="Warp2Search" class="testimonial-logo" loading="lazy" width="140" height="56">
+        <div class="testimonial-source">Warp2Search</div>
+        <p class="testimonial-quote">"A bold step in the evolution of file organization tools, a free AI-powered visual workspace whose canvas, document chat, OCR, and flexible local or cloud AI support set it apart from traditional file management."</p>
+        <a href="https://www.warp2search.net/story/sorana-10770-released/" class="testimonial-link" target="_blank" rel="noopener">Read full review →</a>
+      </div>
+    </div>
+    <button type="button" class="testimonial-arrow next" id="testimonialNext" aria-label="Scroll testimonials right">›</button>
+  </div></section>
+
+<!-- AD SPOT E -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-6449563648591184"
+       data-ad-slot="8476391393"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- WHO USES -->
+<section class="section" id="who-uses">
+  <div class="section-header">
+    <h2>Built for <em>knowledge workers.</em></h2>
+    <p>Researchers, writers, consultants, students, job hunters, and anyone managing personal admin, landlords, energy, telecom, repairs, doctors, banking, and more.</p><p style="margin-top: var(--space-4); color:var(--color-text-muted); font-size:var(--text-sm);">No matter your role, the same core toolkit works for you: ask questions across your documents and files, research the web, manage Gmail and Calendar, and switch the AI’s working style for any task. Because you can keep everything local and use private models, it is just as useful for sensitive everyday tasks as it is for work.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+      <h3>Researchers &amp; academics</h3>
+      <p>Chat with hundreds of papers, books, and scanned notes in one place.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+      <h3>Writers &amp; journalists</h3>
+      <p>Build a living reference library that remembers your style, sources, and ideas.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 2l-4 4-4-4"/></svg></div>
+      <h3>Consultants &amp; freelancers</h3>
+      <p>Maintain full AI context across multiple long-running client projects.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-4 2"/><path d="M6 12v5l6 3 6-3v-5"/></svg></div>
+      <h3>Students</h3>
+      <p>Turn notes, PDFs, and lecture slides into a personal knowledge base you can talk to.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM12 2h4v3h-4V2z"/></svg></div>
+      <h3>Job hunters</h3>
+      <p>Learn about companies and hiring teams on the web, then use your own files and notes to tailor your CV and cover letter. Draft applications and follow-up emails, save everything, send them straight from Gmail, and add interviews to your calendar.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+      <h3>Household &amp; personal admin</h3>
+      <p>Manage landlords, energy, telecom, repairs, doctors, and banking. Keep sensitive letters, bills, and health records off the cloud by switching to private, local models.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+      <h3>Obsidian &amp; Notion users</h3>
+      <p>Add an AI layer that learns from your vault and can act on it.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+      <h3>Privacy-conscious professionals</h3>
+      <p>Full AI power with zero data leaving your machine.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-4-4-6 6-4-4-6 6 4 4 6-6 4 4z"/></svg></div>
+      <h3>Coders &amp; programmers</h3>
+      <p>Search, read, and analyze any codebase through conversation. Understand your projects like a teammate who already knows the code.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AD SPOT F -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:336px;height:280px"
+       data-ad-client="ca-pub-6449563648591184"
+       data-ad-slot="8429838091"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- PROVIDERS -->
+<section class="providers-section" id="providers">
+  <p class="section-label">Supported providers</p>
+  <p class="section-label providers-sub-label">Cloud Providers</p>
+  <div class="providers-grid">
+    <a class="provider-chip" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="#8a8f98"/></svg>
+      OpenRouter <span style="font-size:10px;font-weight:700;color:var(--color-openrouter);margin-left:4px;">FREE-TIER</span>
+    </a>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/openai/8a8f98" class="icon" alt="" aria-hidden="true">
+      OpenAI
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M8 1L1 4v8l7 3 7-3V4L8 1z" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      Grok
+    </div>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/nvidia/8a8f98" class="icon" alt="" aria-hidden="true">
+      Nvidia <span style="font-size:10px;font-weight:700;color:#76b900;margin-left:4px;">FREE-TIER</span>
+    </div>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/mistral/8a8f98" class="icon" alt="" aria-hidden="true">
+      Mistral <span style="font-size:10px;font-weight:700;color:#ff7000;margin-left:4px;">FREE-TIER</span>
+    </div>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/google/8a8f98" class="icon" alt="" aria-hidden="true">
+      Google (Gemma) <span style="font-size:10px;font-weight:700;color:#4285f4;margin-left:4px;">FREE-TIER</span>
+    </div>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/meta/8a8f98" class="icon" alt="" aria-hidden="true">
+      Meta (Llama)
+    </div>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/deepseek/8a8f98" class="icon" alt="" aria-hidden="true">
+      DeepSeek
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>
+      Stepfun
+    </div>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/alibabadotcom/8a8f98" class="icon" alt="" aria-hidden="true">
+      Qwen / Baidu
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><polygon points="8,1 15,8 8,15 1,8" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      Minimax
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M5 8h6" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      MoonshotAI
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><rect x="3" y="3" width="10" height="10" rx="2" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      GLM
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M8 1L14 8L8 15L2 8L8 1Z" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      AgentRouter
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><circle cx="8" cy="8" r="4" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      Hcnsec
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M2 2h12v12H2z" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      TokenRouter
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M8 1L15 4V12L8 15L1 12V4L8 1Z" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      NousResearch
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M2 8h12M8 2v12" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      CommandCode
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="7" fill="none" stroke="#8a8f98" stroke-width="1.5"/><path d="M4 8h8" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      BadTheoryLabs
+    </div>
+    <div class="provider-chip">
+      <img src="https://cdn.simpleicons.org/huggingface/8a8f98" class="icon" alt="" aria-hidden="true">
+      HuggingFace
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M8 1L14 8L8 15L2 8L8 1Z" fill="none" stroke="#8a8f98" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="#8a8f98"/></svg>
+      Mimo
+    </div>
+  </div>
+  <p class="section-label providers-sub-label">Local models</p>
+  <div class="providers-grid">
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><circle cx="8" cy="8" r="6" fill="none" stroke="#8a8f98" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#8a8f98"/></svg>
+      Lemonade
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M8 1L14 8L8 15L2 8L8 1Z" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      Ollama
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      LM Studio
+    </div>
+    <div class="provider-chip">
+      <svg class="icon" viewBox="0 0 16 16" fill="#8a8f98"><path d="M2 8h12M8 2v12" stroke="#8a8f98" stroke-width="1.5"/></svg>
+      Llama.cpp
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORED: Freebuff (affiliate) -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <a class="fb-adbar" href="https://freebuff.com/?ref=ref-79a3f30b-4b6a-4572-a271-29a2eb21761b" target="_blank" rel="sponsored noopener noreferrer">
+    <span class="fb-adbody">
+      <span class="fb-adhead"><span class="fb-adlink">Free AI coding agent with GPT, DeepSeek, MiMo &amp; more. No subscription, no API key.</span></span>
+      <span class="fb-addesc">Freebuff runs in your terminal with GPT, Luna, MiMo 2.5, DeepSeek, GLM 5.2 and more. Zero setup, frontier models included.</span>
+      <span class="fb-adurl">https://<b>freebuff.com</b>/</span>
+    </span>
+    <span class="fb-adbtn">Try it free &rarr;</span>
+  </a>
+</div>
+
+<!-- MODEL PREVIEW -->
+
+<section class="model-preview" id="models">
+  <div class="model-preview-inner">
+    <div class="section-header" style="margin-bottom: var(--space-8);">
+      <h2>A taste of <em>what's inside.</em></h2>
+      <p>30+ free cloud models from every major provider, plus unlimited local models.</p>
+    </div>
+    <div class="model-rows">
+      <div class="model-row">
+        <span class="model-provider">Nvidia</span>
+        <span class="model-name">nvidia/nemotron-3-super-120b</span>
+        <span class="model-desc">Nvidia's 120B parameter instruction model</span>
+        <span class="model-tag free">100% FREE</span>
+      </div>
+      <div class="model-row">
+        <span class="model-provider">Mistral</span>
+        <span class="model-name">devstral-2512</span>
+        <span class="model-desc">Mistral AI's most capable open foundation</span>
+        <span class="model-tag free">100% FREE</span>
+      </div>
+      <div class="model-row model-row-featured" style="border-color:rgba(6,182,212,0.25);">
+        <span class="model-provider">OpenRouter</span>
+        <span class="model-name">openrouter/free</span>
+         <span class="model-desc">Auto-selects top-rated free models. Free API key at openrouter.ai, no credit card</span>
+        <span class="model-tag free">100% FREE</span>
+      </div>
+      <div class="model-row">
+        <span class="model-provider">Lemonade (Local)</span>
+        <span class="model-name">Qwen3.6-35B-A3B-UD-IQ2_M</span>
+        <span class="model-desc">A local quantised model that runs entirely on your hardware, free forever</span>
+        <span class="model-tag free">FREE · LOCAL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SETUP -->
+<!-- SPONSORED: CheaperInference (affiliate) -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <a class="ci-adbar" href="https://cheaperinference.com/?ref=IED5pC6EJx" target="_blank" rel="sponsored noopener noreferrer">
+    <span class="ci-adbody">
+      <span class="ci-adhead"><span class="ci-adlink">Every provider on one bill at the cheapest rate.</span></span>
+      <span class="ci-addesc">Stop juggling API keys and price sheets. CheaperInference aggregates the popular models below retail.</span>
+      <span class="ci-adurl">https://<b>cheaperinference.com</b>/</span>
+    </span>
+    <span class="ci-adbtn">Check your model &rarr;</span>
+  </a>
+</div>
+<section class="section" id="setup">
+  <div class="section-header">
+    <h2>Get started in <em>minutes.</em></h2>
+    <p>Download and run. No installation required.</p>
+  </div>
+  <div class="setup-grid">
+    <div class="setup-card">
+      <h3>Download</h3>
+      <p>Grab the latest executable from GitHub. Run it directly from any folder, even a USB drive.</p>
+    </div>
+    <div class="setup-card">
+      <h3>Choose a model</h3>
+      <p>Use a free cloud model with your own API key &mdash; including OpenRouter's free tier &mdash; or run local models through Lemonade, Ollama, or LM Studio.</p>
+    </div>
+    <div class="setup-card">
+      <h3>Start working</h3>
+      <p>Add your files, then give Sorana a goal. It plans the steps and works through them across files, web, email, and calendar &mdash; while remembering your projects and preferences.</p>
+    </div>
+  </div>
+  <div class="cta-section" style="padding: var(--space-12) 0 0; max-width: none;">
+    <div class="cta-actions">
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section class="section section-alt" id="support">
+  <div class="section-header">
+    <h2>Need <em>help?</em></h2>
+    <p>Join the community, leave a review, or support the project.</p>
+  </div>
+  <div class="setup-grid">
+    <div class="setup-card">
+      <h3>Community</h3>
+      <p>Join the Discord server to ask questions, share workflows, and get help from other Sorana users.</p>
+      <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn-outline" style="margin-top: var(--space-4);">Join Discord</a>
+    </div>
+    <div class="setup-card">
+      <h3>Feedback</h3>
+      <p>Have a question, suggestion, or bug report? Open a discussion or issue on GitHub.</p>
+      <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline" style="margin-top: var(--space-4);">GitHub Feedback</a>
+    </div>
+    <div class="setup-card">
+      <h3>Support development</h3>
+      <p>Donations via PayPal or Bitcoin Cash help keep the project moving. Visit the support page for all options.</p>
+      <a href="support.html" class="btn-outline" style="margin-top: var(--space-4);">Support &amp; Donate</a>
+    </div>
+    <div class="setup-card">
+      <h3>Feedback on AlternativeTo</h3>
+      <p>Leave feedback on AlternativeTo to help others discover Sorana.</p>
+      <a href="https://alternativeto.net/software/sorana/about/" target="_blank" rel="noopener noreferrer" class="btn-outline" style="margin-top: var(--space-4);">AlternativeTo Feedback</a>
+    </div>
+    <div class="setup-card">
+      <h3>Feedback on MajorGeeks</h3>
+      <p>Leave feedback on MajorGeeks to share your experience and help others discover Sorana.</p>
+      <a href="https://www.majorgeeks.com/files/details/sorana.html" target="_blank" rel="noopener noreferrer" class="btn-outline" style="margin-top: var(--space-4);">MajorGeeks Feedback</a>
+    </div>
+    <div class="setup-card">
+      <h3>Feedback on Softpedia</h3>
+      <p>Leave feedback on Softpedia to let other users know what you think.</p>
+      <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" target="_blank" rel="noopener noreferrer" class="btn-outline" style="margin-top: var(--space-4);">Softpedia Feedback</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="section-header">
+    <h2>Simple <em>pricing.</em></h2>
+    <p>Sorana is fully free today. A planned premium option is coming for users who want extra support.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card pricing-card--accent">
+      <div class="pricing-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <h3 class="pricing-name">Free</h3>
+      <div class="pricing-price">$0</div>
+      <p class="pricing-desc">Unlimited use during public preview. Bring your own API key or run local models. No account, no trial clock.</p>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/></svg>
+      </div>
+      <h3 class="pricing-name">Premium Support &amp; Early Access</h3>
+      <div class="pricing-price">Coming soon</div>
+      <p class="pricing-desc">Optional paid tier. Priority setup help, early access to new integrations, and direct feedback channel. All current features remain available in the free tier.</p>
+      <p class="pricing-note">Not yet available. Join Discord for updates.</p>
+      <a href="https://discord.gg/4QkQSfSATF" target="_blank" rel="noopener" class="btn-outline pricing-cta">Join Discord for updates</a>
+    </div>
+  </div>
+</section>
+
+<!-- AD SPOT G -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:728px;height:90px"
+	     data-ad-client="ca-pub-6449563648591184"
+	     data-ad-slot="3783483244"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<!-- DISCOVER -->
+<section class="section section-alt" id="discover">
+  <div class="section-header">
+    <h2>Discover <em>more apps.</em></h2>
+    <p>Other tools from Tetramatrix for productivity, gaming, and AI-powered workflows.</p>
+  </div>
+  <div class="discover-grid">
+    <div class="discover-card">
+      <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship retro arcade game" loading="lazy" width="640" height="400">
+      <div class="discover-card-body">
+        <h3>New Spaceship</h3>
+        <p>Retro Arcade 2D side-scroller bullet-hell shmup game.</p>
+        <div class="discover-links">
+          <a href="https://tetramatrix.github.io/spaceship" target="_blank" rel="noopener">Website</a>
+          <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship" target="_blank" rel="noopener">itch.io</a>
+          <a href="https://www.indiedb.com/games/new-spaceship" target="_blank" rel="noopener">IndieDB</a>
+        </div>
+      </div>
+    </div>
+    <div class="discover-card">
+      <picture><source srcset="Audrix_Settings.webp" type="image/webp"><img src="Audrix_Settings.png" alt="Audrix real-time transcription settings" loading="lazy" width="640" height="400"></picture>
+      <div class="discover-card-body">
+        <h3>Audrix</h3>
+        <p>Real-time speech-to-text engine. Capture microphone or system audio, transcribe instantly with noise suppression and crosstalk detection. Runs entirely offline on Windows.</p>
+        <div class="discover-links">
+          <a href="https://tetramatrix.github.io/Audrix" target="_blank" rel="noopener">Website</a>
+        </div>
+      </div>
+    </div>
+    <div class="discover-card">
+      <picture><source srcset="tabneuron.webp" type="image/webp"><img src="tabneuron.png" alt="TabNeuron AI spatial tab manager" loading="lazy" width="640" height="400"></picture>
+      <div class="discover-card-body">
+        <h3>TabNeuron</h3>
+        <p>AI Spatial Tab Manager &amp; Research Workspace. Maps browser tabs onto a 2D canvas, AI groups them by content, chat with any page or the live internet, deploy no-code research agents, and sync back to Chrome Tab Groups.</p>
+        <div class="discover-links">
+          <a href="https://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener">Website</a>
+          <a href="https://discord.gg/4QkQSfSATF" target="_blank" rel="noopener">Discord</a>
+          <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener">Microsoft Store</a>
+        </div>
+      </div>
+    </div>
+    <div class="discover-card">
+      <picture><source srcset="RyzenZPilot_3.1.3.webp" type="image/webp"><img src="RyzenZPilot_3.1.3.png" alt="RyzenZPilot AMD power management" loading="lazy" width="640" height="400"></picture>
+      <div class="discover-card-body">
+        <h3>RyzenZPilot</h3>
+        <p>Powerful tool for managing AMD Ryzen processor power settings on Windows. Adjust CPU performance, power limits, and thermal configurations.</p>
+        <div class="discover-links">
+          <a href="https://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener">Website</a>
+        </div>
+      </div>
+    </div>
+    <div class="discover-card">
+      <picture><source srcset="main.webp" type="image/webp"><img src="main.png" alt="Aicono AI desktop icon organizer" loading="lazy" width="640" height="400"></picture>
+      <div class="discover-card-body">
+        <h3>Aicono</h3>
+        <p>AI Intelligent Desktop Icon Autopilot. Automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly.</p>
+        <div class="discover-links">
+          <a href="https://tetramatrix.github.io/Aicono" target="_blank" rel="noopener">Website</a>
+          <a href="https://apps.microsoft.com/store/detail/9NGFC27J1VBX" target="_blank" rel="noopener">Microsoft Store</a>
+          <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank" rel="noopener">Softpedia</a>
+          <a href="https://alternativeto.net/software/aicono" target="_blank" rel="noopener">AlternativeTo</a>
+          <a href="https://www.producthunt.com/products/aicono" target="_blank" rel="noopener">Product Hunt</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPENROUTER FREE BANNER -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <a class="or-adbar" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
+    <span class="or-adbody">
+      <span class="or-adhead"><span class="or-adlink">openrouter/free. Auto-picks top-rated free models.</span></span>
+      <span class="or-addesc">Get a free API key in 30 seconds. OpenRouter routes you to the best available free model from its catalog. No credit card required.</span>
+      <span class="or-adurl">https://<b>openrouter.ai</b>/models?q=free</span>
+    </span>
+    <span class="or-adbtn">Try it free &rarr;</span>
+  </a>
+</div>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-header">
+    <h2>Common <em>questions.</em></h2>
+    <p>Quick answers before you download.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:760px;margin:0 auto;">
+    <details class="faq-item">
+      <summary>Is Sorana a desktop AI knowledge workspace and agent harness?</summary>
+      <p>Yes. Sorana is a personal desktop AI knowledge workspace and agent harness that runs natively on Windows, Linux, and MacOS as a portable executable. No browser, no account, no installation. It works on your local files and only uses cloud providers when you explicitly connect an API key. Inside the workspace, you can chat with documents, dispatch AI agents, manage email and calendar, browse the web, and run local models.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does Sorana cost anything?</summary>
+      <p>Sorana is free to download and use today; a planned premium option will add extra support while all current features remain available in the free tier. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio &mdash; OpenRouter's free tier is a zero-cost way to start with cloud models.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does my data leave my machine?</summary>
+      <p>By default, everything stays local. Sorana runs on your machine and stores its workspace data in a local <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;font-size:0.8rem;background:var(--color-surface-2);padding:2px 6px;border-radius:4px;">.sorana/</code> folder. Cloud providers are only used when you explicitly connect an API key.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I run it from a USB stick?</summary>
+      <p>Yes. Sorana is a portable executable. Run it directly. No installation, no registry changes, no admin rights required.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What models are supported?</summary>
+      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and more. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Which providers have free tiers?</summary>
+      <p>Several providers let you use AI models for free. Here is how each one works:</p>
+      <p><strong>OpenRouter</strong> is the easiest way to start. Sign up at openrouter.ai, grab a free API key (no credit card needed), then open Sorana's Model Manager, find "openrouter/free", and set it as your Primary model or for all roles if you don't have other models.       OpenRouter automatically picks top-rated free models from its catalog for every request.</p>
+      <p><strong>Nvidia</strong> offers multiple models for free, including nemotron-3-super-120b. Sign up at build.nvidia.com, grab an API key, and add it in the Model Manager under Nvidia. Browse all free models at <a href="https://build.nvidia.com" target="_blank" rel="noopener noreferrer">build.nvidia.com</a>.</p>
+      <p><strong>Mistral</strong> offers devstral-2512 for free. Create an account at mistral.ai, grab your API key, and connect it in Sorana's Model Manager.</p>
+      <p><strong>Google</strong> offers Gemma models for free. Get an API key at ai.google.dev and add it under Google in the Model Manager.</p>
+      <p>All of these are free. No credit card is required for any of them. You can try them all and see which one works best for your needs.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is Sorana really an autonomous AI agent?</summary>
+      <p>Yes. Give Sorana a goal and it plans the steps, picks the right tools, and works through them on its own. Reading files, searching the web, and querying your knowledge base happen automatically. Writes to your filesystem and external actions like email and calendar pause for your approval first, and you decide per action, and you can set persistent allow/deny rules. Every step is traceable in the agent trace, and nothing leaves your machine unless you connect a provider.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does Sorana use multiple AI agents?</summary>
+      <p>When a task needs it, Sorana dispatches specialized subagents: a web researcher, a code analyst, a fact-check or review agent each with its own budget, running parts of the work in parallel. The workspace assembles and reviews the results before answering.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is Sorana an agent harness?</summary>
+      <p>Yes. A harness is the runtime that turns a model into an agent: it reads files, runs tools, keeps a plan, and keeps working. Sorana is a private desktop harness — give it a goal and it plans the steps, dispatches specialized subagents in parallel with per-agent budgets, acts across files, web, email and calendar with 90+ tools, and reviews its own work. It is model-agnostic (25+ cloud providers plus local models) and everything runs on your machine.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How do I chat with my music history?</summary>
+      <p>Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog. Then ask for top artists, now-playing, or recent listens directly. For full-history questions, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What does ToolForest add?</summary>
+      <p>ToolForest is a hosted MCP aggregator with 30+ toolkits over a single connection — Google Workspace, prediction markets like Polymarket, global news via GDELT, Reddit, X, fitness trackers, flashcards and more. Add your API key, authorize toolkits at app.toolforest.io, and ask normally. Its tools are separate from Sorana's built-in Gmail, Calendar, and ListenBrainz servers.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I check crypto prices in chat?</summary>
+      <p>Yes. Add the CoinGecko server from the MCP Marketplace and then ask in plain language: "What is bitcoin's price in USD right now?" or "What is Bitcoin Cash trading at right now?". It needs no account and no API key. It covers prices, market caps, trading volumes and coin metadata for Bitcoin, Bitcoin Cash, Ethereum and thousands of coins besides.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What happens to long conversations?</summary>
+      <p>Sorana quietly condenses older parts of a conversation while keeping the important context, so conversations that span weeks or months stay fast and easy to continue.</p>
+    </details>
+  </div>
+</section>
+
+<!-- AD SPOT H -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:728px;height:90px"
+	     data-ad-client="ca-pub-6449563648591184"
+	     data-ad-slot="9816026248"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<!-- FOOTER CTA -->
+<section class="cta-section">
+  <h2>Start using top-rated free models <em>today.</em></h2>
+  <p>Download Sorana and get instant access to 30+ free models from every major provider. Private by design and built for serious AI work.</p>
+  <p class="cta-fr">
+    <a class="or-cta" href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener noreferrer">
+      <span class="or-model">openrouter/free<span class="or-model-tag">100% FREE</span></span>
+      <span class="or-text"><span class="or-provider">OpenRouter</span> &middot; free API key, top-rated free models</span>
+      <span class="or-key-btn">Browse free models &rarr;</span>
+    </a>
+  </p>
+  <p class="cta-fr" style="margin-top:var(--space-3);display:flex;justify-content:center;">
+    <a class="ci-cta" href="https://cheaperinference.com/?ref=IED5pC6EJx" target="_blank" rel="sponsored noopener noreferrer">
+      <span class="ci-model">GPT &middot; Claude &middot; Gemini<span class="ci-model-tag">CHEAPER API</span></span>
+      <span class="ci-text"><span class="ci-provider">CheaperInference</span> &middot; cheaper API</span>
+      <span class="ci-key-btn">Compare prices &rarr;</span>
+    </a>
+  </p>
+  <div class="cta-actions">
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
+      <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
+    </a>
+    <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
+    <span>© 2026 Sorana: your personal desktop AI knowledge workspace and agent harness for Windows, Linux, &amp; MacOS.</span>
+    <span class="version-pill" title="Current Sorana version">v1.1.0</span>
+    <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Changelog.md" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
+    <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
+    <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>
+  </div>
+  <div style="margin-top:var(--space-3);font-size:var(--text-xs);color:var(--color-text-faint);">
+    Discover more apps: <a href="https://tetramatrix.github.io/spaceship" target="_blank" rel="noopener" style="color:var(--color-text-muted);">New Spaceship</a> · <a href="https://tetramatrix.github.io/Audrix" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Audrix</a> · <a href="https://tetramatrix.github.io/TabNeuron" target="_blank" rel="noopener" style="color:var(--color-text-muted);">TabNeuron</a> · <a href="https://tetramatrix.github.io/RyzenZPilot" target="_blank" rel="noopener" style="color:var(--color-text-muted);">RyzenZPilot</a> · <a href="https://tetramatrix.github.io/Aicono" target="_blank" rel="noopener" style="color:var(--color-text-muted);">Aicono</a>
+  </div>
+  <span style="margin-top:var(--space-2);display:block;">Supports 25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Ollama, LM Studio and more</span>
+</footer>
+
+<noscript>
+  <div style="text-align:center;padding:var(--space-8);color:var(--color-text-muted);font-size:var(--text-sm);">
+    Sorana runs entirely on your machine. If you find it useful, consider supporting via the links in the footer.
+  </div>
+</noscript>
+
+<button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
+
+
+
+
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
