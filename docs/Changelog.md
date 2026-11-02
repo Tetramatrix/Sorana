@@ -1,5 +1,20 @@
 📋 Changelog 📋
 
+📅 03.11.26 - Version 1.1.1
+
+🔄 Improvements & Changes
+🔄 Model Manager now refreshes its model list automatically on a cold start in compiled builds, instead of staying empty until a manual rescan.
+🔄 The Agent System sidebar now reads from the global chat store, so it no longer empties on the first workspace visit.
+
+🐛 Bug Fixes
+🐛 Deleting an agent no longer removes every agent card from the board.
+🐛 The development API token now stays stable across hot reloads, preventing bursts of refused requests while editing.
+🐛 Agent containers no longer follow a document being dragged, and the drop target resolves correctly.
+🐛 Document sync and the add agent flow no longer move chat session attachments unless explicitly requested.
+
+🛡️ Security & Stability
+🛡️ Chat session attachments are preserved during document sync instead of being converted into ordinary library documents.
+
 📅 02.11.26 - Version 1.1.0
 
 🆕 New Features
