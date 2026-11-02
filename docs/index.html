@@ -53,7 +53,7 @@
       "operatingSystem": "Windows 11, Linux, MacOS",
       "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
       "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations"],
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0" },
       "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
@@ -179,7 +179,7 @@
     </svg>
     Sorana
     </a>
-    <span class="version-pill" title="Current Sorana version">v1.0.108</span>
+    <span class="version-pill" title="Current Sorana version">v1.1.0</span>
   </div>
   <div class="nav-links" id="navLinks">
     <a href="#features">Features</a>
@@ -205,7 +205,7 @@
     <div class="hero-eyebrow">
       AI Workspace · Agent Harness · Chat · Agents · Documents · Email · Calendar · Files · Web
     </div>
-    <span class="version-pill" id="versionPill" title="Current Sorana version">v1.0.108</span>
+    <span class="version-pill" id="versionPill" title="Current Sorana version">v1.1.0</span>
   </div>
    <h1>The desktop AI knowledge workspace.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
@@ -429,7 +429,17 @@
       </div>
       <h3>Agent harness: parallel subagents with budgets</h3>
       <p>When a task needs it, Sorana's harness loop dispatches specialized subagents, web research, code analysis, and fact-check to work in parallel, each with its own budget. The workspace reviews the results before you see the answer.</p>
-    </div><div class="feature-card large formatted-chat-card">
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+      </div>
+      <h3>State-of-the-art desktop interface</h3>
+      <p>The entire desktop interface has been rebuilt in Rust and Tauri. The new architecture delivers a modern, scalable UI with crisp, pixel-perfect rendering. It features native window management, system tray integration, and native menus, all backed by exceptional speed and low resource usage.</p>
+    </div>
+    <div class="feature-card large formatted-chat-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
@@ -1628,7 +1638,7 @@
 <footer>
   <div style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
     <span>© 2026 Sorana: your personal desktop AI knowledge workspace and agent harness for Windows, Linux, &amp; MacOS.</span>
-    <span class="version-pill" title="Current Sorana version">v1.0.108</span>
+    <span class="version-pill" title="Current Sorana version">v1.1.0</span>
     <a href="https://github.com/Tetramatrix/Sorana/blob/main/docs/Changelog.md" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">Changelog</a>
     <a href="https://github.com/Tetramatrix/Sorana/issues" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Issues</a>
     <a href="https://github.com/Tetramatrix/Sorana" target="_blank" rel="noopener" style="color:var(--color-text-muted);text-decoration:none;font-size:var(--text-xs);">GitHub Repository</a>

@@ -1,5 +1,29 @@
 📋 Changelog 📋
 
+📅 02.11.26 - Version 1.1.0
+
+🆕 New Features
+🆕 Complete Rewrite Of The Desktop Interface: The entire desktop interface has been rebuilt in Rust and Tauri, replacing the legacy interface. The new shell brings a state-of-the-art, scalable, efficient, fast and performant look and style, with crisp, pixel-perfect rendering, native window management, a system tray and menus, backed by exceptional speed and low resource usage.
+🆕 Now Available On macOS, Linux And Windows: Sorana runs on all three major desktop platforms.
+🆕 Decoupled Backend: The backend now runs as a standalone service, with the interface talking to it over an API and a live connection, so the two can be updated and scaled independently.
+🆕 External Tool Servers Can Be Managed In Settings: Added, edited and removed from the settings screen; invalid configurations are rejected up front instead of failing later.
+
+🔄 Improvements & Changes
+🔄 More Reliable Answers: A refused tool call no longer loops or is lost, and long turns no longer run out of budget unexpectedly. Answer, reasoning, retry and search budgets are now tracked separately so one cannot silently consume another.
+🔄 Faster Boards And Sessions: Boards load faster and no longer do duplicate work; the sidebar shows how many files are attached to a session.
+🔄 More Reliable Release Builds: Faster, smaller release builds.
+
+🐛 Bug Fixes
+🐛 A refused tool call no longer loops or disappears after a restart.
+🐛 Deleting a chat from a workspace now takes effect immediately.
+🐛 Boards no longer do duplicate work while loading.
+🐛 The displayed app version is now correct.
+
+🛡️ Security & Stability
+🛡️ External tool server configurations are validated before use, so invalid setups are rejected up front.
+🛡️ Refused tool calls are settled durably, preventing repeated retries.
+🛡️ Budgets for answer, reasoning, retry and search are isolated so one cannot silently consume another.
+
 📅 28.10.26 - Version 1.0.113
 
 🆕 New Features
