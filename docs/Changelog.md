@@ -8,7 +8,6 @@
 
 🐛 Bug Fixes
 🐛 Deleting an agent no longer removes every agent card from the board.
-🐛 The development API token now stays stable across hot reloads, preventing bursts of refused requests while editing.
 🐛 Agent containers no longer follow a document being dragged, and the drop target resolves correctly.
 🐛 Document sync and the add agent flow no longer move chat session attachments unless explicitly requested.
 
