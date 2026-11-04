@@ -53,7 +53,7 @@
       "operatingSystem": "Windows 11, Linux, MacOS",
       "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
       "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0" },
       "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
@@ -436,7 +436,7 @@
           <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
         </svg>
       </div>
-      <h3>State-of-the-art desktop interface</h3>
+      <h3>State-of-the-art desktop interface <span class="model-tag free">NEW</span></h3>
       <p>The entire desktop interface has been rebuilt in Rust and Tauri. The new architecture delivers a modern, scalable UI with crisp, pixel-perfect rendering. It features native window management, system tray integration, and native menus, all backed by exceptional speed and low resource usage.</p>
     </div>
     <div class="feature-card large formatted-chat-card">
@@ -801,7 +801,7 @@
 <section class="section section-alt" id="mcp">
   <div class="section-header">
     <h2>One workspace. <em>Every tool.</em></h2>
-    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, and ListenBrainz music history. The marketplace adds external servers, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
+    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, ListenBrainz music history, and an I Ching oracle. The marketplace adds servers that have to be installed, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card">
@@ -811,7 +811,7 @@
         </svg>
       </div>
       <h3>Built-ins included</h3>
-      <p>Memory that never forgets · Files you can read, write and search · Web search · Gmail and Calendar actions · Your past chats. All managed from the MCP Manager with no config files.</p>
+      <p>Memory that never forgets · Files you can read, write and search · Web search · Gmail and Calendar actions · Your past chats · I Ching oracle. All managed from the MCP Manager with no config files.</p>
     </div>
     <div class="feature-card large">
       <div class="feature-icon">
@@ -870,6 +870,28 @@
         <img src="coingecko_example.png" alt="CoinGecko live crypto market data in chat" loading="lazy" width="675" height="896" style="width:100%;border-radius:8px;">
       </figure>
       <p style="margin-top:var(--space-4);">Ask it things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", or "Compare bitcoin and ethereum by market cap".</p>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M12 3a4.5 4.5 0 000 9 4.5 4.5 0 010 9"/><circle cx="12" cy="7.6" r=".9"/><circle cx="12" cy="16.4" r=".9"/>
+        </svg>
+      </div>
+      <h3>3,000 years of wisdom, in plain words <span class="model-tag free">NEW</span></h3>
+      <p><strong>We have found the I Ching fascinating for years, and we kept hitting the same wall.</strong> You ask something real about next week and back comes a poem written before the printing press, with no line that connects it to your question. The oracle answers, but the answer needs a translator.</p>
+      <p>So we built the oracle into Sorana as a built in mcp server. Ask in your own words and the assistant casts the reading and then reads it back to you: what was drawn, what it says about your situation, where the moving lines are heading, and one step worth taking next. The more of the situation you give, the more there is to read against: how long it has been going on, what keeps repeating, and what you already tried. A one line question gets a one line reading. The classical translations stay underneath, the Wilhelm and Talis English versions plus the German text, for when you want to read the source yourself.</p>
+      <p style="margin-bottom:var(--space-2);">Five tools cover the whole practice:</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">Yarrow draw</div>
+        <div class="provider-chip">Moving lines</div>
+        <div class="provider-chip">Changing hexagram</div>
+        <div class="provider-chip">Nuclear hexagram</div>
+        <div class="provider-chip">Sexagenary clock</div>
+        <div class="provider-chip">Probability tables</div>
+      </div>
+      <p style="margin-top:var(--space-4);">The library ships with the app and runs on your machine, so no account, no API key, and no network call. The reading is offered as a mirror for reflection rather than a forecast you should bet on, and Sorana says so when it matters.</p>
+      <p style="margin-top:var(--space-4);">The oracle also has a browser home: <a href="https://tetramatrix.github.io/hexagram/" target="_blank" rel="noopener">tetramatrix.github.io/hexagram</a> is our hexagram reader, for looking one up without the chat.</p>
+      <p style="margin-top:var(--space-4);">Ask it things like "When will this run of bad luck end? Let the oracle answer.", "Should I take the job offer? Ask the I Ching.", "What should I focus on this week? Consult the oracle.", or "Which hexagram speaks to my situation right now?".</p>
+    </div>
     </div>
   </div>
   <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-6);">Marketplace servers for Drive, GitHub, Slack, Postgres and movies are under construction and need manual auth. ToolForest covers most of that ground today, and CoinGecko needs no setup.</p>
@@ -982,6 +1004,18 @@
         <li>"Turn this article into clean flashcards in a new Anki deck"</li>
       </ul>
     </div>
+    <div class="example-card">
+      <h4>I Ching Oracle</h4>
+      <ul>
+        <li>"When will this run of bad luck end? Let the oracle answer."</li>
+        <li>"Should I take the job offer? Ask the I Ching."</li>
+        <li>"What does the hexagram say about my relationship?"</li>
+        <li>"What should I focus on this week? Consult the oracle."</li>
+        <li>"Is now a good time to start something new? Ask the I Ching."</li>
+        <li>"Which hexagram speaks to my situation right now?"</li>
+        <li>"Twenty months of bad luck and still no job: hundreds of applications, hundreds of invitations, only rejections. When does this streak end?"</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -1026,7 +1060,7 @@
       <tr><th scope="row">Visual knowledge canvas</th><td class="win">AI-organised 2D spatial canvas for visual knowledge management.</td><td>Visual canvas is not described on the current site.</td><td>Obsidian Canvas (manual). Notion database views.</td><td>Chat-first interface. Canvas features limited or absent.</td></tr>
       <tr><th scope="row">Chat with documents</th><td class="win">Chat with hundreds of papers, books, and scanned notes across your whole workspace.</td><td>Document editor. Document-chat scope is not described.</td><td>Community plugins for document chat.</td><td>Project uploads and per-session context.</td></tr>
       <tr><th scope="row">Image OCR &amp; Vision AI</th><td class="win">Built-in OCR with AI vision fallback for images and documents.</td><td>Image gallery. OCR and vision are not described.</td><td>External tools or plugins required.</td><td>Vision features vary by service.</td></tr>
-      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history) plus the ToolForest aggregator with 30+ toolkits over one connection and keyless CoinGecko crypto market data.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
+      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history, I Ching oracle) plus the ToolForest aggregator with 30+ toolkits over one connection and keyless CoinGecko crypto market data.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
       <tr><th scope="row">Calendar &amp; Scheduling</th><td class="win">Manage Gmail and Calendar through natural chat.</td><td>Calendar and scheduling are not described.</td><td>View-only calendar plugins.</td><td>Calendar connectors vary by service.</td></tr>
       <tr><th scope="row">AI remembers you</th><td class="win">Persistent memory that remembers your projects, preferences, and decisions.</td><td>Persistent memory across all conversations.</td><td>Manual notes and tags. No persistent AI memory.</td><td>Memory features vary by service and plan.</td></tr>
       <tr><th scope="row">Stays useful over months</th><td class="win">Quietly condenses older conversations while keeping the important context for months of continued work.</td><td>Persistent memory across conversations. Retention period not stated.</td><td>Manual organization. No AI context retention.</td><td>Context retention varies by service.</td></tr>
@@ -1583,6 +1617,10 @@
     <details class="faq-item">
       <summary>Can I check crypto prices in chat?</summary>
       <p>Yes. Add the CoinGecko server from the MCP Marketplace and then ask in plain language: "What is bitcoin's price in USD right now?" or "What is Bitcoin Cash trading at right now?". It needs no account and no API key. It covers prices, market caps, trading volumes and coin metadata for Bitcoin, Bitcoin Cash, Ethereum and thousands of coins besides.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How does the I Ching oracle work?</summary>
+      <p>Ask a question in plain language, or start from one of the oracle badges on the empty chat. The built in I Ching server ships with the app switched on, so there is nothing to download, no setup step and no API key. The assistant casts the reading and reads it back to you: the hexagram that came up, what it says about your situation, where the moving lines of the draw are heading, and one step worth taking next. It covers yarrow draws, the derived and changing hexagrams, the sexagenary clock for a date and place, and the probability tables behind the draw. Everything runs from a bundled library on your machine, so there is no account, no API key, and no network call. The Wilhelm and Talis English translations are included, together with the German classic text, for when you want to read the source yourself.</p>
     </details>
     <details class="faq-item">
       <summary>What happens to long conversations?</summary>
