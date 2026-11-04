@@ -1,5 +1,14 @@
 📋 Changelog 📋
 
+📅 05.11.26 - Version 1.1.3
+
+🛡️ Security & Stability
+🛡️ JWT Tokens Refresh In The Background: Authentication tokens now renew themselves in the background with a 30 second timeout, so a long running session stays signed in instead of being cut off when a token is about to expire.
+🛡️ Lifecycle Mutations Attributed Correctly: A change to a chat's lifecycle is now attributed to the part of the app that made it, so the record of who did what stays accurate.
+
+🐛 Bug Fixes
+🐛 Folder Requests Without An Article Now Work: Asking to open a folder without an article is now understood instead of being misread.
+
 📅 04.11.26 - Version 1.1.2
 
 🆕 New Features
