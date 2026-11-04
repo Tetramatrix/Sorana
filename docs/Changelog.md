@@ -1,5 +1,30 @@
 📋 Changelog 📋
 
+📅 04.11.26 - Version 1.1.2
+
+🆕 New Features
+🆕 I-Ging Oracle Built In: The I-Ging server is now bundled in the backend and listed in the marketplace, so you can ask for a reading out of the box, with no download or setup.
+🆕 Oracle Questions On An Empty Chat: A new chat now offers two oracle questions on the grid alongside the memory and library questions.
+🆕 Oracle Tiles Ask For The Situation: Clicking an oracle tile prompts you for the situation it should read, instead of sending a one line question with nothing to read it against.
+🆕 Reference Links For Every Reading: Every I-Ging result and the delivered answer carry a link to the reference page for the hexagram and the exact draw, so the page is always reachable and clickable.
+🆕 Two Step Oracle Turns: A tool that answers "awaiting situation" now owes the next turn one call, so the assistant asks you for the situation and then consults the oracle, instead of answering from the library.
+
+🔄 Improvements & Changes
+🔄 Manifest Tools Reachable: Tools published by a manifest only server are now collected into the catalogue and the intent router, and a server can be resolved by its own key or display name, so such a server is no longer invisible to discovery.
+🔄 MCP Tab Refreshes On Focus: The Manage Agent window now refetches servers and the marketplace when it regains focus or after an install, so a newly added entry appears without reopening the window.
+🔄 Prompt Budget From The Model Window: Prompt budget numbers now live in one place, the context window is resolved from the backend's declared model window with per class ceilings, and an oversized prompt halves the window for the next pass instead of repeating.
+🔄 Payload Rendering And Delivery Gate: The total payload renderer now allocates an instruction budget with breadth first allocation, and the delivery gate requires the answer to name the drawn hexagram before it ships.
+🔄 Tool Charging Per Execution: Every charging site now goes through one seam, and a batch that dispatches a search or read gets a doubled cap of sixteen instead of eight, so a research turn is not cut short.
+🔄 Followup Edits And Live Workspace: A pasted job description no longer turns a question into a mandatory write order, the filesystem tools stay available for that round, and the live canvas folder now outranks the stored path.
+
+🐛 Bug Fixes
+🐛 Oracle Tile Named The Oracle: The first oracle tile's label now matches its prompt and names the oracle, instead of reading as a reflective question that hid the server it reaches.
+🐛 Manifest Fallback Selected The Right Family: A paraphrase naming neither the server nor a hand written keyword now reaches the right manifest family instead of landing on rag and memory.
+🐛 Tool Charging Counted Executions: A turn that dispatched four executions is no longer charged nine, because each execution is now charged once.
+
+🛡️ Security & Stability
+🛡️ Deferred Tool Obligation Survives The Turn: A deferred tool call that owes the next turn one call now survives across the turn boundary, so a two step oracle turn completes instead of dropping the owed call.
+
 📅 03.11.26 - Version 1.1.1
 
 🔄 Improvements & Changes
