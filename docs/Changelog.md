@@ -1,13 +1,36 @@
 📋 Changelog 📋
 
-📅 05.11.26 - Version 1.1.3
+
+📅 06.11.26 - Version 1.1.3
+
+🆕 New Features
+🆕 Live Reasoning Stream: Reasoning is now streamed live as it is produced, and answer disclosures are easier to read.
+
+🔄 Improvements & Changes
+🔄 One Verdict Per Turn: Each turn now produces a single verdict and a single budget answer, with dynamic tool caps.
+🔄 Citation Rule Enforcement: Answers that break citation rules are now caught and corrected before delivery.
+🔄 Legacy Interface Retired: The legacy v1 interface has been fully retired and its migration tooling archived.
+
+🐛 Bug Fixes
+🐛 Live Data Lookups Fixed: Fixed a chain of issues in live data lookups, from a server that never responded to a result that incorrectly reported zero.
+🐛 Timed Out Actions No Longer Duplicated: A timed-out action is no longer sent twice.
+🐛 Tool-Returned Figures Treated As Verified: Numbers returned by a tool are now treated as verified.
+🐛 Catalogue Reads No Longer Pass As Verified: Catalogue reads and unmapped figures no longer pass as verified.
+🐛 Undisclosed Sources Removed: A tool that never ran is no longer disclosed as a source.
+🐛 Time Phrases No Longer Trigger Music Tool: A bare time phrase no longer selects the music tool.
+🐛 Discovery Rounds No Longer Consume Data Rounds: Discovery rounds no longer eat into the turn's data rounds.
+🐛 Tool Answers Stay Published: A tool answer stays published even when no claim can name its source.
+🐛 Unsupported Claims Now Disclosed: Unsupported claims are now disclosed rather than silently withheld.
+🐛 Cleaner Answer Sources: Answers no longer carry sources and markers that add nothing.
+🐛 Grounded Numeric Claims: Numeric claims are now grounded, and the tail of a capped tool result is preserved.
+🐛 Tool Calls Charged Once: Each tool call is now charged once.
+🐛 Folder Requests Without Articles Work: Folder requests without an article now work.
+🐛 Missing Capabilities Labelled Clearly: Missing capability information is now clearly labelled instead of implying full access.
 
 🛡️ Security & Stability
 🛡️ JWT Tokens Refresh In The Background: Authentication tokens now renew themselves in the background with a 30 second timeout, so a long running session stays signed in instead of being cut off when a token is about to expire.
 🛡️ Lifecycle Mutations Attributed Correctly: A change to a chat's lifecycle is now attributed to the part of the app that made it, so the record of who did what stays accurate.
-
-🐛 Bug Fixes
-🐛 Folder Requests Without An Article Now Work: Asking to open a folder without an article is now understood instead of being misread.
+🛡️ Recorded Approval Before Side Effects: A recorded approval is now required before any side effect runs.
 
 📅 04.11.26 - Version 1.1.2
 
