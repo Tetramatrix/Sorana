@@ -1,6 +1,46 @@
 📋 Changelog 📋
 
 
+📅 08.11.26 - Version 1.1.4
+
+🆕 New Features
+🆕 Publication Ledger & Daily Report: Chat answers now carry a publication ledger with append keys and a daily report, so what was published and when is tracked.
+🆕 Persistent Sessions Across API Calls: Sessions persist across API calls, keeping your conversation state intact.
+🆕 Multi-File Attach: Attach multiple files at once via the paperclip.
+🆕 Parallel Tool Execution: Tools can now run in parallel with per-agent configuration.
+🆕 Structured Citation Claims: Citation handling now uses structured claims for better token budget compliance.
+🆕 I Ging Discover Card: A discover card for the I Ging oracle on the Sorana site.
+🆕 GDELT Code Vocabularies Shipped: The full set of GDELT code vocabularies now ships with the app.
+🆕 Approval Route & Dialog: Approvals now have a dedicated route and a dialog to answer them.
+
+🔄 Improvements & Changes
+🔄 Single Publication Transition: A delivered answer now goes through one publication transition.
+🔄 Judge Role & Chain Ledger: A judge role with a probe-aware chain ledger and per-agent judging.
+🔄 Tone Strength Grading: Claims are graded by tone strength against buckets.
+🔄 Failed Search Memory: A search that found nothing is remembered and surfaced to the next turn.
+🔄 Failed Search Block In System Prompt: The failed-search block is included in every turn's system prompt.
+🔄 Agent Finishes Allowed Actions: The agent can finish what it was allowed to do and learns between turns.
+🔄 Vocabulary Declarations: Tools can declare the vocabulary their checks read; undeclared values are refused.
+🔄 GDELT Query Shaping: GDELT questions get the query shape the tables prove; made-up theme codes are named instead of reported as zero.
+🔄 Reviewer Prompt Trimming: The reviewer prompt was trimmed to fit a verdict beside it.
+
+🐛 Bug Fixes
+🐛 Tool Rows Bound To Their Turn: Tool rows are now bound to their own turn and the parity gate can fail.
+🐛 Figures Checked Against Totals: Stated figures are checked against the total the call returned.
+🐛 This Week Read As Seven Days: "This week" is now read as the seven days the horizon can serve.
+🐛 Catalogue Reads Not Charged: Only the calls a catalogue read does not charge are reserved.
+🐛 Refused Turns Report Refusal: A refused turn now reports the refusal instead of answering from status data.
+🐛 Reviewer Budget Fixes: The reviewer now has a budget a verdict fits in, a local read cap, and a sequence ceiling.
+🐛 LLM None Instead Of Off: Cheaper inference reports none instead of off.
+🐛 Vocabulary Lint Fixes: Reconciled the RAG vocabulary guard with split modules and imported os for the path check.
+
+🛡️ Security & Stability
+🛡️ Approval Identity Chain: The approval identity chain is recorded.
+🛡️ Lifecycle Mutations Attributed: Changes to a chat's lifecycle are attributed to the part of the app that made them.
+🛡️ Recorded Approval Before Side Effects: A recorded approval is required before any side effect runs.
+🛡️ Session Persistence: Sessions persist across API calls.
+
+
 📅 06.11.26 - Version 1.1.3
 
 🆕 New Features
