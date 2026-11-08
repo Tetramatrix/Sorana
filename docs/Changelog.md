@@ -9,7 +9,6 @@
 🆕 Multi-File Attach: Attach multiple files at once via the paperclip.
 🆕 Parallel Tool Execution: Tools can now run in parallel with per-agent configuration.
 🆕 Structured Citation Claims: Citation handling now uses structured claims for better token budget compliance.
-🆕 I Ging Discover Card: A discover card for the I Ging oracle on the Sorana site.
 🆕 GDELT Code Vocabularies Shipped: The full set of GDELT code vocabularies now ships with the app.
 🆕 Approval Route & Dialog: Approvals now have a dedicated route and a dialog to answer them.
 
