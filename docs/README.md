@@ -145,6 +145,12 @@ Monitor system health, model status, and AI performance at a glance. Each card o
 ### Obsidian Export
 Use Sorana as your AI workspace, then export spatial groupings and graph relationships straight into your Obsidian vault.
 
+### Agent guardrails
+Oversee and control what your agent can do. Set permissions for tasks like writing files, reading data, or sending email, so the AI stays within the boundaries you define.
+
+### Themes
+Choose the look that fits your workflow. Pick from different color schemes and visual themes to make Sorana feel like yours.
+
 ### Agent Trace & Debug
 Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. Helps you trust the result or tweak the approach.
 
@@ -196,6 +202,13 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 - "Find my dentist appointment this month"
 - "Send meeting notes to everyone who attended"
 
+### Files & Documents
+- "Show me all files in the project folder"
+- "Rename report_draft.docx to report_final.docx"
+- "Find all PDFs created this week"
+- "Create a new folder called Budget 2026"
+- "Copy the meeting notes to the shared folder"
+
 ### Household & Personal
 - "What bills are due this month?"
 - "Compare internet plans from local providers and save the best option"
@@ -209,6 +222,23 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 - "Compare bitcoin and ethereum by market cap"
 - "List the top 10 coins by market cap"
 - "Show bitcoin's price over the last 30 days"
+
+### ToolForest
+- "Summarize the most recent emails across all my connected Gmail accounts"
+- "Using GDELT, what is the most-reported event in Iran this week, and which outlets covered it?"
+- "According to my Oura data, am I recovered enough to train hard today?"
+- "What moved this Kalshi market, and when?"
+- "Map the collaboration web around this band on MusicBrainz"
+- "Turn this article into clean flashcards in a new Anki deck"
+
+### I Ching Oracle
+- "When will this run of bad luck end? Let the oracle answer."
+- "Should I take the job offer? Ask the I Ching."
+- "What does the hexagram say about my relationship?"
+- "What should I focus on this week? Consult the oracle."
+- "Is now a good time to start something new? Ask the I Ching."
+- "Which hexagram speaks to my situation right now?"
+- "Twenty months of bad luck and still no job: hundreds of applications, hundreds of invitations, only rejections. When does this streak end?"
 
 ### Workflows & Pipelines
 - "Draft a project report, review it for gaps, and polish the final version"
@@ -235,7 +265,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Visual knowledge canvas | AI-organised 2D canvas | Manual (Obsidian Canvas) | Chat only |
 | Chat with documents | Workspace-wide RAG indexing | Plugin required | Project uploads + per-session |
 | Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
-| Tool integrations | Built-in MCP servers incl. ListenBrainz music history, plus ToolForest with 30+ toolkits over one connection and keyless CoinGecko crypto market data | No native AI agents | Connector marketplaces (paid) |
+| Tool integrations | Built-in MCP servers incl. ListenBrainz music history and the I Ching oracle, plus ToolForest with 30+ toolkits over one connection, keyless CoinGecko crypto market data, and the TMDB movie and TV database | No native AI agents | Connector marketplaces (paid) |
 | Calendar & Scheduling | Manage via chat | View-only plugins | Connector (paid) |
 | AI remembers you | Automatic memory across sessions, all categories free | Manual notes only | Basic free notes only; full memory paid |
 | Stays fast over months | Auto-compaction | No AI context | Varies (Claude yes, others no) |
@@ -291,7 +321,7 @@ Sorana reaches tools over MCP on three paths, all managed from the **MCP Manager
 
 ### Built-in servers
 
-Seven servers ship with the app. Most are enabled by default, and each can be switched per agent.
+These servers ship with the app. Most are enabled by default, and each can be switched per agent.
 
 | Server | What it gives the agent |
 |---|---|
@@ -302,6 +332,7 @@ Seven servers ship with the app. Most are enabled by default, and each can be sw
 | **Calendar** | Read schedules, create and update events, find free slots |
 | **Chat sessions** | Inspect and manage session messages, context usage, and compaction |
 | **ListenBrainz** | Your music listening history (new, see below) |
+| **I Ching oracle** | Cast and read hexagrams in plain language (new, see below) |
 
 ### ListenBrainz (built-in, new)
 
@@ -313,6 +344,17 @@ Ask your assistant about years of music listening in plain language. Twelve tool
 - **Queries across the imported archive** — top artists over any date range, full history for one artist, and a rediscovery tool that finds artists you played heavily years ago and have not played since
 
 Setup is one step: paste your ListenBrainz user token (found in your ListenBrainz profile settings) into the Configure dialog. Ask things like "my top 50 artists this year", "what am I playing right now", "export my full history", or "which artists did I love years ago but never play anymore".
+
+### I Ching oracle (built-in, new)
+
+Ask in your own words and Sorana casts the reading and then reads it back: what was drawn, what it says about your situation, where the moving lines are heading, and one step worth taking next. The more of the situation you give, the more there is to read against. The classical translations stay underneath, the Wilhelm and Talis English versions plus a German translation, for when you want to read the source yourself.
+
+- **Draws and readings** — a full interpretation packet with the primary draw, or a simple reading with the primary and derived hexagrams
+- **Moving lines and derived hexagrams** — the changing hexagram, the nuclear hexagram, and where the moving lines are heading
+- **Classical texts** — the Wilhelm, Talis English and German translations under the plain words
+- **A browser home** — [tetramatrix.github.io/hexagram](https://tetramatrix.github.io/hexagram/) is the standalone hexagram reader, for looking one up without the chat
+
+The reading is offered as a mirror for reflection rather than a forecast you should bet on, and Sorana says so when it matters. Ask things like "When will this run of bad luck end? Let the oracle answer.", "Should I take the job offer? Ask the I Ching.", "What should I focus on this week? Consult the oracle.", or "Which hexagram speaks to my situation right now?".
 
 ### CoinGecko (marketplace, new)
 
@@ -348,9 +390,16 @@ Highlights:
 
 Ask things like "Summarize the most recent emails across all my connected Gmail accounts", "Using GDELT, what is the most-reported event in Iran this week, and which outlets covered it?", "According to my Oura data, am I recovered enough to train hard today?", or "What moved this Kalshi market, and when?".
 
-### Other marketplace servers
+### TMDB (marketplace, new)
 
-Marketplace entries for Google Drive, GitHub, Slack, PostgreSQL and movies are under construction and still need manual credential setup. ToolForest already covers most of that ground today.
+The marketplace ships TMDB, The Movie Database for films, series and people. Search any title, show or person and get the full record, discover by genre, date or rating, see what is trending, and find out where a title streams in your region. Every tool is read only.
+
+- **Search and details** — resolve a name to a title, then pull the movie, show, season or person record with cast and crew, ratings, trailers and recommendations
+- **Discover** — filtered queries by genre, release date, vote average, cast, crew, network or streaming provider
+- **Trending** — what is hot today or this week
+- **Watch providers** — streaming, rent and buy providers for a region such as US or DE
+
+Setup is one step: paste your free TMDB read access token from the TMDB settings page into the Configure dialog. TMDB labels both values an API key there; the v4 read access token is the one that works. Node.js 24 or newer is required. Ask things like "What is trending this week?", "Where can I stream Dune Part Two in Germany?", "Show me the cast of The Wire.", or "Find movies like Blade Runner 2049."
 
 ---
 
@@ -361,7 +410,7 @@ Marketplace entries for Google Drive, GitHub, Slack, PostgreSQL and movies are u
 3. Right-click the agent title → **Chat**
 4. Give instructions in plain language, files, web, email, all accessible
 
-Add external servers from the marketplace: the ToolForest aggregator for 30+ toolkits over one connection, the keyless CoinGecko server for crypto market data, or single-service servers for a specific tool.
+Add external servers from the marketplace: the ToolForest aggregator for 30+ toolkits over one connection, the keyless CoinGecko server for crypto market data, or the TMDB movie and TV database for films and series.
 
 ---
 

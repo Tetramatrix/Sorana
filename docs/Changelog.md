@@ -1,6 +1,20 @@
 📋 Changelog 📋
 
 
+📅 09.11.26 - Version 1.1.5
+
+🆕 New Features
+🆕 Movie and TV Lookups: A new help topic and catalog entry let you look up movies and TV shows.
+
+🔄 Improvements & Changes
+🔄 More Reliable Research Answers: Evidence handling during research was tightened, so answers are less likely to carry claims that were cut off or not fully grounded.
+🔄 Answer Quality Settled Before Delivery: Answer quality is settled before the reply is shown, and the final reply is kept at the end of a turn instead of being dropped.
+🔄 Clearer Run Details: When a run did not record a model name, the trace now shows which model was used.
+
+🐛 Bug Fixes
+🐛 Fallback Notices Scoped To The Conversation: A fallback notice no longer appears in the wrong conversation.
+🐛 Research Evidence Gaps Closed: Several cases where research evidence could be missed or miscounted were fixed, so research answers reflect what was actually found.
+
 📅 08.11.26 - Version 1.1.4
 
 🆕 New Features

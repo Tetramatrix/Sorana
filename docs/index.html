@@ -52,10 +52,10 @@
       "name": "Sorana",
       "operatingSystem": "Windows 11, Linux, MacOS",
       "applicationCategory": "PersonalKnowledgeManagement, AIWorkspace",
-      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
+      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows",
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0" },
-      "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png"],
+      "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
       "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
       "alternateDownloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana",
@@ -151,6 +151,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Add the CoinGecko server from the MCP Marketplace and then ask in plain language: \"What is bitcoin's price in USD right now?\" or \"What is Bitcoin Cash trading at right now?\". It needs no account and no API key. It covers prices, market caps, trading volumes and coin metadata for Bitcoin, Bitcoin Cash, Ethereum and thousands of coins besides."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I look up movies and TV shows in chat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Add the TMDB server from the MCP Marketplace and ask in plain language: \"What is trending this week?\" or \"Where can I stream Dune Part Two in Germany?\". It searches movies, shows and people and returns cast and crew, ratings, trailers and recommendations, discovers titles by genre, date or rating, and tells you where a title streams in your region. Setup needs a free TMDB read access token from the TMDB settings page and Node.js 24 or newer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Sorana really an autonomous AI agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Give Sorana a goal and it plans the steps, picks the right tools, and works through them on its own. Reading files, searching the web, and querying your knowledge base happen automatically. Writes to your filesystem and external actions like email and calendar pause for your approval first, and you decide per action, and you can set persistent allow/deny rules. Every step is traceable in the agent trace, and nothing leaves your machine unless you connect a provider."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I chat with my music history?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog. Then ask for top artists, now-playing, or recent listens directly. For full-history questions, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does ToolForest add?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ToolForest is a hosted MCP aggregator with 30+ toolkits over a single connection: Google Workspace, prediction markets like Polymarket, global news via GDELT, Reddit, X, fitness trackers, flashcards and more. Add your API key, authorize toolkits at app.toolforest.io, and ask normally. Its tools are separate from Sorana's built-in Gmail, Calendar, and ListenBrainz servers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the I Ching oracle work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask a question in plain language, or start from one of the oracle badges on the empty chat. The built in I Ching server ships with the app switched on, so there is nothing to download, no setup step and no API key. The assistant casts the reading and reads it back to you: the hexagram that came up, what it says about your situation, where the moving lines of the draw are heading, and one step worth taking next. It covers yarrow draws, the derived and changing hexagrams, the sexagenary clock for a date and place, and the probability tables behind the draw. Everything runs from a bundled library on your machine, so there is no account, no API key, and no network call. The Wilhelm and Talis English translations are included, together with the German classic text, for when you want to read the source yourself."
           }
         }
       ]
@@ -801,7 +841,7 @@
 <section class="section section-alt" id="mcp">
   <div class="section-header">
     <h2>One workspace. <em>Every tool.</em></h2>
-    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, ListenBrainz music history, and an I Ching oracle. The marketplace adds servers that have to be installed, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to single service servers for Drive, GitHub, Slack, Postgres and movies. Everything is managed from the MCP Manager with no config files.</p>
+    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, ListenBrainz music history, and an I Ching oracle. The marketplace adds servers that have to be installed, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to the TMDB movie and TV database. Everything is managed from the MCP Manager with no config files.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card">
@@ -870,6 +910,7 @@
         <img src="coingecko_example.png" alt="CoinGecko live crypto market data in chat" loading="lazy" width="675" height="896" style="width:100%;border-radius:8px;">
       </figure>
       <p style="margin-top:var(--space-4);">Ask it things like "What is bitcoin's price in USD right now?", "What is Bitcoin Cash trading at right now?", or "Compare bitcoin and ethereum by market cap".</p>
+    </div>
     <div class="feature-card large">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -892,9 +933,31 @@
       <p style="margin-top:var(--space-4);">The oracle also has a browser home: <a href="https://tetramatrix.github.io/hexagram/" target="_blank" rel="noopener">tetramatrix.github.io/hexagram</a> is our hexagram reader, for looking one up without the chat.</p>
       <p style="margin-top:var(--space-4);">Ask it things like "When will this run of bad luck end? Let the oracle answer.", "Should I take the job offer? Ask the I Ching.", "What should I focus on this week? Consult the oracle.", or "Which hexagram speaks to my situation right now?".</p>
     </div>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/>
+        </svg>
+      </div>
+      <h3>Movies and TV from The Movie Database <span class="model-tag free">NEW</span></h3>
+      <p><strong>TMDB is now a marketplace server.</strong> Search any movie, show or person and get the full record: cast and crew, ratings, trailers and recommendations. Discover titles by genre, release date, vote average or streaming provider, see what is trending today or this week, and find out where a title streams in your region. Every tool is read only, so nothing is ever written.</p>
+      <p style="margin-bottom:var(--space-2);">Eight tools cover the whole catalogue:</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">Search titles</div>
+        <div class="provider-chip">Movie and show details</div>
+        <div class="provider-chip">Seasons and people</div>
+        <div class="provider-chip">Discover filters</div>
+        <div class="provider-chip">Trending</div>
+        <div class="provider-chip">Watch providers</div>
+      </div>
+      <figure style="margin-top:var(--space-4);">
+        <img src="tmdb.png" alt="TMDB movie and TV data in chat" loading="lazy" width="696" height="620" style="width:100%;border-radius:8px;">
+      </figure>
+      <p style="margin-top:var(--space-4);">It needs a free TMDB read access token and Node.js 24 or newer. TMDB's own settings page labels both values an API key; the one you want is the v4 read access token, and it goes into the server's key field in the configure dialog.</p>
+      <p style="margin-top:var(--space-4);">Ask it things like "What is trending this week?", "Where can I stream Dune Part Two in Germany?", "Show me the cast of The Wire.", or "Find movies like Blade Runner 2049."</p>
     </div>
   </div>
-  <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-6);">Marketplace servers for Drive, GitHub, Slack, Postgres and movies are under construction and need manual auth. ToolForest covers most of that ground today, and CoinGecko needs no setup.</p>
+  <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-6);">The TMDB server needs a free TMDB read access token and Node.js 24 or newer. CoinGecko needs no setup, and ToolForest covers the rest over a single connection.</p>
 </section>
 
 <section class="section" id="chat-examples">
@@ -1060,7 +1123,7 @@
       <tr><th scope="row">Visual knowledge canvas</th><td class="win">AI-organised 2D spatial canvas for visual knowledge management.</td><td>Visual canvas is not described on the current site.</td><td>Obsidian Canvas (manual). Notion database views.</td><td>Chat-first interface. Canvas features limited or absent.</td></tr>
       <tr><th scope="row">Chat with documents</th><td class="win">Chat with hundreds of papers, books, and scanned notes across your whole workspace.</td><td>Document editor. Document-chat scope is not described.</td><td>Community plugins for document chat.</td><td>Project uploads and per-session context.</td></tr>
       <tr><th scope="row">Image OCR &amp; Vision AI</th><td class="win">Built-in OCR with AI vision fallback for images and documents.</td><td>Image gallery. OCR and vision are not described.</td><td>External tools or plugins required.</td><td>Vision features vary by service.</td></tr>
-      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history, I Ching oracle) plus the ToolForest aggregator with 30+ toolkits over one connection and keyless CoinGecko crypto market data.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
+      <tr><th scope="row">Tool integrations</th><td class="win">Built-in MCP servers (memory, files, web search, Gmail, Calendar, ListenBrainz music history, I Ching oracle) plus the ToolForest aggregator with 30+ toolkits over one connection, keyless CoinGecko crypto market data, and the TMDB movie and TV database.</td><td>Built-in tools plus any MCP server you connect.</td><td>Plugin marketplace. No native AI agents.</td><td>Connector marketplaces vary by service.</td></tr>
       <tr><th scope="row">Calendar &amp; Scheduling</th><td class="win">Manage Gmail and Calendar through natural chat.</td><td>Calendar and scheduling are not described.</td><td>View-only calendar plugins.</td><td>Calendar connectors vary by service.</td></tr>
       <tr><th scope="row">AI remembers you</th><td class="win">Persistent memory that remembers your projects, preferences, and decisions.</td><td>Persistent memory across all conversations.</td><td>Manual notes and tags. No persistent AI memory.</td><td>Memory features vary by service and plan.</td></tr>
       <tr><th scope="row">Stays useful over months</th><td class="win">Quietly condenses older conversations while keeping the important context for months of continued work.</td><td>Persistent memory across conversations. Retention period not stated.</td><td>Manual organization. No AI context retention.</td><td>Context retention varies by service.</td></tr>
@@ -1633,6 +1696,10 @@
     <details class="faq-item">
       <summary>Can I check crypto prices in chat?</summary>
       <p>Yes. Add the CoinGecko server from the MCP Marketplace and then ask in plain language: "What is bitcoin's price in USD right now?" or "What is Bitcoin Cash trading at right now?". It needs no account and no API key. It covers prices, market caps, trading volumes and coin metadata for Bitcoin, Bitcoin Cash, Ethereum and thousands of coins besides.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I look up movies and TV shows in chat?</summary>
+      <p>Yes. Add the TMDB server from the MCP Marketplace and ask in plain language: "What is trending this week?" or "Where can I stream Dune Part Two in Germany?". It searches movies, shows and people and returns cast and crew, ratings, trailers and recommendations, discovers titles by genre, date or rating, and tells you where a title streams in your region. Setup needs a free TMDB read access token from the TMDB settings page and Node.js 24 or newer.</p>
     </details>
     <details class="faq-item">
       <summary>How does the I Ching oracle work?</summary>
