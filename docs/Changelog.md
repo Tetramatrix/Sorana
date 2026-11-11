@@ -1,6 +1,30 @@
 📋 Changelog 📋
 
 
+📅 11.11.26 - Version 1.1.6
+
+🆕 New Features
+🆕 Conversations Reopen Where They Stopped: chat state is saved as the conversation goes, so a reopened app returns to the last exchange and an interrupted turn can be resumed.
+🆕 Memory Work On The Health Dashboard: the memory extraction that runs after an answer now shows as a job that moves from waiting to running to done, with what it produced.
+🆕 Login Renewed Before It Lapses: an expiring login token is now renewed shortly before it runs out, so a long session no longer ends because of a stale token.
+
+🔄 Improvements & Changes
+🔄 A Conversation Store With A Ceiling: saved chat history is capped at half a gigabyte and whole older conversations are cleared out before anything recent; the history on disk went from 2.8 GB to 381 MB.
+🔄 One Retry Rule Everywhere: every retry loop now asks the same rule before trying again, so a retry can no longer run after its budget was already spent.
+🔄 Delivered Answers Scored As Sent: the text actually delivered is now the text that gets measured, and the record says whether the quality floor had a score when it decided.
+🔄 Connector Failures Remembered By Cause: a failed connector records why it failed, retries once when the cause allows it, and no longer marks every other connector of its kind as unavailable.
+🔄 Older Chats Keep Their Links: sessions carried over from an earlier install are mirrored into the chat record, so their conversations stay attached after the upgrade.
+🔄 Tidier Internals: the tool contract text, the connector failure state and the claim support logic each live in their own module again, so a change in one no longer touches the others.
+
+🐛 Bug Fixes
+🐛 Health Card Missed Memory Writes: the dashboard showed one memory export from 08.11.26 while every turn since had written memories; each write is now recorded and appears in the card.
+🐛 Conversation Cleanup Could Be Switched Off: a stray marker file in the data folder silenced the old conversation cleanup without any sign in the app, which is how one store grew unchecked; the switch is gone and the cap cannot be turned off that way.
+🐛 Tool Names Resolved Inconsistently: an alias for a tool could come back spelled the way it was called rather than the way it is registered, so one tool looked like two.
+
+🛡️ Security & Stability
+🛡️ Two Saves No Longer Collide: two sessions saving at the same moment now wait their turn instead of failing a turn.
+🛡️ The Cap Is Checked Again Between Restarts: the store is measured while the app runs and trimmed again at the next start, so it cannot drift past its limit.
+
 📅 09.11.26 - Version 1.1.5
 
 🆕 New Features
