@@ -1,6 +1,35 @@
 📋 Changelog 📋
 
 
+📅 12.11.26 - Version 1.1.7
+
+🆕 New Features
+🆕 Cards Anywhere You Put Them: cards on the Manage Agents Advanced tab and on the Health dashboard keep their own height and can be dragged anywhere instead of snapping into fixed slots, and every position is remembered the next time you open the app.
+🆕 Review The Categories Before A Folder Is Regrouped: rebuilding a folder's grouping now shows the proposed categories first, so you can rename or remove them and confirm before anything is rearranged.
+🆕 The Model Manager Remembers How You Arranged It: sort column, direction, grouped or flat layout, column widths and collapsed groups are stored, so a restart no longer resets the dialog.
+🆕 The Reported Active Model Is The One That Answers: when chat is bound to a different model than the local one the app manages, the health card and the model list now name the model that actually replies.
+
+🔄 Improvements & Changes
+🔄 A Link In The Question Always Brings The Web Tools: a message containing a web address now always receives the fetching tools, so the answer can open the page instead of reporting that it cannot reach it.
+🔄 Long Turns Trim The Page That Filled The Window: when a turn runs past its token allowance, the largest fetched page is the one trimmed and trimming it really frees space, so small results are no longer cut while the page that used the room stays.
+🔄 Grouping Always Returns Categories: sorting and consolidation each have their own allowance, so a reply that only reasons can no longer consume the whole budget and leave empty categories or stop the app from starting.
+🔄 Sync Inside A Project Sees The System Library: the sync dialog no longer empties both panes for a project agent, so Pull has the system library to select from.
+🔄 The Tool Allowance Is Counted Once Per Round: a turn that calls several tools no longer reports its tools as used up right after a successful fetch.
+🔄 Tidier Internals: the model list routes and the Model Manager view state store each live in their own module again, so a change in one no longer touches the other.
+
+🐛 Bug Fixes
+🐛 The Help Panel Failed Only In The Installed App: the help window could not load in the installed app because it read a file that the package does not include; it now reads the same live objects everywhere, so Help works everywhere.
+🐛 Deleted Chats Stay Deleted: a session you deleted could come back on the next launch, restored from the older store; the delete is now recorded so both imports skip it.
+🐛 Sorting Only Reordered Rows Inside A Group: sorting in the grouped model list now applies across all models, favorites keep their own section, and role models stay pinned in every sort order.
+🐛 A Greeting Was Scored Against Itself And Dropped: a short greeting was graded against the greeting itself and thrown away, so the reply you saw could be replaced by a fallback notice; greetings now skip that grading.
+🐛 A Briefing Lost Its Calendar Section: when the calendar lookup returned nothing the section vanished with no reason given; it now states the section and why it is empty.
+🐛 Failures Left Nothing In The Log: an API request that failed could close the window with no record anywhere; failures are now recorded with their address, status and duration.
+
+🛡️ Security & Stability
+🛡️ One Write Permission Per Turn: the turn that asks to write a file gets exactly one round with the write tools instead of re-arming them on every round of the same turn.
+🛡️ Helper Windows No Longer Flash: background helpers start without opening a console window.
+🛡️ A Dead Start Cannot Retry Forever: when the backend does not come up the retry stops once its budget is spent and the failure is written to the log instead of looping behind the splash.
+
 📅 11.11.26 - Version 1.1.6
 
 🆕 New Features
