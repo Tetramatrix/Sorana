@@ -4,10 +4,14 @@
 📅 12.11.26 - Version 1.1.7
 
 🆕 New Features
-🆕 Cards Anywhere You Put Them: cards on the Manage Agents Advanced tab and on the Health dashboard keep their own height and can be dragged anywhere instead of snapping into fixed slots, and every position is remembered the next time you open the app.
+🆕 Cards Anywhere You Put Them: cards on the Manage Agents Advanced tab and on the Health dashboard keep their own height and can be dragged anywhere instead of snapping into fixed slots, and every position is remembered the next time you open the app. In the Advanced tab the cards can also be reordered by dragging, and that order is saved too.
 🆕 Review The Categories Before A Folder Is Regrouped: rebuilding a folder's grouping now shows the proposed categories first, so you can rename or remove them and confirm before anything is rearranged.
 🆕 The Model Manager Remembers How You Arranged It: sort column, direction, grouped or flat layout, column widths and collapsed groups are stored, so a restart no longer resets the dialog.
 🆕 The Reported Active Model Is The One That Answers: when chat is bound to a different model than the local one the app manages, the health card and the model list now name the model that actually replies.
+🆕 Canvas File Actions: Copy To A Folder And ZIP The Selection: selecting files on the canvas now offers Copy to..., which copies them into a folder you pick and numbers the copies so nothing is overwritten, and Compress to ZIP, which zips the selection right beside it.
+🆕 Mindmap Zoom, Pan And Fit: the wheel zooms the map under the pointer, dragging pans it, and the header carries zoom out, the current percent, zoom in and Fit; the map opens fitted instead of oversized.
+🆕 Tiles Grow Under The Pointer: the tile under the mouse scales up a little so it is easier to hit.
+🆕 Group Titles That Fit: a narrow group no longer prints its title one letter per line; it shows in full, as one truncated line, or not at all, with the full name on hover.
 
 🔄 Improvements & Changes
 🔄 A Link In The Question Always Brings The Web Tools: a message containing a web address now always receives the fetching tools, so the answer can open the page instead of reporting that it cannot reach it.
@@ -16,6 +20,7 @@
 🔄 Sync Inside A Project Sees The System Library: the sync dialog no longer empties both panes for a project agent, so Pull has the system library to select from.
 🔄 The Tool Allowance Is Counted Once Per Round: a turn that calls several tools no longer reports its tools as used up right after a successful fetch.
 🔄 Tidier Internals: the model list routes and the Model Manager view state store each live in their own module again, so a change in one no longer touches the other.
+🔄 Grouping Shares Chat's Parallel Limit: grouping requests now take their parallel calls from the same allowance as chat, so they can no longer overrun the limit or crowd out the reviewer they share.
 
 🐛 Bug Fixes
 🐛 The Help Panel Failed Only In The Installed App: the help window could not load in the installed app because it read a file that the package does not include; it now reads the same live objects everywhere, so Help works everywhere.
@@ -24,6 +29,11 @@
 🐛 A Greeting Was Scored Against Itself And Dropped: a short greeting was graded against the greeting itself and thrown away, so the reply you saw could be replaced by a fallback notice; greetings now skip that grading.
 🐛 A Briefing Lost Its Calendar Section: when the calendar lookup returned nothing the section vanished with no reason given; it now states the section and why it is empty.
 🐛 Failures Left Nothing In The Log: an API request that failed could close the window with no record anywhere; failures are now recorded with their address, status and duration.
+🐛 Canvas File Rows Failed Outside The Last Folder: Open File and the other rows failed outside the last scanned folder, double click did nothing, and delete took only one file; they now act on the path you click, delete takes the whole selection, and confirmations use the app's own dialogs.
+🐛 Mindmap Fell Back To Raw Text: when the layout produced broken geometry the whole window showed raw source; it now retries with a different layout and only shows the source if that fails too.
+🐛 Advanced Cards Stuck At One Column: the board measured its own column cap so it could never grow past one column, and drag only showed a grab cursor; columns now grow with the window and pointer drag works.
+🐛 A Text Limit Broke Searches: a limit passed as text failed the search and returned nothing; it is now coerced to a valid number.
+🐛 Fetched Pages Reported As Missing: a page that had been fetched could still be reported as not fetched, and a source could be called unreachable after a successful fetch; both now close correctly.
 
 🛡️ Security & Stability
 🛡️ One Write Permission Per Turn: the turn that asks to write a file gets exactly one round with the write tools instead of re-arming them on every round of the same turn.
