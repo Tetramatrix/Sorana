@@ -1,6 +1,16 @@
 📋 Changelog 📋
 
 
+📅 13.11.26 - Version 1.1.8
+
+🐛 Bug Fixes
+🐛 The Model Manager Was Empty On Linux: the installed Linux app opened the Model Manager with no models at all while chat still worked, because a missing import broke the model list only on that platform; the list now loads everywhere.
+🐛 The Linux App Could Not Start: the Linux install could give up before its backend came up, because a bundled component it ships with was an outdated copy; the copy is now verified and refreshed before packaging.
+🐛 A Huge Folder Froze The Canvas: grouping a folder of about two thousand icons left the board placing nothing while the app kept answering, because the spacing reserved for the groups consumed nearly every cell and the layout then searched for a free one without end; the spacing now stays inside what is left, and a full board is reported instead of spinning.
+🐛 Icons Left Without Their Group Frame: an icon could keep the name of a group that was no longer on the board, so no frame was drawn around it and it looked loose; icon membership is now reconciled with the groups actually present.
+🐛 Category Names Taken From Reasoning Text: when a rebuild returned no names the app took them from the model's reasoning instead, so a numbered line of thought could become a category; that fallback is now off, a name that is too long, too wordy or that starts with a numbered line is replaced with a plain default, and the names you have already saved stay as they are.
+
+
 📅 12.11.26 - Version 1.1.7
 
 🆕 New Features
