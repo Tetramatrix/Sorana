@@ -874,6 +874,7 @@ nav.scrolled {
   grid-template-columns: repeat(auto-fill, minmax(min(300px,100%), 1fr));
   gap: var(--space-4);
   align-items: start;
+  grid-auto-flow: dense;
 }
 .feature-card {
   background: var(--color-surface);
