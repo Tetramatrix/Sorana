@@ -55,7 +55,7 @@
       "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows",
       "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0" },
-      "screenshot": ["freemodels.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png"],
+      "screenshot": ["model_manager.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
       "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
       "alternateDownloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana",
@@ -284,9 +284,24 @@
     <div class="hero-slideshow" role="region" aria-label="App screenshots">
       <div class="hero-slide active" data-index="0">
         <div class="screenshot-wrap">
-          <picture><source srcset="freemodels.webp" type="image/webp"><img src="freemodels.png"
-                alt="Sorana Model Manager showing 25+ free AI models"
-               width="1140" height="820" fetchpriority="high"></picture>
+          <picture><source srcset="start.webp" type="image/webp"><img src="start.png"
+                alt="Sorana start screen with quick action suggestions"
+               width="1091" height="905" fetchpriority="high"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Start a conversation in one click: quick actions open your library, trending movies, or an oracle reading, or just type your message.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="1">
+        <div class="screenshot-wrap">
+          <picture><source srcset="model_manager.webp" type="image/webp"><img src="model_manager.png"
+                alt="Sorana Model Manager with 2276 models grouped by provider"
+               width="1202" height="882"></picture>
         </div>
         <div class="floating-badges">
           <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
@@ -297,7 +312,7 @@
           The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
         </p>
       </div>
-      <div class="hero-slide" data-index="1">
+      <div class="hero-slide" data-index="2">
         <div class="screenshot-wrap">
           <picture><source srcset="grouping_movies_example.webp" type="image/webp"><img src="grouping_movies_example.png"
                 alt="Sorana workspace canvas with 2090+ movie files grouped into genres"
@@ -820,7 +835,7 @@
       <figcaption>Each project on its own canvas, with its own assistant and notes.</figcaption>
     </figure>
     <figure class="screenshot-card">
-      <picture><source srcset="modelmanager.webp" type="image/webp"><img src="modelmanager.png" alt="Model Manager" loading="lazy" width="640" height="400"></picture>
+      <picture><source srcset="model_manager.webp" type="image/webp"><img src="model_manager.png" alt="Model Manager with 2276 models grouped by provider" loading="lazy" width="640" height="400"></picture>
       <figcaption>Browse, sort, and favorite models from every provider.</figcaption>
     </figure>
     <figure class="screenshot-card">
