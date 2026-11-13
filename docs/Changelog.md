@@ -1,6 +1,35 @@
 📋 Changelog 📋
 
 
+📅 14.11.26 - Version 1.1.9
+
+🆕 New Features
+🆕 Arrange Your Desktop From The Desktop Tab: the Update and Rebuild buttons on the Desktop tab now start a real run, so the desktop can be sorted into categories from there, and a finished run draws its groups on the desktop board.
+🆕 A Folder And The Desktop Keep Their Own Grouping: the two boards used to share one saved grouping, so a desktop scan deleted a folder's categories and the next desktop update was forced into a full rebuild. Each board now keeps its own, and opening one leaves the other as it was.
+🆕 The Toolbar Says What The Board Holds: both toolbars show the item and group counts beside the path, for the board you are looking at, in the workspace toolbar just after the folder path and in the desktop toolbar after Organize Desktop.
+🆕 A 3D Graph Of Your Workspace: a new graph window draws a grouped folder as a 3D scene, with one hub per category and files and folders shaded from their hub. It reads the saved grouping and never moves anything on the board. A text and category filter dims what does not match, size, runtime and age filters reshape the scene, and an inspector opens for the item you click.
+🆕 A 3D Graph Of Agent Memory: memories are drawn as a 3D graph whose links show where each one came from, with filters that are remembered, memories you can pin, and the usual actions: read, edit, delete, and move a memory to another agent.
+🆕 Sync Between Your Own Agents: documents, memories and chats can now be synced from one agent to another, not only into the System Library. Chats have their own window showing both sides, and syncing the same chats again adds only what the target is missing instead of duplicating a conversation.
+
+🔄 Improvements & Changes
+🔄 The Background Note Says It Once: a grouping run used to read "Analyzing folder in the background", then "Analyzing folder contents...", then "Analyzing 7 items". The headline stays because it says the work runs detached, and the middle line is gone.
+🔄 Long Rebuilds Show Where They Are: the note now carries the batch ("Batch 2/3"), the item count and how long the run has been going ("2m 05s"), so a rebuild that takes minutes looks alive instead of stuck.
+🔄 Counts Follow A Drop And A Return: the toolbar counts update after a drop and after a finished run, and they are re-read when you come back to the window, so a change made while the app was in the background shows up.
+🔄 The Background Jobs Card Names The Run: it now has a last grouping row for the folder and one for the desktop, each naming the mode the run really took, Update or Rebuild, instead of the button that started it.
+🔄 A Working Run Is No Longer Called Failed: one empty batch pinned the grouping pill to "Analysis failed" for the rest of a run that was still working. The verdict now comes from the run itself.
+🔄 Cancelling A Grouping Really Stops It: a cancelled run used to keep going until it ran out of steps, then came back with no groups at all. It now ends as soon as you cancel.
+🔄 Grouping Survives A Long Reply: a batch that hits the reply length limit is retried in smaller pieces, only for the items still missing, and what is left after three attempts lands in Uncategorized instead of disappearing. The allowance for a grouping round now leaves room for the answer after the model's own reasoning, so long reasoning no longer returns empty categories.
+🔄 An Update With Nothing Saved Asks First: updating a folder that has no saved grouping used to become a full rebuild without asking. The proposed categories now go through the review step, where you can rename or drop them.
+
+🐛 Bug Fixes
+🐛 Counts For A Workspace You Had Closed: after unloading a workspace, or after restarting the app, the toolbar still showed the last folder's counts beside "No folder loaded". The line now shows nothing unless a folder is open and the saved grouping belongs to that folder.
+🐛 An Answer Was Lost To A Leftover Approval Request: a turn that had already produced its answer could return nothing, because an approval request from an earlier batch was still in the record. A delivered answer is now published, and the request stays answerable.
+🐛 A Ghost Icon On A Fresh Workspace: a saved icon whose file had since been deleted stayed on the board, and icons waiting for their first grouping were drawn stacked at the top left. Cached items whose path no longer exists are dropped, and waiting icons stay hidden until the grouping arrives.
+
+🛡️ Security & Stability
+🛡️ The System Library Is Never A Sync Target: the sync buttons are hidden where the target would be the shared library, and a window opened by address refuses that scope too, so the shared library cannot take or hand out data by accident.
+
+
 📅 13.11.26 - Version 1.1.8
 
 🐛 Bug Fixes
