@@ -870,8 +870,10 @@ nav.scrolled {
 /* ── FEATURES ── */
 .features-header { text-align: left; }
 .features-grid {
-  column-count: 3;
-  column-gap: var(--space-4);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px,100%), 1fr));
+  gap: var(--space-4);
+  align-items: start;
 }
 .feature-card {
   background: var(--color-surface);
@@ -879,19 +881,12 @@ nav.scrolled {
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   transition: border-color 200ms, box-shadow 200ms;
-  break-inside: avoid;
-  margin-bottom: var(--space-4);
 }
 .feature-card:hover {
   border-color: rgba(62,207,178,0.2);
   box-shadow: 0 8px 32px rgba(62,207,178,0.04);
 }
-@media (max-width: 900px) {
-  .features-grid { column-count: 2; }
-}
-@media (max-width: 600px) {
-  .features-grid { column-count: 1; }
-}
+.feature-card.large { grid-column: span 2; }
 #moreFeatures {
   margin-top: var(--space-8);
 }
@@ -1797,6 +1792,7 @@ footer {
   .hero { padding: var(--space-12) var(--space-5); }
   .showcase { padding: 0 var(--space-4) var(--space-16); }
   .section { padding: var(--space-12) var(--space-4); }
+  .feature-card.large { grid-column: span 1; }
   .model-preview { padding: var(--space-12) var(--space-4); }
   .providers-section { padding: var(--space-10) var(--space-4); }
   .hero-stats { gap: var(--space-5); }
