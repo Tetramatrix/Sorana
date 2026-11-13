@@ -431,6 +431,25 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 
 ---
 
+## Reviews & Coverage
+
+Independent reviews of Sorana, with the score each outlet gives where it publishes one:
+
+| Outlet | Date | Score |
+|---|---|---|
+| [MajorGeeks](https://www.majorgeeks.com/files/details/sorana.html) | 2026-11-11 | 5/5 |
+| [CHIP](https://www.chip.de/download/office-produktivitaet-finanzen/sorana_58681706-33e8-4241-b0d2-7c59e561efc9.html) | 2026-11-11 | 4/5 |
+| [wischtig.de](https://wischtig.de/blog/dateien-mit-sorana-sortieren) | 2026-08-19 | not scored |
+| [Warp2Search](https://www.warp2search.net/story/sorana-10770-released/) | 2026-07-30 | not scored |
+| [TrishTech](https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/) | 2026-05-27 | not scored |
+| [Softpedia](https://www.softpedia.com/get/System/File-Management/Sorana.shtml) | not stated | not scored |
+| [PoweredByAI](https://poweredbyai.app/project/sorana) | not stated | not scored |
+| [MCPMarket](https://mcpmarket.com/es/server/sorana) | not stated | not scored |
+
+Each score is the outlet's own, on the scale that outlet publishes. Where an outlet has not scored Sorana, the table says so instead of estimating one. Short quotes from these reviews appear in the [testimonials section of the site](https://tetramatrix.github.io/Sorana/#testimonials).
+
+---
+
 ## Other Tools by Tetramatrix
 
 - **TabNeuron**, AI spatial tab manager & browser research workspace
