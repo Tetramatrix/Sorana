@@ -442,11 +442,11 @@ Independent reviews of Sorana, with the score each outlet gives where it publish
 | [wischtig.de](https://wischtig.de/blog/dateien-mit-sorana-sortieren) | 2026-08-19 | not scored |
 | [Warp2Search](https://www.warp2search.net/story/sorana-10770-released/) | 2026-07-30 | not scored |
 | [TrishTech](https://www.trishtech.com/2026/05/sorana-the-private-ai-workspace-that-never-forgets-you/) | 2026-05-27 | not scored |
-| [Softpedia](https://www.softpedia.com/get/System/File-Management/Sorana.shtml) | not stated | not scored |
+| [Softpedia](https://www.softpedia.com/get/System/File-Management/Sorana.shtml) | not stated | 4/5 editorial, 4.8/5 from 213 reader votes |
 | [PoweredByAI](https://poweredbyai.app/project/sorana) | not stated | not scored |
 | [MCPMarket](https://mcpmarket.com/es/server/sorana) | not stated | not scored |
 
-Each score is the outlet's own, on the scale that outlet publishes. Where an outlet has not scored Sorana, the table says so instead of estimating one. Short quotes from these reviews appear in the [testimonials section of the site](https://tetramatrix.github.io/Sorana/#testimonials).
+Each score is the outlet's own, on the scale that outlet publishes. Softpedia publishes two: the editorial rating its tester gave, and the average of its readers' votes, so both are listed. Where an outlet has not scored Sorana, the table says so instead of estimating one. Short quotes from these reviews appear in the [testimonials section of the site](https://tetramatrix.github.io/Sorana/#testimonials).
 
 ---
 
