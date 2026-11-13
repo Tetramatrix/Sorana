@@ -406,6 +406,23 @@ nav.scrolled {
   color: var(--color-text-muted);
 }
 
+/* ── HERO SLIDESHOW ── */
+.hero-slideshow {
+  position: relative;
+}
+.hero-slide {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+.hero-slide.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* ── FREE BADGE FLOATING ── */
 .floating-badges {
   display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;

@@ -34,7 +34,7 @@
     toggleBtn.addEventListener('click', function() {
       var visible = moreFeatures.style.display !== 'none';
       moreFeatures.style.display = visible ? 'none' : 'grid';
-      toggleBtn.textContent = visible ? '14 more features ↓' : 'Show fewer ↑';
+      toggleBtn.textContent = visible ? '15 more features ↓' : 'Show fewer ↑';
     });
   }
 
@@ -174,4 +174,19 @@
   band.addEventListener('scroll', updateArrows, { passive: true });
   window.addEventListener('resize', updateArrows);
   updateArrows();
+})();
+
+/* ===== Hero slideshow rotation ===== */
+(function() {
+  'use strict';
+  var slideshow = document.querySelector('.hero-slideshow');
+  if (!slideshow) return;
+  var slides = slideshow.querySelectorAll('.hero-slide');
+  if (slides.length < 2) return;
+  var current = 0;
+  setInterval(function() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 5000);
 })();

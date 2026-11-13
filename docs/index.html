@@ -281,19 +281,38 @@
     <span class="badge free"><span class="badge-dot"></span>$0/mo with free-tier models · weekly promos</span>
   </div>
   <div class="showcase" style="padding:0;max-width:1100px;">
-    <div class="screenshot-wrap">
-      <picture><source srcset="freemodels.webp" type="image/webp"><img src="freemodels.png"
-            alt="Sorana Model Manager showing 25+ free AI models from OpenRouter, Nvidia, Mistral, Stepfun and more"
-           width="1140" height="820" fetchpriority="high"></picture>
+    <div class="hero-slideshow" role="region" aria-label="App screenshots">
+      <div class="hero-slide active" data-index="0">
+        <div class="screenshot-wrap">
+          <picture><source srcset="freemodels.webp" type="image/webp"><img src="freemodels.png"
+                alt="Sorana Model Manager showing 25+ free AI models"
+               width="1140" height="820" fetchpriority="high"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="1">
+        <div class="screenshot-wrap">
+          <picture><source srcset="grouping_movies_example.webp" type="image/webp"><img src="grouping_movies_example.png"
+                alt="Sorana workspace canvas with 2090+ movie files grouped into genres"
+               width="1140" height="820"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Sorana grouped 2090+ movie files into genres on the workspace canvas. Not many apps can make sense of an archive that size.
+        </p>
+      </div>
     </div>
-    <div class="floating-badges">
-      <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
-      <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
-      <span class="badge local"><span class="badge-dot"></span> Local</span>
-    </div>
-    <p class="screenshot-caption">
-      The Sorana Model Manager: browse, collapse, sort by provider, name, or capability, mark favorites, and activate models from every major provider in one unified interface.
-    </p>
   </div>
   <div class="hero-stats">
     <div class="stat">
@@ -728,9 +747,21 @@
       <h3>Long conversations stay on track</h3>
       <p>Older parts of a conversation are quietly condensed while the important details stay available. Keep working for weeks or months without losing the thread or slowing down.</p>
     </div>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+        </svg>
+      </div>
+      <h3>Smart grouping for large archives <span class="model-tag free">NEW</span></h3>
+      <p><strong>Sorana can automatically organize thousands of unordered files into meaningful groups.</strong> Point it at a folder with 2090+ movie files and it will classify them into genres, suggest new categories, and lay them out on the workspace canvas. The grouping scales to large archives, gives you an overview you would not get from a flat list, and can even inspire new categories you had not thought of.</p>
+      <figure style="margin-top:var(--space-4);">
+        <img src="grouping_movies_example.png" alt="Workspace canvas with 2090+ movie files grouped into 13 genres" loading="lazy" width="908" height="681" style="width:100%;border-radius:8px;">
+      </figure>
+    </div>
   </div>
   <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
-    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">14 more features ↓</button>
+    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">15 more features ↓</button>
   </div>
 
   <!-- OPENROUTER FREE BANNER -->
@@ -820,6 +851,10 @@
     <figure class="screenshot-card">
       <img src="coingecko_example.png" alt="CoinGecko live crypto market data in chat" loading="lazy" width="640" height="400">
       <figcaption>Ask for live crypto prices, market caps, and 30-day price history.</figcaption>
+    </figure>
+    <figure class="screenshot-card">
+      <picture><source srcset="grouping_movies_example.webp" type="image/webp"><img src="grouping_movies_example.png" alt="Workspace canvas with 2090+ movie files grouped into genres" loading="lazy" width="640" height="400"></picture>
+      <figcaption>Sorana grouped 2090+ movie files into genres automatically on the workspace canvas.</figcaption>
     </figure>
   </div>
 </section>
