@@ -888,6 +888,33 @@ nav.scrolled {
   box-shadow: 0 8px 32px rgba(62,207,178,0.04);
 }
 .feature-card.large { grid-column: span 2; }
+/* MCP marketplace servers: full-width bands.
+   These cards carry prose, a chip row and a screenshot. At two columns wide in a
+   three column grid the wide card cannot sit in the one free column, so it drops
+   to the next row and leaves that column of every row empty. Each card spans the
+   whole row instead: copy on the left, screenshot on the right. */
+#mcp .feature-card.band {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 48ch) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+#mcp .feature-card.band > figure,
+#mcp .feature-card.band > .band-tools {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+}
+@media (max-width: 900px) {
+  #mcp .feature-card.band { grid-template-columns: minmax(0, 1fr); }
+  #mcp .feature-card.band > figure,
+  #mcp .feature-card.band > .band-tools {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: var(--space-4);
+  }
+}
 #moreFeatures {
   margin-top: var(--space-8);
 }
