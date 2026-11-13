@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="wischtig.de">
+  <title>wischtig.de</title>
+  <rect width="64" height="64" fill="#16120e"/>
+  <!-- Sortierte Register-Linien: das Markenversprechen „klar sortiert“ als Zeichen.
+       Bewusst grob und ungleich lang, damit es bei 16 px noch als Glyphe liest. -->
+  <rect x="12" y="16" width="40" height="6" fill="#f4f1ea"/>
+  <rect x="12" y="29" width="28" height="6" fill="#3fbfae"/>
+  <rect x="12" y="42" width="16" height="6" fill="#f4f1ea"/>
+</svg>
