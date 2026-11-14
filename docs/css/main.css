@@ -888,6 +888,22 @@ nav.scrolled {
   box-shadow: 0 8px 32px rgba(62,207,178,0.04);
 }
 .feature-card.large { grid-column: span 2; }
+/* Small cards stacked in the free column beside a wide card. The stack is
+   stretched to the row height, so no empty gap is left under the wide card. */
+.feature-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-self: stretch;
+}
+.feature-stack > * { flex: 1 1 auto; min-width: 0; }
+
+/* The ad card takes the two free cells of the last row, so the grid does not
+   end with an empty cell. Gated at 648px: below that width the grid is a single
+   column, and a two column span would add a broken second column. */
+@media (min-width: 648px) {
+  #topFeatures > :last-child { grid-column: span 2; align-self: stretch; }
+}
 /* MCP marketplace servers: full-width bands.
    These cards carry prose, a chip row and a screenshot. At two columns wide in a
    three column grid the wide card cannot sit in the one free column, so it drops
