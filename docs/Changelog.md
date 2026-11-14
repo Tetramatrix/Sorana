@@ -22,6 +22,8 @@
 🔄 An Update With Nothing Saved Asks First: updating a folder that has no saved grouping used to become a full rebuild without asking. The proposed categories now go through the review step, where you can rename or drop them.
 🔄 Workspace Graph Works On Linux: the Age filter now uses modification time when creation time is unavailable, so the control is no longer hidden on Linux.
 🔄 Workspace Graph Node Shapes Vary By Topology: nodes in the 3D workspace graph now vary in shape by topology, alongside workspace intel and the selection inspector.
+🔄 A Board Survives A Missing Layout File: a folder whose layout file can no longer be read (a disconnected drive or a permission change) now shows its board from the saved cache instead of staying blank, and each board's counts are shown in the corner of its canvas.
+🔄 A Compact Workspace Graph Header: the window chrome already names the graph, so the body header shows only the folder path, and the filter band is capped at two rows and scrolls, so a long list of group chips cannot push the graph down.
 
 🐛 Bug Fixes
 🐛 Counts For A Workspace You Had Closed: after unloading a workspace, or after restarting the app, the toolbar still showed the last folder's counts beside "No folder loaded". The line now shows nothing unless a folder is open and the saved grouping belongs to that folder.
