@@ -100,6 +100,9 @@ Sorana breaks complex requests into step-by-step plans, runs searches and file r
 ### Projects Canvas
 A second canvas beside your Workspace board. Every project gets its own card, its own assistant, its own folder that Sorana keeps and looks after, and its own notes. Right-click the canvas to start a project, right-click a card to open or chat with it. Each canvas keeps its own view, zoom, pan, grid density, and remembered positions, and each one comes back exactly the way you left it.
 
+### Desktop & Folder Grouping
+Each board keeps its own grouping, so a desktop scan no longer wipes a folder's categories and forces a full rebuild. Start an update or a rebuild straight from the Desktop tab, watch live progress while it runs, and read the item and group counts in the toolbar for the board you are looking at.
+
 ### Agent Budgets & Limits
 Set a daily usage limit per agent from the Health Dashboard through a guided wizard, and track it in real time. Leave the field blank to use the app default or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight, and withheld calls are reported honestly rather than silently truncated.
 
@@ -109,11 +112,17 @@ A living knowledge profile captures facts and project context. Remembers what ma
 ### Visual Knowledge Canvas
 See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.
 
+### 3D Knowledge Graph
+Draw a grouped folder, or your agent memory, as a 3D scene with one hub per category and everything shaded from its hub. Dim what does not match a text or category filter, reshape the scene with size, runtime and age filters, and click any item to open an inspector. The graph reads the saved grouping and never moves anything on the board.
+
 ### Chat with Documents & OCR
 Extract text from PDFs, documents, and images with built-in OCR. Chat with any document to get answers and make your whole archive searchable.
 
 ### RAG Knowledge Base
 Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data. Every answer lists the sources it used, filtered by relevance so you only see what mattered.
+
+### Publication Ledger
+Every research answer arrives with structured citation claims, and the app keeps a ledger of what was published with a daily report. Attach several files to one message, let independent tools run in parallel, and approve agent actions in a dedicated dialog before anything goes out.
 
 ### Supercharged Chat & MCP Tools
 Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Swap agent personas on the fly with the Prompt Manager. Every session is archived with full Markdown, reasoning, and tables, so you never lose context.
@@ -423,6 +432,8 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 ## Links
 
 - **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
+- **Changelog**: [tetramatrix.github.io/Sorana/Changelog.html](https://tetramatrix.github.io/Sorana/Changelog.html)
+- **Release feed**: [feed.xml](https://tetramatrix.github.io/Sorana/feed.xml)
 - **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 - **Source**: [GitHub Repository](https://github.com/Tetramatrix/Sorana)
 - **Discord**: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
@@ -437,6 +448,7 @@ Independent reviews of Sorana, with the score each outlet gives where it publish
 
 | Outlet | Date | Score |
 |---|---|---|
+| [MalwareTips Forums](https://malwaretips.com/threads/sorana-the-desktop-ai-knowledge-workspace-free.148839/) | 2026-11-14 | not scored |
 | [MajorGeeks](https://www.majorgeeks.com/files/details/sorana.html) | 2026-11-11 | 5/5 |
 | [CHIP](https://www.chip.de/download/office-produktivitaet-finanzen/sorana_58681706-33e8-4241-b0d2-7c59e561efc9.html) | 2026-11-11 | 4/5 |
 | [wischtig.de](https://wischtig.de/blog/dateien-mit-sorana-sortieren) | 2026-08-19 | not scored |
