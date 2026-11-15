@@ -1,0 +1,14 @@
+# GitHub Pages / Jekyll configuration.
+#
+# Without this file Jekyll falls back to the repository metadata for
+# site.title and site.description, which puts the GitHub repo description
+# into the generated pages (Changelog.html) as both <title> suffix and
+# meta description. Setting them here makes the generated pages describe
+# the product instead.
+title: Sorana
+description: Free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS.
+
+# Keep the hand-written pages as they are: only files with YAML front
+# matter are processed by Jekyll, and none of the HTML pages have any.
+exclude:
+  - CNAME
