@@ -1109,7 +1109,7 @@ nav.scrolled {
   border-color: rgba(62,207,178,0.2);
   box-shadow: 0 8px 32px rgba(62,207,178,0.04);
 }
-.example-card h4 {
+.example-card h3 {
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-primary);

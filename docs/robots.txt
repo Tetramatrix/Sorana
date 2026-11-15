@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /*.bak$
+Disallow: /*.log$
+Disallow: /*.py$
+Disallow: /*.md$
+
 Sitemap: https://tetramatrix.github.io/Sorana/sitemap.xml

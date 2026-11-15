@@ -1,7 +1,7 @@
 {
-  "name": "Sorana — Desktop AI Knowledge Workspace",
+  "name": "Sorana: Desktop AI Knowledge Workspace",
   "short_name": "Sorana",
-  "description": "Free desktop AI knowledge workspace and agent harness for Windows and Linux that never forgets.",
+  "description": "Free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS that never forgets.",
   "start_url": "https://tetramatrix.github.io/Sorana/",
   "scope": "https://tetramatrix.github.io/Sorana/",
   "display": "standalone",
@@ -9,8 +9,18 @@
   "theme_color": "#0e0f11",
   "icons": [
     {
-      "src": "logo_small.png",
-      "sizes": "300x279",
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ]
