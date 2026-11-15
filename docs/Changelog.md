@@ -1,16 +1,5 @@
 📋 Changelog 📋
 
-
-📅 15.11.26 - Version 1.1.10
-
-🐛 Bug Fixes
-🐛 Synced Attachments Stay With Their Chat: a document sync that included chat attachments wrote them into the target as ordinary library documents, so they appeared beside your own files and lost the chat they came from. They now arrive as that chat's attachment.
-🐛 Two Chats Can Attach The Same File: when two chats had attached one file and both were synced, only one copy survived, and a chat's copy could replace the library's own copy of that file. Each chat's copy is now kept.
-🐛 Sync Results Are Recorded: a finished sync left nothing in the app log, so there was no way to tell what a run had copied. Every push, pull and full sync now records one line with its counts and how many attachments it copied.
-🐛 The Result Window Counts Attachments: with include chat attachments switched on, the result now ends with the number of attachments copied, apart from the plain document count.
-🐛 A Sync Pointed At The Wrong Agent Says So: syncing a scope that has no document store used to answer like a server failure. It now says that no document store was found for that agent.
-
-
 📅 14.11.26 - Version 1.1.9
 
 🆕 New Features
