@@ -3,106 +3,106 @@
   <channel>
     <title>Sorana releases</title>
     <link>https://tetramatrix.github.io/Sorana/</link>
-    <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows and Linux.</description>
+    <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 +0100</lastBuildDate>
     <item>
-      <title>Sorana 1.0.108</title>
+      <title>Sorana 1.1.9</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.108</guid>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 +0200</pubDate>
-      <description>Live crypto market data in chat: a keyless CoinGecko server joins the MCP marketplace, so you can ask for the price of Bitcoin or Bitcoin Cash in any currency, compare market caps, and pull price history with no account and no key.</description>
+      <guid isPermaLink="false">sorana-1.1.9</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0100</pubDate>
+      <description>3D graphs of your workspace and of agent memory, sync between your own agents, desktop tab grouping controls, live progress on long rebuilds, and a fresh install that no longer stalls on the splash.</description>
     </item>
     <item>
-      <title>Sorana 1.0.102</title>
+      <title>Sorana 1.1.8</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.102</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0200</pubDate>
-      <description>Projects board reliability: cards stay responsive to mouse, grid density slider takes effect, right-click menus no longer log false errors, and tab switches preserve saved board settings.</description>
+      <guid isPermaLink="false">sorana-1.1.8</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0100</pubDate>
+      <description>The Model Manager loads its list on Linux again, the Linux app starts reliably, a folder of two thousand icons no longer freezes the canvas, and category names are no longer taken from reasoning text.</description>
     </item>
     <item>
-      <title>Sorana 1.0.101</title>
+      <title>Sorana 1.1.7</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.101</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0200</pubDate>
-      <description>Research answers stay on topic, pasted links are left alone, boards keep their size when switching, project cards use the width you give them, and quality reviews are never silently skipped.</description>
+      <guid isPermaLink="false">sorana-1.1.7</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Cards you can drag anywhere on the agent and health dashboards, a category review before a folder is regrouped, copy and ZIP actions on the canvas, mindmap zoom and fit, and a help panel that works in the installed app.</description>
     </item>
     <item>
-      <title>Sorana 1.0.100</title>
+      <title>Sorana 1.1.6</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.100</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0200</pubDate>
-      <description>New Projects board: a second canvas where every project gets its own assistant, folder, and notes. Both boards keep their own view, zoom, grid density, and positions.</description>
+      <guid isPermaLink="false">sorana-1.1.6</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Conversations reopen where they stopped, memory work appears as a job on the health dashboard, logins renew before they lapse, and the conversation store is capped so old history is cleared first.</description>
     </item>
     <item>
-      <title>Sorana 1.0.99</title>
+      <title>Sorana 1.1.5</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.99</guid>
-      <pubDate>Mon, 29 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Web research reports what it actually found, reuses results it already paid for, handles moved pages honestly, and still answers when a turn passes its token cap.</description>
+      <guid isPermaLink="false">sorana-1.1.5</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Movie and TV lookups in chat, more reliable research answers with tightened evidence handling, and answer quality settled before the reply is shown.</description>
     </item>
     <item>
-      <title>Sorana 1.0.98</title>
+      <title>Sorana 1.1.4</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.98</guid>
-      <pubDate>Sun, 28 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Grid density now resizes the workspace, each workspace remembers its own density, large boards open and pan faster, and health cards keep their order.</description>
+      <guid isPermaLink="false">sorana-1.1.4</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0100</pubDate>
+      <description>A publication ledger with a daily report, multiple file attach, parallel tool execution, structured citation claims, the full GDELT code vocabularies, and a dedicated approval dialog.</description>
     </item>
     <item>
-      <title>Sorana 1.0.97</title>
+      <title>Sorana 1.1.3</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.97</guid>
-      <pubDate>Sat, 27 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Guided agent creation, smoother streaming for long answers, faster large workspaces, and clearer model-fallback notices.</description>
+      <guid isPermaLink="false">sorana-1.1.3</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Reasoning streams live as it is produced, each turn yields one verdict with citation rule enforcement, tokens renew in the background, and the legacy interface is retired.</description>
     </item>
     <item>
-      <title>Sorana 1.0.96</title>
+      <title>Sorana 1.1.2</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.96</guid>
-      <pubDate>Thu, 25 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Background work shows live progress, prompt management moves to a central two-pane workspace with draft generation, sessions renew automatically, and the calendar works offline from cache.</description>
+      <guid isPermaLink="false">sorana-1.1.2</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0100</pubDate>
+      <description>The I Ching oracle ships in the backend with two step turns, a reference link on every reading, and oracle tiles that ask for your situation before they draw.</description>
     </item>
     <item>
-      <title>Sorana 1.0.95</title>
+      <title>Sorana 1.1.1</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.95</guid>
-      <pubDate>Sun, 21 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Per-agent daily token budgets with a guided wizard, auto-closing chat sidebar option, tougher memory capture, and cleaner status wording.</description>
+      <guid isPermaLink="false">sorana-1.1.1</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0100</pubDate>
+      <description>The model list refreshes on a cold start, deleting an agent no longer clears every card, and chat attachments are preserved during document sync.</description>
     </item>
     <item>
-      <title>Sorana 1.0.94</title>
+      <title>Sorana 1.1.0</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.94</guid>
-      <pubDate>Thu, 18 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Tool progress visible in chat, responsive health-dashboard grid, more reliable memory capture, and accurate research citations.</description>
+      <guid isPermaLink="false">sorana-1.1.0</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0100</pubDate>
+      <description>The desktop interface is rebuilt in Rust and Tauri, the backend runs as a standalone service, external tool servers are managed in settings, and Sorana runs on MacOS, Linux and Windows.</description>
     </item>
     <item>
-      <title>Sorana 1.0.93</title>
+      <title>Sorana 1.0.113</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.93</guid>
-      <pubDate>Sun, 14 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Memory understands life domains, cycle input history instantly, sessions stay alive with auto token refresh, faster retries with prompt-prefix caching, and sturdier web research.</description>
+      <guid isPermaLink="false">sorana-1.0.113</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0100</pubDate>
+      <description>Research turns end in a dedicated final answer with no tool access, only verified specifics are published, and several review and refusal paths are fixed.</description>
     </item>
     <item>
-      <title>Sorana 1.0.92</title>
+      <title>Sorana 1.0.112</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.92</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 +0200</pubDate>
-      <description>MCP tools slash command, research answer quality (fetched sources outrank pasted text), enriched research trace, live-suite hardening, reviewer cost control, background job tracking, approval-gated memory distillation, agent output caps, graceful search degradation, and fixes for URL probing, memory bleed, sidebar orphans, telemetry leaks, approval-resume crashes, and Gmail archive progress.</description>
+      <guid isPermaLink="false">sorana-1.0.112</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0100</pubDate>
+      <description>Autonomy depth presets per agent, per memory kind follow switches, saved style rules survive long conversations, and a failed turn refuses instead of shipping a stub.</description>
     </item>
     <item>
-      <title>Sorana 1.0.91</title>
+      <title>Sorana 1.0.111</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.91</guid>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0200</pubDate>
-      <description>13 selectable themes with picker, whole-app theme sweep, central color palette, IT/NL/PL language parity, natural wording in 7 languages, agent card upgrades, persistent Model Manager layout, resizable sidebars, enforced max reply length, background token refresh, responsive trace flow layout, and theme/markdown/memory fixes.</description>
+      <guid isPermaLink="false">sorana-1.0.111</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0100</pubDate>
+      <description>External tools are called with the signature that server documents, every tool call is traced from request to result, and a turn carries a single deadline.</description>
     </item>
     <item>
-      <title>Sorana 1.0.90</title>
+      <title>Sorana 1.0.110</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
-      <guid isPermaLink="false">sorana-1.0.90</guid>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0200</pubDate>
-      <description>Redesigned Agent Advanced tab, agent card upgrades, persistent Model Manager layout, supervised subagent runtime, token refresh, multi-angle coverage proof, reviewer judge-independence, grounding telemetry, and synthesis/parser fixes.</description>
+      <guid isPermaLink="false">sorana-1.0.110</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0200</pubDate>
+      <description>The planner offers every tool an external server publishes, an empty response becomes a typed refusal, and a question about a document is answered from that document.</description>
     </item>
   </channel>
 </rss>
