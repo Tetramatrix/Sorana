@@ -584,6 +584,15 @@ nav.scrolled {
   font-size: var(--text-base);
   line-height: 1.65;
 }
+.section-header p.aggregate-rating {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+.section-header p.aggregate-rating .stars {
+  color: var(--color-primary);
+  font-weight: 600;
+}
 
 /* ── HOW IT WORKS STEPS ── */
 .steps {
