@@ -1,5 +1,30 @@
 📋 Changelog 📋
 
+📅 18.11.26 - Version 1.1.11
+
+🆕 New Features
+🆕 Move Between Your Prompts: the chat now has a rail of dashes down its right edge, one for each prompt. Hover a dash to read the prompt, click it to jump there, or use Alt+Up and Alt+Down to step through the conversation.
+🆕 Read A Document Inside The Library: double-click a document in the Document Manager to open its text. The context menu now separates Show Content from View Details, and a very long preview says when it was cut.
+🆕 Find A Definition And Where It Is Used: code questions can look up where a symbol is defined and where it is used, and one search can cover more than one project root.
+
+🔄 Improvements & Changes
+🔄 A Rail That Stays Out Of The Way: compact centered spacing is the default, with the proportional view still available. Auto-hide collapses the rail to a thin strip until the pointer enters it or keyboard focus reaches it, so the scrollbar sits near the right edge. The eye at the top of the rail and the Agent Advanced tab both control it.
+🔄 Chat And Notes Search Share One Field: both sidebars now offer the same clear button and a list of the last 20 committed searches, kept separately for each sidebar. A search is remembered when you press Enter, open a result, or pick it from the list.
+🔄 The Memory Structure Is Compact And Counted: the tall diagram is now a two row strip with the formula, the four examples and the scope badges, plus an explain toggle, so the form opens with its fields in view. A Structure button opens counts by entity type, category and scope, taken from the same table, so the numbers cannot disagree.
+🔄 Your Own Words Outrank Guesses: when the search adds related words to a code question, those words no longer push the file you named out of the top results.
+🔄 A Repeated Code Search Answers Sooner: a repeated search is answered from its saved result before the slow step that adds related words, so the same question does not pay that step twice.
+
+🐛 Bug Fixes
+🐛 Chat Search Finds Exactly What You Typed: "%" and "_" in a chat search are now treated as text, so a search for "50%" no longer returns every chat containing "50". A row whose only match is the title or summary now says so instead of opening a conversation with no matches.
+🐛 Document Previews No Longer Repeat Themselves: the preview joined the saved pieces with their overlap, so the same paragraph appeared twice at every seam and sentences broke in the middle. It now reads the original file when it is still there, keeps its paragraphs, and stitches the saved pieces without duplicates when the file has moved. The reader shows normal prose instead of a small monospace block.
+🐛 A Code Pattern Is Searched As Written: a regular expression or literal pattern is no longer rewritten into a different query. The search uses the pattern you supplied, and an invalid pattern reports an error instead of quietly returning an answer from a different search.
+🐛 A Search After An Edit Sees The Edit: a successful write now discards the saved search result for that project, so edit then search no longer returns the answer from before the edit.
+🐛 A Search Keeps Its Evidence When The Fast Engine Cannot Run: when the fast search engine is unavailable, the search now applies the same file rules and size limit, and a timeout that found matches returns them instead of an empty failure.
+
+🛡️ Security & Stability
+🛡️ One Chat Cannot Stop Another: switching models no longer stops an answer already running in another chat, and a timeout in one chat cannot cancel a different chat. A model switch now waits for running answers to finish.
+
+
 📅 17.11.26 - Version 1.1.10
 
 🆕 New Features
