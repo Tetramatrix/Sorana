@@ -1,5 +1,37 @@
 📋 Changelog 📋
 
+📅 17.11.26 - Version 1.1.10
+
+🆕 New Features
+🆕 Report A Bug From Inside The App: a Report A bug button on the top bar opens a dialog with four ways to send it — an anonymous report, a prefilled GitHub issue, copy-to-clipboard and Discord — and attaches the recent log diagnostics so the report arrives with the evidence.
+🆕 Open Every Chat From The Agent Manager: the Manage Agent Chats tab now lists every chat with its message and compaction counts. Double-click one to read its transcript in a viewer, select several to compact them behind a single confirmation, and delete a chat from its row menu.
+🆕 The Plan Starts With The Evidence: a deep question about your code now reaches the explorer before any tools are planned, so the plan is built from what was actually found instead of a guess, and a turn that has not yet decided on a tool is narrowed down to a few likely candidates first.
+
+🔄 Improvements & Changes
+🔄 Codebase Search Reads What It Finds: a search that names the right files now opens the top hit instead of only listing it, keeps the searched file paths through trimming, ranks your own code above bundled libraries and site templates, and survives very large trees.
+🔄 Search Questions Name Their Domain: a codebase question about mail, the web stack or backup tools now says which domain it belongs to, and the mail evidence is found on every run.
+🔄 Named Documents Are Asked For By Name: asking for a document by name now reads that document directly instead of scoring everything against the request and missing it. The document library stays in the loop, an opened document survives the prompt trim, and letter versions load when a comparison asks for them.
+🔄 Your Pasted Words No Longer Trigger Mail Tools: a letter pasted into the chat is read as pasted text rather than reaching for the mail tools, vocabulary gaps in German and Polish are closed, and a filler word no longer counts as a match.
+🔄 Requests Reach The Right Tool: "list my unread emails" now goes to the list tool, "check online" reaches the web gate while "check the online shop" stays out of it, and a request is routed to a tool that can actually run it.
+🔄 A Broken Tool No Longer Takes Down Its Whole Server: when one tool of a server refuses or fails, only that tool is refused — the rest of the server keeps working, and a refused tool is not offered to the model as if it had run.
+🔄 The Answer Gets The Room First: the memory share of a turn is now taken after the answer's own reserve, so the answer is not crowded out; it is smaller on document-backed turns and the library is measured per document.
+🔄 The Memory Graph Fits Its Pane: the graph now sizes itself to the pane it lives in, and narrow tables scroll instead of overflowing.
+🔄 Reasoning Effort Belongs To The Model Manager: the reasoning effort level you choose in the Model Manager is now the level the provider receives, instead of being decided elsewhere along the way.
+🔄 A Refused Call Costs Nothing: a call the policy refuses no longer consumes the turn's allowance, so one refusal no longer starves everything that follows, and a withheld answer stays withheld.
+🔄 A Role's Model Endpoint Heals: when the managed backend behind a role changes, that role's model endpoint now recovers on its own instead of keeping the old address.
+
+🐛 Bug Fixes
+🐛 Calendar Writes Stick And Recur Yearly: a calendar entry written from a read-only planner call is no longer replaced away, calendar writes wait their turn instead of being cut off, and yearly recurrence now carries through.
+🐛 File Icons Are Back: the file icons disappeared from the canvas; they are restored.
+🐛 A Time Or Status Payload Is Not A Search Lead: a raw time or status payload in a document no longer becomes the top search result and drags the search away from the real content.
+🐛 A Drafting Turn Keeps Its Library And Names Its Attachment: a turn that is still drafting now keeps its document library and says which attachment it used, instead of losing both.
+🐛 Code Questions Get Answers, Not Refusals: a question about code was answered with a refusal even though the answer was available; it now returns the answer.
+🐛 A Cancelled Notice Belongs To Its Own Turn: a "stopped" notice could surface under a retried turn that never stopped. The notice is now bound to the turn that produced it.
+🐛 One Provider's Thinking Survives The Draw Round: a provider whose thinking content arrives after the draw round now keeps it, instead of returning an empty reply.
+🐛 A Late Answer Is Collected Before Scoring: an answer landing just after the deadline is now collected and scored instead of being cancelled and re-requested.
+🐛 The Oracle's Question Actually Arrives: a truncated round no longer has to re-ask its question, and output produced after the cut-off is kept for the answer.
+
+
 📅 14.11.26 - Version 1.1.9
 
 🆕 New Features
