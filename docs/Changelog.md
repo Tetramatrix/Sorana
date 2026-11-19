@@ -1,5 +1,31 @@
 📋 Changelog 📋
 
+📅 19.11.26 - Version 1.1.12
+
+🆕 New Features
+🆕 Open A Music Archive Like A Folder: a Spotify or ListenBrainz export folder now opens through Open Workspace and behaves like any other folder. The grouped artist board belongs to that folder, so you can drag it, edit it and open it again next time. Importing reads the zips where they are and keeps every artist, not only the first sample.
+🆕 Review The Categories Before Grouping: an archive import now pauses after discovery, so you can compare the consolidated categories with the original findings, rename a few, drop what does not belong, and only then run the grouping. The review survives a closed window or a restart.
+🆕 Ask About Your Spotify History: your Spotify export now has its own listening history, separate from ListenBrainz. Ask for your top artists, tracks or albums in a period, artists you have not played for a long time, recent plays, listening and skip statistics, a search across your plays, or how much of the export is covered. Opening a Spotify archive imports the history alongside the grouping.
+🆕 Choose Rebuild Or Update When A Folder Is Already In Use: opening an archive into a folder that already holds a music board now asks whether to rebuild it from scratch or update it, and an Update keeps the names you reviewed.
+
+🔄 Improvements & Changes
+🔄 A Group Move Survives The Close: a group moved on the board is saved even when the pointer is released outside the board or the window is closed straight after. Every artist that belongs to the group moves with it, so none is left behind, and a frame you resized keeps its size after reopening.
+🔄 A Rebuild Starts Clean: a fresh rebuild now shows a blank board until its own grouping finishes instead of briefly drawing the old layout, and a newer rebuild replaces an older one that is still running. Update is offered only when no rebuild is live.
+🔄 Group Frames Stop Overlapping: on a nearly full board the group frames were placed by curve order and drew over each other. A fresh rebuild now packs them so they do not overlap, while frames you resized and agent cards stay where you put them.
+🔄 Genre Names Stay Together: five and six word genre labels such as Classic Rock & Folk Rock are kept instead of being folded into Uncategorized.
+🔄 Archive Progress Stays In The Canvas: importing an archive no longer replaces the board before the grouping exists; the work reports itself in a small note inside the current canvas and the board appears when it is ready.
+🔄 Editing An Archive Board Keeps Its Artists: the artists on an archive board come from the export rather than from files on disk, so a drag and a reload no longer save an empty board.
+🔄 Rebuild And Update Re-Read The Archives: on an archive folder those two actions now import the archives again instead of scanning the folder, which only contains the zip files.
+🔄 A Guessed Tool Stays A Guess: a match found by the fallback matcher now ranks below a learned intent and no longer becomes an explicit request, so a generic word in a sentence is much less likely to arm an optional tool. The listening phrases carry their domain now too.
+
+🐛 Bug Fixes
+🐛 A Generic Word No Longer Arms A Listening Tool: a job application sentence that ended "then total silence" started a ListenBrainz tool because of the single word total, and the turn then stopped with an apology for a tool that never ran. A guess now falls through to the ordinary answer, and the actionable message is shown instead of the apology.
+🐛 An Archive Cannot Land On A File Board: opening an archive into a folder that already has a file board gave no explanation and left you stuck. It now says Sorana keeps one board per folder, and asks you to use an empty folder for the archive.
+🐛 A Rebuild Shows Its Own Result: a rebuild could report the previous layout as ready and jump to the old board while the new grouping was still running. It now waits for its own run and ignores a result from an older one.
+🐛 Archive Artists No Longer Stick To The Wrong Group: an artist with a missing group could stay outside its frame when a group moved. The whole group now moves together.
+🐛 An Archive Import Keeps Every Artist: an import stored only the top discovery sample, so later categories could not cover the rest. Every unique artist is stored, while the model still reviews a bounded sample.
+
+
 📅 18.11.26 - Version 1.1.11
 
 🆕 New Features
