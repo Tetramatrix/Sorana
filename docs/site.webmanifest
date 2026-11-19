@@ -1,7 +1,7 @@
 {
   "name": "Sorana: Desktop AI Knowledge Workspace",
   "short_name": "Sorana",
-  "description": "Free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS that never forgets, with local memory, agents, and Spotify or ListenBrainz archive grouping.",
+  "description": "Free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS that never forgets, with local memory, agents, and music archive grouping.",
   "start_url": "https://tetramatrix.github.io/Sorana/",
   "scope": "https://tetramatrix.github.io/Sorana/",
   "display": "standalone",

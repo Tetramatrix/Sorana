@@ -103,8 +103,8 @@ A second canvas beside your Workspace board. Every project gets its own card, it
 ### Desktop & Folder Grouping
 Each board keeps its own grouping, so a desktop scan no longer wipes a folder's categories and forces a full rebuild. Start an update or a rebuild straight from the Desktop tab, watch live progress while it runs, and read the item and group counts in the toolbar for the board you are looking at.
 
-### Music Archive Grouping (Spotify & ListenBrainz)
-Open a Spotify or ListenBrainz export folder through Open Workspace and it behaves like any other folder. Sorana reads the zips where they are, keeps every artist rather than only the first sample, consolidates and classifies them, and lays the groups out on the canvas. Review the categories before grouping, compare them with the original findings, and rename or drop what does not fit. The board belongs to that folder, so you can drag it, edit groups, and reopen it later. When a folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. The same Spotify import also becomes a listening history, separate from ListenBrainz.
+### Music Archive Grouping
+Open a Spotify export folder through Open Workspace and it behaves like any other folder. Sorana reads the zips where they are, keeps every artist rather than only the first sample, consolidates and classifies them, and lays the groups out on the canvas. A ListenBrainz history archive opens from its folder the same way. Review the categories before grouping, compare them with the original findings, and rename or drop what does not fit. The board belongs to that folder, so you can drag it, edit groups, and reopen it later. When a folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. A Spotify import also becomes a listening history you can question in plain language, answered from the archive itself with no account to connect.
 
 ### Agent Budgets & Limits
 Set a daily usage limit per agent from the Health Dashboard through a guided wizard, and track it in real time. Leave the field blank to use the app default or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight, and withheld calls are reported honestly rather than silently truncated.
@@ -379,7 +379,7 @@ Setup is one step: paste your ListenBrainz user token (found in your ListenBrain
 
 ### Spotify archive (new)
 
-Open a Spotify export through Open Workspace and Sorana treats it like any other folder: it reads the zips where they are, keeps every artist, and classifies them into groups on the workspace canvas. Review the categories before grouping, then drag the saved board or reopen it later; when the folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. The same import gives Spotify its own listening history, separate from ListenBrainz, so you can ask about it in plain language.
+Open a Spotify export through Open Workspace and Sorana treats it like any other folder: it reads the zips where they are, keeps every artist, and classifies them into groups on the workspace canvas. Review the categories before grouping, then drag the saved board or reopen it later; when the folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. The same import turns those plays into a listening history you can question in plain language, so the answers come from the export itself with no account to connect and nothing to sync.
 
 - **Artist grouping** — the export's artists consolidated, classified, and laid out on the canvas, ready to drag, rename, and reopen with the folder
 - **Listening history** — top artists, tracks, and albums in a period, recent plays, listening and skip statistics, and a search across your plays

@@ -19,9 +19,9 @@
      crossorigin="anonymous"></script>
 
 <title>Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness</title>
-<meta name="description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and Spotify or ListenBrainz exports.">
+<meta name="description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and years of music listening.">
 <meta property="og:title" content="Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness">
-<meta property="og:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and Spotify or ListenBrainz exports.">
+<meta property="og:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and years of music listening.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
 <meta property="og:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
@@ -32,7 +32,7 @@
 <meta property="og:site_name" content="Sorana">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness">
-<meta name="twitter:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and Spotify or ListenBrainz exports.">
+<meta name="twitter:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and years of music listening.">
 <meta name="twitter:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
 <meta name="twitter:image:alt" content="Sorana desktop AI knowledge workspace and agent harness">
   <link rel="icon" type="image/png" href="icon-192.png">
@@ -53,7 +53,7 @@
       "operatingSystem": "Windows 11, Linux, MacOS",
       "applicationCategory": "ProductivityApplication",
       "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, spotify, spotify export, spotify listening history, music archive organizer, listenbrainz, listenbrainz export, listenbrainz listening history, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Spotify and ListenBrainz archive import with canvas grouping", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Music archive import with canvas grouping", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
       "screenshot": ["model_manager.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png", "spotify_groups.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
@@ -256,15 +256,15 @@
           "name": "How do I chat with my music history?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog, or open a Spotify export through Open Workspace. Both give Sorana a local listening history to answer from. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening. A Spotify export is imported alongside its artist grouping."
+            "text": "Open a Spotify export through Open Workspace and it becomes a local listening history to answer from, imported alongside its artist grouping. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, enable the built-in server and paste your ListenBrainz user token in the Configure dialog, then ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I open a Spotify or ListenBrainz archive in Sorana?",
+          "name": "Can I open a music archive in Sorana?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Open a Spotify or ListenBrainz export folder through Open Workspace and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as \"Who are my top 20 artists this year?\" or \"Show my listening and skip statistics for the last month.\""
+            "text": "Yes. Point Open Workspace at a Spotify export and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. A ListenBrainz history archive opens from its folder the same way. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as \"Who are my top 20 artists this year?\" or \"Show my listening and skip statistics for the last month.\""
           }
         },
         {
@@ -741,8 +741,8 @@
         </svg>
       </div>
       <h3>Open a music archive like a folder <span class="model-tag free">NEW</span></h3>
-      <p><strong>A Spotify or ListenBrainz export now opens through Open Workspace and behaves like any other folder.</strong> Sorana reads the zips where they are, imports every artist rather than only the first sample, classifies them, and lays the groups out on the workspace canvas. The board belongs to that folder, so you can drag it, rename groups, and pick it up again next time. Before grouping you review the categories, compare them with the original findings, and drop or rename what does not fit. If the folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed.</p>
-      <p>The export also becomes a listening history, with Spotify kept separate from ListenBrainz. The Spotify tools answer the same natural-language questions as the built-in ListenBrainz server:</p>
+      <p><strong>A Spotify export now opens through Open Workspace and behaves like any other folder.</strong> A ListenBrainz history archive opens the same way. Sorana reads the zips where they are, imports every artist rather than only the first sample, classifies them, and lays the groups out on the workspace canvas. The board belongs to that folder, so you can drag it, rename groups, and pick it up again next time. Before grouping you review the categories, compare them with the original findings, and drop or rename what does not fit. If the folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed.</p>
+      <p>The export also becomes a listening history you can question in plain language. The answers come from the archive itself, so there is no account to connect and nothing to sync:</p>
       <ul class="card-examples">
         <li>"Who are my top 20 artists this year?"</li>
         <li>"Which artists did I love years ago but never play anymore?"</li>
@@ -1140,8 +1140,8 @@
         </svg>
       </div>
     <h3>Your Spotify archive, grouped and queryable <span class="model-tag free">NEW</span></h3>
-    <p><strong>Spotify exports work like ListenBrainz archives now.</strong> Open a Spotify export through Open Workspace and Sorana reads the zips where they are, keeps every artist rather than only the first sample, classifies them, and lays the groups out on the workspace canvas. The board belongs to that folder, so you can drag it, rename groups, and reopen it next time. Before grouping you review the categories, and an Update keeps the names you reviewed.</p>
-    <p>The import gives Spotify its own listening history, separate from ListenBrainz. Ask about it in plain language, the same way you query the built-in ListenBrainz server:</p>
+    <p><strong>Spotify exports open straight from their folder now.</strong> Point Open Workspace at a Spotify export and Sorana reads the zips where they are, keeps every artist rather than only the first sample, classifies them, and lays the groups out on the workspace canvas. The board belongs to that folder, so you can drag it, rename groups, and reopen it next time. Before grouping you review the categories, and an Update keeps the names you reviewed.</p>
+    <p>The import also turns those plays into a listening history you can question in plain language. The answers come from the export itself, so there is no account to connect and nothing to sync:</p>
     <ul class="card-examples">
         <li>"Who are my top 20 artists this year?"</li>
         <li>"Which artists did I love years ago but never play anymore?"</li>
@@ -2005,11 +2005,11 @@
     </details>
     <details class="faq-item">
       <summary>How do I chat with my music history?</summary>
-      <p>Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog, or open a Spotify export through Open Workspace. Both give Sorana a local listening history to answer from. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening. A Spotify export is imported alongside its artist grouping.</p>
+      <p>Open a Spotify export through Open Workspace and it becomes a local listening history to answer from, imported alongside its artist grouping. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, enable the built-in server and paste your ListenBrainz user token in the Configure dialog, then ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening.</p>
     </details>
     <details class="faq-item">
-      <summary>Can I open a Spotify or ListenBrainz archive in Sorana?</summary>
-      <p>Yes. Open a Spotify or ListenBrainz export folder through Open Workspace and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as "Who are my top 20 artists this year?" or "Show my listening and skip statistics for the last month."</p>
+      <summary>Can I open a music archive in Sorana?</summary>
+      <p>Yes. Point Open Workspace at a Spotify export and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. A ListenBrainz history archive opens from its folder the same way. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as "Who are my top 20 artists this year?" or "Show my listening and skip statistics for the last month."</p>
     </details>
     <details class="faq-item">
       <summary>What does ToolForest add?</summary>

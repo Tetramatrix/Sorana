@@ -3,9 +3,9 @@
 📅 19.11.26 - Version 1.1.12
 
 🆕 New Features
-🆕 Open A Music Archive Like A Folder: a Spotify or ListenBrainz export folder now opens through Open Workspace and behaves like any other folder. The grouped artist board belongs to that folder, so you can drag it, edit it and open it again next time. Importing reads the zips where they are and keeps every artist, not only the first sample.
+🆕 Open A Music Archive Like A Folder: a music export folder now opens through Open Workspace and behaves like any other folder. A Spotify export arrives as a grouped artist board, and a ListenBrainz history archive opens from its folder the same way. The grouped board belongs to that folder, so you can drag it, edit it and open it again next time. Importing reads the zips where they are and keeps every artist, not only the first sample.
 🆕 Review The Categories Before Grouping: an archive import now pauses after discovery, so you can compare the consolidated categories with the original findings, rename a few, drop what does not belong, and only then run the grouping. The review survives a closed window or a restart.
-🆕 Ask About Your Spotify History: your Spotify export now has its own listening history, separate from ListenBrainz. Ask for your top artists, tracks or albums in a period, artists you have not played for a long time, recent plays, listening and skip statistics, a search across your plays, or how much of the export is covered. Opening a Spotify archive imports the history alongside the grouping.
+🆕 Ask About Your Spotify History: your Spotify export now becomes a listening history of its own, answered from the archive itself with no account to connect. Ask for your top artists, tracks or albums in a period, artists you have not played for a long time, recent plays, listening and skip statistics, a search across your plays, or how much of the export is covered. Opening a Spotify archive imports the history alongside the grouping.
 🆕 Choose Rebuild Or Update When A Folder Is Already In Use: opening an archive into a folder that already holds a music board now asks whether to rebuild it from scratch or update it, and an Update keeps the names you reviewed.
 
 🔄 Improvements & Changes
