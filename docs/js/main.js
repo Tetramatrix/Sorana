@@ -190,3 +190,36 @@
     slides[current].classList.add('active');
   }, 5000);
 })();
+
+/* ===== Linux download chooser ===== */
+(function() {
+  'use strict';
+  var modal = document.getElementById('linuxDownloadModal');
+  if (!modal) return;
+  var openers = document.querySelectorAll('[data-linux-download]');
+  var lastFocus = null;
+  function openModal(event) {
+    event.preventDefault();
+    lastFocus = event.currentTarget;
+    modal.hidden = false;
+    document.body.classList.add('modal-open');
+    var closeBtn = modal.querySelector('[data-linux-modal-close]');
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeModal() {
+    modal.hidden = true;
+    document.body.classList.remove('modal-open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  for (var i = 0; i < openers.length; i++) {
+    openers[i].addEventListener('click', openModal);
+  }
+  var close = modal.querySelector('[data-linux-modal-close]');
+  if (close) close.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && !modal.hidden) closeModal();
+  });
+})();

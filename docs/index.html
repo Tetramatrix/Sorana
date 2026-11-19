@@ -19,9 +19,9 @@
      crossorigin="anonymous"></script>
 
 <title>Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness</title>
-<meta name="description" content="Sorana is a free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It remembers your documents, chats, email and calendar.">
+<meta name="description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and Spotify or ListenBrainz exports.">
 <meta property="og:title" content="Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness">
-<meta property="og:description" content="Sorana is a free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It remembers your documents, chats, email and calendar.">
+<meta property="og:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and Spotify or ListenBrainz exports.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
 <meta property="og:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
@@ -32,7 +32,7 @@
 <meta property="og:site_name" content="Sorana">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness">
-<meta name="twitter:description" content="Sorana is a free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It remembers your documents, chats, email and calendar.">
+<meta name="twitter:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and Spotify or ListenBrainz exports.">
 <meta name="twitter:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
 <meta name="twitter:image:alt" content="Sorana desktop AI knowledge workspace and agent harness">
   <link rel="icon" type="image/png" href="icon-192.png">
@@ -52,10 +52,10 @@
       "name": "Sorana",
       "operatingSystem": "Windows 11, Linux, MacOS",
       "applicationCategory": "ProductivityApplication",
-      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, listenbrainz, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
+      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, spotify, spotify export, spotify listening history, music archive organizer, listenbrainz, listenbrainz export, listenbrainz listening history, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows",
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Spotify and ListenBrainz archive import with canvas grouping", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "screenshot": ["model_manager.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png"],
+      "screenshot": ["model_manager.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png", "spotify_groups.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
       "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
       "author": { "@type": "Organization", "name": "Tetramatrix" },
@@ -256,7 +256,15 @@
           "name": "How do I chat with my music history?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog. Then ask for top artists, now-playing, or recent listens directly. For full-history questions, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening."
+            "text": "Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog, or open a Spotify export through Open Workspace. Both give Sorana a local listening history to answer from. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening. A Spotify export is imported alongside its artist grouping."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I open a Spotify or ListenBrainz archive in Sorana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Open a Spotify or ListenBrainz export folder through Open Workspace and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as \"Who are my top 20 artists this year?\" or \"Show my listening and skip statistics for the last month.\""
           }
         },
         {
@@ -325,7 +333,7 @@
     <a href="#discover">Discover</a>
     <a href="support.html">Support</a>
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
     <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
   </div>
@@ -351,7 +359,7 @@
   </p>
   <div class="hero-actions">
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
@@ -459,6 +467,19 @@
       </div>
       <p class="screenshot-caption">
         Workspace Graph in detail: filter by group, size, age, or media runtime; click any node to inspect it.
+      </p>
+    </div>
+    <div class="hero-slide" data-index="6">
+      <div class="screenshot-wrap">
+        <img src="spotify_groups.png" alt="Sorana workspace canvas with a Spotify export grouped into artist boards" width="910" height="960" loading="lazy">
+      </div>
+      <div class="floating-badges">
+        <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+        <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+        <span class="badge local"><span class="badge-dot"></span> Local</span>
+      </div>
+      <p class="screenshot-caption">
+        Open a Spotify export like a folder: artists grouped into a board you can drag, edit, and reopen, with the full listening history imported alongside it.
       </p>
     </div>
 </div>
@@ -711,6 +732,25 @@
       <p><strong>Sorana can automatically organize thousands of unordered files into meaningful groups.</strong> Point it at a folder with 2090+ movie files and it will classify them into genres, suggest new categories, and lay them out on the workspace canvas. The grouping scales to large archives, gives you an overview you would not get from a flat list, and can even inspire new categories you had not thought of.</p>
       <figure style="margin-top:var(--space-4);">
         <img src="grouping_movies_example.png" alt="Workspace canvas with 2090+ movie files grouped into 13 genres" loading="lazy" width="908" height="681" style="width:100%;border-radius:8px;">
+      </figure>
+    </div>
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+        </svg>
+      </div>
+      <h3>Open a music archive like a folder <span class="model-tag free">NEW</span></h3>
+      <p><strong>A Spotify or ListenBrainz export now opens through Open Workspace and behaves like any other folder.</strong> Sorana reads the zips where they are, imports every artist rather than only the first sample, classifies them, and lays the groups out on the workspace canvas. The board belongs to that folder, so you can drag it, rename groups, and pick it up again next time. Before grouping you review the categories, compare them with the original findings, and drop or rename what does not fit. If the folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed.</p>
+      <p>The export also becomes a listening history, with Spotify kept separate from ListenBrainz. The Spotify tools answer the same natural-language questions as the built-in ListenBrainz server:</p>
+      <ul class="card-examples">
+        <li>"Who are my top 20 artists this year?"</li>
+        <li>"Which artists did I love years ago but never play anymore?"</li>
+        <li>"Show my listening and skip statistics for the last month."</li>
+        <li>"Search my plays for one artist and tell me how much of the export is covered."</li>
+      </ul>
+      <figure style="margin-top:var(--space-4);">
+        <img src="spotify_groups.png" alt="Workspace canvas with a Spotify export grouped into artist boards" loading="lazy" width="910" height="960" style="width:100%;max-width:560px;display:block;margin:0 auto;border-radius:8px;">
       </figure>
     </div>
     <div class="feature-card large">
@@ -974,7 +1014,7 @@
     <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:560px;margin-left:auto;margin-right:auto;">Download the executable and run it directly. No installation, no account, no cloud sync unless you choose it.</p>
     <div class="cta-actions">
       <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
       <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
@@ -1068,7 +1108,7 @@
 <section class="section section-alt" id="mcp">
   <div class="section-header">
     <h2>One workspace. <em>Every tool.</em></h2>
-    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, ListenBrainz music history, and an I Ching oracle. The marketplace adds servers that have to be installed, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to the TMDB movie and TV database. Everything is managed from the MCP Manager with no config files.</p>
+    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, ListenBrainz and Spotify music history, and an I Ching oracle. The marketplace adds servers that have to be installed, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to the TMDB movie and TV database. Everything is managed from the MCP Manager with no config files.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card">
@@ -1092,6 +1132,27 @@
         <img src="listenbrainz_example.png" alt="ListenBrainz music history in chat" loading="lazy" width="908" height="441" style="width:100%;border-radius:8px;">
       </figure>
     </div>
+    <div class="feature-card large band">
+    <div class="band-body">
+    <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+        </svg>
+      </div>
+    <h3>Your Spotify archive, grouped and queryable <span class="model-tag free">NEW</span></h3>
+    <p><strong>Spotify exports work like ListenBrainz archives now.</strong> Open a Spotify export through Open Workspace and Sorana reads the zips where they are, keeps every artist rather than only the first sample, classifies them, and lays the groups out on the workspace canvas. The board belongs to that folder, so you can drag it, rename groups, and reopen it next time. Before grouping you review the categories, and an Update keeps the names you reviewed.</p>
+    <p>The import gives Spotify its own listening history, separate from ListenBrainz. Ask about it in plain language, the same way you query the built-in ListenBrainz server:</p>
+    <ul class="card-examples">
+        <li>"Who are my top 20 artists this year?"</li>
+        <li>"Which artists did I love years ago but never play anymore?"</li>
+        <li>"Show my listening and skip statistics for the last month."</li>
+        <li>"Search my plays for one artist and tell me how much of the export is covered."</li>
+      </ul>
+    </div>
+    <figure style="margin-top:var(--space-4);">
+        <img src="spotify_groups.png" alt="A Spotify export grouped into artist boards on the workspace canvas" loading="lazy" width="910" height="960" style="width:100%;border-radius:8px;">
+      </figure>
+  </div>
     <div class="feature-card large band">
     <div class="band-body">
     <div class="feature-icon">
@@ -1716,7 +1777,7 @@
   <div class="cta-section" style="padding: var(--space-12) 0 0; max-width: none;">
     <div class="cta-actions">
       <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
       <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
@@ -1944,7 +2005,11 @@
     </details>
     <details class="faq-item">
       <summary>How do I chat with my music history?</summary>
-      <p>Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog. Then ask for top artists, now-playing, or recent listens directly. For full-history questions, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening.</p>
+      <p>Enable the built-in ListenBrainz server and paste your ListenBrainz user token in the Configure dialog, or open a Spotify export through Open Workspace. Both give Sorana a local listening history to answer from. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening. A Spotify export is imported alongside its artist grouping.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I open a Spotify or ListenBrainz archive in Sorana?</summary>
+      <p>Yes. Open a Spotify or ListenBrainz export folder through Open Workspace and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as "Who are my top 20 artists this year?" or "Show my listening and skip statistics for the last month."</p>
     </details>
     <details class="faq-item">
       <summary>What does ToolForest add?</summary>
@@ -2001,7 +2066,7 @@
   </p>
   <div class="cta-actions">
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
     <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
@@ -2041,6 +2106,40 @@
 
 
 
+
+<!-- LINUX DOWNLOAD CHOOSER -->
+<div class="linux-modal-overlay" id="linuxDownloadModal" hidden>
+<div class="linux-modal" role="dialog" aria-modal="true" aria-labelledby="linuxModalTitle">
+  <div class="linux-modal-head">
+    <h2 id="linuxModalTitle">Download Sorana for Linux</h2>
+    <button type="button" class="linux-modal-close" data-linux-modal-close aria-label="Close dialog">×</button>
+  </div>
+  <p class="linux-modal-intro">Pick the package that fits your distribution, or use the portable build and run it from any folder.</p>
+  <div class="linux-options">
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana">
+      <span class="linux-option-top"><strong>Portable (ELF)</strong><span class="linux-option-cta">Download →</span></span>
+      <span>Run directly from any folder or USB stick. No installation.</span>
+    </a>
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana_1.1.12_amd64.deb">
+      <span class="linux-option-top"><strong>.deb package</strong><span class="linux-option-cta">Download →</span></span>
+      <span>Debian, Ubuntu, Linux Mint and other apt-based distributions.</span>
+    </a>
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana-1.1.12-1.x86_64.rpm">
+      <span class="linux-option-top"><strong>.rpm package</strong><span class="linux-option-cta">Download →</span></span>
+      <span>Fedora, openSUSE, RHEL and other rpm-based distributions.</span>
+    </a>
+  </div>
+  <details class="linux-checksums">
+    <summary>SHA-256 checksums for 1.1.12</summary>
+    <ul>
+      <li><strong>Sorana</strong> (portable) <code>d774be43996c816937894e1c96b2930b7f25dd91668c138c6150f90704e6f424</code></li>
+      <li><strong>Sorana_1.1.12_amd64.deb</strong> <code>230016da202e464fe5d6307e7ff5dd1c98c9fe1dcc4956a3f9adab567c33fad2</code></li>
+      <li><strong>Sorana-1.1.12-1.x86_64.rpm</strong> <code>b7e9d9b96910419d5cdaf958252a2b1a50730772895821bf18c19d9b719041ea</code></li>
+    </ul>
+  </details>
+  <p class="linux-modal-foot">All Linux builds are version 1.1.12. Verify a download with <code>sha256sum</code>.</p>
+</div>
+</div>
 
 <script src="js/main.js"></script>
 </body>

@@ -10,7 +10,7 @@
 
 Sorana is a personal desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It learns from your documents, conversations, and actions, building a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. When a task needs it, the harness dispatches specialized subagents to work in parallel then reviews the results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals.
 
-Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files, research topics, manage emails and your calendar, all without leaving your workspace.
+Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files and music archives, research topics, manage emails and your calendar, all without leaving your workspace.
 
 **Everything runs on your machine. Your data stays yours.**
 
@@ -103,6 +103,9 @@ A second canvas beside your Workspace board. Every project gets its own card, it
 ### Desktop & Folder Grouping
 Each board keeps its own grouping, so a desktop scan no longer wipes a folder's categories and forces a full rebuild. Start an update or a rebuild straight from the Desktop tab, watch live progress while it runs, and read the item and group counts in the toolbar for the board you are looking at.
 
+### Music Archive Grouping (Spotify & ListenBrainz)
+Open a Spotify or ListenBrainz export folder through Open Workspace and it behaves like any other folder. Sorana reads the zips where they are, keeps every artist rather than only the first sample, consolidates and classifies them, and lays the groups out on the canvas. Review the categories before grouping, compare them with the original findings, and rename or drop what does not fit. The board belongs to that folder, so you can drag it, edit groups, and reopen it later. When a folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. The same Spotify import also becomes a listening history, separate from ListenBrainz.
+
 ### Agent Budgets & Limits
 Set a daily usage limit per agent from the Health Dashboard through a guided wizard, and track it in real time. Leave the field blank to use the app default or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight, and withheld calls are reported honestly rather than silently truncated.
 
@@ -116,7 +119,7 @@ See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generat
 Draw a grouped folder, or your agent memory, as a 3D scene with one hub per category and everything shaded from its hub. Dim what does not match a text or category filter, reshape the scene with size, runtime and age filters, and click any item to open an inspector. The graph reads the saved grouping and never moves anything on the board.
 
 ### Chat with Documents & OCR
-Extract text from PDFs, documents, and images with built-in OCR. Chat with any document to get answers and make your whole archive searchable.
+Extract text from PDFs, documents, and images with built-in OCR. Chat with any document to get answers and make your whole archive searchable. Double-click a document in the Library to read its text; Show Content and View Details are separate actions in the context menu.
 
 ### RAG Knowledge Base
 Turn your documents, notes, and web pages into a searchable knowledge base. Sorana retrieves the right context automatically so answers stay grounded in your own data. Every answer lists the sources it used, filtered by relevance so you only see what mattered.
@@ -125,7 +128,7 @@ Turn your documents, notes, and web pages into a searchable knowledge base. Sora
 Every research answer arrives with structured citation claims, and the app keeps a ledger of what was published with a daily report. Attach several files to one message, let independent tools run in parallel, and approve agent actions in a dedicated dialog before anything goes out.
 
 ### Supercharged Chat & MCP Tools
-Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Swap agent personas on the fly with the Prompt Manager. Every session is archived with full Markdown, reasoning, and tables, so you never lose context.
+Your AI brain connected to your knowledge and everything you can act on: web, email, calendar, files, and any other tool you connect. You stay in control while your agent works across all of them at once. Swap agent personas on the fly with the Prompt Manager. Every session is archived with full Markdown, reasoning, and tables, so you never lose context. A prompt rail down the chat's right edge shows one dash per prompt: hover to read it, click to jump there, or step with Alt+Up and Alt+Down. The Manage Agent Chats tab lists every chat with its message and compaction counts, where you can read a transcript, compact several behind one confirmation, or delete from the row menu.
 
 ### Calendar & Scheduling
 Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.
@@ -151,6 +154,9 @@ Browse, install, and manage MCP servers from a central marketplace. Extend Soran
 ### Health Dashboard
 Monitor system health, model status, and AI performance at a glance. Each card opens a mini wizard for guided installation and configuration of every dependency, including backends, OCR, search engines, HuggingFace cache, codebase search, MCP, and more.
 
+### Report a Bug From Inside the App
+A Report A Bug button on the top bar opens a dialog with four ways to send it: an anonymous report, a prefilled GitHub issue, copy to clipboard, or Discord. Recent log diagnostics are attached, so the report arrives with the evidence.
+
 ### Obsidian Export
 Use Sorana as your AI workspace, then export spatial groupings and graph relationships straight into your Obsidian vault.
 
@@ -164,7 +170,7 @@ Choose the look that fits your workflow. Pick from different color schemes and v
 Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. Helps you trust the result or tweak the approach.
 
 ### Code Explorer
-Got a folder of code? Sorana reads it, searches it, and answers questions about it, like a teammate who already knows the project.
+Got a folder of code? Sorana reads it, searches it, and answers questions about it, like a teammate who already knows the project. It can also find where a symbol is defined and where it is used, and one search can cover more than one project root.
 
 ### Tesseract Image OCR
 
@@ -224,6 +230,14 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 - "Scan this letter and extract the important details to my knowledge base"
 - "Search my archives for the insurance policy and summarize the coverage"
 
+### Music & Listening History
+- "Open this Spotify export and group the artists on the canvas"
+- "Who are my top 20 artists this year?"
+- "Which artists did I love years ago but never play anymore?"
+- "Show my listening and skip statistics for the last month"
+- "Search my plays for an artist and tell me how much of the export is covered"
+- "What did I play most this week?"
+
 ### Crypto & Market Data
 - "What is bitcoin's price in USD right now?"
 - "What is Bitcoin Cash trading at right now?"
@@ -274,7 +288,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Visual knowledge canvas | AI-organised 2D canvas | Manual (Obsidian Canvas) | Chat only |
 | Chat with documents | Workspace-wide RAG indexing | Plugin required | Project uploads + per-session |
 | Image OCR & Vision AI | Built-in OCR + AI fallback | External tools required | Cloud-only vision |
-| Tool integrations | Built-in MCP servers incl. ListenBrainz music history and the I Ching oracle, plus ToolForest with 30+ toolkits over one connection, keyless CoinGecko crypto market data, and the TMDB movie and TV database | No native AI agents | Connector marketplaces (paid) |
+| Tool integrations | Built-in MCP servers incl. Spotify and ListenBrainz music history and the I Ching oracle, plus ToolForest with 30+ toolkits over one connection, keyless CoinGecko crypto market data, and the TMDB movie and TV database | No native AI agents | Connector marketplaces (paid) |
 | Calendar & Scheduling | Manage via chat | View-only plugins | Connector (paid) |
 | AI remembers you | Automatic memory across sessions, all categories free | Manual notes only | Basic free notes only; full memory paid |
 | Stays fast over months | Auto-compaction | No AI context | Varies (Claude yes, others no) |
@@ -284,13 +298,21 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 ## Quick Start
 
-1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
+1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux (portable)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), Linux [.deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana_1.1.12_amd64.deb), Linux [.rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana-1.1.12-1.x86_64.rpm), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 2. **Run** anywhere, desktop, USB, external drive
 3. **Choose a model**, use a free cloud model with your own API key (OpenRouter's free tier costs nothing), or run local models through Lemonade, Ollama, or LM Studio
 4. **Start working**, add your files, chat with documents, and let Sorana remember your projects and preferences
 
-**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)  
+**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) · [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana_1.1.12_amd64.deb) · [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana-1.1.12-1.x86_64.rpm) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)  
 **Microsoft Store**: [Get from Store](https://apps.microsoft.com/detail/9n8c43pzc1rn)
+
+**Linux 1.1.12 checksums**
+
+| File | SHA-256 |
+|---|---|
+| `Sorana` (portable) | `d774be43996c816937894e1c96b2930b7f25dd91668c138c6150f90704e6f424` |
+| `Sorana_1.1.12_amd64.deb` | `230016da202e464fe5d6307e7ff5dd1c98c9fe1dcc4956a3f9adab567c33fad2` |
+| `Sorana-1.1.12-1.x86_64.rpm` | `b7e9d9b96910419d5cdaf958252a2b1a50730772895821bf18c19d9b719041ea` |
 
 ---
 
@@ -341,6 +363,7 @@ These servers ship with the app. Most are enabled by default, and each can be sw
 | **Calendar** | Read schedules, create and update events, find free slots |
 | **Chat sessions** | Inspect and manage session messages, context usage, and compaction |
 | **ListenBrainz** | Your music listening history (new, see below) |
+| **Spotify** | Your imported Spotify listening history and artist board (new, see below) |
 | **I Ching oracle** | Cast and read hexagrams in plain language (new, see below) |
 
 ### ListenBrainz (built-in, new)
@@ -353,6 +376,17 @@ Ask your assistant about years of music listening in plain language. Twelve tool
 - **Queries across the imported archive** — top artists over any date range, full history for one artist, and a rediscovery tool that finds artists you played heavily years ago and have not played since
 
 Setup is one step: paste your ListenBrainz user token (found in your ListenBrainz profile settings) into the Configure dialog. Ask things like "my top 50 artists this year", "what am I playing right now", "export my full history", or "which artists did I love years ago but never play anymore".
+
+### Spotify archive (new)
+
+Open a Spotify export through Open Workspace and Sorana treats it like any other folder: it reads the zips where they are, keeps every artist, and classifies them into groups on the workspace canvas. Review the categories before grouping, then drag the saved board or reopen it later; when the folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. The same import gives Spotify its own listening history, separate from ListenBrainz, so you can ask about it in plain language.
+
+- **Artist grouping** — the export's artists consolidated, classified, and laid out on the canvas, ready to drag, rename, and reopen with the folder
+- **Listening history** — top artists, tracks, and albums in a period, recent plays, listening and skip statistics, and a search across your plays
+- **Forgotten favourites** — artists you played heavily years ago and have not played since
+- **Coverage** — how much of the export the imported history covers
+
+Ask things like "Open this Spotify export and group the artists", "Who are my top 20 artists this year?", "Which artists did I love years ago but never play anymore?", or "Show my listening and skip statistics for the last month".
 
 ### I Ching oracle (built-in, new)
 
@@ -378,7 +412,7 @@ Setup is one step: add CoinGecko from the marketplace and enable it for the agen
 
 ### ToolForest (marketplace, new)
 
-ToolForest is a hosted MCP aggregator that gives you 30+ toolkits over a single remote connection, with nothing to install. Add your API key, authorize the toolkits you want at [app.toolforest.io](https://app.toolforest.io), and Sorana discovers the available tools step by step before calling them. ToolForest tools are separate from the built-in Gmail, Calendar and ListenBrainz servers above.
+ToolForest is a hosted MCP aggregator that gives you 30+ toolkits over a single remote connection, with nothing to install. Add your API key, authorize the toolkits you want at [app.toolforest.io](https://app.toolforest.io), and Sorana discovers the available tools step by step before calling them. ToolForest tools are separate from the built-in Gmail, Calendar, ListenBrainz and Spotify servers above.
 
 Toolkits grouped in domains:
 
@@ -434,7 +468,7 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 - **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
 - **Changelog**: [tetramatrix.github.io/Sorana/Changelog.html](https://tetramatrix.github.io/Sorana/Changelog.html)
 - **Release feed**: [feed.xml](https://tetramatrix.github.io/Sorana/feed.xml)
-- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
+- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana_1.1.12_amd64.deb) / [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana-1.1.12-1.x86_64.rpm) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 - **Source**: [GitHub Repository](https://github.com/Tetramatrix/Sorana)
 - **Discord**: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
 - **Microsoft Store**: [apps.microsoft.com](https://apps.microsoft.com/detail/9n8c43pzc1rn)

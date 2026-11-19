@@ -5,7 +5,28 @@
     <link>https://tetramatrix.github.io/Sorana/</link>
     <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0100</lastBuildDate>
+    <item>
+      <title>Sorana 1.1.12</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.1.12</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Spotify and ListenBrainz exports open like folders and group their artists on the canvas, a review step before grouping, a Spotify listening history you can query in chat, and rebuild or update for folders already in use.</description>
+    </item>
+    <item>
+      <title>Sorana 1.1.11</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.1.11</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0100</pubDate>
+      <description>A prompt rail for stepping through a conversation, documents that open inside the Library, definition and usage lookup across projects, and a Memory Graph that is easier to read.</description>
+    </item>
+    <item>
+      <title>Sorana 1.1.10</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.1.10</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Report a bug from inside the app with diagnostics attached, every agent chat listed and manageable from the Agent Manager, and transcripts you can read, compact, or delete in one place.</description>
+    </item>
     <item>
       <title>Sorana 1.1.9</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
