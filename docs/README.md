@@ -298,12 +298,12 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 ## Quick Start
 
-1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux (portable)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), Linux [.deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana_1.1.12_amd64.deb), Linux [.rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana-1.1.12-1.x86_64.rpm), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
+1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux (portable)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), Linux [.deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb), Linux [.rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 2. **Run** anywhere, desktop, USB, external drive
 3. **Choose a model**, use a free cloud model with your own API key (OpenRouter's free tier costs nothing), or run local models through Lemonade, Ollama, or LM Studio
 4. **Start working**, add your files, chat with documents, and let Sorana remember your projects and preferences
 
-**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) · [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana_1.1.12_amd64.deb) · [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana-1.1.12-1.x86_64.rpm) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)  
+**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) · [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb) · [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)  
 **Microsoft Store**: [Get from Store](https://apps.microsoft.com/detail/9n8c43pzc1rn)
 
 **Linux 1.1.12 checksums**
@@ -468,7 +468,7 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 - **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
 - **Changelog**: [tetramatrix.github.io/Sorana/Changelog.html](https://tetramatrix.github.io/Sorana/Changelog.html)
 - **Release feed**: [feed.xml](https://tetramatrix.github.io/Sorana/feed.xml)
-- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana_1.1.12_amd64.deb) / [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.12/Sorana-1.1.12-1.x86_64.rpm) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
+- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb) / [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
 - **Source**: [GitHub Repository](https://github.com/Tetramatrix/Sorana)
 - **Discord**: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
 - **Microsoft Store**: [apps.microsoft.com](https://apps.microsoft.com/detail/9n8c43pzc1rn)
