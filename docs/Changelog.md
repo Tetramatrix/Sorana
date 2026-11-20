@@ -1,5 +1,16 @@
 📋 Changelog 📋
 
+📅 20.11.26 - Version 1.1.13
+
+🐛 Bug Fixes
+🐛 A Finished Answer Survives A Long Turn: a turn that completed just as the watchdog deadline arrived could be cancelled and replaced by a short notice instead of its full answer. The finished answer is now kept when delivery was marked, and a stopped turn reports that it was cancelled after delivery rather than simply cancelled.
+🐛 Limitation Notices Stand On Their Own: publication limitations are now published as their own messages in the transcript instead of being folded into the answer.
+🐛 Reasoning Tails No Longer Leak Into The Answer: leading reasoning text is separated from the answer so it does not appear in the delivered reply.
+
+🔄 Improvements & Changes
+🔄 Replayed Rounds Keep Their Reasoning: continuing a conversation from history no longer fails when a round carried reasoning, because the stored reasoning is carried through.
+🔄 Heuristic Entry File Tightened: a bare domain is no longer treated as a file to open.
+
 📅 19.11.26 - Version 1.1.12
 
 🆕 New Features
