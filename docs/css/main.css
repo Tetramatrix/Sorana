@@ -1021,7 +1021,7 @@ body.modal-open { overflow: hidden; }
    end with an empty cell. Gated at 648px: below that width the grid is a single
    column, and a two column span would add a broken second column. */
 @media (min-width: 648px) {
-  #topFeatures > :last-child { grid-column: span 2; align-self: stretch; }
+  #topFeatures > .ad-card { grid-column: span 2; align-self: stretch; }
 }
 /* MCP marketplace servers: full-width bands.
    These cards carry prose, a chip row and a screenshot. At two columns wide in a
