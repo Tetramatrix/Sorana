@@ -1,5 +1,21 @@
 📋 Changelog 📋
 
+📅 21.11.26 - Version 1.1.14
+
+🆕 New Features
+🆕 Images In, Text Out: chat images and Library images are now analyzed at ingest and stored as text in the existing RAG store, with session scoped chat images and agent scoped Library images. The Library picker accepts several files at once, continues after a single file fails, and follows the live vision availability probe.
+🆕 Layers Nest Without A Limit: layers now nest to any depth with one shared order across the Open menu and Manage layers, and the root is a separate read-only row. Folder registration parents under the layer holding the viewed folder, and root opening, frame centering, history, and agent hints follow the active layer. A scope chooser filters Composition, the root, or any single layer, and a combined composition graph namespaces same named groups per layer and links groups that share a physical folder.
+🆕 Composition Frames You Can Edit And Resize: agent cards are rendered as project cards inside composition frames, whole groups and cards can be moved within a frame and each move is saved to that frame folder's own layout. Frames remember an optional width and height, and right, bottom and corner grips appear on hover to resize them.
+🆕 Folder Names On Composition Links: the linked folder is named on canvas connectors and composition graph links, as a pill with a hover tooltip on the canvas and a tooltip plus a camera scaled chip at the midpoint in the graph.
+🆕 A Dedicated Grouping Role: classification and file grouping now use their own role, falling back to the quick role when empty, with concurrency, adapter fallback, failure chains and notices routed through it. The role appears in Model Manager assignment, pin order, backup, and bulk assign and backup.
+
+🔄 Improvements & Changes
+🔄 Deeper Zoom, Smaller Cards: the manual canvas zoom floor drops to one percent to match the composition floor, and agent card floors taper below the reference so cards shrink with deep zoom out instead of staying at a fixed screen size.
+🔄 Artist Chips Open The Sidebar: workspace graph artist chips now open the sidebar on the first click, take their group color when selected, and the sidebar reads the full local Spotify and ListenBrainz history instead of contradicting the archive counts.
+
+🛡️ Security & Stability
+🛡️ Logins Stay Signed In: token renewal now runs on a background thread at a thirty second interval, so a long session is no longer interrupted.
+
 📅 20.11.26 - Version 1.1.13
 
 🐛 Bug Fixes

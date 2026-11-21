@@ -298,21 +298,17 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 
 ## Quick Start
 
-1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux (portable)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), Linux [.deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb), Linux [.rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
+1. **Download** for [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe), [Linux (portable)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana), Linux [.deb](https://github.com/Tetramatrix/Sorana/releases/latest), Linux [.rpm](https://github.com/Tetramatrix/Sorana/releases/latest), or [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest)
 2. **Run** anywhere, desktop, USB, external drive
 3. **Choose a model**, use a free cloud model with your own API key (OpenRouter's free tier costs nothing), or run local models through Lemonade, Ollama, or LM Studio
 4. **Start working**, add your files, chat with documents, and let Sorana remember your projects and preferences
 
-**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) · [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb) · [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)  
+**Download**: [Sorana.exe](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) · [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) · [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/latest) · [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/latest) · [Sorana.zip (MacOS)](https://github.com/Tetramatrix/Sorana/releases/latest)  
 **Microsoft Store**: [Get from Store](https://apps.microsoft.com/detail/9n8c43pzc1rn)
 
-**Linux 1.1.12 checksums**
+**Linux checksums**
 
-| File | SHA-256 |
-|---|---|
-| `Sorana` (portable) | `d774be43996c816937894e1c96b2930b7f25dd91668c138c6150f90704e6f424` |
-| `Sorana_1.1.12_amd64.deb` | `230016da202e464fe5d6307e7ff5dd1c98c9fe1dcc4956a3f9adab567c33fad2` |
-| `Sorana-1.1.12-1.x86_64.rpm` | `b7e9d9b96910419d5cdaf958252a2b1a50730772895821bf18c19d9b719041ea` |
+Linux package names carry the version, so their SHA-256 values change on every release. Open the Linux option on the [website](https://tetramatrix.github.io/Sorana/) to see the checksums for the current release.
 
 ---
 
@@ -468,7 +464,7 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 - **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
 - **Changelog**: [tetramatrix.github.io/Sorana/Changelog.html](https://tetramatrix.github.io/Sorana/Changelog.html)
 - **Release feed**: [feed.xml](https://tetramatrix.github.io/Sorana/feed.xml)
-- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb) / [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip)
+- **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/latest) / [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/latest) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest)
 - **Source**: [GitHub Repository](https://github.com/Tetramatrix/Sorana)
 - **Discord**: [discord.gg/4QkQSfSATF](https://discord.gg/4QkQSfSATF)
 - **Microsoft Store**: [apps.microsoft.com](https://apps.microsoft.com/detail/9n8c43pzc1rn)

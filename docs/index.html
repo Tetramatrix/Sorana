@@ -332,9 +332,9 @@
     <a href="#setup">Setup</a>
     <a href="#discover">Discover</a>
     <a href="support.html">Support</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
     <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
   </div>
   <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
@@ -358,9 +358,9 @@
     A portable desktop app: runs from a USB stick. No install, no account, no cloud sync.<br>    Available for Windows, Linux, and MacOS.
   </p>
   <div class="hero-actions">
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
@@ -482,6 +482,58 @@
         Open a Spotify export like a folder: artists grouped into a board you can drag, edit, and reopen, with the full listening history imported alongside it.
       </p>
     </div>
+      <div class="hero-slide" data-index="7">
+        <div class="screenshot-wrap">
+          <picture><source srcset="composition.webp" type="image/webp"><img src="composition.png" alt="Composition view: three folder layers as frames on one workspace canvas, joined by folder connectors, with the layer map in the corner" width="1197" height="824" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Composition view: three folder layers drawn as frames on one canvas, joined where the folders really contain each other, with a layer map for navigation.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="8">
+        <div class="screenshot-wrap">
+          <picture><source srcset="composition_graph.webp" type="image/webp"><img src="composition_graph.png" alt="Composition graph: every visible workspace layer in one 3D graph with layer nodes and inter-layer links" width="1390" height="1067" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Composition graph: every visible layer in one 3D graph, with layer nodes, inter-layer links and the group filters you already use.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="9">
+        <div class="screenshot-wrap">
+          <picture><source srcset="graph_spotify.webp" type="image/webp"><img src="graph_spotify.png" alt="Single layer graph of a Spotify archive with six genre groups and 3560 artists, and the inspector open on one group" width="1761" height="1152" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          A single layer graph of a Spotify archive: 6 groups and 3,560 artists, with the inspector open on one group.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="10">
+        <div class="screenshot-wrap">
+          <picture><source srcset="graph_spotify_2.webp" type="image/webp"><img src="graph_spotify_2.png" alt="Graph inspector showing one artist's listening history, albums, top tracks and recent plays" width="1390" height="1067" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          The graph knows what each node is: an artist's listening history, albums, top tracks and recent plays, read straight from the archive.
+        </p>
+      </div>
 </div>
   </div>
   <div class="hero-stats">
@@ -766,6 +818,37 @@
       </figure>
     </div>
 
+    <div class="feature-card large">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="8" height="7" rx="1"/><rect x="14" y="4" width="8" height="7" rx="1"/><rect x="8" y="14" width="8" height="7" rx="1"/><line x1="6" y1="11" x2="10" y2="14"/><line x1="18" y1="11" x2="14" y2="14"/>
+        </svg>
+      </div>
+      <h3>Multi-source workspace: many folders, one canvas <span class="model-tag free">NEW</span></h3>
+      <p><strong>Open Workspace now holds more than one folder at a time.</strong> The new Add folder... entry puts another folder beside the root, and every visible folder is drawn as its own frame on the same canvas. Each frame is a complete board with its own groups, grid, agent cards, grouping context and intel, so nothing is merged, copied or overwritten. Folders that really sit inside one another are joined by a folder connector, and the layer map jumps to any frame.</p>
+      <p><strong>Composition view or single view.</strong> Composition keeps every frame on screen with one shared camera, and whole groups and agent cards can be dragged inside any writable frame. Open layer gives that folder its own full view, where every gesture, grid pitch, grouping run and agent belongs to that folder alone. Returning to Composition finds the frames where you left them.</p>
+      <p><strong>Composition graph or single graph.</strong> The Graph button opens the whole composition: every visible layer in one 3D graph, with layer nodes and links that follow real folder containment. Pick one layer instead and you get that folder's own graph. Hidden layers stay out of both.</p>
+      <p><strong>Situation aware about every source.</strong> The inspector knows what a node is. A Spotify or ListenBrainz artist carries its listening history, plays, tracks, albums, top tracks and recent listens, read from the archive itself. Files carry size, modification age and media runtime, and the intel encoding maps shape to storage and colour to age.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-3);margin-top:var(--space-4);">
+        <figure style="margin:0;">
+          <picture><source srcset="composition.webp" type="image/webp"><img src="composition.png" alt="Composition: three folder layers as frames on one canvas, joined by folder connectors, with the layer map" loading="lazy" width="1197" height="824" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Composition view: three folders, one canvas, one shared camera.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <picture><source srcset="composition_graph.webp" type="image/webp"><img src="composition_graph.png" alt="Composition graph: every visible layer in one 3D workspace graph" loading="lazy" width="1390" height="1067" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Composition graph: every visible layer in one graph.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <picture><source srcset="graph_spotify.webp" type="image/webp"><img src="graph_spotify.png" alt="Single layer graph of a Spotify archive with six genre groups and 3560 artists" loading="lazy" width="1761" height="1152" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Single layer graph: a Spotify archive, 6 groups and 3,560 artists.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <picture><source srcset="graph_spotify_2.webp" type="image/webp"><img src="graph_spotify_2.png" alt="Graph inspector showing an artist's listening history, albums, top tracks and recent plays" loading="lazy" width="1390" height="1067" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">The inspector knows the source: listening history for an artist node.</figcaption>
+        </figure>
+      </div>
+    </div>
+
     <div class="feature-stack">
 <div class="feature-card">
       <div class="feature-icon">
@@ -1013,9 +1096,9 @@
     <h2 style="margin-bottom:var(--space-3);">Ready to try it?</h2>
     <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:560px;margin-left:auto;margin-right:auto;">Download the executable and run it directly. No installation, no account, no cloud sync unless you choose it.</p>
     <div class="cta-actions">
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
   </div>
@@ -1776,9 +1859,9 @@
   </div>
   <div class="cta-section" style="padding: var(--space-12) 0 0; max-width: none;">
     <div class="cta-actions">
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
   </div>
@@ -2065,9 +2148,9 @@
     </a>
   </p>
   <div class="cta-actions">
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
@@ -2116,31 +2199,28 @@
   </div>
   <p class="linux-modal-intro">Pick the package that fits your distribution, or use the portable build and run it from any folder.</p>
   <div class="linux-options">
-    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana">
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable">
       <span class="linux-option-top"><strong>Portable (ELF)</strong><span class="linux-option-cta">Download →</span></span>
       <span>Run directly from any folder or USB stick. No installation.</span>
     </a>
-    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb">
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="linux-deb">
       <span class="linux-option-top"><strong>.deb package</strong><span class="linux-option-cta">Download →</span></span>
       <span>Debian, Ubuntu, Linux Mint and other apt-based distributions.</span>
     </a>
-    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm">
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="linux-rpm">
       <span class="linux-option-top"><strong>.rpm package</strong><span class="linux-option-cta">Download →</span></span>
       <span>Fedora, openSUSE, RHEL and other rpm-based distributions.</span>
     </a>
   </div>
-  <details class="linux-checksums">
-    <summary>SHA-256 checksums for 1.1.12</summary>
-    <ul>
-      <li><strong>Sorana</strong> (portable) <code>d774be43996c816937894e1c96b2930b7f25dd91668c138c6150f90704e6f424</code></li>
-      <li><strong>Sorana_1.1.12_amd64.deb</strong> <code>230016da202e464fe5d6307e7ff5dd1c98c9fe1dcc4956a3f9adab567c33fad2</code></li>
-      <li><strong>Sorana-1.1.12-1.x86_64.rpm</strong> <code>b7e9d9b96910419d5cdaf958252a2b1a50730772895821bf18c19d9b719041ea</code></li>
-    </ul>
+  <details class="linux-checksums" id="linuxChecksums" style="display:none">
+    <summary>SHA-256 checksums for <span data-release-version>the latest release</span></summary>
+    <ul data-release-checksums></ul>
   </details>
-  <p class="linux-modal-foot">All Linux builds are version 1.1.12. Verify a download with <code>sha256sum</code>.</p>
+  <p class="linux-modal-foot">All Linux builds come from the latest release. Verify a download with <code>sha256sum</code>, or see the checksums on the <a href="https://github.com/Tetramatrix/Sorana/releases/latest" target="_blank" rel="noopener">release page</a>.</p>
 </div>
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/downloads.js"></script>
 </body>
 </html>
