@@ -1,6 +1,6 @@
 # Sorana: Desktop AI Knowledge Workspace & Agent Harness That Never Forgets
 
-> Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs entirely on your machine and never forgets a project, preference, or decision.
+> Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, analyze Git history and system logs, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs entirely on your machine and never forgets a project, preference, or decision.
 >
 > **Start for $0**, OpenRouter's free tier gives you a free API key (no subscription, no credits) and auto-picks the best free model for every request. Pair it with Sorana and put the agentic AI to work before adding anything else.
 
@@ -8,9 +8,9 @@
 
 ## What Is Sorana?
 
-Sorana is a personal desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It learns from your documents, conversations, and actions, building a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. When a task needs it, the harness dispatches specialized subagents to work in parallel then reviews the results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals.
+Sorana is a personal desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It learns from your documents, conversations, and actions, building a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. Assign any model to eight roles, from Primary and Quick to Memory, Grouping, Embed, Vision, Reviewer, and Judge, so routine work can use smaller models and keep paid cloud API costs down. When a task needs it, the harness dispatches specialized subagents to work in parallel then reviews the results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals.
 
-Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files and music archives, research topics, manage emails and your calendar, all without leaving your workspace.
+Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files and music archives, analyze Git history and system logs, research topics, manage emails and your calendar, all without leaving your workspace.
 
 **Everything runs on your machine. Your data stays yours.**
 
@@ -74,12 +74,16 @@ Built-in OCR and vision AI make scanned documents, screenshots, and images searc
 - Vision results become searchable documents
 - JPEG, PNG, GIF, WEBP, BMP
 
-### Your powerful model is wasted on simple tasks
-When your AI plans strategically, reviews its own answers, fetches web results, and routes between tools, every internal step uses a model. Sorana uses a fast model for these internal operations and reserves your primary model for the actual conversation.
+### Make the AI work your way
+Do not spend a powerful model on simple steps. When your AI plans strategically, reviews its own answers, fetches web results, and routes between tools, every internal step uses a model. Sorana gives each kind of work its own role, so routine steps can run on a small, fast model while the main conversation and quality checks use stronger models. That keeps the workspace responsive and lowers paid cloud API bills.
 
-- Fast model for internal operations like tool calls and routing
+- Quick model for fast answers and internal operations like tool calls and routing
+- Memory and Grouping models for background extraction and board classification
+- Embed model for RAG and semantic search
+- Vision model for images, scans, and OCR fallback
+- Reviewer and Judge models for independent answer quality checks
 - Primary model for user conversations
-- Dedicated embedding model for RAG and semantic search
+- Backup per role plus one global Spare for automatic failover
 - Hardware acceleration when available
 
 ### Your AI is a black box
@@ -105,6 +109,9 @@ Each board keeps its own grouping, so a desktop scan no longer wipes a folder's 
 
 ### Music Archive Grouping
 Open a Spotify export folder through Open Workspace and it behaves like any other folder. Sorana reads the zips where they are, keeps every artist rather than only the first sample, consolidates and classifies them, and lays the groups out on the canvas. A ListenBrainz history archive opens from its folder the same way. Review the categories before grouping, compare them with the original findings, and rename or drop what does not fit. The board belongs to that folder, so you can drag it, edit groups, and reopen it later. When a folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. A Spotify import also becomes a listening history you can question in plain language, answered from the archive itself with no account to connect.
+
+### Multi-source Workspace
+Open Workspace now holds more than one folder at a time. Add folder... puts another folder beside the root, and every visible folder is drawn as its own frame on the same canvas. Each frame is a complete board with its own groups, grid, agent cards, grouping context and intel, so nothing is merged, copied or overwritten. Folders that really sit inside one another are joined by a folder connector, and the layer map jumps to any frame. Composition view keeps every frame on screen with one shared camera, and whole groups and agent cards can be dragged inside any writable frame. Open layer gives that folder its own full view, and the Graph button opens the whole composition as one 3D graph with layer nodes and inter-layer links, or a single layer's own graph.
 
 ### Agent Budgets & Limits
 Set a daily usage limit per agent from the Health Dashboard through a guided wizard, and track it in real time. Leave the field blank to use the app default or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight, and withheld calls are reported honestly rather than silently truncated.
@@ -134,13 +141,13 @@ Your AI brain connected to your knowledge and everything you can act on: web, em
 Connect Google Calendar and manage your schedule from chat. Create events, find free slots, and let Sorana plan your day.
 
 ### Model Manager
-Browse, expand, and collapse models from 25+ providers and local sources. Assign any model to five role slots: Primary, Quick, Embed, Vision, and Reviewer then set a Backup or Spare per role for automatic failover. Mark favorites, sort by any column, and probe capabilities before you commit.
+Browse, expand, and collapse models from 25+ providers and local sources. Assign any model to eight role slots: Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, and Judge. Put smaller models on routine roles to keep work fast and cloud AI bills low, then set a Backup per role plus one global Spare for automatic failover. Mark favorites, sort by any column, and probe capabilities before you commit.
 
 ### Specialized Subagents
 When a task needs it, Sorana dispatches specialized subagents, web research, code analysis, and fact-check to work in parallel with their own budgets, then reviews the results before answering.
 
-### Five Model Roles + Failover
-Assign any model to five role slots: Primary, Quick, Embed, Vision, and Reviewer each optimized for its task. The Reviewer gives answer quality checks an independent second opinion on a different model. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
+### Eight Model Roles + Failover
+Assign any model to eight role slots: Primary (main conversation), Quick (fast answers and internal operations), Memory (extracts memories), Grouping (classifies boards), Embed (indexes documents for search), Vision (reads images and scans), Reviewer (independent second opinion on answer quality), and Judge (scores the final answer). Put a smaller, carefully selected model on Quick, Memory, Grouping, and Embed to make routine work faster and cheaper, including lower bills when those roles use paid cloud services, and keep a stronger model on Primary, Reviewer, or Judge where quality matters. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
 
 ### Model Probing
 One click tests if a model can reason, see images, or handle audio, so you know what it can do before relying on it.
@@ -171,6 +178,12 @@ Watch your AI think step by step. See what it searched, what it found, and why i
 
 ### Code Explorer
 Got a folder of code? Sorana reads it, searches it, and answers questions about it, like a teammate who already knows the project. It can also find where a symbol is defined and where it is used, and one search can cover more than one project root.
+
+### Git Repository Analysis
+Open a local Git repository in place, or paste a remote https, ssh, git or file URL and Sorana keeps a local clone. It reads the commit history, groups commits by the area of the codebase or the kind of work they describe, and lays them out as a workspace board. Each item carries its authors, changed files and date range. Reopen the board later, inspect it in the 3D graph, and ask which area changed most, when a feature landed, or what a release contained.
+
+### System Log Analysis
+Open a log file, a folder of logs, or a platform system log such as Windows System, Windows Application, journald, or macOS. Sorana aggregates thousands of events, groups them by event kind, and lays them out on the workspace canvas. Ask what failed, what changed, or when a service last restarted, with the event details attached.
 
 ### Tesseract Image OCR
 
@@ -238,6 +251,19 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 - "Search my plays for an artist and tell me how much of the export is covered"
 - "What did I play most this week?"
 
+### Multi-source Workspace
+- "Add a second folder beside the root and see both boards on one canvas"
+- "Switch to composition view and drag a group between frames"
+- "Open the composition graph to see every layer and its links"
+- "Jump to any frame from the layer map"
+
+### Git & System Logs
+- "Open this repository and group its commits by area"
+- "Which part of the codebase changed most last month?"
+- "When did the authentication work land?"
+- "Open the Windows System log and show me what failed after the last update"
+- "Which security events happened in the last 24 hours?"
+
 ### Crypto & Market Data
 - "What is bitcoin's price in USD right now?"
 - "What is Bitcoin Cash trading at right now?"
@@ -278,7 +304,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 |---|---|---|---|
 | Runs fully offline & private | Your machine, your data. No internet needed. | Obsidian local / Notion cloud | Cloud only. Your data on their servers. |
 | Model flexibility | 25+ providers + capability probing | N/A | Locked to one vendor |
-| Five Model Roles + Failover | Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer). Set a Backup or Spare per role for automatic failover. | N/A | One model for everything |
+| Eight Model Roles + Failover | Assign any model to eight role slots (Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, and Judge). Put smaller models on routine roles to lower paid cloud bills, and set a Backup per role plus one global Spare for automatic failover. | N/A | One model for everything |
 | Multi-agent orchestration | Specialized subagents work in parallel with their own budgets when the workspace needs them. | Simple automations only | Basic workflows / skills (paid) |
 | Agent Trace & Debug | Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. | No AI agent transparency | No agent tracing available |
 | Sources you can verify | Every answer lists the web pages and documents it used, filtered by relevance. | N/A | Basic citations on paid tier only |

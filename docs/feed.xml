@@ -3,9 +3,16 @@
   <channel>
     <title>Sorana releases</title>
     <link>https://tetramatrix.github.io/Sorana/</link>
-    <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS.</description>
+    <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS, with eight model roles, Git repositories, system logs, music archives, and local models.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 21 Nov 2026 00:00:00 +0100</lastBuildDate>
+    <item>
+      <title>Sorana 1.1.14</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.1.14</guid>
+      <pubDate>Fri, 21 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Multi-source workspaces with composition view: add another folder beside the root and every folder becomes its own frame on one canvas, joined by folder connectors with a layer map, composition or single views and graphs. Music archives open like folders: Spotify exports and ListenBrainz history archives group their artists on the canvas, with a review step before grouping and listening history you can query in chat. Git repositories, local or remote, and platform system logs now open as their own grouped boards, with history and event kinds queryable in chat.</description>
+    </item>
     <item>
       <title>Sorana 1.1.12</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>

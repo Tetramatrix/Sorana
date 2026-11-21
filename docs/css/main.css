@@ -924,6 +924,14 @@ body.modal-open { overflow: hidden; }
   grid-template-columns: repeat(auto-fill, minmax(min(300px,100%), 1fr));
   gap: var(--space-4);
 }
+
+.problem-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-self: stretch;
+}
+.problem-stack > * { flex: 1 1 auto; min-width: 0; }
 .problem-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -935,6 +943,7 @@ body.modal-open { overflow: hidden; }
   border-color: rgba(62,207,178,0.2);
   box-shadow: 0 8px 32px rgba(62,207,178,0.04);
 }
+.problem-card.large { grid-column: span 2; }
 .problem-card h3 {
   font-size: var(--text-base);
   font-weight: 600;
@@ -1969,6 +1978,7 @@ footer {
   .showcase { padding: 0 var(--space-4) var(--space-16); }
   .section { padding: var(--space-12) var(--space-4); }
   .feature-card.large { grid-column: span 1; }
+  .problem-card.large { grid-column: span 1; }
   .model-preview { padding: var(--space-12) var(--space-4); }
   .providers-section { padding: var(--space-10) var(--space-4); }
   .hero-stats { gap: var(--space-5); }

@@ -34,7 +34,7 @@
     toggleBtn.addEventListener('click', function() {
       var visible = moreFeatures.style.display !== 'none';
       moreFeatures.style.display = visible ? 'none' : 'grid';
-      toggleBtn.textContent = visible ? '15 more features ↓' : 'Show fewer ↑';
+      toggleBtn.textContent = visible ? '17 more features ↓' : 'Show fewer ↑';
     });
   }
 
