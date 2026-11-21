@@ -364,7 +364,7 @@ These servers ship with the app. Most are enabled by default, and each can be sw
 
 ### ListenBrainz (built-in, new)
 
-Ask your assistant about years of music listening in plain language. Twelve tools cover public charts, your own listening history, and a full local archive of everything you have ever played.
+Ask your assistant about years of music listening in plain language. 54 tools cover public charts, your own listening history, and a full local archive of everything you have ever played.
 
 - **Public charts and top artists** — the sitewide chart plus your own most played artists over a week, month, year or all time
 - **Now playing and recent listens** — what is playing right now, and your last 100 listens with time bounds and paging
