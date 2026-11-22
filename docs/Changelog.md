@@ -1,5 +1,23 @@
 📋 Changelog 📋
 
+📅 22.11.26 - Version 1.1.15
+
+🆕 New Features
+🆕 Import Apple Music, YouTube Music And Last.fm History: music archives from Apple Music, YouTube Music and Last.fm can now be imported alongside Spotify and ListenBrainz, with artist details and history stored in the shared music history store.
+🆕 Remote Git Scans With A Stop Control: a Git workspace can now be scanned from a remote URL, with a stop control to cancel a running scan, and imported repositories cached for grouping.
+🆕 Logs As Event Kind Boards: local and platform logs are read as event kind boards, with a dialog to choose the log source and its presets.
+🆕 Token Efficient Tool Loading: tools are loaded on demand by domain, reducing prompt size, with a per agent manifest only toggle.
+🆕 Saved Board Rescan And Removal: saved boards can be rescanned or removed, with a session history dialog.
+🆕 Grouping Run Tracing: grouping runs are traced end to end, with a trace window and readable labels.
+
+🔄 Improvements & Changes
+🔄 Session Canvas Restored On Reopen: a saved session canvas reopens with its last view, and every board camera is persisted.
+🔄 Git Boards Repaired: managed Git boards stay in the app data cache, and all grouping runs are traced.
+
+🐛 Bug Fixes
+🐛 Truncated Event Labels Stay Unique: truncated event labels no longer collide.
+🐛 Platform Log Readers Repaired: Windows, journald and macOS log readers are fixed and all presets are exposed.
+
 📅 21.11.26 - Version 1.1.14
 
 🆕 New Features
