@@ -9,6 +9,7 @@
 🆕 Token Efficient Tool Loading: tools are loaded on demand by domain, reducing prompt size, with a per agent manifest only toggle.
 🆕 Saved Board Rescan And Removal: saved boards can be rescanned or removed, with a session history dialog.
 🆕 Grouping Run Tracing: grouping runs are traced end to end, with a trace window and readable labels.
+🆕 Tor network
 
 🔄 Improvements & Changes
 🔄 Session Canvas Restored On Reopen: a saved session canvas reopens with its last view, and every board camera is persisted.
