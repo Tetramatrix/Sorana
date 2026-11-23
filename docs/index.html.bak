@@ -18,23 +18,23 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
      crossorigin="anonymous"></script>
 
-<title>Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness</title>
-<meta name="description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and years of music listening.">
-<meta property="og:title" content="Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness">
-<meta property="og:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and years of music listening.">
+<title>Sorana: Desktop AI Workspace, 8 Model Roles &amp; Agent Harness</title>
+<meta name="description" content="Sorana is a free, private desktop AI workspace with eight model roles, local memory, Git and log analysis, and music archives. Spend less on cloud AI.">
+<meta property="og:title" content="Sorana: Desktop AI Workspace, 8 Model Roles &amp; Agent Harness">
+<meta property="og:description" content="Sorana is a free, private desktop AI workspace with eight model roles, local memory, Git and system log analysis, and music archives. Smaller models for routine work keep cloud AI bills low.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tetramatrix.github.io/Sorana/">
 <meta property="og:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
-<meta property="og:image:alt" content="Sorana desktop AI knowledge workspace and agent harness">
+<meta property="og:image:alt" content="Sorana desktop AI workspace with Git repository and system log analysis">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Sorana">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sorana: Desktop AI Knowledge Workspace &amp; Agent Harness">
-<meta name="twitter:description" content="Sorana is a free desktop AI knowledge workspace and agent harness that remembers your documents, chats, email, calendar, and years of music listening.">
+<meta name="twitter:title" content="Sorana: Desktop AI Workspace, 8 Model Roles &amp; Agent Harness">
+<meta name="twitter:description" content="Sorana is a free, private desktop AI workspace with eight model roles, local memory, Git and system log analysis, and music archives. Smaller models for routine work keep cloud AI bills low.">
 <meta name="twitter:image" content="https://tetramatrix.github.io/Sorana/og-image.png">
-<meta name="twitter:image:alt" content="Sorana desktop AI knowledge workspace and agent harness">
+<meta name="twitter:image:alt" content="Sorana desktop AI workspace with Git repository and system log analysis">
   <link rel="icon" type="image/png" href="icon-192.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="canonical" href="https://tetramatrix.github.io/Sorana/">
@@ -52,10 +52,11 @@
       "name": "Sorana",
       "operatingSystem": "Windows 11, Linux, MacOS",
       "applicationCategory": "ProductivityApplication",
-      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, spotify, spotify export, spotify listening history, music archive organizer, listenbrainz, listenbrainz export, listenbrainz listening history, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Music archive import with canvas grouping", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "25+ cloud providers", "MCP integrations", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
+      "description": "Free, private desktop AI knowledge workspace and agent harness with eight model roles, local memory, Git and system log analysis, and music archives. Smaller models for routine work keep cloud AI bills low.",
+      "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, spotify, spotify export, spotify listening history, music archive organizer, listenbrainz, listenbrainz export, listenbrainz listening history, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows, multi source workspace, composition view, multi folder canvas, music history archive, git repository analysis, local git repository, remote git repository, git history, git log graph, windows system log, event log analysis, log analyzer, system log viewer, eight model roles, role-based model routing, model manager, cheaper cloud ai costs, reduce paid ai bills",
+      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Music archive import with canvas grouping", "Multi-source workspace with composition view", "Multi-folder canvas with folder connectors", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Git repository analysis for local and remote repositories", "Git history grouped into workspace boards and 3D graphs", "Windows system log and log file analysis", "Event kind grouping for logs", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "Eight model roles: Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, Judge", "Role-based model routing with Backup and Spare failover", "Lower paid cloud AI bills with smaller models for routine work", "25+ cloud providers", "MCP integrations", "Polymarket prediction market MCP server", "Multi source prediction market boards", "Per category Tor routing", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "screenshot": ["model_manager.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png", "spotify_groups.png"],
+      "screenshot": ["model_manager.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png", "spotify_groups.png", "composition.png", "composition_graph.png", "remote_git_log.png", "remote_git_log_graph.png", "windows_system_log.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
       "downloadUrl": "https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe",
       "author": { "@type": "Organization", "name": "Tetramatrix" },
@@ -168,7 +169,7 @@
           "name": "Does Sorana cost anything?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sorana is free to download and use today; a planned premium option will add extra support while all current features remain available in the free tier. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio — OpenRouter's free tier is a zero-cost way to start with cloud models."
+            "text": "Sorana is free to download and use today; a planned premium option will add extra support while all current features remain available in the free tier. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio — OpenRouter's free tier is a zero-cost way to start with cloud models. Assign smaller models to routine roles such as Quick, Memory, Grouping, and Embed to keep paid cloud API bills lower."
           }
         },
         {
@@ -192,7 +193,7 @@
           "name": "What models are supported?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and more. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities."
+            "text": "25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and more. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. Assign any model to eight roles: Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, and Judge, with a Backup per role and one global Spare for automatic failover. The Model Manager lets you browse, favorite, and probe models to discover their capabilities."
           }
         },
         {
@@ -256,7 +257,7 @@
           "name": "How do I chat with my music history?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Open a Spotify export through Open Workspace and it becomes a local listening history to answer from, imported alongside its artist grouping. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, enable the built-in server and paste your ListenBrainz user token in the Configure dialog, then ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening."
+            "text": "Open a Spotify export through Open Workspace and it becomes a local listening history to answer from, imported alongside its artist grouping. Ask for top artists, now-playing, or recent listens directly. For a full ListenBrainz history, enable the built-in server and paste your ListenBrainz user token in the Configure dialog, then ask for an export: Sorana queues it as a background job, imports the archive locally, and answers across years of listening. Each archive stays its own board on the canvas, so several listening histories coexist in composition view."
           }
         },
         {
@@ -264,7 +265,31 @@
           "name": "Can I open a music archive in Sorana?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Point Open Workspace at a Spotify export and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. A ListenBrainz history archive opens from its folder the same way. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as \"Who are my top 20 artists this year?\" or \"Show my listening and skip statistics for the last month.\""
+            "text": "Yes. Point Open Workspace at a Spotify export and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. A ListenBrainz history archive opens from its folder the same way. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as \"Who are my top 20 artists this year?\" or \"Show my listening and skip statistics for the last month.\" Each archive becomes its own frame on the shared canvas, so several archives and folders coexist in composition view, each as its own board."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I open more than one folder at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Open Workspace now holds more than one folder at a time: Add folder... puts another folder beside the root, and every visible folder is drawn as its own frame on the same canvas. Each frame is a complete board with its own groups, grid, agent cards, grouping context and intel, so nothing is merged, copied or overwritten. Folders that really sit inside one another are joined by a folder connector, and the layer map jumps to any frame. Composition view keeps every frame on screen with one shared camera and lets you drag whole groups and agent cards inside any writable frame; Open layer gives that folder its own full view. The Graph button opens the whole composition as one 3D graph with layer nodes and inter-layer links, or a single layer's own graph when you pick one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Sorana analyze Git repositories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Open a local Git repository in place, or paste a remote https, ssh, git or file URL and Sorana keeps a local clone. It reads the commit history, groups commits by the area of the codebase or the kind of work they describe, and lays them out as a workspace board. Reopen the board later, inspect it in the 3D graph, and ask which area changed most, when a feature landed, or what a release contained."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Sorana analyze Windows system logs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Open a log file, a folder of logs, or a platform system log such as Windows System, Windows Application, journald, or macOS. Sorana aggregates thousands of events, groups them by event kind, and turns the raw stream into a workspace board. You can ask what failed, what changed, or when a service last restarted, with the event details attached."
           }
         },
         {
@@ -272,7 +297,7 @@
           "name": "What does ToolForest add?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ToolForest is a hosted MCP aggregator with 30+ toolkits over a single connection — Google Workspace, prediction markets like Polymarket, global news via GDELT, Reddit, X, fitness trackers, flashcards and more. Add your API key, authorize toolkits at app.toolforest.io, and ask normally. Its tools are separate from Sorana's built-in Gmail, Calendar, and ListenBrainz servers."
+            "text": "ToolForest is a hosted MCP aggregator with 30+ toolkits over a single connection — Google Workspace, prediction markets like Polymarket, global news via GDELT, Reddit, X, fitness trackers, flashcards and more. Add your API key, authorize toolkits at app.toolforest.io, and ask normally. Its tools are separate from Sorana's built-in Gmail, Calendar, and ListenBrainz servers. Sorana also ships a separate Polymarket server that needs no account or API key."
           }
         },
         {
@@ -332,9 +357,9 @@
     <a href="#setup">Setup</a>
     <a href="#discover">Discover</a>
     <a href="support.html">Support</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
     <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
   </div>
   <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
@@ -346,21 +371,21 @@
 <section class="hero">
   <div class="hero-eyebrow-row">
     <div class="hero-eyebrow">
-      AI Workspace · Agent Harness · Chat · Agents · Documents · Email · Calendar · Files · Web
+      AI Workspace · Agent Harness · Chat · Agents · Documents · Email · Calendar · Files · Web · Git · Logs
     </div>
     <span class="version-pill" id="versionPill" title="Current Sorana version">v1.1.0</span>
   </div>
    <h1>The desktop AI knowledge workspace.<br><em>That never forgets.</em></h1>
   <p class="hero-sub">
-    Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs on your machine and never forgets a project, preference, or decision.
+    Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, analyze Git history and system logs, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs on your machine and never forgets a project, preference, or decision.
   </p>
   <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin:0 auto var(--space-8);max-width:520px;">
     A portable desktop app: runs from a USB stick. No install, no account, no cloud sync.<br>    Available for Windows, Linux, and MacOS.
   </p>
   <div class="hero-actions">
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
@@ -482,6 +507,110 @@
         Open a Spotify export like a folder: artists grouped into a board you can drag, edit, and reopen, with the full listening history imported alongside it.
       </p>
     </div>
+      <div class="hero-slide" data-index="7">
+        <div class="screenshot-wrap">
+          <picture><source srcset="composition.webp" type="image/webp"><img src="composition.png" alt="Composition view: three folder layers as frames on one workspace canvas, joined by folder connectors, with the layer map in the corner" width="1197" height="824" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Composition view: three folder layers drawn as frames on one canvas, joined where the folders really contain each other, with a layer map for navigation.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="8">
+        <div class="screenshot-wrap">
+          <picture><source srcset="composition_graph.webp" type="image/webp"><img src="composition_graph.png" alt="Composition graph: every visible workspace layer in one 3D graph with layer nodes and inter-layer links" width="1390" height="1067" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Composition graph: every visible layer in one 3D graph, with layer nodes, inter-layer links and the group filters you already use.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="9">
+        <div class="screenshot-wrap">
+          <picture><source srcset="graph_spotify.webp" type="image/webp"><img src="graph_spotify.png" alt="Single layer graph of a Spotify archive with six genre groups and 3560 artists, and the inspector open on one group" width="1761" height="1152" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          A single layer graph of a Spotify archive: 6 groups and 3,560 artists, with the inspector open on one group.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="10">
+        <div class="screenshot-wrap">
+          <picture><source srcset="graph_spotify_2.webp" type="image/webp"><img src="graph_spotify_2.png" alt="Graph inspector showing one artist's listening history, albums, top tracks and recent plays" width="1390" height="1067" loading="lazy"></picture>
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          The graph knows what each node is: an artist's listening history, albums, top tracks and recent plays, read straight from the archive.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="11">
+        <div class="screenshot-wrap">
+          <img src="remote_git_log.png" alt="Remote Git repository opened in Sorana as a workspace canvas with 521 history items grouped into 12 areas of work" width="1086" height="800" loading="lazy">
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          A remote Git repository opened like a workspace: 521 items from its history grouped into 12 areas of work, ready to search and graph.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="12">
+        <div class="screenshot-wrap">
+          <img src="remote_git_log_graph.png" alt="3D workspace graph of a remote Git repository with 12 groups and 521 history items" width="1390" height="1067" loading="lazy">
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          The same remote repository as a 3D workspace graph: 12 areas of work and 521 history items, with the Graph inspector a click away.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="13">
+        <div class="screenshot-wrap">
+          <img src="windows_system_log.png" alt="Windows System log opened in Sorana as a workspace canvas with 1,273 events grouped into 8 categories" width="898" height="828" loading="lazy">
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Windows System log as a board: 1,273 events sorted into 8 categories, so you can ask what failed, what changed, and when.
+        </p>
+      </div>
+      <div class="hero-slide" data-index="14">
+        <div class="screenshot-wrap">
+          <img src="polymarket_trends.png" alt="Sorana workspace canvas with 100 Polymarket prediction markets grouped into 9 narrative categories" width="1038" height="858" loading="lazy">
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Prediction markets as a workspace source: 100 markets grouped into 9 narratives, from sports and monetary policy to geopolitics and crypto, ready to inspect, reopen, and graph.
+        </p>
+      </div>
 </div>
   </div>
   <div class="hero-stats">
@@ -592,7 +721,7 @@
     <p>Common AI frustrations and how Sorana solves them.</p>
   </div>
   <div class="problem-grid">
-    <div class="problem-card">
+    <div class="problem-card large">
       <h3>Your AI can't think strategically</h3>
       <p>Most AI does one thing at a time. Sorana breaks a goal into steps and dispatches specialized subagents, research, code, and fact-check when needed all from one workspace, with full review of the results.</p>
     </div>
@@ -608,17 +737,13 @@
       <h3>Your knowledge lives on someone else's server</h3>
       <p>Sorana runs AI models locally. Your notes, files, and conversations never leave your machine unless you want them to.</p>
     </div>
-  <div class="problem-card">
+      <div class="problem-card">
     <h3>Long conversations get slow and expensive</h3>
     <p>Sorana quietly condenses older parts of a conversation while keeping the important context, so even long-running projects stay fast and easy to continue.</p>
-  </div>
-  <div class="problem-card">
-    <h3>Your powerful model is wasted on simple tasks</h3>
-    <p>Sorana uses a fast model for simple steps and a stronger one when the task needs deeper thinking, so you get capable answers without wasting resources.</p>
-  </div>
-  <div class="problem-card"><h3>You need a different working style</h3>
+      </div>
+      <div class="problem-card"><h3>You need a different working style</h3>
       <p>Choose a ready-made working style for research, writing, planning, or everyday work, then switch whenever the task changes.</p>
-  </div>
+      </div>
     <div class="problem-card">
       <h3>Half your knowledge is locked in PDFs and images</h3>
       <p>Built-in OCR and vision AI make scanned documents, screenshots, and images searchable and ready to discuss.</p>
@@ -626,6 +751,66 @@
     <div class="problem-card">
       <h3>Your AI is a black box</h3>
       <p>Sorana makes its work visible: see what it searched, what it found, and why it reached an answer. You stay informed instead of treating the result like a black box.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Make the AI work your way</h3>
+      <p><strong>Do not spend a powerful model on simple steps.</strong> Assign any model to eight role slots: Primary (main model), Quick (fast answers), Memory (extracts memories), Grouping (classifies boards), Embed (indexes documents for search), Vision (reads images and scans), Reviewer (independent second opinion on answer quality), and Judge (scores the final answer). Put a smaller, carefully selected model on Quick, Memory, Grouping, and Embed to make routine work faster and cheaper to run, including lower bills when those roles use paid cloud services, and keep a stronger model on Primary, Reviewer, or Judge where quality matters. Add a Backup to the roles you rely on plus one global Spare, and Sorana fails over automatically. Change any slot whenever the task changes.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Tor routing: per category, fail closed <span class="model-tag free">NEW</span></h3>
+      <p><strong>Send only the categories you choose through Tor.</strong> A verified SOCKS5 circuit covers those requests, while local and LAN traffic, models, web search, downloads, updates, and integrations stay direct. If the circuit is unavailable, routed requests fail closed instead of leaking over your normal connection. The Health Dashboard shows the circuit state, and a setup wizard configures the proxy.</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">SOCKS5</div>
+        <div class="provider-chip">Per category</div>
+        <div class="provider-chip">Fail closed</div>
+        <div class="provider-chip">Health card</div>
+      </div>
+      <figure style="margin-top:var(--space-4);">
+        <img src="tor_card.png" alt="Sorana Tor routing card showing Polymarket routed through a verified SOCKS5 circuit while local and LAN traffic, models, web, downloads, updates, and integrations stay direct" loading="lazy" width="351" height="219" style="width:100%;height:auto;display:block;border-radius:8px;">
+        <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Tor routing card: Polymarket uses the circuit; everything else stays direct.</figcaption>
+      </figure>
+    </div>
+    <div class="problem-stack">
+      <div class="problem-card">
+        <h3>Visual knowledge canvas</h3>
+        <p>See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Know what your AI can do</h3>
+        <p>Check whether a model can handle images, audio, or deeper reasoning before you depend on it. Choose with confidence instead of discovering limitations halfway through a task.</p>
+      </div>
+        <div class="problem-card" style="align-self: stretch;">
+          <h3>Ask about any file</h3>
+          <p>Ask questions about PDFs, documents, scans, and images in plain language. Sorana finds the useful information inside and makes your whole archive easier to search.</p>
+        </div>
+    </div>
+      <div class="problem-card">
+        <h3>Every answer shows its sources</h3>
+        <p>Web search results list which pages were actually used. Document answers show which files were retrieved. Sources are filtered by relevance so you only see what mattered, not noise.</p>
+      </div>
+    <div class="problem-card" style="align-self: stretch;">
+      <h3>Agent harness: parallel subagents with budgets</h3>
+      <p>When a task needs it, Sorana's harness loop dispatches specialized subagents, web research, code analysis, and fact-check to work in parallel, each with its own budget. The workspace reviews the results before you see the answer.</p>
+    </div>
+    <div class="problem-card" style="align-self: stretch;">
+      <h3>Answers grounded in your knowledge</h3>
+      <p>Bring together documents, notes, and web pages in one searchable knowledge base. Sorana finds the right context automatically, so answers are based on your information, not guesswork.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Health Dashboard</h3>
+      <p>A first-boot setup guide plus ongoing monitoring for the services Sorana relies on. Catch issues early, before they slow you down.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Budget &amp; limits</h3>
+      <p>Set a daily usage limit per agent and track it in real time. Leave the field blank to use the app default, or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight.</p>
+    </div>
+    <div class="problem-card">
+      <h3>Learns your preferences</h3>
+      <p>When you decline a proposed action, the agent remembers the pattern and adapts future suggestions to your preferences instead of repeating them.</p>
+    </div>
+    <div class="problem-card" style="grid-column: 1 / -1;">
+      <h3>A provider dies? Keep working.</h3>
+      <p>Assign a backup model per role and one global spare. When a provider hits its limit or goes down mid-chat, Sorana switches to a healthy alternative automatically and benches dead free tiers until they reset.</p>
     </div>
   </div>
 </section>
@@ -647,19 +832,38 @@
 <section class="section" id="features">
   <div class="section-header">
     <h2>A smarter way to <em>work.</em></h2>
-    <p>Everything you need in one workspace and agent harness: chat with documents, dispatch AI agents, manage email and calendar, browse the web, and run local models, all with persistent memory that learns from every interaction.</p>
+    <p>Everything you need in one workspace and agent harness: chat with documents, analyze Git history and system logs, dispatch AI agents, manage email and calendar, browse the web, and run local models, all with persistent memory that learns from every interaction.</p>
   </div>
   <div class="features-grid" id="topFeatures">
-    <div class="feature-card">
+    <div class="feature-card large">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          <path d="M3 3v18h18"/><path d="M7 16l4-5 3 3 5-7"/>
         </svg>
       </div>
-      <h3>Agent harness: parallel subagents with budgets</h3>
-      <p>When a task needs it, Sorana's harness loop dispatches specialized subagents, web research, code analysis, and fact-check to work in parallel, each with its own budget. The workspace reviews the results before you see the answer.</p>
+      <h3>Polymarket: multi source market boards and MCP tools <span class="model-tag free">NEW</span></h3>
+      <p><strong>Polymarket is now a built in MCP server.</strong> Ask for live markets, odds, correlated markets, high volume markets that resolve soon, or a grouped board. Eight read only tools cover the public Gamma API. Every fetch saves a timestamped local snapshot, so later questions read the snapshot instead of the network. There is no wallet, account, or API key.</p>
+      <p><strong>The board is a real workspace source.</strong> Sorana lays the markets out by narrative and risk, so sports, monetary policy, crypto, geopolitics, and tail risks become groups you can rename, reopen, and inspect in the graph. Put it beside your other sources in Composition view and ask across the board in plain language.</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">8 MCP tools</div>
+        <div class="provider-chip">Keyless Gamma API</div>
+        <div class="provider-chip">Local snapshots</div>
+        <div class="provider-chip">Board grouping</div>
+        <div class="provider-chip">Narrative groups</div>
+        <div class="provider-chip">Composition view</div>
+      </div>
+      <ul class="card-examples">
+        <li>"What are the odds of a government shutdown?"</li>
+        <li>"Which high volume markets resolve this week?"</li>
+        <li>"What other markets are linked to this one?"</li>
+        <li>"Group the prediction markets by narrative and risk."</li>
+      </ul>
+      <figure style="margin-top:var(--space-4);">
+        <img src="polymarket_trends.png" alt="Sorana workspace canvas with 100 Polymarket prediction markets grouped into 9 narrative categories" loading="lazy" width="1038" height="858" style="width:100%;height:auto;display:block;border-radius:8px;">
+        <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Prediction markets as a workspace source: 100 markets grouped into 9 narratives.</figcaption>
+      </figure>
     </div>
-    <div class="feature-card">
+    <div class="feature-card" style="align-self: stretch;">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
@@ -667,15 +871,6 @@
       </div>
       <h3>State-of-the-art desktop interface <span class="model-tag free">NEW</span></h3>
       <p>The entire desktop interface has been rebuilt in Rust and Tauri. The new architecture delivers a modern, scalable UI with crisp, pixel-perfect rendering. It features native window management, system tray integration, and native menus, all backed by exceptional speed and low resource usage.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/>
-        </svg>
-      </div>
-      <h3>A provider dies? Keep working.</h3>
-      <p>Assign a backup model per role and one global spare. When a provider hits its limit or goes down mid-chat, Sorana switches to a healthy alternative automatically and benches dead free tiers until they reset.</p>
     </div>
     <div class="feature-card large formatted-chat-card">
       <div class="feature-icon">
@@ -713,14 +908,14 @@
         </div>
       </div>
     </div>
-    <div class="feature-card">
+    <div class="feature-card" style="align-self: stretch;">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
         </svg>
       </div>
-      <h3>Make the AI work your way</h3>
-      <p>Assign any model to five role slots: Primary (your main model), Quick (fast answers), Embed (indexes your documents for search), Vision (reads images and scans), and Reviewer (a second opinion on answer quality), then switch whenever the task changes. The Reviewer gives answer quality checks an independent second opinion on a different model, while everything else keeps running as before.</p>
+      <h3>Projects canvas <span class="model-tag free">NEW</span></h3>
+      <p>A second canvas beside your Workspace: every project gets its own card, its own assistant, its own folder the app looks after, and its own notes. Right-click the canvas to start a project, right-click a card to chat with it. Each canvas keeps its own view, zoom, and grid density.</p>
     </div>
     <div class="feature-card large">
       <div class="feature-icon">
@@ -734,7 +929,16 @@
         <img src="grouping_movies_example.png" alt="Workspace canvas with 2090+ movie files grouped into 13 genres" loading="lazy" width="908" height="681" style="width:100%;border-radius:8px;">
       </figure>
     </div>
-    <div class="feature-card large">
+    <div class="feature-card ad-card" style="grid-column: span 1;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-7g+ex-1i-2s+ay"
+         data-ad-client="ca-pub-6449563648591184"
+         data-ad-slot="9713451440"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+    <div class="feature-card large" style="grid-column: 1 / -1;">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
@@ -753,7 +957,7 @@
         <img src="spotify_groups.png" alt="Workspace canvas with a Spotify export grouped into artist boards" loading="lazy" width="910" height="960" style="width:100%;max-width:560px;display:block;margin:0 auto;border-radius:8px;">
       </figure>
     </div>
-    <div class="feature-card large">
+    <div class="feature-card large" style="grid-column: 1 / -1;">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><line x1="7" y1="7" x2="10" y2="10"/><line x1="17" y1="7" x2="14" y2="10"/><line x1="7" y1="17" x2="10" y2="14"/><line x1="17" y1="17" x2="14" y2="14"/>
@@ -765,111 +969,65 @@
         <img src="workspace_graph_1.png" alt="Workspace Graph: a grouped folder drawn as a 3D scene with one hub per category" loading="lazy" width="1180" height="925" style="width:100%;border-radius:8px;">
       </figure>
     </div>
-
-    <div class="feature-stack">
-<div class="feature-card">
+    <div class="feature-card large" style="grid-column: 1 / -1;">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+          <rect x="2" y="4" width="8" height="7" rx="1"/><rect x="14" y="4" width="8" height="7" rx="1"/><rect x="8" y="14" width="8" height="7" rx="1"/><line x1="6" y1="11" x2="10" y2="14"/><line x1="18" y1="11" x2="14" y2="14"/>
         </svg>
       </div>
-      <h3>Answers grounded in your knowledge</h3>
-      <p>Bring together documents, notes, and web pages in one searchable knowledge base. Sorana finds the right context automatically, so answers are based on your information, not guesswork.</p>
+      <h3>Multi-source workspace: many folders, one canvas <span class="model-tag free">NEW</span></h3>
+      <p><strong>Open Workspace now holds more than one folder at a time.</strong> The new Add folder... entry puts another folder beside the root, and every visible folder is drawn as its own frame on the same canvas. Each frame is a complete board with its own groups, grid, agent cards, grouping context and intel, so nothing is merged, copied or overwritten. Folders that really sit inside one another are joined by a folder connector, and the layer map jumps to any frame.</p>
+      <p><strong>Composition view or single view.</strong> Composition keeps every frame on screen with one shared camera, and whole groups and agent cards can be dragged inside any writable frame. Open layer gives that folder its own full view, where every gesture, grid pitch, grouping run and agent belongs to that folder alone. Returning to Composition finds the frames where you left them.</p>
+      <p><strong>Composition graph or single graph.</strong> The Graph button opens the whole composition: every visible layer in one 3D graph, with layer nodes and links that follow real folder containment. Pick one layer instead and you get that folder's own graph. Hidden layers stay out of both.</p>
+      <p><strong>Situation aware about every source.</strong> The inspector knows what a node is. A Spotify or ListenBrainz artist carries its listening history, plays, tracks, albums, top tracks and recent listens, read from the archive itself. Files carry size, modification age and media runtime, and the intel encoding maps shape to storage and colour to age.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-3);margin-top:var(--space-4);">
+        <figure style="margin:0;">
+          <picture><source srcset="composition.webp" type="image/webp"><img src="composition.png" alt="Composition: three folder layers as frames on one canvas, joined by folder connectors, with the layer map" loading="lazy" width="1197" height="824" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Composition view: three folders, one canvas, one shared camera.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <picture><source srcset="composition_graph.webp" type="image/webp"><img src="composition_graph.png" alt="Composition graph: every visible layer in one 3D workspace graph" loading="lazy" width="1390" height="1067" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Composition graph: every visible layer in one graph.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <picture><source srcset="graph_spotify.webp" type="image/webp"><img src="graph_spotify.png" alt="Single layer graph of a Spotify archive with six genre groups and 3560 artists" loading="lazy" width="1761" height="1152" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Single layer graph: a Spotify archive, 6 groups and 3,560 artists.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <picture><source srcset="graph_spotify_2.webp" type="image/webp"><img src="graph_spotify_2.png" alt="Graph inspector showing an artist's listening history, albums, top tracks and recent plays" loading="lazy" width="1390" height="1067" style="width:100%;border-radius:8px;"></picture>
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">The inspector knows the source: listening history for an artist node.</figcaption>
+        </figure>
+      </div>
     </div>
-    <div class="feature-card">
+    <div class="feature-card large" style="grid-column: 1 / -1;">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+          <circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="7" r="2"/><path d="M6 7v10"/><path d="M8 5h5a5 5 0 0 1 5 5v0"/><path d="M18 9v2a4 4 0 0 1-4 4H8"/>
         </svg>
       </div>
-      <h3>Projects canvas <span class="model-tag free">NEW</span></h3>
-      <p>A second canvas beside your Workspace: every project gets its own card, its own assistant, its own folder the app looks after, and its own notes. Right-click the canvas to start a project, right-click a card to chat with it. Each canvas keeps its own view, zoom, and grid density.</p>
-    </div>
-    </div>
-
-    <div class="feature-card large">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><line x1="7" y1="7" x2="10" y2="10"/><line x1="17" y1="7" x2="14" y2="10"/><line x1="7" y1="17" x2="10" y2="14"/><line x1="17" y1="17" x2="14" y2="14"/>
-        </svg>
+      <h3>Git history and system logs, readable at last <span class="model-tag free">NEW</span></h3>
+      <p><strong>A Git repository is now a workspace source.</strong> Open a local repository in place, or paste a remote URL and let Sorana keep a local clone. It reads the commit history, groups commits by the area of the codebase or the kind of work they describe, and lays the result out as a board you can reopen, search, and inspect in the 3D graph.</p>
+      <p><strong>Logs get the same treatment.</strong> Open a log file, a folder of logs, or a platform log such as Windows System, Windows Application, journald, or macOS. Sorana aggregates thousands of events, groups them by event kind, and turns the raw stream into a board you can question.</p>
+      <ul class="card-examples">
+        <li>"Which part of this repository changed most last month?"</li>
+        <li>"When did the authentication work land?"</li>
+        <li>"What failed on this machine after the last Windows update?"</li>
+        <li>"Show the security events from the last 24 hours."</li>
+      </ul>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-3);margin-top:var(--space-4);">
+        <figure style="margin:0;">
+          <img src="remote_git_log.png" alt="Remote Git repository grouped into 12 development areas on the workspace canvas" loading="lazy" width="1086" height="800" style="width:100%;border-radius:8px;">
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Remote Git history: 12 areas of work from one repository.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <img src="windows_system_log.png" alt="Windows System log grouped into 8 event categories on the workspace canvas" loading="lazy" width="898" height="828" style="width:100%;border-radius:8px;">
+          <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Windows System log: 1,273 events sorted by event kind.</figcaption>
+        </figure>
       </div>
-      <h3>Memory Graph 3D <span class="model-tag free">NEW</span></h3>
-      <p>Map an agent's memories, entities, and tags as a typed 3D force layout, so clusters, orphans, and duplicates are visible at a glance. Full editing and an inspector for every node.</p>
-      <figure style="margin-top:var(--space-4);">
-        <img src="memory_graph.png" alt="Memory Graph: an agent's memories, entities, and tags as a 3D force layout" loading="lazy" width="1030" height="886" style="width:100%;border-radius:8px;">
-      </figure>
     </div>
-
-    <div class="feature-stack">
-<div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/>
-        </svg>
-      </div>
-      <h3>Every answer shows its sources</h3>
-      <p>Web search results list which pages were actually used. Document answers show which files were retrieved. Sources are filtered by relevance so you only see what mattered, not noise.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/>
-        </svg>
-      </div>
-      <h3>Visual knowledge canvas</h3>
-      <p>See your files arranged by topic on a 2D canvas. Drag, drop, resize, and generate mind maps to reveal hidden relationships.</p>
-    </div>
-    </div>
-
-    <div class="feature-stack">
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-        </svg>
-      </div>
-      <h3>Know what your AI can do</h3>
-      <p>Check whether a model can handle images, audio, or deeper reasoning before you depend on it. Choose with confidence instead of discovering limitations halfway through a task.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/>
-        </svg>
-      </div>
-      <h3>Memory that grows with you</h3>
-      <p>Sorana remembers the facts, preferences, and project details that matter to you. Keep knowledge tied to one project or available when you need it, so you spend less time repeating yourself.</p>
-    </div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
-        </svg>
-      </div>
-      <h3>Ask about any file</h3>
-      <p>Ask questions about PDFs, documents, scans, and images in plain language. Sorana finds the useful information inside and makes your whole archive easier to search.</p>
-    </div>
-    <div class="feature-card ad-card">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-format="fluid"
-         data-ad-layout-key="-7g+ex-1i-2s+ay"
-         data-ad-client="ca-pub-6449563648591184"
-         data-ad-slot="9713451440"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
   </div>
   <div class="features-grid" id="moreFeatures" style="display:none;">
     <div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 21v-2"/><path d="M4 17V3"/><path d="M12 21v-6"/><path d="M12 11V3"/><path d="M20 21V13"/><path d="M20 9V3"/>
-        </svg>
-      </div>
-      <h3>The right AI for every task</h3>
-      <p>Sorana chooses a quick model for simple jobs and a more powerful one for difficult questions, keeping your workspace responsive while giving important work the attention it deserves.</p>
-    </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 2l-4 4-4-4"/>
@@ -892,7 +1050,7 @@
         </svg>
       </div>
       <h3>Model Manager</h3>
-      <p>Browse and compare models from 25+ providers and local sources. Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer), set a Backup or Spare per role for automatic failover, mark favorites, sort by any column, and probe capabilities before you commit.</p>
+      <p>Browse and compare models from 25+ providers and local sources. Assign any model to eight role slots (Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, and Judge). Put smaller models on routine roles to keep work fast and cloud AI bills low, then set a Backup per role plus one global Spare for automatic failover. Mark favorites, sort by any column, and probe capabilities before you commit.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -909,14 +1067,6 @@
       </div>
       <h3>Add new capabilities</h3>
       <p>Browse and connect new tools and services from one central place. Extend what Sorana can do without digging through settings or configuration files.</p>
-    </div><div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 12h-4"/><path d="M2 12h4"/><path d="M12 2v4"/><path d="M12 22v-4"/><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>
-        </svg>
-      </div>
-      <h3>Health Dashboard</h3>
-      <p>A first-boot setup guide plus ongoing monitoring for the services Sorana relies on. Catch issues early, before they slow you down.</p>
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -968,32 +1118,28 @@
     </div><div class="feature-card">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/>
-        </svg>
-      </div>
-      <h3>Budget &amp; limits</h3>
-      <p>Set a daily usage limit per agent and track it in real time. Leave the field blank to use the app default, or set 0 for no per-agent limit. Usage refreshes automatically and spend resets at local midnight.</p>
-    </div><div class="feature-card">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
         </svg>
       </div>
       <h3>Long conversations stay on track</h3>
       <p>Older parts of a conversation are quietly condensed while the important details stay available. Keep working for weeks or months without losing the thread or slowing down.</p>
     </div>
-    <div class="feature-card">
+    <div class="feature-card large">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/>
+          <circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><line x1="7" y1="7" x2="10" y2="10"/><line x1="17" y1="7" x2="14" y2="10"/><line x1="7" y1="17" x2="10" y2="14"/><line x1="17" y1="17" x2="14" y2="14"/>
         </svg>
       </div>
-      <h3>Learns your preferences</h3>
-      <p>When you decline a proposed action, the agent remembers the pattern and adapts future suggestions to your preferences instead of repeating them.</p>
+      <h3>Memory Graph 3D <span class="model-tag free">NEW</span></h3>
+      <p>Map an agent's memories, entities, and tags as a typed 3D force layout, so clusters, orphans, and duplicates are visible at a glance. Full editing and an inspector for every node.</p>
+      <figure style="margin-top:var(--space-4);">
+        <img src="memory_graph.png" alt="Memory Graph: an agent's memories, entities, and tags as a 3D force layout" loading="lazy" width="1030" height="886" style="width:100%;border-radius:8px;">
+      </figure>
     </div>
+
   </div>
   <div style="text-align:center;margin:var(--space-8) 0 var(--space-6);">
-    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">15 more features ↓</button>
+    <button id="toggleFeatures" class="btn-outline" style="font-size:var(--text-sm);">17 more features ↓</button>
   </div>
 
   <!-- OPENROUTER FREE BANNER -->
@@ -1013,9 +1159,9 @@
     <h2 style="margin-bottom:var(--space-3);">Ready to try it?</h2>
     <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:560px;margin-left:auto;margin-right:auto;">Download the executable and run it directly. No installation, no account, no cloud sync unless you choose it.</p>
     <div class="cta-actions">
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
   </div>
@@ -1108,7 +1254,7 @@
 <section class="section section-alt" id="mcp">
   <div class="section-header">
     <h2>One workspace. <em>Every tool.</em></h2>
-    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, ListenBrainz and Spotify music history, and an I Ching oracle. The marketplace adds servers that have to be installed, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to the TMDB movie and TV database. Everything is managed from the MCP Manager with no config files.</p>
+    <p>Sorana connects to extra tools and services through MCP servers. Built in servers work out of the box and cover memory, files, web search, Gmail, Calendar, your past chats, ListenBrainz and Spotify music history, an I Ching oracle, and a Polymarket prediction market server. The marketplace adds servers that have to be installed, from the ToolForest aggregator with 30+ toolkits over a single connection and the keyless CoinGecko market data server to the TMDB movie and TV database. Everything is managed from the MCP Manager with no config files.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card">
@@ -1127,7 +1273,7 @@
         </svg>
       </div>
       <h3>Chat with your music history <span class="model-tag free">NEW</span></h3>
-       <p><strong>ListenBrainz is now a built-in server with 12 tools.</strong> Ask for the sitewide top artists, your own most played artists, what is playing right now, or your last 100 listens. For the deep questions, request a full history export: Sorana queues it as a background job, imports the archive locally, and then answers across years of listening with range queries, per artist history, and forgotten artists rediscovery.</p>
+       <p><strong>ListenBrainz is now a built-in server.</strong> Ask for the sitewide top artists, your own most played artists, what is playing right now, or your last 100 listens. For the deep questions, request a full history export: Sorana queues it as a background job, imports the archive locally, and then answers across years of listening with range queries, per artist history, and forgotten artists rediscovery.</p>
       <figure style="margin-top:var(--space-4);">
         <img src="listenbrainz_example.png" alt="ListenBrainz music history in chat" loading="lazy" width="908" height="441" style="width:100%;border-radius:8px;">
       </figure>
@@ -1355,6 +1501,40 @@
       </ul>
     </div>
     <div class="example-card">
+      <h3>Polymarket</h3>
+      <ul>
+        <li>"What are the odds of a government shutdown?"</li>
+        <li>"Show the highest volume prediction markets"</li>
+        <li>"Which high volume markets resolve this week?"</li>
+        <li>"What other markets are linked to the shutdown market?"</li>
+        <li>"Group the prediction markets by narrative and risk horizon"</li>
+        <li>"Which Polymarket snapshots have I saved?"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h3>ListenBrainz</h3>
+      <ul>
+        <li>"What artists are trending on ListenBrainz?"</li>
+        <li>"Who do I listen to the most?"</li>
+        <li>"Who did I play most in March 2024?"</li>
+        <li>"When did I last play Radiohead?"</li>
+        <li>"Which artists did I drop years ago?"</li>
+        <li>"Export my full listening history"</li>
+      </ul>
+    </div>
+    <div class="example-card">
+      <h3>Spotify History</h3>
+      <ul>
+        <li>"Import my Spotify archive"</li>
+        <li>"What is in my Spotify history?"</li>
+        <li>"My top artists on Spotify in 2024"</li>
+        <li>"My most played tracks on Spotify"</li>
+        <li>"Which artists did I stop playing on Spotify?"</li>
+        <li>"How many hours did I listen on Spotify in 2024?"</li>
+        <li>"Which artists do I skip most on Spotify?"</li>
+      </ul>
+    </div>
+    <div class="example-card">
       <h3>ToolForest</h3>
       <ul>
         <li>"Summarize the most recent emails across all my connected Gmail accounts"</li>
@@ -1410,7 +1590,7 @@
     <tbody>
       <tr><th scope="row">Native desktop app. Runs fully offline &amp; private</th><td class="win">Native portable app for Windows, Linux, and MacOS. Runs on your machine with your data. Cloud only when you explicitly connect an API key.</td><td>Self-hosted web app. Local-first and no telemetry.</td><td>Obsidian local-first. Notion cloud-hosted.</td><td>Cloud-only. Your data on their servers.</td></tr>
       <tr><th scope="row">Model flexibility</th><td class="win">Cloud and unlimited local models via Lemonade, Ollama, Llama.cpp, and LM Studio. 25+ providers plus capability probing on any model. Browse, favorite, and probe before you commit.</td><td>Bring your own models. Local or external endpoints with 270+ catalogued models.</td><td>No native AI. Optional plugins connect external providers.</td><td>One vendor per service. Limited switching between models.</td></tr>
-      <tr><th scope="row">The right AI for each task</th><td class="win">Assign any model to five role slots (Primary, Quick, Embed, Vision, Reviewer) with Backup or Spare per role for automatic failover.</td><td>Choose local or external endpoints. Compare several models side-by-side.</td><td>Single model per plugin or integration. No role-based routing.</td><td>One model per session. Stronger models require plan upgrade.</td></tr>
+      <tr><th scope="row">The right AI for each task</th><td class="win">Assign any model to eight role slots (Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, and Judge). Use smaller models for routine roles to keep cloud AI bills low, with a Backup per role plus one global Spare for automatic failover.</td><td>Choose local or external endpoints. Compare several models side-by-side.</td><td>Single model per plugin or integration. No role-based routing.</td><td>One model per session. Stronger models require plan upgrade.</td></tr>
       <tr><th scope="row">Provider goes down or hits quota</th><td class="win">Automatic failover to your Backup or Spare model. Dead free tiers pause until reset.</td><td>Endpoint and model choice is manual. No failover behavior described.</td><td>Depends on plugin or provider. No automatic failover.</td><td>Wait, upgrade, or switch manually.</td></tr>
       <tr><th scope="row">Multi-agent orchestration</th><td class="win">A primary agent plans your work, dispatches specialized subagents in parallel, and reviews their results before answering.</td><td>Autonomous agents plan, call tools, and work through tasks.</td><td>Simple automations and community plugins.</td><td>Basic workflows and skills available with paid plans.</td></tr>
       <tr><th scope="row">See how answers are built</th><td class="win">See the full trace of every step planned, searched, and reviewed to reach the answer.</td><td>Agent tracing is not described on the current site.</td><td>Plugin-dependent transparency. Limited by design.</td><td>Agent tracing varies by service and plan.</td></tr>
@@ -1575,8 +1755,7 @@
 <div class="ad-container">
   <p class="ad-label">Sponsored</p>
   <ins class="adsbygoogle"
-       style="display:inline-block:"
-       data-ad-format="autorelaxed"
+       style="display:inline-block;width:336px;height:280px"
        data-ad-client="ca-pub-6449563648591184"
        data-ad-slot="8429838091"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -1777,9 +1956,9 @@
   </div>
   <div class="cta-section" style="padding: var(--space-12) 0 0; max-width: none;">
     <div class="cta-actions">
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+      <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
       <a href="https://github.com/Tetramatrix/Sorana" class="btn-outline">View on GitHub</a>
     </div>
   </div>
@@ -1969,7 +2148,7 @@
     </details>
     <details class="faq-item">
       <summary>Does Sorana cost anything?</summary>
-      <p>Sorana is free to download and use today; a planned premium option will add extra support while all current features remain available in the free tier. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio &mdash; OpenRouter's free tier is a zero-cost way to start with cloud models.</p>
+      <p>Sorana is free to download and use today; a planned premium option will add extra support while all current features remain available in the free tier. You can pair it with free cloud models (OpenRouter, Nvidia, Mistral, etc.) using your own API key, or run completely offline with local models via Lemonade, Ollama, or LM Studio &mdash; OpenRouter's free tier is a zero-cost way to start with cloud models. Assign smaller models to routine roles such as Quick, Memory, Grouping, and Embed to keep paid cloud API bills lower.</p>
     </details>
     <details class="faq-item">
       <summary>Does my data leave my machine?</summary>
@@ -1981,7 +2160,7 @@
     </details>
     <details class="faq-item">
       <summary>What models are supported?</summary>
-      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and more. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
+      <p>25+ providers including OpenAI, Grok, OpenRouter, Mistral, DeepSeek, Nvidia, Google, Meta, Alibaba, and more. Local models run through Lemonade, Ollama, Llama.cpp, or LM Studio. Assign any model to eight roles: Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, and Judge, with a Backup per role and one global Spare for automatic failover. The Model Manager lets you browse, favorite, and probe models to discover their capabilities.</p>
     </details>
     <details class="faq-item">
       <summary>Which providers have free tiers?</summary>
@@ -2011,6 +2190,18 @@
     <details class="faq-item">
       <summary>Can I open a music archive in Sorana?</summary>
       <p>Yes. Point Open Workspace at a Spotify export and Sorana reads the zips where they are, keeps every artist, classifies them, and lays the groups out on the workspace canvas. A ListenBrainz history archive opens from its folder the same way. You can drag the board, rename groups, compare and edit the categories before grouping, and reopen it later; an Update keeps the names you reviewed. The same Spotify import becomes a listening history you can query in plain language, such as "Who are my top 20 artists this year?" or "Show my listening and skip statistics for the last month."</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I open more than one folder at once?</summary>
+      <p>Yes. Open Workspace now holds more than one folder at a time: Add folder... puts another folder beside the root, and every visible folder is drawn as its own frame on the same canvas. Each frame is a complete board with its own groups, grid, agent cards, grouping context and intel, so nothing is merged, copied or overwritten. Folders that really sit inside one another are joined by a folder connector, and the layer map jumps to any frame. Composition view keeps every frame on screen with one shared camera and lets you drag whole groups and agent cards inside any writable frame; Open layer gives that folder its own full view. The Graph button opens the whole composition as one 3D graph with layer nodes and inter-layer links, or a single layer's own graph when you pick one.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can Sorana analyze Git repositories?</summary>
+      <p>Yes. Open a local Git repository in place, or paste a remote https, ssh, git or file URL and Sorana keeps a local clone. It reads the commit history, groups commits by the area of the codebase or the kind of work they describe, and lays them out as a workspace board. Reopen the board later, inspect it in the 3D graph, and ask which area changed most, when a feature landed, or what a release contained.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can Sorana analyze Windows system logs?</summary>
+      <p>Yes. Open a log file, a folder of logs, or a platform system log such as Windows System, Windows Application, journald, or macOS. Sorana aggregates thousands of events, groups them by event kind, and turns the raw stream into a workspace board. You can ask what failed, what changed, or when a service last restarted, with the event details attached.</p>
     </details>
     <details class="faq-item">
       <summary>What does ToolForest add?</summary>
@@ -2066,9 +2257,9 @@
     </a>
   </p>
   <div class="cta-actions">
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" class="btn-primary">Download for Windows</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
-    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.zip" class="btn-primary">Download for MacOS</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe" data-download="windows" class="btn-primary">Download for Windows</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable" class="btn-primary" data-linux-download aria-haspopup="dialog" aria-controls="linuxDownloadModal">Download for Linux</a>
+    <a href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="macos" class="btn-primary">Download for MacOS</a>
     <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank" rel="noopener noreferrer" class="btn-store" aria-label="Get Sorana from Microsoft Store">
       <img src="ms-store.svg" alt="Get it from Microsoft" loading="lazy" width="180" height="40">
     </a>
@@ -2117,31 +2308,28 @@
   </div>
   <p class="linux-modal-intro">Pick the package that fits your distribution, or use the portable build and run it from any folder.</p>
   <div class="linux-options">
-    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana">
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana" data-download="linux-portable">
       <span class="linux-option-top"><strong>Portable (ELF)</strong><span class="linux-option-cta">Download →</span></span>
       <span>Run directly from any folder or USB stick. No installation.</span>
     </a>
-    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana_1.1.13_amd64.deb">
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="linux-deb">
       <span class="linux-option-top"><strong>.deb package</strong><span class="linux-option-cta">Download →</span></span>
       <span>Debian, Ubuntu, Linux Mint and other apt-based distributions.</span>
     </a>
-    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/download/1.1.13/Sorana-1.1.13-1.x86_64.rpm">
+    <a class="linux-option" href="https://github.com/Tetramatrix/Sorana/releases/latest" data-download="linux-rpm">
       <span class="linux-option-top"><strong>.rpm package</strong><span class="linux-option-cta">Download →</span></span>
       <span>Fedora, openSUSE, RHEL and other rpm-based distributions.</span>
     </a>
   </div>
-  <details class="linux-checksums">
-    <summary>SHA-256 checksums for 1.1.12</summary>
-    <ul>
-      <li><strong>Sorana</strong> (portable) <code>d774be43996c816937894e1c96b2930b7f25dd91668c138c6150f90704e6f424</code></li>
-      <li><strong>Sorana_1.1.12_amd64.deb</strong> <code>230016da202e464fe5d6307e7ff5dd1c98c9fe1dcc4956a3f9adab567c33fad2</code></li>
-      <li><strong>Sorana-1.1.12-1.x86_64.rpm</strong> <code>b7e9d9b96910419d5cdaf958252a2b1a50730772895821bf18c19d9b719041ea</code></li>
-    </ul>
+  <details class="linux-checksums" id="linuxChecksums" style="display:none">
+    <summary>SHA-256 checksums for <span data-release-version>the latest release</span></summary>
+    <ul data-release-checksums></ul>
   </details>
-  <p class="linux-modal-foot">All Linux builds are version 1.1.12. Verify a download with <code>sha256sum</code>.</p>
+  <p class="linux-modal-foot">All Linux builds come from the latest release. Verify a download with <code>sha256sum</code>, or see the checksums on the <a href="https://github.com/Tetramatrix/Sorana/releases/latest" target="_blank" rel="noopener">release page</a>.</p>
 </div>
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/downloads.js"></script>
 </body>
 </html>
