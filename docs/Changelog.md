@@ -1,5 +1,10 @@
 📋 Changelog 📋
 
+📅 23.11.26 - Version 1.1.16
+
+🐛 Bug Fixes
+🐛 Answer Verdict Ignores Generated Blocks: appended citation and coverage blocks are no longer counted as the answer, style instructions are no longer turned into coverage dimensions, path labels follow a plain language request, malformed verdict replies no longer become a score, and a refusal notice no longer replaces the turn quality while the withheld draft is re-scored and sealed.
+
 📅 22.11.26 - Version 1.1.15
 
 🆕 New Features
