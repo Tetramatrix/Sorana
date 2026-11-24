@@ -6,16 +6,16 @@
 🆕 Agent Sync Constellation: link agents into one constellation with an anchor and its members, then keep their memories, documents and chat sessions in sync. The System Agent and every project agent are listed automatically, and a workspace agent is added once you point at its folder. Each link chooses whether it carries memory, documents, chats, or any combination, and which way it goes: push to the members, pull into the anchor, or both. Run it by hand with Run now or Dry run, or let it run on its own every 5 minutes, every 15 minutes, every hour, every 6 hours, or once a day. The schedule keeps running while Sorana is open, so closing the window does not stop it. The 3D view shows every constellation, opens a link's settings when you select it, and lets you relink a workspace that moved.
 
 🔄 Improvements & Changes
-🔄 Synthesis Timeouts Reach The Transport: the resolved 120 second explorer synthesis read cap is now applied to the HTTP request itself, not only the watchdog, so the first attempt is no longer cut at 75 seconds.
-🔄 Bounded Synthesis Retries And Watchdog Budget: the final synthesis retry is bounded, the turn budget is carried into the socket watchdog, and a reloaded turn is reconciled from its persisted row.
-🔄 Full Explorer Digest Preserved: the explorer digest keeps its full content instead of dropping late read targets.
-🔄 Memory Extraction Retries After A Parse Failure: memory extraction now retries when the model answers prose instead of JSON.
-🔄 RAG Tool Calls Keep Their Named Document: a RAG call that addresses a document by name keeps that document in play for the whole turn.
-🔄 Toolbar Media Tools Share One Treatment: the Vision upload and Scan Files/Folders buttons use one normal and hover style.
+🔄 Deep Answers Keep Their Full Reading Time: a long answer about your code could be cut off after 75 seconds and then retried, so a turn that needed more time took far longer than it should. The final answer step now gets its full 120 second window on the first attempt, so a slow answer is no longer cut off early.
+🔄 Long Turns Get Their Full Time And One Retry: the final answer is now attempted at most twice instead of four times, so a stalled turn no longer spends nearly six minutes retrying the same call. A turn's own time allowance now reaches the safety limit that stops it, so a turn with time left is no longer cancelled early, and a reloaded chat picks up the turn it already saved instead of showing it as unanswered.
+🔄 A Code Answer Keeps Every File It Read: on a long code investigation the summary could drop the files read last, so the answer reported something as missing that had already been found. The summary now holds more content, and the files read last are kept instead of being dropped when it fills up.
+🔄 Memory Extraction Retries Instead Of Losing The Turn: after an answer, the app reads it for memories to store. When the model answered with plain prose instead of the structured reply it was asked for, that pass stopped and nothing was kept. It now retries the part you wrote yourself, so a formatting slip no longer costs the memory.
+🔄 A Named Document Stays In The Answer: when you ask about a document by name, a second library lookup in the same turn can no longer replace it with an unrelated document. The named document stays in play alongside anything else that was found, so the answer stays anchored to the file you asked about.
+🔄 The Vision And Scan Buttons Look Normal Again: the Upload with Vision and Scan Files/Folders buttons kept the tinted look of a selected control even when the pointer was elsewhere. Both now share the same resting and hover style as the other document tools, so neither looks permanently active.
 
 🐛 Bug Fixes
-🐛 Reasoning Tails No Longer Leak Across Providers: a reasoning suffix captured after trimming is matched properly, and sentence punctuation inherited by the content channel is absorbed.
-🐛 Synthesis Spend No Longer Doubles: the internal spend is recorded once, so a real 272,077 spend no longer refuses the call at a doubled 544,154.
+🐛 A Reply No Longer Opens With A Sliced Thought: some answers began with a cut off piece of the model's thinking before the real reply. That fragment is now removed, including when the thinking text ends with a newline or formatting, and the punctuation it carried is cleaned up, while a genuine repeated sentence is still left untouched.
+🐛 A Long Turn Is No Longer Refused For Spend It Did Not Use: every model call was counted twice, so a turn could be refused for spending twice what it really had, and the final answer was never written. Each call is now counted once, so the answer is written and the spend reflects what the turn actually used.
 
 📅 23.11.26 - Version 1.1.16
 
