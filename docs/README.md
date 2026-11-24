@@ -10,7 +10,7 @@
 
 Sorana is a personal desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS. It learns from your documents, conversations, and actions, building a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. Assign any model to eight roles, from Primary and Quick to Memory, Grouping, Embed, Vision, Reviewer, and Judge, so routine work can use smaller models and keep paid cloud API costs down. When a task needs it, the harness dispatches specialized subagents to work in parallel then reviews the results before answering. Unlike chatbots that answer one question and stop, Sorana follows through on goals.
 
-Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Organize files and music archives, analyze Git history and system logs, research topics, manage emails and your calendar, all without leaving your workspace.
+Visualize your entire knowledge base on a spatial 2D canvas. Chat with any document in plain language. Let your AI handle repetitive tasks. Classify and group files and music archives, analyze Git history and system logs, research topics, manage emails and your calendar, all without leaving your workspace.
 
 **Everything runs on your machine. Your data stays yours.**
 
@@ -78,7 +78,7 @@ Built-in OCR and vision AI make scanned documents, screenshots, and images searc
 Do not spend a powerful model on simple steps. When your AI plans strategically, reviews its own answers, fetches web results, and routes between tools, every internal step uses a model. Sorana gives each kind of work its own role, so routine steps can run on a small, fast model while the main conversation and quality checks use stronger models. That keeps the workspace responsive and lowers paid cloud API bills.
 
 - Quick model for fast answers and internal operations like tool calls and routing
-- Memory and Grouping models for background extraction and board classification
+- Memory and Grouping models for background extraction and board classification and grouping
 - Embed model for RAG and semantic search
 - Vision model for images, scans, and OCR fallback
 - Reviewer and Judge models for independent answer quality checks
@@ -104,10 +104,10 @@ Sorana breaks complex requests into step-by-step plans, runs searches and file r
 ### Projects Canvas
 A second canvas beside your Workspace board. Every project gets its own card, its own assistant, its own folder that Sorana keeps and looks after, and its own notes. Right-click the canvas to start a project, right-click a card to open or chat with it. Each canvas keeps its own view, zoom, pan, grid density, and remembered positions, and each one comes back exactly the way you left it.
 
-### Desktop & Folder Grouping
-Each board keeps its own grouping, so a desktop scan no longer wipes a folder's categories and forces a full rebuild. Start an update or a rebuild straight from the Desktop tab, watch live progress while it runs, and read the item and group counts in the toolbar for the board you are looking at.
+### Desktop & Folder Classification and Grouping
+Each board keeps its own classification and grouping, so a desktop scan no longer wipes a folder's categories and forces a full rebuild. Start an update or a rebuild straight from the Desktop tab, watch live progress while it runs, and read the item and group counts in the toolbar for the board you are looking at.
 
-### Music Archive Grouping
+### Music Archive Classification and Grouping
 Open a Spotify export folder through Open Workspace and it behaves like any other folder. Sorana reads the zips where they are, keeps every artist rather than only the first sample, consolidates and classifies them, and lays the groups out on the canvas. A ListenBrainz history archive opens from its folder the same way. Review the categories before grouping, compare them with the original findings, and rename or drop what does not fit. The board belongs to that folder, so you can drag it, edit groups, and reopen it later. When a folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. A Spotify import also becomes a listening history you can question in plain language, answered from the archive itself with no account to connect.
 
 ### Multi-source Workspace
@@ -152,7 +152,7 @@ Link one anchor agent to other agents and keep their memory, documents, and chat
 See the [Agent Sync FAQ](https://tetramatrix.github.io/Sorana/#agent-sync-faq) for the short version.
 
 ### Eight Model Roles + Failover
-Assign any model to eight role slots: Primary (main conversation), Quick (fast answers and internal operations), Memory (extracts memories), Grouping (classifies boards), Embed (indexes documents for search), Vision (reads images and scans), Reviewer (independent second opinion on answer quality), and Judge (scores the final answer). Put a smaller, carefully selected model on Quick, Memory, Grouping, and Embed to make routine work faster and cheaper, including lower bills when those roles use paid cloud services, and keep a stronger model on Primary, Reviewer, or Judge where quality matters. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
+Assign any model to eight role slots: Primary (main conversation), Quick (fast answers and internal operations), Memory (extracts memories), Grouping (classifies and groups boards), Embed (indexes documents for search), Vision (reads images and scans), Reviewer (independent second opinion on answer quality), and Judge (scores the final answer). Put a smaller, carefully selected model on Quick, Memory, Grouping, and Embed to make routine work faster and cheaper, including lower bills when those roles use paid cloud services, and keep a stronger model on Primary, Reviewer, or Judge where quality matters. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
 
 ### Model Probing
 One click tests if a model can reason, see images, or handle audio, so you know what it can do before relying on it.
@@ -185,10 +185,10 @@ Watch your AI think step by step. See what it searched, what it found, and why i
 Got a folder of code? Sorana reads it, searches it, and answers questions about it, like a teammate who already knows the project. It can also find where a symbol is defined and where it is used, and one search can cover more than one project root.
 
 ### Git Repository Analysis
-Open a local Git repository in place, or paste a remote https, ssh, git or file URL and Sorana keeps a local clone. It reads the commit history, groups commits by the area of the codebase or the kind of work they describe, and lays them out as a workspace board. Each item carries its authors, changed files and date range. Reopen the board later, inspect it in the 3D graph, and ask which area changed most, when a feature landed, or what a release contained.
+Open a local Git repository in place, or paste a remote https, ssh, git or file URL and Sorana keeps a local clone. It reads the commit history, classifies commits by the area of the codebase or the kind of work they describe and groups them, and lays them out as a workspace board. Each item carries its authors, changed files and date range. Reopen the board later, inspect it in the 3D graph, and ask which area changed most, when a feature landed, or what a release contained.
 
 ### System Log Analysis
-Open a log file, a folder of logs, or a platform system log such as Windows System, Windows Application, journald, or macOS. Sorana aggregates thousands of events, groups them by event kind, and lays them out on the workspace canvas. Ask what failed, what changed, or when a service last restarted, with the event details attached.
+Open a log file, a folder of logs, or a platform system log such as Windows System, Windows Application, journald, or macOS. Sorana aggregates thousands of events, classifies them by event kind and groups them, and lays them out on the workspace canvas. Ask what failed, what changed, or when a service last restarted, with the event details attached.
 
 ### Tesseract Image OCR
 
@@ -414,7 +414,7 @@ Setup is one step: paste your ListenBrainz user token (found in your ListenBrain
 
 Open a Spotify export through Open Workspace and Sorana treats it like any other folder: it reads the zips where they are, keeps every artist, and classifies them into groups on the workspace canvas. Review the categories before grouping, then drag the saved board or reopen it later; when the folder already holds a board, choose Rebuild or Update, and an Update keeps the names you reviewed. The same import turns those plays into a listening history you can question in plain language, so the answers come from the export itself with no account to connect and nothing to sync.
 
-- **Artist grouping** — the export's artists consolidated, classified, and laid out on the canvas, ready to drag, rename, and reopen with the folder
+- **Artist classification and grouping** — the export's artists consolidated, classified, and laid out on the canvas, ready to drag, rename, and reopen with the folder
 - **Listening history** — top artists, tracks, and albums in a period, recent plays, listening and skip statistics, and a search across your plays
 - **Forgotten favourites** — artists you played heavily years ago and have not played since
 - **Coverage** — how much of the export the imported history covers

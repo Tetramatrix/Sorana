@@ -11,7 +11,7 @@ We were frustrated by the limitations of traditional file managers. For decades,
 💡 What Sorana Solves 💡
 
 • The "Amnesia" Problem → AI forgets you after every session. Sorana extracts facts and preferences automatically, proactively greeting you with project context.
-• "Where did I save that file?" → Drag folders to a 2D canvas. Sorana semantically groups files by topic, giving you a clean visual workspace.
+• "Where did I save that file?" → Drag folders to a 2D canvas. Sorana semantically classifies and groups files by topic, giving you a clean visual workspace.
 • Chatting is disconnected from doing → Built-in MCP Server automates file operations (create, move, edit, delete) directly through conversation.
 • Token Bloat → Long chats get expensive and slow. Sorana's memory compaction boils history down to essentials, saving >90% of tokens.
 • "Does the AI actually know my project?" → Adaptive 4-tier document search (Semantic + BM25 + Keyword + Full Text) ensures perfect retrieval without indexing your whole hard drive.
@@ -186,7 +186,7 @@ for optimal performance and efficiency.
 
 🖥️ Aicono: AI intelligent desktop icon autopilot 🖥️
 
-Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and can operate fully offline via manual JSON configuration when AI services are unavailable.
+Aicono organizes a cluttered Windows desktop automatically by classifying icons with AI and grouping them and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and can operate fully offline via manual JSON configuration when AI services are unavailable.
 
 🌐 Website: http://tetramatrix.github.io/Aicono
 📰 Softpedia: https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml
