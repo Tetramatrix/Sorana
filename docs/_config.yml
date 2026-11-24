@@ -6,7 +6,7 @@
 # meta description. Setting them here makes the generated pages describe
 # the product instead.
 title: Sorana
-description: Free, private desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS, with eight model roles, local memory, agents, Git repositories, system logs, multi-folder workspaces, and music archive grouping.
+description: Free, private desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS, with Agent Sync, eight model roles, local memory, agents, Git repositories, system logs, multi-folder workspaces, and music archive grouping.
 
 # Keep the hand-written pages as they are: only files with YAML front
 # matter are processed by Jekyll, and none of the HTML pages have any.

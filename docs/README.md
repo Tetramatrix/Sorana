@@ -1,6 +1,6 @@
 # Sorana: Desktop AI Knowledge Workspace & Agent Harness That Never Forgets
 
-> Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, analyze Git history and system logs, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. It runs entirely on your machine and never forgets a project, preference, or decision.
+> Sorana is a personal desktop AI knowledge workspace and agent harness: it learns from your documents, conversations, and actions and uses that memory to chat, dispatch AI agents, manage email and calendar, browse the web, analyze Git history and system logs, and run local models all in one private workspace. Give it a goal and the harness plans the steps, dispatches specialized subagents, acts with 90+ tools, and reviews its own work. Agent Sync links agents so their memory, documents, and chat sessions stay in step, on demand or on a schedule. It runs entirely on your machine and never forgets a project, preference, or decision.
 >
 > **Start for $0**, OpenRouter's free tier gives you a free API key (no subscription, no credits) and auto-picks the best free model for every request. Pair it with Sorana and put the agentic AI to work before adding anything else.
 
@@ -146,6 +146,11 @@ Browse, expand, and collapse models from 25+ providers and local sources. Assign
 ### Specialized Subagents
 When a task needs it, Sorana dispatches specialized subagents, web research, code analysis, and fact-check to work in parallel with their own budgets, then reviews the results before answering.
 
+### Agent Sync
+Link one anchor agent to other agents and keep their memory, documents, and chat sessions in step. The System Agent and every project agent are listed automatically, and a workspace agent joins when you point at its folder. Members are not linked to each other. Each link can carry memory, documents, chats, or any combination, with Memory only as the recommended default. A stream can push from the anchor to its members, pull from a member into the anchor, or run both ways, and each member can override the direction. Run a sync by hand, use Dry run first to preview the changes, or sync automatically every 5 minutes, 15 minutes, hour, 6 hours, or once a day while Sorana is open. Every run reports copied, updated, skipped, and error counts, and a moved workspace can be relinked without losing the saved constellation.
+
+See the [Agent Sync FAQ](https://tetramatrix.github.io/Sorana/#agent-sync-faq) for the short version.
+
 ### Eight Model Roles + Failover
 Assign any model to eight role slots: Primary (main conversation), Quick (fast answers and internal operations), Memory (extracts memories), Grouping (classifies boards), Embed (indexes documents for search), Vision (reads images and scans), Reviewer (independent second opinion on answer quality), and Judge (scores the final answer). Put a smaller, carefully selected model on Quick, Memory, Grouping, and Embed to make routine work faster and cheaper, including lower bills when those roles use paid cloud services, and keep a stronger model on Primary, Reviewer, or Judge where quality matters. Set a Backup model per role and one global Spare so a dead provider never interrupts your work; Sorana hops to healthy alternatives automatically.
 
@@ -257,6 +262,11 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 - "Open the composition graph to see every layer and its links"
 - "Jump to any frame from the layer map"
 
+### Agent Sync
+- "Link the System Agent to my project agent and sync memory both ways"
+- "Preview this sync with Dry run and show me what would move"
+- "Sync this link every hour while Sorana is open"
+
 ### Git & System Logs
 - "Open this repository and group its commits by area"
 - "Which part of the codebase changed most last month?"
@@ -306,6 +316,7 @@ Real things you can say to Sorana. No special syntax, no prompts to craft.
 | Model flexibility | 25+ providers + capability probing | N/A | Locked to one vendor |
 | Eight Model Roles + Failover | Assign any model to eight role slots (Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, and Judge). Put smaller models on routine roles to lower paid cloud bills, and set a Backup per role plus one global Spare for automatic failover. | N/A | One model for everything |
 | Multi-agent orchestration | Specialized subagents work in parallel with their own budgets when the workspace needs them. | Simple automations only | Basic workflows / skills (paid) |
+| Agent Sync | Link one anchor agent to other agents and keep memory, documents, and chat sessions in step, by hand or on a schedule, with per member direction overrides. | Not available | Not available |
 | Agent Trace & Debug | Watch your AI think step by step. See what it searched, what it found, and why it chose each answer. | No AI agent transparency | No agent tracing available |
 | Sources you can verify | Every answer lists the web pages and documents it used, filtered by relevance. | N/A | Basic citations on paid tier only |
 | Portable | Runs from a USB stick | App install required | Cloud / web only |
@@ -488,6 +499,7 @@ To enable OCR on PDFs with embedded images, install [Tesseract OCR](https://gith
 ## Links
 
 - **Website**: [tetramatrix.github.io/Sorana](https://tetramatrix.github.io/Sorana)
+- **Agent Sync FAQ**: [tetramatrix.github.io/Sorana/#agent-sync-faq](https://tetramatrix.github.io/Sorana/#agent-sync-faq)
 - **Changelog**: [tetramatrix.github.io/Sorana/Changelog.html](https://tetramatrix.github.io/Sorana/Changelog.html)
 - **Release feed**: [feed.xml](https://tetramatrix.github.io/Sorana/feed.xml)
 - **Download**: [Windows](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana.exe) / [Linux portable](https://github.com/Tetramatrix/Sorana/releases/latest/download/Sorana) / [Linux .deb](https://github.com/Tetramatrix/Sorana/releases/latest) / [Linux .rpm](https://github.com/Tetramatrix/Sorana/releases/latest) / [MacOS](https://github.com/Tetramatrix/Sorana/releases/latest)

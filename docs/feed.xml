@@ -3,14 +3,21 @@
   <channel>
     <title>Sorana releases</title>
     <link>https://tetramatrix.github.io/Sorana/</link>
-    <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS, with eight model roles, Git repositories, system logs, music archives, and local models.</description>
+    <description>Release notes for Sorana, the free desktop AI knowledge workspace and agent harness for Windows, Linux, and MacOS, with Agent Sync, eight model roles, Git repositories, system logs, music archives, and local models.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Nov 2026 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0100</lastBuildDate>
+    <item>
+      <title>Sorana 1.1.17</title>
+      <link>https://github.com/Tetramatrix/Sorana/releases</link>
+      <guid isPermaLink="false">sorana-1.1.17</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0100</pubDate>
+      <description>Agent Sync Constellation: link one anchor agent to other agents and keep their memories, documents, and chat sessions in sync. Choose memory, documents, chats, or any combination per link, and push to the members, pull into the anchor, or run both ways. Run it by hand with Run now, preview it with Dry run, or sync automatically every 5 minutes, 15 minutes, hour, 6 hours, or once a day while Sorana is open. Closing the Agent Sync window does not stop the schedule, every run reports copied, updated, skipped, and error counts, and a moved workspace can be relinked. This release also gives long answers their full 120 second window, keeps the files a code answer read last, retries memory extraction after a formatting slip, and no longer counts the same model call twice.</description>
+    </item>
     <item>
       <title>Sorana 1.1.14</title>
       <link>https://github.com/Tetramatrix/Sorana/releases</link>
       <guid isPermaLink="false">sorana-1.1.14</guid>
-      <pubDate>Fri, 21 Nov 2026 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 +0100</pubDate>
       <description>Multi-source workspaces with composition view: add another folder beside the root and every folder becomes its own frame on one canvas, joined by folder connectors with a layer map, composition or single views and graphs. Music archives open like folders: Spotify exports and ListenBrainz history archives group their artists on the canvas, with a review step before grouping and listening history you can query in chat. Git repositories, local or remote, and platform system logs now open as their own grouped boards, with history and event kinds queryable in chat.</description>
     </item>
     <item>
