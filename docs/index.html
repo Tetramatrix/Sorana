@@ -54,7 +54,8 @@
       "applicationCategory": "ProductivityApplication",
       "description": "Free, private desktop AI knowledge workspace and agent harness with eight model roles, local memory, Git and system log analysis, and music archives. Smaller models for routine work keep cloud AI bills low.",
       "keywords": "personal desktop AI knowledge workspace, desktop AI knowledge workspace, private AI knowledge workspace, offline AI knowledge workspace, local AI knowledge workspace, portable AI app, desktop agent harness, agent harness workspace, spotify, spotify export, spotify listening history, music archive organizer, listenbrainz, listenbrainz export, listenbrainz listening history, toolforest, coingecko, bitcoin, bitcoin cash, crypto market data, tmdb, the movie database, movies, tv shows, multi source workspace, composition view, multi folder canvas, music history archive, git repository analysis, local git repository, remote git repository, git history, git log graph, windows system log, event log analysis, log analyzer, system log viewer, eight model roles, role-based model routing, model manager, cheaper cloud ai costs, reduce paid ai bills",
-      "featureList": ["Agent harness loop: plan, dispatch, act, review", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Music archive import with canvas grouping", "Multi-source workspace with composition view", "Multi-folder canvas with folder connectors", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Git repository analysis for local and remote repositories", "Git history grouped into workspace boards and 3D graphs", "Windows system log and log file analysis", "Event kind grouping for logs", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "Eight model roles: Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, Judge", "Role-based model routing with Backup and Spare failover", "Lower paid cloud AI bills with smaller models for routine work", "25+ cloud providers", "MCP integrations", "Polymarket prediction market MCP server", "Multi source prediction market boards", "Per category Tor routing", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
+      "featureList": ["Agent harness loop: plan, dispatch, act, review",
+      "Agent Sync: link agents and sync memory, documents, and chat sessions, manually or on a schedule", "Multi-agent orchestration", "Projects canvas with per-project assistants", "Persistent project memory", "Built-in ListenBrainz music server", "Music archive import with canvas grouping", "Multi-source workspace with composition view", "Multi-folder canvas with folder connectors", "Built-in I Ching oracle server", "ToolForest aggregator: 30+ toolkits", "Keyless CoinGecko crypto market data", "TMDB movie and TV database", "Local models via Lemonade, Ollama, LM Studio", "Chat with files and documents", "Gmail and Calendar actions", "Portable USB-stick execution", "RAG knowledge base", "Web search with verifiable sources", "OCR and vision AI", "Git repository analysis for local and remote repositories", "Git history grouped into workspace boards and 3D graphs", "Windows system log and log file analysis", "Event kind grouping for logs", "Code Explorer", "Workflow builder", "Agent guardrails", "Obsidian export", "Health Dashboard", "Eight model roles: Primary, Quick, Memory, Grouping, Embed, Vision, Reviewer, Judge", "Role-based model routing with Backup and Spare failover", "Lower paid cloud AI bills with smaller models for routine work", "25+ cloud providers", "MCP integrations", "Polymarket prediction market MCP server", "Multi source prediction market boards", "Per category Tor routing", "State-of-the-art Rust/Tauri desktop shell with native window management, system tray and menus"],
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
       "screenshot": ["model_manager.png", "chat.png", "mindmap.png", "guardrails.png", "themes.png", "tmdb.png", "spotify_groups.png", "composition.png", "composition_graph.png", "remote_git_log.png", "remote_git_log_graph.png", "windows_system_log.png"],
       "url": "https://tetramatrix.github.io/Sorana/",
@@ -611,6 +612,19 @@
           Prediction markets as a workspace source: 100 markets grouped into 9 narratives, from sports and monetary policy to geopolitics and crypto, ready to inspect, reopen, and graph.
         </p>
       </div>
+      <div class="hero-slide" data-index="15">
+        <div class="screenshot-wrap">
+          <img src="agent_sync_link.png" alt="Sorana Agent Sync Constellation: three sync links between the System Agent, a workspace agent, and a project agent, with the inspector open" width="1109" height="874" loading="lazy">
+        </div>
+        <div class="floating-badges">
+          <span class="badge free"><span class="badge-dot"></span> Free-tier models · weekly promos</span>
+          <span class="badge cloud"><span class="badge-dot"></span> 25+ cloud providers</span>
+          <span class="badge local"><span class="badge-dot"></span> Local</span>
+        </div>
+        <p class="screenshot-caption">
+          Agent Sync Constellation: link agents and sync their memories, documents, and chat sessions, manually or on a schedule.
+        </p>
+      </div>
 </div>
   </div>
   <div class="hero-stats">
@@ -835,6 +849,33 @@
     <p>Everything you need in one workspace and agent harness: chat with documents, analyze Git history and system logs, dispatch AI agents, manage email and calendar, browse the web, and run local models, all with persistent memory that learns from every interaction.</p>
   </div>
   <div class="features-grid" id="topFeatures">
+    <div class="feature-card large" style="grid-column: 1 / -1;">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/>
+          <line x1="8.5" y1="6" x2="15.5" y2="6"/><line x1="7.2" y1="8.2" x2="10.8" y2="15.8"/><line x1="16.8" y1="8.2" x2="13.2" y2="15.8"/>
+        </svg>
+      </div>
+      <h3>Agent Sync Constellation: link agents and sync what they know <span class="model-tag free">NEW</span></h3>
+      <p><strong>Link agents into one constellation.</strong> Agent Sync sees every agent you have: the System Agent, each workspace, and every project on the Projects board. Choose one anchor, tick the members, and the link is saved. Each member chooses what travels: the brain (memories), the library (documents), conversations (chat sessions), or any combination, in Push, Pull, or Both directions.</p>
+      <p><strong>Run it by hand or on a schedule.</strong> Run now syncs immediately, and Dry run shows what would move without writing anything. Turn on Sync automatically and the backend keeps the link current every 5 minutes, 15 minutes, hour, 6 hours, or once a day, even while the window is closed. Memory only is the recommended default, documents can carry their chat attachments, and every run reports copied, updated, skipped, and error counts.</p>
+      <p><strong>The constellation is the map.</strong> Every agent is a node, every stream is a coloured edge, and linked agents gather around their anchor. The Overview gives each constellation a Quick sync button, and a workspace folder that moved can be relinked without losing the link. No model call and no network request is involved: rows are copied between your local stores.</p>
+      <div class="providers-grid" style="margin-top:var(--space-4);">
+        <div class="provider-chip">One anchor, many members</div>
+        <div class="provider-chip">Brain: memories</div>
+        <div class="provider-chip">Library: documents</div>
+        <div class="provider-chip">Conversations: chats</div>
+        <div class="provider-chip">Push, Pull, Both</div>
+        <div class="provider-chip">Run now and Dry run</div>
+        <div class="provider-chip">Automatic schedule</div>
+        <div class="provider-chip">3D constellation</div>
+      </div>
+      <figure style="margin-top:var(--space-4);">
+        <img src="agent_sync_link.png" alt="Agent Sync Constellation with three links between the System Agent, a workspace agent, and a project agent, and the inspector showing memory as the shared stream" loading="lazy" width="1109" height="874" style="width:100%;height:auto;display:block;border-radius:8px;">
+        <figcaption style="margin-top:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);">Three constellations, four agents, three streams linked, with every link's content and status in the inspector.</figcaption>
+      </figure>
+    </div>
+
     <div class="feature-card large">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
