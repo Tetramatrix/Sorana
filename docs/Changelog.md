@@ -1,5 +1,22 @@
 📋 Changelog 📋
 
+📅 24.11.26 - Version 1.1.17
+
+🆕 New Features
+🆕 Agent Sync Constellation: a new Agent Sync catalog, metadata store, scheduler, API and 3D window, with target owned memory copies and project chat routing. Link hit targets, a System only tetrahedron, data driven node sizes, workspace removal confirmation, project chat counts and System Agent naming are all in place.
+
+🔄 Improvements & Changes
+🔄 Synthesis Timeouts Reach The Transport: the resolved 120 second explorer synthesis read cap is now applied to the HTTP request itself, not only the watchdog, so the first attempt is no longer cut at 75 seconds.
+🔄 Bounded Synthesis Retries And Watchdog Budget: the final synthesis retry is bounded, the turn budget is carried into the socket watchdog, and a reloaded turn is reconciled from its persisted row.
+🔄 Full Explorer Digest Preserved: the explorer digest keeps its full content instead of dropping late read targets.
+🔄 Memory Extraction Retries After A Parse Failure: memory extraction now retries when the model answers prose instead of JSON.
+🔄 RAG Tool Calls Keep Their Named Document: a RAG call that addresses a document by name keeps that document in play for the whole turn.
+🔄 Toolbar Media Tools Share One Treatment: the Vision upload and Scan Files/Folders buttons use one normal and hover style.
+
+🐛 Bug Fixes
+🐛 Reasoning Tails No Longer Leak Across Providers: a reasoning suffix captured after trimming is matched properly, and sentence punctuation inherited by the content channel is absorbed.
+🐛 Synthesis Spend No Longer Doubles: the internal spend is recorded once, so a real 272,077 spend no longer refuses the call at a doubled 544,154.
+
 📅 23.11.26 - Version 1.1.16
 
 🐛 Bug Fixes
