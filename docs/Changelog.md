@@ -3,7 +3,7 @@
 📅 24.11.26 - Version 1.1.17
 
 🆕 New Features
-🆕 Agent Sync Constellation: a new Agent Sync catalog, metadata store, scheduler, API and 3D window, with target owned memory copies and project chat routing. Link hit targets, a System only tetrahedron, data driven node sizes, workspace removal confirmation, project chat counts and System Agent naming are all in place.
+🆕 Agent Sync Constellation: link agents into one constellation with an anchor and its members, then keep their memories, documents and chat sessions in sync. The System Agent and every project agent are listed automatically, and a workspace agent is added once you point at its folder. Each link chooses whether it carries memory, documents, chats, or any combination, and which way it goes: push to the members, pull into the anchor, or both. Run it by hand with Run now or Dry run, or let it run on its own every 5 minutes, every 15 minutes, every hour, every 6 hours, or once a day. The schedule keeps running while Sorana is open, so closing the window does not stop it. The 3D view shows every constellation, opens a link's settings when you select it, and lets you relink a workspace that moved.
 
 🔄 Improvements & Changes
 🔄 Synthesis Timeouts Reach The Transport: the resolved 120 second explorer synthesis read cap is now applied to the HTTP request itself, not only the watchdog, so the first attempt is no longer cut at 75 seconds.
