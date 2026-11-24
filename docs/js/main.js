@@ -69,14 +69,29 @@
 
   /* Section reveal on scroll */
   if ('IntersectionObserver' in window) {
+    /* threshold must stay 0, never a fraction. The ratio is measured against
+       the observed element's own box, so a section taller than the viewport can
+       never exceed viewportHeight / sectionHeight. The fractional 0.08 used
+       here until 2026-11-24 therefore left the roughly 8500px tall #features
+       section at opacity 0 on any window shorter than about 680px, which
+       rendered as a black band where the feature cards belong. */
     var io = new IntersectionObserver(function(entries) {
       entries.forEach(function(e) {
         if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }
       });
-    }, { threshold: 0.08 });
+    }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
     document.querySelectorAll('.section, .showcase').forEach(function(el) {
       el.classList.add('reveal');
       io.observe(el);
+    });
+    /* Safety net: visible content must never depend on one callback firing.
+       A restored page or an aborted navigation can skip it, so reveal whatever
+       is on screen once the page has loaded. */
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.reveal:not(.revealed)').forEach(function(el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) el.classList.add('revealed');
+      });
     });
   }
 
