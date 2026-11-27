@@ -1,6 +1,6 @@
 📋 Changelog 📋
 
-📅 25.11.26 - Version 1.1.18
+📅 27.11.26 - Version 1.1.18
 
 🆕 New Features
 🆕 An Agent Permissions Card On The Advanced Tab: the Manage Agent Advanced tab now shows what an agent may do without asking, from its autonomy level and per tool overrides to its saved allow and deny rules and the effective verdict for each tool. Rules can be added, edited and removed there, and older rules without an owner can be removed but not changed.
