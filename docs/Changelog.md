@@ -1,5 +1,35 @@
 📋 Changelog 📋
 
+📅 25.11.26 - Version 1.1.18
+
+🆕 New Features
+🆕 An Agent Permissions Card On The Advanced Tab: the Manage Agent Advanced tab now shows what an agent may do without asking, from its autonomy level and per tool overrides to its saved allow and deny rules and the effective verdict for each tool. Rules can be added, edited and removed there, and older rules without an owner can be removed but not changed.
+🆕 Grouping Can Start The Managed Server It Needs: when a grouping run reports that the managed model server is stopped, the notice now offers a button to start it, so the run can be retried without leaving the canvas.
+
+🔄 Improvements & Changes
+🔄 An Empty Desktop Board Says So: opening the desktop workspace before a board has loaded no longer leaves a blank canvas with live controls. The tab now says that nothing is loaded yet, offers the desktop source in the Open menu, hides Organize until a board is there, and offers a retry when a load does not start.
+🔄 A Desktop Run Reports The Items It Just Saved: a finished run now reads the saved desktop board and counts it, so the result reports the items it placed instead of zero.
+🔄 Cards A Build Hides Are No Longer Requested: health cards that a build does not display, and the embedding pane it does not offer, no longer fetch their data in the background. Each request now follows what is on screen, so a card that is not there costs nothing.
+🔄 A Late Build Identity Still Gates The Cards: if the build identity becomes known after the health dashboard opened, the reload follows it, so hidden cards stay unrequested instead of being fetched by the next refresh.
+🔄 Grouping Runs Report Their Progress: long grouping runs now show batch counts up to ten, report how far they have got and reserve room for the answer, so a run that takes minutes looks alive instead of stuck and long reasoning no longer leaves the categories empty.
+🔄 Grouping Failures Name The Stage That Failed: when a managed request cannot be sent, the notice now says what was sent and names the stage that failed, so the fallback guidance points at the step that actually stopped.
+🔄 Vision Follows The Bound Model: the separate vision toggle is gone, and the model bound to vision is now resolved exactly before a request, so the answer uses the model you assigned.
+🔄 Every Reasoning Off Spelling Works: the setting now accepts all the ways it can be written, so a turn no longer ignores it because of a spelling difference.
+🔄 Desktop Group Frames Keep Their Distance: frames on the desktop board are now packed inside the work area with space between them, so a nearly full board no longer draws frames over each other.
+🔄 Your Writing Style Rules Are Kept: a standing style preference is now found even when it is older than the newest ten stored preferences, and a rule you restate is saved even when the model answers in prose, so writing follows the rule you set.
+🔄 Agent Chats Open The Right Store: one resolver now decides which folder owns an agent's chat store, and project chat sync checks ownership and store identity before it writes, so a board project no longer opens against an unrelated workspace folder.
+🔄 Listing A Folder Reads Its Files: asking to list the files in a folder now calls the folder listing even when the request also reads like a document question.
+🔄 Large Memory Sets Are Checked For Contradictions: the background check now covers a full selected memory set instead of timing out on the first hundred or so entries, so contradictions in the rest are no longer missed.
+
+🐛 Bug Fixes
+🐛 A Fixed Category List Keeps Event Text Whole: a fixed list of categories no longer splits event text on delimiter characters, so labels stay as they were written.
+🐛 A Pasted Letter Keeps Its Own Scope: a short quoted email with a typed lead, greeting and signoff is now recognized, so the letter body is read as pasted text instead of reaching argument matching. The writer reports paste scope from the original message and retries a low scored refusal once with the turn's own evidence before withholding the draft.
+🐛 A Failed Archive Import Says Why: an archive failure no longer offers review or stop actions that cannot work, so the notice explains what happened instead of leaving buttons that do nothing.
+
+🛡️ Security & Stability
+🛡️ Grouping Errors Do Not Expose Server Details: a saved grouping error now rewrites relative request addresses to host and port and strips secrets, so stored errors cannot carry an endpoint credential.
+🛡️ The Managed Server Is Probed Once: grouping routes share one check that probes the resolved managed endpoint and rejects unknown layouts, so a stopped server is reported before a run starts instead of failing part way through.
+
 📅 24.11.26 - Version 1.1.17
 
 🆕 New Features
