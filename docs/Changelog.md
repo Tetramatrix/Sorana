@@ -1,5 +1,10 @@
 📋 Changelog 📋
 
+📅 28.11.26 - Version 1.1.19
+
+🔒 Security & Stability
+🔒 A Download Waits For Its Own Edition: a request to fetch a build now waits for the run of the same edition instead of taking whichever run finished last, and the result is checked against the display name and version it claims before it is used.
+
 📅 27.11.26 - Version 1.1.18
 
 🆕 New Features
